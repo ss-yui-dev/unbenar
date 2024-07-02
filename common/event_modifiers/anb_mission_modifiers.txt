@@ -9735,7 +9735,7 @@ eilisin_drained_land = {
 
 # Deliberately Empty
 eilisin_prepare_carneter = {
-	local_autonomy = -1
+	global_autonomy = -1 #love (должен быть глобальным, а не локальным)
 }
 
 eilisin_ordoin_contacts = {
