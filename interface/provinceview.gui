@@ -4513,8 +4513,15 @@ guiTypes = {
 				position = { x = 320 y = 157 }
 				shortcut = "d"
 			}
-
-
+			#love
+			guiButtonType = {
+				name ="develop_local_area"
+				quadTextureSprite = "GFX_develop_local_area"
+				scripted = yes
+				position = { x = 485 y = 130 }
+				shortcut = ""
+			}
+			#love
 			guiButtonType = {
 				name = "sort_state_core"
 				quadTextureSprite = "GFX_sort_state_core"

@@ -13,20 +13,30 @@ fort_balancer_3 = {
 
 ANEX_local_development_1 = {
 	local_development_cost = -0.05
+	trade_goods_size = 0.01
+	picture = castanor_building_legionway_construction
 }
 ANEX_local_development_2 = {
 	local_development_cost = -0.10
+	trade_goods_size = 0.01
+	picture = castanor_building_legionway_construction
 }
 ANEX_local_development_3 = {
 	local_development_cost = -0.15
+	trade_goods_size = 0.01
+	picture = castanor_building_legionway_construction
 }
 ANEX_local_development_4 = {
 	local_development_cost = -0.20
 	allowed_num_of_buildings = 1
+	trade_goods_size = 0.01
+	picture = castanor_building_legionway_construction
 }
 ANEX_local_development_5 = {
 	local_development_cost = -0.25
 	allowed_num_of_buildings = 1
+	trade_goods_size = 0.01
+	picture = castanor_legionway
 }
 
 development_boom = {

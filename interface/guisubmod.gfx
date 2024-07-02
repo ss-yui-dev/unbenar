@@ -63,6 +63,7 @@ spriteTypes = {
 		noOfFrames = 3
 	}
 	spriteType = {
+
 		name = "GFX_hold_9_strip"
 		texturefile = "gfx/interface/custom_gui/hold_09_strip.dds"
 		noOfFrames = 3
@@ -87,6 +88,12 @@ spriteTypes = {
 		name = "GFX_diggydiggy_start"
 		texturefile = "gfx//interface//custom_gui//diggydiggy_start.dds"
 	}
+	#love
+	spriteType = {
+		name = "GFX_develop_local_area"
+		texturefile = "gfx//interface//custom_gui//develop_local_area.dds"
+	}
+	#love
 	spriteType = {
 		name = "GFX_hold_specialisation_button"
 		texturefile = "gfx//interface//custom_gui//hold_specialisation_button.dds"

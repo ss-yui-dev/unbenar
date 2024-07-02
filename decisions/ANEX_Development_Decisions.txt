@@ -1,7 +1,8 @@
 country_decisions = {
 	dev_sum_clicks_decision = {
 		potential = {
-			has_country_flag = allow_develop_local_area
+			ai = no
+			# has_country_flag = allow_develop_local_area
 		}
 		ai_will_do = {
 			factor = 1
@@ -36,7 +37,8 @@ country_decisions = {
 
 	dev_dev_passive_decision = {
 	 	potential = {
-			has_country_flag = allow_develop_local_area
+			ai = no
+			# has_country_flag = allow_develop_local_area
 	 	}
 	 	ai_will_do = {
 	 		factor = 1
@@ -71,7 +73,8 @@ country_decisions = {
 
 	dev_lose_decision = {
 		potential = {
-			has_country_flag = allow_develop_local_area
+			ai = no
+			# has_country_flag = allow_develop_local_area
 		}
 		ai_will_do = {
 			factor = 1
