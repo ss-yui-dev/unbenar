@@ -1,0 +1,16 @@
+﻿l_english:
+ 
+unb_price.12.t:0 "Opium smuggling in Cannor"
+unb_price.12.d:0 ""
+unb_price.12.a:0 ""
+OPIUM_IN_CANNOR:0 "Opium smuggling in Cannor"
+
+unb_price.1.t:0 "Tea Culture Exchange"
+unb_price.1.d:0 "Tea was an important luxury drink primarily produced in Yanshen and Aelantir used in religious or social rituals. It is said that the small-leaf variety of tea popularized by Dameria arrived to the continent with the elven Remnant Fleet, whereas the more common large-leaf was grown in Yanshen and Rahen. The origins of tea remain disputed, with the elves claiming their precursor ancestors brought it to Yanshen, but modern Yan scholars believe the opposite happened, and that the ancient precursor elves stole it from their native Yanshen to plant in Aelantir. The development of rrade routes has led to possibility of exchange betweene these isolated tea traditions. Although this did not lead to a large growth in tea market, everyone occupied their niche in a previously inaccessible market"
+unb_price.1.a:0 "That's a great news!"
+TEA_CULTURE_EXCHANGE:0 "Cannor-Yanshen tea trade"
+
+unb_price.2.t:0 "Cyranvar Monopolizes Exotic Wood Trade "
+unb_price.2.d:0 "Exotic wood from Deepwood has relatively recently become an import item to Cannor. The reasons were not only to the difficulties in processing and using, but also to the unwillingness of the forest elves to share their resources. The situation changed when the elves lost their positions to the orcs and goblins. During this time, exotic wood has partially replaced conventional wood in the production of goods. Now, in the situation where Cannor could not simply abandon Deepwood lumber, the elves, as the only supplier of wood (who can stand up for theirself), decided to significantly raise the price of their goods."
+unb_price.2.a:0 "Cannorians will have to trade on Cyranvary terms or look for another source of lumber"
+CYRANVAR_WOOD_MONOPOLY:0 "Cyranvar exotic wood monopoly"
