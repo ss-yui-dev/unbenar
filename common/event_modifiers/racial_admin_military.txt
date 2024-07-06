@@ -853,6 +853,12 @@ centaur_administration = {
 	spy_offence = -0.3						#-3 D /They aren't the most underhanded race, and... Well, it's easy to spot an Horse Spy
 	
 	#0.75 + 0.4 + 1.2 = 2.35
+
+	#love
+	governing_capacity = 500
+	global_tax_income = 36
+	global_manpower = 15
+	#love
 	picture = "racial_adm_centaur"
 }
 
@@ -1030,10 +1036,10 @@ undead_military = {				#Zombies and skeletons created with necromancy
 	infantry_cost = -0.5 #5 A
 	cavalry_cost = -0.5
 	mercenary_manpower = -0.25
-	land_forcelimit_modifier = 1.5 #4 S
+	land_forcelimit_modifier = 0.75 #love
 	land_attrition = -0.5	#3.3 D
 	
-	manpower_recovery_speed = 1 #10 A
+	manpower_recovery_speed = 0.5 #love
 	sailors_recovery_speed = 0.5 #Lol I'm not counting this
 	reinforce_speed = 3 #0.66 B
 	reinforce_cost_modifier = -0.5 #2 B

@@ -3181,6 +3181,108 @@ province_event = {
 
 	option = {
 		name = national_wonder.1000.a
+		if = {
+			limit = {
+				capital = {
+					AND = {
+						NOT = { has_building = war_college_1 }
+						NOT = { has_building = war_college_2 }
+						NOT = { has_building = war_college_3 }
+					}
+				}
+				ROOT = {
+					has_building = war_college_1
+				}
+			}
+			capital = {
+				add_building = war_college_1
+			}
+		}
+		if = {
+			limit = {
+				capital = {
+					AND = {
+						NOT = { has_building = war_college_1 }
+						NOT = { has_building = war_college_2 }
+						NOT = { has_building = war_college_3 }
+					}
+				}
+				ROOT = {
+					has_building = war_college_2
+				}
+			}
+			capital = {
+				add_building = war_college_2
+			}
+		}
+		if = {
+			limit = {
+				capital = {
+					AND = {
+						NOT = { has_building = war_college_1 }
+						NOT = { has_building = war_college_2 }
+						NOT = { has_building = war_college_3 }
+					}
+				}
+				ROOT = {
+					has_building = war_college_3
+				}
+			}
+			capital = {
+				add_building = war_college_3
+			}
+		}
+		if = {
+			limit = {
+				capital = {
+					AND = {
+						NOT = { has_building = national_bank_1 }
+						NOT = { has_building = national_bank_2 }
+						NOT = { has_building = national_bank_3 }
+					}
+				}
+				ROOT = {
+					has_building = national_bank_1
+				}
+			}
+			capital = {
+				add_building = national_bank_1
+			}
+		}
+		if = {
+			limit = {
+				capital = {
+					AND = {
+						NOT = { has_building = national_bank_1 }
+						NOT = { has_building = national_bank_2 }
+						NOT = { has_building = national_bank_2 }
+					}
+				}
+				ROOT = {
+					has_building = national_bank_2
+				}
+			}
+			capital = {
+				add_building = national_bank_2
+			}
+		}
+		if = {
+			limit = {
+				capital = {
+					AND = {
+						NOT = { has_building = national_bank_1 }
+						NOT = { has_building = national_bank_2 }
+						NOT = { has_building = national_bank_3 }
+					}
+				}
+				ROOT = {
+					has_building = national_bank_3
+				}
+			}
+			capital = {
+				add_building = national_bank_3
+			}
+		}
 		remove_building = war_college_1
 		remove_building = war_college_2
 		remove_building = war_college_3
@@ -3232,7 +3334,6 @@ province_event = {
 		remove_building = colonial_office_1
 		remove_building = colonial_office_2
 		remove_building = colonial_office_3
-
 	}
 }
 

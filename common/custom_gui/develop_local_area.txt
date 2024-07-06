@@ -4,6 +4,7 @@ custom_button = {
 		always = yes
 	}
 	trigger = {
+		owned_by = FROM
 		is_state = yes
 		all_province = {
 			OR = {
@@ -58,8 +59,8 @@ custom_button = {
 		}
 		every_province_in_state = {
 			limit = {
-				area = PREV
-				owned_by = ROOT
+				area = ROOT
+				owned_by = FROM
 				NOT = { has_province_modifier = ANEX_local_development_5 }
 				OR = {
 					AND = {
@@ -121,14 +122,6 @@ custom_button = {
 					duration = -1
 				}
 			}
-		}
-	}
-	ai_will_do = {
-		factor = 1
-		modifier = {
-			factor = 0
-			NOT = { years_of_income = 10 }
-			NOT = { treasury = 1000 }
 		}
 	}
 	tooltip = ANEX_develop_local_area_title

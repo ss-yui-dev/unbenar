@@ -5951,7 +5951,14 @@ country_event = {
 	immediate = {
 		random_list = {
 			75 = {
-
+				#love
+				trigger = {
+					AND = {
+						NOT = { has_global_flag = great_conqueror }
+						NOT = { has_global_flag = mythical_conqueror }
+					}
+				}
+				#love
 			}
 			5 = {
 				trigger = {

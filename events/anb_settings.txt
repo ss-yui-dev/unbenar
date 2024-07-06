@@ -167,40 +167,43 @@ country_event = {
 				# oceania = { destroy_province_permanently = yes }
 			# }
 		}
-		every_country = {
-			add_treasury = 500
-		}
-		every_country = {
-			limit = {
-				NOT = {
-					AND = {
-						capital_scope = {
-							superregion = forbidden_lands_superregion
-						}
-						NOT = { culture_group = ogre }
-					}	
-					tag = A38
-					tag = F23
-				}	
+		hidden_effect = {
+			every_country = {
+				add_treasury = 500
 			}
-			change_dip = 1
-			change_adm = 1
-			change_mil = 1			
-		}
-		G52 = {
-			if = {
+			every_country = {
 				limit = {
-					ai = yes
-					has_global_flag = mythical_conqueror
+					NOT = {
+						AND = {
+							capital_scope = {
+								superregion = forbidden_lands_superregion
+							}
+							NOT = { culture_group = ogre }
+						}	
+						tag = A38
+						tag = F23
+					}	
 				}
-				add_ruler_personality = mythical_conqueror_personality
-				add_ruler_modifier = {
-					name = mythical_conqueror_modifier
-					duration = -1
-				}
-				set_ai_personality = {
-					personality = ai_militarist
-					locked = yes
+				change_dip = 1
+				change_adm = 1
+				change_mil = 1
+			}
+		
+			G52 = {
+				if = {
+					limit = {
+						ai = yes
+						has_global_flag = mythical_conqueror
+					}
+					add_ruler_personality = mythical_conqueror_personality
+					add_ruler_modifier = {
+						name = mythical_conqueror_modifier
+						duration = -1
+					}
+					set_ai_personality = {
+						personality = ai_militarist
+						locked = yes
+					}
 				}
 			}
 		}

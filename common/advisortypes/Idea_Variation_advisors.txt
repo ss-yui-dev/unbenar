@@ -248,7 +248,7 @@ idea_var_advisor_9 = {		# Administrator
 		}
 		modifier = {
 			meritocracy = 0.25
-			administrative_efficiency = 0.01	
+			administrative_efficiency = 0.05
 		}
 
 	}
@@ -902,15 +902,15 @@ idea_var_advisor_31 = {
 		}
 		modifier = {
 			meritocracy = 0.25
-
-			max_absolutism = 5
+			harsh_treatment_cost = -0.05
+			yearly_absolutism = 1
 		}
 
 	}
 
 	# Bonus
 
-	yearly_absolutism = 0.5
+	yearly_absolutism = 3
 
 	chance = {
 		factor = 1
