@@ -32,7 +32,7 @@ country_event = {
 	picture = ARTWORK_eventPicture
 	
 	mean_time_to_happen = {
-		years = 30
+		years = 10 #love
 		
 		modifier = {
 			factor = 0.9
@@ -182,7 +182,7 @@ country_event = {
 	picture = ARTWORK_eventPicture
 	
 	mean_time_to_happen = {
-		years = 30
+		years = 10 #love
 		
 		modifier = {
 			factor = 0.9
@@ -332,7 +332,7 @@ country_event = {
 	picture = ARTWORK_eventPicture
 	
 	mean_time_to_happen = {
-		years = 30
+		years = 10 #love
 		
 		modifier = {
 			factor = 0.9
@@ -481,7 +481,7 @@ country_event = {
 	picture = ARTWORK_eventPicture
 	
 	mean_time_to_happen = {
-		years = 30
+		years = 10 #love
 		
 		modifier = {
 			factor = 0.9
@@ -631,7 +631,7 @@ country_event = {
 	picture = ARTWORK_eventPicture
 	
 	mean_time_to_happen = {
-		years = 30
+		years = 10 #love
 		
 		modifier = {
 			factor = 0.9

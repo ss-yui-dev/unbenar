@@ -22,6 +22,8 @@ tianlou_jewel_of_yanshen = {
 			OR = {
 				culture_group = yan
 				culture = serene_harimari
+				culture = honourbound_harimari #love
+				culture_group = wuhyun #love
 			}
 		}
 	}	
@@ -31,6 +33,8 @@ tianlou_jewel_of_yanshen = {
 			OR = {
 				culture_group = yan
 				culture = serene_harimari
+				culture = honourbound_harimari #love
+				culture_group = wuhyun #love
 			}
 		}
 	}	
@@ -138,6 +142,8 @@ tianlou_xuezhefang_eunuch_academy = {
 			OR = {
 				culture_group = yan
 				culture = serene_harimari
+				culture = honourbound_harimari #love
+				culture_group = wuhyun #love
 			}
 		}
 	}	
@@ -147,6 +153,8 @@ tianlou_xuezhefang_eunuch_academy = {
 			OR = {
 				culture_group = yan
 				culture = serene_harimari
+				culture = honourbound_harimari #love
+				culture_group = wuhyun #love
 			}
 		}
 	}	
@@ -214,16 +222,16 @@ tianlou_xuezhefang_eunuch_academy = {
 			eunuchs_influence_modifier = 0.025
 		}
 		on_upgraded = {
-			define_advisor = {
-				type = natural_scientist
-				name = "Changbo Hua"
-				skill = 3
-				culture = river_yan
-				religion = righteous_path
-				location = 4871
-				discount = yes
-			}
 			owner = {
+				define_advisor = {
+					type = natural_scientist
+					name = "Changbo Hua"
+					skill = 3
+					culture = river_yan
+					religion = righteous_path
+					location = 4871
+					discount = yes
+				}
 				add_estate_loyalty = {
 					estate = estate_eunuchs
 					loyalty = 10
@@ -296,6 +304,8 @@ jiangdu_haoshitzi = {
 			OR = {
 				culture_group = yan
 				culture = serene_harimari
+				culture = honourbound_harimari #love
+				culture_group = wuhyun #love
 			}
 		}
 	}	
@@ -305,6 +315,8 @@ jiangdu_haoshitzi = {
 			OR = {
 				culture_group = yan
 				culture = serene_harimari
+				culture = honourbound_harimari #love
+				culture_group = wuhyun #love
 			}
 		}
 	}	
@@ -432,6 +444,8 @@ luoyip_house_of_fire_and_water = {
 			OR = {
 				culture_group = yan
 				culture = serene_harimari
+				culture = honourbound_harimari #love
+				culture_group = wuhyun #love
 			}
 		}
 	}	
@@ -441,6 +455,8 @@ luoyip_house_of_fire_and_water = {
 			OR = {
 				culture_group = yan
 				culture = serene_harimari
+				culture = honourbound_harimari #love
+				culture_group = wuhyun #love
 			}
 		}
 	}	
@@ -501,16 +517,16 @@ luoyip_house_of_fire_and_water = {
 			idea_cost = -0.025
 		}
 		on_upgraded = {
-			define_advisor = {
-				type = natural_scientist
-				name = "Lhuge Ziang"
-				skill = 3
-				culture = coastal_yan
-				religion = high_philosophy
-				location = 4949
-				discount = yes
-			}
-			owner = { 
+			owner = {
+				define_advisor = {
+					type = natural_scientist
+					name = "Lhuge Ziang"
+					skill = 3
+					culture = coastal_yan
+					religion = high_philosophy
+					location = 4949
+					discount = yes
+				}
 				change_innovativeness = 2
 			}
 		}
@@ -566,6 +582,8 @@ yinquan_the_conquerors_hotspring = {
 			OR = {
 				culture_group = yan
 				culture = serene_harimari
+				culture = honourbound_harimari #love
+				culture_group = wuhyun #love
 			}
 		}
 	}	
@@ -575,6 +593,8 @@ yinquan_the_conquerors_hotspring = {
 			OR = {
 				culture_group = yan
 				culture = serene_harimari
+				culture = honourbound_harimari #love
+				culture_group = wuhyun #love
 			}
 		}
 	}	

@@ -96,7 +96,7 @@ guiTypes = {
 		
 		OverlappingElementsBoxType = {
 				name = "modifiers"
-				position = { x = 187 y = 164 }
+				position = { x = 187 y = 200 }
 				size = { x = 114 y = 32 }
 				Orientation = "UPPER_LEFT"
 				format = left

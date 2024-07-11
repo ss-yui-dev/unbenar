@@ -93,14 +93,16 @@ neckcliffe_the_imperial_dockyard = {
 			flagship_morale = 0.25
 		}
 		on_upgraded = {
-			define_advisor = {
-			type = naval_reformer
-			name = "Paul von Oberstein"
-			skill = 3
-			culture = west_damerian
-			religion = regent_court
-			location = 26
-			discount = yes
+			owner = {
+				define_advisor = {
+					type = naval_reformer
+					name = "Paul von Oberstein"
+					skill = 3
+					culture = west_damerian
+					religion = regent_court
+					location = 26
+					discount = yes
+				}
 			}
 		}
 	}

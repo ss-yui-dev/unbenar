@@ -52,7 +52,7 @@
 
  obj_md_city_tier_1_cannor_desc: "Own and control a core province with at least 30 development."
  obj_md_city_tier_1_haless_desc: "Own and control a core province with at least 30 development."
- obj_md_city_tier_1_serpentspine_desc: "Own and control a core province with at least 30 development."
+ obj_md_city_tier_1_serpentspine_desc: "Own and control a core province with at least 60 development."
  obj_md_city_tier_1_forbidden_lands_desc: "Own and control a core province with at least 30 development."
  obj_md_city_tier_1_bulwar_desc: "Own and control a core province with at least 30 development."
  obj_md_city_tier_1_sarhal_desc: "Own and control a core province with at least 30 development."
@@ -132,7 +132,7 @@
  obj_md_many_vassals_anbennar_desc: "Have at least 3 subjects."
  obj_md_claim_the_road_desc: "Control at least 10 Dwarven Road provinces."
  obj_md_reclaim_the_road_desc: "Control at least 10 Dwarven Road provinces."
- obj_md_conquer_the_spine_desc: "Control at least 30 Dwarven Road provinces and 10 Dwarven Holds."
+ obj_md_conquer_the_spine_desc: "Control at least 120 Dwarven Road provinces and 30 Dwarven Holds."
 
 
   # Age Painting Descriptions

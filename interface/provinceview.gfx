@@ -1,5 +1,11 @@
 spriteTypes = {
-
+	#love
+	spriteType = {
+		name = "empty_interaction_modifier"
+		texturefile = "gfx//interface//ideas_EU4//empty_interaction_modifier.dds"
+		allwaystransparent = yes
+	}
+	#love
 	spriteType = {
 		name = "GFX_icon_no_institution"
 		texturefile = "gfx//interface//estates_icons.dds"

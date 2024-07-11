@@ -22,6 +22,8 @@ prukakhin_bazaar_of_blood_and_ivory = {
 			OR = {
 				culture_group = bom
 				culture = serene_harimari
+				culture = honourbound_harimari #love
+				culture_group = wuhyun #love
 			}
 		}
 	}	
@@ -31,6 +33,8 @@ prukakhin_bazaar_of_blood_and_ivory = {
 			OR = {
 				culture_group = bom
 				culture = serene_harimari
+				culture = honourbound_harimari #love
+				culture_group = wuhyun #love
 			}
 		}
 	}	
@@ -156,6 +160,8 @@ phaethmen_di_phaemruk_shipyard_district = {
 			OR = {
 				culture_group = bom
 				culture = serene_harimari
+				culture = honourbound_harimari #love
+				culture_group = wuhyun #love
 			}
 		}
 	}	
@@ -165,6 +171,8 @@ phaethmen_di_phaemruk_shipyard_district = {
 			OR = {
 				culture_group = bom
 				culture = serene_harimari
+				culture = honourbound_harimari #love
+				culture_group = wuhyun #love
 			}
 		}
 	}	
@@ -289,6 +297,8 @@ phaethmen_di_the_saccharine_garden = {
 			OR = {
 				culture_group = bom
 				culture = serene_harimari
+				culture = honourbound_harimari #love
+				culture_group = wuhyun #love
 			}
 		}
 	}	
@@ -298,6 +308,8 @@ phaethmen_di_the_saccharine_garden = {
 			OR = {
 				culture_group = bom
 				culture = serene_harimari
+				culture = honourbound_harimari #love
+				culture_group = wuhyun #love
 			}
 		}
 	}	
@@ -412,6 +424,8 @@ lapnam_amrik_weapon_market = {
 			OR = {
 				culture_group = bom
 				culture = serene_harimari
+				culture = honourbound_harimari #love
+				culture_group = wuhyun #love
 			}
 		}
 		has_manpower_building_trigger = yes
@@ -423,6 +437,8 @@ lapnam_amrik_weapon_market = {
 			OR = {
 				culture_group = bom
 				culture = serene_harimari
+				culture = honourbound_harimari #love
+				culture_group = wuhyun #love
 			}
 		}
 	}	
@@ -552,6 +568,8 @@ lapnam_amrik_teplinbasiet_arena = {
 			OR = {
 				culture_group = bom
 				culture = serene_harimari
+				culture = honourbound_harimari #love
+				culture_group = wuhyun #love
 			}
 		}
 	}	
@@ -561,6 +579,8 @@ lapnam_amrik_teplinbasiet_arena = {
 			OR = {
 				culture_group = bom
 				culture = serene_harimari
+				culture = honourbound_harimari #love
+				culture_group = wuhyun #love
 			}
 		}
 	}	
@@ -669,6 +689,8 @@ bim_lau_necropolis = {
 			OR = {
 				culture_group = bom
 				culture = serene_harimari
+				culture = honourbound_harimari #love
+				culture_group = wuhyun #love
 			}
 		}
 	}	
@@ -678,6 +700,8 @@ bim_lau_necropolis = {
 			OR = {
 				culture_group = bom
 				culture = serene_harimari
+				culture = honourbound_harimari #love
+				culture_group = wuhyun #love
 			}
 		}
 	}	

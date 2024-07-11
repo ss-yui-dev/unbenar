@@ -1714,7 +1714,7 @@ ruler_has_max_personalities = {
 			ruler_has_personality = leopard_shifter_personality
 			ruler_has_personality = elephant_shifter_personality
 		}
-		amount = 3
+		amount = 4
 	}
 }
 
@@ -1780,7 +1780,8 @@ heir_has_max_personalities = {
 			heir_has_personality = leopard_shifter_personality
 			heir_has_personality = elephant_shifter_personality
 		}
-		amount = 1
+
+		amount = 3
 	}
 }
 
@@ -2256,6 +2257,7 @@ has_multiple_manufactory_trigger = {
 			has_building = impressment_offices
 			has_building = state_house
 			has_building = mage_tower
+			has_building = tax_house
 		}
 	}
 }

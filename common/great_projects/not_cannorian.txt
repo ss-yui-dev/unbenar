@@ -247,9 +247,9 @@ nimscodd_academy = {
 			idea_cost = -0.20
 		}
 		on_upgraded = {
-			tooltip = { owner = { mission_reward_artifice_points_5 = yes } }
-			tooltip = { owner = { mission_reward_artifice_points_5 = yes } }
-			tooltip = { owner = { mission_reward_artifice_points_5 = yes } }
+			owner = { mission_reward_artifice_points_5 = yes }
+			owner = { mission_reward_artifice_points_5 = yes }
+			owner = { mission_reward_artifice_points_5 = yes }
 		}
 	}
 }

@@ -160,6 +160,8 @@ bianfang_huangpo_academy_of_war = {
 			OR = {
 				culture_group = yan
 				culture = serene_harimari
+				culture = honourbound_harimari #love
+				culture_group = wuhyun #love
 			}
 		}
 	}	
@@ -169,6 +171,8 @@ bianfang_huangpo_academy_of_war = {
 			OR = {
 				culture_group = yan
 				culture = serene_harimari
+				culture = honourbound_harimari #love
+				culture_group = wuhyun #love
 			}
 		}
 	}	
@@ -300,6 +304,8 @@ guhe_the_cheng_of_guhe = {
 				culture_group = yan
 				culture = serene_harimari
 				culture = goldscale_kobold
+				culture = honourbound_harimari #love
+				culture_group = wuhyun #love
 			}
 		}
 	}	
@@ -310,6 +316,8 @@ guhe_the_cheng_of_guhe = {
 				culture_group = yan
 				culture = serene_harimari
 				culture = goldscale_kobold
+				culture = honourbound_harimari #love
+				culture_group = wuhyun #love
 			}
 		}
 	}	
@@ -489,14 +497,16 @@ bianfang_vermillion_gate = {
 			prestige = 0.25
 		}
 		on_upgraded = {
-			define_advisor = {
-				type = fortification_expert
-				name = "Mozi of Lamwun"
-				skill = 3
-				culture = forest_yan
-				religion = righteous_path
-				location = 4951
-				discount = yes
+			owner = {
+				define_advisor = {
+					type = fortification_expert
+					name = "Mozi of Lamwun"
+					skill = 3
+					culture = forest_yan
+					religion = righteous_path
+					location = 4951
+					discount = yes
+				}
 			}
 		}
 	}

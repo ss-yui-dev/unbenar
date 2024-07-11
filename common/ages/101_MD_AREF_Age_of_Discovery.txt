@@ -23,7 +23,7 @@ age_of_discovery = {
 		}
 		obj_md_city_tier_1_serpentspine = {
 			allow = { st_md_capital_in_serpentspine = yes }
-			custom_trigger_tooltip = { tooltip = obj_30_development_city_tooltip st_md_has_30_city = yes }
+			custom_trigger_tooltip = { tooltip = obj_60_development_city_tooltip st_md_has_60_city = yes }
 		}
 		obj_md_city_tier_1_forbidden_lands = {
 			allow = { st_md_capital_in_forbidden_lands = yes }
@@ -573,6 +573,105 @@ age_of_discovery = {
 			}
 			effect = {
 				se_md_add_or_upgrade_bonus = { bonusName = trade flagName = trade_efficiency abilityName = ab_md_1400s_savvy_merchants showTooltip = true }
+			}
+			ai_will_do = {
+				factor = 10
+			}
+		}
+		ab_dwarovar_empire_breakers = {
+			allow = {
+				dwarovar_orc_culture_primary = yes
+			}
+			effect = {
+				on_age_ability_taken = { age = age_of_discovery }
+			}
+			modifier = {
+				siege_ability = 0.2
+				available_province_loot = 0.25
+				num_of_age_rewards = 1
+			}
+			ai_will_do = {
+				factor = 100
+			}
+		}
+		ab_monstrous_rule = {
+			allow = {
+				custom_trigger_tooltip = {
+					tooltip = age_ability_monstrous_rule_tt
+					OR ={
+						culture = exodus_goblin
+						culture = firanyan_harpy
+						culture = siadunan_harpy
+						culture = naleni_harpy
+						culture = swamp_troll
+						culture_group = gnollish
+						culture_group = centaur
+					}
+				}
+				development_in_provinces = {
+					OR = {
+						culture_is_human = yes
+						culture_is_elven = yes
+					}
+					value = 100
+					country_or_subject_holds = ROOT
+				}
+			}
+			effect = {
+				custom_tooltip = age_ability_monstrous_rule_flag_tt
+				on_age_ability_taken = { age = age_of_discovery }
+			}
+			modifier = {
+				num_of_age_rewards = 1
+			}
+			ai_will_do = {
+				factor = 10
+			}
+		}
+
+		ab_ringlet_trade = {
+			allow = {
+				OR ={
+					culture_group = mengi
+					culture_group = baashidi
+					culture = fieldstalker_gnoll
+					culture_group = south_raheni
+					culture_group = harimari
+					culture_group = bom
+					culture_group = kai
+					culture_group = yanglam
+					culture_group = kelino
+					culture = naleni_harpy
+				}
+				slaves = 1
+			}
+			effect = {
+				on_age_ability_taken = { age = age_of_discovery }
+			}
+			modifier = {
+				trade_efficiency = 0.2
+				trade_range_modifier = 0.5
+				num_of_age_rewards = 1
+			}
+			ai_will_do = {
+				factor = 10
+			}
+		}
+		
+		ab_nascent_civilization = {
+			allow = {
+				OR ={
+					culture = fathide_ogre
+					culture_group = triunic
+					culture_group = centaur
+				}
+			}
+			effect = {
+				on_age_ability_taken = { age = age_of_discovery }
+			}
+			modifier = {
+				reform_progress_growth = 0.25
+				num_of_age_rewards = 1
 			}
 			ai_will_do = {
 				factor = 10

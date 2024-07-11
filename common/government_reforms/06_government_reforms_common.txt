@@ -2537,7 +2537,7 @@ anbennar_T5_generic_fodder = {
 	trigger = {
 	}
 	modifiers = {
-		cav_to_inf_ratio = 0.1
+		cav_to_inf_ratio = 0.25 #love
 		cavalry_cost = -0.1
 	}
 	

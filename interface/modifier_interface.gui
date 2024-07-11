@@ -83,7 +83,7 @@ guiTypes = {
 
 		instantTextBoxType = {
 			name = "modifier_name"
-			position = { x = 6 y = 3 }	#anbennar
+			position = { x = 75 y = 3 }	#love
 			font = "vic_22"
 			borderSize = {x = 0 y = 0}
 			text = "Naval Supremacy in the West"	

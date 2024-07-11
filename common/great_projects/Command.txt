@@ -126,7 +126,9 @@ lion_camp = {
   		      drill_decay_modifier = -0.075
 		}
 		on_upgraded = {
+			owner = {
 				change_innovativeness = 1
+			}
 		}
 	}
 }
@@ -249,11 +251,11 @@ boar_camp = {
 		}
 		country_modifiers = {
 	      	infantry_power = 0.075
-		      cavalry_power = 0.075
-		      boar_command_loyalty_modifier = 0.1
-		      leader_shock = 1
-		      infantry_shock = 0.15
-		      land_maintenance_modifier = -0.075
+		    cavalry_power = 0.075
+		    boar_command_loyalty_modifier = 0.1
+		    leader_land_shock = 1
+		    infantry_shock = 0.15
+		    land_maintenance_modifier = -0.075
 		}
 		on_upgraded = {
 		}
@@ -461,7 +463,7 @@ elephant_camp = {
 		}
 		province_modifiers = {
 			trade_goods_size = 0.5
-		      build_cost = -0.05
+			local_build_cost = -0.05
 			local_development_cost = -0.05
 		}
 		area_modifier = {
@@ -486,7 +488,7 @@ elephant_camp = {
 		}
 		province_modifiers = {
 			trade_goods_size = 1
-		      build_cost = -0.1
+		    local_build_cost = -0.1
 			local_development_cost = -0.1
 		}
 		area_modifier = {
@@ -511,8 +513,8 @@ elephant_camp = {
 		}
 		province_modifiers = {
 			trade_goods_size = 2
-		      build_time = -0.05
-	      	build_cost = -0.15
+		    local_build_time = -0.05
+	      	local_build_cost = -0.15
 			local_development_cost = -0.2
 		}
 		area_modifier = {

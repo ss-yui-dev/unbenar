@@ -92,6 +92,7 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_develop_local_area"
 		texturefile = "gfx//interface//custom_gui//develop_local_area.dds"
+		legacy_lazy_load = no
 	}
 	#love
 	spriteType = {
