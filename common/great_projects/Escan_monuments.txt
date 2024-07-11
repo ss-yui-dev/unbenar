@@ -193,7 +193,7 @@ esthili_academy_of_magic = {
 		}
 		province_modifiers = {
 			local_development_cost = -0.05
-			hostile_attrition = 1.5
+			local_hostile_attrition = 1.5
 		}
 		area_modifier = {
 		}
@@ -218,7 +218,7 @@ esthili_academy_of_magic = {
 		}
 		province_modifiers = {
 			local_development_cost = -0.1
-			hostile_attrition = 2.5
+			local_hostile_attrition = 2.5
 		}
 		area_modifier = {
 
@@ -257,7 +257,7 @@ esthili_academy_of_magic = {
 		}
 		province_modifiers = {
 			local_development_cost = -0.15
-			hostile_attrition = 5
+			local_hostile_attrition = 5
 		}
 		area_modifier = {
 		}

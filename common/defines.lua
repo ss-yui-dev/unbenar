@@ -775,7 +775,7 @@ NCountry = {
 	PS_GARRISON_SORTIES = 10,
 	PS_REDUCE_WAREXHAUSTION = 75,
 	PS_FACTION_BOOST = 10,
-	PS_RAISE_TARIFFS = 10,	-- love
+	PS_RAISE_TARIFFS = 100,	-- love
 	PS_LOWER_TARIFFS = 5,	-- love
 	PS_RAISE_WAR_TAXES = 3,	-- love
 	PS_WAR_TAXES_LIMIT_MIN = 0,	-- Minimum value for the cost of war taxes
@@ -894,9 +894,9 @@ NCountry = {
 	REBEL_ARTILLERY_INCREASE_LEVEL_2_TECH = 16,		-- Tech level at which REBEL_ARTILLERY_INCREASE_LEVEL_2_SIZE is applied
 	REBEL_ARTILLERY_INCREASE_LEVEL_2_SIZE = 0.15,	-- The increase in artillery as fraction of total troops given to rebels (does not stack with level 1)
 	MIGRATION_DEPLETION_TIME = 7300,				-- How many days a province needs to recover from migrants
-	BASE_TARIFF = 0.10,								-- Basic part of colonies income that goes to tariffs
+	BASE_TARIFF = 0.05,								-- Basic part of colonies income that goes to tariffs
 	TARIFF_INCREASE_STEP = 0.05,					-- Increase on each boost
-	TARIFF_LIBERTY_INCREASE = 1.0,					-- Liberty increase for each % tariffs
+	TARIFF_LIBERTY_INCREASE = 3.0,					-- Liberty increase for each % tariffs
 	TARIFF_DECREASE_STEP = -0.05,					-- Decrease on each boost
 	HIGH_LIBERTY_DESIRE = 50, 						-- Limit for when a subject starts getting rebellious from liberty desire (also used for alert)
 	MONTHLY_LIBERTY_DECREASE = 0.1,					-- How much temporary liberty desire changes each month (towards 0 point)
@@ -1321,8 +1321,8 @@ NMilitary = {
 
 	-- Breakthrough: An experimental feature that when you defeat an enemy regiment with artillery behind it,
 	-- there's a chance that you pull their artillery into the front row.
-	INFANTRY_BREAKTHROUGH = 0.0,					-- Between 0 and 1
-	CAVALRY_BREAKTHROUGH = 0.0,						-- Between 0 and 1
+	INFANTRY_BREAKTHROUGH = 0.025,					-- Between 0 and 1
+	CAVALRY_BREAKTHROUGH = 0.05,						-- Between 0 and 1
 
 	INFANTRY_SPEED = 0.7, 							-- _MDEF_INFANTRY_SPEED = 10,
 	CAVALRY_SPEED = 0.8, 							-- love
@@ -1459,8 +1459,8 @@ NMilitary = {
 	REVOLUTIONARY_GUARD_BASE_COST_MODIFIER = 2.0,	-- Revolutionary guards base cost is double as expensive
 	CAROLEAN_BASE_COST_MODIFIER = 1.0,
 	HUSSARS_BASE_COST_MODIFIER = 1.0,
-	HUSSARS_MANPOWER_COST_MODIFIER = 1.0,
-	HUSSARS_STARTING_STRENGTH = 1.0,
+	HUSSARS_MANPOWER_COST_MODIFIER = 0.0,	--love
+	HUSSARS_STARTING_STRENGTH = 0.0,		--love
 	HUSSARS_STARTING_MORALE = 0.1, 
 
 	TERCIO_USES_CONSTRUCTION = 1,

@@ -23,6 +23,8 @@ azkare_citadel_of_the_dawn = {
 				culture_group = kai
 				culture = sunrise_elf
 				culture = sun_elf
+				culture = honourbound_harimari #love
+				culture_group = wuhyun #love
 			}
 		}
 	}	
@@ -33,6 +35,8 @@ azkare_citadel_of_the_dawn = {
 				culture_group = kai
 				culture = sunrise_elf
 				culture = sun_elf
+				culture = honourbound_harimari #love
+				culture_group = wuhyun #love
 			}
 		}
 	}	
@@ -137,11 +141,19 @@ kudet_kai_danon_dungcam_mercenary_guild = {
 	}
 	can_use_modifiers_trigger = {
 		province_is_or_accepts_culture = yes
-		culture_group = kai
+		OR = {
+			culture_group = kai
+			culture = honourbound_harimari #love
+			culture_group = wuhyun #love
+		}
 	}	
 	can_upgrade_trigger = {
 		province_is_or_accepts_culture = yes
-		culture_group = kai
+		OR = {
+			culture_group = kai
+			culture = honourbound_harimari #love
+			culture_group = wuhyun #love
+		}
 	}	
 	keep_trigger = {
 	}
@@ -342,14 +354,16 @@ chien_binhrung_nha_nuhoanha_temple = {
 			diplomatic_reputation = 1.5
 		}
 		on_upgraded = {
-			define_advisor = {
-			type = theologian
-			name = "Sri Suriyothai Han"
-			skill = 3
-			culture = binhrung
-			religion = righteous_path
-			location = 4955
-			discount = yes
+			owner = {
+				define_advisor = {
+					type = theologian
+					name = "Sri Suriyothai Han"
+					skill = 3
+					culture = binhrung
+					religion = righteous_path
+					location = 4955
+					discount = yes
+				}
 			}
 		}
 	}

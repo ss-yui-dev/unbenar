@@ -283,7 +283,34 @@ guiTypes = {
 			horizontalBorder= ""
 			verticalBorder= ""
 			fullScreen = no
-			
+			#love
+			guiButtonType = {
+				name = "dev_burn"
+				position = { x = 40 y = 28 }
+				Orientation = "UPPER_LEFT"
+				spriteType = "GFX_modifier_info"
+				scale = 0.7
+				scripted = yes
+			}
+
+			guiButtonType = {
+				name = "dev_growth"
+				position = { x = 64 y = 28 }
+				Orientation = "UPPER_LEFT"
+				spriteType = "GFX_modifier_info"
+				scale = 0.7
+				scripted = yes
+			}
+
+			guiButtonType = {
+				name = "dev_clicks"
+				position = { x = 88 y = 28 }
+				Orientation = "UPPER_LEFT"
+				spriteType = "GFX_modifier_info"
+				scale = 0.7
+				scripted = yes
+			}
+			#love
 			instantTextBoxType = {
 				name = "decisions_label"
 				position = { x = 159 y = 28 }

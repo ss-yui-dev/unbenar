@@ -597,7 +597,7 @@ The_Sky_Hold = {
 			factor = 3000
 		}
 		province_modifiers = {	
-			development_cost = -0.10
+			local_development_cost = -0.10
 			local_unrest = 2
 		}
 		area_modifier = {

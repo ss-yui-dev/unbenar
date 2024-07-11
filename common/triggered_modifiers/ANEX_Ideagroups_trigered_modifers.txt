@@ -1418,7 +1418,7 @@ fire_5_1 = {
 		has_idea = fire5
 		current_age = age_of_reformation
 	}
-	defensiveness = 0.2
+	defensiveness = 0.1
 }
 
 fire_5_2 = {
@@ -1430,7 +1430,7 @@ fire_5_2 = {
 		has_idea = fire5
 		current_age = age_of_absolutism
 	}
-	defensiveness = 0.4
+	defensiveness = 0.2
 }
 
 fire_5_3 = {
@@ -1442,7 +1442,7 @@ fire_5_3 = {
 		has_idea = fire5
 		current_age = age_of_revolutions
 	}
-	defensiveness = 0.6
+	defensiveness = 0.3
 }
 
 fire_7_1 = {

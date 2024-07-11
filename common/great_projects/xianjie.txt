@@ -149,6 +149,8 @@ jilin_szienlou = {
 				culture_group = middle_raheni
 				culture = serene_harimari
 				culture = pezarangi_harpy
+				culture = honourbound_harimari #love
+				culture_group = wuhyun #love
 			}
 		}
 	}	
@@ -160,6 +162,8 @@ jilin_szienlou = {
 				culture_group = middle_raheni
 				culture = serene_harimari
 				culture = pezarangi_harpy
+				culture = honourbound_harimari #love
+				culture_group = wuhyun #love
 			}
 		}
 	}	
@@ -268,6 +272,8 @@ gundhaghidur_library_of_insight = {
 				culture_group = wuhyun
 				culture = serene_harimari
 				culture = pezarangi_harpy
+				culture = honourbound_harimari #love
+				culture_group = wuhyun #love
 			}
 		}
 	}	
@@ -280,6 +286,8 @@ gundhaghidur_library_of_insight = {
 				culture_group = wuhyun
 				culture = serene_harimari
 				culture = pezarangi_harpy
+				culture = honourbound_harimari #love
+				culture_group = wuhyun #love
 			}
 		}
 	}	
@@ -341,17 +349,17 @@ gundhaghidur_library_of_insight = {
 			advisor_pool = 2
 		}
 		on_upgraded = {
-			define_advisor = {
-				type = court_mage
-				name = "Dattaji Sinda"
-				skill = 3
-				culture = rasarhid
-				religion = righteous_path
-				location = 4609
-				discount = yes
-			}
 			owner = { 
 				change_innovativeness = 2
+				define_advisor = {
+					type = court_mage
+					name = "Dattaji Sinda"
+					skill = 3
+					culture = rasarhid
+					religion = righteous_path
+					location = 4609
+					discount = yes
+				}
 			}
 		}
 	}
@@ -559,6 +567,8 @@ lapnam_amrik_khram_ptaa_national_academy = {
 			OR = {
 				culture_group = bom
 				culture = serene_harimari
+				culture = honourbound_harimari #love
+				culture_group = wuhyun #love
 			}
 		}
 	}	
@@ -568,6 +578,8 @@ lapnam_amrik_khram_ptaa_national_academy = {
 			OR = {
 				culture_group = bom
 				culture = serene_harimari
+				culture = honourbound_harimari #love
+				culture_group = wuhyun #love
 			}
 		}
 	}	
@@ -630,17 +642,17 @@ lapnam_amrik_khram_ptaa_national_academy = {
 			dip_tech_cost_modifier = -0.05
 		}
 		on_upgraded = {
-			define_advisor = {
-				type = natural_scientist
-				name = "Damkhat Khan"
-				skill = 3
-				culture = teplin
-				religion = righteous_path
-				location = 4947
-				discount = yes
-			}
 			owner = { 
 				change_innovativeness = 2
+				define_advisor = {
+					type = natural_scientist
+					name = "Damkhat Khan"
+					skill = 3
+					culture = teplin
+					religion = righteous_path
+					location = 4947
+					discount = yes
+				}
 			}
 		}
 	}

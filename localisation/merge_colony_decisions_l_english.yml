@@ -1,4 +1,4 @@
 ﻿l_english: 
  merge_colony_title:"Consolidate Colonial Governments"
- merge_colony_desc:"Destroy this Colonial Government."
- merge_colony_tooltip:"Destroy this Colonial Government."
+ merge_colony_desc:"Destroy this Colonial Government.\nCost: §R100 adm power§!"
+ merge_colony_tooltip:"Destroy this Colonial Government.\nCost: §R100 adm power§!"

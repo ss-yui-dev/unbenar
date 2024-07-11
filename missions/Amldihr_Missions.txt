@@ -1164,7 +1164,7 @@ amldihr_3 = {
 					has_dwarven_hold_8 = yes
 				}
 				in_golden_age = yes
-				current_income_balance = 200
+				current_income_balance = 2000
 				has_institution = enlightenment
 			}
 			AND = {

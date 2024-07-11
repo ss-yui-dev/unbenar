@@ -212,6 +212,7 @@
  obj_30_development_city:0 "A Large City"
  obj_30_development_city_desc:0 "Own and control a core province with at least §Y30§! development."
  obj_30_development_city_tooltip:0 "Cored Province with §Y30§! development\n"
+ obj_60_development_city_tooltip:0 "Cored Province with §Y60§! development\n"
  obj_renaissance:0 "Embrace Renaissance"
  obj_renaissance_desc:0 "Embrace the Renaissance institution, and keep it in every province you own."
  obj_two_unions:0 "Hold Three Thrones"

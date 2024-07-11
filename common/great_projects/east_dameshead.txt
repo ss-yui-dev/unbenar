@@ -69,8 +69,10 @@ anbenncost_imperial_palace = {
 			devotion = 0.25
 		}
 		on_upgraded = {
-			add_imperial_influence = 3
-			add_absolutism = 3
+			owner = {
+				add_imperial_influence = 3
+				add_absolutism = 3
+			}
 		}
 	}
 	tier_2 = {
@@ -95,8 +97,10 @@ anbenncost_imperial_palace = {
 			max_absolutism = 5
 		}
 		on_upgraded = {
-			add_imperial_influence = 5
-			add_absolutism = 5
+			owner = {
+				add_imperial_influence = 5
+				add_absolutism = 5
+			}
 		}
 	}
 	tier_3 = {
@@ -122,8 +126,10 @@ anbenncost_imperial_palace = {
 			administrative_efficiency = 0.025
 		}
 		on_upgraded = {
-			add_imperial_influence = 10
-			add_absolutism = 10
+			owner = {
+				add_imperial_influence = 10
+				add_absolutism = 10
+			}
 		}
 	}
 }

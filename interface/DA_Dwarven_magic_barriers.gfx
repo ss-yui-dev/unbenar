@@ -191,4 +191,8 @@ spriteTypes = {
 		name = "GFX_great_project_Dwarven_magic_Barrier48"	
 		texturefile = "gfx//interface//great_projects//great_project_Dwarven_magic_Barrier48.dds"
 	}
+	spriteType = {
+		name = "GFX_great_project_Dwarven_magic_Barrier49"	
+		texturefile = "gfx//interface//great_projects//great_project_Dwarven_magic_Barrier48.dds"
+	}
 }

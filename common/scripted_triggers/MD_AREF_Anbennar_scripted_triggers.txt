@@ -5,47 +5,104 @@
 # Locations ---------------------------------------------------------
 
 st_md_capital_in_cannor = {
-    capital_scope = {
-        continent = europe
+    AND = {
+        capital_scope = {
+            continent = europe
+        }
+		all_owned_province = {
+			NOT = {
+				has_terrain = dwarven_hold
+                has_terrain = dwarven_hold_surface
+			}
+		}
     }
 }
 st_md_capital_in_haless = {
-    capital_scope = {
-        continent = asia
-        NOT = {
-            superregion = forbidden_lands_superregion
+    AND = {
+        capital_scope = {
+            continent = asia
+            NOT = {
+                superregion = forbidden_lands_superregion
+            }
         }
+		all_owned_province = {
+			NOT = {
+				has_terrain = dwarven_hold
+                has_terrain = dwarven_hold_surface
+			}
+		}
     }
 }
 st_md_capital_in_serpentspine = {
-    capital_scope = {
-        continent = serpentspine
+    OR = {
+        capital_scope = {
+            continent = serpentspine
+        }
+        num_of_owned_provinces_with = {
+            value = 1
+            OR = {
+                has_terrain = dwarven_hold
+                has_terrain = dwarven_hold_surface
+            }
+        }
     }
 }
 st_md_capital_in_forbidden_lands = {
-    capital_scope = {
-        superregion = forbidden_lands_superregion
+    AND = {
+        capital_scope = {
+            superregion = forbidden_lands_superregion
+        }
+		all_owned_province = {
+			NOT = {
+				has_terrain = dwarven_hold
+                has_terrain = dwarven_hold_surface
+			}
+		}
     }
 }
 st_md_capital_in_bulwar = {
-    capital_scope = {
-        superregion = bulwar_superregion
+    AND = {
+        capital_scope = {
+            superregion = bulwar_superregion
+        }
+		all_owned_province = {
+			NOT = {
+				has_terrain = dwarven_hold
+                has_terrain = dwarven_hold_surface
+			}
+		}
     }
 }
 st_md_capital_in_sarhal = {
-    capital_scope = {
-        continent = africa
-        NOT = {
-            superregion = bulwar_superregion
+    AND = {
+        capital_scope = {
+            continent = africa
+            NOT = {
+                superregion = bulwar_superregion
+            }
         }
+		all_owned_province = {
+			NOT = {
+				has_terrain = dwarven_hold
+                has_terrain = dwarven_hold_surface
+			}
+		}
     }
 }
 st_md_capital_in_aelantir = {
-    capital_scope = {
-        OR = {
-            continent = north_america
-            continent = south_america
+    AND = {
+        capital_scope = {
+            OR = {
+                continent = north_america
+                continent = south_america
+            }
         }
+		all_owned_province = {
+			NOT = {
+				has_terrain = dwarven_hold
+                has_terrain = dwarven_hold_surface
+			}
+		}
     }
 }
 st_md_religious_estates_influence_anbennar = {
@@ -75,11 +132,11 @@ st_md_has_claimed_dwarven_road = {
 
 st_md_has_conquered_serpentspine = {
     num_of_owned_provinces_with = {
-        value = 30
+        value = 120
         has_terrain = dwarven_road
     }
     num_of_owned_provinces_with = {
-        value = 10
+        value = 30
         OR = {
             has_terrain = dwarven_hold
             has_terrain = dwarven_hold_surface

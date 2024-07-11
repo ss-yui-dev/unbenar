@@ -92,6 +92,7 @@ amldihr_dutch_republic_reform = {
 		enables_aristocratic_idea_group = yes
 		enables_plutocratic_idea_group = no
 		is_merchant_republic = no
+		anb_special_elections = yes
 	}
 }
 

@@ -363,5 +363,95 @@ age_of_revolutions = {
 				se_md_add_or_upgrade_bonus = { bonusName = science flagName = institution_spread abilityName = ab_md_1700s_scientific_academies showTooltip = true }
 			}
 		}
+		ab_surakesi_ersudarim = {
+			allow = {
+				culture_group = bulwari
+				num_of_owned_provinces_with = {
+					has_building = university 
+					value = 4 
+				}
+			}
+			effect = {
+				on_age_ability_taken = { age = age_of_revolutions }
+			}
+			modifier = {
+				technology_cost = -0.15
+				free_adm_policy = 1
+				num_of_age_rewards = 1
+			}
+			ai_will_do = {
+				factor = 10
+			}
+		}
+		
+		ab_wide_plain_governance = {
+			allow = {
+				OR ={
+					culture = fathide_ogre
+					culture_group = triunic
+					culture_group = centaur
+				}
+			}
+			effect = {
+				on_age_ability_taken = { age = age_of_revolutions }
+			}
+			modifier = {
+				min_autonomy_in_territories = -0.15
+				num_of_age_rewards = 1
+			}
+			ai_will_do = {
+				factor = 10
+			}
+		}
+
+
+		ab_camiran_consolidation = {
+			allow = {
+				OR ={
+					is_part_of_hre = yes
+					tag = Z01
+				}
+			}
+			effect = {
+				on_age_ability_taken = { age = age_of_revolutions }
+			}
+			modifier = {
+				imperial_authority = 0.15
+				yearly_corruption = -0.15
+				administrative_efficiency = 0.05
+				num_of_age_rewards = 1
+			}
+			ai_will_do = {
+				factor = 10
+			}
+		}
+
+		ab_aelantir_relics = {
+			allow = {
+				NOT = {
+					is_colonial_nation = yes 
+				}
+				capital_scope = {
+					OR = {
+						continent = north_america
+						continent = south_america
+					}
+				}
+				precursor_relics = 1
+			}
+			modifier = {
+				num_of_age_rewards = 1
+			}
+			effect = {
+				custom_tooltip = aelantir_relics_tt
+				on_age_ability_taken = { age = age_of_revolutions }
+				hidden_effect = {
+					update_artifice_points = yes
+				}
+			}
+			ai_will_do = {
+				factor = 100
+			}
+		}
 	}
 }

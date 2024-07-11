@@ -22,6 +22,8 @@ lanjinhui_lanjin_hall = {
 			OR = {
 				culture_group = yan
 				culture = serene_harimari
+				culture = honourbound_harimari #love
+				culture_group = wuhyun #love
 			}
 		}
 	}	
@@ -31,6 +33,8 @@ lanjinhui_lanjin_hall = {
 			OR = {
 				culture_group = yan
 				culture = serene_harimari
+				culture = honourbound_harimari #love
+				culture_group = wuhyun #love
 			}
 		}
 	}	
@@ -92,14 +96,16 @@ lanjinhui_lanjin_hall = {
 			technology_cost = -0.025
 		}
 		on_upgraded = {
-			define_advisor = {
-				type = philosopher
-				name = "Zhankai Xiao"
-				skill = 3
-				culture = river_yan
-				religion = righteous_path
-				location = 4930
-				discount = yes
+			owner = {
+				define_advisor = {
+					type = philosopher
+					name = "Zhankai Xiao"
+					skill = 3
+					culture = river_yan
+					religion = righteous_path
+					location = 4930
+					discount = yes
+				}
 			}
 			add_base_tax = 1
 			add_base_production = 1
@@ -154,6 +160,8 @@ jiantsiang_temple_of_the_ascendant_soul = {
 			OR = {
 				culture_group = yan
 				culture = serene_harimari
+				culture = honourbound_harimari #love
+				culture_group = wuhyun #love
 			}
 		}
 	}	
@@ -163,6 +171,8 @@ jiantsiang_temple_of_the_ascendant_soul = {
 			OR = {
 				culture_group = yan
 				culture = serene_harimari
+				culture = honourbound_harimari #love
+				culture_group = wuhyun #love
 			}
 		}
 	}	
@@ -222,14 +232,16 @@ jiantsiang_temple_of_the_ascendant_soul = {
 			shock_damage_received = -0.025
 		}
 		on_upgraded = {
-			define_advisor = {
-				type = army_reformer
-				name = "Kubaka of the Ascendant Flame"
-				skill = 3
-				culture = serene_harimari
-				religion = high_philosophy
-				location = 4925
-				discount = yes
+			owner = {
+				define_advisor = {
+					type = army_reformer
+					name = "Kubaka of the Ascendant Flame"
+					skill = 3
+					culture = serene_harimari
+					religion = high_philosophy
+					location = 4925
+					discount = yes
+				}
 			}
 		}
 	}

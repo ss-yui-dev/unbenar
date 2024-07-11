@@ -297,6 +297,16 @@ st_md_has_30_city = {
     }
 }
 
+st_md_has_60_city = {
+    any_owned_province = {
+        exclude_from_progress = {
+            is_core = ROOT
+            controlled_by = owner
+        }
+        development_discounting_tribal = 60
+    }
+}
+
 st_md_build_fleet = {
     num_of_light_ship = 10
     OR = {

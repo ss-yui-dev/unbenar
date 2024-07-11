@@ -11537,8 +11537,14 @@ on_province_owner_change = {
 #######################################################################
 	if = {
 		limit = {
+			FROM = {
+				every_enemy_country = {
+					has_any_disaster = no
+				}
+			}
 			owner = {
-				ai = no
+				has_any_disaster = no
+				# ai = no
 			}
 		}
 		remove_buildings = {

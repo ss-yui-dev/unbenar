@@ -11743,7 +11743,7 @@ fortress_barracks = {
 		owner = { has_idea = fortress_4 }
 	}
 	modifier = {
-		local_defensiveness = 0.25
+		local_defensiveness = 0.30
 		local_manpower = 0.25
 		allowed_num_of_buildings = 1
 		local_hostile_attrition = 1

@@ -403,6 +403,7 @@
 
  # Age of Discovery Objectives Fulfilled
  tm_md_30_development_city: "Have a Large City"
+ tm_md_60_development_city: "Have a Large City"
  tm_md_50_development: "Develop your Nation"
  tm_md_250_development: "Develop your Nation"
  tm_md_armed_with_cannons: "Armed with Cannons"

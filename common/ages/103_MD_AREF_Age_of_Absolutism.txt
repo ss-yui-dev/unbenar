@@ -297,6 +297,121 @@ age_of_absolutism = {
 				se_md_refund_splendor = { flagName = manpower_recovery_speed flagCategory = improved_manpower }
 			}
 		}
+		ab_direct_rule_in_escann = {
+			allow = {
+				if = {
+					limit = {
+						tag = B34
+					}
+					OR = {
+						OR = {
+							capital_scope = { region = west_castanor_region }
+							capital_scope = { region = south_castanor_region }
+							capital_scope = { region = inner_castanor_region }
+						}
+						AND = {
+							tag = B34
+							capital = 350
+						}
+					}
+				}
+				else = {
+					OR = {
+						capital_scope = { region = west_castanor_region }
+						capital_scope = { region = south_castanor_region }
+						capital_scope = { region = inner_castanor_region }
+					}
+				}
+			}
+			effect = {
+				on_age_ability_taken = { age = age_of_absolutism }
+			}
+			modifier = {
+				yearly_absolutism = 2
+				max_absolutism = 10
+				num_of_age_rewards = 1
+			}
+			ai_will_do = {
+				factor = 1000
+			}
+		}
+		ab_dwarven_reclamation = {
+			allow = {
+				culture_group = dwarven
+				capital_scope = { continent = serpentspine }
+			}
+			effect = {
+				custom_tooltip = ab_dwarven_reclamation_tooltip
+				on_age_ability_taken = { age = age_of_absolutism }
+			}
+			modifier = {
+				num_of_age_rewards = 1
+			}
+			ai_will_do = {
+				factor = 1000
+			}
+		}
+
+		ab_sun_cult_resurgence = {
+			allow = {
+				OR = {
+					religion = bulwari_sun_cult
+					religion = old_bulwari_sun_cult
+					religion = the_jadd
+					AND = {
+						OR = {
+							culture = siadunan_harpy
+							culture = firanyan_harpy
+						}
+						OR = {
+							secondary_religion = bulwari_sun_cult
+							secondary_religion = old_bulwari_sun_cult
+							secondary_religion = the_jadd
+						}
+					}
+				}
+				government_rank = 3
+			}
+			effect = {
+				custom_tooltip = age_ability_sun_cult_resurgence_flag_tt
+				on_age_ability_taken = { age = age_of_absolutism }
+			}
+			modifier = {
+				num_of_age_rewards = 1
+			}
+			ai_will_do = {
+				factor = 10
+			}
+		}
+
+		ab_splintered_lands = {
+			allow = {
+				OR ={
+					tag = S79 #Umoji Baashi
+					tag = L59 #Bwa Tanizu
+					tag = S81 #333rd
+					tag = L87 #Adzalan
+					tag = L65 #Melakmengi
+					tag = F64 #Prakheta
+					tag = L31 #Irsukumbha
+					tag = L23 #Fangaula
+					tag = F66 #Konolkhatep
+					tag = S72 #Vyoronsi
+				}
+			}
+			modifier = {
+				years_of_nationalism = -5
+				mil_advisor_cost = -0.5
+				num_of_age_rewards = 1
+			}
+			effect = {
+				custom_tooltip = ab_splintered_lands_tooltip
+				on_age_ability_taken = { age = age_of_absolutism }
+			}
+			ai_will_do = {
+				factor = 10
+			}
+		}
 	}
 }
 

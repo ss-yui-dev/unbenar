@@ -1,6 +1,6 @@
 
 on_startup = {
-	country_event = { id = guisubmod.1 days = 2 }
+	# country_event = { id = guisubmod.1 days = 2 }
 # 	country_event = { id = guisubmod.2 days = 2 }
 }
 

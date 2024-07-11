@@ -309,5 +309,117 @@ age_of_reformation = {
 				se_md_add_or_upgrade_bonus = { bonusName = colonization flagName = colonist abilityName = ab_md_1600s_colonial_charter showTooltip = true }
 			}
 		}
+		ab_dwarovar_hold_redecorating = {
+			allow = {
+				OR = {
+					culture_group = goblin
+					culture_group = kobold
+				}
+				capital_scope = { continent = serpentspine }
+			}
+			effect = {
+				on_age_ability_taken = { age = age_of_reformation }
+			}
+			modifier = {
+				build_cost = -0.2
+				num_of_age_rewards = 1
+			}
+			ai_will_do = {
+				factor = 100
+			}
+		}
+
+		ab_hemantian_reforms = {
+			allow = {
+				capital_scope = { superregion = rahen_superregion }
+				OR = {
+					culture_group = upper_raheni
+					culture_group = south_raheni
+					culture_group = middle_raheni
+					culture_group = harimari
+				}
+			}
+			effect = {
+				on_age_ability_taken = { age = age_of_reformation }
+			}
+			modifier = {
+				reform_progress_growth = 0.20
+				global_prosperity_growth = 0.1
+				num_of_age_rewards = 1
+			}
+			ai_will_do = {
+				factor = 10
+			}
+		}
+
+		# ab_aelantir_rush = {
+		# 	allow = {
+		# 		num_of_colonists = 1
+		# 		OR = {
+		# 			north_america = {
+		# 				country_or_non_sovereign_subject_holds = ROOT
+		# 			}
+		# 			south_america = {
+		# 				country_or_non_sovereign_subject_holds = ROOT
+		# 			}
+		# 		}
+		# 	}
+		# 	effect = {
+		# 		on_age_ability_taken = { age = age_of_reformation }
+		# 	}
+		# 	modifier = {
+		# 		colony_development_boost = 1
+		# 		num_of_age_rewards = 1
+		# 	}
+		# 	ai_will_do = {
+		# 		factor = 100
+		# 	}
+		# }
+
+		ab_ruinborn_empire = {
+			allow = {
+				OR = {
+					# south aelantir
+					tag = H22 #Kheios
+					tag = J84 #Taychendi Empire
+					tag = U27 #Theinos
+					tag = G20 #Araya
+					tag = H00 #Saerraeg
+					tag = G52 #Ameion
+					tag = J93 #Hindeiu Yulas
+					AND = { #Eltikan
+						tag = G60
+						government_rank = 3
+					}
+
+					# north aelantir
+					tag = H27 #Ynnic Empire
+					tag = U69 #Sarda
+					tag = U70 #Dolindha
+					tag = H21 #Eordand
+					tag = U28 #Kooyahse
+					tag = U22 #Veykodirzag
+					# tag = Cataboek
+					tag = H24 #Dragon Dominion
+					AND = { #Haraf
+						tag = G43
+						NOT = {
+							government = native
+						}
+					}
+				}
+			}
+			modifier = {
+				centralize_state_cost = -0.5
+				num_of_age_rewards = 1
+			}
+			effect = {
+				custom_tooltip = ab_dev_from_centralising_tt
+				on_age_ability_taken = { age = age_of_reformation }
+			}
+			ai_will_do = {
+				factor = 100
+			}
+		}
 	}
 }

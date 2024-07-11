@@ -4295,7 +4295,7 @@ defensive_ideas = {
 		}
 	}
 	bonus = {
-		hostile_attrition = 2.5
+		hostile_attrition = 2
 	}
 	battlefield_commisions = {
 		army_tradition_decay = -0.01
@@ -5261,7 +5261,7 @@ siege_idea = {
 		artillery_level_modifier = 1
 		# artillery_levels_available_vs_fort = 1 per age
 		assault_fort_ability = 0.25
-		assault_fort_cost_modifier = -0.25
+		assault_fort_cost_modifier = -0.5
 	}
 	siege_idea_7 = {
 		siege_ability = 0.2
@@ -5331,7 +5331,7 @@ fortress0 = {
 		fort_maintenance_modifier = -0.2
 	}
 	fortress_6 = {
-		hostile_attrition = 2.5
+		hostile_attrition = 2
 		# hostile_attrition = 2 per age
 	}
 	fortress_7 = {

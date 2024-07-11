@@ -1,0 +1,47 @@
+custom_button = {
+	name = dev_burn
+	tooltip = "dev_lose_decision_tooltip"
+	potential = {
+		ai = no
+	}
+	effect = {
+		custom_tooltip = dev_sum_clicks_decision_acitve_tooltip
+		hidden_effect = {
+			country_event = {
+				id = ANEX_initalization.5
+			}
+		}
+	}
+}
+
+custom_button = {
+	name = dev_growth
+	tooltip = "dev_dev_passive_decision_tooltip"
+	potential = {
+		ai = no
+	}
+	effect = {
+		custom_tooltip = dev_sum_clicks_decision_acitve_tooltip
+		hidden_effect = {
+			country_event = {
+				id = ANEX_initalization.4
+			}
+		}
+	}
+}
+
+custom_button = {
+	name = dev_clicks
+	tooltip = "dev_sum_clicks_decision_tooltip"
+	potential = {
+		ai = no
+	}
+	effect = {
+		custom_tooltip = dev_sum_clicks_decision_acitve_tooltip
+		hidden_effect = {
+			country_event = {
+				id = ANEX_initalization.3
+			}
+		}
+	}
+}

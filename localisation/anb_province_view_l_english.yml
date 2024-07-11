@@ -37,7 +37,7 @@
  diggy_specialisation_button_tt:0 "Improve infrastructure"
  dont_build_wonder_tooltip:0 "Is NOT already improving infrastructure"
  has_hold_infrastructure_tt:0 "Has hold specialised infrastructure"
- diggy_infrastructure_tt:0 "§Specialised Infrastructure§!"
+ diggy_infrastructure_tt:0 "§SSpecialised Infrastructure§!"
  diggy_improved_infrastructure_tt:0 "§YImproved Infrastructure§!"
  hold_specialisation_none_tt:0 "This Hold has no §YSpecialised Infrastructure§! yet.\n\n----------------------\nAfter reaching a §YDepth Level§! of §Y4§! this Hold with spontaneously specialise and focus on one kind of infrastructure, in an average time of §Y10 years§!.\n\nThe type of the specialisation depends on the province's §§Trade Goods§!."
  hold_wonder_tt:0 "§YUnique Wonder§!"
