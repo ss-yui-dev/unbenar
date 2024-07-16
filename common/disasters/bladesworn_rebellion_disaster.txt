@@ -1,0 +1,105 @@
+bladesworn_rebellion_disaster = {
+	ended_by_country_breaking_to_rebels = no
+	potential = {
+		NOT = { has_country_flag = bladesworn_rebellion_happened }
+		tag = B33
+		has_estate_privilege = estate_bladestewards_old_guard
+		has_estate_privilege = estate_bladestewards_support_new_model
+	}
+
+	can_start = {
+		has_estate_privilege = estate_bladestewards_old_guard
+		has_estate_privilege = estate_bladestewards_support_new_model
+		has_any_disaster = no
+		is_at_war = yes
+	}
+	
+	can_stop = {
+		OR = {
+			has_any_disaster = yes
+			NOT = { has_estate_privilege = estate_bladestewards_old_guard }
+			NOT = { has_estate_privilege = estate_bladestewards_support_new_model }
+		}
+	}
+		
+	progress = {
+		modifier = {
+			factor = 2
+			has_estate_privilege = estate_bladestewards_old_guard
+		}
+		modifier = {
+			factor = 1
+			NOT = {
+				estate_loyalty = {
+					estate = estate_bladestewards
+					loyalty = 50
+				}
+			}
+		}
+		modifier = {
+			factor = 1
+			NOT = {
+				estate_loyalty = {
+					estate = estate_bladestewards
+					loyalty = 40
+				}
+			}
+		}
+		modifier = {
+			factor = 2
+			NOT = {
+				estate_loyalty = {
+					estate = estate_bladestewards
+					loyalty = 30
+				}
+			}
+		}
+		modifier = {
+			factor = 2
+			NOT = {
+				estate_loyalty = {
+					estate = estate_bladestewards
+					loyalty = 20
+				}
+			}
+		}
+	}
+	
+	modifier = {	
+		global_unrest = 5
+		legitimacy = -0.5
+		stability_cost_modifier = 0.25
+	}
+	
+	can_end = {
+		NOT = { num_of_rebel_armies = 1 }
+		NOT = { num_of_rebel_controlled_provinces = 1 }
+		NOT = { average_unrest = 1 }
+		stability = 2
+		hidden_trigger = {
+			NOT = { has_country_modifier = just_lost_to_rebels }
+			NOT = { has_country_flag = bladesworn_rebellion_start_event }
+		}
+	}
+	
+	on_start = bladesworn_rebellion.1
+	on_end = bladesworn_rebellion.2
+	
+	on_monthly = {
+		events = { }
+		random_events = {
+			1000 = 0
+			100 = bladesworn_rebellion.7 #Major Bladesworn Uprising
+			200 = bladesworn_rebellion.8 #Minor Bladesworn Uprising
+			200 = bladesworn_rebellion.9 #Negotiations with Bladesworn
+			100 = bladesworn_rebellion.10 #Gain Manpower
+			100 = bladesworn_rebellion.11 #Gain Militarization
+			100 = bladesworn_rebellion.12 #Major New Model Uprising
+			200 = bladesworn_rebellion.13 #Minor New Model Uprising
+			200 = bladesworn_rebellion.14 #Negotiations with New Model Rebels
+			100 = bladesworn_rebellion.15 #Gain Bladesworn
+			100 = bladesworn_rebellion.16 #Gain Modifier
+		}
+	}
+}
+

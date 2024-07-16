@@ -1,0 +1,13 @@
+﻿l_english:
+ #missions
+ MIGA_mandate_mt_phoenix_and_dragon_title:0 "§TPhoenix and Dragon§!"
+ MIGA_mandate_mt_phoenix_and_dragon_desc:0 "TODO"
+ MIGA_mandate_mt_aakheta_service_title:0 "§TA Loyal Servant of Aakheta§!"
+ MIGA_mandate_mt_aakheta_service_desc:0 "TODO"
+ MIGA_mandate_mt_rebirth_from_ashes_title:0 "§TRebirth Form Ashes§!"
+ MIGA_mandate_mt_rebirth_from_ashes_desc:0 "TODO"
+ MIGA_mandate_mt_restore_the_phoenix_empire_title:0 "§TRestore the Phoenix Empire§!"
+ MIGA_mandate_mt_restore_the_phoenix_empire_desc:0 "TODO"
+ 
+ #tooltip
+ MIGA_aakhetist_tolerance_tt:0 "Religion tolerance of Aakhetist is at least 2."

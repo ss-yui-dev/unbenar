@@ -1,0 +1,30 @@
+
+namespace = MIGA_flavor_kobildzan
+
+country_event = {
+	id = MIGA_flavor_kobildzan.1
+	title = MIGA_flavor_kobildzan.1.t
+	desc = MIGA_flavor_kobildzan.1.d
+	picture = CAVE_eventPicture
+	
+	trigger = {
+		has_dlc = "Lions of the North"
+		NOT = {
+			has_country_modifier = mythical_cavalry_drakon
+		}
+		has_country_modifier = kobold_administration
+		has_unit_type = kobold_6_drake_riders
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	#hell yeah
+	option = {
+		name = flavor_skewered_drake.1.a
+		ai_chance = { factor = 100 }
+		enable_mythical_cavalry = { mount = drakon }
+		custom_tooltip = unlock_privilege_estate_kobold_drake_riders_tt
+	}
+}

@@ -1,0 +1,189 @@
+namespace = bop_army_diversity
+
+#Human Diversity Path
+
+country_event = { #Elven Discipline
+	id = bop_army_diversity.1
+	title = bop_army_diversity.1.t
+	desc = bop_army_diversity.1.d
+	picture = THE_HEROINE_eventPicture
+	is_triggered_only = yes
+		
+	option = { #okay
+		name = "bop_army_diversity.1.a"
+		add_country_modifier = {
+			name = blademarches_elven_expertise
+			duration = -1
+		}
+		clr_country_flag = bop_ongoing_military_diversity_expedition
+	}
+}
+
+country_event = { #Hobgoblin Drill
+	id = bop_army_diversity.2
+	title = bop_army_diversity.2.t
+	desc = bop_army_diversity.2.d
+	picture = ONI_THINK_HOBGOBLIN_eventPicture
+	is_triggered_only = yes
+		
+	option = { #okay
+		name = "bop_army_diversity.2.a"
+		add_country_modifier = {
+			name = blademarches_hobgoblin_expertise
+			duration = -1
+		}
+		clr_country_flag = bop_ongoing_military_diversity_expedition
+	}
+}
+
+country_event = { #Harimari Ferocity
+	id = bop_army_diversity.3
+	title = bop_army_diversity.3.t
+	desc = bop_army_diversity.3.d
+	picture = TIGER_BODYGUARD_eventPicture
+	is_triggered_only = yes
+		
+	option = { #okay
+		name = "bop_army_diversity.3.a"
+		add_country_modifier = {
+			name = blademarches_harimari_expertise
+			duration = -1
+		}
+		clr_country_flag = bop_ongoing_military_diversity_expedition
+	}
+}
+
+country_event = { #Dwarven Siege Tactics
+	id = bop_army_diversity.4
+	title = bop_army_diversity.4.t
+	desc = bop_army_diversity.4.d
+	picture = ARTILLERY_eventPicture
+	is_triggered_only = yes
+		
+	option = { #okay
+		name = "bop_army_diversity.4.a"
+		add_country_modifier = {
+			name = blademarches_dwarven_expertise
+			duration = -1
+		}
+		clr_country_flag = bop_ongoing_military_diversity_expedition
+	}
+}
+
+country_event = { #Gnomish Combined Arms
+	id = bop_army_diversity.5
+	title = bop_army_diversity.5.t
+	desc = bop_army_diversity.5.d
+	picture = GOBLIN_GUNNER_eventPicture
+	is_triggered_only = yes
+		
+	option = { #okay
+		name = "bop_army_diversity.5.a"
+		add_country_modifier = {
+			name = blademarches_gnomish_expertise
+			duration = -1
+		}
+		clr_country_flag = bop_ongoing_military_diversity_expedition
+	}
+}
+
+country_event = { #Strength in Diversity
+	id = bop_army_diversity.6
+	title = bop_army_diversity.6.t
+	desc = bop_army_diversity.6.d
+	picture = MULTI_RACIAL_MERC_eventPicture
+	is_triggered_only = yes
+		
+	option = { #okay
+		name = "bop_army_diversity.6.a"
+		hidden_effect = {
+			remove_country_modifier = blademarches_elven_expertise
+			remove_country_modifier = blademarches_hobgoblin_expertise
+			remove_country_modifier = blademarches_harimari_expertise
+			remove_country_modifier = blademarches_dwarven_expertise
+			remove_country_modifier = blademarches_gnomish_expertise
+		}
+		add_country_modifier = {
+			name = blademarches_military_diversity
+			duration = -1
+		}
+		change_innovativeness = 5
+	}
+}
+
+#Initial Choices
+
+country_event = { #The Future of our Elven Military
+	id = bop_army_diversity.7
+	title = bop_army_diversity.7.t
+	desc = bop_army_diversity.7.d
+	picture = HUSSARS_eventPicture
+	is_triggered_only = yes
+		
+	option = { #Stay Elven
+		name = "bop_army_diversity.7.a"
+		add_army_tradition = 5
+		set_country_flag = bop_keep_elven_military
+		swap_non_generic_missions = yes
+	}
+	option = { #Form Human Army
+		name = "bop_army_diversity.7.b"
+		clear_racial_military = yes
+		add_country_modifier = {
+			name = human_military
+			duration = -1
+		}
+		update_unit_sprites_for_racial_mil = yes 
+		change_unit_type = tech_cannorian
+		add_yearly_manpower = 2
+		set_country_flag = bop_abolish_elven_military
+		swap_non_generic_missions = yes
+	}
+}
+
+country_event = { #The Future of our Military (Human)
+	id = bop_army_diversity.8
+	title = bop_army_diversity.8.t
+	desc = bop_army_diversity.8.d
+	picture = LAND_MILITARY_eventPicture
+	is_triggered_only = yes
+		
+	option = { #The Best of Humanity
+		name = "bop_army_diversity.8.a"
+		add_army_tradition = 5
+		set_country_flag = bop_brilliant_human__military
+		swap_non_generic_missions = yes
+	}
+	option = { #Seek Foreign Expertise
+		name = "bop_army_diversity.8.b"
+		define_advisor = {
+			type = diplomat
+			discount = yes
+		}
+		set_country_flag = bop_diverse_human_military
+		swap_non_generic_missions = yes
+	}
+}
+
+country_event = { #The Future of our Half-Orc Military
+	id = bop_army_diversity.9
+	title = bop_army_diversity.9.t
+	desc = bop_army_diversity.9.d
+	picture = STRELTSY_MARCHING_eventPicture
+	is_triggered_only = yes
+		
+	option = { #Warrior Elite
+		name = "bop_army_diversity.9.a"
+		add_army_tradition = 5
+		set_country_flag = bop_elite_half_orc_military
+		swap_non_generic_missions = yes
+	}
+	option = { #
+		name = "bop_army_diversity.9.b"
+		medium_increase_of_human_tolerance_effect = yes
+		medium_increase_of_orcish_tolerance_effect = yes
+		set_country_flag = bop_hybrid_half_orc_military
+		swap_non_generic_missions = yes
+	}
+}
+

@@ -1,0 +1,317 @@
+
+
+############### single metal triggers #################
+
+#################### Common metals #######################
+
+DA_own_iron_provinces = {
+	custom_trigger_tooltip = {
+		tooltip = DA_own_Iron_$amount$_tt
+		check_variable = {
+			which = DA_Metal_owned_Iron
+			value = $amount$
+		}
+	}
+}
+DA_own_Gold_provinces = {
+	custom_trigger_tooltip = {
+		tooltip = DA_own_gold_$amount$_tt
+		check_variable = {
+			which = DA_Metal_owned_Gold
+			value = $amount$
+		}
+	}
+}
+DA_own_copper_provinces = {
+	custom_trigger_tooltip = {
+		tooltip = DA_own_Copper_$amount$_tt
+		check_variable = {
+			which = DA_Metal_owned_Copper
+			value = $amount$
+		}
+	}
+}
+DA_own_tin_provinces = {
+	custom_trigger_tooltip = {
+		tooltip = DA_own_Tin_$amount$_tt
+		check_variable = {
+			which = DA_Metal_owned_Tin
+			value = $amount$
+		}
+	}
+}
+DA_own_Silver_provinces = {
+	custom_trigger_tooltip = {
+		tooltip = DA_own_Silver_$amount$_tt
+		check_variable = {
+			which = DA_Metal_owned_Silver
+			value = $amount$
+		}
+	}
+}
+DA_own_Aluminium_provinces = {
+	custom_trigger_tooltip = {
+		tooltip = DA_own_Aluminium_$amount$_tt
+		check_variable = {
+			which = DA_Metal_owned_Aluminium
+			value = $amount$
+		}
+	}
+}
+DA_own_Chromium_provinces = {
+	custom_trigger_tooltip = {
+		tooltip = DA_own_Chromium_$amount$_tt
+		check_variable = {
+			which = DA_Metal_owned_Chromium
+			value = $amount$
+		}
+	}
+}
+DA_own_Titanium_provinces = {
+	custom_trigger_tooltip = {
+		tooltip = DA_own_Titanium_$amount$_tt
+		check_variable = {
+			which = DA_Metal_owned_Titanium
+			value = $amount$
+		}
+	}
+}
+
+#################### Rare metals #######################
+
+DA_own_Palladium_provinces = {
+	custom_trigger_tooltip = {
+		tooltip = DA_own_Palladium_$amount$_tt
+		check_variable = {
+			which = DA_Metal_owned_Palladium
+			value = $amount$
+		}
+	}
+}
+DA_own_Platinum_provinces = {
+	custom_trigger_tooltip = {
+		tooltip = DA_own_Platinum_$amount$_tt
+		check_variable = {
+			which = DA_Metal_owned_Platinum
+			value = $amount$
+		}
+	}
+}
+DA_own_Tantalum_provinces = {
+	custom_trigger_tooltip = {
+		tooltip = DA_own_Tantalum_$amount$_tt
+		check_variable = {
+			which = DA_Metal_owned_Tantalum
+			value = $amount$
+		}
+	}
+}
+DA_own_damestear_provinces = {
+	custom_trigger_tooltip = {
+		tooltip = DA_own_Damestear_$amount$_tt
+		check_variable = {
+			which = DA_Metal_owned_Damestear
+			value = $amount$
+		}
+	}
+}
+DA_own_Meteoric_Silver_provinces = {
+	custom_trigger_tooltip = {
+		tooltip = DA_own_Meteoric_Silver_tt
+		check_variable = {
+			which = DA_Metal_owned_Meteoric_Silver
+			value = $amount$
+		}
+	}
+}
+DA_own_mithril_provinces = {
+	custom_trigger_tooltip = {
+		tooltip = DA_own_Mithril_$amount$_tt
+		check_variable = {
+			which = DA_Metal_owned_Mithril
+			value = $amount$
+		}
+	}
+}
+DA_own_Dagrite_provinces = {
+	custom_trigger_tooltip = {
+		tooltip = DA_own_Dagrite_$amount$_tt
+		check_variable = {
+			which = DA_Metal_owned_Dagrite
+			value = $amount$
+		}
+	}
+}
+DA_own_Rosemetal_provinces = {
+	custom_trigger_tooltip = {
+		tooltip = DA_own_RoseMetal_$amount$_tt
+		check_variable = {
+			which = DA_Metal_owned_RoseMetal
+			value = $amount$
+		}
+	}
+}
+DA_own_Cold_iron_provinces = {
+	custom_trigger_tooltip = {
+		tooltip = DA_own_Cold_iron_$amount$_tt
+		check_variable = {
+			which = DA_Metal_owned_Cold_iron
+			value = $amount$
+		}
+	}
+}
+DA_own_Quicksilver_provinces = {
+	custom_trigger_tooltip = {
+		tooltip = DA_own_Quicksilver_$amount$_tt
+		check_variable = {
+			which = DA_Metal_owned_Quicksilver
+			value = $amount$
+		}
+	}
+}
+
+#################### legendary metals #######################
+
+DA_own_Adamantium_provinces = {
+	custom_trigger_tooltip = {
+		tooltip = DA_own_Adamantium_$amount$_tt
+		check_variable = {
+			which = DA_Metal_owned_Adamantium
+			value = $amount$
+		}
+	}
+}
+DA_own_Forgotten_steel_provinces = {
+	custom_trigger_tooltip = {
+		tooltip = DA_own_Unastu_Argazen_$amount$_tt
+		check_variable = {
+			which = DA_Metal_owned_Unastu_Argazen
+			value = $amount$
+		}
+	}
+}
+DA_own_Hearth_blood_provinces = {
+	custom_trigger_tooltip = {
+		tooltip = DA_own_Bloth_Dolur_$amount$_tt
+		check_variable = {
+			which = DA_Metal_owned_Bloth_Dolur
+			value = $amount$
+		}
+	}
+}
+DA_own_Magnetite_provinces = {
+	custom_trigger_tooltip = {
+		tooltip = DA_own_Magnetite_$amount$_tt
+		check_variable = {
+			which = DA_Metal_owned_Magnetite
+			value = $amount$
+		}
+	}
+}
+DA_own_Mistium_provinces = {
+	custom_trigger_tooltip = {
+		tooltip = DA_own_Mistium_$amount$_tt
+		check_variable = {
+			which = DA_Metal_owned_Mistium
+			value = $amount$
+		}
+	}
+}
+DA_own_Skyshard_provinces = {
+	custom_trigger_tooltip = {
+		tooltip = DA_own_Skyshard_$amount$_tt
+		check_variable = {
+			which = DA_Metal_owned_Skyshard
+			value = $amount$
+		}
+	}
+}
+DA_own_Cindersteel_provinces = {
+	custom_trigger_tooltip = {
+		tooltip = DA_own_CinderSteel_$amount$_tt
+		check_variable = {
+			which = DA_Metal_owned_CinderSteel
+			value = $amount$
+		}
+	}
+}
+DA_own_Sylvanite_provinces = {
+	custom_trigger_tooltip = {
+		tooltip = DA_own_Sylvanite_$amount$_tt
+		check_variable = {
+			which = DA_Metal_owned_Sylvanite
+			value = $amount$
+		}
+	}
+}
+DA_own_VoidSteel_provinces = {
+	custom_trigger_tooltip = {
+		tooltip = DA_own_VoidSteel_$amount$_tt
+		check_variable = {
+			which = DA_Metal_owned_VoidSteel
+			value = $amount$
+		}
+	}
+}
+
+##############################################
+
+DA_prov_has_all_metals_common = {
+	has_province_flag = DA_Mine_Tin
+	has_province_flag = DA_Mine_Aluminium
+	has_province_flag = DA_Mine_Silver
+	has_province_flag = DA_Mine_Chromium
+	has_province_flag = DA_Mine_Titanium
+}
+DA_prov_has_all_metals_rare = {
+	has_province_flag = DA_Mine_Tantalum
+	has_province_flag = DA_Mine_Palladium
+	has_province_flag = DA_Mine_Platinum
+	has_province_flag = DA_Mine_Quicksilver
+	has_province_flag = DA_Mine_Rosemetal
+	has_province_flag = DA_Mine_Cold_iron
+	has_province_flag = DA_Mine_Dagrite
+}
+DA_prov_has_all_metals_legendary = {
+	has_province_flag = DA_Mine_Cindersteel
+	has_province_flag = DA_Mine_Magnetite
+	has_province_flag = DA_Mine_Mistium
+	has_province_flag = DA_Mine_Skyshard
+	has_province_flag = DA_Mine_Adamantium
+	has_province_flag = DA_Mine_Forgotten_steel
+	has_province_flag = DA_Mine_Hearth_blood
+}
+
+DA_is_Mine_not_hold = {
+	is_wasteland = no
+	OR = {
+		has_terrain = mountain
+		has_terrain = highlands
+		has_terrain = cavern
+		has_province_modifier = DA_Mine_1
+		has_province_modifier = DA_Mine_2
+		has_province_modifier = DA_Mine_3
+		has_province_modifier = DA_Mine_4
+		has_province_modifier = DA_Mine_5
+	}
+}
+DA_is_Upgradable_mine = {
+	OR = {
+		AND = {
+			base_production = 7
+			has_province_modifier = DA_Mine_1
+		}
+		AND = {
+			base_production = 14
+			has_province_modifier = DA_Mine_2
+		}
+		AND = {
+			base_production = 21
+			has_province_modifier = DA_Mine_3
+		}
+		AND = {
+			base_production = 28
+			has_province_modifier = DA_Mine_4
+		}
+	}
+}

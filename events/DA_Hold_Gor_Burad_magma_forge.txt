@@ -53,14 +53,37 @@ province_event = {
 		}
 		modifier = {
 			factor = 0.85
-			has_estate_privilege = estate_DA_Runesmiths_patronage
+			owner = {
+				has_country_modifier = DA_Runesmith_patronage
+			}
 		}
 		modifier = {
-			factor = 0.75
-			OR = {
-				has_estate_privilege = estate_DA_Runesmiths_RF_8
-				has_estate_privilege = estate_DA_Runesmiths_RF_10
-				has_estate_privilege = estate_DA_Runesmiths_RF_11
+			factor = 0.90
+			owner = {
+				OR = {
+					has_estate_privilege = estate_DA_Runesmiths_RF_4
+					has_estate_privilege = estate_DA_Runesmiths_RF_5
+				}
+			}
+		}
+		modifier = {
+			factor = 0.85
+			owner = {
+				OR = {
+					has_estate_privilege = estate_DA_Runesmiths_RF_6
+					has_estate_privilege = estate_DA_Runesmiths_RF_7
+				}
+			}
+		}
+		modifier = {
+			factor = 0.80
+			owner = {
+				OR = {
+					has_estate_privilege = estate_DA_Runesmiths_RF_8
+					has_estate_privilege = estate_DA_Runesmiths_RF_9
+					has_estate_privilege = estate_DA_Runesmiths_RF_10
+					has_estate_privilege = estate_DA_Runesmiths_RF_11
+				}
 			}
 		}
 	}
@@ -224,7 +247,7 @@ province_event = {
 		}
 		add_devastation = 25
 		hidden_effect = {
-			add_province_modifier = {
+			add_permanent_province_modifier = {
 				name = DA_MF_devastation_cooldown
 				duration = 365
 				hidden = yes
@@ -239,7 +262,7 @@ country_event = {
 	id = DA_Magma_forge_event.10 # magma forge menu
 	title = "DA_Magma_forge_event.10.t"
 	desc = "DA_Magma_forge_event.10.d"
-	picture = DA_research_facility_eventPicture
+	picture = FORGE_eventPicture
 
 	is_triggered_only = yes
 
@@ -343,6 +366,35 @@ country_event = {
 		custom_tooltip = DA_Magma_forge_event.10.c.tooltip
 	}
 	option = {
+		name = "DA_Magma_forge_event.10.e"	# build basalt wall
+		trigger = {
+			treasury = 1000
+			has_country_flag = DA_MF_can_create_Basalt_Wall
+			NOT = { has_country_flag = DA_MF_can_create_Basalt_Wall_2 }
+			any_core_province = {
+				province_id = 672
+				owned_by = root
+				has_missionary = no
+				has_colonist = no
+				NOT = { has_construction = any }
+			}
+			any_core_province = {
+				has_province_flag = DA_Expanded_magma_forge_cap1
+				check_variable = {
+					which = DA_Magma_level
+					value = 200
+				}
+			}
+		}
+		country_event = {
+			id = DA_Magma_forge_event.15
+		}
+		hidden_effect = {
+			set_country_flag = DA_MF_can_create_Basalt_Wall_2
+		}
+		custom_tooltip = DA_Magma_forge_event.10.e.tooltip
+	}
+	option = {
 		name = "DA_Magma_forge_event.10.Go_Back"
 	}
 	after = {
@@ -357,7 +409,7 @@ country_event = {
 	id = DA_Magma_forge_event.11 # unlock regulating magma veins
 	title = "DA_Magma_forge_event.11.t"
 	desc = "DA_Magma_forge_event.11.d"
-	picture = INVENTION_eventPicture
+	picture = FORGE_eventPicture
 
 	trigger = {
 		capital_scope = {
@@ -372,12 +424,27 @@ country_event = {
 		months = 90
 		modifier = {
 			factor = 0.85
-			has_estate_privilege = estate_DA_Runesmiths_patronage
+			has_country_modifier = DA_Runesmith_patronage
 		}
 		modifier = {
-			factor = 0.75
+			factor = 0.90
+			OR = {
+				has_estate_privilege = estate_DA_Runesmiths_RF_4
+				has_estate_privilege = estate_DA_Runesmiths_RF_5
+			}
+		}
+		modifier = {
+			factor = 0.85
+			OR = {
+				has_estate_privilege = estate_DA_Runesmiths_RF_6
+				has_estate_privilege = estate_DA_Runesmiths_RF_7
+			}
+		}
+		modifier = {
+			factor = 0.80
 			OR = {
 				has_estate_privilege = estate_DA_Runesmiths_RF_8
+				has_estate_privilege = estate_DA_Runesmiths_RF_9
 				has_estate_privilege = estate_DA_Runesmiths_RF_10
 				has_estate_privilege = estate_DA_Runesmiths_RF_11
 			}
@@ -395,7 +462,7 @@ country_event = {
 	id = DA_Magma_forge_event.12 					# unlock creating regulated magma veins in holds with dig 4 or higher
 	title = "DA_Magma_forge_event.12.t"
 	desc = "DA_Magma_forge_event.12.d"
-	picture = INVENTION_eventPicture
+	picture = FORGE_eventPicture
 
 	trigger = {
 		capital_scope = {
@@ -412,12 +479,27 @@ country_event = {
 		months = 120
 		modifier = {
 			factor = 0.85
-			has_estate_privilege = estate_DA_Runesmiths_patronage
+			has_country_modifier = DA_Runesmith_patronage
 		}
 		modifier = {
-			factor = 0.75
+			factor = 0.90
+			OR = {
+				has_estate_privilege = estate_DA_Runesmiths_RF_4
+				has_estate_privilege = estate_DA_Runesmiths_RF_5
+			}
+		}
+		modifier = {
+			factor = 0.85
+			OR = {
+				has_estate_privilege = estate_DA_Runesmiths_RF_6
+				has_estate_privilege = estate_DA_Runesmiths_RF_7
+			}
+		}
+		modifier = {
+			factor = 0.80
 			OR = {
 				has_estate_privilege = estate_DA_Runesmiths_RF_8
+				has_estate_privilege = estate_DA_Runesmiths_RF_9
 				has_estate_privilege = estate_DA_Runesmiths_RF_10
 				has_estate_privilege = estate_DA_Runesmiths_RF_11
 			}
@@ -438,7 +520,7 @@ country_event = {    # magma vein formation
 	id = DA_Magma_forge_event.13 
 	title = "DA_Magma_forge_event.13.t"
 	desc = "DA_Magma_forge_event.13.d"
-	picture = CITY_VIEW_eventPicture
+	picture = FORGE_eventPicture
 
 	is_triggered_only = yes
 	immediate = {
@@ -612,3 +694,248 @@ country_event = {    # magma vein formation
 		clr_country_flag = DA_rf_menu_in_use
 	}
 }	
+
+country_event = {
+	id = DA_Magma_forge_event.14 					# unlock creating the wall
+	title = "DA_Magma_forge_event.14.t"
+	desc = "DA_Magma_forge_event.14.d"
+	picture = FORGE_eventPicture
+
+	trigger = {
+		capital_scope = {
+			has_province_flag = DA_Expanded_dig_adk_8			# research facility lvl 8
+		}
+		has_country_flag = DA_MF_regulate_veins
+		has_country_flag = DA_MF_can_create_regulated_veins
+		NOT = { has_country_flag = DA_MF_can_create_Basalt_Wall }
+		any_core_province = {
+			owned_by = root
+			has_province_modifier = DA_GB_vulcano_regulated
+			has_province_flag = DA_Expanded_magma_forge_cap1
+		}
+		any_core_province = {
+			owned_by = root
+			province_id = 672
+		}
+	}
+	mean_time_to_happen = {
+		months = 120
+		modifier = {
+			factor = 0.9
+			innovativeness = 80
+		}
+		modifier = {
+			factor = 0.9
+			stability = 3
+		}
+		modifier = {
+			factor = 0.85
+			has_country_modifier = DA_Runesmith_patronage
+		}
+		modifier = {
+			factor = 0.90
+			OR = {
+				has_estate_privilege = estate_DA_Runesmiths_RF_4
+				has_estate_privilege = estate_DA_Runesmiths_RF_5
+			}
+		}
+		modifier = {
+			factor = 0.85
+			OR = {
+				has_estate_privilege = estate_DA_Runesmiths_RF_6
+				has_estate_privilege = estate_DA_Runesmiths_RF_7
+			}
+		}
+		modifier = {
+			factor = 0.80
+			OR = {
+				has_estate_privilege = estate_DA_Runesmiths_RF_8
+				has_estate_privilege = estate_DA_Runesmiths_RF_9
+				has_estate_privilege = estate_DA_Runesmiths_RF_10
+				has_estate_privilege = estate_DA_Runesmiths_RF_11
+			}
+		}
+	}
+
+	option = {
+		name = "DA_Magma_forge_event.14.a"
+		goto = 672
+		custom_tooltip = DA_Magma_forge_event.14.a.tooltip
+		set_country_flag = DA_MF_can_create_Basalt_Wall
+		ai_chance = {
+			factor = 1
+		}
+	}
+}
+
+country_event = {
+	id = DA_Magma_forge_event.15 					# Create the wall event
+	title = "DA_Magma_forge_event.15.t"
+	desc = "DA_Magma_forge_event.15.d"
+	picture = GREAT_BUILDING_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = "DA_Magma_forge_event.15.a"
+		goto = 672
+		add_treasury = -1000
+		custom_tooltip = DA_Magma_forge_event.15.a.tooltip
+		672 = {
+			add_great_project = {
+				type = DA_Verkal_Jorkad
+				instant = no
+			}
+		}
+		hidden_effect = {
+			every_core_province = {
+				limit = {
+					has_province_flag = DA_Magma_forge_found
+				}
+				subtract_variable = {
+					which = DA_Magma_level
+					value = 200
+				}
+			}
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+}
+
+country_event = {
+	id = DA_Magma_forge_event.16 					# tier 0 completed event
+	title = "DA_Magma_forge_event.16.t"
+	desc = "DA_Magma_forge_event.16.d"
+	picture = GREAT_BUILDING_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = "DA_Magma_forge_event.16.a"
+		goto = 672
+		set_country_flag = DA_MF_can_create_Basalt_Wall
+		ai_chance = {
+			factor = 1
+		}
+	}
+}
+
+country_event = {
+	id = DA_Magma_forge_event.17 					# tier 1 completed event
+	title = "DA_Magma_forge_event.17.t"
+	desc = "DA_Magma_forge_event.17.d"
+	picture = GREAT_BUILDING_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = "DA_Magma_forge_event.17.a"
+		goto = 672
+		set_country_flag = DA_MF_can_create_Basalt_Wall
+		ai_chance = {
+			factor = 1
+		}
+	}
+}
+
+country_event = {
+	id = DA_Magma_forge_event.18 					# tier 2 completed event
+	title = "DA_Magma_forge_event.18.t"
+	desc = "DA_Magma_forge_event.18.d"
+	picture = GREAT_BUILDING_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = "DA_Magma_forge_event.18.a"
+		goto = 672
+		set_country_flag = DA_MF_can_create_Basalt_Wall
+		ai_chance = {
+			factor = 1
+		}
+	}
+}
+
+country_event = {
+	id = DA_Magma_forge_event.19 					# tier 3 completed event
+	title = "DA_Magma_forge_event.19.t"
+	desc = "DA_Magma_forge_event.19.d"
+	picture = GREAT_BUILDING_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = "DA_Magma_forge_event.19.a"
+		goto = 672
+		672 = {
+			change_province_name = "Verkal Jorkad"
+		}
+		set_country_flag = DA_MF_can_create_Basalt_Wall
+		ai_chance = {
+			factor = 1
+		}
+	}
+}
+
+country_event = {
+	id = DA_Magma_forge_event.20 					# prosperity behind the wall
+	title = "DA_Magma_forge_event.20.t"
+	desc = "DA_Magma_forge_event.20.d"
+	picture = GREAT_BUILDING_eventPicture
+
+	fire_only_once = yes
+	trigger = {
+		673 = { owned_by = root }
+		674 = { owned_by = root }
+		675 = { owned_by = root }
+		676 = { owned_by = root }
+		677 = { owned_by = root }
+		678 = { owned_by = root }
+		any_core_province = {
+			province_id = 672
+			owned_by = root
+			has_great_project = {
+				type = DA_Verkal_Jorkad
+				tier = 3
+			}
+		}
+	}
+	mean_time_to_happen = {
+		years = 8
+	}
+
+
+	option = {
+		name = "DA_Magma_forge_event.20.a"
+		goto = 672
+		673 = { add_permanent_province_modifier = {
+			name = DA_Prosperity_behind_the_wall
+			duration = -1
+		} }
+		674 = { add_permanent_province_modifier = {
+			name = DA_Prosperity_behind_the_wall
+			duration = -1
+		} }
+		675 = { add_permanent_province_modifier = {
+			name = DA_Prosperity_behind_the_wall
+			duration = -1
+		} }
+		676 = { add_permanent_province_modifier = {
+			name = DA_Prosperity_behind_the_wall
+			duration = -1
+		} }
+		677 = { add_permanent_province_modifier = {
+			name = DA_Prosperity_behind_the_wall
+			duration = -1
+		} }
+		678 = { add_permanent_province_modifier = {
+			name = DA_Prosperity_behind_the_wall
+			duration = -1
+		} }
+		ai_chance = {
+			factor = 1
+		}
+	}
+}

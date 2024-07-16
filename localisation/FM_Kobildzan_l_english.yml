@@ -1,0 +1,24 @@
+﻿l_english:
+ #decisions
+ kobildzan_another_path_title:0 "Another path of Kobildzan"
+ kobildzan_another_path_desc:0 "Dragon and artificier!"
+ 
+ estate_kobold_raise_drake_riders_title:0 "Raise Drake Riders"
+ estate_kobold_raise_drake_riders_desc:0 "Hatching drake eggs requires a specific period. Nurturing and training those fierce monsters is also no small feat. Now, the latest group of drakes as well as their riders have completed their training, being ready to head to the battlefield. Let our enemies witness the wrath of the dragonkin!"
+ 
+ #events
+ MIGA_flavor_kobildzan.1.t:0 "Drake Riders"
+ MIGA_flavor_kobildzan.1.d:0 "Kobolds had tamed drakes well before their recorded history, but the sacred nature of the dragonlike beasts meant risking them in warfare was taboo for centuries. However, in the face of human and gnomish incursion, desperate circumstances forced their handlers to attempt using drakes as combat cavalry. Their sheer effectiveness on the field helped shake this taboo."
+ 
+ #mofidiers
+ kobold_drake_riders_modifier:0 "Kobold Drake Riders"
+ 
+ #tooltips
+ unlock_privilege_estate_kobold_drake_riders_tt:0 "§GUnlock a monster tribes or mage estate privilege to strengthen drake riders.§!\n§YThis privilege will be updated as we've invented more potions.§!"
+ 
+ #estate privileges
+ estate_monstrous_tribes_kobold_drake_riders:0 "Kobold Drake Riders"
+ estate_monstrous_tribes_kobold_drake_riders_desc:0 "Dominate the sky, dominate the battlefield."
+ 
+ estate_mages_kobold_drake_riders:0 "Kobold Drake Riders"
+ estate_mages_kobold_drake_riders_desc:0 "Dominate the sky, dominate the battlefield."

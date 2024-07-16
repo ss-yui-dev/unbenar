@@ -111,18 +111,66 @@ estate_DA_Runesmiths = {
 	color = { 153 217 234 }
 
 	privileges = {
+		# research facility levels
 		estate_DA_Runesmiths_RF_2
+		estate_DA_Runesmiths_RF_3
 		estate_DA_Runesmiths_RF_4
+		estate_DA_Runesmiths_RF_5
 		estate_DA_Runesmiths_RF_6
+		estate_DA_Runesmiths_RF_7
 		estate_DA_Runesmiths_RF_8
+		estate_DA_Runesmiths_RF_9
 		estate_DA_Runesmiths_RF_10
 		estate_DA_Runesmiths_RF_11
-		estate_DA_Runesmiths_patronage
-		estate_DA_Runesmiths_Forges
-		estate_DA_Runesmiths_artificers_cooperation
-		estate_DA_Obsidian_collab
-		estate_DA_Hul_Jorkad_genetic_engineering_more
-		estate_DA_Hul_Jorkad_genetic_engineering_better
+		# researches
+		DA_Runesmith_research_privilege
+		DA_Metallurgy_project
+
+		# Initial runes, 2 are given by MT, others must be researched
+		DA_Runesmith_weightlessness_Rune
+		DA_Runesmith_Strength_Rune
+		DA_Runesmith_Endurance_Rune
+		DA_Runesmith_Haste_Rune
+		DA_Runesmith_Focus_Rune
+		DA_Runesmith_Impact_Rune
+		DA_Runesmith_Healing_Rune
+		DA_Runesmith_Heating_Rune
+		DA_Runesmith_Freezing_Rune
+		DA_Runesmith_Shocking_Rune
+
+		DA_PCRM_INVENTION
+		DA_PMRM_INVENTION
+		# inventions
+
+		# INDUSTRY
+		DA_RS_IND_PROD_Runes_Manufacturing
+		DA_RS_IND_PROD_Runic_augmented_uniforms
+		DA_RS_IND_PROD_Stonecutting_Goggles
+		DA_RS_IND_PROD_Magitech_Drill
+		DA_RS_IND_DEV_Runic_construction_tools
+		DA_RS_IND_DEV_Runic_Settlements
+		DA_RS_IND_DEV_Subterrean_agriculture_rig
+		DA_RS_IND_DEV_Automatic_settler
+		DA_RS_IND_INFRA_Runic_Buildings
+		# SOCIETY
+		DA_RS_SOC_LUX_Enchanted_jewelry
+		DA_RS_SOC_LUX_Charming_Runes
+		DA_RS_SOC_COURT_Runic_Message_Sender
+		DA_RS_SOC_COURT_Runic_Runic_Recorders
+		DA_RS_SOC_SECURITY_Runic_Traps
+		DA_RS_SOC_SECURITY_Runic_Police
+
+		# Projects
+
+		DA_RS_project_Platinum_exoskeletons
+		DA_RS_project_Dark_Rams_Taming
+		DA_RS_project_Ice_Steel_techniques1
+		DA_RS_project_Ice_Steel_techniques2
+		DA_PCRM_Project
+		DA_PMRM_Project
+		DA_STEAM_POWER_Project
+		DA_ENERGY_POWER_Project
+		DA_Hul_Jorkad_genetic_engineering_project
 	}
 
 	agendas = {

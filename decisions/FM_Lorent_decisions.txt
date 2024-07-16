@@ -1,0 +1,47 @@
+country_decisions = {
+	
+	coalition_against_lorent = {
+		major = yes
+		
+		potential = {
+			defensive_war_with = A01
+			NOT = { has_global_flag = coalition_against_lorent }
+		}
+		
+		allow = {
+			defensive_war_with = A01
+			NOT = { has_global_flag = coalition_against_lorent }
+		}
+		
+		effect = {
+			add_prestige = -15
+			A01 = {
+				add_prestige = 15
+				add_power_projection = { type = mission_rewards_power_projection amount = 5 }
+			} 
+			add_aggressive_expansion = { who = A01 value = 66 apply_calc = no }
+			form_coalition_against = A01
+			hidden_effect = {
+				save_global_event_target_as = LorentCoalitionLeader
+			}
+			every_known_country = {
+				limit = {
+					capital_scope = { region = lencenor_region }
+					culture_group = lencori
+					NOT = { tag = A01 }
+				}
+				add_aggressive_expansion = { who = A01 value = 66 apply_calc = no }
+				if = {
+					limit = { is_free_or_tributary_trigger = yes }
+					country_event = { id = coalition_against_lorent.2 days = 1 }
+				}
+			}
+			set_global_flag = coalition_against_lorent
+		}
+		
+		ai_will_do = {
+			factor = 2
+		}
+		ai_importance = 400
+	}
+}

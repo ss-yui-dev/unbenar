@@ -6628,6 +6628,19 @@ pick_random_estate_if_present = {
 			$estate_action$ = estate_ahati
 			]
 		}
+                #love
+		#Blade Stewards
+		1 = {
+			trigger = {
+				has_estate = estate_bladestewards
+				NOT = { has_country_flag = estate_bladestewards_$flag$ }
+			}
+			set_country_flag = estate_bladestewards_$flag$
+			[[estate_action]
+			$estate_action$ = estate_bladestewards
+			]
+		}
+                #love
 	}
 }
 
@@ -6825,7 +6838,10 @@ re_add_loyalty_from_seized_land = {
 			if = { limit = { estate_has_exempt_from_seize_land_privilege = { estate = estate_adeen } }		add_estate_loyalty = { estate = estate_adeen			 loyalty = 15 } }
 			if = { limit = { estate_has_exempt_from_seize_land_privilege = { estate = estate_ahati } }		add_estate_loyalty = { estate = estate_ahati			 loyalty = 15 } }
 			if = { limit = { estate_has_exempt_from_seize_land_privilege = { estate = estate_raj_ministries } }		add_estate_loyalty = { estate = estate_raj_ministries		 loyalty = 15 } }
-		}
+			#love
+                        if = { limit = { estate_has_exempt_from_seize_land_privilege = { estate = estate_bladestewards } }		add_estate_loyalty = { estate = estate_bladestewards		 loyalty = 15 } }
+		        #love
+                }
 		else = {
 			if = { limit = { estate_has_exempt_from_seize_land_privilege = { estate = estate_nobles } }			add_estate_loyalty = { estate = estate_nobles			 loyalty = 20 } }
 			if = { limit = { estate_has_exempt_from_seize_land_privilege = { estate = estate_brahmins } }		add_estate_loyalty = { estate = estate_brahmins			 loyalty = 20 } }
@@ -6847,6 +6863,9 @@ re_add_loyalty_from_seized_land = {
 			if = { limit = { estate_has_exempt_from_seize_land_privilege = { estate = estate_adeen } }		add_estate_loyalty = { estate = estate_adeen			 loyalty = 20 } }
 			if = { limit = { estate_has_exempt_from_seize_land_privilege = { estate = estate_ahati } }		add_estate_loyalty = { estate = estate_ahati			 loyalty = 20 } }
 			if = { limit = { estate_has_exempt_from_seize_land_privilege = { estate = estate_raj_ministries } }		add_estate_loyalty = { estate = estate_raj_ministries		 loyalty = 20 } }
+                        #love
+			if = { limit = { estate_has_exempt_from_seize_land_privilege = { estate = estate_bladestewards } }		add_estate_loyalty = { estate = estate_bladestewards		 loyalty = 20 } }
+                        #love
 		}
 	}
 }

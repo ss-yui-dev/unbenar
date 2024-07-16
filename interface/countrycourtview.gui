@@ -731,6 +731,18 @@ guiTypes = {
 				clicksound = back_click
 			}	
 		}
+
+		#love advisor cost hint
+		instantTextBoxType = {
+			name = "advisor_cost_hint"
+			position = { x=20 y=750 }
+			maxWidth = 400
+			maxHeight = 40
+			borderSize = {x = 2 y = 2}
+			alwaystransparent = no
+			scripted = yes
+		}
+		#love
 	}
 
 	################################################################################################

@@ -1,0 +1,5 @@
+
+jiangdu_warrior_tradition = {
+	free_leader_pool = 1
+	free_mil_policy = 1
+}

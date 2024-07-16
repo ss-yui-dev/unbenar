@@ -1,0 +1,69 @@
+# Blade Legion
+merc_gleaming_legion = {
+	mercenary_desc_key = FREE_OF_ARMY_PROFESSIONALISM_COST
+    regiments_per_development = 0.05
+    home_province = 817 #Bladekeep
+	cavalry_weight = 0.2
+    artillery_weight = 0.2
+	cavalry_cap = 4
+	sprites = { westerngfx_sprite_pack }
+    trigger = {
+		is_allowed_to_recruit_mercenaries = yes
+		OR= {
+			#has_country_modifier = marrhold_blade_attache_subject
+			has_country_modifier = marrhold_blade_attache
+		}
+	}
+	cost_modifier = 0.25
+	modifier = {
+		discipline = 0.05
+		infantry_shock = 0.15
+	}
+	min_size = 10                          # Minimum size of the mercenary army
+    max_size = 20                         # Maximum size of the mercenary army
+}
+
+# Griffon Legion
+merc_griffon_legion = {
+	mercenary_desc_key = FREE_OF_ARMY_PROFESSIONALISM_COST
+	regiments_per_development = 0.05
+	cavalry_weight = 1.0
+	artillery_weight = 0
+	home_province = 895 #Griffonsgate
+	sprites = { easterngfx_sprite_pack }
+    trigger = {
+		is_allowed_to_recruit_mercenaries = yes
+		has_country_modifier = blademarches_griffon_attache
+	}
+	cost_modifier = 0.25
+	modifier = {
+		cav_to_inf_ratio = 1.0
+		cavalry_power = 0.25 
+		movement_speed = 0.2 
+	}
+	min_size = 10
+    max_size = 20
+}
+
+# Sellblades
+merc_sellblades = {
+	mercenary_desc_key = FREE_OF_ARMY_PROFESSIONALISM_COST
+    regiments_per_development = 0.05
+    home_province = 817 #Bladekeep
+	cavalry_weight = 0.2
+    artillery_weight = 0.2
+	home_province = 817 #Bladekeep
+	cavalry_cap = 4
+	sprites = { westerngfx_sprite_pack }
+    trigger = {
+		is_allowed_to_recruit_mercenaries = yes
+		has_country_modifier = bop_military_coop_sold
+	}
+	cost_modifier = 0.25
+	modifier = {
+		discipline = 0.05
+		infantry_shock = 0.15
+	}
+	min_size = 10
+    max_size = 20
+}

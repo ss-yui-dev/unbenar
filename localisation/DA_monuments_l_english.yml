@@ -31,13 +31,6 @@ The_Dwarven_Workshop: "The Mithril Workshop"
 great_project_The_Dwarven_Workshop: "The Mithril Workshop"
 The_Dwarven_Workshop_desc: "Both workshop and lab, this infrastructure was once used to research mithril properties, possible alloys and mass-produce them.\nUpgrading this will help us understand mithril and use it more efficiently."
 
-DA_pr_tr_mithril_guard:0 "Mithril Guard Equipment"
-desc_DA_pr_tr_mithril_guard:0 "The Mithril Workshop provides all the equipment for the Mithril guard"
-desc_DA_can_recruit_Mithril_guard: "The Mithril Guard is composed by the best soldiers Mithradum can offer and is regarded as highly as the royal guard.\nEvery dwarf composing this units has undergone years of rigorous training and is then equipped with the greatest mithril armors and weapons Mithradum can offer"
-DA_can_recruit_Mithril_guard: "Mithril Guard"
-desc_DA_can_recruit_Mithril_guard_pr: "Only after spending years training in this camp, challenging yourself every day, and passing a strict final examination, can one be called to be part of the Mithril guard."
-DA_can_recruit_Mithril_guard_pr: "Mithril Guard Training Camp"
-
 The_Dwarven_Laboratory_title: "Ducaniel's Laboratory"
 The_Dwarven_Laboratory: "Ducaniel's Laboratory"
 great_project_The_Dwarven_Laboratory: "Ducaniel's Laboratory"
@@ -48,3 +41,29 @@ The_Sky_Hold_title: "The Setzunkhupa"
 The_Sky_Hold: "The Setzunkhupa"
 great_project_The_Sky_Hold: "The Setzunkhupa"
 The_Sky_Hold_desc: "A massive observatory, the only dwarven great project located above the surface, was once very famous in Aul-Dwarov.\nWe have now found its blueprints in lower dig levels and can restore it successfully or maybe even make it better."
+
+DA_Verkal_Jorkad_title: "Verkal Jorkad"
+DA_Verkal_Jorkad: "Verkal Jorkad"
+great_project_DA_Verkal_Jorkad: "Verkal Jorkad"
+DA_Verkal_Jorkad_desc: "Defining it as a simple wall would the greatest understatement in history: Made out of Vulcanic magma from Gor Burad, modelled by the greatest dwarven craftsmen for years, full of high level facilities and fortifications... the list is still far from over."
+# Balgar's unbuilt projects
+
+ DA_Castonath_title:0 "Castonath"
+ DA_Castonath:0 "Castonath"
+ great_project_DA_Castonath:0 "Castonath"
+ DA_Castonath_desc:0 "Balgar had designed Castonath many years ago but that design was just the foundation for what he truly wanted Castonath to be like.\nUsing his notes and blueprints we managed to develop what we believe is how Castonath should have been in Balgar's mind"
+
+ DA_Khugdihr_last_defense_title:0 "Khugdihr, Last Dwarven Bastion"
+ DA_Khugdihr_last_defense:0 "Khugdihr, Last Dwarven Bastion"
+ great_project_DA_Khugdihr_last_defense:0 "Khugdihr, The Last Bastion"
+ DA_Khugdihr_last_defense_desc:0 "Balgar was very conscious of his hometown's wrecked state in the past, full of enemies nearby and internal unrest, and had passed some years developing an improvement plan for the ruined Hold.\nWe are now very proud to be the ones to implement it and make it reality.\n"
+
+ Serpent_DA_Vale_wall1_title:0 "Western Vale's Great Wall"
+ DA_Serpent_Vale_wall1:0 "Western Vale's Great Wall"
+ great_project_DA_Serpent_Vale_wall1:0 "Western Vale's Great Wall"
+ DA_Serpent_Vale_wall1_desc:0 "A Majestic Wall to prevent hostile forces to invade the serpent's vale and ensure its prosperity.\n"
+
+ DA_Serpent_Vale_wall2_title:0 "Eastern Vale's Great Wall"
+ DA_Serpent_Vale_wall2:0 "Eastern Vale's Great Wall"
+ great_project_DA_Serpent_Vale_wall2:0 "Eastern Vale's Great Wall"
+ DA_Serpent_Vale_wall2_desc:0 "A Majestic Wall to prevent hostile forces to invade the serpent's vale and ensure its prosperity.\n"

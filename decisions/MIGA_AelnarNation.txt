@@ -1,0 +1,29 @@
+
+country_decisions = {
+	future_of_lithiel = {
+		major = yes
+		potential = {
+			tag = Z43
+			has_country_flag = lithiel_revolted
+			has_country_flag = aelnar_civil_war_end
+			NOT = { has_country_flag = rianvisa_lithiel_rule }
+			NOT = { has_country_flag = future_of_lithiel }
+		}
+
+		allow = {
+			tag = Z43
+			has_country_flag = lithiel_revolted
+			has_country_flag = aelnar_civil_war_end
+			NOT = { has_country_flag = rianvisa_lithiel_rule }
+		}
+		
+		effect = {
+			set_country_flag = future_of_lithiel
+			country_event = { id = aelnar.24 }
+		}
+		
+		ai_will_do = {
+			factor = 400
+		}
+	}
+}

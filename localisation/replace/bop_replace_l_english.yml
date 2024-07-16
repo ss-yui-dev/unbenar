@@ -1,0 +1,26 @@
+﻿l_english:
+ #SAMURAI to Paladins
+ SAMURAI_NAME:0 "$HOME$'s $NUM$$ORDER$ Paladin Regiment"
+ MODIFIER_ALLOWED_SAMURAI_FRACTION:0 "Paladin Force Limit"
+ MODIFIER_LOCAL_HAS_SAMURAI:0 "Province Allows Paladin Infantry"
+ SAMURAI_FORCELIMIT:0 "We can recruit up to $LIMIT|Y$ §GPaladins§! owing to:\n$FLAMOUNT|Y$ from $PERC|%Y$ of our force-limit of $FL$:\n"
+ #SAMURAI_LIMIT_CULTURE:0 "$PROVINCE$ is a $CULTURE$ province, so can not recruit Paladin Infantry here."
+ ADD_SAMURAI_SUB_UNIT_EFFECT:0 "Get '§GPaladin§!' $UNIT$ in $WHERE|Y$."
+ SAMURAI_DESC:0 "A Paladin is an elite warrior, standing above their peers. They represent the most professional and capable soldiers a country can muster, for example the Bladesworn of Blademarches."
+ REGCAT_samurai:0 "Paladin"
+ SAMURAI_REGIMENT:0 "Paladin Regiment\n$EFFECT$"
+ HAVE_LESS_SAMURAI_THAN:0 "Have less Paladins than §Y$VALUE$§!.\n"
+ SAMURAI_modifier:0 "Paladins Hired"
+ HAVE_AT_LEAST_SAMURAI_THAN:0 "Have at least §Y$VALUE$§! Paladins.\n"
+ MODIFIER_AMOUNT_OF_SAMURAI:0 "Paladin Force Limit"
+ ONLY_SAMURAI_MODIFIER:0 "§YAffects only Paladin Regiments§!"
+ samurai_regiment:0 "Paladin"
+ SAMURAI_REGIMENT_TYPE:0 "Paladin"
+ HAVE_AT_LEAST_SAMURAI_THAN:0 "Have at least $VALUE|Y$ Paladin Regiments.\n"
+ MODIFIER_HAS_SAMURAI:0 "Allows Paladin Infantry"
+ SAMURAI_CANT_HAVE:0 "Your nation cannot raise Paladin Infantry."
+ 
+ 
+ #Missions
+ B33_attack_on_marrhold_title:0 "Deal with the Griffin Riders"
+ B33_attack_on_marrhold_desc:0 "The Kingdom of Marrhold was our Eastern neighbor for centuries and we were often at odds over the exact border between our two nations. \n\n They have defeated us before in cowardly ways, such as throwing Godwin the Stoutheart into Silvermere because they could not defeat him honorably. Yet during the Greentide, we have fought side by side with them to drive back the orcs. Whether we look for revenge or are ready to forgive, we will have to make a decision on how to deal with them."

@@ -4,6 +4,14 @@ spriteTypes = {
 		texturefile = "gfx//interface//buildings//DA_Runeforged_fort_image.dds"
 	}
 	spriteType = {
+		name = "GFX_DA_Runeforged_fort_t2"	
+		texturefile = "gfx//interface//buildings//DA_Runeforged_fort_image_t2.dds"
+	}
+	spriteType = {
+		name = "GFX_DA_Runeforged_fort_t3"	
+		texturefile = "gfx//interface//buildings//DA_Runeforged_fort_image_t3.dds"
+	}
+	spriteType = {
 		name = "GFX_DA_Hehogrim_Runeforged_fort"	
 		texturefile = "gfx//interface//buildings//DA_Hehogrim_Runeforged_fort_image.dds"
 	}
@@ -14,5 +22,96 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_DA_Reinforced_capital"	
 		texturefile = "gfx//interface//buildings//DA_Reinforced_capital_image.dds"
+	}
+#	spriteType = {
+#		name = "GFX_DA_hold_work"
+#		texturefile = "gfx//interface//buildings//DA_hold_work_image.tga"
+#		loadType = "INGAME"
+#	} 
+	spriteType = {
+		name = "GFX_DA_turrets_HO"
+		texturefile = "gfx//interface//buildings//DA_turrets_HO_image.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_DA_railway_work"
+		texturefile = "gfx//interface//buildings//DA_railway_work_image.tga"
+		loadType = "INGAME"
+	}
+	# techs buildings
+	spriteType = {
+		name = "GFX_DA_Alchemy_workshop_1"
+		texturefile = "gfx//interface//buildings//DA_Alchemy_workshop_1_image.dds"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_DA_Alchemy_workshop_2"
+		texturefile = "gfx//interface//buildings//DA_Alchemy_workshop_2_image.dds"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_DA_Alchemy_workshop_3"
+		texturefile = "gfx//interface//buildings//DA_Alchemy_workshop_3_image.dds"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_DA_Factory_1"
+		texturefile = "gfx//interface//buildings//DA_Factory_1_image.dds"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_DA_Factory_2"
+		texturefile = "gfx//interface//buildings//DA_Factory_2_image.dds"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_DA_Factory_3"
+		texturefile = "gfx//interface//buildings//DA_Factory_3_image.dds"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_DA_Hospital_1"
+		texturefile = "gfx//interface//buildings//DA_Hospital_1_image.dds"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_DA_Hospital_2"
+		texturefile = "gfx//interface//buildings//DA_Hospital_2_image.dds"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_DA_Hospital_3"
+		texturefile = "gfx//interface//buildings//DA_Hospital_3_image.dds"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_DA_Runesmiths_branch_1"
+		texturefile = "gfx//interface//buildings//DA_Runesmiths_branch_1_image.dds"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_DA_Runesmiths_branch_2"
+		texturefile = "gfx//interface//buildings//DA_Runesmiths_branch_2_image.dds"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_DA_Runesmiths_branch_3"
+		texturefile = "gfx//interface//buildings//DA_Runesmiths_branch_3_image.dds"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_DA_Smelting_Furnace_1"
+		texturefile = "gfx//interface//buildings//DA_Smelting_Furnace_1_image.dds"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_DA_Smelting_Furnace_2"
+		texturefile = "gfx//interface//buildings//DA_Smelting_Furnace_2_image.dds"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_DA_Smelting_Furnace_3"
+		texturefile = "gfx//interface//buildings//DA_Smelting_Furnace_3_image.dds"
+		loadType = "INGAME"
 	}
 }

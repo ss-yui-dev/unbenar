@@ -1,0 +1,116 @@
+﻿l_english:
+ #ideas and policies
+ the_economic_policy:0 "The Act of Economy"
+ the_infrastructure_policy:0 "The Act of Infrastructure"
+ 
+ #ibevar decisions
+ ibevar_religion_transformation_decision_title:0 "Religion Transformation (test) "
+ ibevar_religion_transformation_decision_desc:0 "AI mode or Test mode."
+ ibevar_construct_a_safe_home_decision_title:0 "Construct a Safe Home"
+ ibevar_construct_a_safe_home_decision_desc:0 "True safety comes from both outside and inside."
+ ibevar_construct_greater_ibevar_decision_title:0 "Construct a Greater Ibevar"
+ ibevar_construct_greater_ibevar_decision_desc:0 "True greatness comes from both outside and inside."
+ ibevar_development_condition:0 "Highlighted provinces gain '§YIbevar Development§!' modifier , allowing Ibevar expand infrastructure without increasing governing capacity for one level.\nHighlighted non-elven provinces get '§YAssimilation and Resettlement Policy§!' for §Y50 years§!, giving the following effects:\nLocal Culture Conversion Cost: §G-50.0%§!\nLocal Missionary Strength: §G+3.0%§!"
+ ibevar_unite_with_moonhaven_decision_title:0 "Unite with Moonhaven"
+ ibevar_unite_with_moonhaven_decision_desc:0 "Now that we finally become the emperor of Anbennar, we're capable of representing the elves in the Empire. Our distant relatives im Moonhaven also rejoice at the promotion of elves' living status. If we forge closer ties with each other as the emperor and the elector, we might lead the Empire of Anbennar -- and elves within-- to a brighter future."
+ 
+ ibevar_horse_for_a_king_title:0 "A Horse Fit for a King"
+ ibevar_horse_for_a_king_desc:0 "A knight's horse is an extension of its rider's will, as important as any piece of plate or weapon. It is important for any knight to take care of and form a bond with their own steed. Our monarch shall have the pick of the litter, so to speak, and deserves only the best mount available. Now that the Escanni horse market has stabilized and recovered, breeds of every variety and type are now again available, each with its own individual strengths and weaknesses. What shall be our monarch's choice?"
+ adenica_another_path_title:0 "Another path of Adenica"
+ adenica_another_path_desc:0 "We've chosen our path. But maybe it's time to try something else..."
+ adenica_cossacks_title:0 "Orachav in the Steppes"
+ adenica_cossacks_desc:0 "Orachav are primarily horse riding scouts and guardsmen for the Triunic frontiersmen who promote a more nomadic way of life to counter the vulnerability of sedentary settlements their forefathers had against the centaur threat. Since we have take control of local places, perhaps it's time to incorporate them as a part of our country?"
+ 
+ cyranvar_another_path_title:0 "Another path of Cyranvar"
+ cyranvar_another_path_desc:0 "We've chosen our path. But maybe it's time to try something else..."
+ cyranvar_I45_internal_investment_title:0 "Cyranvar Investment"
+ cyranvar_I45_internal_investment_desc:0 "We've united many clans in the deepwood so far. Let's luanch a investment plan on each clan, so we can benifit form the unification. "
+ 
+ asheniande_vampire_spread_cooldown_decision_title:0 "Vampire Spread Cooldown"
+ asheniande_vampire_spread_cooldown_decision_desc:0 "Remove this!"
+ asheniande_A60_another_wave_decision_title:0 "Another Wave"
+ asheniande_A60_another_wave_decision_desc:0 "Our operations have been succeeding thus far and the influence of Asheniande over imperial politics is rising. We once again should take countermeasures to ensure our Vampire population remains stable."
+ 
+ #formable decisions
+ restore_empire_rank_decision_title:0 "Restore Empire Rank"
+ restore_empire_rank_decision_desc:0 "Stupid bug..."
+ 
+ ibevar_arbaran_elfrealm_title:0 "the Elfrealm of Arbaran"
+ ibevar_arbaran_elfrealm_desc:0 "Now that we've reclaimed the territory of Ianren the Rider, maybe it's time to restore the Elfrealm of Arbaran. Let's make the Calasanni Trading Company into good use, ensuring elven craftsman work for themselves instead of some insatiabletradesman. What's more, by claiming ourselves as the rightful successor of Ianren, we might gain official recognition of the Anbennarian Empire, or even take control of the Dove Throne..."
+ ibevar_adenica_nation_title:0 "the Elfrealm of Adenica"
+ ibevar_adenica_nation_desc:0 "The Kingdom of Adenica was the greatest of the western Escanni kingdom and the center of Adean's worship before the Greentide, known far and wide for being the birthplace of knights and chivalry. Although we worship Munas above all the other Regent Court deities, Adean is not doubt the true heir of Castellos. With righteous hearts, our knights will reclaim their former glory as they ride against injustice."
+ ibevar_marrhold_nation_title:0 "Form the Marrhold"
+ ibevar_marrhold_nation_desc:0 "We have grown powerful enough in Escann that our influence matches the old lords of Marrhold. We must move on from our adventurer beginnings and tame the wild griffons of the Serpentspine Mountains！\n\n§R(If you're an Adventurer, this is mutually exclusive from the Form Our Own Country! decision)§!"
+ 
+ ibevar_escanni_wars_victor_requirements_title:0 "Escanni Wars Victor Requirements"
+ ibevar_escanni_wars_victor_requirements_desc:0 "What is required to be the victor of the Escanni Wars of Consolidation. "
+ ibevar_escanni_bypass_requirements_title:0 "Escanni Wars Bypass Requirements"
+ ibevar_escanni_bypass_requirements_desc:0 "What is required to bypass the Escanni Wars of Consolidation. "
+ 
+ ibevar_woodelf_nation_title:0 "Moonlight over the Deepwoods"
+ ibevar_woodelf_nation_desc:0 "The ancient forest of the Deepwoods has been clouded in mystery. Some stories speak of changelings stealing children and playing tricks, and some speak of rival courts of fey playing toy with the whims of mortal men. What is certain is that a group of elves lost themselves in the forest since their race's arrival to the land 400 years ago, and now have revealed themselves as Wood Elves to the rest of Cannor. Since we'd conquered most of the region, it's time to bring our lost distant relatives back under our embrace. Glorious shall the new realm of Cyranvar be! "
+ 
+ follow_the_path_of_jaddri_title:0 "§TFollow the Path of Jaddri§!"
+ follow_the_path_of_jaddri_desc:0 "It is our duty to Surael to banish the dark and spread the light. There are many in the world who do not see this the right way, we shall bring them the truth. If not through word, through fire and blood.\n\n§GFollowing the path of Jaddari, and then the Jadd Empire. §!"
+ 
+ future_of_lithiel_title:0 "the Future of Lithiel"
+ future_of_lithiel_desc:0 "The war that has riven our empire is finally over, with the last of the pretenders having been put down. The defeat of Lithiel was the final nail in the coffin of popular support for the factions seeking our overthrow. Now we have the task of sorting out the aftermath, starting with she who would have been Queen." 
+ 
+ FM_rearrange_our_roost_title:0 "Rearrange our roost"
+ FM_rearrange_our_roost_desc:0 "Most races of Halcann build their capitals in farmlands, where they have plenty of food nearby. However we have been blessed with wings that will carry our daughters far and wide. And so we have often made our homes in the mountains and hills, where we can build our nests safe from harm. It is time to do so again, let us rearrange our cities out of reach from hostility up high in the rocks where only feathers can reach them!"
+ 
+ #event modifiers
+ ibevar_arcane_knights:0 "Arcane Knights"
+ ibevar_arcane_knights_desc:0 "Swords and cloaks, both of them are weapons of arcane knights. The art of Bladedancing is about using one's blade as a focus for magic. On defensive side, by using specialized abjuration and transmutation magics, arcane knights could turn their cloak into a shield-like material at a second. "
+ 
+ #province triggered modifiers
+ ibevar_infrastructure:0 "Ibevar Infrastructure"
+ kobold_infrastructure:0 "Kobold Infrastructure"
+ 
+ #estates
+ MIGA_elven_forest:0 "Elven Forest"
+ MIGA_estate_RC_castellos:0 "National Worship: Castellos"
+ MIGA_estate_RC_castellos_desc:0 "The head of the Regent Court, Castellos is the eldest of the original three siblings of the Pantheon (the others being Yshtralania and Agrados) and is the god of rule and order. Once a great warrior, his rescue of his son Adean against the first dragon, Malliath, led to Castellos' left arm and leg to be bitten off. Now Castellos rules from his throne as a just and rightful king, allowing his subjects (the other gods) to do good in his stead."
+ MIGA_estate_RC_the_dame:0 "National Worship: The Dame"
+ MIGA_estate_RC_the_dame_desc:0 "The Dame was originally the ancient goddess of harvest, but over time she became the goddess of wisdom and magic (inheriting from her mother and Castellos' sister: Yshtralania). Since the arrival of the elves, whom she rescued by leading Munas Moonsinger to Cannor, she has also been lauded as the goddess of tolerance, mercy, and forward-thinking."
+ MIGA_estate_RC_corin:0 "National Worship: Corin"
+ MIGA_estate_RC_corin_desc:0 "The most recent deity to join the pantheon and the reincarnation of the disgraced god of war Agrados, Corin ascended to the role after sacrificing her life to defeat the early Greentide in 1444. Corin now serves as the new god of war, which had been left empty since Agrados' defeat during the Godswar."
+ MIGA_estate_RC_adean:0 "National Worship: Adean"
+ MIGA_estate_RC_adean_desc:0 "Firstborn of Castellos and god of good, honour and chivalry. Adean was squire to Agrados (the former god of war and Castellos' traitorous brother) but chose the side of good after his mentor's betrayal. Before the rise of Corin, Adean was the de-facto god of just and honourable wars and conflicts, and was most notable for his charge with lance and steed to behead one of the two heads of Malliath Godeater, the first dragon."
+ MIGA_estate_RC_munas_moonsinger:0 "National Worship: Munas Moonsinger"
+ MIGA_estate_RC_munas_moonsinger_desc:0 "Munas Moonsinger is the god of travel, music, exploration and the seas. One of the most recent gods to ascend, and the first elf to do so. Munas is most famous for leading the elven Remnant Fleet to Cannor, ending their 1000-year voyage after the loss of their homeland in the Day of Ashen Skies."
+ MIGA_estate_RC_ara:0 "National Worship: Ara"
+ MIGA_estate_RC_ara_desc:0 "Ara (also known as Lady Luck) is the goddess of trade and fortune. Her followers were responsible for setting up the first human mint and currency, allowing ancient Castanor to move from its reliance on dwarven coinage."
+ MIGA_estate_RC_balgar:0 "National Worship: Balgar"
+ MIGA_estate_RC_balgar_desc:0 "Balgar the Builder is the god of construction, monuments and great works. A dwarf in mortal life, Balgar was one of Castan I of Castanor's top advisors and responsible for designing and construction the famed Castanorian Citadels and the Great Walls of Castanor."
+ MIGA_estate_RC_esmaryal:0 "National Worship: Esmaryal"
+ MIGA_estate_RC_esmaryal_desc:0 "The second wife of Castellos (after the death of the primordial Halanna) and mother to his children Adean and Ryala. Esmaryal provides the namesake of the region of Esmaria, where she originated as the region's goddess of fertility, hearth and family which she still serves as to this day."
+ MIGA_estate_RC_ryala:0 "National Worship: Ryala"
+ MIGA_estate_RC_ryala_desc:0 "Castellos' virginal daughter, Ryala is the goddess of true love, beauty, courtship and chastity. It is said that Ryala's avatars were responsible for most wars caused by love in history."
+ MIGA_estate_RC_minara:0 "National Worship: Minara"
+ MIGA_estate_RC_minara_desc:0 "Created by Ryala to ward away potential suitors, Minara is the goddess of (lesser) love, celebrations and joy. It is said that Minara was a mortal woman whom Ryala uplifted to godhood after being impressed with her skills in lovemaking."
+ MIGA_estate_RC_falah:0 "National Worship: Falah"
+ MIGA_estate_RC_falah_desc:0 "One of the only two children of Agrados born from his rape of Halanna which did not become monstrous. Falah Trueshot serves as the goddess of archery, ranged warfare and the hunt, willingly carrying out Castellos' penance in her father's stead: to hunt down her monstrous siblings, the deities of beastkind."
+ MIGA_estate_RC_nerat:0 "National Worship: Nerat"
+ MIGA_estate_RC_nerat_desc:0 "Brother of Falah and son of Agrados. Nerat is the god of law, judgment and the underworld - serving as Castellos' jailer and warden of hell, protecting the heavens and earth against the demonspawn of the defeated deities of the Godswar. Inversely his domain over life and death has made him the de facto god of medicine."
+ MIGA_estate_RC_nathalyne:0 "National Worship: Nathalyne"
+ MIGA_estate_RC_nathalyne_desc:0 "The goddess of thieves, secrets and shadows. Nathalyne was once a mortal avatar of The Dame who went undiscovered for years due to her half-elven origins, in life she was an infamous thief and one of the first outside practitioners of the Harimari art of shadowmancy."
+ MIGA_estate_RC_dookan:0 "National Worship: Dookan"
+ MIGA_estate_RC_dookan_desc:0 "Despite being corrupted into a bloodthirsty god of conquest in orcish myths, Dookan's true nature is that of the god of mercenaries. Once a chief lieutenant of the god of war, Agrados, he instead betrayed his master for coin and fought in the service of Castellos during the Godswar, calling true to his original portfolio and being instrumental in Castellos' victory."
+ 
+ estate_mages_land_rights_desc:0 "Mages desire land to build their mage towers and laboratories, allowing them to study magic without being interrupted."
+ estate_artificers_land_rights_desc:0 "Artificers desire land to build their guilds and artificery factories, allowing them to research artificery without being interrupted."
+ 
+ estate_mages_new_world_mission:0 "Establish Missions in New Lands"
+ estate_mages_new_world_mission_desc:0 "The New World is teeming with magic. It is the calling of the [Root.GetMagesName] to find out the hidden truth on these lands."
+ estate_artificers_new_world_charter:0 "Grant Colonial Charters"
+ estate_artificers_new_world_charter_desc:0 "The New World is a land of opportunities - particularly for artificers seeking to improve themselves. We should encourage this by offering the [Root.GetArtificersName] charters granting them favorable conditions for their works."
+ 
+ estate_monstrous_tribes_pioneer_initiatives:0 "Pioneer Initiatives"
+ estate_monstrous_tribes_pioneer_initiatives_desc:0 "The frontiers are lands of opportunity - particularly for tribes seeking to settle down. We should encourage this by offering our tribes more spoils which granting them favorable conditions for their homesteads."
+ 
+ #nation
+ SILVER_DEMESNE:0 "Silver Demesne"
+ SILVER_DEMESNE_ADJ:0 "Silver Demesne"
+ MOONWOOD_FEDERATION:0 "Moonwood Federation"
+ MOONWOOD_FEDERATION_ADJ:0 "Moonwood Federation"

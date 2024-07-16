@@ -28,5 +28,5 @@ splendor_4_age = {
     trigger = {
         current_age = age_of_revolutions
     }
-    monthly_splendor = -2
+    monthly_splendor = -3
 }

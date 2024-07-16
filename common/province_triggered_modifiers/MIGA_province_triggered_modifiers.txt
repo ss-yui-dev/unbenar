@@ -1,0 +1,53 @@
+
+ibevar_infrastructure = {
+	potential = {
+		owner = {
+			OR = {
+				tag = A32
+				was_tag = A32
+			}
+		}
+	}
+
+	trigger = {
+		num_of_times_expanded_infrastructure = 1
+	}
+	
+	picture = "abundant_woods"
+
+	local_governing_cost_increase = -15
+	local_governing_cost = -0.1
+	province_trade_power_value = 2
+
+	#Province scope
+	on_activation = {
+	}
+
+	on_deactivation = {
+	}
+}
+
+kobold_infrastructure = {
+	potential = {
+		owner = {
+			culture_group = kobold
+		}
+	}
+
+	trigger = {
+		num_of_times_expanded_infrastructure = 1
+	}
+	
+	picture = "kobold_hoard"
+
+	local_governing_cost_increase = -15
+	local_governing_cost = -0.1
+	province_trade_power_value = 2
+
+	#Province scope
+	on_activation = {
+	}
+
+	on_deactivation = {
+	}
+}

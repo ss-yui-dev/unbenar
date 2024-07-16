@@ -1,0 +1,61 @@
+﻿l_english:
+ #government_mechanic
+ ability_council_of_the_ancients_mechanic:0 "Council Of The Ancients"
+ council_of_the_ancients_mechanic:0 "Council Of The Ancients"
+ MIGA_royal_council_interaction:0 "Call the Royal Council"
+ MIGA_royal_council_interaction_tooltip:0 "Can choose one of the following modifiers for §Y10 years§!:\n§YCouncil of the Chamber§!:\n    Possible Advisors: §G+2§!\n    Same Culture Advisor Cost: §G-20%§!\n\n§YCouncil of Development§!:\n    Development Cost: §G-0.1§!\n    Global Monthly Devastation: §G-0.2§!\n\n§YCouncil of the Inquisition§!:\n    Missionaries: §G+1§!\n    Missionary Strength: §G+1%§!"
+ MIGA_state_council_interaction:0 "Call the Council of State"
+ MIGA_state_council_interaction_tooltip:1 "Can choose one of the following modifiers for §Y10 years§!:\n§YCouncil of Diplomats§!:\n    Diplomatic Reputation: §G+2§!\n\n§YCouncil of the Artisans§!:\n    Global Trade Goods Size: §G+10%§!\n    Global Prosperity Growth: §G+0.2§!\n\n§YCouncil of the Men§!:\n    Global Institution Spread: §G+25%§! \n    Institution Embracement Cost: §G-10%§!"
+ MIGA_war_council_interaction:0 "Call the Council of War"
+ MIGA_war_council_interaction_tooltip:0 "Can choose one of the following modifiers for §Y10 years§!:\n§YCouncil of Discipline§!:\n    Yearly Professionlism: §G+0.5%§!\n    Drill Gain: §G+25%§!\n    Drill Decay: §G-25%§!\n\n§YCouncil of Organization§!:\n    Reinforce Speed: §G+25%§!\n    Land Attrition: §G-15%§!\n\n§YCouncil of the Defensive Static§!:\n    Defensiveness: §G+15%§!\n    Hostile Attrition: §G+1§!"
+ 
+ royal_council_meeting_mod:0 "Royal Council Called"
+ state_council_meeting_mod:0 "Council of State Called"
+ war_council_meeting_mod:0 "Council of War Called"
+ council_consensus:0 "Council Consensus"
+ monthly_council_consensus:0 "Monthly Council Consensus"
+ council_consensus_gain_modifier:0 "Council Consensus Gain Modifier"
+ 
+ #events
+ council_of_the_ancients_events.1.t:0 "Focus on the Royal Council"
+ council_of_the_ancients_events.1.desc:0 "After thoughtful deliberations, the secretaries of the different councils have come to the consensus that we must focus the efforts of our government during the coming years on internal affairs, their actions being coordinated by the Royal Council. It is up to us to decide which specific council should lead the government actions."
+ council_of_the_ancients_events.1.a:0 "The Council of the Chamber will dispense the royal will and justice."
+ council_of_the_ancients_events.1.b:0 "The Council of Development will put the treasury in order and increase our income."
+ council_of_the_ancients_events.1.c:0 "Nobody will expect the Council of the Inquisition!"
+ 
+ council_of_the_ancients_events.2.t:0 "Focus on the Council of State" 
+ council_of_the_ancients_events.2.desc:0 "After thoughtful deliberations, the secretaries of the different councils have come to the consensus that we must focus the efforts of our government during the coming years on diplomatic affairs, their actions being coordinated by the Council of State. It is up to us to decide which specific council should lead the government actions."
+ council_of_the_ancients_events.2.a:0 "Our bid for Hegemony over Cannor will be the most important issue!"
+ council_of_the_ancients_events.2.b:0 "The skills of elven artisans are unparalleled. They are the true foundation of our nation."
+ council_of_the_ancients_events.2.c:0 "Sometimes we should listen to the 'lesser' races and assimilating any useful ideas."
+ 
+ council_of_the_ancients_events.3.t:0 "Focus on the Council of War"
+ council_of_the_ancients_events.3.desc:0 "After thoughtful deliberations, the secretaries of the different councils have come to the consensus that we must focus the efforts of our government during the coming years on war, their actions being coordinated by the Council of War. It is up to us to decide which specific council should lead the government actions."
+ council_of_the_ancients_events.3.a:0 "The Council of Discipline will help us build a modern professional army."
+ council_of_the_ancients_events.3.b:0 "The Council of Organization will provide our soldiers with more resources in need."
+ council_of_the_ancients_events.3.c:0 "The Council of Defensive Static will secure our nation against any invading enermies."
+ 
+ #event modifiers
+ council_of_the_chamber_mod:0 "Council of the Chamber Focus"
+ council_of_development_mod:0 "Council of Development Focus"
+ council_of_the_inquisition_mod:0 "Council of the Inquisition Focus"
+ 
+ council_of_diplomats_mod:0 "Council of Diplomats Focus"
+ council_of_artisans_mod:0 "Council of Artisans Focus"
+ council_of_men_mod:0 "Council of the Men Focus"
+ 
+ council_of_discipline_mod:0 "Council of Discipline Focus"
+ council_of_organization_mod:0 "Council of Organization Focus"
+ council_of_defensive_static_mod:0 "Council of the Defensive Static Focus"
+ 
+ desc_council_of_the_chamber_mod:0 "The Council of the Ancients has been called in."
+ desc_council_of_development_mod:0 "The Council of the Ancients has been called in."
+ desc_council_of_the_inquisition_mod:0 "The Council of the Ancients has been called in."
+ 
+ desc_council_of_diplomats_mod:0 "The Council of the Ancients has been called in."
+ desc_council_of_artisans_mod:0 "The Council of the Ancients has been called in."
+ desc_council_of_men_mod:0 "The Council of the Ancients has been called in."
+ 
+ desc_council_of_discipline_mod:0 "The Council of the Ancients has been called in."
+ desc_council_of_organization_mod:0 "The Council of the Ancients has been called in."
+ desc_council_of_defensive_static_mod:0 "The Council of the Ancients has been called in."

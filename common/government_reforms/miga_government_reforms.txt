@@ -1,0 +1,323 @@
+
+#moon elf
+council_of_the_ancients_reform = {
+	icon = "council_of_the_ancients"
+	allow_normal_conversion = yes
+	potential = {
+		has_country_flag = council_of_the_ancients_reform_flag
+	}
+
+	modifiers = {
+		same_culture_advisor_cost = -0.2
+		advisor_pool = 2 #new
+	}
+
+	custom_attributes = {
+		better_long_lived = yes
+	}
+	
+	government_abilities = {
+		council_of_the_ancients_mechanic
+	}
+
+	ai = {
+		factor = 100
+	}
+}
+
+#wood elf
+oak_monarchy_reform = {
+	icon = "mandala_system"
+	allow_normal_conversion = no
+	lock_level_when_selected = yes
+	potential = {
+		OR = {
+			has_country_flag = oak_monarchy_reform
+			AND = {
+				have_had_reform = oak_monarchy_reform
+				is_playing_custom_nation = yes
+			}
+		}
+	}
+	valid_for_nation_designer = yes
+	nation_designer_cost = 60
+	nation_designer_trigger = {
+
+	}
+	modifiers = {
+		diplomatic_reputation = 1
+		yearly_absolutism = 0.5
+		advisor_cost = -0.1 #was +0.1
+	}
+	custom_attributes = {
+		locked_government_type = yes
+		heir = no
+		queen = no
+		rulers_can_be_generals = yes #was no
+		cyranvar_special_election = yes
+		better_long_lived = yes #new
+	}
+}
+
+#star elf
+enlightened_empire_reform = {  #Aelnar government
+	icon = "soldiers_2"
+	allow_normal_conversion = no
+	potential = {
+		OR = {
+			AND = {
+				has_country_flag = aelnar_government
+				tag = Z43
+			}
+			AND = {
+				is_playing_custom_nation = yes
+				have_had_reform = enlightened_empire_reform
+			}
+		}
+	}
+	valid_for_nation_designer = yes
+	nation_designer_cost = 10
+	nation_designer_trigger = {
+		culture_group = elven
+	}
+	legacy_equivalent = feudal_monarchy
+	lock_level_when_selected = yes
+	fixed_rank = 3
+	queen = yes
+
+	factions = {
+		aelnar_blaiddtar
+		aelnar_cymscal
+		aelnar_suir
+	}
+
+	modifiers = {
+		promote_culture_cost = 2
+		governing_capacity_modifier = 0.1
+		tolerance_own = 1
+		culture_conversion_cost = -0.25
+		max_absolutism = 15
+	}
+	custom_attributes = {
+		locked_government_type = yes
+		claim_states = yes
+		#disables_regular_estates = yes #change
+	}
+}
+
+#sunrise elf
+sunrise_court_reform = {
+	icon = "sunrise_empire"
+	allow_convert = no
+	allow_normal_conversion = no
+	lock_level_when_selected = yes
+	legacy_equivalent = constitutional_republic
+	potential = {
+		has_reform = sunrise_court_reform
+	}
+	valid_for_nation_designer = no
+	valid_for_new_country = no
+	can_change_primary_culture = no
+	modifiers = {
+		advisor_cost = -0.15
+		idea_cost = -0.1
+		development_cost = -0.1
+		governing_capacity_modifier = -0.6
+		culture_conversion_cost = 100
+		global_missionary_strength = -0.1
+		max_absolutism = 20
+	}
+	fixed_rank = 3
+	
+	custom_attributes = {
+		locked_government_type = yes
+		enables_plutocratic_idea_group = yes
+		enables_aristocratic_idea_group = no
+		has_parliament = yes
+		disabled_purging = yes
+		disabled_expelling = yes
+	}
+	duration = 30
+	#new
+	assimilation_cultures = {
+		anbennarian = {
+			all_power_cost = -0.025
+		}
+		alenic = {
+			global_trade_goods_size_modifier = 0.1
+		}
+		businori = {
+			ship_durability = 0.1
+		}
+		escanni = {
+			governing_capacity_modifier = 0.1
+		}
+		dostanorian_g = {
+			fort_maintenance_modifier = -0.15
+		}
+		kheteratan = {
+			galley_power = 0.15
+		}
+		lencori = {
+			cavalry_power = 0.15
+		}
+		halfling = {
+			trade_efficiency = 0.1
+		}
+		gnomish = {
+			technology_cost = -0.05
+		}
+		gerudian = {
+			naval_forcelimit_modifier = 0.2
+		}
+		giantkind = {
+			build_cost = -0.1
+		}
+		elven = {
+			discipline = 0.05
+		}
+		dwarven = {
+			artillery_power = 0.1
+		}
+		kobold = {
+			hostile_attrition = 1
+		}
+		gnollish = {
+			unjustified_demands = -0.2
+		}
+		orcish = {
+			shock_damage = 0.1
+		}
+		goblin = {
+			land_attrition = -0.15
+		}
+		bulwari = {
+			core_creation = -0.1
+		}
+		harpy = {
+			manpower_recovery_speed = 0.1
+		}
+		upper_raheni = {
+			global_regiment_cost = -0.1
+		}
+		middle_raheni = {
+			idea_cost = -0.1
+		}
+		south_raheni = {
+			siege_ability = 0.1
+		}
+		hobgoblin = {
+			drill_gain_modifier = 0.5
+		}
+		harimari = {
+			administrative_efficiency = 0.05
+		}
+		centaur = {
+			cavalry_shock = 0.25
+		}
+		ogre = {
+			shock_damage_received = -0.1
+		}
+		triunic = {
+			improve_relation_modifier = 0.2
+		}
+		bom = {
+			garrison_size = 0.2
+		}
+		kai = {
+			movement_speed = 0.15
+		}
+		kelino = {
+			global_trade_power = 0.1
+		}
+		yanglam = {
+			yearly_absolutism = 1
+		}
+		yan = {
+			fire_damage = 0.10
+		}
+		khantaar = {
+			cavalry_cost = -0.15
+		}
+		odheongun = {
+			infantry_fire = 0.15
+		}
+		besholgi = {
+			global_foreign_trade_power = 0.10
+		}
+		akasi = {
+			trade_steering = 0.20
+		}
+		vyzemby = {
+			global_sailors_modifier = 0.2
+		}
+		mengi = {
+			tolerance_own = 2
+		}
+		baashidi = {
+			possible_adm_policy = 1
+		}
+		tanizu = {
+			infantry_shock = 0.15
+		}
+		west_sarhaly = {
+			all_estate_loyalty_equilibrium = 0.05
+		}
+		irsukuba = {
+			years_of_nationalism = -5
+		}
+		vurebindu = {
+			global_supply_limit_modifier = 0.25
+		}
+		lizardfolk = {
+			production_efficiency = 0.10
+		}
+		wuhyun = {
+			infantry_power = 0.10
+		}
+	}
+}
+
+#dawn elf
+rezankand_reform = { #Rezankand government
+	icon = "papacy"
+	allow_normal_conversion = no
+	potential = {
+		OR = {
+			AND = { 
+				has_country_flag = rezankand_government
+				tag = H67
+			}
+			is_playing_custom_nation = yes
+		}
+	}
+	
+	valid_for_nation_designer = yes
+	nation_designer_cost = 10
+	
+	# legacy_equivalent = rezankand_reform_legacy
+	lock_level_when_selected = yes
+	fixed_rank = 3
+	maintain_dynasty = yes
+
+	rulers_can_be_generals = yes
+	heirs_can_be_generals = yes
+	
+	modifiers = {
+		max_absolutism = 10
+		institution_spread_from_true_faith = 0.15
+		administrative_efficiency = 0.05
+		num_accepted_cultures = 2
+	}
+	
+	custom_attributes = {
+		locked_government_type = yes
+	}
+	
+	conditional = { #new
+		allow = { has_dlc = "Cradle of Civilization" }
+		government_abilities = {
+			phoenix_estate_mechanic
+		}
+	}
+}

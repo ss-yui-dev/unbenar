@@ -39,12 +39,27 @@ country_event = {
 		}
 		modifier = {
 			factor = 0.85
-			has_estate_privilege = estate_DA_Runesmiths_patronage
+			has_country_modifier = DA_Runesmith_patronage
 		}
 		modifier = {
-			factor = 0.75
+			factor = 0.90
+			OR = {
+				has_estate_privilege = estate_DA_Runesmiths_RF_4
+				has_estate_privilege = estate_DA_Runesmiths_RF_5
+			}
+		}
+		modifier = {
+			factor = 0.85
+			OR = {
+				has_estate_privilege = estate_DA_Runesmiths_RF_6
+				has_estate_privilege = estate_DA_Runesmiths_RF_7
+			}
+		}
+		modifier = {
+			factor = 0.80
 			OR = {
 				has_estate_privilege = estate_DA_Runesmiths_RF_8
+				has_estate_privilege = estate_DA_Runesmiths_RF_9
 				has_estate_privilege = estate_DA_Runesmiths_RF_10
 				has_estate_privilege = estate_DA_Runesmiths_RF_11
 			}
@@ -144,12 +159,27 @@ country_event = {
 		}
 		modifier = {
 			factor = 0.85
-			has_estate_privilege = estate_DA_Runesmiths_patronage
+			has_country_modifier = DA_Runesmith_patronage
 		}
 		modifier = {
-			factor = 0.75
+			factor = 0.90
+			OR = {
+				has_estate_privilege = estate_DA_Runesmiths_RF_4
+				has_estate_privilege = estate_DA_Runesmiths_RF_5
+			}
+		}
+		modifier = {
+			factor = 0.85
+			OR = {
+				has_estate_privilege = estate_DA_Runesmiths_RF_6
+				has_estate_privilege = estate_DA_Runesmiths_RF_7
+			}
+		}
+		modifier = {
+			factor = 0.80
 			OR = {
 				has_estate_privilege = estate_DA_Runesmiths_RF_8
+				has_estate_privilege = estate_DA_Runesmiths_RF_9
 				has_estate_privilege = estate_DA_Runesmiths_RF_10
 				has_estate_privilege = estate_DA_Runesmiths_RF_11
 			}

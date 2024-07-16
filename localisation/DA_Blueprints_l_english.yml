@@ -1,0 +1,286 @@
+﻿l_english:
+
+ DA_Find_runic_blueprint_tt:0 "Found a §Ypotential§! §ORunic Blueprint§!\n"
+
+ DA_Find_steam_blueprint_tt:0 "Found a §Ypotential§! §OSteam-Powered Blueprint§!\n"
+
+ DA_Find_Runic_circuit_blueprint_tt:0 "Found a §Ypotential§! §OElectrical Blueprint§!\n"
+
+ DA_Found_runic_bluprint_tt:0 "Found a §ORunic Blueprint§!\n"
+
+ DA_Found_steam_bluprint_tt:0 "Found a §OSteam-Powered Blueprint§!\n"
+
+ DA_Found_Electrical_Blueprint_tt:0 "Found an §OElectrical Blueprint§!\n"
+
+
+ DA_Blueprint_event.100.a:0 "Ashen skies!"
+ DA_Blueprint_event.101.a:0 "Excellent"
+
+ DA_Blueprint_event.100.t:0 "Unusable Blueprint"
+ DA_Blueprint_event.100.d:0 "We can't work with this, it is too deteriorated."
+
+############### runic blueprint ###################
+# 26 lines is fine
+
+ DA_Blueprint_event.101.t:0 "§OBlueprint:§! Runic Blunderbuss"
+ DA_Blueprint_event.101.d:0 "\n\n\n\n\n\n\n\n\n\n\n\nRating: C-      Rune Slots: 1\n\nCost: 2        Tech Tier: Militarized Runes (I)\n\nUnit Type: Infantry and Cavalry      Unique Modifier: None\n\nTechs Required: \n - §oTechnology§! §YAlchemy I§!\n - §oTechnology§! §YArcane Arts I§!\n - §oTechnology§! §YMechanics I§!\n\nA fairly simple Runic firearm that allow runes to enhance both projectile speed and impact force. The fire rune ignites the gunpowder with incredible efficiency, propelling a cluster of shrapnel or pellets at high velocity."
+
+ DA_Blueprint_event.102.t:0 "§OBlueprint:§! Runic Battle Axes"
+ DA_Blueprint_event.102.d:0 "\n\n\n\n\n\n\n\n\n\n\n\nRating: C      Rune Slots: 0\n\nCost: 2        Tech Tier: Militarized Runes (I)\n\nUnit Type: Infantry and Cavalry      Unique Modifier: None\n\nTechs Required: \n - §oTechnology§! §YAlchemy I§!\n - §oTechnology§! §YArcane Arts I§!\n\nCompact devices that unleash jets of magical fire, using runes to control the intensity and direction of the flames. Dwarven engineers have perfected the art of controlled fire, turning these flamethrowers into devastating weapons."
+
+ DA_Blueprint_event.103.t:0 "§OBlueprint:§! Runic Warhammers"
+ DA_Blueprint_event.103.d:0 "\n\n\n\n\n\n\n\n\n\n\n\nRating: C      Rune Slots: 1\n\nCost: 3        Tech Tier: Militarized Runes (I)\n\nUnit Type: Infantry and Cavalry      Unique Modifier: None\n\nTechs Required: \n - §oTechnology§! §YAlchemy I§!\n - §oTechnology§! §YArcane Arts I§!\n - §oTechnology§! §YMechanics I§!\n\nA standard Warhammer redesigned to have a rune applied on it."
+
+ DA_Blueprint_event.104.t:0 "§OBlueprint:§! Runic Cannon"
+ DA_Blueprint_event.104.d:0 "\n\n\n\n\n\n\n\n\n\n\n\nRating: C      Rune Slots: 1\n\nCost: 3        Tech Tier: Militarized Runes (I)\n\nUnit Type: Artillery      Unique Modifier: None\n\nTechs Required: \n - §oTechnology§! §YAlchemy I§!\n - §oTechnology§! §YArcane Arts I§!\n - §oTechnology§! §YMechanics I§!\n\nA standard Artillery unit redesigned to have a rune applied on it."
+
+ DA_Blueprint_event.105.t:0 "§OBlueprint:§! Runic Power Gauntlets"
+ DA_Blueprint_event.105.d:0 "\n\n\n\n\n\n\n\n\n\n\n\nRating: C-      Rune Slots: 0\n\nCost: 3        Tech Tier: Militarized Runes (I)\n\nUnit Type: Infantry and Cavalry      Unique Modifier: None\n\nTechs Required: \n - §oTechnology§! §YMechanics I§!\n\nWorn by dwarven melee specialists, these gauntlets amplify the strength of their punches with Runes. Warriors equipped with these gauntlets can deal greater impacts on the enemy's armor and crush opponents with ease."
+
+ DA_Blueprint_event.106.t:0 "§OBlueprint:§! Runic Rifles"
+ DA_Blueprint_event.106.d:0 "\n\n\n\n\n\n\n\n\n\n\n\nRating: C      Rune Slots: 1\n\nCost: 3        Tech Tier: Militarized Runes (I)\n\nUnit Type: Infantry and Cavalry      Unique Modifier: None\n\nTechs Required: \n - §oTechnology§! §YAlchemy I§!\n - §oTechnology§! §YArcane Arts I§!\n - §oTechnology§! §YMechanics I§!\n\nLong-range rifles with precision rune that improves accuracy and minimize bullet drop. Dwarves use these weapons to eliminate targets from a long distance."
+
+ DA_Blueprint_event.107.t:0 "§OBlueprint:§! Runic Battering Ram"
+ DA_Blueprint_event.107.d:0 "\n\n\n\n\n\n\n\n\n\n\n\nRating: C      Rune Slots: 1\n\nCost: 4        Tech Tier: Militarized Runes (I)\n\nUnit Type: Artillery      Unique Modifier: None\n\nTechs Required: \n - §oTechnology§! §YAlchemy I§!\n - §oTechnology§! §YArcane Arts I§!\n - §oTechnology§! §YMechanics I§!"
+
+ DA_Blueprint_event.108.t:0 "§OBlueprint:§! Runic Enhancement"
+ DA_Blueprint_event.108.d:0 "\n\n\n\n\n\n\n\n\n\n\n\nRating: C++      Rune Slots: 1\n\nCost: 5        Tech Tier: Militarized Runes (I)\n\nUnit Type: Infantry and Cavalry      Unique Modifier: None\n\nTechs Required:  - §oTechnology§! §YMedicine I§!\n\n - §oTechnology§! §YAlchemy I§!\n - §oTechnology§! §YArcane Arts I§!\n\n"
+
+ DA_Blueprint_event.109.t:0 "§OBlueprint:§! Rune Blade"
+ DA_Blueprint_event.109.d:0 "\n\n\n\n\n\n\n\n\n\n\n\nRating: C+      Rune Slots: 1\n\nCost: 4        Tech Tier: Militarized Runes (I)\n\nUnit Type: Infantry and Cavalry      Unique Modifier: None\n\nTechs Required: \n - §oTechnology§! §YAlchemy I§!\n - §oTechnology§! §YArcane Arts I§!\n\n"
+
+ DA_Blueprint_event.110.t:0 "§OBlueprint:§! Runic Crossbow"
+ DA_Blueprint_event.110.d:0 "\n\n\n\n\n\n\n\n\n\n\n\nRating: C+      Rune Slots: 1\n\nCost: 4        Tech Tier: Militarized Runes (I)\n\nUnit Type: Infantry and Cavalry      Unique Modifier: None\n\nTechs Required: \n - §oTechnology§! §YArcane Arts I§!\n - §oTechnology§! §YMechanics I§!\n\n"
+
+ DA_Blueprint_event.111.t:0 "§OBlueprint:§! Runic Throwing Spear"
+ DA_Blueprint_event.111.d:0 "\n\n\n\n\n\n\n\n\n\n\n\nRating: C+      Rune Slots: 1\n\nCost: 3        Tech Tier: Militarized Runes (I)\n\nUnit Type: Infantry and Cavalry      Unique Modifier: None\n\nTechs Required: \n - §oTechnology§! §YAlchemy I§!\n - §oTechnology§! §YArcane Arts I§!\n\n"
+
+ DA_Blueprint_event.112.t:0 "§OBlueprint:§! Runic Tower Shield"
+ DA_Blueprint_event.112.d:0 "\n\n\n\n\n\n\n\n\n\n\n\nRating: C      Rune Slots: 1\n\nCost: 4        Tech Tier: Militarized Runes (I)\n\nUnit Type: Infantry      Unique Modifier: None\n\nTechs Required: \n - §oTechnology§! §YAlchemy I§!\n - §oTechnology§! §YArcane Arts I§!\n\n"
+
+ DA_Blueprint_event.113.t:0 "§OBlueprint:§! Runic Pike"
+ DA_Blueprint_event.113.d:0 "\n\n\n\n\n\n\n\n\n\n\n\nRating: C+      Rune Slots: 1\n\nCost: 3        Tech Tier: Militarized Runes (I)\n\nUnit Type: Infantry and Cavalry      Unique Modifier: None\n\nTechs Required: \n - §oTechnology§! §YAlchemy I§!\n - §oTechnology§! §YArcane Arts I§!\n\n"
+
+ DA_Blueprint_event.114.t:0 "§OBlueprint:§! Runic Arquebus"
+ DA_Blueprint_event.114.d:0 "\n\n\n\n\n\n\n\n\n\n\n\nRating: C      Rune Slots: 1\n\nCost: 2        Tech Tier: Militarized Runes (I)\n\nUnit Type: Infantry and Cavalry      Unique Modifier: None\n\nTechs Required: \n - §oTechnology§! §YAlchemy I§!\n - §oTechnology§! §YArcane Arts I§!\n\n"
+
+ DA_Blueprint_event.115.t:0 "§OBlueprint:§! Runic Recurved Bow"
+ DA_Blueprint_event.115.d:0 "\n\n\n\n\n\n\n\n\n\n\n\nRating: C++      Rune Slots: 1\n\nCost: 3        Tech Tier: Militarized Runes (I)\n\nUnit Type: Infantry and Cavalry      Unique Modifier: None\n\nTechs Required: \n - §oTechnology§! §YAlchemy I§!\n - §oTechnology§! §YArcane Arts I§!\n - §oTechnology§! §YMechanics I§!\n\n"
+
+ DA_Blueprint_event.116.t:0 "§OBlueprint:§! Runic Ballista"
+ DA_Blueprint_event.116.d:0 "\n\n\n\n\n\n\n\n\n\n\n\nRating: C-      Rune Slots: 1\n\nCost: 2        Tech Tier: Militarized Runes (I)\n\nUnit Type: Artillery      Unique Modifier: None\n\nTechs Required: \n - §oTechnology§! §YAlchemy I§!\n - §oTechnology§! §YArcane Arts I§!\n - §oTechnology§! §YMechanics I§!\n - §oTechnology§! §YMetallurgy I§!\n\n"
+
+ DA_Blueprint_event.117.t:0 "§OBlueprint:§! Runic Basilisk"
+ DA_Blueprint_event.117.d:0 "\n\n\n\n\n\n\n\n\n\n\n\nRating: C-      Rune Slots: 1\n\nCost: 3        Tech Tier: Militarized Runes (I)\n\nUnit Type: Artillery      Unique Modifier: None\n\nTechs Required: \n - §oTechnology§! §YAlchemy I§!\n - §oTechnology§! §YArcane Arts I§!\n - §oTechnology§! §YMechanics I§!\n - §oTechnology§! §YMetallurgy I§!\n\n"
+
+
+ DA_Blueprint_event.140.t:0 "§OBlueprint:§! Defender Golem"
+ DA_Blueprint_event.140.d:0 "\n\n\n\n\n\n\n\n\n\n\n\nRating: B      Rune Slots: 0\n\nCost: 6        Tech Tier: Militarized Runes (I)\n\nUnit Type: Infantry and Cavalry      Unique Modifier: Golem\n\nTechs Required: \n - §RProject§! §YGolem Core§!\n - §oTechnology§! §YAlchemy I§!\n - §oTechnology§! §YArcane Arts I§!\n - §oTechnology§! §YMechanics I§!\n\nA Humanoid Silhuette powered by a 'Golem Core', a Damestear Crystal surrounded by many runes which operate the golem, distributing the magical energy to move the necessary limbs remotely. Having it operate autonomously is currently impossible and an operator must be deployed nearby to command it efficiently.\nAs a golem, it is not able to use firearms of any kind and is restricted to melee fighting.\nThis Golem boasts fairly high defensive capabilities, but it has little to no attack power."
+
+ DA_Blueprint_event.141.t:0 "§OBlueprint:§! Assault Golem"
+ DA_Blueprint_event.141.d:0 "\n\n\n\n\n\n\n\n\n\n\n\nRating: B      Rune Slots: 0\n\nCost: 6        Tech Tier: Militarized Runes (I)\n\nUnit Type: Infantry and Cavalry      Unique Modifier: Golem\n\nTechs Required: \n - §RProject§! §YGolem Core§!\n - §oTechnology§! §YAlchemy I§!\n - §oTechnology§! §YArcane Arts I§!\n - §oTechnology§! §YMechanics I§!\n\nA Humanoid Silhuette powered by a 'Golem Core', a Damestear Crystal surrounded by many runes which operate the golem, distributing the magical energy to move the necessary limbs remotely. Having it operate autonomously is currently impossible and an operator must be deployed nearby to command it efficiently.\nAs a golem, it is not able to use firearms of any kind and is restricted to melee fighting.\nThis Golem boasts fairly high offensive capabilities, but it has little to no defensive power."
+
+ DA_Blueprint_event.142.t:0 "§OBlueprint:§! ClockWork Limbs"
+ DA_Blueprint_event.142.d:0 "\n\n\n\n\n\n\n\n\n\n\n\nRating: B-      Rune Slots: 1\n\nCost: 4        Tech Tier: Militarized Runes (I)\n\nUnit Type: Infantry and Cavalry      Unique Modifier: ClockWork\n\nTechs Required: \n - §RProject§! §YClockWork§!\n - §oTechnology§! §YMedicine I§!\n - §oTechnology§! §YAlchemy I§!\n - §oTechnology§! §YArcane Arts I§!\n - §oTechnology§! §YMechanics I§!\n\n"
+
+ DA_Blueprint_event.143.t:0 "§OBlueprint:§! ClockWork Rifles"
+ DA_Blueprint_event.143.d:0 "\n\n\n\n\n\n\n\n\n\n\n\nRating: B      Rune Slots: 1\n\nCost: 4        Tech Tier: Militarized Runes (I)\n\nUnit Type: Infantry and Cavalry      Unique Modifier: ClockWork\n\nTechs Required: \n - §RProject§! §YClockWork§!\n - §oTechnology§! §YArcane Arts I§!\n - §oTechnology§! §YMechanics I§!\n\n"
+
+ DA_Blueprint_event.144.t:0 "§OBlueprint:§! ClockWork Gauntlets"
+ DA_Blueprint_event.144.d:0 "\n\n\n\n\n\n\n\n\n\n\n\nRating: B-      Rune Slots: 1\n\nCost: 4        Tech Tier: Militarized Runes (I)\n\nUnit Type: Infantry and Cavalry      Unique Modifier: ClockWork\n\nTechs Required: \n - §RProject§! §YClockWork§!\n - §oTechnology§! §YArcane Arts I§!\n - §oTechnology§! §YMechanics I§!\n\n"
+
+ DA_Blueprint_event.145.t:0 "§OBlueprint:§! ClockWork Voulge"
+ DA_Blueprint_event.145.d:0 "\n\n\n\n\n\n\n\n\n\n\n\nRating: B-      Rune Slots: 1\n\nCost: 4        Tech Tier: Militarized Runes (I)\n\nUnit Type: Infantry and Cavalry      Unique Modifier: ClockWork\n\nTechs Required: \n - §RProject§! §YClockWork§!\n - §oTechnology§! §YArcane Arts I§!\n - §oTechnology§! §YMechanics I§!\n\n"
+
+ DA_Blueprint_event.146.t:0 "§OBlueprint:§! ClockWork repeating crossbow"
+ DA_Blueprint_event.146.d:0 "\n\n\n\n\n\n\n\n\n\n\n\nRating: B-      Rune Slots: 1\n\nCost: 4        Tech Tier: Militarized Runes (I)\n\nUnit Type: Infantry and Cavalry      Unique Modifier: ClockWork\n\nTechs Required: \n - §RProject§! §YClockWork§!\n - §oTechnology§! §YArcane Arts I§!\n - §oTechnology§! §YMechanics I§!\n\n"
+
+ DA_Blueprint_event.147.t:0 "§OBlueprint:§! ClockWork Ballista"
+ DA_Blueprint_event.147.d:0 "\n\n\n\n\n\n\n\n\n\n\n\nRating: B      Rune Slots: 1\n\nCost: 4        Tech Tier: Militarized Runes (I)\n\nUnit Type: Artillery      Unique Modifier: ClockWork\n\nTechs Required: \n - §RProject§! §YClockWork§!\n - §oTechnology§! §YArcane Arts I§!\n - §oTechnology§! §YMechanics I§!\n\n"
+
+ DA_Blueprint_event.148.t:0 "§OBlueprint:§! ClockWork Bombard"
+ DA_Blueprint_event.148.d:0 "\n\n\n\n\n\n\n\n\n\n\n\nRating: B      Rune Slots: 1\n\nCost: 4        Tech Tier: Militarized Runes (I)\n\nUnit Type: Artillery      Unique Modifier: ClockWork\n\nTechs Required: \n - §RProject§! §YClockWork§!\n - §oTechnology§! §YArcane Arts I§!\n - §oTechnology§! §YMechanics I§!\n\n"
+
+ DA_Blueprint_event.149.t:0 "§OBlueprint:§! Explosive Bludgeon"
+ DA_Blueprint_event.149.d:0 "\n\n\n\n\n\n\n\n\n\n\n\nRating: B+      Rune Slots: 1\n\nCost: 6        Tech Tier: Militarized Runes (I)\n\nUnit Type: Infantry and Cavalry      Unique Modifier: Explosive\n\nTechs Required: \n - §RProject§! §YExplosives§!\n - §oTechnology§! §YAlchemy I§!\n - §oTechnology§! §YArcane Arts I§!\n - §oTechnology§! §YMechanics I§!\n\n"
+
+ DA_Blueprint_event.150.t:0 "§OBlueprint:§! Explosive Morning Star"
+ DA_Blueprint_event.150.d:0 "\n\n\n\n\n\n\n\n\n\n\n\nRating: B+      Rune Slots: 1\n\nCost: 6        Tech Tier: Militarized Runes (I)\n\nUnit Type: Infantry and Cavalry      Unique Modifier: Explosive\n\nTechs Required: \n - §RProject§! §YExplosives§!\n - §oTechnology§! §YAlchemy I§!\n - §oTechnology§! §YArcane Arts I§!\n - §oTechnology§! §YMechanics I§!\n\n"
+
+ DA_Blueprint_event.151.t:0 "§OBlueprint:§! Explosive Longsword"
+ DA_Blueprint_event.151.d:0 "\n\n\n\n\n\n\n\n\n\n\n\nRating: B      Rune Slots: 1\n\nCost: 6        Tech Tier: Militarized Runes (I)\n\nUnit Type: Infantry and Cavalry      Unique Modifier: Explosive\n\nTechs Required: \n - §RProject§! §YExplosives§!\n - §oTechnology§! §YAlchemy I§!\n - §oTechnology§! §YArcane Arts I§!\n\n"
+
+ DA_Blueprint_event.152.t:0 "§OBlueprint:§! Explosive Javelin"
+ DA_Blueprint_event.152.d:0 "\n\n\n\n\n\n\n\n\n\n\n\nRating: B+      Rune Slots: 1\n\nCost: 6        Tech Tier: Militarized Runes (I)\n\nUnit Type: Infantry and Cavalry      Unique Modifier: Explosive\n\nTechs Required: \n - §RProject§! §YExplosives§!\n - §oTechnology§! §YAlchemy I§!\n - §oTechnology§! §YArcane Arts I§!\n - §oTechnology§! §YMechanics I§!\n\n"
+
+ DA_Blueprint_event.153.t:0 "§OBlueprint:§! Explosive Arbalest"
+ DA_Blueprint_event.153.d:0 "\n\n\n\n\n\n\n\n\n\n\n\nRating: B      Rune Slots: 1\n\nCost: 6        Tech Tier: Militarized Runes (I)\n\nUnit Type: Infantry and Cavalry      Unique Modifier: Explosive\n\nTechs Required: \n - §RProject§! §YExplosives§!\n - §oTechnology§! §YAlchemy I§!\n - §oTechnology§! §YArcane Arts I§!\n\n"
+
+ DA_Blueprint_event.154.t:0 "§OBlueprint:§! Explosive Hand Cannon"
+ DA_Blueprint_event.154.d:0 "\n\n\n\n\n\n\n\n\n\n\n\nRating: B+      Rune Slots: 1\n\nCost: 6        Tech Tier: Militarized Runes (I)\n\nUnit Type: Infantry and Cavalry      Unique Modifier: Explosive\n\nTechs Required: \n - §RProject§! §YExplosives§!\n - §oTechnology§! §YAlchemy I§!\n - §oTechnology§! §YArcane Arts I§!\n - §oTechnology§! §YMechanics I§!\n\n"
+
+ DA_Blueprint_event.155.t:0 "§OBlueprint:§! Explosive Throwing Knife"
+ DA_Blueprint_event.155.d:0 "\n\n\n\n\n\n\n\n\n\n\n\nRating: B+      Rune Slots: 1\n\nCost: 6        Tech Tier: Militarized Runes (I)\n\nUnit Type: Infantry and Cavalry      Unique Modifier: Explosive\n\nTechs Required: \n - §RProject§! §YExplosives§!\n - §oTechnology§! §YAlchemy I§!\n - §oTechnology§! §YArcane Arts I§!\n - §oTechnology§! §YMechanics I§!\n\n"
+
+############### steam blueprint ###################
+
+ DA_Blueprint_event.200.t:0 "§OBlueprint:§! Steam Tanks"
+ DA_Blueprint_event.200.d:0 "\n\n\n\n\n\n\n\n\n\n\n\nRating: B+      Rune Slots: 0\n\nCost: 12        Tech Tier: Advanced Runes (II)\n\nUnit Type: Cavalry      Unique Modifier: Motorized\n\nTechs Required: \n - §RProject§! §YMotorization§!\n - §oTechnology§! §YAlchemy I§!\n - §oTechnology§! §YArcane Arts II§!\n - §oTechnology§! §YMechanics II§!\n\nArmored Vehicles powered by steam engines and enhanced with runic circuits for speed, agility, and firepower. These tanks are the backbone of dwarven armored divisions, capable of taking on multiple foes at once."
+
+ DA_Blueprint_event.201.t:0 "§OBlueprint:§! Steam-Powered Exosuits"
+ DA_Blueprint_event.201.d:0 "\n\n\n\n\n\n\n\n\n\n\n\nRating: A-      Rune Slots: 1\n\nCost: 7        Tech Tier: Advanced Runes (II)\n\nUnit Type: Infantry      Unique Modifier: None\n\nTechs Required: \n - §oTechnology§! §YAlchemy I§!\n - §oTechnology§! §YArcane Arts II§!\n - §oTechnology§! §YMechanics II§!\n\nPersonalized mechanical suits with integrated runes, providing dwarven soldiers with enhanced strength and agility on the battlefield. These exosuits also offer protection against enemy attacks."
+
+ DA_Blueprint_event.202.t:0 "§OBlueprint:§! Steam-Powered Artillery"
+ DA_Blueprint_event.202.d:0 "\n\n\n\n\n\n\n\n\n\n\n\nRating: B+      Rune Slots: 1\n\nCost: 6        Tech Tier: Advanced Runes (II)\n\nUnit Type: Artillery      Unique Modifier: None\n\nTechs Required: \n - §oTechnology§! §YArcane Arts II§!\n - §oTechnology§! §YMechanics II§!\n\nUsing a mix of gun-powder and steam's strngths to launch devastating shots."
+
+ DA_Blueprint_event.203.t:0 "§OBlueprint:§! Steam-Powered Drill Spears"
+ DA_Blueprint_event.203.d:0 "\n\n\n\n\n\n\n\n\n\n\n\nRating: A-      Rune Slots: 1\n\nCost: 6        Tech Tier: Advanced Runes (II)\n\nUnit Type: Infantry and Cavalry     Unique Modifier: None\n\nTechs Required: \n - §oTechnology§! §YAlchemy I§!\n - §oTechnology§! §YArcane Arts I§!\n - §oTechnology§! §YMechanics II§!\n\nSpears with retractable drills powered by steam and enhanced with runic circuits, allowing dwarven infantry to breach enemy lines with ease."
+
+ DA_Blueprint_event.204.t:0 "§OBlueprint:§! Steam-Powered Flamethrowers"
+ DA_Blueprint_event.204.d:0 "\n\n\n\n\n\n\n\n\n\n\n\nRating: A-      Rune Slots: 1\n\nCost: 8        Tech Tier: Advanced Runes (II)\n\nUnit Type: Infantry      Unique Modifier: None\n\nTechs Required: \n - §oTechnology§! §YAlchemy II§!\n - §oTechnology§! §YArcane Arts I§!\n - §oTechnology§! §YMechanics II§!\n\nCompact devices that unleash jets of magical fire, using runes to control the intensity and direction of the flames. Dwarven engineers have perfected the art of controlled fire, turning these flamethrowers into devastating weapons."
+
+ DA_Blueprint_event.205.t:0 "§OBlueprint:§! Steam-Powered Saws"
+ DA_Blueprint_event.205.d:0 "\n\n\n\n\n\n\n\n\n\n\n\nRating: A--      Rune Slots: 1\n\nCost: 12        Tech Tier: Advanced Runes (II)\n\nUnit Type: Infantry      Unique Modifier: None\n\nTechs Required: \n - §oTechnology§! §YAlchemy II§!\n - §oTechnology§! §YArcane Arts II§!\n - §oTechnology§! §YMechanics II§!\n\nHandheld saws powered by a miniaturized Steam Engine, capable of cutting through enemy armor and obstacles with pure mechanical power. Dwarven engineers use these saws for rapid field repairs and sabotage among other things."
+
+ DA_Blueprint_event.206.t:0 "§OBlueprint:§! Steam-Powered Grenade Launchers"
+ DA_Blueprint_event.206.d:0 "\n\n\n\n\n\n\n\n\n\n\n\nRating: A-      Rune Slots: 1\n\nCost: 9        Tech Tier: Advanced Runes (II)\n\nUnit Type: Infantry      Unique Modifier: None\n\nTechs Required: \n - §oTechnology§! §YAlchemy II§!\n - §oTechnology§! §YArcane Arts II§!\n - §oTechnology§! §YMechanics II§!\n\nHandheld launchers that fire grenades infused with runes, causing various effects depending on the untilzed runes. A steam engine provides the energy necessary to eject the granades through mechanical means, as utilizing gunpowder to launch an highly explosive object proved to not be such a good idea ..."
+
+ DA_Blueprint_event.240.t:0 "§OBlueprint:§! Defender Golem"
+ DA_Blueprint_event.240.d:0 "\n\n\n\n\n\n\n\n\n\n\n\nRating: A-      Rune Slots: 1\n\nCost: 10        Tech Tier: Advanced Runes (II)\n\nUnit Type: Infantry and Cavalry      Unique Modifier: Golem\n\nTechs Required: \n - §RProject§! §YGolem Core§!\n - §oTechnology§! §YArcane Arts II§!\n - §oTechnology§! §YMechanics II§!\n\nA Humanoid Silhuette powered by a 'Golem Core', a Damestear Crystal surrounded by many runes which operate the golem, distributing the magical energy to move the necessary limbs remotely. Having it operate autonomously is currently impossible and an operator must be deployed nearby to command it efficiently.\nAs a golem, it is not able to use firearms of any kind and is restricted to melee fighting.\nThis Golem boasts fairly high defensive capabilities, but it has little to no attack power."
+
+ DA_Blueprint_event.241.t:0 "§OBlueprint:§! Assault Golem"
+ DA_Blueprint_event.241.d:0 "\n\n\n\n\n\n\n\n\n\n\n\nRating: A-      Rune Slots: 1\n\nCost: 10        Tech Tier: Advanced Runes (II)\n\nUnit Type: Infantry and Cavalry      Unique Modifier: Golem\n\nTechs Required: \n - §RProject§! §YGolem Core§!\n - §oTechnology§! §YAlchemy II§!\n - §oTechnology§! §YArcane Arts II§!\n - §oTechnology§! §YMechanics II§!\n\nA Humanoid Silhuette powered by a 'Golem Core', a Damestear Crystal surrounded by many runes which operate the golem, distributing the magical energy to move the necessary limbs remotely. Having it operate autonomously is currently impossible and an operator must be deployed nearby to command it efficiently.\nAs a golem, it is not able to use firearms of any kind and is restricted to melee fighting.\nThis Golem boasts fairly high offensive capabilities, but it has little to no defensive power."
+
+ DA_Blueprint_event.242.t:0 "§OBlueprint:§! ClockWork Steam Exoskeleton"
+ DA_Blueprint_event.242.d:0 "\n\n\n\n\n\n\n\n\n\n\n\nRating: B+      Rune Slots: 0\n\nCost: 9        Tech Tier: Advanced Runes (II)\n\nUnit Type: Infantry and Cavalry      Unique Modifier: ClockWork\n\nTechs Required: \n - §RProject§! §YClockWork§!\n - §oTechnology§! §YAlchemy II§!\n - §oTechnology§! §YArcane Arts I§!\n - §oTechnology§! §YMechanics II§!\n\n"
+
+ DA_Blueprint_event.243.t:0 "§OBlueprint:§! ClockWork Steam Rifles"
+ DA_Blueprint_event.243.d:0 "\n\n\n\n\n\n\n\n\n\n\n\nRating: B+      Rune Slots: 0\n\nCost: 7        Tech Tier: Advanced Runes (II)\n\nUnit Type: Infantry and Cavalry      Unique Modifier: ClockWork\n\nTechs Required: \n - §RProject§! §YClockWork§!\n - §oTechnology§! §YAlchemy II§!\n - §oTechnology§! §YArcane Arts I§!\n - §oTechnology§! §YMechanics II§!\n\n"
+
+ DA_Blueprint_event.244.t:0 "§OBlueprint:§! ClockWork Steam Gauntlets"
+ DA_Blueprint_event.244.d:0 "\n\n\n\n\n\n\n\n\n\n\n\nRating: B+      Rune Slots: 0\n\nCost: 7        Tech Tier: Advanced Runes (II)\n\nUnit Type: Infantry and Cavalry      Unique Modifier: ClockWork\n\nTechs Required: \n - §RProject§! §YClockWork§!\n - §oTechnology§! §YAlchemy II§!\n - §oTechnology§! §YArcane Arts I§!\n - §oTechnology§! §YMechanics II§!\n\n"
+
+ DA_Blueprint_event.245.t:0 "§OBlueprint:§! ClockWork Steam Tanks"
+ DA_Blueprint_event.245.d:0 "\n\n\n\n\n\n\n\n\n\n\n\nRating: B+      Rune Slots: 0\n\nCost: 9        Tech Tier: Advanced Runes (II)\n\nUnit Type: Cavalry      Unique Modifier: ClockWork\n\nTechs Required: \n - §RProject§! §YClockWork§!\n - §RProject§! §YMotorization§!\n - §oTechnology§! §YAlchemy II§!\n - §oTechnology§! §YArcane Arts I§!\n - §oTechnology§! §YMechanics II§!\n\n"
+
+ DA_Blueprint_event.246.t:0 "§OBlueprint:§! ClockWork Steam Bombard"
+ DA_Blueprint_event.246.d:0 "\n\n\n\n\n\n\n\n\n\n\n\nRating: B+      Rune Slots: 0\n\nCost: 7        Tech Tier: Advanced Runes (II)\n\nUnit Type: Artillery      Unique Modifier: ClockWork\n\nTechs Required: \n - §RProject§! §YClockWork§!\n - §oTechnology§! §YAlchemy II§!\n - §oTechnology§! §YArcane Arts I§!\n - §oTechnology§! §YMechanics II§!\n\n"
+
+ DA_Blueprint_event.247.t:0 "§OBlueprint:§! ClockWork Steam Ballista"
+ DA_Blueprint_event.247.d:0 "\n\n\n\n\n\n\n\n\n\n\n\nRating: B+      Rune Slots: 0\n\nCost: 7        Tech Tier: Advanced Runes (II)\n\nUnit Type: Artillery      Unique Modifier: ClockWork\n\nTechs Required: \n - §RProject§! §YClockWork§!\n - §oTechnology§! §YAlchemy II§!\n - §oTechnology§! §YArcane Arts I§!\n - §oTechnology§! §YMechanics II§!\n\n"
+
+ DA_Blueprint_event.248.t:0 "§OBlueprint:§! Steam-Vehicle: Driller"
+ DA_Blueprint_event.248.d:0 "\n\n\n\n\n\n\n\n\n\n\n\nRating: A-      Rune Slots: 0\n\nCost: 12        Tech Tier: Advanced Runes (II)\n\nUnit Type: Cavalry      Unique Modifier: Motorized\n\nTechs Required: \n - §RProject§! §YMotorization§!\n - §oTechnology§! §YAlchemy II§!\n - §oTechnology§! §YArcane Arts I§!\n - §oTechnology§! §YMechanics II§!\n\n"
+
+ DA_Blueprint_event.249.t:0 "§OBlueprint:§! Steam-Vehicle: Runesteel Ravager"
+ DA_Blueprint_event.249.d:0 "\n\n\n\n\n\n\n\n\n\n\n\nRating: A-      Rune Slots: 0\n\nCost: 12        Tech Tier: Advanced Runes (II)\n\nUnit Type: Cavalry      Unique Modifier: Motorized\n\nTechs Required: \n - §RProject§! §YMotorization§!\n - §oTechnology§! §YAlchemy II§!\n - §oTechnology§! §YArcane Arts III§!\n - §oTechnology§! §YMechanics III§!\n\n"
+
+ DA_Blueprint_event.250.t:0 "§OBlueprint:§! Steam-Vehicle: Forgefire Fury"
+ DA_Blueprint_event.250.d:0 "\n\n\n\n\n\n\n\n\n\n\n\nRating: A--      Rune Slots: 0\n\nCost: 12        Tech Tier: Advanced Runes (II)\n\nUnit Type: Cavalry      Unique Modifier: Motorized\n\nTechs Required: \n - §RProject§! §YMotorization§!\n - §oTechnology§! §YAlchemy II§!\n - §oTechnology§! §YArcane Arts III§!\n - §oTechnology§! §YMechanics III§!\n\n"
+
+ DA_Blueprint_event.251.t:0 "§OBlueprint:§! Steam-Arcanomech: Vanguard"
+ DA_Blueprint_event.251.d:0 "\n\n\n\n\n\n\n\n\n\n\n\nRating: A      Rune Slots: 0\n\nCost: 15        Tech Tier: Advanced Runes (II)\n\nUnit Type: Cavalry      Unique Modifier: Arcanomech\n\nTechs Required: \n - §RProject§! §YMotorization§!\n - §RProject§! §YGolem Core§!\n - §oTechnology§! §YAlchemy II§!\n - §oTechnology§! §YArcane Arts III§!\n - §oTechnology§! §YMechanics III§!\n\n"
+
+ DA_Blueprint_event.252.t:0 "§OBlueprint:§! Steam-Arcanomech: Holder"
+ DA_Blueprint_event.252.d:0 "\n\n\n\n\n\n\n\n\n\n\n\nRating: A      Rune Slots: 0\n\nCost: 15        Tech Tier: Advanced Runes (II)\n\nUnit Type: Cavalry      Unique Modifier: Arcanomech\n\nTechs Required: \n - §RProject§! §YMotorization§!\n - §RProject§! §YGolem Core§!\n - §oTechnology§! §YAlchemy II§!\n - §oTechnology§! §YArcane Arts III§!\n - §oTechnology§! §YMechanics III§!\n\n"
+
+ DA_Blueprint_event.253.t:0 "§OBlueprint:§! Bio-construct: Abomination"
+ DA_Blueprint_event.253.d:0 "\n\n\n\n\n\n\n\n\n\n\n\nRating: A      Rune Slots: 1\n\nCost: 12        Tech Tier: Advanced Runes (II)\n\nUnit Type: Infantry and Cavalry      Unique Modifier: Bio-Construct\n\nTechs Required: \n - §RProject§! §YBio-Construct§!\n - §oTechnology§! §YMedicine III§!\n - §oTechnology§! §YAlchemy III§!\n - §oTechnology§! §YArcane Arts III§!\n\n"
+
+ DA_Blueprint_event.254.t:0 "§OBlueprint:§! Bio-construct: Living Armor"
+ DA_Blueprint_event.254.d:0 "\n\n\n\n\n\n\n\n\n\n\n\nRating: A      Rune Slots: 1\n\nCost: 12        Tech Tier: Advanced Runes (II)\n\nUnit Type: Infantry      Unique Modifier: Bio-Construct\n\nTechs Required: \n - §RProject§! §YBio-Construct§!\n - §oTechnology§! §YMedicine III§!\n - §oTechnology§! §YAlchemy III§!\n - §oTechnology§! §YArcane Arts III§!\n - §oTechnology§! §YMechanics III§!\n\n"
+
+ DA_Blueprint_event.255.t:0 "§OBlueprint:§! Bio-construct: Chimera"
+ DA_Blueprint_event.255.d:0 "\n\n\n\n\n\n\n\n\n\n\n\nRating: A      Rune Slots: 1\n\nCost: 12        Tech Tier: Advanced Runes (II)\n\nUnit Type: Infantry and Cavalry      Unique Modifier: Bio-Construct\n\nTechs Required: \n - §RProject§! §YBio-Construct§!\n - §oTechnology§! §YMedicine IV§!\n - §oTechnology§! §YAlchemy IV§!\n - §oTechnology§! §YArcane Arts III§!\n\n"
+
+ DA_Blueprint_event.256.t:0 "§OBlueprint:§! Bio-construct: Purple Worm"
+ DA_Blueprint_event.256.d:0 "\n\n\n\n\n\n\n\n\n\n\n\nRating: A+      Rune Slots: 1\n\nCost: 15        Tech Tier: Advanced Runes (II)\n\nUnit Type: Cavalry      Unique Modifier: Bio-Construct\n\nTechs Required: \n - §RProject§! §YBio-Construct§!\n - §oTechnology§! §YMedicine IV§!\n - §oTechnology§! §YAlchemy IV§!\n - §oTechnology§! §YArcane Arts III§!\n\n"
+
+ DA_Blueprint_event.257.t:0 "§OBlueprint:§! Bio-construct: Ram"
+ DA_Blueprint_event.257.d:0 "\n\n\n\n\n\n\n\n\n\n\n\nRating: A      Rune Slots: 1\n\nCost: 12        Tech Tier: Advanced Runes (II)\n\nUnit Type: Infantry and Cavalry      Unique Modifier: Bio-Construct\n\nTechs Required: \n - §RProject§! §YBio-Construct§!\n - §oTechnology§! §YMedicine III§!\n - §oTechnology§! §YAlchemy III§!\n - §oTechnology§! §YArcane Arts III§!\n\n"
+
+############### electric blueprint ###################
+
+ DA_Blueprint_event.300.t:0 "§OBlueprint:§! Electric Armor"
+ DA_Blueprint_event.300.d:0 "\n\n\n\n\n\n\n\n\n\n\n\nRating: A      Rune Slots: 2\n\nCost: 11        Tech Tier: Runic Circuits (III)\n\nUnit Type: Infantry and Cavalry      Unique Modifier: None\n\nTechs Required: \n - §oTechnology§! §YAlchemy II§!\n - §oTechnology§! §YArcane Arts III§!\n - §oTechnology§! §YMechanics III§!\n\n"
+
+ DA_Blueprint_event.301.t:0 "§OBlueprint:§! Electric Automatic artillery"
+ DA_Blueprint_event.301.d:0 "\n\n\n\n\n\n\n\n\n\n\n\nRating: A      Rune Slots: 2\n\nCost: 11        Tech Tier: Runic Circuits (III)\n\nUnit Type: Artillery      Unique Modifier: None\n\nTechs Required: \n - §oTechnology§! §YAlchemy III§!\n - §oTechnology§! §YArcane Arts III§!\n - §oTechnology§! §YMechanics III§!\n\n"
+
+ DA_Blueprint_event.302.t:0 "§OBlueprint:§! Electric Automatic Rifle"
+ DA_Blueprint_event.302.d:0 "\n\n\n\n\n\n\n\n\n\n\n\nRating: A      Rune Slots: 2\n\nCost: 11        Tech Tier: Runic Circuits (III)\n\nUnit Type: Infantry and Cavalry      Unique Modifier: None\n\nTechs Required: \n - §oTechnology§! §YAlchemy II§!\n - §oTechnology§! §YArcane Arts III§!\n - §oTechnology§! §YMechanics III§!\n\n"
+
+ DA_Blueprint_event.303.t:0 "§OBlueprint:§! Electric Warhammer"
+ DA_Blueprint_event.303.d:0 "\n\n\n\n\n\n\n\n\n\n\n\nRating: A      Rune Slots: 2\n\nCost: 11        Tech Tier: Runic Circuits (III)\n\nUnit Type: Infantry and Cavalry      Unique Modifier: None\n\nTechs Required: \n - §oTechnology§! §YAlchemy II§!\n - §oTechnology§! §YArcane Arts III§!\n - §oTechnology§! §YMechanics III§!\n\n"
+
+ DA_Blueprint_event.304.t:0 "§OBlueprint:§! Electric Minigun"
+ DA_Blueprint_event.304.d:0 "\n\n\n\n\n\n\n\n\n\n\n\nRating: A+      Rune Slots: 2\n\nCost: 13        Tech Tier: Runic Circuits (III)\n\nUnit Type: Infantry and Cavalry      Unique Modifier: None\n\nTechs Required: \n - §oTechnology§! §YAlchemy IV§!\n - §oTechnology§! §YArcane Arts III§!\n - §oTechnology§! §YMechanics IV§!\n\n"
+
+ DA_Blueprint_event.340.t:0 "§OBlueprint:§! Defender Automata"
+ DA_Blueprint_event.340.d:0 "\n\n\n\n\n\n\n\n\n\n\n\nRating: A+      Rune Slots: 1\n\nCost: 15        Tech Tier: Runic Circuits (III)\n\nUnit Type: Infantry and Cavalry      Unique Modifier: Golem\n\nTechs Required: \n - §RProject§! §YGolem Core§!\n - §oTechnology§! §YArcane Arts III§!\n - §oTechnology§! §YMechanics III§!\n\n"
+
+ DA_Blueprint_event.341.t:0 "§OBlueprint:§! Assault Automata"
+ DA_Blueprint_event.341.d:0 "\n\n\n\n\n\n\n\n\n\n\n\nRating: A+      Rune Slots: 1\n\nCost: 15        Tech Tier: Runic Circuits (III)\n\nUnit Type: Infantry and Cavalry      Unique Modifier: Golem\n\nTechs Required: \n - §RProject§! §YGolem Core§!\n - §oTechnology§! §YArcane Arts III§!\n - §oTechnology§! §YMechanics III§!\n\n"
+
+ DA_Blueprint_event.342.t:0 "§OBlueprint:§! Clock-Electric Exoskeleton"
+ DA_Blueprint_event.342.d:0 "\n\n\n\n\n\n\n\n\n\n\n\nRating: A+      Rune Slots: 2\n\nCost: 13        Tech Tier: Runic Circuits (III)\n\nUnit Type: Infantry and Cavalry      Unique Modifier: ClockWork\n\nTechs Required: \n - §RProject§! §YClockWork§!\n - §oTechnology§! §YAlchemy II§!\n - §oTechnology§! §YArcane Arts II§!\n - §oTechnology§! §YMechanics III§!\n\n"
+
+ DA_Blueprint_event.343.t:0 "§OBlueprint:§! Clock-Electric Rifles"
+ DA_Blueprint_event.343.d:0 "\n\n\n\n\n\n\n\n\n\n\n\nRating: A+      Rune Slots: 2\n\nCost: 13        Tech Tier: Runic Circuits (III)\n\nUnit Type: Infantry and Cavalry      Unique Modifier: ClockWork\n\nTechs Required: \n - §RProject§! §YClockWork§!\n - §oTechnology§! §YAlchemy II§!\n - §oTechnology§! §YArcane Arts II§!\n - §oTechnology§! §YMechanics III§!\n\n"
+
+ DA_Blueprint_event.344.t:0 "§OBlueprint:§! Clock-Electric Gauntlets"
+ DA_Blueprint_event.344.d:0 "\n\n\n\n\n\n\n\n\n\n\n\nRating: A+      Rune Slots: 2\n\nCost: 13        Tech Tier: Runic Circuits (III)\n\nUnit Type: Infantry and Cavalry      Unique Modifier: ClockWork\n\nTechs Required: \n - §RProject§! §YClockWork§!\n - §oTechnology§! §YAlchemy II§!\n - §oTechnology§! §YArcane Arts II§!\n - §oTechnology§! §YMechanics III§!\n\n"
+
+ DA_Blueprint_event.345.t:0 "§OBlueprint:§! Clockwork Dragon"
+ DA_Blueprint_event.345.d:0 "\n\n\n\n\n\n\n\n\n\n\n\nRating: S      Rune Slots: 2\n\nCost: 16        Tech Tier: Runic Circuits (III)\n\nUnit Type: Cavalry      Unique Modifier: ClockWork\n\nTechs Required: \n - §RProject§! §YClockWork§!\n - §RProject§! §YGolem Core§!\n - §oTechnology§! §YAlchemy III§!\n - §oTechnology§! §YArcane Arts III§!\n - §oTechnology§! §YMechanics IV§!\n\n"
+
+ DA_Blueprint_event.346.t:0 "§OBlueprint:§! Clock-Electric Bombard"
+ DA_Blueprint_event.346.d:0 "\n\n\n\n\n\n\n\n\n\n\n\nRating: A      Rune Slots: 2\n\nCost: 13        Tech Tier: Runic Circuits (III)\n\nUnit Type: Artillery      Unique Modifier: ClockWork\n\nTechs Required: \n - §RProject§! §YClockWork§!\n - §oTechnology§! §YAlchemy II§!\n - §oTechnology§! §YArcane Arts II§!\n - §oTechnology§! §YMechanics III§!\n\n"
+
+ DA_Blueprint_event.347.t:0 "§OBlueprint:§! Clock-Electric Ballista"
+ DA_Blueprint_event.347.d:0 "\n\n\n\n\n\n\n\n\n\n\n\nRating: A      Rune Slots: 2\n\nCost: 13        Tech Tier: Runic Circuits (III)\n\nUnit Type: Artillery      Unique Modifier: ClockWork\n\nTechs Required: \n - §RProject§! §YClockWork§!\n - §oTechnology§! §YAlchemy II§!\n - §oTechnology§! §YArcane Arts II§!\n - §oTechnology§! §YMechanics III§!\n\n"
+
+ DA_Blueprint_event.348.t:0 "§OBlueprint:§! Tesla Rifles"
+ DA_Blueprint_event.348.d:0 "\n\n\n\n\n\n\n\n\n\n\n\nRating: A+      Rune Slots: 2\n\nCost: 11        Tech Tier: Runic Circuits (III)\n\nUnit Type: Infantry and Cavalry      Unique Modifier: Tesla\n\nTechs Required: \n - §RProject§! §YTesla Coil§!\n - §oTechnology§! §YAlchemy II§!\n - §oTechnology§! §YArcane Arts III§!\n - §oTechnology§! §YMechanics III§!\n\n"
+
+ DA_Blueprint_event.349.t:0 "§OBlueprint:§! Tesla Warhammer"
+ DA_Blueprint_event.349.d:0 "\n\n\n\n\n\n\n\n\n\n\n\nRating: A      Rune Slots: 2\n\nCost: 11        Tech Tier: Runic Circuits (III)\n\nUnit Type: Infantry and Cavalry      Unique Modifier: Tesla\n\nTechs Required: \n - §RProject§! §YTesla Coil§!\n - §oTechnology§! §YAlchemy II§!\n - §oTechnology§! §YArcane Arts III§!\n - §oTechnology§! §YMechanics III§!\n\n"
+
+ DA_Blueprint_event.350.t:0 "§OBlueprint:§! Tesla Suit"
+ DA_Blueprint_event.350.d:0 "\n\n\n\n\n\n\n\n\n\n\n\nRating: A+      Rune Slots: 2\n\nCost: 11        Tech Tier: Runic Circuits (III)\n\nUnit Type: Infantry and Cavalry      Unique Modifier: Tesla\n\nTechs Required: \n - §RProject§! §YTesla Coil§!\n - §oTechnology§! §YAlchemy II§!\n - §oTechnology§! §YArcane Arts III§!\n - §oTechnology§! §YMechanics III§!\n\n"
+
+ DA_Blueprint_event.351.t:0 "§OBlueprint:§! Tesla Culverin"
+ DA_Blueprint_event.351.d:0 "\n\n\n\n\n\n\n\n\n\n\n\nRating: A+      Rune Slots: 2\n\nCost: 11        Tech Tier: Runic Circuits (III)\n\nUnit Type: Artillery      Unique Modifier: Tesla\n\nTechs Required: \n - §RProject§! §YTesla Coil§!\n - §oTechnology§! §YAlchemy II§!\n - §oTechnology§! §YArcane Arts III§!\n - §oTechnology§! §YMechanics III§!\n\n"
+
+ DA_Blueprint_event.352.t:0 "§OBlueprint:§! Tesla Railgun"
+ DA_Blueprint_event.352.d:0 "\n\n\n\n\n\n\n\n\n\n\n\nRating: S      Rune Slots: 2\n\nCost: 14        Tech Tier: Runic Circuits (III)\n\nUnit Type: Artillery      Unique Modifier: Tesla\n\nTechs Required: \n - §RProject§! §YTesla Coil§!\n - §oTechnology§! §YAlchemy III§!\n - §oTechnology§! §YArcane Arts IV§!\n - §oTechnology§! §YMechanics IV§!\n\n"
+
+ DA_Blueprint_event.353.t:0 "§OBlueprint:§! Resonance Warhammers"
+ DA_Blueprint_event.353.d:0 "\n\n\n\n\n\n\n\n\n\n\n\nRating: A+      Rune Slots: 2\n\nCost: 11        Tech Tier: Runic Circuits (III)\n\nUnit Type: Infantry and Cavalry      Unique Modifier: Resonance\n\nTechs Required: \n - §RProject§! §YResonance§!\n - §oTechnology§! §YAlchemy II§!\n - §oTechnology§! §YArcane Arts III§!\n - §oTechnology§! §YMechanics III§!\n\nHighly advanced warhammer with high-level Runic circuits. High-frequency vibrations are released on contact allowing it to cut most things in existence."
+
+ DA_Blueprint_event.354.t:0 "§OBlueprint:§! Resonance Rifles"
+ DA_Blueprint_event.354.d:0 "\n\n\n\n\n\n\n\n\n\n\n\nRating: A+      Rune Slots: 2\n\nCost: 11        Tech Tier: Runic Circuits (III)\n\nUnit Type: Infantry and Cavalry      Unique Modifier: Resonance\n\nTechs Required: \n - §RProject§! §YResonance§!\n - §oTechnology§! §YAlchemy II§!\n - §oTechnology§! §YArcane Arts III§!\n - §oTechnology§! §YMechanics III§!\n\nHighly advanced rifle with high-level Runic circuits allowing automatic fire. High-frequency vibrations are released by the bullet upon contact allowing it to pierce through most things in existence."
+
+ DA_Blueprint_event.355.t:0 "§OBlueprint:§! Resonance Spears"
+ DA_Blueprint_event.355.d:0 "\n\n\n\n\n\n\n\n\n\n\n\nRating: A+      Rune Slots: 2\n\nCost: 11        Tech Tier: Runic Circuits (III)\n\nUnit Type: Infantry and Cavalry      Unique Modifier: Resonance\n\nTechs Required: \n - §RProject§! §YResonance§!\n - §oTechnology§! §YAlchemy II§!\n - §oTechnology§! §YArcane Arts III§!\n - §oTechnology§! §YMechanics III§!\n\nHighly advanced spear with high-level Runic circuits. High-frequency vibrations are released upon contact allowing it to pierce through most things in existence. It was made to be used by cavalry units, strangely enough, considering the fact that a tank is not as advanced as this spear, would't it have been a better choice to just make a tank?! I'm going mad ..."
+
+ DA_Blueprint_event.356.t:0 "§OBlueprint:§! Resonance Throwing Spear"
+ DA_Blueprint_event.356.d:0 "\n\n\n\n\n\n\n\n\n\n\n\nRating: A+      Rune Slots: 2\n\nCost: 11        Tech Tier: Runic Circuits (III)\n\nUnit Type: Infantry and Cavalry      Unique Modifier: Resonance\n\nTechs Required: \n - §RProject§! §YResonance§!\n - §oTechnology§! §YAlchemy II§!\n - §oTechnology§! §YArcane Arts III§!\n - §oTechnology§! §YMechanics III§!\n\n"
+
+ DA_Blueprint_event.357.t:0 "§OBlueprint:§! Resonance Ballista"
+ DA_Blueprint_event.357.d:0 "\n\n\n\n\n\n\n\n\n\n\n\nRating: A+      Rune Slots: 2\n\nCost: 11        Tech Tier: Runic Circuits (III)\n\nUnit Type: Artillery      Unique Modifier: Resonance\n\nTechs Required: \n - §RProject§! §YResonance§!\n - §oTechnology§! §YAlchemy II§!\n - §oTechnology§! §YArcane Arts III§!\n - §oTechnology§! §YMechanics III§!\n\n"
+
+ DA_Blueprint_event.358.t:0 "§OBlueprint:§! Arcanomech: Annihilator"
+ DA_Blueprint_event.358.d:0 "\n\n\n\n\n\n\n\n\n\n\n\nRating: S      Rune Slots: 2\n\nCost: 16        Tech Tier: Runic Circuits (III)\n\nUnit Type: Cavalry      Unique Modifier: Arcanomech\n\nTechs Required: \n - §RProject§! §YMotorization§!\n - §oTechnology§! §YAlchemy IV§!\n - §oTechnology§! §YArcane Arts III§!\n - §oTechnology§! §YMechanics IV§!\n\n"
+
+
+ ###################
+ # knowledge events and blueprints unlocked by project
+ ###################
+
+
+ DA_Blueprint_event.400.t:0 "§oTechnology§! Soul Genesis"
+ DA_Blueprint_event.400.d:0 "to be done"
+
+ DA_Blueprint_event.401.t:0 "§OBlueprint:§! Soul Gen.: Enhanced Clones"
+ DA_Blueprint_event.401.d:0 "\n\n\n\n\n\n\n\n\n\n\n\nRating: S+      Rune Slots: 2\n\nCost: 16        Tech Tier: Runic Circuits (III)\n\nUnit Type: Infantry and Cavalry      Unique Modifier: \n\nTechs Required: \n - §RProject§! §YSoul Genesis§!\n - §RProject§! §YEnhancement§!\n - §oTechnology§! §YMedicine IV§!\n - §oTechnology§! §YAlchemy IV§!\n - §oTechnology§! §YArcane Arts IV§!\n\n"

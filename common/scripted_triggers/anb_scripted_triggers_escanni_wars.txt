@@ -34,6 +34,9 @@ country_culture_can_participate_in_escanni_wars = {
 		primary_culture = stone_dwarf
 		primary_culture = iron_dwarf
 		primary_culture = newfoot_halfling
+                #love
+		tag = B33
+                #love
 	}
 }
 

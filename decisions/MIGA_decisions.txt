@@ -1,0 +1,297 @@
+country_decisions = {
+	
+	ibevar_religion_transformation_decision = {
+		major = yes
+		
+		potential = {
+			tag = A32
+			OR = {
+				religion = elven_forebears
+				ai = yes
+			}
+			any_owned_province = {
+				has_province_modifier = ibevar_old_tradition
+			}
+		}
+		
+		allow = {
+			tag = A32
+			OR = {
+				religion = elven_forebears
+				ai = yes
+			}
+			any_owned_province = {
+				has_province_modifier = ibevar_old_tradition
+			}
+		}
+		
+		effect = {
+			change_religion = regent_court
+			every_owned_province = {
+				remove_province_modifier = ibevar_old_tradition
+			}
+			if = {
+				limit = { ai = yes }
+				add_country_modifier = {
+					name = ibevar_ai_boost
+					duration = 36500
+				}
+			}
+		}
+		
+		ai_will_do = {
+			factor = 2
+		}
+		ai_importance = 400
+	}
+	
+	ibevar_construct_a_safe_home_decision = {
+		major = yes
+		
+		potential = {
+			tag = A32
+			mission_completed = A32_the_elven_vale
+			NOT = { has_country_flag = ibevar_construct_a_safe_home_decision }
+		}
+		
+		provinces_to_highlight = {
+			OR = {
+				region = forlorn_vale_region
+				province_id = 350
+			}
+		}
+		
+		allow = {
+			tag = A32
+			mission_completed = A32_the_elven_vale
+			OR = {
+				ai = yes
+				splendor = 800
+			}
+		}
+		
+		effect = {
+			add_splendor = -800
+			add_country_modifier = {
+				name = ibevar_prosperous_ibevar
+				duration = 36500
+			}
+			custom_tooltip = ibevar_development_condition
+			hidden_effect = {
+				forlorn_vale_region = {
+					add_province_triggered_modifier = ibevar_infrastructure
+				}
+				forlorn_vale_region = {
+					limit = {
+						owned_by = ROOT
+						culture_is_elven = no
+					}
+					add_province_modifier = {
+						name = arbaran_assimilation
+						duration = 18250 #50 years to outlast separatism and be useful. Using this is optional as the player can always just accept the cultures and leave them.
+					}
+				}
+				350 = {
+					add_province_triggered_modifier = ibevar_infrastructure
+				}
+			}
+			hidden_effect = {
+				if = {
+					limit = { ai = yes } #ai cannot fulfil the requirements of next mission
+					complete_mission = A32_safe_home
+					add_splendor = 800
+				}
+				set_country_flag = ibevar_construct_a_safe_home_decision
+			}
+		}
+		
+		ai_will_do = {
+			factor = 2
+		}
+		ai_importance = 400
+	}
+	
+	ibevar_construct_greater_ibevar_decision = {
+		major = yes
+		
+		potential = {
+			tag = A32
+			mission_completed = A32_elfrealm_of_the_north
+			mission_completed = A32_elfrealm_of_the_east
+			NOT = { has_country_flag = ibevar_construct_greater_ibevar_decision }
+		}
+		
+		provinces_to_highlight = {
+			OR = {
+				area = arbaran_area
+				area = golden_plains_area
+				area = cestir_area
+				area = verteben_area
+				area = valefort_area
+				area = rohibon_area
+				area = taran_plains_area
+			}
+		}
+		
+		allow = {
+			tag = A32
+			mission_completed = A32_elfrealm_of_the_north
+			mission_completed = A32_elfrealm_of_the_east
+			OR = {
+				ai = yes
+				splendor = 800
+			}
+		}
+		
+		effect = {
+			add_splendor = -800
+			add_country_modifier = {
+				name = ibevar_prosperous_ibevar
+				duration = 36500
+			}
+			custom_tooltip = ibevar_development_condition
+			hidden_effect = {
+				arbaran_area = {
+					add_province_triggered_modifier = ibevar_infrastructure
+				}
+				arbaran_area = {
+					limit = { owned_by = ROOT }
+					add_province_modifier = {
+						name = arbaran_assimilation
+						duration = 18250 #50 years to outlast separatism and be useful. Using this is optional as the player can always just accept the cultures and leave them.
+					}
+				}
+				
+				golden_plains_area = {
+					add_province_triggered_modifier = ibevar_infrastructure
+				}
+				golden_plains_area = {
+					limit = { owned_by = ROOT }
+					add_province_modifier = {
+						name = arbaran_assimilation
+						duration = 18250 #50 years to outlast separatism and be useful. Using this is optional as the player can always just accept the cultures and leave them.
+					}
+				}
+				
+				cestir_area = {
+					add_province_triggered_modifier = ibevar_infrastructure
+				}
+				cestir_area = {
+					limit = { owned_by = ROOT }
+					add_province_modifier = {
+						name = arbaran_assimilation
+						duration = 18250 #50 years to outlast separatism and be useful. Using this is optional as the player can always just accept the cultures and leave them.
+					}
+				}
+				
+				verteben_area = {
+					add_province_triggered_modifier = ibevar_infrastructure
+				}
+				verteben_area = {
+					limit = { owned_by = ROOT }
+					add_province_modifier = {
+						name = arbaran_assimilation
+						duration = 18250 #50 years to outlast separatism and be useful. Using this is optional as the player can always just accept the cultures and leave them.
+					}
+				}
+				
+				valefort_area = {
+					add_province_triggered_modifier = ibevar_infrastructure
+				}
+				valefort_area = {
+					limit = { owned_by = ROOT }
+					add_province_modifier = {
+						name = arbaran_assimilation
+						duration = 18250 #50 years to outlast separatism and be useful. Using this is optional as the player can always just accept the cultures and leave them.
+					}
+				}
+				
+				rohibon_area = {
+					add_province_triggered_modifier = ibevar_infrastructure
+				}
+				rohibon_area = {
+					limit = { owned_by = ROOT }
+					add_province_modifier = {
+						name = arbaran_assimilation
+						duration = 18250 #50 years to outlast separatism and be useful. Using this is optional as the player can always just accept the cultures and leave them.
+					}
+				}
+				
+				taran_plains_area = {
+					add_province_triggered_modifier = ibevar_infrastructure
+				}
+				taran_plains_area = {
+					limit = { owned_by = ROOT }
+					add_province_modifier = {
+						name = arbaran_assimilation
+						duration = 18250 #50 years to outlast separatism and be useful. Using this is optional as the player can always just accept the cultures and leave them.
+					}
+				}
+			}
+			
+			hidden_effect = {
+				if = {
+					limit = { ai = yes } #ai cannot fulfil the requirements of next mission
+					complete_mission = A32_greater_ibevar
+					country_event = { id = ibevar.10 }
+				}
+				set_country_flag = ibevar_construct_greater_ibevar_decision
+			}
+		}
+		
+		ai_will_do = {
+			factor = 2
+		}
+		ai_importance = 400
+	}
+	
+	ibevar_unite_with_moonhaven_decision = {
+		major = no
+		
+		potential = {
+			tag = A32
+			primary_culture = moon_elf
+			exists = A31
+			is_part_of_hre = yes
+			NOT = { has_country_flag = unite_with_moonhaven_flag }
+		}
+		
+		allow = {
+			tag = A32
+			primary_culture = moon_elf
+			has_regency = no
+			is_lesser_in_union = no
+			is_emperor = yes
+			A31 = {
+				has_opinion = {
+					who = ROOT
+					value = 190
+				}
+			}
+		}
+		
+		effect = {
+			add_adm_power = -100
+			add_dip_power = -100
+			add_mil_power = -100
+			create_union = A31
+			add_historical_friend = A31
+			A31 = { add_historical_friend = A32 }
+			set_country_flag = unite_with_moonhaven_flag
+			hidden_effect = {
+				A31 = {
+					if = {
+						limit = {
+							ai = yes
+						}
+						add_treasury = 500
+						add_country_modifier = {
+							name = venail_ai_boost
+							duration = 27375
+						}
+					}
+				}
+			}
+		}
+	}
+}

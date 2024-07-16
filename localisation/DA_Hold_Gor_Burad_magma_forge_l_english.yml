@@ -17,7 +17,7 @@ DA_regulated_magma_vein: "Magma Vein"
 desc_DA_regulated_magma_vein: "The magma vein has been regulated with a miniaturized version of the canal system of Gor Burad"
 
 DA_Magma_forge_event.1.t: "Magma Forge restoration available"
-DA_Magma_forge_event.1.d: "Your Highness, the §GResearch Facility§! have finished their restoration plan for the magma forge's canal system. We can now put an end to this tragedy!\nAt least in theory, they require a considerable amount of fundings to do so. We can only hope our treasury is full enough to allocate them."
+DA_Magma_forge_event.1.d: "Your Highness, the §GResearch Facility§! has finished their restoration plan for the magma forge's canal system. We can now put an end to this tragedy!\nAt least in theory, they require a considerable amount of fundings to do so. We can only hope our treasury is full enough to allocate them."
 DA_Magma_forge_event.1.a: "It was to be expected"
 DA_Magma_forge_event.1.tooltip: "We can now restore the Magma Forge, the process will cost us 12 §DAncient Dwarven Knowledge§! and §Y2000§! gold\nIt will become available on the §GResearch Facility§! menu when all requirements are fullfilled"
 
@@ -32,13 +32,15 @@ DA_Magma_forge_event.4.d: "Another catastrophic event caused by the Magma Forge 
 DA_Magma_forge_event.4.a: "Where is the §GResearch Facility§! when someone needs it?!?!"
 
 DA_Magma_forge_event.10.t: "Magma Forge"    # MF menu
-DA_Magma_forge_event.10.d: "§R[4039.DA_Magma_level.GetName]:§!  [4039.DA_Magma_level.GetValue]\n\nThe Magma forge can be expanded once when 100 magma level has been reached. Once expanded the Max Magma Level will be increased to 200 and its production will be doubled.\nMagma level increases naturally by around 1 every 2 months"
+DA_Magma_forge_event.10.d: "§R[4039.DA_Magma_level.GetName]:§!  [4039.DA_Magma_level.GetValue]\n\nThe Magma forge can be expanded once when 100 magma level has been reached. Once expanded the Max Magma Level will be increased to 200.\nMagma level increases naturally by around 1 every 2 months, increased to 2 every 2 months after expansion."
 DA_Magma_forge_event.10.a: "Regulate Magma Veins"
 DA_Magma_forge_event.10.a.tooltip: "The process will cost us 6 §DAncient Dwarven Knowledge§! and 80 §R[4039.DA_Magma_level.GetName]§!"
 DA_Magma_forge_event.10.b: "Expand Magma Forge Capacity"
 DA_Magma_forge_event.10.b.tooltip: "The process will cost 100 §R[4039.DA_Magma_level.GetName]§!\nIncreases §R[4039.DA_Magma_level.GetName]§! Capacity to 200.\n§R[4039.DA_Magma_level.GetName]§! will increase by 2 istead of 1 every 2 months."
 DA_Magma_forge_event.10.c: "Form new magma vein"
 DA_Magma_forge_event.10.c.tooltip: "The process will cost us §Y1250§! gold 5 §DAncient Dwarven Knowledge§! and 140 §R[4039.DA_Magma_level.GetName]§!\nTo view possible targets click this, you can go back afterwards."
+ DA_Magma_forge_event.10.e:0 "Start project in Uvolate"
+ DA_Magma_forge_event.10.e.tooltip:0 "The process will cost us §Y1000§! gold and 200 §R[4039.DA_Magma_level.GetName]§!\n"
 DA_Magma_forge_event.10.Go_Back: "Go Back"
 
 DA_Magma_forge_event.11.t: "Regulate Magma Veins"
@@ -60,3 +62,35 @@ DA_Magma_forge_event.13.c: "Form Magma Vein in [DA_potential_magma_vein3.GetName
 DA_Magma_forge_event.13.Go_back: "Go Back"
 DA_Magma_forge_event.13.tooltip: "The process cost us 5 §DAncient Dwarven Knowledge§! and 140 §R[4039.DA_Magma_level.GetName]§!\nCan only be placed on an Hold which has at least §YDig Level 5§!, or has at least §Y80 Development§!"
 
+ DA_Magma_forge_event.14.t:0 "A grand proposal"
+ DA_Magma_forge_event.14.d:0 "My [Root.Monarch.GetTitle], architects from Gor Bûrad have devised a new way to take advantage of the magmatic flows of the volcanic forge. They propose to use them to build a grand wall accross the entirety of Uvolate.\n\nThey propose to dig tunnels through the mountain to extract the magma and use modified mageshield runes to direct it's flow. They aim to create a wall of basalt accross the entire width of Uvolate, from mountain to mountain, carve it into a wall and reinforce it with runes. To ensure the magma  keeps flowing over the many leagues it would have to cross, they have also devised runes to generate great heat, which would be carved into pillars erected all along the mageshields. Once the mould has been filled, the pillars would be cast down and the wall left to cool.\nSuch an endeavour would take many years and countless coins if it even is possible, but should it be achieved and their plans be realized, we would have a formidable line of defense to protect our holdings. The architects have already suggested a name for this grand fortification : Verkal Jorkad."
+ DA_Magma_forge_event.14.a:0 "Is such a thing even possible?"
+ DA_Magma_forge_event.14.a.tooltip:0 "To begin contruction you need 200 §R[4039.DA_Magma_level.GetName]§!, §Y1000§! gold and the control of Jorkad's Vale until Uvolate.\nBuildable from the Magma Forge Menu."
+
+ DA_Magma_forge_event.15.t:0 "Starting Construction work"
+ DA_Magma_forge_event.15.d:0 "The Casting process of the magma will begin in Uvolate.\nThe process will take around 120 months."
+ DA_Magma_forge_event.15.a:0 "Proceed"
+ DA_Magma_forge_event.15.a.tooltip:0 "The process consumed 200 §R[4039.DA_Magma_level.GetName]§!"
+
+ DA_Magma_forge_event.16.t:0 "The Wall is cast"
+ DA_Magma_forge_event.16.d:0 "My [Root.Monarch.GetTitle], we have received word from Uvolate. The first step of the project is complete.\nThe mageshield mold has been fully filled, the heating pillars have been taken down and the magma has cooled. There is now a wall of sheer raw basalt extending accross the horizon of Uvolate. It is a majestic sight, even in its unfinished state. It is, however, not very practical.\nWe must now muster our masons and carvers to proceed to the next step. The citadel must now be carved out of the rock.\nBy your will, my [Root.Monarch.GetTitle]."
+ DA_Magma_forge_event.16.a:0 "I can hardly believe it actually worked ..."
+
+ DA_Magma_forge_event.17.t:0 "Hammers and chisels have done their work"
+ DA_Magma_forge_event.17.d:0 "My [Root.Monarch.GetTitle], a report from the architects of Verkal Jorkad.\nThe litteral army of masons and stone carvers we mobilized has done its work and carved an actual rampart out of the raw basalt. Towers and bastions were carved first, then the parapets and large wallwalk. Casemats and caserns were dug into the wall, at regular intervals, making sure no part of the citadel will ever lack soldiers, ammunition, food or beer. Drainage and reservoirs were also carved to collect the rain water, as is the custom in these arid lands. This water can be made drinkable if boiled or car be used to fight fires. Artillery emplacements and embrasures were carved from the wall at different heights, allowing the defenders to apply an exceptional amount of fire on any attacking force.\nEmplacements were singled out all along the wall, within and without, for placing runes. This, however, is costly and time consuming work. Further improvements await your approval, my [Root.Monarch.GetTitle]."
+ DA_Magma_forge_event.17.a:0 "Mighty is Verkal Jorkad, mightier still it can be."
+
+ DA_Magma_forge_event.18.t:0 "Wall of stone and runes"
+ DA_Magma_forge_event.18.d:0 "My [Root.Monarch.GetTitle], the runes have been laid and now shimmer along the length of the citadel, as if stars in the night sky. The stone is now harder than steel.\nRunes also provide light in the tunnels, warmth during the night and coolness during the day. Mageshield emplacements  further protect the garrison and divination arrays in the watch towers allow for early warning in case of attack.\nThe infirmaries in particular are a work of wonder. Divination arrays help diagnosis, telekinesis and transmutation runes allow to realign and mend bones … direct magical healing may not be possible, but by Halanna's breath, our runesmiths have done all they can to make all its possible medical applications available to our healers.\nNow, we must stock the wall with weapons, supplies and soldiers, and build the supporting infrastructure."
+ DA_Magma_forge_event.18.a:0 "Verkal Jorkad is almost done, our border almost secure."
+
+ DA_Magma_forge_event.19.t:0 "The Great Citadel"
+ DA_Magma_forge_event.19.d:0 "My [Root.Monarch.GetTitle], Verkal Jorkad is complete.\nEvery artillery emplacement is armed and maned, every casern is filled. The casemats are stocked with powder, bullets and canon balls. Food, drink, medicine and spare weapons fill the store dotted all along the walls. Great canons, worthy of Kanzadi fortifications, line the bastions that dot our grand citadel, crewed by rune-powered basalt golems.\nTo carry all this heavy equipment into place, three rail lines had to be excavated inside the wall itself, along with seventy lifts all along the length of the wall to manage vertical traffic. Six main rail junctions and twelve lesser junctions ensure that supplies, ammunition and dwarfpower can travel at speed all along the wall to either relieve of reinforce any section that is attacked.\nOne Magni Ironbeard, a Bûradi runesmith and architect has proposed and implemented an ingenious idea, turning many of the prospective water tanks, of which we had far more than was needed, into magma reservoirs instead, making good use of the heating runes that supported the first steps of this project. Now, should we be attacked, specialized drainage pipes will be able to douse the attackers with molten rock.\nIn the shadow of the citadel, small towns has blossomed, housing the famillies of the garrison, worshops tending to the needs of Verkal Jorkad's equipments and hospitals to tend to the health of its garrison.\nIt is done. Uvolate is secured, and none can cross it without walking through the 12 gates spread along Verkal Jorkad. It is a mighty thing, faintly visible even from some parts of Invader's Pass when the weather allows it. A grand wall of black stone, covered in runes shimmering with magic and lined with canons. Our banners fly high above it, and our troops walk along it's length with purpose.Many come to witness its majesty, from Cannor, Bulwar, Haless, Sarhal, and even some from distant Aelantir. In this wall, the resurgent might of the Dwarves is made manifest, so they say.\nVerkal Jorkad is complete. It's stone protects the Vale, but by the doubt it's long shadow casts in the hearts of our enemies, it protects all of our realm."
+ DA_Magma_forge_event.19.a:0 "Fortifications worthy of Aul-Dwarov"
+ Verkal_Jorkad_name:0 "Verkal Jorkad"
+
+ DA_Magma_forge_event.20.t:0 "Jorkad Prosperity"
+ DA_Magma_forge_event.20.d:0 "My [Root.Monarch.GetTitle], we have received news from the Jorkad Vale.\nWe expected the local economy to wind down after the completion of Verkal Jorkad, as shipments of resources diminished and artisans returned to their workshops. Our estimates have been shown to be pessimistic!\nThe towns resting in the shadow of the citadel, the waypoints between it and Hul Jorkad, and the merchant outposts built in sight of the gates on both sides of the wall have had a positive impact on the entirety of the Jorkad Vale.\nOur merchants, artisans and laborers feel safer, and as such are more willing to invest in the Vale. Gelkalis humans petition to be allowed to immigrate and raise their flocks in the protective shade of the citadel, Jorkadi dwarves readily establish halls and villages in the hills and on the slopes of the mountains, and even the harpies of the Vale look to the citadel with awe from their cliffside cities."
+ DA_Magma_forge_event.20.a:0 "A pleasant surprise!"
+ DA_Prosperity_behind_the_wall:0 "Shielded Vale"
+ desc_DA_Prosperity_behind_the_wall:0 "The presence of Verkal Jorkad, shieding this province from external menaces, has made it so many veteran soldiers, nobles and artisans looking for stability have come to the vale to settle down and help both development and expansion of current infrastructtures."

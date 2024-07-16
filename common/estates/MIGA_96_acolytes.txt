@@ -1,0 +1,9 @@
+estate_acolytes = {
+	privileges = {
+		#estate_mages_cast_spells
+		#estate_mages_patronage_of_the_magical_arts
+		#estate_mages_battlemage_academies
+		#estate_mages_reduced_research_regulations
+		estate_mages_monopoly_of_damestear
+	}
+}

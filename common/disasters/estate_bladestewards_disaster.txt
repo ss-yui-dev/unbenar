@@ -1,0 +1,113 @@
+
+estate_bladestewards_disaster = {
+	potential = {
+		has_estate = estate_bladestewards
+		estate_influence = {
+			estate = estate_bladestewards
+			influence = 80
+		}
+		NOT = {
+			has_estate_privilege = estate_bladestewards_control_state
+		}
+	}
+
+
+	can_start = {
+		has_any_disaster = no
+		estate_influence = {
+			estate = estate_bladestewards
+			influence = 100
+		}
+		is_at_war = no
+	}
+	
+	can_stop = {
+		OR = {
+			has_any_disaster = yes
+			NOT = {
+				estate_influence = {
+					estate = estate_bladestewards
+					influence = 100
+				}		
+			}
+		}
+	}
+	
+	down_progress = {
+		factor = 0
+		modifier = {
+			factor = 1
+			NOT = {
+				estate_influence = {
+					estate = estate_bladestewards
+					influence = 100
+				}
+			}
+		}
+	}
+	
+	progress = {
+		modifier = {
+			factor = 0.5
+			NOT = {
+				estate_loyalty = {
+					estate = estate_bladestewards
+					loyalty = 50
+				}
+			}
+			is_at_war = no
+		}
+		modifier = {
+			factor = 0.5
+			NOT = {
+				estate_loyalty = {
+					estate = estate_bladestewards
+					loyalty = 40
+				}
+			}
+			is_at_war = no
+		}
+		modifier = {
+			factor = 1
+			NOT = {
+				estate_loyalty = {
+					estate = estate_bladestewards
+					loyalty = 30
+				}
+			}
+			is_at_war = no
+		}
+		modifier = {
+			factor = 1
+			NOT = {
+				estate_loyalty = {
+					estate = estate_bladestewards
+					loyalty = 20
+				}
+			}
+			is_at_war = no
+		}
+	}
+	
+	can_end = {
+		custom_trigger_tooltip = {
+			tooltip = EST_CRUSHED_BLADESTEWARDS
+			NOT = { has_country_flag = estate_bladestewards_in_power }
+		}
+	}
+	
+	modifier = {	
+		all_power_cost = 0.05
+		global_tax_modifier = -0.25
+		production_efficiency = -0.5
+		trade_efficiency = -0.25
+		global_unrest = 10
+	}
+
+	on_start = bladestewards_estate_events.1
+	on_end = bladestewards_estate_events.2
+	
+	on_monthly = {
+	}
+}
+

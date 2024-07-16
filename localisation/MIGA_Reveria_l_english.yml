@@ -1,0 +1,7 @@
+﻿l_english:
+ MIGA_A05_integration_into_the_administration_title:0 "Guild of Artificers"
+ MIGA_A05_integration_into_the_administration_desc:0 "The inventors, manufacturers and mages, or "Artificers" as they like to be called, have been forced to operate through the legislation of the Magnates Guilds. They now stand before [Root.GetRulerTitleAndNameOrRegencyCap] emphasizing the need for them to get out of the stranglehold of Magnate supervision and forced guild fees for privileges not used. They ask to form their own Guild. Perhaps we should give them this."
+ 
+ MIGA_invite_artificers_title:0 "Invitate Artificers"
+ MIGA_invite_artificers_tooltip:0 "Invite artificers to study in our country"
+ MIGA_invite_artificers_desc:0 "Artificers will be needed for researching and replicating advanced weaponry. Our ally would be a good source for them."

@@ -1,0 +1,1013 @@
+namespace = bop_flavor
+
+#
+country_event = { #Aftermath of the Battle of Vernham
+	id = bop_flavor.0
+	title = bop_flavor.0.t
+	desc = bop_flavor.0.d
+	picture = MULTI_RACIAL_MERC_eventPicture
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		is_year = 1444
+		NOT = { is_year = 1445 }
+		tag = B13
+	}
+	
+	fire_only_once = yes
+	
+	#mean_time_to_happen = {
+	#	days = 7
+	#}
+	#fire_only_once = yes
+	option = { #Humans win
+		name = "bop_flavor.0.a"
+		ai_chance = {
+			factor = 1
+		}
+		change_adm = 1
+	}
+	option = {	#Elves take over
+		name = "bop_flavor.0.b"
+		ai_chance = {
+			factor = 0
+		}
+		change_primary_culture = moon_elf
+		define_ruler = {
+			name = "Celador"
+			dynasty = "Whiteblade"
+			adm = 4
+			dip = 1
+			mil = 5
+			age = 67
+						
+			culture = moon_elf
+			religion = regent_court
+		}
+		remove_heir = { allow_new_heir = no } 
+		#add_ruler_personality = immortal_personality
+		capital_scope = { change_culture = moon_elf }
+		clear_racial_administration = yes
+		clear_racial_military = yes
+		add_country_modifier = {
+			name = elven_administration
+			duration = -1  
+		}
+		add_country_modifier = {
+			name = elven_military
+			duration = -1
+		}
+		update_unit_sprites_for_racial_mil = yes
+		change_unit_type = tech_elven
+	}
+	
+	option = {	#Half-Orcs take over
+		name = "bop_flavor.0.c"
+		ai_chance = {
+			factor = 0
+		}
+		change_primary_culture = half_orc
+		define_ruler = {
+			name = "Sandur"
+			dynasty = "of Oldhaven"
+			adm = 4
+			dip = 0
+			mil = 6
+			age = 22
+						
+			culture = half_orc
+			religion = regent_court
+		}
+		remove_heir = { allow_new_heir = no } 
+		capital_scope = { change_culture = half_orc }
+		clear_racial_administration = yes
+		clear_racial_military = yes
+		add_country_modifier = { 
+			name = half_orcish_administration
+			duration = -1  
+		}
+		add_country_modifier = {
+				name = half_orcish_military
+				duration = -1
+		}	
+		update_unit_sprites_for_racial_mil = yes 
+	}
+}
+
+country_event = { #Way Forward
+	id = bop_flavor.1
+	title = bop_flavor.1.t
+	desc = bop_flavor.1.d
+	picture = CROSSROAD_eventPicture	
+	
+	is_triggered_only = yes
+	
+	option = { #Look Outwards
+		name = "bop_flavor.1.a"
+		custom_tooltip = BOP_IMPERIAL_PATH
+		set_country_flag = BOP_IMPERIAL_PATH
+		swap_non_generic_missions = yes
+		add_government_reform = blademarches_imperial_faction
+	}
+	
+	option = { #Look Inwards
+		name = "bop_flavor.1.b"
+		custom_tooltip = BOP_ROYAL_PATH
+		set_country_flag = BOP_ROYAL_PATH
+		swap_non_generic_missions = yes
+		add_government_reform = blademarches_royal_faction
+		#add_country_modifier = {
+		#	name = blademarches_strength_of_the_kingdom
+		#	duration = -1
+		#}
+	}
+}
+
+
+country_event = { #Return of the Marchers
+	id = bop_flavor.2
+	title = bop_flavor.2.t
+	desc = bop_flavor.2.d
+	picture = USA_COLONIZATION_eventPicture	
+	is_triggered_only = yes
+	
+	trigger = {
+		tag = B33
+		OR = {
+			culture_group = elven
+			culture = half_orc
+		}
+	}
+	
+	option = { #Half-Orc Assimilation
+		name = "bop_flavor.2.a"
+		
+		trigger = {
+			primary_culture = half_orc
+		}
+	
+		custom_tooltip = BOP_MARCHER_FLAVOR_HALF_ORC
+		
+		lock_racial_admin = yes
+		
+		add_country_modifier = {
+			name = blademarches_half_orc_cultural_assimilation
+			duration = -1
+		}
+		add_accepted_culture = marcher
+		
+		hidden_effect = {
+			every_owned_province = {
+				change_culture = marcher
+			}
+			blademarch_area = { #
+				change_culture = half_orc
+				add_base_tax = 2
+				add_base_production = 1
+				add_base_manpower = 1
+				add_human_minority_size_effect = yes
+				
+			}
+			banesfork_area = { #Banesfork
+				change_culture = half_orc
+				add_base_production = 1
+				add_human_minority_size_effect = yes
+			}
+			800 = { #Vernham
+				change_culture = half_orc
+				add_base_tax = 2
+				add_base_production = 1
+				add_human_minority_size_effect = yes
+			}
+			808 = { #Old Vernham
+				change_culture = half_orc
+				add_base_tax = 1
+				add_base_production = 2
+				add_base_manpower = 1
+				add_human_minority_size_effect = yes
+			}
+			devaced_area = {
+				add_half_orcish_minority_size_effect = yes
+			}
+			clovenwood_area = {
+				change_culture = half_orc
+				add_human_minority_size_effect = yes
+			}
+		}
+	}
+	
+	
+	option = { #Elven Leadership
+		name = "bop_flavor.2.c"
+		
+		trigger = {
+			primary_culture = moon_elf
+		}
+		
+		add_accepted_culture = marcher
+		
+		custom_tooltip = BOP_MARCHER_FLAVOR_ELF_ACCEPTING
+		
+		lock_racial_admin = yes
+		
+		hidden_effect = {
+			every_owned_province = {
+				change_culture = marcher
+			}
+			817 = { #Bladeskeep
+				change_culture = moon_elf
+				add_base_tax = 2
+				add_base_production = 1
+				add_base_manpower = 1
+				add_human_minority_size_effect = yes
+				
+			}
+			813 = { #Banesfork
+				change_culture = moon_elf
+				add_base_production = 1
+				add_human_minority_size_effect = yes
+			}
+			800 = { #Vernham
+				change_culture = moon_elf
+				add_base_tax = 2
+				add_base_production = 1
+				add_human_minority_size_effect = yes
+			}
+			808 = { #Old Vernham
+				change_culture = moon_elf
+				add_base_tax = 1
+				add_base_production = 2
+				add_base_manpower = 1
+				add_human_minority_size_effect = yes
+			}
+			818 = { #Glitterdell
+				add_elven_minority_size_effect = yes
+			}
+			819 = { #Stewards Hold
+				add_province_modifier = {
+					name = elven_minority_integrated_large
+					duration = -1
+				}
+			}
+			816 = { #Dragonfell
+				add_elven_minority_size_effect = yes
+			}	
+		}
+	}
+	
+	option = { #Return the Kingdom #This currently makes all previous culture mysteriously dissappear because I can't be bothered to do it in another way
+		name = "bop_flavor.2.dd"
+		
+		change_primary_culture = marcher
+		
+		define_ruler = {
+			name = "Brayden"
+			dynasty = "of Blademarch"
+			adm = 3
+			dip = 2
+			mil = 5
+			age = 27
+			claim = 80
+			culture = marcher
+		}
+		
+		define_heir = {
+			name = "Dustyn"
+			dynasty = "of Blademarch"
+			adm = 4
+			dip = 2
+			mil = 4
+			age = 6
+			claim = 50
+			culture = marcher
+		}
+	
+		clear_racial_administration = yes
+		clear_racial_military = yes
+		
+		add_country_modifier = { 
+			name = human_administration
+			duration = -1  
+		}
+		add_country_modifier = {
+				name = human_military
+				duration = -1
+		}
+		
+		lock_racial_admin = yes
+		
+		swap_non_generic_missions = yes
+	}
+}
+
+#country_event = { #Human Rebellion Succeeds TODO
+#	id = bop_flavor.3
+#	title = bop_flavor.3.t
+#	desc = bop_flavor.3.d
+#	picture = CIVIL_WAR_eventPicture
+#	
+#	option = { #Tolerate Elves
+#		
+#	}
+#	option = { #Expel Elves
+#		
+#	}
+#}
+
+country_event = { #The Silvermere Navy
+	id = bop_flavor.4
+	title = bop_flavor.4.t
+	desc = bop_flavor.4.d
+	picture = CARIBBEAN_PIRATE_FORT_eventPicture
+	is_triggered_only = yes
+	
+	option = { #Create Silvermere Navy
+		name = "bop_flavor.4.a"
+		add_country_modifier = {
+			name = blademarches_silvermere_navy
+			duration = -1
+		}
+	}
+	option = { #Land Focus for Humans
+		name = "bop_flavor.4.b"
+		
+		trigger = {
+			primary_culture = marcher
+		}
+		
+		add_country_modifier = {
+			name = blademarches_land_focus_human
+			duration = -1
+		}
+	}
+	option = { #Land Focus for Half-Orcs
+		name = "bop_flavor.4.c"
+		
+		trigger = {
+			primary_culture = half_orc
+		}
+		
+		add_country_modifier = {
+			name = blademarches_land_focus_half_orc
+			duration = -1
+		}
+	}
+	option = { #Land Focus for Elves
+		name = "bop_flavor.4.dd"
+		
+		trigger = {
+			culture_group = elven
+		}
+		
+		add_country_modifier = {
+			name = blademarches_land_focus_elven
+			duration = -1
+		}
+	}
+}
+
+country_event = { #Military
+	id = bop_flavor.5
+	title = bop_flavor.5.t
+	desc = bop_flavor.5.d
+	picture = DISCIPLINED_SOLDIERS_eventPicture
+	is_triggered_only = yes
+	
+	option = { #Go on
+		name = "bop_flavor.5.a"
+		
+		add_prestige = -1
+		country_event = {
+			id = bop_flavor.6
+			days = 7
+		} 
+	}	
+}
+
+country_event = { #Fate of the Bladesworn
+	id = bop_flavor.6
+	title = bop_flavor.6.t
+	desc = bop_flavor.6.d
+	picture = GENERALS_DISCUSSING_eventPicture
+	is_triggered_only = yes
+	
+	immediate = {
+		hidden_effect = {
+			country_event = {
+				id = bop_flavor.7
+				days = 1800
+			}
+		}
+	}
+	option = { #Bladesworn
+		name = "bop_flavor.6.a"
+		
+		trigger = {
+			has_dlc = "Domination"
+		}
+		
+		define_advisor = {
+			type = commandant
+			skill = 3
+			discount = yes
+			female = yes
+		}
+		set_country_flag = blademarches_royal_bladesworn_army_enabled
+		add_government_reform = blademarches_royal_bladesworn_army
+		if = { 
+			limit = { has_estate_privilege = estate_bladestewards_bladesworn_established }
+			remove_estate_privilege = estate_bladestewards_bladesworn_established
+		}
+		if = {
+			limit = { has_country_modifier = blademarches_bladesworn_non_dom }
+			remove_country_modifier = blademarches_bladesworn_non_dom
+		}
+	}
+	option = { #New Model
+		name = "bop_flavor.6.b"
+		
+		trigger = {
+			has_dlc = "Domination"
+		}
+		
+		define_advisor = {
+			type = army_organiser
+			skill = 3
+			discount = yes
+		}
+		set_country_flag = blademarches_royal_new_model_army_enabled
+		add_government_reform = blademarches_royal_new_model_army
+		if = { 
+			limit = { has_estate_privilege = estate_bladestewards_bladesworn_established }
+			remove_estate_privilege = estate_bladestewards_bladesworn_established
+		}
+		set_estate_privilege = estate_bladestewards_old_guard
+		if = {
+			limit = { has_country_modifier = blademarches_bladesworn_non_dom }
+			remove_country_modifier = blademarches_bladesworn_non_dom
+		}
+		add_country_modifier = {
+			name = blademarches_new_model_exodus
+			duration = 5475
+		}
+	}	
+	option = { #Cavalry - Fallback
+		name = "bop_flavor.6.c"
+		
+		trigger = {
+			NOT = { has_dlc = "Domination" }
+		}
+		custom_tooltip = BOP_ARMY_FALLBACK_EXPL
+		#if = {
+		#	limit = {
+		#		NOT = { has_dlc = "Domination" }
+		#	}
+		#	custom_tooltip = BOP_ARMY_FALLBACK_EXPL
+		#}
+		set_country_flag = blademarches_royal_fallback_army_enabled
+		add_government_reform = blademarches_royal_fallback_army
+	}	
+}
+
+country_event = { #An Apparition on the Lake
+	id = bop_flavor.7
+	title = bop_flavor.7.t
+	desc = bop_flavor.7.d
+	picture = BIG_STAR_IN_SKY_eventPicture
+	is_triggered_only = yes
+
+	option = {
+		name = "bop_flavor.7.a"
+		add_karma  = 5
+		set_country_flag = lakelady_unlocked
+	}
+}
+
+country_event = { #Orcs of Oudmerewood
+	id = bop_flavor.8
+	title = bop_flavor.8.t
+	desc = bop_flavor.8.d
+	picture = NOTHING_FOUND_eventPicture	
+	is_triggered_only = yes
+	
+	option = { #Enslave
+		name = "bop_flavor.8.a"
+		
+		trigger = {
+			has_country_flag = BOP_ORC_SLAVERY
+			NOT = { has_country_modifier = the_abolish_slavery_act }
+			NOT = { has_global_flag = orcish_slave_trade_banned_in_cannor }
+		}
+		
+		medium_decrease_of_orcish_tolerance_effect = yes
+		
+		794 = {
+			#add_orcish_minority_size_effect = yes
+			change_trade_goods = slaves
+			}
+		796 = {
+			#add_orcish_minority_size_effect = yes
+			change_trade_goods = slaves
+			}
+		795 = {
+			#add_orcish_minority_size_effect = yes
+			change_trade_goods = slaves
+			}	
+		
+		if = {
+			limit = {
+				primary_culture = half_orc
+			}
+			custom_tooltip = BOP_ENSLAVE_ORCS_HALF_ORC
+			add_stability = -1
+		}
+	}
+	
+	option = { #Free Orcs
+		trigger = {
+			NOT = { culture = half_orc }
+		}
+		name = "bop_flavor.8.b"
+		small_increase_of_orcish_tolerance_effect = yes
+		794 = {
+			#add_orcish_minority_size_effect = yes
+			change_trade_goods = fur
+			add_province_modifier = {
+				name = bop_oudmerewood_furs
+				duration = -1
+			}
+		}
+		796 = {
+			#add_orcish_minority_size_effect = yes
+			change_trade_goods = fur
+			add_province_modifier = {
+				name = bop_oudmerewood_furs
+				duration = -1
+			}
+		}
+		795 = {
+			#add_orcish_minority_size_effect = yes
+			add_halfling_minority_size_effect = yes
+			add_province_modifier = {
+				name = bop_acenthan_cloth
+				duration = -1
+			}
+		}
+	}	
+
+	option = { #Assimilate Orcs
+		trigger = {
+			culture = half_orc
+		}
+		name = "bop_flavor.8.c"
+		small_increase_of_orcish_tolerance_effect = yes
+		794 = {
+			change_culture = half_orc
+			add_orcish_minority_size_effect = yes
+			change_trade_goods = fur
+			add_province_modifier = {
+				name = bop_oudmerewood_furs
+				duration = -1
+			}
+		}
+		796 = {
+			change_culture = half_orc
+			add_orcish_minority_size_effect = yes
+			change_trade_goods = fur
+			add_province_modifier = {
+				name = bop_oudmerewood_furs
+				duration = -1
+			}
+		}
+		795 = {
+			change_culture = half_orc
+			add_orcish_minority_size_effect = yes
+			add_province_modifier = {
+				name = bop_acenthan_cloth
+				duration = -1
+			}
+		}
+	}		
+}
+
+country_event = { #An Offer by Tonker & Truebellow
+	id = bop_flavor.9
+	title = bop_flavor.9.t
+	desc = bop_flavor.9.d
+	picture = OVEREXTENSION_eventPicture	
+	is_triggered_only = yes
+	
+	option = { #Tonker and Truebellow
+		name = "bop_flavor.9.a"
+		custom_tooltip = BOP_ARTIFICER_CHOICE_TONKER_AND_TRUEBELLOW
+		clear_artificers_organization_effect = yes
+		set_estate_privilege = estate_artificers_organization_state
+		
+		802 = {
+			remove_province_modifier = bop_dwarven_gnomish_factory
+		}
+		
+		dostans_way_area = {
+			add_province_modifier = {
+				name = bop_dwarven_gnomish_owned_industry
+				duration = -1
+			}
+		}	
+		
+		808 = {
+			add_province_modifier = {
+				name = bop_dwarven_gnomish_factory_hq
+				duration = -1
+			}
+		}
+		
+		define_advisor = {
+			name = "Ienkin Tonker IV."
+			type = natural_scientist
+			culture = imperial_gnome
+			religion = ravelian
+			skill = 3
+			discount = yes
+		}
+	}
+	
+	option = { #State Artificers
+		name = "bop_flavor.9.b"
+		custom_tooltip = BOP_ARTIFICER_CHOICE_STATE
+		clear_artificers_organization_effect = yes
+		set_estate_privilege = estate_artificers_organization_state
+		802 = {
+			remove_dwarven_minority_size_effect = yes
+			remove_gnomish_minority_size_effect = yes
+			remove_province_modifier = bop_dwarven_gnomish_factory
+		}
+		808 = {
+			add_province_modifier = {
+				name = bop_ministry_of_war_production
+				duration = -1
+			}
+		}
+		dostans_way_area = {
+			add_province_modifier = {
+				name = bop_state_owned_industry
+				duration = -1
+			}
+		}
+	}
+}
+
+country_event = { #The Orcish Question
+	id = bop_flavor.10
+	title = bop_flavor.10.t
+	desc = bop_flavor.10.d
+	picture = NATIVES_eventPicture
+	is_triggered_only = yes
+	
+	option = { #Orc Slavery
+		name = "bop_flavor.10.a"
+		medium_decrease_of_orcish_tolerance_effect = yes
+		set_country_flag = BOP_ORC_SLAVERY
+		custom_tooltip = BOP_ENSLAVE_ORCS_EFFECT
+		
+		if = {
+			limit = {
+				primary_culture = half_orc
+			}
+			custom_tooltip = BOP_ENSLAVE_ORCS_HALF_ORC
+			add_stability = -2
+		}
+	}
+	option = { #Orc Freedom
+		name = bop_flavor.10.b
+		add_prestige = 1
+	}
+}
+
+country_event = { #A new Workshop
+	id = bop_flavor.11
+	title = bop_flavor.11.t
+	desc = bop_flavor.11.d
+	picture = INVENTION_eventPicture
+	is_triggered_only = yes
+	
+	option = { #
+		name = "bop_flavor.11.a"
+		
+		add_prestige = 1
+		802 = {
+			add_province_modifier = {
+				name = bop_dwarven_gnomish_workshop
+				duration = -1
+			}
+		}
+	}
+}
+
+country_event = { #The First Factory
+	id = bop_flavor.12
+	title = bop_flavor.12.t
+	desc = bop_flavor.12.d
+	picture = URBANIZATION_eventPicture
+	is_triggered_only = yes
+	
+	option = { #
+		name = "bop_flavor.12.a"
+		
+		802 = {
+			remove_province_modifier = bop_dwarven_gnomish_workshop
+		}
+		802 = {
+			add_dwarven_minority_size_effect = yes
+			add_halfling_minority_size_effect = yes
+			add_gnomish_minority_size_effect = yes
+			add_province_modifier = {
+				name = bop_dwarven_gnomish_factory
+				duration = -1
+			}
+		}
+	}
+}
+
+country_event = { #The Cult of the Lady of the Lake
+	id = bop_flavor.13
+	title = bop_flavor.13.t
+	desc = bop_flavor.13.d
+	picture = RELIGIOUS_CONVERSION_eventPicture
+	is_triggered_only = yes
+	
+	option = { #Embrace
+		name = "bop_flavor.13.a"
+		
+		809 = {
+			add_province_modifier = {
+				name = bop_lakelady_shrine
+				duration = -1
+			}
+		}
+		
+		south_castanor_region = {
+			add_province_triggered_modifier = bop_blessed_by_the_lady
+		}
+		
+		add_prestige = -10
+		custom_tooltip = BOP_LAKELADY_PRIVILEGE
+		set_country_flag = lakelady_cult_unlocked
+		add_stability = -1
+	}
+	
+	option = { #Bollocks
+		name = "bop_flavor.13.b"
+		
+		custom_tooltip = BOP_SEIZE_LAKELADY_MONEY
+		add_years_of_income = 1	
+		add_stability = 1
+	}	
+}
+
+	
+country_event = { #A Schism among the Blade Stewards
+	id = bop_flavor.14
+	title = bop_flavor.14.t
+	desc = bop_flavor.14.d
+	picture = CHURCH_ESTATE_UPSET_eventPicture
+	is_triggered_only = yes
+	
+	#trigger = {
+	#	#has_dlc = "Domination"
+	#}	
+	option = { #okay
+		name = "bop_flavor.14.a"
+		add_stability = -1
+		hidden_effect = {
+			country_event = {
+				id = bop_flavor.15
+				days = 35
+			} 
+			unlock_estate = {
+				estate = estate_bladestewards
+			}
+		}
+	}
+}
+
+country_event = { #The Reformation of the Blade Stewards
+	id = bop_flavor.15
+	title = bop_flavor.15.t
+	desc = bop_flavor.15.d
+	picture = ARMY_WITH_MONASTERY_eventPicture
+	is_triggered_only = yes
+	
+	#trigger = {
+	#	#has_dlc = "Domination"
+	#}	
+	option = { #okay
+		name = "bop_flavor.15.a"
+		custom_tooltip = BOP_BLADESTEWARDS_ENABLE
+		change_estate_land_share = {
+			estate = estate_bladestewards
+			share = 10
+		}
+		
+		if = {
+			limit = { has_dlc = "Domination" }
+			set_estate_privilege = estate_bladestewards_bladesworn_established
+			blademarch_area = {
+				add_province_triggered_modifier = bop_bladesworn_barracks
+			}
+		}
+		else = {
+			add_country_modifier = {
+				name = blademarches_bladesworn_non_dom
+				duration = -1
+			}
+		}
+	}
+}
+
+country_event = { #The Marcher Rebellion of [year]
+	id = bop_flavor.16
+	title = bop_flavor.16.t
+	desc = bop_flavor.16.d
+	picture = COUNTRY_COLLAPSE_eventPicture
+	
+	trigger = {
+		tag = B33
+		has_country_flag = no_noble_military
+		mission_completed = B33_breadbasket_of_blademarches
+		has_estate = estate_nobles
+	}
+	
+	mean_time_to_happen = {
+		days = 3600
+	}
+	
+	fire_only_once = yes
+	option = { #Fight them
+		name = "bop_flavor.16.a"
+		random_owned_province = {
+			limit = { is_capital = no }
+			spawn_rebels = {
+				type = noble_rebels
+				size = 3
+				win = yes
+				estate = estate_nobles
+			}
+			random_neighbor_province = {
+				limit = {
+					owned_by = ROOT
+					is_capital = no
+				}
+				spawn_rebels = {
+					type = noble_rebels
+					size = 2
+					win = yes
+					estate = estate_nobles
+				}
+			}
+			random_neighbor_province = {
+				limit = {
+					owned_by = ROOT
+					is_capital = no
+				}
+				spawn_rebels = {
+					type = noble_rebels
+					size = 1
+					win = yes
+					estate = estate_nobles
+				}
+			}
+		}
+		add_estate_loyalty = {
+				estate = estate_nobles
+				loyalty = -40
+		}
+		add_estate_influence_modifier = {
+			estate = estate_nobles
+			desc = EST_VAL_MARCHER_MARGINALIZATION
+			influence = -20
+			duration = 7300
+		}
+		add_stability = -1
+	}
+	option = {
+		name = "bop_flavor.16.b"
+		remove_estate_privilege = estate_bladestewards_bladesworn_officers
+		clr_country_flag = no_noble_military
+		add_estate_loyalty = {
+			estate = estate_nobles
+			loyalty = 20
+		}
+		add_estate_loyalty = {
+			estate = estate_bladestewards
+			loyalty = -10
+		}
+		set_estate_privilege = estate_nobles_officer_corp
+		set_estate_privilege = estate_nobles_levies
+		set_estate_privilege = estate_nobles_command_of_the_military
+		add_estate_influence_modifier = {
+			estate = estate_nobles
+			desc = EST_VAL_MARCHER_PRIVILEGES
+			influence = 15
+			duration = 7300
+		}
+		change_estate_land_share = {
+			estate = estate_nobles
+			share = 15
+		}
+	}
+}
+
+country_event = { #The Meritocracy at War and Peace Act of 1670
+	id = bop_flavor.17
+	title = bop_flavor.17.t
+	desc = bop_flavor.17.d
+	picture = ELECTION_REPUBLICAN_eventPicture
+	#is_triggered_only = yes
+	
+	trigger = {
+		is_year = 1670
+		has_idea = B33_meritocracy_at_war_and_peace_act
+		has_reform = blademarches_marcher_meritocracy
+		NOT = { has_idea_group = aristocracy_ideas }
+	}	
+	
+	mean_time_to_happen = {
+		days = 100
+	}
+	
+	fire_only_once = yes
+	
+	option = { #okay
+		name = "bop_flavor.17.a"
+		add_absolutism = 5
+		add_prestige = 15
+		add_stability = 1
+		#custom_tooltip = MARCHER_NOBILITY_DISABLE
+		#set_country_flag = disables_estate_nobles_flag
+	}
+}
+
+#A new Bladechosen (Theocracy and Republic)
+country_event = {
+	id = bop_flavor.18
+	title = bop_flavor.18.t
+	desc = bop_flavor.18.d
+	picture = CONQUEST_eventPicture
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		tag = B33
+		OR = {
+			has_reform = blademarches_republic_reform
+			has_reform = blademarches_theocracy_reform
+		}
+	}
+	
+	#Pass the trial
+	option = {		
+		name = bop_flavor.18.a
+		add_ruler_modifier = {
+			name = wielding_calindal
+			duration = -1
+		}
+		if = {
+			limit = { num_of_generals = 2 }
+			kill_leader = {
+				type = general
+			}
+		}
+	}
+}
+
+country_event = { #The Divine Machine and the Great Gear
+	id = bop_flavor.19
+	title = bop_flavor.19.t
+	desc = bop_flavor.19.d
+	picture = SYNTHETICS_eventPicture
+	is_triggered_only = yes
+	
+	trigger = {
+		tag = B33
+		religion = ravelian
+		NOT = { has_unlocked_government_reform = { government_reform = blademarches_large_cog } }
+	}
+	
+	option = {		
+		name = bop_flavor.19.a
+		
+		unlock_government_reform = {
+			government_reform = blademarches_large_cog
+		}
+		add_government_reform = blademarches_large_cog
+	}
+	
+	option = {		
+		name = bop_flavor.19.b
+		
+		unlock_government_reform = {
+			government_reform = blademarches_large_cog
+		}
+	}
+}

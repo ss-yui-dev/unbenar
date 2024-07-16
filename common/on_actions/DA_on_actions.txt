@@ -1,0 +1,70 @@
+#When adding effects directly in on_actions always consider if it would be best to do so through a scripted effect. on_actions with a lot of script in them are harder to get an overview of.
+#meaningless comment
+# Now that on_actions are additive, they save performance a bit
+
+# country
+on_trade_good_changed = {
+	if = {
+		limit = {
+			trade_goods = damestear
+		}
+		add_permanent_province_modifier = {
+			name = DA_Meteoric_Silver_deposit
+			duration = 10950
+		}
+	}
+}
+on_dip_development = {
+	events = {
+		DA_Metallurgy_events.1
+		DA_Metallurgy_events.2
+		DA_Metallurgy_events.3
+		DA_Metallurgy_events.4
+	}
+}
+on_monthly_pulse = {
+	events = {
+		DA_Runesmiths_events.2
+	}
+}
+on_yearly_pulse_4 = {
+	every_owned_province = {
+		province_event = {
+			id = DA_Metallurgy_events.1
+		}
+		province_event = {
+			id = DA_Metallurgy_events.2
+		}
+		province_event = {
+			id = DA_Metallurgy_events.3
+		}
+		province_event = {
+			id = DA_Metallurgy_events.4
+		}
+		province_event = {
+			id = DA_adk.1000 
+		}
+	}
+	events = {
+		DA_adk.1001
+		DA_adk.150
+		DA_adk.81
+		DA_adk.82
+		DA_Metallurgy_events.0
+		DA_Metallurgy_events.10
+	}
+	random_events  = {
+		100 = DA_Research_events.1
+		100 = DA_Research_events.2
+		90 = DA_Research_events.3
+		100 = DA_Research_events.4
+		90 = DA_Research_events.5
+		90 = DA_Research_events.6
+		100 = DA_Research_events.7
+		100 = DA_Research_events.8
+		80 = DA_Research_events.9
+		100 = DA_Research_events.10
+		100 = DA_Research_events.11
+		1400 = 0
+	}
+}

@@ -1,0 +1,138 @@
+
+namespace = coalition_against_lorent
+
+country_event = {
+	id = coalition_against_lorent.1
+	title = coalition_against_lorent.1.t
+	desc = coalition_against_lorent.1.desc
+	picture = HISPANIC_MONARCHY_eventPICTURE
+
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		tag = A01
+	}
+	
+	option = {
+		name = coalition_against_lorent.1.a
+	}
+}
+
+country_event = {
+	id = coalition_against_lorent.2
+	title = coalition_against_lorent.2.t
+	desc = coalition_against_lorent.2.desc
+	picture = HISPANIC_MONARCHY_eventPICTURE
+	is_triggered_only = yes
+
+	option = {
+		name = coalition_against_lorent.2.a
+		add_prestige = 5
+		form_coalition_against = A01
+		join_all_defensive_wars_of = event_target:LorentCoalitionLeader
+		ai_chance = {
+			factor = 4
+			modifier = {
+				factor = 2
+				OR = {
+					tag = A14
+					tag = A15
+					tag = A18
+				}
+			}
+			modifier = {
+				factor = 10
+				OR = {
+					ai_attitude = {
+						who = A01
+						attitude = attitude_rivalry
+					}
+					ai_attitude = {
+						who = A01
+						attitude = attitude_hostile
+					}
+					ai_attitude = {
+						who = A01
+						attitude = attitude_outraged
+					}
+				}
+			}
+			modifier = {
+				factor = 2
+				OR = {
+					ai_attitude = {
+						who = A01
+						attitude = attitude_threatened
+					}
+				}
+			}
+			modifier = {
+				factor = 10
+				OR = {
+					ai_attitude = {
+						who = event_target:LorentCoalitionLeader
+						attitude = attitude_defensive
+					}
+					ai_attitude = {
+						who = event_target:LorentCoalitionLeader
+						attitude = 	attitude_friendly
+					}
+					ai_attitude = {
+						who = event_target:LorentCoalitionLeader
+						attitude = attitude_allied
+					}
+				}
+			}
+		}
+	}
+
+	option = {
+		name = coalition_against_lorent.2.b
+		add_prestige = -5
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 2
+				OR = {
+					ai_attitude = {
+						who = event_target:LorentCoalitionLeader
+						attitude = attitude_rivalry
+					}
+					ai_attitude = {
+						who = event_target:LorentCoalitionLeader
+						attitude = attitude_hostile
+					}
+					ai_attitude = {
+						who = event_target:LorentCoalitionLeader
+						attitude = attitude_outraged
+					}
+				}
+			}
+			modifier = {
+				factor = 2
+				OR = {
+					ai_attitude = {
+						who = A01
+						attitude = 	attitude_friendly
+					}
+				}
+			}
+			modifier = {
+				factor = 10
+				OR = {
+					ai_attitude = {
+						who = A01
+						attitude = attitude_defensive
+					}
+					ai_attitude = {
+						who = A01
+						attitude = attitude_allied
+					}
+				}
+			}
+		}
+	}
+}
+
+

@@ -1,0 +1,26 @@
+estate_castonath_patricians = {
+	loyalty_modifier = {
+		desc = EST_LOWER_CASTONATH_IMPROVED
+		trigger = {
+			832 = { development = 40 }
+			NOT = { 832 = { num_of_times_improved_by_owner = 20 } }
+		}
+		loyalty = 5
+	}
+	loyalty_modifier = {
+		desc = EST_SOUTH_CASTONATH_IMPROVED
+		trigger = {
+			831 = { development = 40 }
+			NOT = { 831 = { num_of_times_improved_by_owner = 20 } }
+		}
+		loyalty = 5
+	}
+	loyalty_modifier = {
+		desc = EST_NORTH_CASTONATH_IMPROVED
+		trigger = {
+			833 = { development = 40 }
+			NOT = { 833 = { num_of_times_improved_by_owner = 20 } }
+		}
+		loyalty = 5
+	}
+}

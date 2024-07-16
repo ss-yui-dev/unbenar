@@ -1,0 +1,1020 @@
+
+MIGA_estate_RC_castellos = {
+	icon = privilege_religious
+	max_absolutism = 0
+	influence = 0.05
+	loyalty = 0.05
+	
+	is_valid = {
+		religion = regent_court
+		is_religion_enabled = corinite
+		OR = {
+			has_personal_deity = castellos
+			has_personal_deity = lightfather
+			has_estate_privilege = MIGA_estate_RC_castellos
+		}
+		OR = {
+			MIGA_RC_has_national_worship = no
+			has_estate_privilege = MIGA_estate_RC_castellos
+		}
+	}
+	
+	can_select = {
+		religion = regent_court
+		OR = {
+			has_personal_deity = castellos
+		}
+	}
+	
+	penalties = {
+		global_tax_modifier = -0.10
+	}
+	
+	conditional_modifier = {
+ 		trigger = {
+			OR = {
+				NOT = {
+					AND = {
+						has_personal_deity = castellos
+						has_personal_deity = lightfather
+					}
+				}
+				is_religion_enabled = ravelian
+			}
+		}
+ 		modifier = {
+			legitimacy = 1
+			republican_tradition = 0.3
+			devotion = 1
+			horde_unity = 1
+			country_admin_power = 1
+		}
+ 	}
+	
+	conditional_modifier = {
+ 		trigger = {
+			OR = {
+				has_personal_deity = castellos
+				is_religion_enabled = ravelian
+			}
+		}
+ 		modifier = {
+			stability_cost_modifier = -0.25
+			advisor_pool = 2
+		}
+ 	}
+	
+	ai_will_do = {
+		factor = 100
+	}
+}
+
+MIGA_estate_RC_the_dame = {
+	icon = privilege_religious
+	max_absolutism = 0
+	influence = 0.05
+	loyalty = 0.05
+	
+	is_valid = {
+		religion = regent_court
+		is_religion_enabled = corinite
+		OR = {
+			has_personal_deity = the_dame
+			has_estate_privilege = MIGA_estate_RC_the_dame
+		}
+		OR = {
+			MIGA_RC_has_national_worship = no
+			has_estate_privilege = MIGA_estate_RC_the_dame
+		}
+	}
+	
+	can_select = {
+		religion = regent_court
+		OR = {
+			has_personal_deity = the_dame
+		}
+	}
+	
+	penalties = {
+		global_tax_modifier = -0.10
+	}
+	
+	conditional_modifier = {
+ 		trigger = {
+			OR = {
+				NOT = { has_personal_deity = the_dame }
+				is_religion_enabled = ravelian
+			}
+		}
+ 		modifier = {
+			production_efficiency = 0.1
+			idea_cost = -0.05
+		}
+ 	}
+	
+	conditional_modifier = {
+ 		trigger = {
+			OR = {
+				has_personal_deity = the_dame
+				is_religion_enabled = ravelian
+			}
+		}
+ 		modifier = {
+			technology_cost = -0.05
+			promote_culture_cost = -0.50
+		}
+ 	}
+	
+	ai_will_do = {
+		factor = 100
+	}
+}
+
+MIGA_estate_RC_corin = {
+	icon = privilege_religious
+	max_absolutism = 0
+	influence = 0.05
+	loyalty = 0.05
+	
+	is_valid = {
+		religion = regent_court
+		is_religion_enabled = corinite
+		OR = {
+			has_personal_deity = corin
+			has_estate_privilege = MIGA_estate_RC_corin
+		}
+		OR = {
+			MIGA_RC_has_national_worship = no
+			has_estate_privilege = MIGA_estate_RC_corin
+		}
+	}
+	
+	can_select = {
+		religion = regent_court
+		OR = {
+			has_personal_deity = corin
+		}
+	}
+	
+	penalties = {
+		global_tax_modifier = -0.10
+	}
+	
+	conditional_modifier = {
+ 		trigger = {
+			OR = {
+				NOT = { has_personal_deity = corin }
+				is_religion_enabled = ravelian
+			}
+		}
+ 		modifier = {
+			shock_damage = 0.05
+			land_morale = 0.05
+		}
+ 	}
+	
+	conditional_modifier = {
+ 		trigger = {
+			OR = {
+				has_personal_deity = corin
+				is_religion_enabled = ravelian
+			}
+		}
+ 		modifier = {
+			country_military_power = 1
+			infantry_power = 0.1
+		}
+ 	}
+	
+	ai_will_do = {
+		factor = 100
+	}
+}
+
+MIGA_estate_RC_adean = {
+	icon = privilege_religious
+	max_absolutism = 0
+	influence = 0.05
+	loyalty = 0.05
+	
+	is_valid = {
+		religion = regent_court
+		is_religion_enabled = corinite
+		OR = {
+			has_personal_deity = adean
+			has_personal_deity = adean_adenica_admin
+			has_personal_deity = adean_adenica_war
+			has_estate_privilege = MIGA_estate_RC_adean
+		}
+		OR = {
+			MIGA_RC_has_national_worship = no
+			has_estate_privilege = MIGA_estate_RC_adean
+		}
+	}
+	
+	can_select = {
+		religion = regent_court
+		OR = {
+			has_personal_deity = adean
+			has_personal_deity = adean_adenica_admin
+			has_personal_deity = adean_adenica_war
+		}
+	}
+	
+	penalties = {
+		global_tax_modifier = -0.10
+	}
+	
+	conditional_modifier = {
+ 		trigger = {
+			OR = {
+				NOT = {
+					OR = {
+						has_personal_deity = adean
+						has_personal_deity = adean_adenica_admin
+						has_personal_deity = adean_adenica_war
+					}
+				}
+				is_religion_enabled = ravelian
+			}
+		}
+ 		modifier = {
+			cavalry_power = 0.15
+			prestige = 1
+		}
+ 	}
+	
+	conditional_modifier = {
+ 		trigger = {
+			OR = {
+				OR = {
+					has_personal_deity = adean
+					has_personal_deity = adean_adenica_admin
+					has_personal_deity = adean_adenica_war
+				}
+				is_religion_enabled = ravelian
+			}
+		}
+ 		modifier = {
+			army_tradition = 1
+			liberty_desire_from_subject_development = -0.1
+		}
+ 	}
+	
+	ai_will_do = {
+		factor = 100
+	}
+}
+
+MIGA_estate_RC_munas_moonsinger = {
+	icon = privilege_religious
+	max_absolutism = 0
+	influence = 0.05
+	loyalty = 0.05
+	
+	is_valid = {
+		religion = regent_court
+		is_religion_enabled = corinite
+		OR = {
+			has_personal_deity = munas_moonsinger
+			has_personal_deity = munas_upgraded
+			has_personal_deity = munas_moonsinger_ibevar
+			has_estate_privilege = MIGA_estate_RC_munas_moonsinger
+		}
+		OR = {
+			MIGA_RC_has_national_worship = no
+			has_estate_privilege = MIGA_estate_RC_munas_moonsinger
+		}
+	}
+	
+	can_select = {
+		religion = regent_court
+		OR = {
+			has_personal_deity = munas_moonsinger
+			has_personal_deity = munas_upgraded
+			has_personal_deity = munas_moonsinger_ibevar
+		}
+	}
+	
+	penalties = {
+		global_tax_modifier = -0.10
+	}
+	
+	conditional_modifier = {
+ 		trigger = {
+			OR = {
+				NOT = {
+					OR = {
+						has_personal_deity = munas_moonsinger
+						has_personal_deity = munas_upgraded
+					}
+				}
+				is_religion_enabled = ravelian
+			}
+			NOT = { has_country_flag = ibevar_new_faith }
+		}
+ 		modifier = {
+			colonist_placement_chance = 0.1
+			leader_naval_manuever = 1
+		}
+ 	}
+	
+	conditional_modifier = {
+ 		trigger = {
+			OR = {
+				has_personal_deity = munas_moonsinger
+				has_personal_deity = munas_upgraded
+			}
+			has_country_flag = ibevar_new_faith
+		}
+ 		modifier = {
+			colonist_placement_chance = -0.1
+			leader_naval_manuever = -1
+			development_cost = -0.1
+			trade_efficiency = 0.1
+		}
+ 	}
+	
+	conditional_modifier = {
+ 		trigger = {
+			OR = {
+				NOT = {
+					OR = {
+						has_personal_deity = munas_moonsinger
+						has_personal_deity = munas_upgraded
+						has_personal_deity = munas_moonsinger_ibevar
+					}
+				}
+				is_religion_enabled = ravelian
+			}
+			has_country_flag = ibevar_new_faith
+		}
+ 		modifier = {
+			development_cost = -0.1
+			trade_efficiency = 0.1
+		}
+ 	}
+	
+	conditional_modifier = {
+ 		trigger = {
+			OR = {
+				OR = {
+					has_personal_deity = munas_moonsinger
+					has_personal_deity = munas_upgraded
+					has_personal_deity = munas_moonsinger_ibevar
+				}
+				is_religion_enabled = ravelian
+			}
+		}
+ 		modifier = {
+			navy_tradition = 1
+			manpower_in_accepted_culture_provinces = 0.1
+			manpower_in_own_culture_provinces = 0.1
+		}
+ 	}
+	
+	ai_will_do = {
+		factor = 100
+	}
+}
+
+MIGA_estate_RC_ara = {
+	icon = privilege_religious
+	max_absolutism = 0
+	influence = 0.05
+	loyalty = 0.05
+	
+	is_valid = {
+		religion = regent_court
+		is_religion_enabled = corinite
+		OR = {
+			has_personal_deity = ara
+			has_estate_privilege = MIGA_estate_RC_ara
+		}
+		OR = {
+			MIGA_RC_has_national_worship = no
+			has_estate_privilege = MIGA_estate_RC_ara
+		}
+	}
+	
+	can_select = {
+		religion = regent_court
+		OR = {
+			has_personal_deity = ara
+		}
+	}
+	
+	penalties = {
+		global_tax_modifier = -0.10
+	}
+	
+	conditional_modifier = {
+ 		trigger = {
+			OR = {
+				NOT = { has_personal_deity = ara }
+				is_religion_enabled = ravelian
+			}
+		}
+ 		modifier = {
+			trade_efficiency = 0.1
+			global_tax_modifier = 0.1
+		}
+ 	}
+	
+	conditional_modifier = {
+ 		trigger = {
+			OR = {
+				has_personal_deity = ara
+				is_religion_enabled = ravelian
+			}
+		}
+ 		modifier = {
+			global_attacker_dice_roll_bonus = 1
+			trade_steering = 0.25
+		}
+ 	}
+	
+	ai_will_do = {
+		factor = 100
+	}
+}
+
+MIGA_estate_RC_balgar = {
+	icon = privilege_religious
+	max_absolutism = 0
+	influence = 0.05
+	loyalty = 0.05
+	
+	is_valid = {
+		religion = regent_court
+		is_religion_enabled = corinite
+		OR = {
+			has_personal_deity = balgar
+			has_personal_deity = balgar_upgraded
+			has_estate_privilege = MIGA_estate_RC_balgar
+		}
+		OR = {
+			MIGA_RC_has_national_worship = no
+			has_estate_privilege = MIGA_estate_RC_balgar
+		}
+	}
+	
+	can_select = {
+		religion = regent_court
+		OR = {
+			has_personal_deity = balgar
+			has_personal_deity = balgar_upgraded
+		}
+	}
+	
+	penalties = {
+		global_tax_modifier = -0.10
+	}
+	
+	conditional_modifier = {
+ 		trigger = {
+			OR = {
+				NOT = {
+					OR = {
+						has_personal_deity = balgar
+						has_personal_deity = balgar_upgraded
+					}
+				}
+				is_religion_enabled = ravelian
+			}
+		}
+ 		modifier = {
+			build_cost = -0.1
+			defensiveness = 0.1
+		}
+ 	}
+	
+	conditional_modifier = {
+ 		trigger = {
+			OR = {
+				OR = {
+					has_personal_deity = balgar
+					has_personal_deity = balgar_upgraded
+				}
+				is_religion_enabled = ravelian
+			}
+		}
+		modifier = {
+			morale_damage_received = -0.075
+			build_cost = -0.10
+		}
+	}
+	
+	ai_will_do = {
+		factor = 100
+	}
+}
+
+MIGA_estate_RC_esmaryal = {
+	icon = privilege_religious
+	max_absolutism = 0
+	influence = 0.05
+	loyalty = 0.05
+	
+	is_valid = {
+		religion = regent_court
+		is_religion_enabled = corinite
+		OR = {
+			has_personal_deity = esmaryal
+			has_estate_privilege = MIGA_estate_RC_esmaryal
+		}
+		OR = {
+			MIGA_RC_has_national_worship = no
+			has_estate_privilege = MIGA_estate_RC_esmaryal
+		}
+	}
+	
+	can_select = {
+		religion = regent_court
+		OR = {
+			has_personal_deity = esmaryal
+		}
+	}
+	
+	penalties = {
+		global_tax_modifier = -0.10
+	}
+	
+	conditional_modifier = {
+ 		trigger = {
+			OR = {
+				NOT = { has_personal_deity = esmaryal }
+				is_religion_enabled = ravelian
+			}
+		}
+ 		modifier = {
+			diplomatic_annexation_cost = -0.15
+			advisor_cost = -0.1
+		}
+ 	}
+	
+	conditional_modifier = {
+ 		trigger = {
+			OR = {
+				has_personal_deity = esmaryal
+				is_religion_enabled = ravelian
+			}
+		}
+		modifier = {
+			country_diplomatic_power = 1
+			defensiveness = 0.20
+		}
+	}
+	
+	ai_will_do = {
+		factor = 100
+	}
+}
+
+MIGA_estate_RC_ryala = {
+	icon = privilege_religious
+	max_absolutism = 0
+	influence = 0.05
+	loyalty = 0.05
+	
+	is_valid = {
+		religion = regent_court
+		is_religion_enabled = corinite
+		OR = {
+			has_personal_deity = ryala
+			has_personal_deity = ryala_seinathil_muse
+			has_estate_privilege = MIGA_estate_RC_ryala
+		}
+		OR = {
+			MIGA_RC_has_national_worship = no
+			has_estate_privilege = MIGA_estate_RC_ryala
+		}
+	}
+	
+	can_select = {
+		religion = regent_court
+		OR = {
+			has_personal_deity = ryala
+			has_personal_deity = ryala_seinathil_muse
+		}
+	}
+	
+	penalties = {
+		global_tax_modifier = -0.10
+	}
+	
+	conditional_modifier = {
+ 		trigger = {
+			OR = {
+				NOT = {
+					OR = {
+						has_personal_deity = ryala
+						has_personal_deity = ryala_seinathil_muse
+					}
+				}
+				is_religion_enabled = ravelian
+			}
+		}
+ 		modifier = {
+			diplomatic_reputation = 1
+			diplomatic_upkeep = 2
+		}
+ 	}
+	
+	conditional_modifier = {
+ 		trigger = {
+			OR = {
+				OR = {
+					has_personal_deity = ryala
+					has_personal_deity = ryala_seinathil_muse
+				}
+				is_religion_enabled = ravelian
+			}
+		}
+		modifier = {
+			improve_relation_modifier = 0.1
+			free_policy = 1
+		}
+	}
+	
+	ai_will_do = {
+		factor = 100
+	}
+}
+
+MIGA_estate_RC_minara = {
+	icon = privilege_religious
+	max_absolutism = 0
+	influence = 0.05
+	loyalty = 0.05
+	
+	is_valid = {
+		religion = regent_court
+		is_religion_enabled = corinite
+		OR = {
+			has_personal_deity = minara
+			has_estate_privilege = MIGA_estate_RC_minara
+		}
+		OR = {
+			MIGA_RC_has_national_worship = no
+			has_estate_privilege = MIGA_estate_RC_minara
+		}
+	}
+	
+	can_select = {
+		religion = regent_court
+		OR = {
+			has_personal_deity = minara
+		}
+	}
+	
+	penalties = {
+		global_tax_modifier = -0.10
+	}
+	
+	conditional_modifier = {
+ 		trigger = {
+			OR = {
+				NOT = { has_personal_deity = minara }
+				is_religion_enabled = ravelian
+			}
+		}
+ 		modifier = {
+			ae_impact = -0.05
+			improve_relation_modifier = 0.15
+		}
+ 	}
+	
+	conditional_modifier = {
+ 		trigger = {
+			OR = {
+				has_personal_deity = minara
+				is_religion_enabled = ravelian
+			}
+		}
+ 		modifier = {
+			global_unrest = -2
+			province_warscore_cost = -0.1
+		}
+ 	}
+	
+	ai_will_do = {
+		factor = 100
+	}
+}
+
+MIGA_estate_RC_falah = {
+	icon = privilege_religious
+	max_absolutism = 0
+	influence = 0.05
+	loyalty = 0.05
+	
+	is_valid = {
+		religion = regent_court
+		is_religion_enabled = corinite
+		OR = {
+			has_personal_deity = falah
+			has_personal_deity = falah_freemarches
+			has_estate_privilege = MIGA_estate_RC_falah
+		}
+		OR = {
+			MIGA_RC_has_national_worship = no
+			has_estate_privilege = MIGA_estate_RC_falah
+		}
+	}
+	
+	can_select = {
+		religion = regent_court
+		OR = {
+			has_personal_deity = falah
+			has_personal_deity = falah_freemarches
+		}
+	}
+	
+	penalties = {
+		global_tax_modifier = -0.10
+	}
+	
+	conditional_modifier = {
+ 		trigger = {
+			OR = {
+				NOT = {
+					OR = {
+						has_personal_deity = falah
+						has_personal_deity = falah_freemarches
+					}
+				}
+				is_religion_enabled = ravelian
+			}
+		}
+ 		modifier = {
+			movement_speed = 0.1
+			army_tradition = 0.5
+		}
+ 	}
+	
+	conditional_modifier = {
+ 		trigger = {
+			OR = {
+				OR = {
+					has_personal_deity = falah
+					has_personal_deity = falah_freemarches
+				}
+				is_religion_enabled = ravelian
+			}
+		}
+		modifier = {
+			land_morale = 0.10
+			development_cost = -0.1
+		}
+	}
+	
+	ai_will_do = {
+		factor = 100
+	}
+}
+
+MIGA_estate_RC_nerat = {
+	icon = privilege_religious
+	max_absolutism = 0
+	influence = 0.05
+	loyalty = 0.05
+	
+	is_valid = {
+		religion = regent_court
+		is_religion_enabled = corinite
+		OR = {
+			has_personal_deity = nerat
+			has_estate_privilege = MIGA_estate_RC_nerat
+		}
+		OR = {
+			MIGA_RC_has_national_worship = no
+			has_estate_privilege = MIGA_estate_RC_nerat
+		}
+	}
+	
+	can_select = {
+		religion = regent_court
+		OR = {
+			has_personal_deity = nerat
+		}
+	}
+	
+	penalties = {
+		global_tax_modifier = -0.10
+	}
+	
+	conditional_modifier = {
+ 		trigger = {
+			OR = {
+				NOT = { has_personal_deity = nerat }
+				is_religion_enabled = ravelian
+			}
+		}
+ 		modifier = {
+			global_unrest = -1
+			manpower_recovery_speed = 0.1
+		}
+ 	}
+	
+	conditional_modifier = {
+ 		trigger = {
+			OR = {
+				has_personal_deity = nerat
+				is_religion_enabled = ravelian
+			}
+		}
+		modifier = {
+			yearly_corruption = -0.1
+			land_attrition = -0.1
+		}
+	}
+	
+	ai_will_do = {
+		factor = 100
+	}
+}
+
+MIGA_estate_RC_nathalyne = {
+	icon = privilege_religious
+	max_absolutism = 0
+	influence = 0.05
+	loyalty = 0.05
+	
+	is_valid = {
+		religion = regent_court
+		is_religion_enabled = corinite
+		OR = {
+			has_personal_deity = nathalyne
+			has_estate_privilege = MIGA_estate_RC_nathalyne
+		}
+		OR = {
+			MIGA_RC_has_national_worship = no
+			has_estate_privilege = MIGA_estate_RC_nathalyne
+		}
+	}
+	
+	can_select = {
+		religion = regent_court
+		OR = {
+			has_personal_deity = nathalyne
+		}
+	}
+	
+	penalties = {
+		global_tax_modifier = -0.10
+	}
+	
+	conditional_modifier = {
+ 		trigger = {
+			OR = {
+				NOT = { has_personal_deity = nathalyne }
+				is_religion_enabled = ravelian
+			}
+		}
+ 		modifier = {
+			spy_offence = 0.25
+			siege_ability = 0.1
+		}
+ 	}
+	
+	conditional_modifier = {
+ 		trigger = {
+			OR = {
+				has_personal_deity = nathalyne
+				is_religion_enabled = ravelian
+			}
+		}
+		modifier = {
+			artillery_levels_available_vs_fort = 1
+			ae_impact = -0.1
+		}
+	}
+	
+	ai_will_do = {
+		factor = 100
+	}
+}
+
+MIGA_estate_RC_begga = {
+	icon = privilege_religious
+	max_absolutism = 0
+	influence = 0.05
+	loyalty = 0.05
+	
+	is_valid = {
+		religion = regent_court
+		is_religion_enabled = corinite
+		OR = {
+			has_personal_deity = begga
+			has_estate_privilege = MIGA_estate_RC_begga
+		}
+		OR = {
+			MIGA_RC_has_national_worship = no
+			has_estate_privilege = MIGA_estate_RC_begga
+		}
+	}
+	
+	can_select = {
+		religion = regent_court
+		OR = {
+			has_personal_deity = begga
+		}
+	}
+	
+	penalties = {
+		global_tax_modifier = -0.10
+	}
+	
+	conditional_modifier = {
+ 		trigger = {
+			OR = {
+				NOT = { has_personal_deity = begga }
+				is_religion_enabled = ravelian
+			}
+		}
+ 		modifier = {
+			monthly_reform_progress_modifier = 0.1
+			global_monthly_devastation = -0.1
+		}
+ 	}
+	
+	conditional_modifier = {
+ 		trigger = {
+			OR = {
+				has_personal_deity = begga
+				is_religion_enabled = ravelian
+			}
+		}
+		modifier = {
+			development_cost = -0.1
+			war_exhaustion = -0.03
+		}
+	}
+	
+	ai_will_do = {
+		factor = 100
+	}
+}
+
+MIGA_estate_RC_dookan = {
+	icon = privilege_religious
+	max_absolutism = 0
+	influence = 0.05
+	loyalty = 0.05
+	
+	is_valid = {
+		religion = regent_court
+		is_religion_enabled = corinite
+		OR = {
+			has_personal_deity = dookan
+			has_estate_privilege = MIGA_estate_RC_dookan
+		}
+		OR = {
+			MIGA_RC_has_national_worship = no
+			has_estate_privilege = MIGA_estate_RC_dookan
+		}
+	}
+	
+	can_select = {
+		religion = regent_court
+		OR = {
+			has_personal_deity = dookan
+		}
+	}
+	
+	penalties = {
+		global_tax_modifier = -0.10
+	}
+	
+	conditional_modifier = {
+ 		trigger = {
+			OR = {
+				NOT = { has_personal_deity = dookan }
+				is_religion_enabled = ravelian
+			}
+		}
+ 		modifier = {
+			mercenary_discipline  = 0.05
+			mercenary_manpower = 0.1
+		}
+ 	}
+	
+	conditional_modifier = {
+ 		trigger = {
+			OR = {
+				has_personal_deity = dookan
+				is_religion_enabled = ravelian
+			}
+		}
+		#the same as corin right now
+		modifier = {
+			country_military_power = 1
+			infantry_power = 0.1
+		}
+	}
+	
+	ai_will_do = {
+		factor = 100
+	}
+}

@@ -1,0 +1,34 @@
+has_bladestewards_trade_good_trigger = {
+	OR = {
+		trade_goods = copper
+		trade_goods = iron
+		trade_goods = coal
+		trade_goods = cloth
+		trade_goods = fur
+	}
+}
+
+has_higher_discipline = {
+	custom_trigger_tooltip = {
+		tooltip = HIGHER_DISCIPLINE_THAN_ROOT
+		variable_arithmetic_trigger = {
+			export_to_variable = {
+				which = their_discipline
+				value = modifier:discipline
+			}
+			export_to_variable = {
+			which = our_discipline
+			value = modifier:discipline
+			who = ROOT
+			}
+			check_variable = { which = their_discipline which = our_discipline }
+		}
+	}
+}
+
+has_exempt_from_seize_land_for_estate_bladestewards = {
+	OR = {
+		has_estate_privilege = estate_bladestewards_bladepriests_administrative_support
+		has_estate_privilege = estate_bladestewards_old_guard
+	}
+}

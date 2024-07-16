@@ -289,6 +289,7 @@ float3 calculate_secondary_compressed( float2 uv, float3 vColor, float2 vPos )
 	float4 vSecondary = GetProvinceColorSampled( uv, IndirectionMap, ProvinceIndirectionMapSize, ProvinceColorMap,
 												ProvinceColorMapSize, 1 );
 
+
 	const int nDivisor = 6;
 	int3 vTest = int3(vSecondary.rgb * 255.0);
 	
@@ -381,7 +382,6 @@ VertexShader =
 			vHeight = VertexIn.height.y * vUseAltHeight - vHeight;
 
 			vHeight *= 0.01f;
-			vHeight -= 0.30f;
 			VertexOut.prepos = float3( pos.x, vHeight, pos.y );
 			VertexOut.position = mul( ViewProjectionMatrix, float4( VertexOut.prepos, 1.0f ) );
 		#endif // USE_VERTEX_TEXTURE
@@ -451,7 +451,7 @@ PixelShader =
 			float3 vMonsoonColor = vMonsoonDiffuse * ( 0.9f + 0.1f * FoWDiffuseColor);
 			float vMonsoonStrength = saturate( vHeavy + vLight ) * vFade * vNormalFade * ( saturate( vIsMonsoon * 2.25f ) ) * vHeightFade * 0.8;
 			vColor = lerp( vColor, vMonsoonColor, vMonsoonStrength );
-			vNormal = lerp( vNormal, vMudNormal, saturate( vMonsoonStrength * 2.0 ) );
+			vNormal = lerp( vNormal, vMudNormal, saturate( vMonsoonStrength * 0.4 ) );
 			return vColor;
 		}
 
@@ -566,11 +566,12 @@ PixelShader =
 			else
 		#endif
 			{
-				vTerrainDiffuseSample.rgb = GetOverlay( vTerrainDiffuseSample.rgb, TerrainColor, 0.5f );
-
-				float2 vBlend = float2( 0.4f, 0.45f );
+				vTerrainDiffuseSample.rgb = GetOverlay( vTerrainDiffuseSample.rgb, TerrainColor, 0.75f );
+				//vTerrainDiffuseSample.rgb = ApplySnow( vTerrainDiffuseSample.rgb, Input.prepos, vHeightNormalSample, vFoWColor, FoWDiffuse );
+				
+				float2 vBlend = float2( 0.54f, 0.5f );
 				vOut = ( dot( vTerrainDiffuseSample.rgb, GREYIFY ) * vBlend.x + vColorMapSample.rgb * vBlend.y );
-				vOut = CalculateMapLighting( vOut, vHeightNormalSample );
+				//vOut = CalculateMapLighting( vOut, vHeightNormalSample );
 				vOut = calculate_secondary( Input.uv, vOut, Input.prepos.xz );
 			}
 	#endif	// end COLOR_SHADER

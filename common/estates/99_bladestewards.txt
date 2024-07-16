@@ -1,0 +1,205 @@
+estate_bladestewards = { #loyalists to Bladechosen; can serve as administrators and provide elite troops
+	icon = 32
+
+	# If true, country will get estate
+	trigger = {
+		OR = {
+		 	has_government_attribute = enables_estate_bladestewards
+		 	has_enabled_estate = { estate = estate_bladestewards }
+		 	AND = {
+				has_unlocked_estate = { estate = estate_bladestewards }
+		 		NOT = { has_government_attribute = is_pirate_republic_reform }
+		 		NOT = { government = native }
+		 		#NOT = { has_reform = siberian_tribe }
+		 		NOT = { is_revolutionary_republic_trigger = yes }
+		 		NOT = { has_reform = revolutionary_empire_reform }
+		 		is_nomad = no
+		 		is_colonial_nation = no
+		 	}
+		}
+		NOT = { has_country_flag = bladestewards_abolished }
+	}
+
+	# These scale with loyalty & power
+	country_modifier_happy = {
+		stability_cost_modifier = -0.20
+		army_tradition = 0.5
+		allowed_samurai_fraction = 0.15
+	}
+	country_modifier_neutral = {
+		stability_cost_modifier = -0.10
+		army_tradition = 0.25
+	}	
+	country_modifier_angry = {
+		stability_cost_modifier = 0.20
+		army_tradition = -0.5
+		allowed_samurai_fraction = -0.15
+	}
+	land_ownership_modifier = {
+		bladestewards_loyalty_modifier = 0.2
+	}
+	
+	province_independence_weight = {
+		factor = 1
+		modifier = {
+			factor = 1.5
+			culture_group = owner
+			religion_group = owner
+		}
+		modifier = {
+			factor = 1.5
+			base_manpower = 5
+		}
+		modifier = {
+			factor = 1.5
+			OR = { 
+				has_building = barracks
+				has_building = training_fields
+				has_building = temple
+				has_building = cathedral
+			}
+		}
+		modifier = {
+			factor = 0.5
+			NOT = { is_state_core = owner }
+		}
+	}
+	
+	# Influence modifiers
+	base_influence = 0
+	
+	influence_modifier = {
+		desc = EST_VAL_OTHER_ESTATE_IN_POWER
+		trigger = {
+			has_any_estate_disaster_active = yes
+			has_not_own_estate_disaster_active = { estate = estate_bladestewards }
+		}
+		influence = -40
+	}
+	
+	influence_modifier = {
+	 	desc = EST_VAL_BLADESWORN_ON_THE_FIELD
+	 	trigger = {
+	 		num_of_samurai = 12
+	 	}
+	 	influence = 10
+	}
+	
+	influence_modifier = {
+	 	desc = EST_VAL_NO_BLADESWORN_ON_THE_FIELD
+	 	trigger = {
+	 		NOT = { num_of_samurai = 1 }
+	 	}
+	 	influence = -5
+	}
+	
+	#Loyalty
+	
+	loyalty_modifier = {
+		desc = EST_VAL_OTHER_ESTATE_IN_POWER_LOY
+		trigger = {
+			has_any_estate_disaster_active = yes
+			has_not_own_estate_disaster_active = { estate = estate_bladestewards }
+		}
+		loyalty = -20
+	}
+	
+	loyalty_modifier = { #hate evil
+		desc = EST_VAL_WITCH_KING_LOY
+		trigger = {
+			has_country_modifier = witch_king_modifier
+		}
+		loyalty = -20
+	}
+	
+	loyalty_modifier = {
+	 	desc = EST_VAL_BLADESWORN_ON_THE_FIELD_LOY
+	 	trigger = {
+	 		num_of_samurai = 12
+	 	}
+	 	loyalty = 10
+	}
+	
+	loyalty_modifier = {
+	 	desc = EST_VAL_NO_BLADESWORN_ON_THE_FIELD_LOY
+	 	trigger = {
+	 		NOT = { num_of_samurai = 1 }
+	 	}
+	 	loyalty = -10
+	}
+	
+	loyalty_modifier = { #like Bladechosen, dislike illegitimate ruler
+		desc = EST_VAL_WIELDS_CALINDAL_LOY
+		trigger = {
+			has_country_modifier = wielding_calindal
+		}
+		loyalty = 10.0
+	}
+	
+	loyalty_modifier = {
+		desc = EST_VAL_NOT_WIELDS_CALINDAL_LOY
+		trigger = {
+			NOT = { has_country_modifier = wielding_calindal }
+		}
+		loyalty = -20.0
+	}
+	
+	loyalty_modifier = { #only became important estate due to conversion, too lazy to change again
+		desc = EST_VAL_NOT_CORINITE_LOY
+		trigger = {
+			NOT = { religion = corinite }
+		}
+		loyalty = -10.0
+	}
+
+	privileges = {
+		estate_bladestewards_bladesworn_established
+		estate_bladestewards_bladesworn_elven
+		estate_bladestewards_bladesworn_elven_elite
+		estate_bladestewards_bladesworn_human
+		estate_bladestewards_bladesworn_halforc
+		estate_bladestewards_bladesworn_officers
+		estate_bladestewards_bladesworn_officers_non_dom
+		estate_bladestewards_bladesworn_modernization
+		estate_bladestewards_bladepriests_recruit_minister
+		estate_bladestewards_bladepriests_rally_faithful
+		estate_bladestewards_bladepriests_blade_conversion
+		estate_bladestewards_bladesworn_recruit_minister
+		estate_bladestewards_bladepriests_administrative_support
+		estate_bladestewards_chapter_houses
+		estate_bladestewards_support_new_model
+		estate_bladestewards_loyalty_privilege
+		estate_bladestewards_old_guard
+		estate_bladestewards_new_model_loyalists
+		estate_bladestewards_lakelady_cult
+		estate_bladestewards_control_state
+	}
+
+	agendas = {
+		estate_bladestewards_build_army_building_in_y
+		estate_bladestewards_build_temple_in_y
+		estate_bladestewards_build_soldier_household
+		estate_bladestewards_build_manufactory_in_y
+		estate_bladestewards_condottieri_rivals
+		estate_bladestewards_support_independence
+		estate_bladestewards_crush_revolts
+		#estate_bladestewards_regain_liberty
+		estate_bladestewards_build_an_army
+		estate_bladestewards_bigger_army_than_rival
+		estate_bladestewards_build_up_manpower_reserves
+		estate_bladestewards_develop_x
+		estate_bladestewards_hire_advisor
+		estate_bladestewards_fire_advisor
+		estate_bladestewards_three_privileges
+		estate_bladestewards_increase_monthly_military_power
+		estate_bladestewards_recruit_more_bladesworn
+		estate_bladestewards_establish_bladesteward_order
+		estate_bladestewards_defeat_large_army
+		estate_bladestewards_humiliate_rival
+		estate_bladestewards_convert_province_x
+	}
+	
+	color = { 100 125 150 }
+	
+	influence_from_dev_modifier = 0.5
+}

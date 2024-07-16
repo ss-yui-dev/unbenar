@@ -1,0 +1,105 @@
+country_decisions = {
+	
+	kobildzan_another_path = {
+		major = no
+		
+		potential = {
+			tag = Z38
+			OR = {
+				has_country_flag = kobold_dragon_path
+				has_country_flag = kobold_artificier_path
+			}
+		}
+
+		allow = {
+			tag = Z38
+			OR = {
+				has_country_flag = kobold_dragon_path
+				has_country_flag = kobold_artificier_path
+			}
+		}
+		
+		effect = {
+			if = {
+				limit = { has_country_flag = kobold_dragon_path }
+				clr_country_flag = kobold_dragon_path
+				set_country_flag = kobold_artificier_path
+			}
+			else = {
+				clr_country_flag = kobold_artificier_path
+				set_country_flag = kobold_dragon_path
+			}
+			swap_non_generic_missions = yes
+		}
+	}
+	
+	estate_kobold_raise_drake_riders = {
+		color = { 195 160 20 }
+		potential = {
+			has_country_modifier = kobold_administration
+			has_country_modifier = kobold_military
+			has_country_modifier = mythical_cavalry_drakon
+		}
+		allow = {
+			has_not_any_estate_disaster_active = yes
+			NOT = { army_size_percentage = 1 }
+			OR = {
+				estate_loyalty = {
+					estate = estate_monstrous_tribes
+					loyalty = 50
+				}
+				estate_loyalty = {
+					estate = estate_mages
+					loyalty = 50
+				}
+			}
+			OR = {
+				estate_influence = {
+					estate = estate_monstrous_tribes
+					influence = 40
+				}
+				estate_influence = {
+					estate = estate_mages
+					influence = 40
+				}
+			}
+			
+			any_owned_province = {
+				has_terrain = cavern
+			}
+			estate_action_off_cooldown = {
+				estate_action = RAISE_COSSACK_HOST_COSSACKS
+				days = 3650
+			}
+		}
+		effect = {
+			set_estate_action_cooldown = {
+				estate_action = RAISE_COSSACK_HOST_COSSACKS
+			}
+			MIGA_estate_action_RAISE_DRAKE_RIDERS = yes
+			increase_estate_action_counter = {
+				estate = estate_monstrous_tribes
+			}
+			increase_estate_action_counter = {
+				estate = estate_mages
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				estate_influence = {
+					estate = estate_monstrous_tribes
+					influence = 70
+				}				
+			}
+			modifier = {
+				factor = 0
+				estate_influence = {
+					estate = estate_mages
+					influence = 70
+				}				
+			}
+		}
+	}
+}

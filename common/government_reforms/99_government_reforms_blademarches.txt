@@ -1,0 +1,525 @@
+#Blademarches
+
+#REPUBLICS
+
+#Tier 1
+
+blademarches_republic_reform = { #Republican Alternative
+	icon = "blademarches_kingdom"
+	allow_normal_conversion = no
+	potential = {
+		tag = B33
+		has_country_flag = bladesworn_rebellion_happened
+	}
+	valid_for_nation_designer = no
+	
+	lock_level_when_selected = yes
+	has_term_election = no
+	modifiers = {
+		leader_land_shock = 1
+		land_morale = 0.1 
+		max_absolutism = 20
+		monthly_bm_militarized_society = 0.05
+	}
+	custom_attributes = {
+		locked_government_type = yes
+		enables_plutocratic_idea_group = no
+		enables_aristocratic_idea_group = yes
+		generals_become_rulers = yes
+	}
+	heir = no
+}
+
+#THEOCRACIES
+
+blademarches_theocracy_reform = { #Theocratic Alternative
+	icon = "blademarches_kingdom"
+	allow_normal_conversion = yes
+	potential = {
+		tag = B33
+		has_country_flag = bladesworn_rebellion_happened
+		religion = corinite
+	}
+	valid_for_nation_designer = no
+
+	lock_level_when_selected = yes
+	
+	modifiers = {
+		leader_land_shock = 1		
+		governing_capacity_modifier = -0.5
+		cb_on_religious_enemies = yes
+	}
+	conditional = {
+		allow = { has_dlc = "Domination" }
+		government_abilities = {
+			bm_militarization_mechanic
+		}
+	}
+	effect = { custom_tooltip = bop_cannot_ally_tt }
+	custom_attributes = {
+		locked_government_type = yes
+		generals_become_rulers = yes
+		monastic_order = yes
+		disables_estate_nobles = yes
+		cannot_form_alliances = yes
+	}
+	rulers_can_be_generals = yes
+	has_term_election = no
+	heir = no
+}
+
+
+#MONARCHIES/COMMON
+
+#Tier 2 - Nobility
+blademarches_royal_faction = {
+	icon = "english_monarchy"
+	lock_level_when_selected = yes
+	potential = {
+		tag = B33
+		has_country_flag = BOP_ROYAL_PATH
+	}
+	valid_for_nation_designer = no
+
+	modifiers = {
+		development_cost = -0.1
+		manpower_in_own_culture_provinces = 0.2
+		manpower_in_accepted_culture_provinces = 0.1
+		governing_capacity_modifier = -0.5
+    }
+}
+
+blademarches_imperial_faction = { 
+	icon = "ruthenia_tsardom"
+	lock_level_when_selected = yes
+	potential = {
+		tag = B33
+		has_country_flag = BOP_IMPERIAL_PATH
+	}
+	valid_for_nation_designer = no
+
+	modifiers = {
+		unjustified_demands = -0.1 
+		administrative_efficiency = 0.05
+		years_of_nationalism = -5
+    }
+}
+
+#Tier 3 - Bureaucracy
+
+# Ministry of War
+blademarches_ministry_of_war = { 
+	icon = "war_map"
+	allow_normal_conversion = yes
+	#lock_level_when_selected = yes
+	potential = {
+		tag = B33
+	}
+	valid_for_nation_designer = no
+
+	modifiers = {
+		global_tax_modifier = 0.1
+		manpower_recovery_speed = 0.10
+		land_attrition = -0.15 
+    }
+}
+
+#Tier 4  - State and Religion
+
+#Sword of Corin
+blademarches_sword_of_corin = { 
+	icon = "holy_state_reform"
+	lock_level_when_selected = yes
+	potential = {
+		tag = B33
+		religion = corinite
+		has_country_flag = blademarches_sword_of_corin_enabled
+	}
+	valid_for_nation_designer = no
+
+	modifiers = {
+		extra_manpower_at_religious_war = yes
+		tolerance_heretic = -3
+    }
+}
+
+#The Great Gear of the Universal Machine
+blademarches_large_cog = { 
+	icon = "religious_harmony_reform"
+	lock_level_when_selected = yes
+	potential = {
+		tag = B33
+		religion = ravelian
+		has_unlocked_government_reform = {
+			government_reform = blademarches_large_cog
+		}
+	}
+	valid_for_nation_designer = no
+
+	modifiers = {
+		global_trade_goods_size_modifier = 0.05
+		enforce_religion_cost = -0.25
+		monthly_bm_militarized_society = 0.1
+		stability_cost_modifier = 0.2
+		artificers_influence_modifier = 0.1
+    }
+}
+
+#Tier 5 - Military Doctrine
+
+#Royal Blademarcher Army - Early Royal Option
+blademarches_royal_blademarcher_army = { 
+	icon = "black_army_reform"
+	lock_level_when_selected = yes
+	potential = {
+		tag = B33
+		has_country_flag = blademarches_royal_army_enabled
+	}
+	valid_for_nation_designer = no
+
+	modifiers = {
+		discipline = 0.025
+		yearly_army_professionalism = 0.0025
+		land_forcelimit_modifier = -0.35
+    }
+}
+
+#Bladesworn Army - Late Royal Option - Special Units
+blademarches_royal_bladesworn_army = { 
+	icon = "sisterhood"
+	lock_level_when_selected = yes
+	potential = {
+		tag = B33
+		has_country_flag = blademarches_royal_bladesworn_army_enabled
+	}
+	valid_for_nation_designer = no
+	
+	modifiers = {
+		has_samurai = yes
+		allowed_samurai_fraction = 0.20
+		land_forcelimit_modifier = -0.2
+		army_tradition = 0.25
+		bladestewards_loyalty_modifier = 0.10
+		bladestewards_influence_modifier = 0.05
+	}
+	#Bladesworn Effect
+	effect = {
+		hidden_effect = { remove_estate_privilege = estate_bladestewards_bladesworn_established }
+		set_country_flag = bladesworn_nationalized
+	}
+	removed_effect = {
+	}
+}
+
+#New Model Army - Late Royal Option - Militarization and Artificers
+blademarches_royal_new_model_army = { 
+	icon = "allotment_system"
+	lock_level_when_selected = yes
+	potential = {
+		tag = B33
+		has_country_flag = blademarches_royal_new_model_army_enabled
+	}
+	valid_for_nation_designer = no
+	
+	modifiers = {
+		allowed_rajput_fraction = 0.1
+		army_tradition_decay = 0.005
+		nobles_loyalty_modifier = 0.1
+		artificers_loyalty_modifier = 0.05
+		artificers_influence_modifier = 0.05
+	}
+	
+	conditional = {
+		allow = { has_dlc = "Domination" }
+		government_abilities = {
+			bm_militarization_mechanic
+		}
+	}
+	
+	#Artificer Effect
+	effect = {
+		hidden_effect = { remove_estate_privilege = estate_bladestewards_bladesworn_established }
+		set_country_flag = bladesworn_abolished
+		custom_tooltip = blademarches_artificers_new_model_modifier_tt
+		hidden_effect = {
+			add_country_modifier = {
+				name = blademarches_artificers_new_model_modifier
+				duration = -1 
+			}
+		}
+	}
+	removed_effect = {
+		remove_country_modifier = blademarches_artificers_new_model_modifier
+	}
+}
+
+#Reformed Blademarcher Army - Fallback
+blademarches_royal_fallback_army = { 
+	icon = "gendarmes_reform"
+	lock_level_when_selected = yes
+	potential = {
+		tag = B33
+		has_country_flag = blademarches_royal_fallback_enabled
+	}
+	valid_for_nation_designer = no
+	
+	modifiers = {
+		discipline = 0.05
+		special_unit_forcelimit = 0.15
+		cavalry_power = 0.1
+	}
+}
+
+#Imperial Army of Blademarches - Imperial Option
+blademarches_imperial_blademarcher_army = { 
+	icon = "emperor_of_the_revolution_reform"
+	allow_normal_conversion = no
+	lock_level_when_selected = yes
+	potential = {
+		tag = B33
+		has_country_flag = blademarches_imperial_army_enabled
+	}
+	valid_for_nation_designer = no
+
+	modifiers = {
+		land_forcelimit_modifier = 0.15
+		vassal_forcelimit_bonus = 0.20
+		prestige_decay = -0.01 
+	}
+}
+
+
+#Tier 6 - Administrative Cadre
+
+# Marcher Meritocracy
+blademarches_marcher_meritocracy = { 
+	icon = "elective_monarchy"
+	allow_normal_conversion = yes
+	lock_level_when_selected = yes
+	potential = {
+		tag = B33
+	}
+	valid_for_nation_designer = no
+
+	modifiers = {
+		free_land_leader_pool = 1
+		innovativeness_gain = 0.25
+		yearly_corruption = -0.05 #to offset missing privilege effect	
+    }
+	#effect = {
+	#	if = {
+	#		limit = { NOT = { has_dlc = "Cradle of Civilization" } }
+	#		add_mil_power = -200
+	#	}
+	#	hidden_effect = { 
+	#		if = {
+	#			limit = { has_estate_privilege = estate_nobles_officer_corp }
+	#			remove_estate_privilege = estate_nobles_officer_corp
+	#		}
+	#	}
+	#	set_country_flag = blademarches_officer_corp
+	#	set_estate_privilege = estate_nobles_blademarches_officer_corp
+	#}
+	
+	#removed_effect = {
+	#	remove_country_flag = blademarches_officer_corp
+	#	if = {
+	#		limit = { has_estate_privilege = estate_nobles_blademarches_officer_corp }
+	#		remove_estate_privilege = estate_nobles_blademarches_officer_corp
+	#	}
+	#}
+}
+
+#Tier 7 - Deliberative Assembly
+
+#Council of Blind Masters - Elven Option
+blademarches_council_of_blind_masters = {
+	icon = "monks"
+	allow_normal_conversion = yes
+	lock_level_when_selected = yes
+	potential = {
+		tag = B33
+		culture_group = elven
+	}
+	valid_for_nation_designer = no
+
+	modifiers = {
+		mil_advisor_cost = -0.15
+    }
+	custom_attributes = {
+		better_long_lived = yes
+	}
+}
+
+#Great Balgazor - Half-Orcish Option
+blademarches_thing = {
+#Merge of Orcish Warlordism and Cannorian Parliamentary and Urban Tradition - Military bases send representatives
+	icon = "native_settle_down_reform"
+	allow_normal_conversion = yes
+	lock_level_when_selected = yes
+	potential = {
+		tag = B33
+		culture = half_orc
+	}
+	valid_for_nation_designer = no
+
+	conditional = {
+		allow = { has_dlc = "Common Sense" }
+		has_parliament = yes
+		can_revoke_parliament_seats = yes 
+	}
+	
+	modifiers = { #all placeholders until reconsidered province modifier based effects
+		fort_maintenance_modifier = -0.15 
+		max_absolutism = -10
+		reinforce_speed = 0.15
+	}
+}
+
+blademarches_general_staff = { #Human Option
+	icon = "legion_of_honor_reform"
+	allow_normal_conversion = yes
+	lock_level_when_selected = yes
+	potential = {
+		tag = B33
+		primary_culture = marcher 
+	}
+	valid_for_nation_designer = no
+
+	modifiers = {
+		general_cost = -0.25
+		mil_tech_cost_modifier = -0.1 
+		monthly_bm_militarized_society = 0.05
+    }
+}
+
+#Tier 8 - Economical Matters
+
+#Military-Industrial Complex
+blademarches_war_economy = {
+	icon = "states_general"
+	allow_normal_conversion = yes
+	#lock_level_when_selected = yes
+	potential = {
+		tag = B33
+		has_unlocked_government_reform = {
+			government_reform = blademarches_war_economy
+		}
+	}
+	valid_for_nation_designer = no
+
+	modifiers =  {
+		reinforce_cost_modifier = -0.33
+		war_taxes_cost_modifier = -1
+		trade_efficiency = -0.10
+	}
+}
+
+#Sellblade Economy
+blademarches_sellblade_economy = {
+	icon = "soldiers_7"
+	allow_normal_conversion = yes
+	#lock_level_when_selected = yes
+	potential = {
+		tag = B33
+		has_unlocked_government_reform = {
+			government_reform = blademarches_sellblade_economy
+		}
+	}
+	valid_for_nation_designer = no
+
+	modifiers =  {
+		caravan_power = 0.1
+		possible_condottieri = 1
+		adventurers_loyalty_modifier = 0.1
+	}
+	
+	#effect = { #still too much of a hassle
+	#	custom_tooltip = weapons_manufactory_tt
+	#	hidden_effect = {
+	#		every_owned_province = {
+	#			if = {
+	#				limit = {
+	#					has_building = weapons
+	#				}
+	#				add_province_modifier = { 
+	#					name = bop_weapons_manufactory_bonus
+	#					duration = -1
+	#					#hidden = yes
+	#				}
+	#			}
+	#		}
+	#	}
+	#}
+	#removed_effect = {
+	#	hidden_effect = {
+	#		every_owned_province = {
+	#			limit = { has_province_modifier = bop_weapons_manufactory_bonus }
+	#			remove_province_modifier = bop_weapons_manufactory_bonus
+	#		}
+	#	}
+	#}
+	custom_attributes = {
+		can_sell_military_coop = yes
+	}
+}
+
+
+#Tier 10 - Absolutism & Constitutionalism
+
+#Chosen by the Blade
+blademarches_blade_chosen = {
+	icon = "british_monarchy"
+	allow_normal_conversion = yes
+	potential = {
+		tag = B33
+	}
+	valid_for_nation_designer = no
+
+	modifiers =  {
+		max_absolutism = 10
+		tolerance_own = 1
+	}
+	custom_attributes = {
+		enables_divine_idea_group = yes
+		enables_aristocratic_idea_group = no
+	}
+	maintain_dynasty = yes
+}
+
+#Servant of the Blade
+blademarches_blade_servant = {
+	icon = "protectorate_parliament_reform"
+	allow_normal_conversion = yes
+	potential = {
+		tag = B33
+	}
+	valid_for_nation_designer = no
+
+	modifiers =  {
+		max_absolutism = -10
+		global_manpower_modifier = 0.1
+	}
+	custom_attributes = {
+		enables_plutocratic_idea_group = yes
+		enables_aristocratic_idea_group = no
+		generals_become_rulers = yes
+		heir = no
+	}
+}
+
+#The Shining Blade
+blademarches_enlightened_monarchy = {
+	icon = "prussian_monarchy"
+	allow_normal_conversion = yes
+	potential = {
+		tag = B33
+	}
+	valid_for_nation_designer = no
+
+	modifiers =  {
+		max_absolutism = 5
+		idea_cost = -0.1
+		production_efficiency = 0.1
+	}
+}

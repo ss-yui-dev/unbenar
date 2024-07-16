@@ -1,0 +1,59 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_DA_Army_button_1"
+		texturefile = "gfx/interface/DA_interface_things/DA_Army_button_1.dds"
+		transparencecheck = yes
+	}
+	
+	spriteType = {
+		name = "GFX_DA_Building_button_1"
+		texturefile = "gfx/interface/DA_interface_things/DA_Building_button_1.dds"
+		transparencecheck = yes
+	}
+	
+	spriteType = {
+		name = "GFX_DA_info_button_1"
+		texturefile = "gfx/interface/DA_interface_things/DA_info_button_1.dds"
+		transparencecheck = yes
+	}
+	
+	spriteType = {
+		name = "GFX_DA_Metallurgy_button_1"
+		texturefile = "gfx/interface/DA_interface_things/DA_Metallurgy_button_1.dds"
+		transparencecheck = yes
+	}
+	
+	spriteType = {
+		name = "GFX_DA_Tech_button_1"
+		texturefile = "gfx/interface/DA_interface_things/DA_Tech_button_1.dds"
+		transparencecheck = yes
+	}
+	
+	spriteType = {
+		name = "GFX_DA_Tech_button_2"
+		texturefile = "gfx/interface/DA_interface_things/DA_Tech_button_2.dds"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_DA_Res_progress_fake_button"
+		texturefile = "gfx/interface/DA_interface_things/DA_Res_progress_fake_button.dds"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_DA_Prod_cap_fake_button"
+		texturefile = "gfx/interface/DA_interface_things/DA_Prod_cap_fake_button.dds"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_DA_see_capacity_fake_button"
+		texturefile = "gfx/interface/DA_interface_things/DA_see_capacity_fake_button.dds"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_DA_Exploration_Button"
+		texturefile = "gfx/interface/DA_interface_things/DA_Exploration_Button.dds"
+		transparencecheck = yes
+	}
+	
+}

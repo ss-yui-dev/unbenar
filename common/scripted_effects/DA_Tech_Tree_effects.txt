@@ -1,0 +1,582 @@
+
+# The allow effects are all calculated to be used in province scope
+
+DA_new_missions_tech_tree = { # to be used after all other unlocking effects
+	custom_tooltip = DA_new_Tech_missions_available_tt
+	hidden_effect = {
+		owner = {
+			swap_non_generic_missions = yes
+		}
+	}
+}
+
+# 5 main techs
+
+DA_Allow_Tech.Medicine_1 = {
+	custom_tooltip = DA_Medicine_1.tt
+	hidden_effect = {
+		owner = {
+			set_country_flag = DA_Project.Allowed.Medicine_1
+		}
+	}
+}
+DA_Allow_Tech.Medicine_2 = {
+	custom_tooltip = DA_Medicine_2.tt
+	hidden_effect = {
+		owner = {
+			set_country_flag = DA_Project.Allowed.Medicine_2
+		}
+	}
+}
+DA_Allow_Tech.Medicine_3 = {
+	custom_tooltip = DA_Medicine_3.tt
+	hidden_effect = {
+		owner = {
+			set_country_flag = DA_Project.Allowed.Medicine_3
+		}
+	}
+}
+DA_Allow_Tech.Medicine_4 = {
+	custom_tooltip = DA_Medicine_4.tt
+	hidden_effect = {
+		owner = {
+			set_country_flag = DA_Project.Allowed.Medicine_4
+		}
+	}
+}
+
+DA_Allow_Tech.Alchemy_1 = {
+	custom_tooltip = DA_Alchemy_1.tt
+	hidden_effect = {
+		owner = {
+			set_country_flag = DA_Project.Allowed.Alchemy_1
+		}
+	}
+}
+DA_Allow_Tech.Alchemy_2 = {
+	custom_tooltip = DA_Alchemy_2.tt
+	hidden_effect = {
+		owner = {
+			set_country_flag = DA_Project.Allowed.Alchemy_2
+		}
+	}
+}
+DA_Allow_Tech.Alchemy_3 = {
+	custom_tooltip = DA_Alchemy_3.tt
+	hidden_effect = {
+		owner = {
+			set_country_flag = DA_Project.Allowed.Alchemy_3
+		}
+	}
+}
+DA_Allow_Tech.Alchemy_4 = {
+	custom_tooltip = DA_Alchemy_4.tt
+	hidden_effect = {
+		owner = {
+			set_country_flag = DA_Project.Allowed.Alchemy_4
+		}
+	}
+}
+
+DA_Allow_Tech.Magic_Theory_1 = {
+	custom_tooltip = DA_Magic_Theory_1.tt
+	hidden_effect = {
+		owner = {
+			set_country_flag = DA_Project.Allowed.Magic_Theory_1
+		}
+	}
+}
+DA_Allow_Tech.Magic_Theory_2 = {
+	custom_tooltip = DA_Magic_Theory_2.tt
+	hidden_effect = {
+		owner = {
+			set_country_flag = DA_Project.Allowed.Magic_Theory_2
+		}
+	}
+}
+DA_Allow_Tech.Magic_Theory_3 = {
+	custom_tooltip = DA_Magic_Theory_3.tt
+	hidden_effect = {
+		owner = {
+			set_country_flag = DA_Project.Allowed.Magic_Theory_3
+		}
+	}
+}
+DA_Allow_Tech.Magic_Theory_4 = {
+	custom_tooltip = DA_Magic_Theory_4.tt
+	hidden_effect = {
+		owner = {
+			set_country_flag = DA_Project.Allowed.Magic_Theory_4
+		}
+	}
+}
+
+DA_Allow_Tech.Mechanics_1 = {
+	custom_tooltip = DA_Mechanics_1.tt
+	hidden_effect = {
+		owner = {
+			set_country_flag = DA_Project.Allowed.Mechanics_1
+		}
+	}
+}
+DA_Allow_Tech.Mechanics_2 = {
+	custom_tooltip = DA_Mechanics_2.tt
+	hidden_effect = {
+		owner = {
+			set_country_flag = DA_Project.Allowed.Mechanics_2
+		}
+	}
+}
+DA_Allow_Tech.Mechanics_3 = {
+	custom_tooltip = DA_Mechanics_3.tt
+	hidden_effect = {
+		owner = {
+			set_country_flag = DA_Project.Allowed.Mechanics_3
+		}
+	}
+}
+DA_Allow_Tech.Mechanics_4 = {
+	custom_tooltip = DA_Mechanics_4.tt
+	hidden_effect = {
+		owner = {
+			set_country_flag = DA_Project.Allowed.Mechanics_4
+		}
+	}
+}
+
+DA_Allow_Tech.Metallurgy_1 = {
+	custom_tooltip = DA_Metallurgy_1.tt
+	hidden_effect = {
+		owner = {
+			set_country_flag = DA_Project.Allowed.Metallurgy_1
+		}
+	}
+}
+DA_Allow_Tech.Metallurgy_2 = {
+	custom_tooltip = DA_Metallurgy_2.tt
+	hidden_effect = {
+		owner = {
+			set_country_flag = DA_Project.Allowed.Metallurgy_2
+		}
+	}
+}
+DA_Allow_Tech.Metallurgy_3 = {
+	custom_tooltip = DA_Metallurgy_3.tt
+	hidden_effect = {
+		owner = {
+			set_country_flag = DA_Project.Allowed.Metallurgy_3
+		}
+	}
+}
+DA_Allow_Tech.Metallurgy_4 = {
+	custom_tooltip = DA_Metallurgy_4.tt
+	hidden_effect = {
+		owner = {
+			set_country_flag = DA_Project.Allowed.Metallurgy_4
+		}
+	}
+}
+
+# Proper Projects, about unique blueprints and runes
+
+# runes and laws
+DA_Allow_Tech.Elemental_Magic_Air = {
+	custom_tooltip = DA_Elemental_Magic_Air.tt
+	hidden_effect = {
+		owner = {
+			set_country_flag = DA_Project.Allowed.Elemental_Magic_Air
+		}
+	}
+}
+DA_Allow_Tech.Elemental_Magic_Earth = {
+	custom_tooltip = DA_Elemental_Magic_Earth.tt
+	hidden_effect = {
+		owner = {
+			set_country_flag = DA_Project.Allowed.Elemental_Magic_Earth
+		}
+	}
+}
+DA_Allow_Tech.Elemental_Magic_Water = {
+	custom_tooltip = DA_Elemental_Magic_Water.tt
+	hidden_effect = {
+		owner = {
+			set_country_flag = DA_Project.Allowed.Elemental_Magic_Water
+		}
+	}
+}
+DA_Allow_Tech.Elemental_Magic_Fire = {
+	custom_tooltip = DA_Elemental_Magic_Fire.tt
+	hidden_effect = {
+		owner = {
+			set_country_flag = DA_Project.Allowed.Elemental_Magic_Fire
+		}
+	}
+}
+DA_Allow_Tech.Universal_Law_Life = {
+	custom_tooltip = DA_Universal_Law_Life.tt
+	hidden_effect = {
+		owner = {
+			set_country_flag = DA_Project.Allowed.Universal_Law_Life
+		}
+	}
+}
+DA_Allow_Tech.Universal_Law_Death = {
+	custom_tooltip = DA_Universal_Law_Death.tt
+	hidden_effect = {
+		owner = {
+			set_country_flag = DA_Project.Allowed.Universal_Law_Death
+		}
+	}
+}
+DA_Allow_Tech.Universal_Law_Time = {
+	custom_tooltip = DA_Universal_Law_Time.tt
+	hidden_effect = {
+		owner = {
+			set_country_flag = DA_Project.Allowed.Universal_Law_Time
+		}
+	}
+}
+DA_Allow_Tech.Universal_Law_Space = {
+	custom_tooltip = DA_Universal_Law_Space.tt
+	hidden_effect = {
+		owner = {
+			set_country_flag = DA_Project.Allowed.Universal_Law_Space
+		}
+	}
+}
+
+# blueprints and projects
+
+DA_Allow_Tech.Motorization = {
+	custom_tooltip = DA_Motorization.tt
+	hidden_effect = {
+		owner = {
+			set_country_flag = DA_Project.Allowed.Motorization
+		}
+	}
+}
+DA_Allow_Tech.Explosive = {
+	custom_tooltip = DA_Explosive.tt
+	hidden_effect = {
+		owner = {
+			set_country_flag = DA_Project.Allowed.Explosive
+		}
+	}
+}
+DA_Allow_Tech.Golem = {
+	custom_tooltip = DA_Golem.tt
+	hidden_effect = {
+		owner = {
+			set_country_flag = DA_Project.Allowed.Golem
+		}
+	}
+}
+DA_Allow_Tech.ClockWork = {
+	custom_tooltip = DA_ClockWork.tt
+	hidden_effect = {
+		owner = {
+			set_country_flag = DA_Project.Allowed.ClockWork
+		}
+	}
+}
+DA_Allow_Tech.Enhancement = {
+	custom_tooltip = DA_Enhancement.tt
+	hidden_effect = {
+		owner = {
+			set_country_flag = DA_Project.Allowed.Enhancement
+		}
+	}
+}
+DA_Allow_Tech.Bio_Construct = {
+	custom_tooltip = DA_Bio_Construct.tt
+	hidden_effect = {
+		owner = {
+			set_country_flag = DA_Project.Allowed.Bio_Construct
+		}
+	}
+}
+DA_Allow_Tech.Resonance = {
+	custom_tooltip = DA_Resonance.tt
+	hidden_effect = {
+		owner = {
+			set_country_flag = DA_Project.Allowed.Resonance
+		}
+	}
+}
+DA_Allow_Tech.Tesla = {
+	custom_tooltip = DA_Tesla.tt
+	hidden_effect = {
+		owner = {
+			set_country_flag = DA_Project.Allowed.Tesla
+		}
+	}
+}
+DA_Allow_Tech.Soul_Genesis = {
+	custom_tooltip = DA_Soul_Genesis.tt
+	hidden_effect = {
+		owner = {
+			set_country_flag = DA_Project.Allowed.Soul_Genesis
+		}
+	}
+}
+DA_Allow_Tech.Dimensional_eng = {
+	custom_tooltip = DA_Dimensional_eng.tt
+	hidden_effect = {
+		owner = {
+			set_country_flag = DA_Project.Allowed.Dimensional_eng
+		}
+	}
+}
+
+# complete effects
+
+DA_Found_Blue_rune_effect = { # this effect is made to be used in province scope
+
+	custom_tooltip = DA_Unlock_The_following_Techs_tt
+	
+	[[Motorization]
+		DA_Allow_Tech.Motorization = yes
+	]
+	[[ClockWork]
+		DA_Allow_Tech.ClockWork = yes
+	]
+	[[Explosive]
+		DA_Allow_Tech.Explosive = yes
+	]
+	[[Golem]
+		DA_Allow_Tech.Golem = yes
+	]
+	[[Enhancement]
+		DA_Allow_Tech.Enhancement = yes
+	]
+	[[Bio_Construct]
+		DA_Allow_Tech.Bio_Construct = yes
+	]
+	[[Resonance]
+		DA_Allow_Tech.Resonance = yes
+	]
+	[[Tesla]
+		DA_Allow_Tech.Tesla = yes
+	]
+	[[Soul_Genesis]
+		DA_Allow_Tech.Soul_Genesis = yes
+	]
+	[[Dimensional_eng]
+		DA_Allow_Tech.Dimensional_eng = yes
+	]
+	[[Elemental_Magic_Air]
+		DA_Allow_Tech.Elemental_Magic_Air = yes
+	]
+	[[Elemental_Magic_Earth]
+		DA_Allow_Tech.Elemental_Magic_Earth = yes
+	]
+	[[Elemental_Magic_Water]
+		DA_Allow_Tech.Elemental_Magic_Water = yes
+	]
+	[[Elemental_Magic_Fire]
+		DA_Allow_Tech.Elemental_Magic_Fire = yes
+	]
+	[[Universal_Law_Life]
+		DA_Allow_Tech.Universal_Law_Life = yes
+	]
+	[[Universal_Law_Death]
+		DA_Allow_Tech.Universal_Law_Death = yes
+	]
+	[[Universal_Law_Time]
+		DA_Allow_Tech.Universal_Law_Time = yes
+	]
+	[[Universal_Law_Space]
+		DA_Allow_Tech.Universal_Law_Space = yes
+	]
+	[[Medicine_1]
+		DA_Allow_Tech.Medicine_1 = yes
+	]
+	[[Medicine_2]
+		DA_Allow_Tech.Medicine_2 = yes
+	]
+	[[Medicine_3]
+		DA_Allow_Tech.Medicine_3 = yes
+	]
+	[[Medicine_4]
+		DA_Allow_Tech.Medicine_4 = yes
+	]
+	[[Alchemy_1]
+		DA_Allow_Tech.Alchemy_1 = yes
+	]
+	[[Alchemy_2]
+		DA_Allow_Tech.Alchemy_2 = yes
+	]
+	[[Alchemy_3]
+		DA_Allow_Tech.Alchemy_3 = yes
+	]
+	[[Alchemy_4]
+		DA_Allow_Tech.Alchemy_4 = yes
+	]
+	[[Magic_Theory_1]
+		DA_Allow_Tech.Magic_Theory_1 = yes
+	]
+	[[Magic_Theory_2]
+		DA_Allow_Tech.Magic_Theory_2 = yes
+	]
+	[[Magic_Theory_3]
+		DA_Allow_Tech.Magic_Theory_3 = yes
+	]
+	[[Magic_Theory_4]
+		DA_Allow_Tech.Magic_Theory_4 = yes
+	]
+	[[Mechanics_1]
+		DA_Allow_Tech.Mechanics_1 = yes
+	]
+	[[Mechanics_2]
+		DA_Allow_Tech.Mechanics_2 = yes
+	]
+	[[Mechanics_3]
+		DA_Allow_Tech.Mechanics_3 = yes
+	]
+	[[Mechanics_4]
+		DA_Allow_Tech.Mechanics_4 = yes
+	]
+	[[Metallurgy_1]
+		DA_Allow_Tech.Metallurgy_1 = yes
+	]
+	[[Metallurgy_2]
+		DA_Allow_Tech.Metallurgy_2 = yes
+	]
+	[[Metallurgy_3]
+		DA_Allow_Tech.Metallurgy_3 = yes
+	]
+	[[Metallurgy_4]
+		DA_Allow_Tech.Metallurgy_4 = yes
+	]
+
+	DA_new_missions_tech_tree = yes
+}
+
+
+DA_Complete.Elemental_Magic_Air = {
+	custom_tooltip = DA_Following_project_completed
+	custom_tooltip = DA_Elemental_Magic_Air.tt
+	hidden_effect = {
+		set_country_flag = DA_Project.completed.Elemental_Magic_Air
+	}
+}
+DA_Complete.Elemental_Magic_Earth = {
+	custom_tooltip = DA_Following_project_completed
+	custom_tooltip = DA_Elemental_Magic_Earth.tt
+	hidden_effect = {
+		set_country_flag = DA_Project.completed.Elemental_Magic_Earth
+	}
+}
+DA_Complete.Elemental_Magic_Water = {
+	custom_tooltip = DA_Following_project_completed
+	custom_tooltip = DA_Elemental_Magic_Water.tt
+	hidden_effect = {
+		set_country_flag = DA_Project.completed.Elemental_Magic_Water
+	}
+}
+DA_Complete.Elemental_Magic_Fire = {
+	custom_tooltip = DA_Following_project_completed
+	custom_tooltip = DA_Elemental_Magic_Fire.tt
+	hidden_effect = {
+		set_country_flag = DA_Project.completed.Elemental_Magic_Fire
+	}
+}
+DA_Complete.Universal_Law_Life = {
+	custom_tooltip = DA_Following_project_completed
+	custom_tooltip = DA_Universal_Law_Life.tt
+	hidden_effect = {
+		set_country_flag = DA_Project.completed.Universal_Law_Life
+	}
+}
+DA_Complete.Universal_Law_Death = {
+	custom_tooltip = DA_Following_project_completed
+	custom_tooltip = DA_Universal_Law_Death.tt
+	hidden_effect = {
+		set_country_flag = DA_Project.completed.Universal_Law_Death
+	}
+}
+DA_Complete.Universal_Law_Time = {
+	custom_tooltip = DA_Following_project_completed
+	custom_tooltip = DA_Universal_Law_Time.tt
+	hidden_effect = {
+		set_country_flag = DA_Project.completed.Universal_Law_Time
+	}
+}
+DA_Complete.Universal_Law_Space = {
+	custom_tooltip = DA_Following_project_completed
+	custom_tooltip = DA_Universal_Law_Space.tt
+	hidden_effect = {
+		set_country_flag = DA_Project.completed.Universal_Law_Space
+	}
+}
+
+DA_Complete.Motorization = {
+	custom_tooltip = DA_Following_project_completed
+	custom_tooltip = DA_Motorization.tt
+	hidden_effect = {
+		set_country_flag = DA_Project.completed.Motorization
+	}
+}
+DA_Complete.Explosive = {
+	custom_tooltip = DA_Following_project_completed
+	custom_tooltip = DA_Explosive.tt
+	hidden_effect = {
+		set_country_flag = DA_Project.completed.Explosive
+	}
+}
+DA_Complete.Golem = {
+	custom_tooltip = DA_Following_project_completed
+	custom_tooltip = DA_Golem.tt
+	hidden_effect = {
+		set_country_flag = DA_Project.completed.Golem
+	}
+}
+DA_Complete.ClockWork = {
+	custom_tooltip = DA_Following_project_completed
+	custom_tooltip = DA_ClockWork.tt
+	hidden_effect = {
+		set_country_flag = DA_Project.completed.ClockWork
+	}
+}
+DA_Complete.Enhancement = {
+	custom_tooltip = DA_Following_project_completed
+	custom_tooltip = DA_Enhancement.tt
+	hidden_effect = {
+		set_country_flag = DA_Project.completed.Enhancement
+	}
+}
+DA_Complete.Bio_Construct = {
+	custom_tooltip = DA_Following_project_completed
+	custom_tooltip = DA_Bio_Construct.tt
+	hidden_effect = {
+		set_country_flag = DA_Project.completed.Bio_Construct
+	}
+}
+DA_Complete.Resonance = {
+	custom_tooltip = DA_Following_project_completed
+	custom_tooltip = DA_Resonance.tt
+	hidden_effect = {
+		set_country_flag = DA_Project.completed.Resonance
+	}
+}
+DA_Complete.Tesla = {
+	custom_tooltip = DA_Following_project_completed
+	custom_tooltip = DA_Tesla.tt
+	hidden_effect = {
+		set_country_flag = DA_Project.completed.Tesla
+	}
+}
+DA_Complete.Soul_Genesis = {
+	custom_tooltip = DA_Following_project_completed
+	custom_tooltip = DA_Soul_Genesis.tt
+	hidden_effect = {
+		set_country_flag = DA_Project.completed.Soul_Genesis
+	}
+}
+DA_Complete.Dimensional_eng = {
+	custom_tooltip = DA_Following_project_completed
+	custom_tooltip = DA_Dimensional_eng.tt
+	hidden_effect = {
+		set_country_flag = DA_Project.completed.Dimensional_eng
+	}
+}

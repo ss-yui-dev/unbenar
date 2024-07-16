@@ -2,7 +2,7 @@
 #These are Arakeprun missions
 
 arakeprun1_missions = {
-	slot = 1
+	slot = 2
 	generic = no
 	ai = yes
 	has_country_shield = yes
@@ -29,31 +29,19 @@ arakeprun1_missions = {
 		effect = {
 			increase_legitimacy_medium_effect = yes
 			add_prestige = 10
-		}
-	}
-	
-	arakeprun_splendor_of_spring_court = {
-		icon = mission_dharma_mission_the_riches_of_india
-		required_missions = {
-			arakeprun_tools_of_ancestors
-		}
-		position = 3
-		
-		provinces_to_highlight = {
-			province_id = 2007
-			NOT = { development = 24 }
-		}
-		
-		trigger = {
+			
+			#MIGA
 			2007 = {
-				development = 24
-			}
-		}
-		
-		effect = {
-			add_country_modifier = {
-				name = "arakeprun_splendor_of_spring_court"
-				duration = 5475
+				add_base_tax = 1
+				add_base_production = 1
+				add_base_manpower = 1
+				area = {
+					limit = { owned_by = ROOT }
+					add_province_modifier = {
+						name = "growth_of_capital"
+						duration = 9125 #25 years
+					}
+				}
 			}
 		}
 	}
@@ -61,9 +49,9 @@ arakeprun1_missions = {
 	arakeprun_protector_of_selpheregi = {
 		icon = mission_rb_rein_in_the_highland_clans
 		required_missions = {
-			arakeprun_splendor_of_spring_court
+			arakeprun_tools_of_ancestors
 		}
-		position = 4
+		position = 3
 		
 		provinces_to_highlight = {
 			superregion = eordand_superregion
@@ -72,18 +60,43 @@ arakeprun1_missions = {
 		}
 		
 		trigger = {
-			custom_trigger_tooltip = {
-				tooltip = EORDAND_PROTECTOR
-				NOT = {
-					eordand_superregion = {
-						culture = selphereg
-						NOT = { owned_by = ROOT }
+			OR = {
+				H05 = {
+					has_opinion = {
+						who = ROOT
+						value = 100
+					}
+				}
+				H05 = {
+					all_core_province = {
+						OR = {
+							owned_by = ROOT
+							country_or_non_sovereign_subject_holds = ROOT
+						}
 					}
 				}
 			}
 		}
 		
 		effect = {
+			#MIGA
+			custom_tooltip = selphereg_vassalize_kairncal_tt
+			hidden_effect = {
+				if = {
+					limit = {
+						H05 = {
+							has_opinion = {
+								who = ROOT
+								value = 100
+							}
+						}
+					}
+					add_historical_friend = H05
+					H05 = { add_historical_friend = H01 }
+					vassalize = H05
+				}
+			}
+			
 			add_country_modifier = {
 				name = "arakeprun_protector_of_the_spring_court"
 				duration = 5475
@@ -95,12 +108,55 @@ arakeprun1_missions = {
 				}
 				add_permanent_claim = ROOT
 			}
+			
+			#MIGA
+			paskala_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			dearktir_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	
+	arakeprun_between_spring_and_summer = {
+		icon = mission_sunset
+		position = 4
+		required_missions = { arakeprun_protector_of_selpheregi }
+		
+		trigger = {
+			2018 = {
+				has_dock_building_trigger = yes
+				has_shipyard_building_trigger = yes
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		
+		effect = {
+			add_country_modifier = {
+				name = arakeprun_assimilating_summer_knowledge
+				duration = 7300
+			}
+			2018 = {
+				add_permanent_province_modifier = {
+					name = arakeprun_kairncal_navigation
+					duration = -1
+				}
+			}
 		}
 	}
 	
 	arakeprun_pretenders_of_pelomar = {
 		icon = mission_rb_unite_the_clans
-		required_missions = {arakeprun_protector_of_selpheregi}
+		required_missions = { arakeprun_between_spring_and_summer }
 		position = 5
 		
 		provinces_to_highlight = {
@@ -122,87 +178,55 @@ arakeprun1_missions = {
 		}
 		
 		effect = {
-			drisleak_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
-				}
-				add_permanent_claim = ROOT
+			add_power_projection = {
+				type = mission_rewards_power_projection
+				amount = 20
 			}
-			sidmargbal_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
+			add_prestige = 10
 			country_event = { id = eordand.3 }
 			custom_tooltip = arakeprun_demands_of_the_domandrod_tt
 		}
 	}
 	
-	arakeprun_sidpar_wards_restored = {
+	arakeprun_march_on_the_waves = {
 		icon = mission_great_wall
 		required_missions = { arakeprun_pretenders_of_pelomar }
 		position = 6
 		
 		provinces_to_highlight = {
 			OR = {
-				AND = {
-					province_id = 2041
-					OR = {
-						NOT = { owned_by = ROOT }
-						NOT = { is_core = ROOT }
-						NOT = { development = 15 }
-						NOT = { has_trade_building_trigger = yes }
-						NOT = { has_fort_building_trigger = yes }
-					}
-				}
-				owned_by = H06
+				area = paskala_area
+				area = dearktir_area
 			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		
 		trigger = {
-			owns_core_province = 2041
-			NOT = { exists = H06 }
-			2041 = {
-				development = 15
-				has_trade_building_trigger = yes
-				has_fort_building_trigger = yes
+			paskala_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			dearktir_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			OR = {
+				accepted_culture = caamas
+				government_rank = 3
 			}
 		}
 		
 		effect = {
-			murdkather_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
-			serakriok_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
-			dearktir_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
-			2041 = {
-				center_of_trade = 1
+			add_country_modifier = {
+				name = "arakeprun_march_on_the_waves"
+				duration = 5475
 			}
 		}
 	}
 	
 	arakeprun_conquest_of_the_summer_city = {
 		icon = mission_growth_of_surat
-		required_missions = { arakeprun_sidpar_wards_restored }
+		required_missions = { arakeprun_march_on_the_waves }
 		position = 7
 		
 		provinces_to_highlight = {
@@ -221,10 +245,7 @@ arakeprun1_missions = {
 		trigger = {
 			owns_core_province = 2037
 			NOT = { exists = H02 }
-			OR = {
-				accepted_culture = caamas
-				government_rank = 3
-			}
+			production_leader = { trade_goods = precursor_relics }
 		}
 		
 		effect = {
@@ -234,12 +255,16 @@ arakeprun1_missions = {
 					duration = -1
 				}
 			}
+			add_country_modifier = {
+				name = artificer_research_bonus_technomancy_ind
+				duration = 5475
+			}
 		}
 	}
 }
 
 arakeprun2_missions = {
-	slot = 2
+	slot = 3
 	generic = no
 	ai = yes
 	has_country_shield = yes
@@ -286,11 +311,195 @@ arakeprun2_missions = {
 		}
 	}
 	
+	arakeprun_splendor_of_spring_court = {
+		icon = mission_dharma_mission_the_riches_of_india
+		required_missions = {
+			arakeprun_tools_of_ancestors
+		}
+		position = 3
+		
+		provinces_to_highlight = {
+			province_id = 2007
+			NOT = { development = 24 }
+		}
+		
+		trigger = {
+			2007 = {
+				development = 24
+			}
+		}
+		
+		effect = {
+			add_country_modifier = {
+				name = "arakeprun_splendor_of_spring_court"
+				duration = 5475
+			}
+			
+			#MIGA
+			custom_tooltip = EORDAND_unite_selphereg_tt
+			hidden_effect = {
+				eordand_superregion = {
+					limit = {
+						culture = selphereg
+					}
+					add_core = ROOT
+				}
+			}
+		}
+	}
+	
+	#MIGA
+	arakeprun_dawnfires_disciples = {
+		icon = mission_japanese_samurai
+		position = 4
+		required_missions = { arakeprun_splendor_of_spring_court }
+		
+		trigger = {
+			H01_ideas_01 = 2
+			estate_loyalty = {
+				estate = estate_mages
+				loyalty = 60
+			}
+			estate_influence = {
+				estate = estate_mages
+				influence = 50
+			}
+			has_estate_privilege = estate_mages_battlemage_academies
+			mil_power = 100
+		}
+
+		effect = {
+			add_mil_power = -100
+			custom_tooltip = ameion_battlemages
+			set_country_flag = battlemage_no_decay
+			set_country_flag = battlemage_common
+		}
+	}
+	
+	
+	#MIGA
+	arakeprun_the_acadamy_of_arcane_sciences = {
+		icon = mission_artificier_experience
+		position = 5
+		required_missions = { arakeprun_dawnfires_disciples } 
+		provinces_to_highlight = {  
+			OR = {
+				AND = {
+					has_province_modifier = eordan_expedition_site
+					OR = {
+						NOT = { base_production = 5 }
+						NOT = { has_building = mage_tower }
+					}
+				}
+				AND = {
+					OR = {
+						province_id = 2037
+						province_id = 1775
+					}
+					NOT = { has_building = mage_tower }
+				}
+			}
+		} 
+
+		trigger = {
+			H01_ideas_01 = 3
+			2007 = {
+				has_building = mage_tower
+				NOT = { has_construction = building }
+			}
+			
+			estate_loyalty = {
+				estate = estate_mages
+				loyalty = 60
+			}
+			
+			innovativeness = 10
+		}
+
+		effect = {
+			2007 = {
+				add_permanent_province_modifier = {
+					name = arakeprun_acadamy_of_arcane_sciences_modifier
+					duration = -1
+				}
+				add_building_construction = {
+					building = university
+					speed = 0.5
+					cost = 0
+				}
+			}
+			
+			custom_tooltip = supporting_artificers_tt
+			hidden_effect = {
+				set_country_flag = magic_artificery_mixed
+				set_country_flag = artificery_unlocked
+				clr_country_flag = magic_artificery_mage_only
+				clr_country_flag = magic_artificery_artificery_only
+				
+				country_event = {
+					id = magic_artificery_setup.2
+					days = 1
+				}
+			}
+			
+			mission_reward_artifice_points_5 = yes
+		}
+	}
+	
+	#MIGA
+	arakeprun_experimental_weaponry = {
+		icon = mission_artificier_experience
+		position = 6
+		required_missions = { arakeprun_the_acadamy_of_arcane_sciences }
+
+		trigger = {
+			mil_tech = 9
+			OR = {
+				army_tradition = 40
+				army_professionalism = 0.2
+			}
+			manpower = 4
+		}
+
+		effect = {
+			add_manpower = -4
+			create_unit_forcelimit_percentage = {
+				type = infantry
+				special_unit_category = rajput
+				#force_limit_percentage = 0.1
+			}
+			create_unit_forcelimit_percentage = {
+				type = infantry
+				special_unit_category = rajput
+				#force_limit_percentage = 0.1
+			}
+			create_unit_forcelimit_percentage = {
+				type = infantry
+				special_unit_category = rajput
+				#force_limit_percentage = 0.1
+			}
+			create_unit_forcelimit_percentage = {
+				type = infantry
+				special_unit_category = rajput
+				#force_limit_percentage = 0.1
+			}
+			add_country_modifier = {
+				name = "arakeprun_experimental_weaponry"
+				duration = 5475
+			}
+			add_country_modifier = {
+				name = artificer_research_bonus_technomancy_mil
+				duration = 5475
+			}
+		}
+	}
+	
 	arakeprun_spring_court_victorious = {
 		icon = mission_restore_faith_in_the_throne
 		required_missions = {
 			arakeprun_conquest_of_the_summer_city
-			arakeprun_envelop_the_jhorgashirran
+			arakeprun_experimental_weaponry
+			arakeprun_first_eordand_climate_symposium
 		}
 		position = 8
 		
@@ -331,12 +540,18 @@ arakeprun2_missions = {
 				add_stability_or_adm_power = yes
 				change_government_reform_progress = 100
 			}
+			
+			#MIGA
+			swap_free_idea_group = yes
+			eordand_superregion = {
+				add_permanent_claim = ROOT
+			}
 		}
 	}
 }
 
 arakeprun3_missions = {
-	slot = 3
+	slot = 4
 	generic = no
 	ai = yes
 	has_country_shield = yes
@@ -377,7 +592,7 @@ arakeprun3_missions = {
 		}
 	}
 	
-	arakeprun_seize_the_autumn_court = {
+	arakeprun_seize_dorcurt = {
 		icon = mission_raid_on_venice
 		required_missions = { arakeprun_tools_of_ancestors }
 		position = 3
@@ -385,26 +600,26 @@ arakeprun3_missions = {
 		provinces_to_highlight = {
 			OR = {
 				AND = {
-					province_id = 2159
+					province_id = 2014
 					NOT = { owned_by = ROOT }
 				}
-				owned_by = H10
+				owned_by = H09
 			}
 		}
 		
 		trigger = {
-			2159 = {
+			2014 = {
 				owned_by = ROOT
 			}
-			NOT = { exists = H10 }
+			NOT = { exists = H09 }
 		}
 		
 		effect = {
-			add_country_modifier = {
-				name = "arakeprun_seizure_of_einnsag"
-				duration = 5475
-			}
-			iadth_area = {
+			#add_country_modifier = {
+			#	name = "arakeprun_seizure_of_einnsag"
+			#	duration = 5475
+			#}
+			ruigfar_area = {
 				limit = {
 					NOT = { is_core = ROOT }
 					NOT = { is_permanent_claim = ROOT }
@@ -425,17 +640,23 @@ arakeprun3_missions = {
 				}
 				add_permanent_claim = ROOT
 			}
+			
+			#new
+			add_country_modifier = {
+				name = "arakeprun_seize_dorcurt"
+				duration = 5475
+			}
 		}
 	}
 	
-	arakeprun_foghar_under_arrag = {
+	arakeprun_foghar_under_arrag_2 = {
 		icon = mission_rb_control_electors
-		required_missions = { arakeprun_seize_the_autumn_court }
+		required_missions = { arakeprun_seize_dorcurt }
 		position = 4
 		
 		provinces_to_highlight = {
 			OR = {
-				area = iadth_area
+				area = ruigfar_area
 				area = sglolad_area
 				area = raithlos_area
 			}
@@ -443,7 +664,7 @@ arakeprun3_missions = {
 		}
 		
 		trigger = {
-			iadth_area = {
+			ruigfar_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
@@ -483,9 +704,9 @@ arakeprun3_missions = {
 		}	
 	}
 	
-	arakeprun_borders_of_winter = {
+	arakeprun_borders_of_winter_2 = {
 		icon = mission_duel_snow
-		required_missions = { arakeprun_foghar_under_arrag }
+		required_missions = { arakeprun_foghar_under_arrag_2 }
 		position = 5
 		
 		provinces_to_highlight = {
@@ -513,19 +734,21 @@ arakeprun3_missions = {
 		}
 		
 		effect = {
-			add_country_modifier = {
-				name = "arakeprun_warmth_of_the_last_days"
-				duration = 5475
+			1969 = {
+				add_permanent_province_modifier = {
+					name = arakeprun_warmth_of_the_last_days
+					duration = -1
+				}
 			}
-			jhorgashirr_area = { add_permanent_claim = ROOT }
 			gemradcurt_area = { add_permanent_claim = ROOT }
-			medhan_area = { add_permanent_claim = ROOT }
+			fardach_area = { add_permanent_claim = ROOT }
+			dartir_area = { add_permanent_claim = ROOT }
 		}
 	}
 	
-	arakeprun_quell_the_blizzard = {
+	arakeprun_quell_the_blizzard_2 = {
 		icon = mission_protect_white_sea_trade
-		required_missions = { arakeprun_borders_of_winter }
+		required_missions = { arakeprun_borders_of_winter_2 }
 		position = 6
 		
 		provinces_to_highlight = {
@@ -557,12 +780,14 @@ arakeprun3_missions = {
 					duration = -1
 				}
 			}
+			jhorgashirr_area = { add_permanent_claim = ROOT }
+			medhan_area = { add_permanent_claim = ROOT }
 		}
 	}
 	
-	arakeprun_envelop_the_jhorgashirran = {
+	arakeprun_first_eordand_climate_symposium = {
 		icon = mission_conquer_50_development
-		required_missions = { arakeprun_quell_the_blizzard }
+		required_missions = { arakeprun_quell_the_blizzard_2 }
 		position = 7
 		
 		provinces_to_highlight = {
@@ -575,28 +800,49 @@ arakeprun3_missions = {
 					}
 				}
 				owned_by = H13
+				
+				AND = {
+					province_id = 1775
+					NOT = { development = 15 }
+				}
+				AND = {
+					province_id = 1965
+					NOT = { development = 15 }
+				}
+				AND = {
+					province_id = 1974
+					NOT = { development = 15 }
+				}
 			}
 		}
 		
 		trigger = {
 			owns_core_province = 1965
 			NOT = { exists = H13 }
-			land_forcelimit = 30
+			1775 = {
+				development = 15
+			}
+			1965 = {
+				development = 15
+			}
+			1974 = {
+				development = 15
+			}
 		}
 		
 		effect = {
 			add_country_modifier = {
-				name = "arakeprun_randrunnse_trade"
+				name = artificer_research_bonus_technomancy_society
 				duration = 5475
 			}
-			galbhan_area = { add_permanent_claim = ROOT }
-			trimgarb_area = { add_permanent_claim = ROOT }
+			country_event = { id = arakeprun.2 }
+			#custom_tooltip = arakeprun_first_eordand_climate_symposium_tt
 		}
 	}
 }
 
 arakeprun4_missions = {
-	slot = 4
+	slot = 5
 	generic = no
 	ai = yes
 	has_country_shield = yes
@@ -617,15 +863,34 @@ arakeprun4_missions = {
 		effect = {
 			add_country_modifier = {
 				name = "arakeprun_glorelthiran_guard"
-				duration = 9125
+				duration = 18250 #MIGA
+			}
+		}
+	}
+	
+	#MIGA
+	arakeprun_glorelthiran_ambitions = {
+		icon = mission_trade_with_cathay
+		required_missions = { arakeprun_restore_glorelthiran_guard }
+		position = 2
+		
+		trigger = {
+			1690 = {
+				is_strongest_trade_power = ROOT
+			}
+			navy_size = 30
+		}
+		effect = {
+			add_country_modifier = {
+				name = "elchos_trade_dominance"
+				duration = 5475 #15 years
 			}
 		}
 	}
 	
 	arakeprun_prepare_for_southern_eordan_expedition = {
 		icon = mission_look_west
-		required_missions = { arakeprun_restore_glorelthiran_guard }
-		position = 2
+		position = 3
 		
 		trigger = {
 			OR = {
@@ -653,7 +918,7 @@ arakeprun4_missions = {
 	arakeprun_convert_the_fograc = {
 		icon = mission_colonise_brazil
 		required_missions = { arakeprun_prepare_for_southern_eordan_expedition }
-		position = 3
+		position = 4
 		
 		provinces_to_highlight = {
 			OR = {
@@ -694,7 +959,7 @@ arakeprun4_missions = {
 	arakeprun_whispers_among_the_sands = {
 		icon = mission_conquer_air
 		required_missions = { arakeprun_convert_the_fograc }
-		position = 4
+		position = 5
 		
 		provinces_to_highlight = {
 			province_id = 2060
@@ -726,7 +991,7 @@ arakeprun4_missions = {
 	arakeprun_unearthed_knowledge_of_cadcimn = {
 		icon = mission_treasure_room
 		required_missions = { arakeprun_whispers_among_the_sands }
-		position = 5
+		position = 6
 		
 		provinces_to_highlight = {
 			province_id = 2060
@@ -762,7 +1027,7 @@ arakeprun4_missions = {
 }
 
 arakeprun5_missions = {
-	slot = 5
+	slot = 1
 	generic = no
 	ai = yes
 	has_country_shield = yes
@@ -804,21 +1069,55 @@ arakeprun5_missions = {
 		}
 		
 		effect = {
-			country_event = { id = eordand.8 }
+			country_event = { id = arakeprun.1 }
 			add_ruler_modifier = {
 				name = "arakeprun_damestear_summoner"
 				duration = -1
 			}
 			add_years_of_income = -2
 			custom_tooltip = arakeprun_the_stars_beneath_the_earth_tt
+		}
+	}
+	
+	#MIGA
+	arakeprun_academy_of_conjuration_and_meteorites = {
+		icon = found_the_vatican_library
+		required_missions = { arakeprun_dawnfires_gambit }
+		position = 2
+		
+		provinces_to_highlight = {
+			province_id = 2009
+		}
+		
+		trigger = {
+			2009 = {
+				base_production = 10
+				has_building = mage_tower
+				NOT = { has_construction = building }
+			}
+		}
+		
+		effect = {
+			2009 = {
+				change_trade_goods = damestear
+				set_province_flag = permanent_damestear
+				add_building_construction = {
+					building = university
+					speed = 2
+					cost = 0
+				}
+			}
 			
+			custom_tooltip = ameion_more_mages
+			set_country_flag = ameion_mages
+			set_country_flag = add_conjuration_1_point
 		}
 	}
 	
 	arakeprun_darhan_blossoming = {
 		icon = mission_colonial
 		required_missions = { }
-		position = 2
+		position = 3
 		
 		provinces_to_highlight = {
 			area = darhan_area
@@ -846,7 +1145,7 @@ arakeprun5_missions = {
 	arakeprun_darhan_textiles = {
 		icon = mission_wine_monopolies
 		required_missions = { arakeprun_darhan_blossoming }
-		position = 3
+		position = 4
 		
 		provinces_to_highlight = {
 			OR = {
@@ -896,7 +1195,7 @@ arakeprun5_missions = {
 	arakeprun_celebration_of_a_new_spring = {
 		icon = mission_steer_trade_to_bengal
 		required_missions = { arakeprun_darhan_textiles }
-		position = 4
+		position = 5
 		
 		provinces_to_highlight = {
 			OR = {
@@ -922,46 +1221,74 @@ arakeprun5_missions = {
 		}
 		
 		effect = {
-			if = {
-				limit = {
-					OR = {
-						AND = {
-							is_institution_enabled = renaissance
-							NOT = { has_institution = renaissance }
-						}
-						AND = {
-							is_institution_enabled = new_world_i
-							NOT = { has_institution = new_world_i }
-						}
-						AND = {
-							is_institution_enabled = printing_press
-							NOT = { has_institution = printing_press }
-						}
-						AND = {
-							is_institution_enabled = printing_press
-							NOT = { has_institution = printing_press }
-						}
-						AND = {
-							is_institution_enabled = global_trade
-							NOT = { has_institution = global_trade }
-						}
-						AND = {
-							is_institution_enabled = manufactories
-							NOT = { has_institution = manufactories }
-						}
-						AND = {
-							is_institution_enabled = enlightenment
-							NOT = { has_institution = enlightenment }
-						}
-					}
+			2007 = {
+				add_institution_embracement = {
+					which = renaissance
+					value = 100
 				}
-				capital_scope = {
-					area = { add_next_institution_embracement = 25 }
-				}
+			}
+			darhan_area = {
+				add_next_institution_embracement = 25 
 			}
 			add_country_modifier = {
 				name = "arakeprun_spring_celebrations"
 				duration = 5475
+			}
+		}
+	}
+	
+	#MIGA
+	arakeprun_contact_with_cannor = {
+		icon = mission_steer_trade_to_bengal
+		required_missions = { arakeprun_celebration_of_a_new_spring }
+		position = 6
+		
+		provinces_to_highlight = {
+			owner = {
+				OR = {
+					capital_scope = {
+						continent = europe
+					}
+					colonial_parent = {
+						capital_scope = {
+							continent = europe
+						}
+					}
+				}
+			}
+			has_discovered = ROOT
+		}
+		
+		trigger = {
+			prestige = 30
+			any_known_country = {
+				OR = {
+					capital_scope = {
+						continent = europe
+					}
+					colonial_parent = {
+						capital_scope = {
+							continent = europe
+						}
+					}
+				}
+				has_opinion = { who = ROOT value = 80 }
+			}
+			dip_power = 100
+		}
+		
+		effect = {
+			add_dip_power = -100
+			2007 = {
+				add_province_modifier = {
+					name = Y15_foreign_knowledge
+					duration = -1
+				}
+			}
+			darhan_area = {
+				add_next_institution_embracement = 25
+				add_human_minority_size_effect = yes
+				add_gnomish_minority_size_effect = yes
 			}
 		}
 	}

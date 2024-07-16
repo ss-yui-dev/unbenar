@@ -4,7 +4,7 @@ province_event = {
 	id = DA_Amldihr_Authority_event.1 # just a bit of broken flavor
 	title = "DA_Amldihr_Authority_event.1.t"
 	desc = "DA_Amldihr_Authority_event.1.d"
-	picture = BYZ_BYZANTINE_EMPEROR_eventPicture
+	picture = FEAST_eventPicture
 	
 	trigger = {
 		culture_group = dwarven
@@ -56,15 +56,16 @@ province_event = {
 }
 
 province_event = {
-	id = DA_Amldihr_Authority_event.2 # just a bit of broken flavor
+	id = DA_Amldihr_Authority_event.2 # after trade goods change to damestear, you lose advanced infrastructure, this restores it
 	title = "DA_Amldihr_Authority_event.2.t"
 	desc = "DA_Amldihr_Authority_event.2.d"
 	picture = GREAT_BUILDING_eventPicture
 	trigger = {
 		has_great_project = {
-			type = Ancient_Research_facility1
+			type = DA_Ancient_Research_facility1
 			tier = 3
 		}
+		province_id = 4119
 		NOT = { has_province_modifier = hold_city_2 }
 		NOT = { has_province_modifier = hold_foundry_2 }
 		NOT = { has_province_modifier = hold_artisan_2 }

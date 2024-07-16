@@ -1,0 +1,391 @@
+
+estate_mages_land_rights = {
+	icon = privilege_grant_autonomy
+	land_share = 5
+	max_absolutism = -5
+	loyalty = 0.05
+	influence = 0.05
+	can_select = {
+	}
+	on_granted = {
+	}
+	penalties = {
+	}
+	benefits = {
+		governing_capacity = 100
+	}
+	ai_will_do = {
+		factor = 5
+		modifier = {
+			factor = 1.4
+			num_of_territories = 5
+		}
+		modifier = {
+			factor = 1.5
+			num_of_territories = 10
+		}
+		modifier = {
+			factor = 1.5
+			num_of_territories = 15
+		}
+		modifier = {
+			factor = 0
+			OR = {
+				NOT = { crown_land_share = 25 }
+				estate_influence = {
+					estate = estate_monstrous_tribes
+					influence = 75
+				}
+			}
+			NOT = { has_estate_privilege = estate_mages_land_rights }
+		}
+		modifier = {
+			factor = 3
+			OR = {
+				AND = {
+					governing_capacity_percentage = 0.9
+					NOT = { has_estate_privilege = estate_mages_land_rights }
+				}
+				#The trigger below should make sure that the AI actually keeps this privilege when enacting it early game
+				AND = {
+					governing_capacity_percentage = 0.6
+					has_estate_privilege = estate_mages_land_rights
+				}
+			}
+		}
+		modifier = {
+			factor = 0
+			NOT = { governing_capacity_percentage = 0.5 }
+		}
+		modifier = {
+			factor = 0.8
+			OR = {
+				NOT = { crown_land_share = 40 }
+				AND = {
+					is_absolutism_active = yes
+					NOT = { crown_land_share = 60 }
+				}
+			}
+			NOT = { has_estate_privilege = estate_mages_land_rights }
+		}
+		modifier = {
+			factor = 0.8
+			OR = {
+				NOT = { crown_land_share = 30 }
+				AND = {
+					is_absolutism_active = yes
+					NOT = { crown_land_share = 50 }
+				}
+			}
+			NOT = { has_estate_privilege = estate_mages_land_rights }
+		}
+		modifier = {
+			factor = 0.8
+			is_absolutism_active = yes
+		}
+	}
+}
+
+estate_artificers_land_rights = {
+	icon = privilege_grant_autonomy
+	land_share = 5
+	max_absolutism = -5
+	loyalty = 0.05
+	influence = 0.05
+	can_select = {
+	}
+	on_granted = {
+	}
+	penalties = {
+	}
+	benefits = {
+		governing_capacity = 100
+	}
+	ai_will_do = {
+		factor = 5
+		modifier = {
+			factor = 1.4
+			num_of_territories = 5
+		}
+		modifier = {
+			factor = 1.5
+			num_of_territories = 10
+		}
+		modifier = {
+			factor = 1.5
+			num_of_territories = 15
+		}
+		modifier = {
+			factor = 0
+			OR = {
+				NOT = { crown_land_share = 25 }
+				estate_influence = {
+					estate = estate_monstrous_tribes
+					influence = 75
+				}
+			}
+			NOT = { has_estate_privilege = estate_artificers_land_rights }
+		}
+		modifier = {
+			factor = 3
+			OR = {
+				AND = {
+					governing_capacity_percentage = 0.9
+					NOT = { has_estate_privilege = estate_artificers_land_rights }
+				}
+				#The trigger below should make sure that the AI actually keeps this privilege when enacting it early game
+				AND = {
+					governing_capacity_percentage = 0.6
+					has_estate_privilege = estate_artificers_land_rights
+				}
+			}
+		}
+		modifier = {
+			factor = 0
+			NOT = { governing_capacity_percentage = 0.5 }
+		}
+		modifier = {
+			factor = 0.8
+			OR = {
+				NOT = { crown_land_share = 40 }
+				AND = {
+					is_absolutism_active = yes
+					NOT = { crown_land_share = 60 }
+				}
+			}
+			NOT = { has_estate_privilege = estate_artificers_land_rights }
+		}
+		modifier = {
+			factor = 0.8
+			OR = {
+				NOT = { crown_land_share = 30 }
+				AND = {
+					is_absolutism_active = yes
+					NOT = { crown_land_share = 50 }
+				}
+			}
+			NOT = { has_estate_privilege = estate_artificers_land_rights }
+		}
+		modifier = {
+			factor = 0.8
+			is_absolutism_active = yes
+		}
+	}
+}
+
+estate_mages_new_world_mission = {
+	icon = privilege_new_world_mission
+	max_absolutism = -5
+	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
+	loyalty = 0.05
+	influence = 0.05
+	is_valid = {
+		OR = {
+			num_of_colonists = 1
+			num_of_colonies = 1
+		}
+		NOT = { has_estate_privilege = estate_church_new_world_mission }
+	}
+	penalties = {
+	}
+	benefits = {
+		native_assimilation = 0.5
+	}
+	on_granted = {
+		if = {
+			limit = { has_dlc = "Domination" }
+			enable_estate_action = {
+				estate_action = NEW_WORLD_MISSION_CHURCH
+			}
+		}
+		else = {
+			custom_tooltip = has_no_effects_on_granted
+		}
+	}
+	on_invalid = {
+		if = {
+			limit = { has_dlc = "Domination" }
+			disable_estate_action = {
+				estate_action = NEW_WORLD_MISSION_CHURCH
+			}
+		}
+		else = {
+			hidden_effect = {
+				disable_estate_action = {
+					estate_action = NEW_WORLD_MISSION_CHURCH
+				}
+			}
+		}
+	}
+	on_revoked = {
+		if = {
+			limit = { has_dlc = "Domination" }
+			disable_estate_action = {
+				estate_action = NEW_WORLD_MISSION_CHURCH
+			}
+		}
+		else = {
+			hidden_effect = {
+				disable_estate_action = {
+					estate_action = NEW_WORLD_MISSION_CHURCH
+				}
+			}
+		}
+	}
+	conditional_modifier = {
+		trigger = { has_government_mechanic = russian_modernization_mechanic }
+		modifier = { monthly_russian_modernization = -0.03 }
+	}
+	#conditional_modifier = {
+	#	trigger = { has_government_mechanic = ottoman_decadence_mechanic }
+	#	modifier = { monthly_ottoman_decadence = 0.02 }
+	#}
+	ai_will_do = {
+		factor = 0
+	}
+}
+
+estate_artificers_new_world_charter = {
+	icon = privilege_grant_new_world_charter
+	max_absolutism = -5
+	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
+	loyalty = 0.05
+	influence = 0.05
+	is_valid = {
+		OR = {
+			num_of_colonists = 1
+			num_of_colonies = 1
+		}
+		NOT = { has_estate_privilege = estate_burghers_new_world_charter }
+	}
+	penalties = {
+		global_tariffs = -0.10
+	}
+	benefits = {
+		global_colonial_growth = 10
+		colonist_placement_chance = 0.05
+	}
+	on_granted = {
+		if = {
+			limit = { has_dlc = "Domination" }
+			enable_estate_action = {
+				estate_action = GRANT_NEW_WORLD_CHARTER_BURGHERS
+			}
+		}
+		else = {
+			custom_tooltip = has_no_effects_on_granted
+		}
+	}
+	on_invalid = {
+		if = {
+			limit = { has_dlc = "Domination" }
+			disable_estate_action = {
+				estate_action = GRANT_NEW_WORLD_CHARTER_BURGHERS
+			}
+		}
+		else = {
+			hidden_effect = {
+				disable_estate_action = {
+					estate_action = GRANT_NEW_WORLD_CHARTER_BURGHERS
+				}
+			}
+		}
+	}
+	on_revoked = {
+		if = {
+			limit = { has_dlc = "Domination" }
+			disable_estate_action = {
+				estate_action = GRANT_NEW_WORLD_CHARTER_BURGHERS
+			}
+		}
+		else = {
+			hidden_effect = {
+				disable_estate_action = {
+					estate_action = GRANT_NEW_WORLD_CHARTER_BURGHERS
+				}
+			}
+		}
+	}
+	conditional_modifier = {
+		trigger = { has_government_mechanic = russian_modernization_mechanic }
+		modifier = { monthly_russian_modernization = -0.03 }
+	}
+	#conditional_modifier = {
+	#	trigger = { has_government_mechanic = ottoman_decadence_mechanic }
+	#	modifier = { monthly_ottoman_decadence = 0.02 }
+	#}
+	ai_will_do = {
+		factor = 1
+		# modifier = {
+			# factor = 10
+			# OR = {
+				# tag = POR
+				# tag = CAS
+				# tag = SPA
+				# tag = ENG
+				# tag = GBR
+				# tag = SCO
+				# tag = FRA
+			# }
+		# }
+		modifier = {
+			factor = 0
+			is_absolutism_active = yes
+		}
+	}
+}
+
+estate_monstrous_tribes_pioneer_initiatives = {
+	icon = privilege_grant_new_world_charter
+	max_absolutism = -5
+	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
+	loyalty = 0.05
+	influence = 0.05
+	is_valid = {
+		OR = {
+			num_of_colonists = 1
+			num_of_colonies = 1
+		}
+		OR = {
+			capital_scope = {
+				NOT = { continent = serpentspine }
+			}
+			colony = 1
+		}
+		NOT = { has_estate_privilege = estate_adventurers_pioneer_initiatives }
+	}
+	penalties = {
+		global_tariffs = -0.10
+	}
+	benefits = {
+		global_colonial_growth = 10
+		colonist_placement_chance = 0.05
+	}
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 10
+			OR = {
+				tag = A01 #Lorent
+				tag = A02 #Deranne
+				tag = A21 #Venail
+				tag = A33 #Verne
+				tag = A11 #Pearlsedge
+				tag = A47 #Eborthil
+				tag = A29 #Busilar
+				AND = {
+					capital_scope = {
+						superregion = escann_superregion
+					}
+					any_owned_province = {
+						has_empty_adjacent_province = yes
+					}
+				}
+			}
+		}
+		modifier = {
+			factor = 0
+			is_absolutism_active = yes
+		}
+	}
+}

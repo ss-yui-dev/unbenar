@@ -1,0 +1,5 @@
+
+kobold_drake_riders_modifier = {
+	cavalry_cost = -0.2
+	is_hussars_modifier = yes
+}

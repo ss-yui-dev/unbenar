@@ -1,0 +1,43 @@
+bladestewards_order = {
+    icon = GFX_holy_order_santiago
+    trigger = {
+        has_estate_privilege = estate_bladestewards_chapter_houses
+    }
+    color = { 0 230 210 }
+    cost = 100
+    cost_type = adm_power
+    per_province_effect = {
+        add_base_production = 1
+	add_base_manpower = 1
+	change_estate_land_share = {
+    		estate = estate_bladestewards
+    		share = 3
+	}
+    }
+    per_province_abandon_effect = {
+        add_base_manpower = -1
+        hidden_effect = {
+            if = {
+                limit = { NOT = { base_manpower = 1 } }
+                set_base_manpower = 1
+            }
+        }
+	add_base_production = -1
+        hidden_effect = {
+            if = {
+                limit = { NOT = { base_production = 1 } }
+                set_base_manpower = 1
+            }
+        }
+    }
+    modifier = {
+        regiment_recruit_speed = -0.2
+	local_development_cost = -0.1
+        trade_goods_size_modifier = 0.1
+	local_has_samurai = yes
+    }
+    ai_priority = {
+        factor = 10
+    }
+    localization = holy_order
+}

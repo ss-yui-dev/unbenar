@@ -1,0 +1,95 @@
+
+defined_text = {
+	name = DA_RS_Level_show
+	random = no
+	
+	text = {
+        localisation_key = DA_RS_Level_show_2
+        trigger = {
+			capital_scope = { 
+				has_province_flag = DA_Expanded_dig_adk_2 
+				NOT = { has_province_flag = DA_Expanded_dig_adk_3 }
+			}
+        }
+    }
+	text = {
+        localisation_key = DA_RS_Level_show_3
+        trigger = {
+			capital_scope = { 
+				has_province_flag = DA_Expanded_dig_adk_3 
+				NOT = { has_province_flag = DA_Expanded_dig_adk_4 }
+			}
+        }
+    }
+	text = {
+        localisation_key = DA_RS_Level_show_4
+        trigger = {
+			capital_scope = { 
+				has_province_flag = DA_Expanded_dig_adk_4
+				NOT = { has_province_flag = DA_Expanded_dig_adk_5 }
+			}
+        }
+    }
+	text = {
+        localisation_key = DA_RS_Level_show_5
+        trigger = {
+			capital_scope = { 
+				has_province_flag = DA_Expanded_dig_adk_5 
+				NOT = { has_province_flag = DA_Expanded_dig_adk_6 }
+			}
+        }
+    }
+	text = {
+        localisation_key = DA_RS_Level_show_6
+        trigger = {
+			capital_scope = { 
+				has_province_flag = DA_Expanded_dig_adk_6 
+				NOT = { has_province_flag = DA_Expanded_dig_adk_7 }
+			}
+        }
+    }
+	text = {
+        localisation_key = DA_RS_Level_show_7
+        trigger = {
+			capital_scope = { 
+				has_province_flag = DA_Expanded_dig_adk_7
+				NOT = { has_province_flag = DA_Expanded_dig_adk_8 }
+			}
+        }
+    }
+	text = {
+        localisation_key = DA_RS_Level_show_8
+        trigger = {
+			capital_scope = { 
+				has_province_flag = DA_Expanded_dig_adk_8
+				NOT = { has_province_flag = DA_Expanded_dig_adk_9 }
+			}
+        }
+    }
+	text = {
+        localisation_key = DA_RS_Level_show_9
+        trigger = {
+			capital_scope = { 
+				has_province_flag = DA_Expanded_dig_adk_9
+				NOT = { has_province_flag = DA_Expanded_dig_adk_10 }
+			}
+        }
+    }
+	text = {
+        localisation_key = DA_RS_Level_show_10
+        trigger = {
+			capital_scope = { 
+				has_province_flag = DA_Expanded_dig_adk_10 
+				NOT = { has_province_flag = DA_Expanded_dig_adk_11 }
+			}
+        }
+    }
+	text = {
+        localisation_key = DA_RS_Level_show_11
+        trigger = {
+			capital_scope = { 
+				has_province_flag = DA_Expanded_dig_adk_11
+			}
+        }
+    }
+}

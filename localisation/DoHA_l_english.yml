@@ -1,0 +1,33 @@
+﻿l_english:
+ #decisions
+ DoHA_jiangdu_nation_title:0 "The Arts of War"
+ DoHA_jiangdu_nation_desc:0 "Jiangdu, the great River Capital, was the center of Yanshen. Their generals are famous for their understanding on tactics, manuevers, formations, and other strategic knowledge. Since we finally take control of this pearl, maybe we can learn one thing or two from our former enermy. "
+ 
+ follow_the_path_of_hiderion_title:0 "§TFollow the Path of Hiderion§!"
+ follow_the_path_of_hiderion_desc:0 "Scattered throughout the lands of Haless lie those elves left behind by the cataclysmic fall of the Phoenix Empire. Hunted out of vengeance and distrusted by most, they scrape by as best they can, living in squalor for centuries until they finally pass from this world. For most this seems a fitting punishment for the invaders and oppressors of this land, though others see a path for redemption. The great lord Hiderion ruled over his human subjects not as a tyrant but as their righteous guardian, a true servant of the people and a paragon of the ideals set by Jaerel.\n\nFor the elves of Haless to thrive in this land, they must do so as equals of those that have called this land home for millenia, united in harmony under an serene empire, built on the virtues Hiderion lived by. We must not rule Haless as conquerors, nor as her "saviors". We must rule as her guardians, protectors of the peace and sentinels against those that would seek to exploit her."
+ 
+ DoHA_establish_the_mo_empire_title:0 "Reform the Mo Empire"
+ DoHA_establish_the_mo_empire_desc:0 "The nation of Oni is lost to history, but the demon within will never disappear. The people of Haless may not understand the claims of Left-hand Path for now, but time will prove invaluable for what we have learned from Oni. Now that we've taken control of Oni's great Shirgrii, it's time to clear the dust and let the world see the glory of left-hand! "
+ 
+ DoHA_plunder_the_temples_title:0 "Plunder the Temples!"
+ DoHA_plunder_the_temples_desc:0 "With the invention of the Korashi Drill, a relatively simple device - given one can acquire the necessary Black Damestear - the previously impervious defenses of the High Temples can now be overcome, and their riches can be looted."
+ 
+ #events
+ DoHA_Halessi.9.t:0 "The Art of War"
+ DoHA_Halessi.9.d:0 "Jiangdu was a worthy enemy to our kingdom. Although we may have bested them in battle, we pay respects to those who managed to make us fear. Unfortunately, we overcame said shock, and have sieged their lands. As the soldiers begin their march back home, a veteran soldier with many titles laid his sword on the field. He said:\n 'Today, marks a new era. Not just for us, not just for Yanshen, but for the whole world. We just happened to be the ones to make the difference.'\nWhile we believe that we were destined to unite those around us, we can't help but ponder his words. This truly seems like a new era. Let us pray it will be of peace and prosperity."
+ DoHA_Halessi.9.a:0 "Enemies of the past, friends of today. Let's walk into a new era together."
+ 
+ DoHA_Halessi.12.d:0 "The leaders of the great Shirgrii have all gathered in Shinukhorchi to present their candidate to the [Root.Monarch.GetTitle] in hopes they'll be chosen as the loyal advisor. As is ruled, they've also brought tributes in the form of knowledge or gold from their temple."
+ 
+ #event modifiers
+ DoHA_oni_adviser_shinukhorchi:0 "shinukhorchi advisor"
+ DoHA_oni_adviser_chumijemoya:0 "chumijemoya advisor"
+ DoHA_oni_adviser_ajgriijarul:0 "ajgriijarul advisor"
+ DoHA_oni_adviser_kabiurgarko:0 "kabiurgarko advisor"
+ DoHA_oni_adviser_khelorvalshi:0 "khelorvalshi advisor"
+ 
+ #estates
+ estate_xia_military:0 "§TXia Military§!"
+ estate_xia_military_desc:0 "The Xiaken have a peculiar military system. Only powerful martial masters go to battle, wielding techniques unimaginable to common people.\n\n§RThis privilege will reduce the effect of quantity ideas! §!"
+ estate_eunuchs_supremacy_over_crown:0 "Supremacy over the [Root.GetStateForm]"
+ estate_eunuchs_supremacy_over_crown_desc:0 "With the scales tipping towards the decentralization of power, the Estates are increasingly able to dictate their priorities to the [Root.Monarch.GetTitle], leaving [Root.Monarch.GetHerHim] little choice but to agree to their will."

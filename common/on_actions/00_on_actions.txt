@@ -11532,28 +11532,26 @@ on_convert_by_trade_policy = {
 # province
 # FROM = old owner
 on_province_owner_change = {
-#######################################################################
-################### ANEX
-#######################################################################
+ #######################################################################
+ ################### ANEX
+ #######################################################################
 	if = {
 		limit = {
-			FROM = {
-				every_enemy_country = {
+			owner = {
+				all_war_enemy_countries = {
 					has_any_disaster = no
 				}
-			}
-			owner = {
 				has_any_disaster = no
-				# ai = no
+				ai = no
 			}
 		}
 		remove_buildings = {
 			chance = 50
 		}
 	}
-#######################################################################
-################### END ANEX
-#######################################################################
+ #######################################################################
+ ################### END ANEX
+ #######################################################################
 	events = {
 		# japan.1
 		race_setup_events.21 # re-add province flags for present races to newly emptied provinces (we have the define that clears these on uncolonise) - must fire before race_setup_events.17

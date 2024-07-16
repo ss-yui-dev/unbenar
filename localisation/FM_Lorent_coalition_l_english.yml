@@ -1,0 +1,14 @@
+﻿l_english:
+ #decisions
+ coalition_against_lorent_title:0 "Coalition Against Lorent"
+ coalition_against_lorent_desc:0 "We lords of Lencenor must fight together. Otherwise we'll fall into the hands that tyrannt king again."
+ 
+ #events
+ coalition_against_lorent.1.t:0 "A Coalition Against Lorent?"
+ coalition_against_lorent.1.desc:0 "Rumors said that our rebellious vassals have made a agreement in private: if we attack one of them, they will fight together for so-called 'freefom'. Prepare carefully before we attack..."
+ coalition_against_lorent.1.a:0 "They will find no safety in mere numbers...\n§RAll other country in Lencor might form a coalition against us if we attack them!§!\n§GShould we all align with one of them, they would be more likely on our side...§!"
+ 
+ coalition_against_lorent.2.t:0 "A Coalition Against Lorent?"
+ coalition_against_lorent.2.desc:0 "An urgent request comes from one of the wine lord, saying that Lorent is adopting aggressiive diplomat policy and is planning to revoke our independence one by one. They ask us to form a league with them, fighting againts Lorent together."
+ coalition_against_lorent.2.a:0 "To war, to freedom!"
+ coalition_against_lorent.2.b:0 "No, Lorent is too powerful."

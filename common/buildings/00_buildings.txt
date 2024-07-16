@@ -27,7 +27,7 @@
 # Tier 1, 15th Century Buildings
 ################################################
 marketplace = {
-	cost = 200
+	cost = 155 #love
 	time = 12
 
 	modifier = {
@@ -137,7 +137,7 @@ marketplace = {
 }
 
 workshop = {
-	cost = 250
+	cost = 195 #love
 	time = 12
 	modifier = {
 		trade_goods_size_modifier = 0.10
@@ -323,7 +323,7 @@ workshop = {
 }
 
 temple = {
-	cost = 100
+	cost = 75 #love
 	time = 12
 	build_trigger = {
 		num_free_building_slots = 1
@@ -475,7 +475,7 @@ temple = {
 }
 
 barracks = {
-	cost = 200
+	cost = 155 #love
 	time = 12
 	modifier = {
 		local_manpower_modifier = 0.5
@@ -534,28 +534,6 @@ barracks = {
 	on_obsolete = {
 	}
 
-#	# THIS = Province, FROM = Builder(not nessecairly owner, can be overlord)
-#	on_built = {
-#		FROM = {
-#			add_army_professionalism = 0.005
-#		}
-#	}
-#
-#	# THIS = Province, FROM = Destroyer, Will not be called on buildings made obsolete!
-#	on_destroyed = {
-#		FROM = {
-#			add_army_professionalism = -0.01
-#		}
-#	}
-#
-#	# THIS = Province, FROM = Destroyer, Will not be called on buildings destroyed!
-#	on_obsolete = {
-#		hidden_effect = {
-#			FROM = {
-#				add_army_professionalism = -0.005
-#			}
-#		}
-#	}
 
 	ai_will_do = {
 		factor = 2
@@ -682,7 +660,7 @@ barracks = {
 }
 
 shipyard = {
-	cost = 200
+	cost = 155 #love
 	time = 12
 	build_trigger = {
 		has_port = yes
@@ -787,7 +765,7 @@ shipyard = {
 }
 
 fort_15th = {
-	cost = 500
+	cost = 385 #love
 	time = 60
 	modifier = {
 		fort_level = 2
@@ -1019,7 +997,7 @@ fort_15th = {
 
 coastal_defence = {
 
-	cost = 200
+	cost = 155 #love
 	time = 12
 	build_trigger = {
 		has_port = yes
@@ -1043,7 +1021,7 @@ coastal_defence = {
 # Tier 2, 16th Century Buildings
 ################################################
 courthouse = {
-	cost = 200
+	cost = 155 #love
 	time = 12
 	modifier = {
 		state_maintenance_modifier = -0.0025
@@ -1197,7 +1175,7 @@ courthouse = {
 }
 
 dock = {
-	cost = 200
+	cost = 155 #love
 	time = 12
 	build_trigger = {
 		has_port = yes
@@ -1301,35 +1279,13 @@ dock = {
 }
 
 regimental_camp = {
-	cost = 200
+	cost = 155 #love
 	time = 12
 	modifier = {
 		land_forcelimit = 0.25
 		regiment_recruit_speed = -0.1
 	}
 
-#	# THIS = Province, FROM = Builder(not nessecairly owner, can be overlord)
-#	on_built = {
-#		FROM = {
-#			add_army_professionalism = 0.005
-#		}
-#	}
-#
-#	# THIS = Province, FROM = Destroyer, Will not be called on buildings made obsolete!
-#	on_destroyed = {
-#		FROM = {
-#			add_army_professionalism = -0.01
-#		}
-#	}
-#
-#	# THIS = Province, FROM = Destroyer, Will not be called on buildings destroyed!
-#	on_obsolete = {
-#		hidden_effect = {
-#			FROM = {
-#				add_army_professionalism = -0.005
-#			}
-#		}
-#	}
 	on_built = {
 		add_development_from_building = {
 			building = regimental_camp
@@ -1433,7 +1389,7 @@ regimental_camp = {
 }
 
 fort_16th = {
-	cost = 1000
+	cost = 770 #love
 	time = 60
 	make_obsolete = fort_15th
 	modifier = {
@@ -1629,7 +1585,7 @@ fort_16th = {
 naval_battery = {
 
 	make_obsolete = coastal_defence
-	cost = 400
+	cost = 310 #love
 	time = 12
 	build_trigger = {
 		has_port = yes
@@ -1656,7 +1612,7 @@ naval_battery = {
 cathedral = {
 	make_obsolete = temple
 
-	cost = 200
+	cost = 155 #love
 	time = 12
 	build_trigger = {
 		num_free_building_slots = 1
@@ -1764,7 +1720,7 @@ cathedral = {
 }
 
 university = {
-	cost = 800
+	cost = 615 #love
 	time = 12
 	modifier = {
 		local_development_cost = -0.20
@@ -1946,7 +1902,7 @@ university = {
 }
 
 trade_depot = {
-	cost = 400
+	cost = 310 #love
 	time = 12
 
 	make_obsolete = marketplace
@@ -2059,7 +2015,7 @@ trade_depot = {
 }
 
 grand_shipyard = {
-	cost = 400
+	cost = 310 #love
 	time = 12
 
 	make_obsolete = shipyard
@@ -2184,33 +2140,11 @@ grand_shipyard = {
 }
 
 training_fields = {
-	cost = 350
+	cost = 270 #love
 	time = 12
 
 	make_obsolete = barracks
 
-#	# THIS = Province, FROM = Builder(not nessecairly owner, can be overlord)
-#	on_built = {
-#		FROM = {
-#			add_army_professionalism = 0.01
-#		}
-#	}
-#
-#	# THIS = Province, FROM = Destroyer, Will not be called on buildings made obsolete!
-#	on_destroyed = {
-#		FROM = {
-#			add_army_professionalism = -0.02
-#		}
-#	}
-#
-#	# THIS = Province, FROM = Destroyer, Will not be called on buildings destroyed!
-#	on_obsolete = {
-#		hidden_effect = {
-#			FROM = {
-#				add_army_professionalism = -0.01
-#			}
-#		}
-#	}
 
 	modifier = {
 		local_manpower_modifier = 1.0
@@ -2394,7 +2328,7 @@ training_fields = {
 }
 
 fort_17th = {
-	cost = 1500
+	cost = 1155 #love
 	time = 60
 
 	make_obsolete = fort_16th
@@ -2592,7 +2526,7 @@ fort_17th = {
 # Tier 4, 18th Century Buildings
 ################################################
 stock_exchange = {
-	cost = 600
+	cost = 465 #love
 	time = 12
 
 	make_obsolete = trade_depot
@@ -2729,7 +2663,7 @@ stock_exchange = {
 }
 
 counting_house = {
-	cost = 400
+	cost = 310 #love
 	time = 12
 
 	make_obsolete = workshop
@@ -2923,7 +2857,7 @@ counting_house = {
 }
 
 town_hall = {
-	cost = 500
+	cost = 385 #love
 	time = 12
 
 	make_obsolete = courthouse
@@ -3122,7 +3056,7 @@ town_hall = {
 }
 
 drydock = {
-	cost = 400
+	cost = 310 #love
 	time = 12
 
 	make_obsolete = dock
@@ -3196,34 +3130,12 @@ drydock = {
 }
 
 conscription_center = {
-	cost = 400
+	cost = 310 #love
 	time = 12
 
 
 	make_obsolete = regimental_camp
 
-#	# THIS = Province, FROM = Builder(not nessecairly owner, can be overlord)
-#	on_built = {
-#		FROM = {
-#			add_army_professionalism = 0.01
-#		}
-#	}
-#
-#	# THIS = Province, FROM = Destroyer, Will not be called on buildings made obsolete!
-#	on_destroyed = {
-#		FROM = {
-#			add_army_professionalism = -0.02
-#		}
-#	}
-#
-#	# THIS = Province, FROM = Destroyer, Will not be called on buildings destroyed!
-#	on_obsolete = {
-#		hidden_effect = {
-#			FROM = {
-#				add_army_professionalism = -0.01
-#			}
-#		}
-#	}
 
 	build_trigger = {
 		owner = {
@@ -3348,7 +3260,7 @@ conscription_center = {
 }
 
 fort_18th = {
-	cost = 2000
+	cost = 1540 #love
 	time = 60
 
 
@@ -3545,7 +3457,7 @@ fort_18th = {
 ################################################
 
 manufactory = {
-	cost = 1000
+	cost = 770 #love
 	time = 60
 	modifier = {
 		trade_goods_size = 1.2
@@ -6058,7 +5970,7 @@ restoring_hold = {
 }
 
 triunic_road = {
-	cost = 50
+	cost = 40 #love
 	time = 6
 
 	indestructible = yes
@@ -6132,7 +6044,7 @@ adenica_grand_tourney_grounds = {
 }
 
 fort_magic = {
-	cost = 1500
+	cost = 1155 #love
 	time = 30
 
 	modifier = {
@@ -6176,7 +6088,7 @@ fort_magic = {
 }
 
 world_tree_lvl_1 = {
-	cost = 2000
+	cost = 1540 #love
 	time = 60
 
 	indestructible = yes
@@ -6281,7 +6193,7 @@ world_tree_lvl_1 = {
 }
 
 world_tree_lvl_2 = {
-	cost = 2000
+	cost = 1540 #love
 	time = 120
 
 	indestructible = yes
@@ -6321,7 +6233,7 @@ world_tree_lvl_2 = {
 }
 
 world_tree_lvl_3 = {
-	cost = 2000
+	cost = 1540 #love
 	time = 180
 
 	indestructible = yes
@@ -6577,7 +6489,7 @@ digging_deeper = {
 }
 
 ziggurat_of_surakel = {
-	cost = 1000
+	cost = 770 #love
 	time = 120
 
 	build_trigger = {
@@ -6705,7 +6617,7 @@ garden_of_secrets_3 = {
 }
 
 jaddari_sunset_temple = {
-	cost = 2000
+	cost = 1540 #love
 	time = 120
 
 	build_trigger = {
@@ -6728,7 +6640,7 @@ jaddari_sunset_temple = {
 }
 
 jaddari_sunrise_temple = {
-	cost = 2000
+	cost = 1540 #love
 	time = 120
 
 	build_trigger = {
@@ -7057,7 +6969,7 @@ xhazobkult_pyre = {
 
 #Mulen
 hanging_city_foundation = {
-	cost = 500
+	cost = 385 #love
 	time = 24
 
 	indestructible = yes
@@ -7099,7 +7011,7 @@ hanging_city_foundation = {
 
 trade_lvl_4 = {
 	make_obsolete = stock_exchange
-	cost = 800
+	cost = 615 #love
 	time = 12
 
 	modifier = {
@@ -7207,7 +7119,7 @@ trade_lvl_4 = {
 
 production_lvl_3 = {
 	make_obsolete = counting_house
-	cost = 550
+	cost = 425 #love
 	time = 12
 
 	allow_in_gold_provinces = no
@@ -7398,7 +7310,7 @@ production_lvl_3 = {
 
 production_lvl_4 = {
 	make_obsolete = production_lvl_3
-	cost = 700
+	cost = 540 #love
 	time = 12
 
 	allow_in_gold_provinces = no
@@ -7587,7 +7499,7 @@ production_lvl_4 = {
 }
 
 production_lvl_5 = {
-	cost = 950
+	cost = 730 #love
 	time = 12
 
 	make_obsolete = production_lvl_4
@@ -7780,7 +7692,7 @@ production_lvl_5 = {
 
 manpower_lvl_3 = {
 	make_obsolete = training_fields
-	cost = 500
+	cost = 385 #love
 	time = 12
 
 	modifier = {
@@ -7944,7 +7856,7 @@ manpower_lvl_3 = {
 
 forcelimit_lvl_3 = {
 	make_obsolete = conscription_center
-	cost = 600
+	cost = 460 #love
 	time = 12
 
 	build_trigger = {
@@ -8061,7 +7973,7 @@ forcelimit_lvl_3 = {
 }
 
 navymanpower_lvl_3 = {
-	cost = 600
+	cost = 460 #love
 	time = 12
 	make_obsolete = drydock
 
@@ -8182,7 +8094,7 @@ navymanpower_lvl_3 = {
 
 navyforcelimit_lvl_3 = {
 	make_obsolete = grand_shipyard
-	cost = 600
+	cost = 460 #love
 	time = 12
 
 	build_trigger = {
@@ -8431,7 +8343,7 @@ tax_house = {
 ################################################
 
 education_lvl_1 = {
-	cost = 100
+	cost = 77 #love
 	time = 12
 
 	build_trigger = {
@@ -8460,7 +8372,7 @@ education_lvl_1 = {
 }
 
 education_lvl_2 = {
-	cost = 450
+	cost = 340 #love
 	time = 12
 
 	build_trigger = {
@@ -8560,7 +8472,7 @@ education_lvl_2 = {
 ################################################
 
 war_college_1 = {
-	cost = 1000
+	cost = 770 #love
 	time = 120
 
 	build_trigger = {
@@ -8593,7 +8505,7 @@ war_college_1 = {
 }
 
 war_college_2 = {
-	cost = 5000
+	cost = 3850 #love
 	time = 120
 
 	build_trigger = {
@@ -8619,7 +8531,7 @@ war_college_2 = {
 }
 
 war_college_3 = {
-	cost = 10000
+	cost = 7700 #love
 	time = 120
 
 	build_trigger = {
@@ -8999,7 +8911,7 @@ triumphal_arch_3 = {
 }
 
 cia_1 = {
-	cost = 7500
+	cost = 5770 #love
 	time = 120
 
 	build_trigger = {
@@ -9022,7 +8934,7 @@ cia_1 = {
 }
 
 cia_2 = {
-	cost = 7500
+	cost = 5770 #love
 	time = 120
 
 	one_per_country = yes
@@ -9041,7 +8953,7 @@ cia_2 = {
 }
 
 cia_3 = {
-	cost = 7500
+	cost = 5770 #love
 	time = 120
 
 	one_per_country = yes
@@ -9060,7 +8972,7 @@ cia_3 = {
 }
 
 tax_office_1 = {
-	cost = 5000
+	cost = 3850 #love
 	time = 60
 
 	build_trigger = {
@@ -9079,7 +8991,7 @@ tax_office_1 = {
 }
 
 tax_office_2 = {
-	cost = 5000
+	cost = 3850 #love
 	time = 60
 
 	one_per_country = yes
@@ -9094,7 +9006,7 @@ tax_office_2 = {
 }
 
 tax_office_3 = {
-	cost = 5000
+	cost = 3850 #love
 	time = 60
 
 	one_per_country = yes
@@ -9109,7 +9021,7 @@ tax_office_3 = {
 }
 
 trade_office_1 ={
-	cost = 10000
+	cost = 7700 #love
 	time = 120
 
 	build_trigger = {
@@ -9130,7 +9042,7 @@ trade_office_1 ={
 }
 
 trade_office_2 ={
-	cost = 10000
+	cost = 7700 #love
 	time = 120
 
 	one_per_country = yes
@@ -9147,7 +9059,7 @@ trade_office_2 ={
 }
 
 trade_office_3 ={
-	cost = 10000
+	cost = 7700 #love
 	time = 120
 
 	one_per_country = yes
@@ -9163,7 +9075,7 @@ trade_office_3 ={
 }
 
 naval_arsenal_1 = {
-	cost = 10000
+	cost = 7700 #love
 	time = 120
 
 	build_trigger = {
@@ -9187,7 +9099,7 @@ naval_arsenal_1 = {
 }
 
 naval_arsenal_2 = {
-	cost = 10000
+	cost = 7700 #love
 	time = 120
 
 	one_per_country = yes
@@ -9208,7 +9120,7 @@ naval_arsenal_2 = {
 }
 
 naval_arsenal_3 = {
-	cost = 10000
+	cost = 7700 #love
 	time = 120
 
 	one_per_country = yes
@@ -9271,7 +9183,7 @@ production_office_3 = {
 }
 
 national_bank_1 = {
-	cost = 1000
+	cost = 770 #love
 	time = 120
 
 	build_trigger = {
@@ -9298,7 +9210,7 @@ national_bank_1 = {
 }
 
 national_bank_2 = {
-	cost = 5000
+	cost = 3850 #love
 	time = 120
 
 	one_per_country = yes
@@ -9316,7 +9228,7 @@ national_bank_2 = {
 }
 
 national_bank_3 = {
-	cost = 10000
+	cost = 7700
 	time = 120
 
 	one_per_country = yes
@@ -9354,7 +9266,7 @@ black_castle = {
 ################################################
 
 blacksmith = {
-	cost = 200
+	cost = 155 #love
 	time = 12
 	modifier = {
 		local_regiment_cost = -0.5
@@ -9366,7 +9278,7 @@ blacksmith = {
 }
 
 theatre_lvl_1 = {
-	cost = 350
+	cost = 270 #love
 	time = 12
 
 
@@ -9382,7 +9294,7 @@ theatre_lvl_1 = {
 }
 
 theatre_lvl_2 = {
-	cost = 800
+	cost = 615 #love
 	time = 12
 
 	make_obsolete = theatre_lvl_1
@@ -9401,7 +9313,7 @@ theatre_lvl_2 = {
 }
 
 carpenter = {
-	cost = 250
+	cost = 192 #love
 	time = 12
 
 	build_trigger = {
@@ -9424,7 +9336,7 @@ carpenter = {
 ################################################
 
 infrastructure_lvl_1 = { # Dirt Track
-	cost = 100
+	cost = 77 #love
 	time = 12
 	build_trigger = {
 		num_free_building_slots = 1
@@ -9498,7 +9410,7 @@ infrastructure_lvl_1 = { # Dirt Track
 
 infrastructure_lvl_2 = {
 	make_obsolete = infrastructure_lvl_1
-	cost = 200
+	cost = 155 #love
 	time = 12
 	build_trigger = {
 		num_free_building_slots = 1
@@ -9571,7 +9483,7 @@ infrastructure_lvl_2 = {
 
 infrastructure_lvl_3 = {
 	make_obsolete = infrastructure_lvl_2
-	cost = 300
+	cost = 230 #love
 	time = 12
 	build_trigger = {
 		num_free_building_slots = 1
@@ -9644,7 +9556,7 @@ infrastructure_lvl_3 = {
 
 infrastructure_lvl_4 = {
 	make_obsolete = infrastructure_lvl_3
-	cost = 400
+	cost = 307 #love
 	time = 12
 	build_trigger = {
 		num_free_building_slots = 1
@@ -9716,7 +9628,7 @@ infrastructure_lvl_4 = {
 }
 
 canal_system_lvl_1 = {
-	cost = 300
+	cost = 230 #love
 	time = 12
 
 	modifier = {
@@ -9732,7 +9644,7 @@ canal_system_lvl_1 = {
 }
 
 canal_system_lvl_2 = {
-	cost = 600
+	cost = 460 #love
 	time = 12
 
 	make_obsolete = canal_system_lvl_1
@@ -9757,7 +9669,7 @@ canal_system_lvl_2 = {
 
 government_lvl_3 = {
 	make_obsolete = town_hall
-	cost = 700
+	cost = 540 #love
 	time = 12
 
 	build_trigger = {
@@ -9919,7 +9831,7 @@ government_lvl_3 = {
 
 government_lvl_4 = {
 	make_obsolete = government_lvl_3
-	cost = 900
+	cost = 700 #love
 	time = 12
 
 	build_trigger = {
@@ -10091,7 +10003,7 @@ government_lvl_4 = {
 # Terrain / Terrain
 ################################################
 terrain_land = {
-	cost = 400
+	cost = 307 #love
 	time = 12
 
 	build_trigger = {
@@ -10178,7 +10090,7 @@ terrain_land = {
 }
 
 terrain_woodland = {
-	cost = 500
+	cost = 385 #love
 	time = 18
 
 	build_trigger = {
@@ -10261,7 +10173,7 @@ terrain_woodland = {
 }
 
 terrain_desert = {
-	cost = 800
+	cost = 615 #love
 	time = 18
 
 	build_trigger = {
@@ -10342,7 +10254,7 @@ terrain_desert = {
 }
 
 terrain_hills = {
-	cost = 600
+	cost = 460 #love
 	time = 18
 
 	build_trigger = {
@@ -10426,7 +10338,7 @@ terrain_hills = {
 }
 
 terrain_art = {
-	cost = 1000
+	cost = 770 #love
 	time = 24
 
 	build_trigger = {
@@ -10509,7 +10421,7 @@ terrain_art = {
 }
 
 terrain_jungle = {
-	cost = 500
+	cost = 385 #love
 	time = 18
 
 	build_trigger = {
@@ -10605,7 +10517,7 @@ terrain_jungle = {
 }
 
 terrain_swamp = {
-	cost = 500
+	cost = 385 #love
 	time = 12
 
 	build_trigger = {
@@ -10684,7 +10596,7 @@ terrain_swamp = {
 }
 
 terrain_coastal = {
-	cost = 400
+	cost = 307 #love
 	time = 12
 
 	build_trigger = {
@@ -10775,7 +10687,7 @@ terrain_coastal = {
 ################################################
 
 taxation_lvl_1 = { 
-	cost = 100
+	cost = 77 #love
 	time = 12
 
 	modifier = {
@@ -10970,7 +10882,7 @@ taxation_lvl_1 = {
 
 taxation_lvl_2 = {
 	make_obsolete = taxation_lvl_1
-	cost = 250
+	cost = 192 #love
 	time = 12
 
 	modifier = {
@@ -11167,7 +11079,7 @@ taxation_lvl_2 = {
 
 taxation_lvl_3 = {
 	make_obsolete = taxation_lvl_2
-	cost = 400
+	cost = 307 #love
 	time = 12
 
 	modifier = {
@@ -11366,7 +11278,7 @@ taxation_lvl_3 = {
 
 taxation_lvl_4 = {
 	make_obsolete = taxation_lvl_3
-	cost = 500
+	cost = 385 #love
 	time = 12
 
 	modifier = {
@@ -11571,7 +11483,7 @@ taxation_lvl_4 = {
 ################################################
 
 navalbase_lvl_1 = {
-	cost = 400
+	cost = 307 #love
 	time = 36
 
 	build_trigger = {
@@ -11643,7 +11555,7 @@ navalbase_lvl_1 = {
 
 navalbase_lvl_2 = {
 	make_obsolete = navalbase_lvl_1
-	cost = 800
+	cost = 615 #love
 	time = 36
 
 	build_trigger = {
@@ -11699,7 +11611,7 @@ navalbase_lvl_2 = {
 # Fortress
 ################################################
 fortress_keep = {
-	cost = 250
+	cost = 192 #love
 	time = 12
 
 	build_trigger = {
@@ -11729,7 +11641,7 @@ fortress_keep = {
 
 fortress_barracks = {
 	make_obsolete = fortress_keep
-	cost = 500
+	cost = 385 #love
 	time = 12
 
 	build_trigger = {
@@ -11761,7 +11673,7 @@ fortress_barracks = {
 
 fortress_towers = {
 	make_obsolete = fortress_barracks
-	cost = 750
+	cost = 577 #love
 	time = 24
 
 	build_trigger = {
@@ -11793,7 +11705,7 @@ fortress_towers = {
 
 fortress_artillery = {
 	make_obsolete = fortress_towers
-	cost = 1000
+	cost = 770 #love
 	time = 24
 
 	build_trigger = {
@@ -11824,7 +11736,7 @@ fortress_artillery = {
 
 fortress_wall = {
 	make_obsolete = fortress_artillery
-	cost = 1250
+	cost = 961 #love
 	time = 24
 
 	build_trigger = {
@@ -11855,7 +11767,7 @@ fortress_wall = {
 
 fortress_supply = {
 	make_obsolete = fortress_wall
-	cost = 1500
+	cost = 1153 #love
 	time = 24
 
 	build_trigger = {

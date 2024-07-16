@@ -30,6 +30,7 @@ DA_Minor_Enhanced_brain_personality = {
 	peace_desire = -10
 	
 	all_power_cost = -0.025
+	immortal = 0
 
 }
 DA_Minor_Warrior_mentality_personality = {
@@ -61,6 +62,7 @@ DA_Minor_Warrior_mentality_personality = {
 	
 	discipline = 0.05
 	land_morale = 0.025
+	immortal = 0
 	
 }
 DA_Minor_Pheromones_personality = {
@@ -93,6 +95,7 @@ DA_Minor_Pheromones_personality = {
 	
 	diplomatic_reputation = 1
 	improve_relation_modifier = 0.20
+	immortal = 0
 	
 }
 DA_Minor_Living_calculator_personality = {
@@ -125,6 +128,7 @@ DA_Minor_Living_calculator_personality = {
 	global_tax_modifier = 0.10
 	trade_efficiency = 0.15
 	trade_steering = 0.05
+	immortal = 0
 	
 }
 DA_Minor_Perceptive_personality = {
@@ -158,6 +162,7 @@ DA_Minor_Perceptive_personality = {
 	
 	state_maintenance_modifier = -0.15
 	yearly_corruption = -0.05
+	immortal = 0
 	
 }
 # tier 3 unlockable via event
@@ -192,6 +197,7 @@ DA_Enhanced_brain_personality = {
 	
 	
 	all_power_cost = -0.05
+	immortal = 0
 
 }
 DA_Warrior_mentality_personality = {
@@ -223,6 +229,7 @@ DA_Warrior_mentality_personality = {
 	
 	discipline = 0.075
 	land_morale = 0.05
+	immortal = 0
 	
 }
 DA_Pheromones_personality = {
@@ -255,6 +262,7 @@ DA_Pheromones_personality = {
 	
 	diplomatic_reputation = 2
 	improve_relation_modifier = 0.50
+	immortal = 0
 	
 }
 DA_Living_calculator_personality = {
@@ -288,6 +296,7 @@ DA_Living_calculator_personality = {
 	global_tax_modifier = 0.20
 	trade_efficiency = 0.20
 	global_trade_goods_size_modifier = 0.05
+	immortal = 0
 	
 }
 DA_Perceptive_personality = {
@@ -321,6 +330,7 @@ DA_Perceptive_personality = {
 	
 	state_maintenance_modifier = -0.25
 	yearly_corruption = -0.10
+	immortal = 0
 	
 }
 
@@ -347,8 +357,12 @@ DA_Damestear_dwarf_personality = {
 	
 	
 	monarch_lifespan = 100
+	legitimacy = 1
+	devotion = 1
+	republican_tradition = 0.5
 	prestige = 1
 	monthly_splendor = 1
+	immortal = 0
 	
 }
 
@@ -372,10 +386,11 @@ DA_Dwarven_Divinity_personality = {
 		}
 	}
 
-	
-	easy_war_chance_multiplier = 0.5
-	fair_fights = yes
-	
+
 	monarch_lifespan = 100
+	prestige = 1
+	diplomatic_reputation = 1
+	monthly_splendor = 2
+	immortal = 0
 	
 }

@@ -1,0 +1,5 @@
+estate_eunuchs = {
+	privileges = {
+		estate_eunuchs_supremacy_over_crown
+	}
+}

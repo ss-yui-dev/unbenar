@@ -85,12 +85,27 @@ country_event = {
 		}
 		modifier = {
 			factor = 0.85
-			has_estate_privilege = estate_DA_Runesmiths_patronage
+			has_country_modifier = DA_Runesmith_patronage
 		}
 		modifier = {
-			factor = 0.75
+			factor = 0.90
+			OR = {
+				has_estate_privilege = estate_DA_Runesmiths_RF_4
+				has_estate_privilege = estate_DA_Runesmiths_RF_5
+			}
+		}
+		modifier = {
+			factor = 0.85
+			OR = {
+				has_estate_privilege = estate_DA_Runesmiths_RF_6
+				has_estate_privilege = estate_DA_Runesmiths_RF_7
+			}
+		}
+		modifier = {
+			factor = 0.80
 			OR = {
 				has_estate_privilege = estate_DA_Runesmiths_RF_8
+				has_estate_privilege = estate_DA_Runesmiths_RF_9
 				has_estate_privilege = estate_DA_Runesmiths_RF_10
 				has_estate_privilege = estate_DA_Runesmiths_RF_11
 			}
@@ -133,7 +148,7 @@ country_event = {
 		goto = DA_buildable_province1
 		add_country_modifier = {
 			name = DA_Madman_Chief_researcher
-			duration = 54750
+			duration = 36500
 		}
 		custom_tooltip = DA_meteorites_tt
 		event_target:DA_buildable_province1 = {
@@ -379,7 +394,7 @@ province_event = {
 	id = DA_Dur_Vazhatun_event.6 # 
 	title = "DA_Dur_Vazhatun_event.6.t"
 	desc = "DA_Dur_Vazhatun_event.6.d"
-	picture = BIG_STAR_IN_SKY_eventPicture
+	picture = COMET_SIGHTED_eventPicture
 	trigger = {
 		owner = {
 			NOT = {

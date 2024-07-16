@@ -4595,6 +4595,7 @@ standing_army_idea_groups = {
 	}
 	standing_army_7 = {
 		discipline = 0.05
+		# discipline_efficiency = 0.05
 		# discipline = 0.035 per Age
 	}
 	ai_will_do = {

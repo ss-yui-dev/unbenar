@@ -1043,7 +1043,7 @@ estate_burghers_monopoly_of_glass = {
 		}
 	}
 	on_cooldown_expires = {
-		country_event = { id = monopoly_privileges.3 }
+		country_event = { id = monopoly_privileges.3 } #love
 	}
 	ai_will_do = {
 		factor = 0

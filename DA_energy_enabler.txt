@@ -1,0 +1,164 @@
+
+DA_Complete.Elemental_Magic_Air = {
+	custom_tooltip = DA_Following_project_completed
+	custom_tooltip = DA_Elemental_Magic_Air.tt
+	hidden_effect = {
+		owner = {
+			set_country_flag = DA_Project.completed.Elemental_Magic_Air
+		}
+	}
+}
+DA_Complete.Elemental_Magic_Earth = {
+	custom_tooltip = DA_Following_project_completed
+	custom_tooltip = DA_Elemental_Magic_Earth.tt
+	hidden_effect = {
+		owner = {
+			set_country_flag = DA_Project.completed.Elemental_Magic_Earth
+		}
+	}
+}
+DA_Complete.Elemental_Magic_Water = {
+	custom_tooltip = DA_Following_project_completed
+	custom_tooltip = DA_Elemental_Magic_Water.tt
+	hidden_effect = {
+		owner = {
+			set_country_flag = DA_Project.completed.Elemental_Magic_Water
+		}
+	}
+}
+DA_Complete.Elemental_Magic_Fire = {
+	custom_tooltip = DA_Following_project_completed
+	custom_tooltip = DA_Elemental_Magic_Fire.tt
+	hidden_effect = {
+		owner = {
+			set_country_flag = DA_Project.completed.Elemental_Magic_Fire
+		}
+	}
+}
+DA_Complete.Universal_Law_Life = {
+	custom_tooltip = DA_Following_project_completed
+	custom_tooltip = DA_Universal_Law_Life.tt
+	hidden_effect = {
+		owner = {
+			set_country_flag = DA_Project.completed.Universal_Law_Life
+		}
+	}
+}
+DA_Complete.Universal_Law_Death = {
+	custom_tooltip = DA_Following_project_completed
+	custom_tooltip = DA_Universal_Law_Death.tt
+	hidden_effect = {
+		owner = {
+			set_country_flag = DA_Project.completed.Universal_Law_Death
+		}
+	}
+}
+DA_Complete.Universal_Law_Time = {
+	custom_tooltip = DA_Following_project_completed
+	custom_tooltip = DA_Universal_Law_Time.tt
+	hidden_effect = {
+		owner = {
+			set_country_flag = DA_Project.completed.Universal_Law_Time
+		}
+	}
+}
+DA_Complete.Universal_Law_Space = {
+	custom_tooltip = DA_Following_project_completed
+	custom_tooltip = DA_Universal_Law_Space.tt
+	hidden_effect = {
+		owner = {
+			set_country_flag = DA_Project.completed.Universal_Law_Space
+		}
+	}
+}
+
+DA_Complete.Motorization = {
+	custom_tooltip = DA_Following_project_completed
+	custom_tooltip = DA_Motorization.tt
+	hidden_effect = {
+		owner = {
+			set_country_flag = DA_Project.completed.Motorization
+		}
+	}
+}
+DA_Complete.Explosive = {
+	custom_tooltip = DA_Following_project_completed
+	custom_tooltip = DA_Explosive.tt
+	hidden_effect = {
+		owner = {
+			set_country_flag = DA_Project.completed.Explosive
+		}
+	}
+}
+DA_Complete.Golem = {
+	custom_tooltip = DA_Following_project_completed
+	custom_tooltip = DA_Golem.tt
+	hidden_effect = {
+		owner = {
+			set_country_flag = DA_Project.completed.Golem
+		}
+	}
+}
+DA_Complete.ClockWork = {
+	custom_tooltip = DA_Following_project_completed
+	custom_tooltip = DA_ClockWork.tt
+	hidden_effect = {
+		owner = {
+			set_country_flag = DA_Project.completed.ClockWork
+		}
+	}
+}
+DA_Complete.Enhancement = {
+	custom_tooltip = DA_Following_project_completed
+	custom_tooltip = DA_Enhancement.tt
+	hidden_effect = {
+		owner = {
+			set_country_flag = DA_Project.completed.Enhancement
+		}
+	}
+}
+DA_Complete.Bio_Construct = {
+	custom_tooltip = DA_Following_project_completed
+	custom_tooltip = DA_Bio_Construct.tt
+	hidden_effect = {
+		owner = {
+			set_country_flag = DA_Project.completed.Bio_Construct
+		}
+	}
+}
+DA_Complete.Resonance = {
+	custom_tooltip = DA_Following_project_completed
+	custom_tooltip = DA_Resonance.tt
+	hidden_effect = {
+		owner = {
+			set_country_flag = DA_Project.completed.Resonance
+		}
+	}
+}
+DA_Complete.Tesla = {
+	custom_tooltip = DA_Following_project_completed
+	custom_tooltip = DA_Tesla.tt
+	hidden_effect = {
+		owner = {
+			set_country_flag = DA_Project.completed.Tesla
+		}
+	}
+}
+DA_Complete.Soul_Genesis = {
+	custom_tooltip = DA_Following_project_completed
+	custom_tooltip = DA_Soul_Genesis.tt
+	hidden_effect = {
+		owner = {
+			set_country_flag = DA_Project.completed.Soul_Genesis
+		}
+	}
+}
+DA_Complete.Dimensional_eng = {
+	custom_tooltip = DA_Following_project_completed
+	custom_tooltip = DA_Dimensional_eng.tt
+	hidden_effect = {
+		owner = {
+			set_country_flag = DA_Project.completed.Dimensional_eng
+		}
+	}
+}
