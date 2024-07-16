@@ -1,0 +1,25 @@
+
+DoHA_oni_adviser_shinukhorchi = {
+	shinukhorchi_loyalty_modifier = 0.05
+	shinukhorchi_influence_modifier = 0.05
+}
+
+DoHA_oni_adviser_chumijemoya = {
+	chumijemoya_loyalty_modifier = 0.05
+	chumijemoya_influence_modifier = 0.05
+}
+
+DoHA_oni_adviser_ajgriijarul = {
+	ajgriijarul_loyalty_modifier = 0.05
+	ajgriijarul_influence_modifier = 0.05
+}
+
+DoHA_oni_adviser_kabiurgarko = {
+	kabiurgarko_loyalty_modifier = 0.05
+	kabiurgarko_influence_modifier = 0.05
+}
+
+DoHA_oni_adviser_khelorvalshi = {
+	khelorvalshi_loyalty_modifier = 0.05
+	khelorvalshi_influence_modifier = 0.05
+}

@@ -779,7 +779,11 @@ country_event = {
 	option = {
 		name = monopoly_privileges.1.b
 		custom_tooltip = monopoly_privileges.14.b.tooltip
-
+		# ANEX
+		remove_estate_privilege = estate_artificers_monopoly_of_relics
+		reduce_estate_artificers_loyalty_effect = yes
+		reduce_estate_artificers_loyalty_effect = yes
+		# END ANEX
 		hidden_effect = {
 			every_owned_province = {
 				limit = {

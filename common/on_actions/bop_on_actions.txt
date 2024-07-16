@@ -1,0 +1,70 @@
+on_five_year_pulse_3 = { #Bladesteward Estate Pulse: Put on pulse 3 to not overlap with other estates on pulse 2
+	random_events = {
+		150 = bladestewards_estate_events.3
+		150 = bladestewards_estate_events.4
+		100 = bladestewards_estate_events.5
+		100 = bladestewards_estate_events.6
+		100 = bladestewards_estate_events.7
+		200 = bladestewards_estate_events.8
+		100 = bladestewards_estate_events.9
+		250 = bladestewards_estate_events.10
+		100 = bladestewards_estate_events.11
+		200 = bladestewards_estate_events.12
+		250 = 0
+	}
+}
+
+
+on_startup = {
+	events = {
+		bop_flavor.0
+	}
+}
+
+on_new_monarch = {
+	events = {
+		bop_flavor.18
+	}
+}	
+
+on_religion_change = {
+	events = {
+		bop_flavor.19
+	}
+}
+
+
+#blademarches_sellblade_economy_effect = {
+#	if = {
+#		limit = {
+#			NOT = { owner = { has_reform = blademarches_sellblade_economy } }
+#			#FROM = { has_reform = blademarches_sellblade_economy }
+#			has_province_modifier = bop_weapons_manufactory_bonus
+#		}
+#		remove_province_modifier = bop_weapons_manufactory_bonus
+#	}
+#	if = {
+#		limit = {
+#			NOT = { has_province_modifier = bop_weapons_manufactory_bonus }
+#			owner = { has_reform = blademarches_sellblade_economy } }
+#			#NOT = { FROM = { has_reform = blademarches_sellblade_economy } }
+#		}
+#		hidden_effect = {
+#			if = {
+#				limit = {
+#					has_building = weapons
+#				}
+#				add_province_modifier = { 
+#					name = bop_weapons_manufactory_bonus
+#					duration = -1
+#					#hidden = yes
+#				}
+#			}
+#		}
+#	}
+#}
+
+
+
+
+

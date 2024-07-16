@@ -1,0 +1,197 @@
+
+country_decisions = {
+	
+	DoHA_jiangdu_nation = {
+		major = yes
+		potential = {
+			tag = Y09
+			NOT = { has_country_flag = formed_jiangdu_flag }
+			normal_or_historical_nations = yes
+			was_never_end_game_tag_trigger = yes
+			OR = {
+				owns_core_province = 4868
+				NOT = { exists = Y13 }
+			}
+		}
+
+
+		allow = {
+			is_at_war = no
+			is_free_or_tributary_trigger = yes
+			is_nomad = no
+			tag = Y09
+			owns_core_province = 4868
+			NOT = { exists = Y13 }
+		}
+		
+		effect = {
+			change_tag = Y13
+			swap_non_generic_missions = yes
+			country_event = { id = DoHA_Halessi.9 }
+			
+			4826 = {
+				add_permanent_province_modifier = {
+					name = jiangdu_command_city
+					duration = -1
+				}
+			}
+			hidden_effect = {
+				complete_mission = jiangdu_sight_of_winners
+				complete_mission = jiangdu_crashing_enemies
+				complete_mission = jiangdu_one_empire_under_sun
+			}
+			
+			set_country_flag = formed_jiangdu_flag
+		}
+	}
+	
+	
+	follow_the_path_of_hiderion = {
+		major = yes
+		potential = {
+			OR = {
+				ruler_culture = sun_elf
+				ruler_culture = sunrise_elf
+			}
+			capital_scope = {
+				OR = {
+					superregion = yanshen_superregion
+					superregion = north_haless_superregion
+					superregion = south_haless_superregion
+				}
+			}
+			tag = Y00
+			NOT = { was_tag = Y86 }
+			NOT = { exists = Y86 }
+		}
+		
+		provinces_to_highlight = {
+			AND = {
+				province_id = 4789
+				OR = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+			}
+		}
+		
+		allow = {
+			is_at_war = no
+			is_free_or_tributary_trigger = yes
+			OR = {
+				ruler_culture = sun_elf
+				ruler_culture = sunrise_elf
+			}
+			capital_scope = {
+				OR = {
+					superregion = yanshen_superregion
+					superregion = north_haless_superregion
+					superregion = south_haless_superregion
+				}
+			}
+			tag = Y00
+			NOT = { was_tag = Y86 }
+			NOT = { exists = Y86 }
+			owns_core_province = 4789
+		}
+		
+		effect = {
+			hidden_effect = {
+				change_tag = Y86
+				country_event = { id = DoHA_Halessi.1 }
+				if = {
+					limit = {
+						NOT = {
+							government = republic
+						}
+					}
+					change_government = republic
+					add_government_reform = sunrise_court_reform
+				}
+				else_if = {
+					limit = {
+						government = republic
+						NOT = {
+							has_reform = sunrise_court_reform
+						}
+					}
+					add_government_reform = sunrise_court_reform
+				}
+			}
+			swap_non_generic_missions = yes
+			hidden_effect = {
+				complete_mission = azkare_the_lady
+				complete_mission = azkare_the_lord
+				complete_mission = azkare_visiting_an_old_friend
+				complete_mission = azkare_a_shared_dream
+				complete_mission = azkare_the_brothers
+			}
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	DoHA_establish_the_mo_empire = {
+		major = yes
+		potential = {
+			religion = lefthand_path
+			NOT = { was_tag = Y01 }
+			NOT = { exists = Y01 }
+			normal_or_historical_nations = yes
+			#was_never_end_game_tag_trigger = yes
+			OR = {
+				owns_core_province = 5430
+				owns_core_province = 4831
+				owns_core_province = 4829
+				owns_core_province = 4828
+				owns_core_province = 4848
+			}
+			ai = no
+		}
+
+
+		allow = {
+			is_at_war = no
+			is_free_or_tributary_trigger = yes
+			is_nomad = no		
+			religion = lefthand_path
+			OR = {
+				primary_culture = horned_ogre
+				accepted_culture = horned_ogre
+			}
+			owns_core_province = 5430
+			owns_core_province = 4831
+			owns_core_province = 4829
+			owns_core_province = 4828
+			owns_core_province = 4848
+		}
+		
+		effect = {
+			change_tag_and_keep_color = { tag = Y01 }
+			override_country_name = CHOMORA
+			
+			if = {
+				limit = { has_custom_ideas = no }
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
+			
+			set_country_flag = oni_demon_empire_mission_unlock #enables second part
+			swap_non_generic_missions = yes
+			hidden_effect = {
+				complete_mission = Y01_way_forward
+			}
+			
+			add_stability = -2			
+			
+			if = {
+				limit = {
+					NOT = { government = monarchy }
+				}
+				change_government = monarchy
+			}
+			add_government_reform = demon_empire_reform
+		}
+	}
+}

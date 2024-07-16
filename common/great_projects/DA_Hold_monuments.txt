@@ -2,7 +2,7 @@
 #Dwarven Knowledge
 ####################
 #Ancient_Research_facility Halanna
-Ancient_Research_facility1 = {
+DA_Ancient_Research_facility1 = {
 	start = 4119
 	date = 2023.03.31
 	time = {
@@ -145,6 +145,7 @@ Ancient_Research_facility1 = {
 				}
 			}
 			change_trade_goods = damestear
+			custom_tooltip = DA_permanent_Damestear
 			hidden_effect = {
 				set_province_flag = permanent_damestear
 				province_event = {
@@ -156,7 +157,7 @@ Ancient_Research_facility1 = {
 	}
 }
 
-#The Dwarven Megalopolis
+#The Citadel Hold
 The_Dwarven_Megalopolis = {
 	start = 4119
 	date = 1600.01.01
@@ -208,7 +209,7 @@ The_Dwarven_Megalopolis = {
 						type = The_Dwarven_Megalopolis
 						tier = 0
 					}
-					NOT = { has_great_project = { type = The_Dwarven_Workshop tier = 1 } }
+					NOT = { has_great_project = { type = The_Dwarven_Megalopolis tier = 1 } }
 					DA_has_dig_level_6_or_higher = yes
 				}
 				AND = {
@@ -216,7 +217,7 @@ The_Dwarven_Megalopolis = {
 						type = The_Dwarven_Megalopolis
 						tier = 1
 					}
-					NOT = { has_great_project = { type = The_Dwarven_Workshop tier = 2 } }
+					NOT = { has_great_project = { type = The_Dwarven_Megalopolis tier = 2 } }
 					DA_has_dig_level_8_or_higher = yes
 				}
 				AND = {
@@ -686,11 +687,6 @@ The_Dwarven_Laboratory = {
 		}
 	}
 	on_built = {
-		hidden_effect = {
-			province_event = {
-				id = DA_Hul_Jorkad_event.1
-			}	
-		}
 	}
 	on_destroyed = {		
 	}
@@ -754,6 +750,11 @@ The_Dwarven_Laboratory = {
 		country_modifiers = {
 		}
 		on_upgraded = {
+			hidden_effect = {
+				province_event = {
+					id = DA_Hul_Jorkad_event.1
+				}	
+			}
 		}
 	}
 	tier_1 = {
@@ -833,6 +834,163 @@ The_Dwarven_Laboratory = {
 			hidden_effect = {
 				province_event = {
 					id = DA_Hul_Jorkad_event.4
+				}
+			}
+		}
+	}
+}
+
+#The Basalt wall buildable from Gor Burad's magama forge in the adjacent vale
+DA_Verkal_Jorkad = {
+	start = 672
+	date = 2023.01.01
+	time = {
+		months = 120
+	}
+	build_cost = 0
+	can_be_moved = no
+	move_days_per_unit_distance = 1
+	starting_tier = 0
+	type = monument
+	build_trigger = {
+		owner = {
+			has_country_flag = DA_MF_can_create_Basalt_Wall_2
+			owns = 4039
+		}
+	}
+	on_built = {
+		hidden_effect = {
+			owner = {
+				country_event = {
+					id = DA_Magma_forge_event.16
+				}
+			}
+		}
+	}
+	on_destroyed = {		
+	}
+	can_use_modifiers_trigger = {
+	}
+	can_upgrade_trigger = {
+		owner = {
+			culture_group = dwarven
+			capital_scope = {
+				has_province_flag = DA_Expanded_dig_adk_6
+			}
+		}
+	}
+	keep_trigger = {
+	}
+	tier_0 = {
+		upgrade_time = {
+			months = 120
+		}
+		cost_to_upgrade = {
+			factor = 1000
+		}
+		province_modifiers = {
+			local_defensiveness = 0.25
+		}
+		area_modifier = {
+		}
+		country_modifiers = {
+		}
+		on_upgraded = {
+			hidden_effect = {
+				owner = {
+					country_event = {
+						id = DA_Magma_forge_event.16
+					}
+				}
+			}
+		}
+	}
+	tier_1 = {
+		upgrade_time = {
+			months = 120
+		}
+		cost_to_upgrade = {
+			factor = 2000
+		}
+		province_modifiers = {	
+			local_defensiveness = 0.50
+		}
+		area_modifier = {
+		}
+		country_modifiers = {
+			prestige = 0.25
+		}
+		on_upgraded = {
+			hidden_effect = {
+				owner = {
+					country_event = {
+						id = DA_Magma_forge_event.17
+					}
+				}
+			}
+		}
+	}
+	tier_2 = {
+		upgrade_time = {
+			months = 240
+		}
+		cost_to_upgrade = {
+			factor = 3500
+		}
+		province_modifiers = {	
+			local_defensiveness = 0.75
+			local_hostile_attrition = 2
+			max_attrition = 2
+		}
+		area_modifier = {
+		}
+		country_modifiers = {
+			prestige = 0.50
+			diplomatic_reputation = 0.25
+		}
+		on_upgraded = {
+			hidden_effect = {
+				owner = {
+					country_event = {
+						id = DA_Magma_forge_event.18
+					}
+				}
+			}
+		}
+	}
+	tier_3 = {
+		upgrade_time = {
+			months = 360
+		}
+		cost_to_upgrade = {
+			factor = 7000
+		}
+		province_modifiers = {	
+			local_defensiveness = 1.00
+			local_hostile_attrition = 5
+			max_attrition = 5
+		}
+		area_modifier = {
+		}
+		country_modifiers = {
+			prestige = 1
+			diplomatic_reputation = 0.5
+		}
+		on_upgraded = {
+			if = {
+				limit = { 
+					NOT = { has_building = fort_18th }
+				}
+				add_building_construction = {
+					building = fort_18th
+					cost = 0
+				}
+			}
+			hidden_effect = {
+				owner = {
+					country_event = {
+						id = DA_Magma_forge_event.19
+					}
 				}
 			}
 		}

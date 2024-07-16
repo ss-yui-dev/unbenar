@@ -1,4 +1,5 @@
 country_decisions = {
+	
 	DA_Look_for_adk = {				# set up expedition camp
 		major = yes
 		potential = {
@@ -19,6 +20,7 @@ country_decisions = {
 					has_province_flag = sent_expedition_@owner
 					has_province_flag = expedition_in_progress 
 					NOT = { has_province_modifier = DA_expedition_camp }
+					NOT = { has_province_modifier = DA_Dungeon_museum }
 				}
 			}
 		}
@@ -46,6 +48,7 @@ country_decisions = {
 	DA_Dig_adk_1 = {			# research facility menu
 		major = yes
 		potential = {
+			ai = yes
 			culture_group = dwarven
 			capital_scope = {
 				OR = {
@@ -85,7 +88,7 @@ country_decisions = {
 					limit = { ai = yes}
 					add_country_modifier = {
 						name = DA_rf_menu_cooldown
-						duration = 365
+						duration = 250
 						hidden = yes
 					}
 				}
@@ -99,6 +102,7 @@ country_decisions = {
 		major = yes
 		potential = {
 			culture_group = dwarven
+			ai = yes
 			NOT = { has_country_flag = DA_ADK_menu_in_use }
 			NOT = { has_country_modifier = DA_ADK_menu_cooldown }
 			NOT = {
@@ -125,84 +129,94 @@ country_decisions = {
 			custom_trigger_tooltip = {
 				tooltip = DA_Has_unexplored_dig_level_tooltip
 				OR = {
-					any_owned_province = {
+					any_core_province = {
+						owned_by = root
 						DA_has_dig_level_2_or_higher = yes
 						NOT = { has_province_flag = DA_looked_dig_adk_2 }
+						NOT = { has_province_flag = DA_expedition_in_progress }
+						owner = {
+							treasury = 25
+						}
+					}
+					any_core_province = {
+						owned_by = root
+						DA_has_dig_level_3_or_higher = yes
+						NOT = { has_province_flag = DA_looked_dig_adk_3 }
 						NOT = { has_province_flag = DA_expedition_in_progress }
 						owner = {
 							treasury = 50
 						}
 					}
-					any_owned_province = {
-						DA_has_dig_level_3_or_higher = yes
-						NOT = { has_province_flag = DA_looked_dig_adk_3 }
+					any_core_province = {
+						owned_by = root
+						DA_has_dig_level_4_or_higher = yes
+						NOT = { has_province_flag = DA_looked_dig_adk_4 }
 						NOT = { has_province_flag = DA_expedition_in_progress }
 						owner = {
 							treasury = 100
 						}
 					}
-					any_owned_province = {
-						DA_has_dig_level_4_or_higher = yes
-						NOT = { has_province_flag = DA_looked_dig_adk_4 }
-						NOT = { has_province_flag = DA_expedition_in_progress }
-						owner = {
-							treasury = 150
-						}
-					}
-					any_owned_province = {
+					any_core_province = {
+						owned_by = root
 						DA_has_dig_level_5_or_higher = yes
 						NOT = { has_province_flag = DA_looked_dig_adk_5 }
+						NOT = { has_province_flag = DA_expedition_in_progress }
+						owner = {
+							treasury = 200
+						}
+					}
+					any_core_province = {
+						owned_by = root
+						DA_has_dig_level_6_or_higher = yes
+						NOT = { has_province_flag = DA_looked_dig_adk_6 }
 						NOT = { has_province_flag = DA_expedition_in_progress }
 						owner = {
 							treasury = 300
 						}
 					}
-					any_owned_province = {
-						DA_has_dig_level_6_or_higher = yes
-						NOT = { has_province_flag = DA_looked_dig_adk_6 }
+					any_core_province = {
+						owned_by = root
+						DA_has_dig_level_7_or_higher = yes
+						NOT = { has_province_flag = DA_looked_dig_adk_7 }
 						NOT = { has_province_flag = DA_expedition_in_progress }
 						owner = {
 							treasury = 500
 						}
 					}
-					any_owned_province = {
-						DA_has_dig_level_7_or_higher = yes
-						NOT = { has_province_flag = DA_looked_dig_adk_7 }
-						NOT = { has_province_flag = DA_expedition_in_progress }
-						owner = {
-							treasury = 750
-						}
-					}
-					any_owned_province = {
+					any_core_province = {
+						owned_by = root
 						DA_has_dig_level_8_or_higher = yes
 						NOT = { has_province_flag = DA_looked_dig_adk_8 }
 						NOT = { has_province_flag = DA_expedition_in_progress }
 						owner = {
-							treasury = 1000
+							treasury = 800
 						}
 					}
-					any_owned_province = {
+					any_core_province = {
+						owned_by = root
 						DA_has_dig_level_9_or_higher = yes
 						NOT = { has_province_flag = DA_looked_dig_adk_9 }
+						NOT = { has_province_flag = DA_expedition_in_progress }
+						owner = {
+							treasury = 1200
+						}
+					}
+					any_core_province = {
+						owned_by = root
+						DA_has_dig_level_10_or_higher = yes
+						NOT = { has_province_flag = DA_looked_dig_adk_10 }
 						NOT = { has_province_flag = DA_expedition_in_progress }
 						owner = {
 							treasury = 2500
 						}
 					}
-					any_owned_province = {
-						DA_has_dig_level_10_or_higher = yes
-						NOT = { has_province_flag = DA_looked_dig_adk_10 }
-						NOT = { has_province_flag = DA_expedition_in_progress }
-						owner = {
-							treasury = 5000
-						}
-					}
-					any_owned_province = {
+					any_core_province = {
+						owned_by = root
 						DA_has_dig_level_11_or_higher = yes
 						NOT = { has_province_flag = DA_looked_dig_adk_11 }
 						NOT = { has_province_flag = DA_expedition_in_progress }
 						owner = {
-							treasury = 10000
+							treasury = 5000
 						}
 					}
 				}
@@ -302,10 +316,54 @@ country_decisions = {
 			factor = 1
 		}
 	}
+	DA_build_ramsteel_forges_decision = {					# ramsteel
+		major =yes
+		potential = {
+			NOT = { has_country_flag = DA_deciding_things }
+			has_country_flag = DA_can_build_ramsteel_forges
+			any_owned_province = {
+				OR = {
+					province_id = 4148
+					province_id = 4130
+					province_id = 4118
+				}
+				NOT = {
+					has_province_modifier = DA_Ramsteel_forge
+				}
+			}
+		}
+		
+		provinces_to_highlight = {
+			OR = {
+				province_id = 4148
+				province_id = 4130
+				province_id = 4118
+			}
+		}
+		
+		allow = {
+			treasury = 500
+			owns = 4148
+			owns = 4130
+			owns = 4118
+		}
+		
+		effect = {
+			country_event = {
+				id = DA_Orlazam_az_dihr_event.2
+			}
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
 	DA_fight_Lich = {					# attack the immortal lich
 		major =yes
 		potential = {
 			NOT = { has_ruler_flag = npc_lich }
+			NOT = { has_ruler_modifier = bd_wounded_ruler }
+			
 			has_country_flag = DA_can_duel_lich
 			any_owned_province = {
 				has_province_flag = DA_Verkal_koz_warning3
@@ -328,6 +386,43 @@ country_decisions = {
 			custom_tooltip = DA_start_duel_lich
 			hidden_effect = {
 				set_ruler_flag = npc_lich
+				country_event = {
+					id = DA_magic_duel.100
+				}
+			}
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	DA_fight_Dragon_Khugdihr = {					# attack the immortal lich
+		major =yes
+		potential = {
+			NOT = { has_ruler_flag = npc_Dragon_Khugdihr }
+			
+			has_country_flag = DA_can_duel_Dragon
+			any_owned_province = {
+				has_province_modifier = DA_Dragon_raids
+			}
+		}
+		
+		provinces_to_highlight = {
+			has_province_modifier = DA_Dragon_raids
+		}
+		
+		allow = {
+			ruler_has_personality = mage_personality
+			any_owned_province = {
+				province_id = 2863
+			}
+			NOT = { has_ruler_modifier = bd_wounded_ruler }
+		}
+		
+		effect = {
+			custom_tooltip = DA_start_duel_Dragon_Khugdihr
+			hidden_effect = {
+				set_ruler_flag = npc_Dragon_Khugdihr
 				country_event = {
 					id = DA_magic_duel.100
 				}

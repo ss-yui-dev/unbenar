@@ -1,0 +1,921 @@
+namespace = bladesworn_rebellion
+
+country_event = { #The Bladesworn Rebellion
+	id = bladesworn_rebellion.1
+	title = bladesworn_rebellion.1.t
+	desc = bladesworn_rebellion.1.d
+	picture = CIVIL_WAR_eventPicture
+	is_triggered_only = yes
+	
+	major = yes
+	
+	fire_only_once = yes
+	
+	immediate = {
+		set_country_flag = bladesworn_rebellion_start_event
+	}
+	
+	option = { #Fight them
+		name = "bladesworn_rebellion.1.a"
+		
+		set_country_flag = civil_war_supporting_new_model
+		
+		add_yearly_manpower = -2
+		
+		random_owned_province = {
+			limit = { is_capital = no }
+			spawn_rebels = {
+				type = bladesworn_rebels
+				size = 3
+				win = yes
+				estate = estate_bladestewards
+				should_take_capital = yes
+			}
+			random_neighbor_province = {
+				limit = {
+					owned_by = ROOT
+					is_capital = no
+				}
+				spawn_rebels = {
+					type = bladesworn_rebels
+					size = 2
+					win = yes
+					estate = estate_bladestewards
+					should_take_capital = yes
+				}
+			}
+			random_neighbor_province = {
+				limit = {
+					owned_by = ROOT
+					is_capital = no
+				}
+				spawn_rebels = {
+					type = bladesworn_rebels
+					size = 2
+					win = yes
+					estate = estate_bladestewards
+					should_take_capital = yes
+				}
+			}
+			random_neighbor_province = {
+				limit = {
+					owned_by = ROOT
+					is_capital = no
+				}
+				spawn_rebels = {
+					type = bladesworn_rebels
+					size = 1
+					win = yes
+					estate = estate_bladestewards
+				}
+			}
+			random_neighbor_province = {
+				limit = {
+					owned_by = ROOT
+					is_capital = no
+				}
+				spawn_rebels = {
+					type = bladesworn_rebels
+					size = 1
+					win = yes
+					estate = estate_bladestewards
+				}
+			}
+			random_neighbor_province = {
+				limit = {
+					owned_by = ROOT
+					is_capital = no
+				}
+				spawn_rebels = {
+					type = bladesworn_rebels
+					size = 1
+					win = yes
+					estate = estate_bladestewards
+				}
+			}
+		}
+		add_stability = -2
+		hidden_effect = {
+			country_event = {
+				id = bladesworn_rebellion.5
+				days = 120
+			}
+		}
+	}
+	option = { #Join them
+		name = "bladesworn_rebellion.1.b"
+		
+		set_country_flag = civil_war_supporting_bladesworn
+		
+		add_yearly_manpower = -2
+		
+		clr_country_flag = blademarches_new_model_army_enabled
+		set_country_flag = blademarches_royal_bladesworn_army_enabled
+		add_government_reform = blademarches_royal_bladesworn_army
+		
+		remove_estate_privilege = estate_bladestewards_old_guard
+		set_country_flag = bladesworn_rebellion_restored	
+		
+		random_owned_province = {
+			limit = { is_capital = no }
+			spawn_rebels = {
+				type = new_model_rebels
+				size = 3
+				win = yes
+				estate = estate_nobles
+				should_take_capital = yes
+			}
+			random_neighbor_province = {
+				limit = {
+					owned_by = ROOT
+					is_capital = no
+				}
+				spawn_rebels = {
+					type = new_model_rebels
+					size = 2
+					win = yes
+					estate = estate_nobles
+					should_take_capital = yes
+				}
+			}
+			random_neighbor_province = {
+				limit = {
+					owned_by = ROOT
+					is_capital = no
+				}
+				spawn_rebels = {
+					type = new_model_rebels
+					size = 2
+					win = yes
+					estate = estate_nobles
+					should_take_capital = yes
+				}
+			}
+			random_neighbor_province = {
+				limit = {
+					owned_by = ROOT
+					is_capital = no
+				}
+				spawn_rebels = {
+					type = new_model_rebels
+					size = 1
+					win = yes
+					estate = estate_nobles
+				}
+			}
+			random_neighbor_province = {
+				limit = {
+					owned_by = ROOT
+					is_capital = no
+				}
+				spawn_rebels = {
+					type = new_model_rebels
+					size = 1
+					win = yes
+					estate = estate_nobles
+				}
+			}
+			random_neighbor_province = {
+				limit = {
+					owned_by = ROOT
+					is_capital = no
+				}
+				spawn_rebels = {
+					type = new_model_rebels
+					size = 1
+					win = yes
+					estate = estate_nobles
+				}
+			}
+		}
+		add_stability = -2
+		hidden_effect = {
+			country_event = {
+				id = bladesworn_rebellion.6
+				days = 120
+			}
+		}
+	}
+	
+	after = {
+		clr_country_flag = bladesworn_rebellion_start_event
+	}
+}
+
+country_event = { #The End of the Bladesworn Rebellion
+	id = bladesworn_rebellion.2
+	title = bladesworn_rebellion.2.t
+	desc = bladesworn_rebellion.2.d
+	picture = CIVIL_WAR_eventPicture
+	is_triggered_only = yes
+	
+	#mean_time_to_happen = {
+	#	days = 1
+	#}
+	
+	immediate = {
+		set_country_flag = bladesworn_rebellion_happened
+		on_non_estate_disaster_end = yes
+	}
+	option = {
+		name = "bladesworn_rebellion.2.a" #Bladesworn victory
+		trigger = {
+			OR = {
+				AND = {
+					has_country_flag = civil_war_supporting_bladesworn
+					NOT = { has_country_modifier = just_lost_to_rebels }
+				}
+				AND = {
+					has_country_flag = civil_war_supporting_new_model
+					has_country_modifier = just_lost_to_rebels
+				}
+			}
+		}
+		country_event = { id = bladesworn_rebellion.3 }
+	}
+	option = {
+		name = "bladesworn_rebellion.2.b" #New Model victory
+		trigger = {
+			OR = {
+				AND = {
+					has_country_flag = civil_war_supporting_bladesworn
+					has_country_modifier = just_lost_to_rebels
+				}
+				AND = {
+					has_country_flag = civil_war_supporting_new_model
+					NOT = { has_country_modifier = just_lost_to_rebels }
+				}
+			}
+		}
+		country_event = { id = bladesworn_rebellion.4 }
+	}
+}	
+	
+
+country_event = { #The Bladesworn Restoration
+	id = bladesworn_rebellion.3
+	title = bladesworn_rebellion.3.t
+	desc = { 
+		trigger = { has_country_flag = civil_war_supporting_bladesworn }
+		desc = "bladesworn_rebellion.3.d_won"
+	}
+	desc = { 
+		trigger = { has_country_flag = civil_war_supporting_new_model }
+		desc = "bladesworn_rebellion.3.d_lost"
+	}
+	picture = wihgfx_FEMALE_GENERAL_eventPicture
+	is_triggered_only = yes
+	
+	option = { #Supported Bladesworn, won
+		name = "bladesworn_rebellion.3.a"
+		trigger = { has_country_flag = civil_war_supporting_bladesworn }
+		add_prestige = 50
+		add_stability = 2
+		
+		add_country_modifier = {
+			name = blademarches_new_model_exodus
+			duration = 5475
+		}
+	}
+	
+	option = { #Supported New Model, lost
+		name = "bladesworn_rebellion.3.b"
+		trigger = { has_country_flag = civil_war_supporting_new_model }
+		add_prestige = -50
+		add_stability = -1
+		kill_ruler = yes
+		remove_estate_privilege = estate_bladestewards_old_guard
+		add_country_modifier = {
+			name = blademarches_new_model_exodus
+			duration = 5475
+		}
+		clr_country_flag = blademarches_new_model_army_enabled
+		set_country_flag = blademarches_royal_bladesworn_army_enabled
+		add_government_reform = blademarches_royal_bladesworn_army
+	}
+	
+	option = { #MEME OPTION
+		name = "bladesworn_rebellion.3.c"
+		trigger = { NOT = { has_country_flag = civil_war_concessions_to_new_model } }
+		#highlight = yes
+		custom_tooltip = BOP_CIVIL_WAR_MEME_OPTION_WARNING
+		add_prestige = -50
+		add_stability = -2
+		if = {
+			limit = { has_country_flag = civil_war_supporting_new_model }
+			kill_ruler = yes
+			add_prestige = -50
+			add_stability = -1
+		}
+		set_country_flag = bladesworn_unholy_path
+		
+		if = {
+			limit = { has_estate_privilege = estate_bladestewards_old_guard }
+			remove_estate_privilege = estate_bladestewards_old_guard
+		}
+		set_estate_privilege = estate_bladestewards_control_state
+		
+		country_event = { id = bladesworn_rebellion.18 }
+
+		add_country_modifier = {
+			name = blademarches_new_model_exodus
+			duration = 5475
+		}
+		if = {
+			limit = { has_country_flag = blademarches_new_model_army_enabled }
+			clr_country_flag = blademarches_new_model_army_enabled
+		}
+		if = {
+			limit = { NOT = { has_country_flag = blademarches_royal_bladesworn_army_enabled } }
+			set_country_flag = blademarches_royal_bladesworn_army_enabled
+		}
+		
+	}
+}
+
+country_event = { #The Bladesworn Crushed
+	id = bladesworn_rebellion.4
+	title = bladesworn_rebellion.4.t
+	desc = { 
+		trigger = { has_country_flag = civil_war_supporting_bladesworn }
+		desc = "bladesworn_rebellion.3.d_lost"
+	}
+	desc = { 
+		trigger = { has_country_flag = civil_war_supporting_new_model }
+		desc = "bladesworn_rebellion.3.d_won"
+	}
+	picture = MILITARISTICALLY_TALENTED_RULER_eventPicture
+	is_triggered_only = yes
+	
+	immediate = {
+		clr_country_flag = bladesworn_rebellion_active
+		set_country_flag = bladesworn_rebellion_crushed
+		remove_estate_privilege = estate_bladestewards_old_guard
+	}
+	
+	option = { #Supported New Model, won, Loyalist Bladestewards
+		name = "bladesworn_rebellion.4.a"
+		
+		trigger = { has_country_flag = civil_war_supporting_new_model }
+		
+		add_prestige = 50
+		add_stability = 2
+		
+		set_estate_privilege = estate_bladestewards_new_model_loyalists
+	}
+	option = { #Supported New Model, won, Abolish Bladestewards
+		name = "bladesworn_rebellion.4.b"
+		
+		trigger = {
+			has_country_flag = civil_war_supporting_new_model
+			NOT = { has_country_flag = civil_war_concessions_to_bladesworn }
+		}
+		
+		add_prestige = 50
+		add_stability = 1
+		
+		set_country_flag = bladestewards_abolished
+		add_country_modifier = {
+			name = bladepriests_in_clergy
+			duration = -1
+		}
+	}
+	
+	option = { #Supported New Model, won, Abolish Bladestewards + Monarchy
+		name = "bladesworn_rebellion.4.c"
+		
+		trigger = {
+			has_country_flag = civil_war_supporting_new_model
+			NOT = { has_country_flag = civil_war_concessions_to_bladesworn }
+		}
+		add_prestige = 50
+		add_stability = -1
+		
+		clr_country_flag = blademarches_royal_bladesworn_army_enabled
+		set_country_flag = blademarches_new_model_army_enabled
+		set_country_flag = bladestewards_abolished
+		
+		country_event = { id = bladesworn_rebellion.17 }
+		
+		add_country_modifier = {
+			name = bladepriests_in_clergy
+			duration = -1
+		}
+	}
+	
+	option = { #Supported Bladesworn, lost, Abolish Bladestewards + Monarchy
+		name = "bladesworn_rebellion.4.d"
+		
+		trigger = { has_country_flag = civil_war_supporting_bladesworn }
+		add_prestige = -50
+		add_stability = -2
+		
+		clr_country_flag = blademarches_royal_bladesworn_army_enabled
+		set_country_flag = blademarches_new_model_army_enabled
+		set_country_flag = bladestewards_abolished
+		
+		country_event = { id = bladesworn_rebellion.17 }
+		
+		add_country_modifier = {
+			name = bladepriests_in_clergy
+			duration = -1
+		}
+	}
+}
+
+
+country_event = { #Bladesworn Second Wave
+	id = bladesworn_rebellion.5
+	title = bladesworn_rebellion.5.t
+	desc = bladesworn_rebellion.5.d
+	picture = ADULT_BAPTISME_eventPicture
+	is_triggered_only = yes
+	#fire_only_once = yes
+	
+	trigger = {
+		has_disaster = bladesworn_rebellion_disaster
+	}
+	
+	option = {
+		name = "bladesworn_rebellion.5.a"
+		
+		add_yearly_manpower = -1
+		
+		random_owned_province = {
+			limit = { is_capital = no }
+			spawn_rebels = {
+				type = bladesworn_rebels
+				size = 2
+				win = yes
+				estate = estate_bladestewards
+				should_take_capital = yes
+			}
+			random_neighbor_province = {
+				limit = {
+					owned_by = ROOT
+					is_capital = no
+				}
+				spawn_rebels = {
+					type = bladesworn_rebels
+					size = 2
+					win = yes
+					estate = estate_bladestewards
+					should_take_capital = yes
+				}
+			}
+			random_neighbor_province = {
+				limit = {
+					owned_by = ROOT
+					is_capital = no
+				}
+				spawn_rebels = {
+					type = bladesworn_rebels
+					size = 1
+					win = yes
+					estate = estate_bladestewards
+					should_take_capital = yes
+				}
+			}
+			random_neighbor_province = {
+				limit = {
+					owned_by = ROOT
+					is_capital = no
+				}
+				spawn_rebels = {
+					type = bladesworn_rebels
+					size = 1
+					win = yes
+					estate = estate_bladestewards
+				}
+			}
+			random_neighbor_province = {
+				limit = {
+					owned_by = ROOT
+					is_capital = no
+				}
+				spawn_rebels = {
+					type = bladesworn_rebels
+					size = 1
+					win = yes
+					estate = estate_bladestewards
+				}
+			}
+		}
+		add_stability = -1
+	}
+}	
+
+country_event = { #New Model Second Wave
+	id = bladesworn_rebellion.6
+	title = bladesworn_rebellion.6.t
+	desc = bladesworn_rebellion.6.d
+	picture = USA_CONGRESS_eventPicture
+	is_triggered_only = yes
+	#fire_only_once = yes
+	
+	trigger = {
+		has_disaster = bladesworn_rebellion_disaster
+	}
+	
+	option = {
+		name = "bladesworn_rebellion.6.a"
+		
+		add_yearly_manpower = -1
+		
+		random_owned_province = {
+			limit = { is_capital = no }
+			spawn_rebels = {
+				type = new_model_rebels
+				size = 2
+				win = yes
+				estate = estate_nobles
+				should_take_capital = yes
+			}
+			random_neighbor_province = {
+				limit = {
+					owned_by = ROOT
+					is_capital = no
+				}
+				spawn_rebels = {
+					type = new_model_rebels
+					size = 2
+					win = yes
+					estate = estate_nobles
+					should_take_capital = yes
+				}
+			}
+			random_neighbor_province = {
+				limit = {
+					owned_by = ROOT
+					is_capital = no
+				}
+				spawn_rebels = {
+					type = new_model_rebels
+					size = 1
+					win = yes
+					estate = estate_nobles
+					should_take_capital = yes
+				}
+			}
+			random_neighbor_province = {
+				limit = {
+					owned_by = ROOT
+					is_capital = no
+				}
+				spawn_rebels = {
+					type = new_model_rebels
+					size = 1
+					win = yes
+					estate = estate_nobles
+				}
+			}
+			random_neighbor_province = {
+				limit = {
+					owned_by = ROOT
+					is_capital = no
+				}
+				spawn_rebels = {
+					type = new_model_rebels
+					size = 1
+					win = yes
+					estate = estate_nobles
+				}
+			}
+		}
+		add_stability = -1
+	}
+}
+
+country_event = { #Major Bladesworn Uprising
+	id = bladesworn_rebellion.7
+	title = bladesworn_rebellion.7.t
+	desc = bladesworn_rebellion.7.d
+	picture = WHITE_MOUNTAIN_eventPicture
+	is_triggered_only = yes
+	
+	trigger = { 
+		has_country_flag = civil_war_supporting_new_model
+		NOT = { has_country_flag = civil_war_concessions_to_bladesworn } 
+	}
+	
+	option = {
+		name = "bladesworn_rebellion.7.a"
+		
+		random_owned_province = {
+			limit = { is_capital = no }
+			spawn_rebels = {
+				type = bladesworn_rebels
+				size = 2
+				win = yes
+				estate = estate_bladestewards
+			}
+		}
+	}
+}
+
+country_event = { #Minor Bladesworn Uprising
+	id = bladesworn_rebellion.8
+	title = bladesworn_rebellion.8.t
+	desc = bladesworn_rebellion.8.d
+	picture = BYZ_REVOLUTION_eventPicture
+	is_triggered_only = yes
+	
+	trigger = { has_country_flag = civil_war_supporting_new_model }
+	
+	option = {
+		name = "bladesworn_rebellion.7.a"
+		
+		random_owned_province = {
+			limit = { is_capital = no }
+			spawn_rebels = {
+				type = bladesworn_rebels
+				size = 1
+				win = yes
+				estate = estate_bladestewards
+			}
+		}
+	}	
+}
+
+country_event = { #Negotiations with the Blade Stewards
+	id = bladesworn_rebellion.9
+	title = bladesworn_rebellion.9.t
+	desc = bladesworn_rebellion.9.d
+	picture = PROTESTANT_CATHOLIC_DEBATE_eventPicture
+	is_triggered_only = yes
+	
+	trigger = { 
+		has_country_flag = civil_war_supporting_new_model
+		NOT = { has_country_flag = civil_war_concessions_to_bladesworn }
+		NOT = { has_country_flag = civil_war_concessions_denied } 
+	}
+	
+	option = { #Agree
+		name = "bladesworn_rebellion.9.a"
+		
+		add_stability = 1
+		custom_tooltip = BOP_CIVIL_WAR_CONCESSIONS
+		set_country_flag = civil_war_concessions_to_bladesworn
+	}
+	
+	option = { #Never!
+		name = "bladesworn_rebellion.9.b"
+		
+		set_country_flag = civil_war_concessions_denied
+		
+		random_owned_province = {
+			limit = { is_capital = no }
+			spawn_rebels = {
+				type = bladesworn_rebels
+				size = 3
+				win = yes
+				estate = estate_bladestewards
+			}
+			random_neighbor_province = {
+				limit = {
+					owned_by = ROOT
+					is_capital = no
+				}
+				spawn_rebels = {
+					type = bladesworn_rebels
+					size = 2
+					win = yes
+					estate = estate_bladestewards
+					should_take_capital = yes
+				}
+			}
+		}
+	}
+}
+
+country_event = { #New Model Loyalists join
+	id = bladesworn_rebellion.10
+	title = bladesworn_rebellion.10.t
+	desc = bladesworn_rebellion.10.d
+	picture = REFORM_eventPicture
+	is_triggered_only = yes
+	
+	trigger = { has_country_flag = civil_war_supporting_new_model }
+	
+	option = { #Agree
+		name = "bladesworn_rebellion.9.a"
+		
+		add_yearly_manpower = 0.2
+	}
+}
+
+country_event = { #Gain Militarization
+	id = bladesworn_rebellion.11
+	title = bladesworn_rebellion.11.t
+	desc = bladesworn_rebellion.11.d
+	picture = MILITARY_CAMP_eventPicture
+	is_triggered_only = yes
+	
+	trigger = { has_country_flag = civil_war_supporting_new_model }
+	
+	option = { #Agree
+		name = "bladesworn_rebellion.11.a"
+		
+		add_government_power = {
+			mechanic_type = bm_militarization_mechanic
+			power_type = bm_militarized_society
+			value = 1
+		}
+	}
+}
+
+country_event = { #Major New Model Uprising
+	id = bladesworn_rebellion.12
+	title = bladesworn_rebellion.12.t
+	desc = bladesworn_rebellion.12.d
+	picture = REVOLT_HUNGARIAN_eventPicture
+	is_triggered_only = yes
+	
+	trigger = {
+		has_country_flag = civil_war_supporting_bladesworn
+		NOT = { has_country_flag = civil_war_concessions_to_new_model }
+	}
+	
+	option = {
+		name = "bladesworn_rebellion.12.a"
+		
+		random_owned_province = {
+			limit = { is_capital = no }
+			spawn_rebels = {
+				type = new_model_rebels
+				size = 2
+				win = yes
+				estate = estate_nobles
+			}
+		}
+	}
+}
+
+country_event = { #Minor New Model Uprising
+	id = bladesworn_rebellion.13
+	title = bladesworn_rebellion.13.t
+	desc = bladesworn_rebellion.13.d
+	picture = BORDER_TENSION_eventPicture
+	is_triggered_only = yes
+	
+	trigger = {	has_country_flag = civil_war_supporting_bladesworn }
+	
+	option = {
+		name = "bladesworn_rebellion.13.a"
+		
+		random_owned_province = {
+			limit = { is_capital = no }
+			spawn_rebels = {
+				type = new_model_rebels
+				size = 1
+				win = yes
+				estate = estate_nobles
+			}
+		}
+	}	
+}
+
+country_event = { #Negotiations with the New Model Rebels
+	id = bladesworn_rebellion.14
+	title = bladesworn_rebellion.14.t
+	desc = bladesworn_rebellion.14.d
+	picture = NOBLE_ESTATE_DEMANDS_eventPicture
+	is_triggered_only = yes
+	
+	trigger = { 
+		has_country_flag = civil_war_supporting_bladesworn
+		NOT = { has_country_flag = civil_war_concessions_to_new_model }
+		NOT = { has_country_flag = civil_war_concessions_denied } 
+	}
+	
+	option = { #Agree
+		name = "bladesworn_rebellion.14.a"
+		
+		add_stability = 1
+		custom_tooltip = BOP_CIVIL_WAR_CONCESSIONS
+		set_country_flag = civil_war_concessions_to_new_model
+	}
+	
+	option = { #Never!
+		name = "bladesworn_rebellion.14.b"
+		
+		set_country_flag = civil_war_concessions_denied
+		
+		random_owned_province = {
+			limit = { is_capital = no }
+			spawn_rebels = {
+				type = new_model_rebels
+				size = 3
+				win = yes
+				estate = estate_nobles
+			}
+			random_neighbor_province = {
+				limit = {
+					owned_by = ROOT
+					is_capital = no
+				}
+				spawn_rebels = {
+					type = new_model_rebels
+					size = 2
+					win = yes
+					estate = estate_nobles
+					should_take_capital = yes
+				}
+			}
+		}
+	}
+}
+
+country_event = { #Bladesworn join
+	id = bladesworn_rebellion.15
+	title = bladesworn_rebellion.15.t
+	desc = bladesworn_rebellion.15.d
+	picture = east_slavic_BATTLE_eventPicture
+	is_triggered_only = yes
+	
+	trigger = {	has_country_flag = civil_war_supporting_bladesworn }
+	
+	option = { #Welcome them
+		name = "bladesworn_rebellion.15.a"
+		
+		random_owned_province = {
+			limit = { controlled_by = ROOT }
+			samurai_infantry = ROOT
+			samurai_infantry = ROOT
+			samurai_infantry = ROOT
+			samurai_infantry = ROOT
+			samurai_infantry = ROOT
+		}
+	}
+	
+	option = { #They may join the Reserves
+		name = "bladesworn_rebellion.15.b"
+		
+		add_manpower = 5
+	}
+}
+
+country_event = { #A Blade Forged in Blademarcher Blood
+	id = bladesworn_rebellion.16
+	title = bladesworn_rebellion.16.t
+	desc = bladesworn_rebellion.16.d
+	picture = REVOLT_HUGUENOTS_eventPicture
+	is_triggered_only = yes
+	
+	trigger = { 
+		has_country_flag = civil_war_supporting_bladesworn
+		NOT = { has_country_modifier = bladesworn_forged_in_blood }
+	}
+	
+	option = { #Agree
+		name = "bladesworn_rebellion.16.a"
+		
+		add_country_modifier = {
+			name = bladesworn_forged_in_blood
+			duration = 1800
+		}
+		add_army_tradition = 5
+	}
+}
+
+country_event = { #A State with a Blade
+	id = bladesworn_rebellion.17
+	title = bladesworn_rebellion.17.t
+	desc = bladesworn_rebellion.17.d
+	picture = GUILLOTINE_eventPicture
+	is_triggered_only = yes
+	
+	option = { #Agree
+		name = "bladesworn_rebellion.17.a"
+		
+		change_government = republic
+		hidden_effect = { add_republican_tradition = 50 }
+		add_government_reform = blademarches_republic_reform
+		add_government_reform = blademarches_new_model_army
+		kill_ruler = yes
+		add_government_power = {
+			mechanic_type = bm_militarization_mechanic
+			power_type = bm_militarized_society
+			value = 50
+		}
+	}
+}
+
+country_event = { #A Blade with a State
+	id = bladesworn_rebellion.18
+	title = bladesworn_rebellion.18.t
+	desc = bladesworn_rebellion.18.d
+	picture = NEGOTIATIONS_LUBLIN_eventPicture
+	is_triggered_only = yes
+	
+	option = { #Agree
+		name = "bladesworn_rebellion.18.a"
+		
+		change_government = theocracy
+		hidden_effect = { add_devotion = 100 }
+		add_government_reform = blademarches_theocracy_reform
+		add_government_reform = blademarches_royal_bladesworn_army
+		
+		add_army_tradition = 10
+	}
+}

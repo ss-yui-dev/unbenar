@@ -1,0 +1,19 @@
+estate_church = {
+	privileges = {
+		MIGA_estate_RC_castellos
+		MIGA_estate_RC_the_dame
+		MIGA_estate_RC_corin
+		MIGA_estate_RC_adean
+		MIGA_estate_RC_munas_moonsinger
+		MIGA_estate_RC_ara
+		MIGA_estate_RC_balgar
+		MIGA_estate_RC_esmaryal
+		MIGA_estate_RC_ryala
+		MIGA_estate_RC_minara
+		MIGA_estate_RC_falah
+		MIGA_estate_RC_nerat
+		MIGA_estate_RC_nathalyne
+		MIGA_estate_RC_begga
+		MIGA_estate_RC_dookan
+	}
+}

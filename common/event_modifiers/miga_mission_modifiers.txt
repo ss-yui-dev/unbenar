@@ -1,0 +1,86 @@
+
+ibevar_prosperous_ibevar = {
+	development_cost = -0.1
+	development_cost_in_primary_culture = -0.1 #new
+}
+
+ibevar_the_western_wall = {
+	local_defensiveness = 0.33
+	fort_level = 1 #new
+}
+
+ibevar_by_the_top = {
+	general_cost = 0.5 #changed
+	free_leader_pool = 1
+	leader_land_fire = 1
+	leader_land_shock = 1
+	leader_land_manuever = 1
+}
+
+arakeprun_glorelthiran_guard = {
+	army_tradition_decay = -0.01
+	navy_tradition_decay = -0.01
+	dip_tech_cost_modifier = -0.05
+	mil_tech_cost_modifier = -0.05
+}
+
+gemradcurt_hearthwards = {
+	local_monthly_devastation = -0.7
+	local_development_cost = -0.2
+	local_tax_modifier = 0.2
+	local_production_efficiency = 0.2
+	#province_trade_power_value = 2
+	trade_goods_size = 0.5 #new
+}
+
+gemradcurt_greater_hearthwards = {
+	local_monthly_devastation = -0.7
+	local_development_cost = -0.3
+	local_tax_modifier = 0.3
+	local_production_efficiency = 0.3
+	#province_trade_power_value = 4
+	trade_goods_size = 1 #new
+}
+
+gemradcurt_lesser_hearthwards = {
+	local_monthly_devastation = -0.7
+	local_development_cost = -0.2
+	local_tax_modifier = 0.2
+	local_production_efficiency = 0.2
+	#province_trade_power_value = 2
+	trade_goods_size = 0.5 #new
+}
+
+gemradcurt_winds_of_winter_modifier = {
+	hostile_attrition = 1
+	max_hostile_attrition = 1
+	defensiveness = 0.15
+	core_creation = -0.1
+	governing_capacity_modifier = 0.1
+	global_monthly_devastation = 0.28 #was 0.35
+	development_cost = 0.2
+	global_tax_modifier = -0.2
+	production_efficiency = -0.2
+}
+
+gemradcurt_winds_of_winter_2_modifier = {
+	hostile_attrition = 1
+	max_hostile_attrition = 1
+	defensiveness = 0.3
+	core_creation = -0.2
+	governing_capacity_modifier = 0.2
+	global_monthly_devastation = 0.56 #was 0.7
+	development_cost = 0.3
+	global_tax_modifier = -0.3
+	production_efficiency = -0.3
+}
+
+blademarches_might_of_the_empire = {
+	#infantry_fire = -0.15
+	#infantry_shock = 0.2
+	#movement_speed = 0.1
+	#artillery_power = -0.1
+	infantry_shock = 0.1
+	movement_speed = 0.05
+	administrative_efficiency = 0.05
+}

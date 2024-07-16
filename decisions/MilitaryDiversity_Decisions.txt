@@ -1,0 +1,298 @@
+country_decisions = {
+
+	elven_military_expedition = {
+		major = yes
+		potential = {
+			tag = B33
+			has_country_flag = bop_diverse_human_military
+		}
+		allow = {
+			OR = {
+				AND = {
+					NOT = { 
+						any_known_country = {
+							culture_group = elven
+							exists = yes
+						}
+					}
+					mil_power = 200
+				}
+				OR = {
+					any_known_country = {
+						culture_group = elven
+						has_opinion = {
+							who = ROOT
+							value = 50
+						}
+					}
+					any_known_country = {
+						culture_group = elven
+						has_spy_network_from = {
+							who = ROOT
+							value = 25
+						}
+					}
+				}		
+			}
+			NOT = { has_country_flag = bop_ongoing_military_diversity_expedition }
+		}
+
+		effect = {
+			country_event = {
+				id = bop_army_diversity.1
+				days = 180
+			}
+			if = {
+				limit = {
+					NOT = { 
+						any_known_country = {
+							culture_group = elven
+							exists = yes
+						}
+					}
+				}
+				add_mil_power = -200
+			}
+			set_country_flag = bop_ongoing_military_diversity_expedition
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	hobgoblin_military_expedition = {
+		major = yes
+		potential = {
+			has_country_flag = bop_diverse_human_military
+		}
+		allow = {
+			OR = {
+				AND = {
+					NOT = { 
+						any_known_country = {
+							culture_group = hobgoblin
+							exists = yes
+						}
+					}
+					mil_power = 200
+				}
+				OR = {
+					any_known_country = {
+						culture_group = hobgoblin
+						has_opinion = {
+							who = ROOT
+							value = 50
+						}
+					}
+					any_known_country = {
+						culture_group = hobgoblin
+						has_spy_network_from = {
+							who = ROOT
+							value = 25
+						}
+					}
+				}		
+			}
+			NOT = { has_country_flag = bop_ongoing_military_diversity_expedition }
+		}
+
+		effect = {
+			country_event = {
+				id = bop_army_diversity.2
+				days = 360
+			}
+			if = {
+				limit = {
+					NOT = { 
+						any_known_country = {
+							culture_group = hobgoblin
+							exists = yes
+						}
+					}
+				}
+				add_mil_power = -200
+			}
+			set_country_flag = bop_ongoing_military_diversity_expedition
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	harimari_military_expedition = {
+		major = yes
+		potential = {
+			has_country_flag = bop_diverse_human_military
+		}
+		allow = {
+			OR = {
+				AND = {
+					NOT = { 
+						any_known_country = {
+							culture_group = harimari
+							exists = yes
+						}
+					}
+					mil_power = 200
+				}
+				OR = {
+					any_known_country = {
+						culture_group = harimari
+						has_opinion = {
+							who = ROOT
+							value = 50
+						}
+					}
+					any_known_country = {
+						culture_group = harimari
+						has_spy_network_from = {
+							who = ROOT
+							value = 25
+						}
+					}
+				}		
+			}
+			NOT = { has_country_flag = bop_ongoing_military_diversity_expedition }
+		}
+
+		effect = {
+			country_event = {
+				id = bop_army_diversity.3
+				days = 360
+			}
+			if = {
+				limit = {
+					NOT = { 
+						any_known_country = {
+							culture_group = harimari
+							exists = yes
+						}
+					}
+				}
+				add_mil_power = -200
+			}
+			set_country_flag = bop_ongoing_military_diversity_expedition
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	dwarven_military_expedition = {
+		major = yes
+		potential = {
+			has_country_flag = bop_diverse_human_military
+		}
+		allow = {
+			OR = {
+				AND = {
+					NOT = { 
+						any_known_country = {
+							culture_group = dwarven
+							exists = yes
+						}
+					}
+					mil_power = 200
+				}
+				OR = {
+					any_known_country = {
+						culture_group = dwarven
+						has_opinion = {
+							who = ROOT
+							value = 50
+						}
+					}
+					any_known_country = {
+						culture_group = dwarven
+						has_spy_network_from = {
+							who = ROOT
+							value = 25
+						}
+					}
+				}		
+			}
+			NOT = { has_country_flag = bop_ongoing_military_diversity_expedition }
+		}
+
+		effect = {
+			country_event = {
+				id = bop_army_diversity.4
+				days = 180
+			}
+			if = {
+				limit = {
+					NOT = { 
+						any_known_country = {
+							culture_group = dwarven
+							exists = yes
+						}
+					}
+				}
+				add_mil_power = -200
+			}
+			set_country_flag = bop_ongoing_military_diversity_expedition
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	gnomish_military_expedition = {
+		major = yes
+		potential = {
+			has_country_flag = bop_diverse_human_military
+		}
+		allow = {
+			OR = {
+				AND = {
+					NOT = { 
+						any_known_country = {
+							culture_group = gnomish
+							exists = yes
+						}
+					}
+					mil_power = 200
+				}
+				OR = {
+					any_known_country = {
+						culture_group = gnomish
+						has_opinion = {
+							who = ROOT
+							value = 50
+						}
+					}
+					any_known_country = {
+						culture_group = gnomish
+						has_spy_network_from = {
+							who = ROOT
+							value = 25
+						}
+					}
+				}		
+			}
+			NOT = { has_country_flag = bop_ongoing_military_diversity_expedition }
+		}
+
+		effect = {
+			country_event = {
+				id = bop_army_diversity.5
+				days = 180
+			}
+			if = {
+				limit = {
+					NOT = { 
+						any_known_country = {
+							culture_group = gnomish
+							exists = yes
+						}
+					}
+				}
+				add_mil_power = -200
+			}
+			set_country_flag = bop_ongoing_military_diversity_expedition
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

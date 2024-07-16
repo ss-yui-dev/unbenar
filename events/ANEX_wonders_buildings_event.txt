@@ -3183,7 +3183,7 @@ province_event = {
 		name = national_wonder.1000.a
 		if = {
 			limit = {
-				capital = {
+				capital_scope = {
 					AND = {
 						NOT = { has_building = war_college_1 }
 						NOT = { has_building = war_college_2 }
@@ -3194,13 +3194,13 @@ province_event = {
 					has_building = war_college_1
 				}
 			}
-			capital = {
+			capital_scope = {
 				add_building = war_college_1
 			}
 		}
 		if = {
 			limit = {
-				capital = {
+				capital_scope = {
 					AND = {
 						NOT = { has_building = war_college_1 }
 						NOT = { has_building = war_college_2 }
@@ -3211,13 +3211,13 @@ province_event = {
 					has_building = war_college_2
 				}
 			}
-			capital = {
+			capital_scope = {
 				add_building = war_college_2
 			}
 		}
 		if = {
 			limit = {
-				capital = {
+				capital_scope = {
 					AND = {
 						NOT = { has_building = war_college_1 }
 						NOT = { has_building = war_college_2 }
@@ -3228,13 +3228,13 @@ province_event = {
 					has_building = war_college_3
 				}
 			}
-			capital = {
+			capital_scope = {
 				add_building = war_college_3
 			}
 		}
 		if = {
 			limit = {
-				capital = {
+				capital_scope = {
 					AND = {
 						NOT = { has_building = national_bank_1 }
 						NOT = { has_building = national_bank_2 }
@@ -3245,13 +3245,13 @@ province_event = {
 					has_building = national_bank_1
 				}
 			}
-			capital = {
+			capital_scope = {
 				add_building = national_bank_1
 			}
 		}
 		if = {
 			limit = {
-				capital = {
+				capital_scope = {
 					AND = {
 						NOT = { has_building = national_bank_1 }
 						NOT = { has_building = national_bank_2 }
@@ -3262,13 +3262,13 @@ province_event = {
 					has_building = national_bank_2
 				}
 			}
-			capital = {
+			capital_scope = {
 				add_building = national_bank_2
 			}
 		}
 		if = {
 			limit = {
-				capital = {
+				capital_scope = {
 					AND = {
 						NOT = { has_building = national_bank_1 }
 						NOT = { has_building = national_bank_2 }
@@ -3279,7 +3279,7 @@ province_event = {
 					has_building = national_bank_3
 				}
 			}
-			capital = {
+			capital_scope = {
 				add_building = national_bank_3
 			}
 		}

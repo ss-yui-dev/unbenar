@@ -1,0 +1,52 @@
+##Please put your scripted triggers in the correct files. If its a non-MT specific system plz make a new file for it.
+
+can_activate_artificers = {
+	NOT = { 
+		government = native
+		has_reform = cossacks_reform
+		has_reform = siberian_tribe
+		is_nomad = yes
+		has_country_flag = artificery_banned
+	}
+		
+	#Anbennar
+	NOT = { has_reform = hobgoblin_stratocracy_reform }
+	NOT = { 
+		has_reform = adventurer_reform
+		is_monstrous_horde = yes
+		primary_culture = emerald_orc
+	}
+		
+	OR = {
+		NOT = { religion = bulwari_sun_cult }
+		is_chosen_country = no
+		has_country_flag = nsc_artificery_enabled
+	}
+}
+
+can_activate_cossacks = {
+	has_dlc = "The Cossacks"
+	NOT = { has_government_attribute = disables_estate_cossacks }
+	NOT = { has_country_flag = disables_estate_cossacks_flag }
+	NOT = { has_government_attribute = disables_regular_estates } #anbennar
+}
+
+MIGA_RC_has_national_worship = {
+	OR = {
+		has_estate_privilege = MIGA_estate_RC_castellos
+		has_estate_privilege = MIGA_estate_RC_the_dame
+		has_estate_privilege = MIGA_estate_RC_corin
+		has_estate_privilege = MIGA_estate_RC_adean
+		has_estate_privilege = MIGA_estate_RC_munas_moonsinger
+		has_estate_privilege = MIGA_estate_RC_ara
+		has_estate_privilege = MIGA_estate_RC_balgar
+		has_estate_privilege = MIGA_estate_RC_esmaryal
+		has_estate_privilege = MIGA_estate_RC_ryala
+		has_estate_privilege = MIGA_estate_RC_minara
+		has_estate_privilege = MIGA_estate_RC_falah
+		has_estate_privilege = MIGA_estate_RC_nerat
+		has_estate_privilege = MIGA_estate_RC_nathalyne
+		has_estate_privilege = MIGA_estate_RC_begga
+		has_estate_privilege = MIGA_estate_RC_dookan
+	}
+}

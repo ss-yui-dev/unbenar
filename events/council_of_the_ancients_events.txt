@@ -1,0 +1,132 @@
+
+namespace = council_of_the_ancients_events
+
+#Royal Council Meeting
+country_event = {
+	id = council_of_the_ancients_events.1
+	title = council_of_the_ancients_events.1.t
+	desc = council_of_the_ancients_events.1.desc
+	picture = HISPANIC_MONARCHY_eventPICTURE
+	is_triggered_only = yes
+
+	option = {
+		name = council_of_the_ancients_events.1.a
+		add_country_modifier = {
+			name = council_of_the_chamber_mod
+			duration = 3650
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+
+	option = {
+		name = council_of_the_ancients_events.1.b
+		add_country_modifier = {
+			name = council_of_development_mod
+			duration = 3650
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+
+	option = {
+		name = council_of_the_ancients_events.1.c
+		add_country_modifier = {
+			name = council_of_the_inquisition_mod
+			duration = 3650
+		}
+		ai_chance = {
+			factor = 10
+			modifier = {
+				factor = 0
+				religious_unity = 0.8
+			}
+		}
+	}
+}
+
+#State Council Meeting
+country_event = {
+	id = council_of_the_ancients_events.2
+	title = council_of_the_ancients_events.2.t
+	desc = council_of_the_ancients_events.2.desc
+	picture = HISPANIC_MONARCHY_eventPICTURE
+	is_triggered_only = yes
+
+	option = {
+		name = council_of_the_ancients_events.2.a
+		add_country_modifier = {
+			name = council_of_diplomats_mod
+			duration = 3650
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+
+	option = {
+		name = council_of_the_ancients_events.2.b
+		add_country_modifier = {
+			name = council_of_artisans_mod
+			duration = 3650
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+
+	option = {
+		name = council_of_the_ancients_events.2.c
+		add_country_modifier = {
+			name = council_of_men_mod
+			duration = 3650
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+}
+
+#War Council Meeting
+country_event = {
+	id = council_of_the_ancients_events.3
+	title = council_of_the_ancients_events.3.t
+	desc = council_of_the_ancients_events.3.desc
+	picture = HISPANIC_MONARCHY_eventPICTURE
+	is_triggered_only = yes
+
+	option = {
+		name = council_of_the_ancients_events.3.a
+		add_country_modifier = {
+			name = council_of_discipline_mod
+			duration = 3650
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+
+	option = {
+		name = council_of_the_ancients_events.3.b
+		add_country_modifier = {
+			name = council_of_organization_mod
+			duration = 3650
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+
+	option = {
+		name = council_of_the_ancients_events.3.c
+		add_country_modifier = {
+			name = council_of_defensive_static_mod
+			duration = 3650
+		}
+		ai_chance = {
+			factor = 0
+		}
+	}
+}

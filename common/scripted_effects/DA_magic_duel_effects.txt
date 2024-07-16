@@ -363,14 +363,11 @@ DA_magic_duel_initialize_stats = {
 
 DA_magic_duel_initialize_stats_npc = {
 	[[Lich]
-		if = {
-			limit = { is_variable_equal = { which = mag_hp value = 0 } }
-			set_variable = { mag_hp = 800 }
-			set_variable = { which = current_hp which = mag_hp }
-		}
+		set_variable = { mag_hp = 800 }
+		set_variable = { which = current_hp which = mag_hp }
 		set_variable = { mag_shield = 1400 }
 		set_variable = { mag_accuracy = 100 }
-		set_variable = { mag_evasion = 15 }
+		set_variable = { mag_evasion = 20 }
 		set_variable = { mag_resistance = 33 }
 		set_variable = { mag_dot = 0 }
 		set_variable = { mag_hot = 0 }
@@ -397,6 +394,40 @@ DA_magic_duel_initialize_stats_npc = {
 		set_country_flag = necromancy_1
 		set_country_flag = necromancy_2
 		set_country_flag = necromancy_3
+	]
+	[[Dragon_Khugdihr]
+		set_variable = { mag_hp = 3000 }
+		set_variable = { which = current_hp which = mag_hp }
+		set_variable = { mag_hp = 3000 }
+		set_variable = { mag_shield = 1000 }
+		set_variable = { mag_accuracy = 90 }
+		set_variable = { mag_evasion = 5 }
+		set_variable = { mag_resistance = 33 }
+		set_variable = { mag_dot = 0 }
+		set_variable = { mag_hot = 0 }
+		set_variable = { mag_mana = 4000 }
+		set_variable = { mag_power = 400 }
+		ROOT = { PREV = { set_variable = { which = mag_power which = PREV } } } #It scale with yours because i'm a bad boy
+		multiply_variable = { mag_power = 1.55 }								#Then he get even more
+		if = {
+			limit = { NOT = { check_variable = { mag_power = 350.69 } } }		#And that's if you're too weak, trash
+			set_variable = { mag_power = 350.69 }								#Haha funny numbers
+		}
+		set_variable = { which = current_mana which = mag_mana }
+		
+		#Available Spell for dragon
+		set_country_flag = evocation_1
+		set_country_flag = evocation_2
+		set_country_flag = abjuration_1
+		set_country_flag = abjuration_2
+		set_country_flag = conjuration_1
+		set_country_flag = conjuration_2
+		set_country_flag = transmutation_1
+		set_country_flag = transmutation_2
+		set_country_flag = illusion_1
+		set_country_flag = illusion_2
+		set_country_flag = enchantment_1
+		set_country_flag = divination_1
 	]
 }
 

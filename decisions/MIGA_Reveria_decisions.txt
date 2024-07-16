@@ -1,0 +1,89 @@
+country_decisions = {
+	
+	MIGA_A05_integration_into_the_administration = {
+		major = yes
+		
+		potential = {
+			NOT = { tag = A05 }
+			OR = {
+				AND = {
+					high_tolerance_gnomish_race_trigger = yes
+					any_owned_province = {
+						OR = {
+							has_gnomish_majority_trigger = yes
+							has_gnomish_minority_trigger = yes
+						}
+					}
+				}
+				AND = {
+					high_tolerance_goblin_race_trigger = yes
+					any_owned_province = {
+						OR = {
+							has_goblin_majority_trigger = yes
+							has_goblin_minority_trigger = yes
+						}
+					}
+				}
+				AND = {
+					high_tolerance_kobold_race_trigger = yes
+					any_owned_province = {
+						OR = {
+							has_kobold_majority_trigger = yes
+							has_kobold_minority_trigger = yes
+						}
+					}
+				}
+			}
+			NOT = { mission_completed = A05_integration_into_the_administration }
+			can_activate_artificers = yes
+			NOT = { has_estate = estate_artificers }
+		}
+		
+		provinces_to_highlight = {
+			owned_by = ROOT
+			OR = {
+				has_gnomish_majority_trigger = yes
+				has_gnomish_minority_trigger = yes
+				has_goblin_majority_trigger = yes
+				has_goblin_minority_trigger = yes
+				has_kobold_majority_trigger = yes
+				has_kobold_minority_trigger = yes
+			}
+		}
+		
+		allow = {
+			adm_power = 150
+			dip_power = 150
+			mil_power = 150
+			OR = {
+				high_tolerance_gnomish_race_trigger = yes
+				high_tolerance_goblin_race_trigger = yes
+				high_tolerance_kobold_race_trigger = yes
+			}
+		}
+		
+		effect = {
+			add_adm_power = -150
+			add_dip_power = -150
+			add_mil_power = -150
+			set_country_flag = supporting_artificers
+			hidden_effect = {
+				if = {
+					limit = {
+						NOT = { has_country_flag = artificery_unlocked }
+					}
+					country_event = {
+						id = magic_artificery_setup.1
+						days = 1
+					}
+				}
+			}
+			custom_tooltip = supporting_artificers_tt
+			change_innovativeness = 2
+			
+			hidden_effect = {
+				complete_mission = A05_integration_into_the_administration
+			}
+		}
+	}
+}

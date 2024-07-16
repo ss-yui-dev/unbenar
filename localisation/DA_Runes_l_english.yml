@@ -1,0 +1,140 @@
+﻿l_english:
+
+ DA_Found_advanced_rune_tt:0 "Found an §MAdavanced Rune§!"
+ DA_Found_Runic_circuit_tt:0 "Found a possible §MRunic Circuit§!"
+
+ DA_Find_Advanced_rune_tt:0 "Maybe an §MAdavanced Rune§!?"
+ DA_Find_runic_circuit_tt:0 "Maybe an §MRunic Circuit§!"
+
+ DA_Rune_event.100.a:0 "Ashen Skies!"
+ DA_Rune_event.101.a:0 "Excellent"
+
+ DA_Rune_event.100.t:0 "Broken Rune"
+ DA_Rune_event.100.d:0 "The rune we wanted to analyze is too deteriorated to be comprehended.\nOur disheartened Dwarves Gave up and went back."
+
+ DA_Rune_event.101.t:0 "§MAdavanced Rune:§! Durability"
+ DA_Rune_event.101.d:0 "Rating: B-\n\nCost: 3        Tech Tier: Advanced Runes (II)\n\nUnit Type: Any      Unique Modifier: None\n\nTechs Required:\n - §oTechnology§! §YAlchemy I§!\n - §oTechnology§! §YArcane Arts I§!\n\n"
+
+ DA_Rune_event.102.t:0 "§MAdavanced Rune:§! Protection"
+ DA_Rune_event.102.d:0 "Rating: C+\n\nCost: 2        Tech Tier: Advanced Runes (II)\n\nUnit Type: Any      Unique Modifier: None\n\nTechs Required:\n - §oTechnology§! §YAlchemy I§!\n - §oTechnology§! §YArcane Arts I§!\n\n"
+
+ DA_Rune_event.103.t:0 "§MAdavanced Rune:§! Precision"
+ DA_Rune_event.103.d:0 "Rating: B\n\nCost: 3        Tech Tier: Advanced Runes (II)\n\nUnit Type: Any      Unique Modifier: None\n\nTechs Required:\n - §oTechnology§! §YMedicine I§!\n - §oTechnology§! §YAlchemy I§!\n - §oTechnology§! §YArcane Arts I§!\n\n"
+
+ DA_Rune_event.104.t:0 "§MAdavanced Rune:§! Resolve"
+ DA_Rune_event.104.d:0 "Rating: B-\n\nCost: 2        Tech Tier: Advanced Runes (II)\n\nUnit Type: Any      Unique Modifier: None\n\nTechs Required:\n - §oTechnology§! §YAlchemy I§!\n - §oTechnology§! §YArcane Arts I§!\n\n"
+
+ DA_Rune_event.105.t:0 "§MAdavanced Rune:§! Rage"
+ DA_Rune_event.105.d:0 "Rating: B+\n\nCost: 4        Tech Tier: Advanced Runes (II)\n\nUnit Type: Any      Unique Modifier: None\n\nTechs Required:\n - §oTechnology§! §YMedicine I§!\n - §oTechnology§! §YAlchemy I§!\n - §oTechnology§! §YArcane Arts II§!\n\n"
+
+
+ DA_Rune_event.140.t:0 "§MEarth Rune:§! Earthen Grasp"
+ DA_Rune_event.140.d:0 "Rating: B+\n\nCost: 4        Tech Tier: Advanced Runes (II)\n\nUnit Type: Any      Unique Modifier: Earth\n\nTechs Required:\n - §MElemental Magic§! §YEarth§!\n - §oTechnology§! §YArcane Arts I§!\n\n"
+
+ DA_Rune_event.141.t:0 "§MEarth Rune:§! StoneSkin"
+ DA_Rune_event.141.d:0 "Rating: B+\n\nCost: 4        Tech Tier: Advanced Runes (II)\n\nUnit Type: Any      Unique Modifier: Earth\n\nTechs Required:\n - §MElemental Magic§! §YEarth§!\n - §oTechnology§! §YArcane Arts I§!\n\n"
+
+ DA_Rune_event.142.t:0 "§MEarth Rune:§! Earthbound Strength"
+ DA_Rune_event.142.d:0 "Rating: B+\n\nCost: 4        Tech Tier: Advanced Runes (II)\n\nUnit Type: Any      Unique Modifier: Earth\n\nTechs Required:\n - §MElemental Magic§! §YEarth§!\n - §oTechnology§! §YArcane Arts I§!\n\n"
+
+ DA_Rune_event.145.t:0 "§MAir Rune:§! Windborne Swiftness"
+ DA_Rune_event.145.d:0 "Rating: B+\n\nCost: 4        Tech Tier: Advanced Runes (II)\n\nUnit Type: Any      Unique Modifier: Air\n\nTechs Required:\n - §MElemental Magic§! §YAir§!\n - §oTechnology§! §YArcane Arts I§!\n\n"
+
+ DA_Rune_event.146.t:0 "§MAir Rune:§! Galeforce Impact"
+ DA_Rune_event.146.d:0 "Rating: B+\n\nCost: 4        Tech Tier: Advanced Runes (II)\n\nUnit Type: Any      Unique Modifier: Air\n\nTechs Required:\n - §MElemental Magic§! §YAir§!\n - §oTechnology§! §YArcane Arts I§!\n\n"
+
+ DA_Rune_event.147.t:0 "§MAir Rune:§! Airy Shielding"
+ DA_Rune_event.147.d:0 "Rating: B+\n\nCost: 4        Tech Tier: Advanced Runes (II)\n\nUnit Type: Any      Unique Modifier: Air\n\nTechs Required:\n - §MElemental Magic§! §YAir§!\n - §oTechnology§! §YArcane Arts I§!\n\n"
+
+ DA_Rune_event.150.t:0 "§MFire Rune:§! Pyrokinetic Shield"
+ DA_Rune_event.150.d:0 "Rating: B+\n\nCost: 4        Tech Tier: Advanced Runes (II)\n\nUnit Type: Any      Unique Modifier: Fire\n\nTechs Required:\n - §MElemental Magic§! §YFire§!\n - §oTechnology§! §YArcane Arts I§!\n\n"
+
+ DA_Rune_event.151.t:0 "§MFire Rune:§! Scorching Aura"
+ DA_Rune_event.151.d:0 "Rating: B+\n\nCost: 4        Tech Tier: Advanced Runes (II)\n\nUnit Type: Any      Unique Modifier: Fire\n\nTechs Required:\n - §MElemental Magic§! §YFire§!\n - §oTechnology§! §YArcane Arts I§!\n\n"
+
+ DA_Rune_event.152.t:0 "§MFire Rune:§! Flameburst Impact"
+ DA_Rune_event.152.d:0 "Rating: B+\n\nCost: 4        Tech Tier: Advanced Runes (II)\n\nUnit Type: Any      Unique Modifier: Fire\n\nTechs Required:\n - §MElemental Magic§! §YFire§!\n - §oTechnology§! §YArcane Arts I§!\n\n"
+
+ DA_Rune_event.155.t:0 "§MWater Rune:§! Torrential Defense"
+ DA_Rune_event.155.d:0 "Rating: B+\n\nCost: 4        Tech Tier: Advanced Runes (II)\n\nUnit Type: Any      Unique Modifier: Water\n\nTechs Required:\n - §MElemental Magic§! §YWater§!\n - §oTechnology§! §YArcane Arts I§!\n\n"
+
+ DA_Rune_event.156.t:0 "§MWater Rune:§! Calming Water"
+ DA_Rune_event.156.d:0 "Rating: B+\n\nCost: 4        Tech Tier: Advanced Runes (II)\n\nUnit Type: Any      Unique Modifier: Water\n\nTechs Required:\n - §MElemental Magic§! §YWater§!\n - §oTechnology§! §YArcane Arts I§!\n\n"
+
+ DA_Rune_event.157.t:0 "§MWater Rune:§! Frostbite's Grasp"
+ DA_Rune_event.157.d:0 "Rating: B+\n\nCost: 4        Tech Tier: Advanced Runes (II)\n\nUnit Type: Any      Unique Modifier: Water\n\nTechs Required:\n - §MElemental Magic§! §YWater§!\n - §oTechnology§! §YArcane Arts I§!\n\n"
+
+ DA_Rune_event.160.t:0 "§MEnhancement:§! Muscle Density"
+ DA_Rune_event.160.d:0 "Rating: B++\n\nCost: 5        Tech Tier: Advanced Runes (II)\n\nUnit Type: Infantry Cavalry      Unique Modifier: Enhancement\n\nTechs Required:\n - §RProject§! §YEnhancement§!\n - §oTechnology§! §YMedicine II§!\n - §oTechnology§! §YAlchemy II§!\n - §oTechnology§! §YArcane Arts II§!\n\n"
+
+ DA_Rune_event.161.t:0 "§MEnhancement:§! Dynamic Vision"
+ DA_Rune_event.161.d:0 "Rating: B++\n\nCost: 5        Tech Tier: Advanced Runes (II)\n\nUnit Type: Infantry Cavalry      Unique Modifier: Enhancement\n\nTechs Required:\n - §RProject§! §YEnhancement§!\n - §oTechnology§! §YMedicine II§!\n - §oTechnology§! §YAlchemy II§!\n - §oTechnology§! §YArcane Arts II§!\n\n"
+
+ DA_Rune_event.162.t:0 "§MEnhancement:§! Reflexes"
+ DA_Rune_event.162.d:0 "Rating: B++\n\nCost: 5        Tech Tier: Advanced Runes (II)\n\nUnit Type: Infantry Cavalry      Unique Modifier: Enhancement\n\nTechs Required:\n - §RProject§! §YEnhancement§!\n - §oTechnology§! §YMedicine II§!\n - §oTechnology§! §YAlchemy II§!\n - §oTechnology§! §YArcane Arts II§!\n\n"
+
+################# runic circuits #################
+
+
+ DA_Rune_event.200.t:0 "§MRunic Circuit:§! Force Field"
+ DA_Rune_event.200.d:0 "Rating: A-\n\nCost: 5        Tech Tier: Runic Circuit (III)\n\nUnit Type: Any      Unique Modifier: None\n\nTechs Required: \n - §oTechnology§! §YAlchemy III§!\n - §oTechnology§! §YArcane Arts III§!\n\n"
+
+ DA_Rune_event.201.t:0 "§MRunic Circuit:§! Shock Absorber"
+ DA_Rune_event.201.d:0 "Rating: A-\n\nCost: 5        Tech Tier: Runic Circuit (III)\n\nUnit Type: Any      Unique Modifier: None\n\nTechs Required: \n - §oTechnology§! §YAlchemy III§!\n - §oTechnology§! §YArcane Arts III§!\n\n"
+
+ DA_Rune_event.202.t:0 "§MRunic Circuit:§! Kinetic Accellerator"
+ DA_Rune_event.202.d:0 "Rating: A-\n\nCost: 5        Tech Tier: Runic Circuit (III)\n\nUnit Type: Any      Unique Modifier: None\n\nTechs Required: \n - §oTechnology§! §YAlchemy III§!\n - §oTechnology§! §YArcane Arts III§!\n - §oTechnology§! §YMechanics III§!\n\n"
+
+ DA_Rune_event.203.t:0 "§MRunic Circuit:§! Hightened Focus"
+ DA_Rune_event.203.d:0 "Rating: A-\n\nCost: 5        Tech Tier: Runic Circuit (III)\n\nUnit Type: Any      Unique Modifier: None\n\nTechs Required: \n - §oTechnology§! §YMedicine III§!\n - §oTechnology§! §YAlchemy III§!\n - §oTechnology§! §YArcane Arts III§!\n\n"
+
+ DA_Rune_event.204.t:0 "§MRunic Circuit:§! Impact Amplifier"
+ DA_Rune_event.204.d:0 "Rating: A-\n\nCost: 5        Tech Tier: Runic Circuit (III)\n\nUnit Type: Any      Unique Modifier: None\n\nTechs Required: \n - §oTechnology§! §YAlchemy III§!\n - §oTechnology§! §YArcane Arts III§!\n - §oTechnology§! §YMechanics III§!\n\n"
+
+ DA_Rune_event.240.t:0 "§MEnhancement:§! Muscle and Bone density"
+ DA_Rune_event.240.d:0 "Rating: A\n\nCost: 6        Tech Tier: Runic Circuit (III)\n\nUnit Type: Any      Unique Modifier: Enhancement\n\nTechs Required: \n - §RProject§! §YEnhancement§!\n - §oTechnology§! §YMedicine III§!\n - §oTechnology§! §YAlchemy III§!\n - §oTechnology§! §YArcane Arts III§!\n\n"
+
+ DA_Rune_event.241.t:0 "§MEnhancement:§! Hightened Senses"
+ DA_Rune_event.241.d:0 "Rating: A\n\nCost: 6        Tech Tier: Runic Circuit (III)\n\nUnit Type: Any      Unique Modifier: Enhancement\n\nTechs Required: \n - §RProject§! §YEnhancement§!\n - §oTechnology§! §YMedicine III§!\n - §oTechnology§! §YAlchemy III§!\n - §oTechnology§! §YArcane Arts III§!\n\n"
+
+ DA_Rune_event.242.t:0 "§MEnhancement:§! Hightened Reflexes"
+ DA_Rune_event.242.d:0 "Rating: A\n\nCost: 6        Tech Tier: Runic Circuit (III)\n\nUnit Type: Any      Unique Modifier: Enhancement\n\nTechs Required: \n - §RProject§! §YEnhancement§!\n - §oTechnology§! §YMedicine III§!\n - §oTechnology§! §YAlchemy III§!\n - §oTechnology§! §YArcane Arts III§!\n\n"
+
+ DA_Rune_event.245.t:0 "§MLife Rune:§! Vitality"
+ DA_Rune_event.245.d:0 "Rating: A\n\nCost: 6        Tech Tier: Runic Circuit (III)\n\nUnit Type: Any      Unique Modifier: Life\n\nTechs Required: \n - §RConceptual Magic§! §YLife§!\n - §oTechnology§! §YMedicine III§!\n - §oTechnology§! §YAlchemy III§!\n - §oTechnology§! §YArcane Arts III§!\n\n"
+
+ DA_Rune_event.246.t:0 "§MLife Rune:§! Renawal"
+ DA_Rune_event.246.d:0 "Rating: A\n\nCost: 6        Tech Tier: Runic Circuit (III)\n\nUnit Type: Any      Unique Modifier: Life\n\nTechs Required: \n - §RConceptual Magic§! §YLife§!\n - §oTechnology§! §YMedicine III§!\n - §oTechnology§! §YAlchemy III§!\n - §oTechnology§! §YArcane Arts III§!\n\n"
+
+ DA_Rune_event.247.t:0 "§MLife Rune:§! Adaptation"
+ DA_Rune_event.247.d:0 "Rating: A\n\nCost: 6        Tech Tier: Runic Circuit (III)\n\nUnit Type: Any      Unique Modifier: Life\n\nTechs Required: \n - §RConceptual Magic§! §YLife§!\n - §oTechnology§! §YMedicine III§!\n - §oTechnology§! §YAlchemy III§!\n - §oTechnology§! §YArcane Arts III§!\n\n"
+
+ DA_Rune_event.248.t:0 "§MLife Rune:§! Movement"
+ DA_Rune_event.248.d:0 "Rating: A\n\nCost: 6        Tech Tier: Runic Circuit (III)\n\nUnit Type: Any      Unique Modifier: Life\n\nTechs Required: \n - §RConceptual Magic§! §YLife§!\n - §oTechnology§! §YMedicine III§!\n - §oTechnology§! §YAlchemy III§!\n - §oTechnology§! §YArcane Arts III§!\n\n"
+
+ DA_Rune_event.251.t:0 "§MDeath Rune:§! Decay"
+ DA_Rune_event.251.d:0 "Rating: A\n\nCost: 6        Tech Tier: Runic Circuit (III)\n\nUnit Type: Any      Unique Modifier: Death\n\nTechs Required: \n - §RConceptual Magic§! §YDeath§!\n - §oTechnology§! §YMedicine III§!\n - §oTechnology§! §YAlchemy III§!\n - §oTechnology§! §YArcane Arts III§!\n\n"
+
+ DA_Rune_event.252.t:0 "§MDeath Rune:§! Memorial"
+ DA_Rune_event.252.d:0 "Rating: A\n\nCost: 6        Tech Tier: Runic Circuit (III)\n\nUnit Type: Any      Unique Modifier: Death\n\nTechs Required: \n - §RConceptual Magic§! §YDeath§!\n - §oTechnology§! §YAlchemy III§!\n - §oTechnology§! §YArcane Arts IV§!\n\n"
+
+ DA_Rune_event.253.t:0 "§MDeath Rune:§! Stillness"
+ DA_Rune_event.253.d:0 "Rating: A\n\nCost: 6        Tech Tier: Runic Circuit (III)\n\nUnit Type: Any      Unique Modifier: Death\n\nTechs Required: \n - §RConceptual Magic§! §YDeath§!\n - §oTechnology§! §YMedicine III§!\n - §oTechnology§! §YAlchemy III§!\n - §oTechnology§! §YArcane Arts IV§!\n\n"
+
+ DA_Rune_event.257.t:0 "§MTime Rune:§! Perception"
+ DA_Rune_event.257.d:0 "Rating: A\n\nCost: 6        Tech Tier: Runic Circuit (III)\n\nUnit Type: Any      Unique Modifier: Time\n\nTechs Required: \n - §RConceptual Magic§! §YTime§!\n - §oTechnology§! §YMedicine IV§!\n - §oTechnology§! §YAlchemy III§!\n - §oTechnology§! §YArcane Arts IV§!\n\n"
+
+ DA_Rune_event.258.t:0 "§MTime Rune:§! Change"
+ DA_Rune_event.258.d:0 "Rating: A\n\nCost: 6        Tech Tier: Runic Circuit (III)\n\nUnit Type: Any      Unique Modifier: Time\n\nTechs Required: \n - §RConceptual Magic§! §YTime§!\n - §oTechnology§! §YMedicine III§!\n - §oTechnology§! §YAlchemy III§!\n - §oTechnology§! §YArcane Arts III§!\n\n"
+
+ DA_Rune_event.259.t:0 "§MTime Rune:§!  Life Death Cycle"
+ DA_Rune_event.259.d:0 "Rating: A\n\nCost: 6        Tech Tier: Runic Circuit (III)\n\nUnit Type: Any      Unique Modifier: Time\n\nTechs Required: \n - §RConceptual Magic§! §YTime§!\n - §oTechnology§! §YMedicine III§!\n - §oTechnology§! §YAlchemy III§!\n - §oTechnology§! §YArcane Arts III§!\n\n"
+
+ DA_Rune_event.262.t:0 "§MSpace Rune:§! Teleportation"
+ DA_Rune_event.262.d:0 "Rating: A\n\nCost: 6        Tech Tier: Runic Circuit (III)\n\nUnit Type: Any      Unique Modifier: Space\n\nTechs Required: \n - §RConceptual Magic§! §YSpace§!\n - §oTechnology§! §YMedicine III§!\n - §oTechnology§! §YAlchemy III§!\n - §oTechnology§! §YArcane Arts III§!\n\n"
+
+ DA_Rune_event.263.t:0 "§MSpace Rune:§! Dimensional Damage"
+ DA_Rune_event.263.d:0 "Rating: A\n\nCost: 6        Tech Tier: Runic Circuit (III)\n\nUnit Type: Any      Unique Modifier: Space\n\nTechs Required: \n - §RConceptual Magic§! §YSpace§!\n - §oTechnology§! §YAlchemy III§!\n - §oTechnology§! §YArcane Arts III§!\n\n"
+
+ DA_Rune_event.264.t:0 "§MSpace Rune:§! Spatial Perception"
+ DA_Rune_event.264.d:0 "Rating: A\n\nCost: 6        Tech Tier: Runic Circuit (III)\n\nUnit Type: Any      Unique Modifier: Space\n\nTechs Required: \n - §RConceptual Magic§! §YSpace§!\n - §oTechnology§! §YMedicine III§!\n - §oTechnology§! §YAlchemy III§!\n - §oTechnology§! §YArcane Arts III§!\n\n"

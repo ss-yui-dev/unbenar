@@ -1,0 +1,381 @@
+namespace = bladegriffon_flavor
+
+# A Pact of Griffon and Blade
+country_event = { #Blade-Griffon Pact Forged
+	id = bladegriffon_flavor.1
+	title = bladegriffon_flavor.1.t
+	desc = bladegriffon_flavor.1.d
+	picture = DIPLOMACY_SIGNING_eventPicture
+	is_triggered_only = yes
+		
+	option = { #okay
+		name = "bladegriffon_flavor.1.a"
+		if = {
+			limit = { tag = B33 }
+			add_country_modifier = {
+				name = blademarches_griffon_attache
+				duration = -1
+			}
+		}
+		if = {
+			limit = { tag = B36 }
+			add_country_modifier = {
+				name = marrhold_blade_attache
+				duration = -1
+			}
+		}
+	}
+}
+
+
+country_event = { #Blade-Griffon Pact Lost
+	id = bladegriffon_flavor.2
+	title = bladegriffon_flavor.2.t
+	desc = bladegriffon_flavor.2.d
+	picture = CIVIL_WAR_eventPicture
+	#is_triggered_only = yes
+	
+	trigger = {
+		OR = {
+			tag = B33 #Blademarches
+			tag = B36 #Marrhold
+		}
+		has_country_flag = griffon_blade_pact
+		NOT = { 
+			OR = {
+				B33 = { alliance_with = B36 }
+				B36 = { is_subject_of = B33 } 
+				B33 = { is_subject_of = B36 } 
+			}
+		}
+		OR = {
+			has_country_modifier = marrhold_blade_attache
+			has_country_modifier = blademarches_griffon_attache
+		}
+	}
+	
+	option = { #okay
+		name = "bladegriffon_flavor.2.a"
+		if = {
+			limit = { has_country_modifier = blademarches_griffon_attache }
+			remove_country_modifier = blademarches_griffon_attache
+		}
+		if = {
+			limit = { has_country_modifier = marrhold_blade_attache }
+			remove_country_modifier = marrhold_blade_attache
+		}
+	}
+}
+
+country_event = { #Blade-Griffon Pact Regained
+	id = bladegriffon_flavor.3
+	title = bladegriffon_flavor.3.t
+	desc = bladegriffon_flavor.3.d
+	picture = DIPLOMACY_eventPicture
+	#is_triggered_only = yes
+	
+	trigger = {
+		OR = {
+			tag = B33 #Blademarches
+			tag = B36 #Marrhold
+		}
+		has_country_flag = griffon_blade_pact
+		OR = {
+			B33 = { alliance_with = B36 }
+			B36 = { is_subject_of = B33 }
+			B33 = { is_subject_of = B36 }
+		}
+		NOT = {
+			OR = {
+				has_country_modifier = blademarches_griffon_attache
+				has_country_modifier = marrhold_blade_attache
+			}
+		}
+	}
+	
+	option = { #okay
+		name = "bladegriffon_flavor.3.a"
+		if = {
+			limit = { tag = B33 }
+			add_country_modifier = {
+				name = blademarches_griffon_attache
+				duration = -1
+			}
+		}
+		if = {
+			limit = { tag = B36 }
+			add_country_modifier = {
+				name = marrhold_blade_attache
+				duration = -1
+			}
+		}
+	}
+}
+
+#Owner of Castonath asks South to Submit
+country_event = { #A Demand from Castonath
+	id = bladegriffon_flavor.4
+	title = bladegriffon_flavor.4.t
+	desc = bladegriffon_flavor.4.d
+	picture = NOBLE_ESTATE_DEMANDS_eventPicture
+	is_triggered_only = yes
+	
+	trigger = {
+	}
+	
+	immediate = {
+		hidden_effect = {
+			save_event_target_as = castonath_subject #asked country
+			random_country = { #owner of Castonath
+				limit = {
+					owns_all_provinces = {
+						area = castonath_area
+					}
+				}
+				save_event_target_as = castonath_overlord
+			}
+		}
+	}
+	
+	option = { #okay
+		name = "bladegriffon_flavor.4.a"
+		trigger = { NOT = { ai = yes } }
+		hidden_effect = {
+			event_target:castonath_overlord = {
+				country_event = {
+					id = bladegriffon_flavor.6
+					days = 1
+				}
+			}
+		}
+		event_target:castonath_overlord = {
+			tooltip = {
+				create_march = event_target:castonath_subject
+			}
+		}
+	}
+	option = { #come and take it
+		name = "bladegriffon_flavor.4.b"
+		add_prestige = 10
+		event_target:castonath_overlord = {
+			tooltip = {
+				add_casus_belli  = {
+				target = event_target:castonath_subject
+				type = cb_vassalize_mission
+				months = 120
+				}
+			}
+		}
+		hidden_effect = {
+			event_target:castonath_overlord = {
+				country_event = {
+					id = bladegriffon_flavor.5
+					days = 1
+				}
+			}
+		}
+	}
+}
+
+country_event = { #[event_target:castonath_subject.GetName] Refuses
+	id = bladegriffon_flavor.5
+	title = bladegriffon_flavor.5.t
+	desc = bladegriffon_flavor.5.d
+	picture = ACCUSATION_eventPicture
+	is_triggered_only = yes
+	
+	trigger = {
+	}
+	
+	option = { #okay
+		name = "bladegriffon_flavor.5.a"
+		add_casus_belli  = {
+			target = event_target:castonath_subject
+			type = cb_vassalize_mission
+			months = 120
+		}
+	}
+}
+
+country_event = { #[Root] Submits
+	id = bladegriffon_flavor.6
+	title = bladegriffon_flavor.6.t
+	desc = bladegriffon_flavor.6.d
+	picture = CONQUEST_eventPicture
+	is_triggered_only = yes
+	
+	trigger = {
+	}
+	
+	option = { #okay
+		name = "bladegriffon_flavor.6.a"
+		create_march = event_target:castonath_subject
+		# aggressive expansion
+	}
+}
+
+country_event = { #Petty Dukedom of $COUNTRY$
+	id = bladegriffon_flavor.7
+	title = bladegriffon_flavor.7.t
+	desc = bladegriffon_flavor.7.d
+	picture = ANGRY_MOB_eventPicture
+	#is_triggered_only = yes
+	
+	trigger = {
+		OR = {
+			tag = B33 #Blademarches
+			tag = B36 #Marrhold
+		}
+		is_subject = yes
+		NOT = { has_country_modifier = bm_mh_submitted_modifier }
+	}
+	
+	mean_time_to_happen = {
+		days = 3
+	}
+	
+	option = { #okay
+		name = "bladegriffon_flavor.7.a"
+		add_prestige = -30
+		add_country_modifier = {
+			name = bm_mh_submitted_modifier
+			duration = -1
+		}
+		random_owned_province = {
+			spawn_rebels = {
+				size = 2
+				type = pretender_rebels
+			}
+		}
+	}
+}
+
+country_event = { #$COUNTRY$ freed
+	id = bladegriffon_flavor.8
+	title = bladegriffon_flavor.8.t
+	desc = bladegriffon_flavor.8.d
+	picture = ANGRY_MOB_eventPicture
+	#is_triggered_only = yes
+	
+	trigger = {
+		OR = {
+			tag = B33 #Blademarches
+			tag = B36 #Marrhold
+		}
+		NOT = { is_subject = yes }
+		has_country_modifier = bm_mh_submitted_modifier
+	}
+	
+	mean_time_to_happen = {
+		days = 3
+	}
+	
+	immediate = {
+		if = {
+			limit = { 
+				NOT = { government_rank = 2 }
+			}
+			set_government_rank = 2
+		}
+	}
+	
+	option = { #okay
+		name = "bladegriffon_flavor.8.a"
+		add_prestige = 20
+		remove_country_modifier = bm_mh_submitted_modifier
+	}
+}
+
+#Selling Coop
+country_event = {
+	id = bladegriffon_flavor.9
+	title = bladegriffon_flavor.9.t
+	desc = bladegriffon_flavor.9.d
+	picture = 15_Trade_Company_eventPicture
+    is_triggered_only = yes
+    
+    immediate = {
+        hidden_effect = {
+            export_to_variable = {
+                which = rig_money_to_transfer
+                value = monthly_income
+                who = ROOT
+            }
+            multiply_variable = {
+                which = rig_money_to_transfer
+                value = 12
+            }
+        }
+    }
+	
+	option = {
+		name = "bladegriffon_flavor.9.a"
+		add_country_modifier = {
+			name = bop_military_coop_sold
+			duration = 5400
+		}
+		add_mil_power = 10
+		transfer_treasury = {
+            giver = ROOT
+            taker = FROM
+            variable = rig_money_to_transfer
+		}
+		
+		ai_chance = { 
+			factor = 1
+		}
+    }
+}
+
+country_event = { #Sellblades
+	id = bladegriffon_flavor.10
+	title = bladegriffon_flavor.10.t
+	desc = bladegriffon_flavor.10.d
+	picture = SCOTTISH_MERCENARIES_eventPicture
+    
+	#fire_only_once = yes	
+	
+	mean_time_to_happen = {
+		days = 120
+	}
+	
+	trigger = {
+		tag = B33 #Blademarches
+		reform_level = 8
+		NOT = { has_country_flag = bop_had_sellblades }
+	}
+    
+    immediate = {
+		set_country_flag = bop_had_sellblades
+    }
+	
+	option = {
+		name = "bladegriffon_flavor.10.a"
+		unlock_government_reform = {
+			government_reform = blademarches_sellblade_economy
+		}
+		add_government_reform = blademarches_sellblade_economy
+		if = {
+			limit = { NOT = { has_estate_privilege = estate_adventurers_organization_licensed_adventurers } }
+			clear_adventurers_organization_effect = yes
+			set_estate_privilege = estate_adventurers_organization_licensed_adventurers
+		}	
+		ai_chance = { 
+			factor = 1
+		}
+    }
+	option = {
+		name = "bladegriffon_flavor.10.b"
+		unlock_government_reform = {
+			government_reform = blademarches_sellblade_economy
+		}
+		if = {
+			limit = { NOT = { has_estate_privilege = estate_adventurers_organization_licensed_adventurers } }
+			clear_adventurers_organization_effect = yes
+			set_estate_privilege = estate_adventurers_organization_licensed_adventurers
+		}	
+		ai_chance = { 
+			factor = 0
+		}
+    }
+}

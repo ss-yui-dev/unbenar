@@ -69,7 +69,7 @@ Dwarven_magic_Barrier1 = {
 			factor = 200
 		}
 		province_modifiers = {	
-			local_defensiveness = 0.15
+			local_defensiveness = 0.10
 		}
 		area_modifier = {
 		}
@@ -87,12 +87,12 @@ Dwarven_magic_Barrier1 = {
 		}
 		province_modifiers = {
 			local_hostile_attrition = 0.5
-			max_attrition = 1
-			local_defensiveness = 0.35
+			local_defensiveness = 0.25
 		}
 		area_modifier = {
 		}
 		country_modifiers = {
+			global_tax_income = -3
 		}
 		on_upgraded = {
 		}
@@ -106,12 +106,13 @@ Dwarven_magic_Barrier1 = {
 		}
 		province_modifiers = {
 			local_hostile_attrition = 1
-			max_attrition = 2
-			local_defensiveness = 0.70
+			max_attrition = 1
+			local_defensiveness = 0.50
 		}
 		area_modifier = {
 		}
 		country_modifiers = {
+			global_tax_income = -12
 		}
 		on_upgraded = {
 		}
@@ -187,7 +188,7 @@ Dwarven_magic_Barrier2 = {
 			factor = 200
 		}
 		province_modifiers = {	
-			local_defensiveness = 0.15
+			local_defensiveness = 0.10
 		}
 		area_modifier = {
 		}
@@ -205,12 +206,12 @@ Dwarven_magic_Barrier2 = {
 		}
 		province_modifiers = {
 			local_hostile_attrition = 0.5
-			max_attrition = 1
-			local_defensiveness = 0.35
+			local_defensiveness = 0.25
 		}
 		area_modifier = {
 		}
 		country_modifiers = {
+			global_tax_income = -3
 		}
 		on_upgraded = {
 		}
@@ -224,12 +225,13 @@ Dwarven_magic_Barrier2 = {
 		}
 		province_modifiers = {
 			local_hostile_attrition = 1
-			max_attrition = 2
-			local_defensiveness = 0.70
+			max_attrition = 1
+			local_defensiveness = 0.50
 		}
 		area_modifier = {
 		}
 		country_modifiers = {
+			global_tax_income = -12
 		}
 		on_upgraded = {
 		}
@@ -305,7 +307,7 @@ Dwarven_magic_Barrier3 = {
 			factor = 200
 		}
 		province_modifiers = {	
-			local_defensiveness = 0.15
+			local_defensiveness = 0.10
 		}
 		area_modifier = {
 		}
@@ -323,12 +325,12 @@ Dwarven_magic_Barrier3 = {
 		}
 		province_modifiers = {
 			local_hostile_attrition = 0.5
-			max_attrition = 1
-			local_defensiveness = 0.35
+			local_defensiveness = 0.25
 		}
 		area_modifier = {
 		}
 		country_modifiers = {
+			global_tax_income = -3
 		}
 		on_upgraded = {
 		}
@@ -342,12 +344,13 @@ Dwarven_magic_Barrier3 = {
 		}
 		province_modifiers = {
 			local_hostile_attrition = 1
-			max_attrition = 2
-			local_defensiveness = 0.70
+			max_attrition = 1
+			local_defensiveness = 0.50
 		}
 		area_modifier = {
 		}
 		country_modifiers = {
+			global_tax_income = -12
 		}
 		on_upgraded = {
 		}
@@ -423,7 +426,7 @@ Dwarven_magic_Barrier45 = {
 			factor = 200
 		}
 		province_modifiers = {	
-			local_defensiveness = 0.15
+			local_defensiveness = 0.10
 		}
 		area_modifier = {
 		}
@@ -441,12 +444,12 @@ Dwarven_magic_Barrier45 = {
 		}
 		province_modifiers = {
 			local_hostile_attrition = 0.5
-			max_attrition = 1
-			local_defensiveness = 0.35
+			local_defensiveness = 0.25
 		}
 		area_modifier = {
 		}
 		country_modifiers = {
+			global_tax_income = -3
 		}
 		on_upgraded = {
 		}
@@ -460,12 +463,13 @@ Dwarven_magic_Barrier45 = {
 		}
 		province_modifiers = {
 			local_hostile_attrition = 1
-			max_attrition = 2
-			local_defensiveness = 0.70
+			max_attrition = 1
+			local_defensiveness = 0.50
 		}
 		area_modifier = {
 		}
 		country_modifiers = {
+			global_tax_income = -12
 		}
 		on_upgraded = {
 		}
@@ -541,7 +545,7 @@ Dwarven_magic_Barrier4 = {
 			factor = 200
 		}
 		province_modifiers = {	
-			local_defensiveness = 0.15
+			local_defensiveness = 0.10
 		}
 		area_modifier = {
 		}
@@ -559,12 +563,12 @@ Dwarven_magic_Barrier4 = {
 		}
 		province_modifiers = {
 			local_hostile_attrition = 0.5
-			max_attrition = 1
-			local_defensiveness = 0.35
+			local_defensiveness = 0.25
 		}
 		area_modifier = {
 		}
 		country_modifiers = {
+			global_tax_income = -3
 		}
 		on_upgraded = {
 		}
@@ -578,12 +582,13 @@ Dwarven_magic_Barrier4 = {
 		}
 		province_modifiers = {
 			local_hostile_attrition = 1
-			max_attrition = 2
-			local_defensiveness = 0.70
+			max_attrition = 1
+			local_defensiveness = 0.50
 		}
 		area_modifier = {
 		}
 		country_modifiers = {
+			global_tax_income = -12
 		}
 		on_upgraded = {
 		}
@@ -659,7 +664,7 @@ Dwarven_magic_Barrier5 = {
 			factor = 200
 		}
 		province_modifiers = {	
-			local_defensiveness = 0.15
+			local_defensiveness = 0.10
 		}
 		area_modifier = {
 		}
@@ -677,12 +682,12 @@ Dwarven_magic_Barrier5 = {
 		}
 		province_modifiers = {
 			local_hostile_attrition = 0.5
-			max_attrition = 1
-			local_defensiveness = 0.35
+			local_defensiveness = 0.25
 		}
 		area_modifier = {
 		}
 		country_modifiers = {
+			global_tax_income = -3
 		}
 		on_upgraded = {
 		}
@@ -696,12 +701,13 @@ Dwarven_magic_Barrier5 = {
 		}
 		province_modifiers = {
 			local_hostile_attrition = 1
-			max_attrition = 2
-			local_defensiveness = 0.70
+			max_attrition = 1
+			local_defensiveness = 0.50
 		}
 		area_modifier = {
 		}
 		country_modifiers = {
+			global_tax_income = -12
 		}
 		on_upgraded = {
 		}
@@ -778,7 +784,7 @@ Dwarven_magic_Barrier6 = {
 			factor = 200
 		}
 		province_modifiers = {	
-			local_defensiveness = 0.15
+			local_defensiveness = 0.10
 		}
 		area_modifier = {
 		}
@@ -796,12 +802,12 @@ Dwarven_magic_Barrier6 = {
 		}
 		province_modifiers = {
 			local_hostile_attrition = 0.5
-			max_attrition = 1
-			local_defensiveness = 0.35
+			local_defensiveness = 0.25
 		}
 		area_modifier = {
 		}
 		country_modifiers = {
+			global_tax_income = -3
 		}
 		on_upgraded = {
 		}
@@ -815,12 +821,13 @@ Dwarven_magic_Barrier6 = {
 		}
 		province_modifiers = {
 			local_hostile_attrition = 1
-			max_attrition = 2
-			local_defensiveness = 0.70
+			max_attrition = 1
+			local_defensiveness = 0.50
 		}
 		area_modifier = {
 		}
 		country_modifiers = {
+			global_tax_income = -12
 		}
 		on_upgraded = {
 		}
@@ -896,7 +903,7 @@ Dwarven_magic_Barrier7 = {
 			factor = 200
 		}
 		province_modifiers = {	
-			local_defensiveness = 0.15
+			local_defensiveness = 0.10
 		}
 		area_modifier = {
 		}
@@ -914,12 +921,12 @@ Dwarven_magic_Barrier7 = {
 		}
 		province_modifiers = {
 			local_hostile_attrition = 0.5
-			max_attrition = 1
-			local_defensiveness = 0.35
+			local_defensiveness = 0.25
 		}
 		area_modifier = {
 		}
 		country_modifiers = {
+			global_tax_income = -3
 		}
 		on_upgraded = {
 		}
@@ -933,12 +940,13 @@ Dwarven_magic_Barrier7 = {
 		}
 		province_modifiers = {
 			local_hostile_attrition = 1
-			max_attrition = 2
-			local_defensiveness = 0.70
+			max_attrition = 1
+			local_defensiveness = 0.50
 		}
 		area_modifier = {
 		}
 		country_modifiers = {
+			global_tax_income = -12
 		}
 		on_upgraded = {
 		}
@@ -1014,7 +1022,7 @@ Dwarven_magic_Barrier8 = {
 			factor = 200
 		}
 		province_modifiers = {	
-			local_defensiveness = 0.15
+			local_defensiveness = 0.10
 		}
 		area_modifier = {
 		}
@@ -1032,12 +1040,12 @@ Dwarven_magic_Barrier8 = {
 		}
 		province_modifiers = {
 			local_hostile_attrition = 0.5
-			max_attrition = 1
-			local_defensiveness = 0.35
+			local_defensiveness = 0.25
 		}
 		area_modifier = {
 		}
 		country_modifiers = {
+			global_tax_income = -3
 		}
 		on_upgraded = {
 		}
@@ -1051,12 +1059,13 @@ Dwarven_magic_Barrier8 = {
 		}
 		province_modifiers = {
 			local_hostile_attrition = 1
-			max_attrition = 2
-			local_defensiveness = 0.70
+			max_attrition = 1
+			local_defensiveness = 0.50
 		}
 		area_modifier = {
 		}
 		country_modifiers = {
+			global_tax_income = -12
 		}
 		on_upgraded = {
 		}
@@ -1132,7 +1141,7 @@ Dwarven_magic_Barrier9 = {
 			factor = 200
 		}
 		province_modifiers = {	
-			local_defensiveness = 0.15
+			local_defensiveness = 0.10
 		}
 		area_modifier = {
 		}
@@ -1150,12 +1159,12 @@ Dwarven_magic_Barrier9 = {
 		}
 		province_modifiers = {
 			local_hostile_attrition = 0.5
-			max_attrition = 1
-			local_defensiveness = 0.35
+			local_defensiveness = 0.25
 		}
 		area_modifier = {
 		}
 		country_modifiers = {
+			global_tax_income = -3
 		}
 		on_upgraded = {
 		}
@@ -1169,12 +1178,13 @@ Dwarven_magic_Barrier9 = {
 		}
 		province_modifiers = {
 			local_hostile_attrition = 1
-			max_attrition = 2
-			local_defensiveness = 0.70
+			max_attrition = 1
+			local_defensiveness = 0.50
 		}
 		area_modifier = {
 		}
 		country_modifiers = {
+			global_tax_income = -12
 		}
 		on_upgraded = {
 		}
@@ -1250,7 +1260,7 @@ Dwarven_magic_Barrier10 = {
 			factor = 200
 		}
 		province_modifiers = {	
-			local_defensiveness = 0.15
+			local_defensiveness = 0.10
 		}
 		area_modifier = {
 		}
@@ -1268,12 +1278,12 @@ Dwarven_magic_Barrier10 = {
 		}
 		province_modifiers = {
 			local_hostile_attrition = 0.5
-			max_attrition = 1
-			local_defensiveness = 0.35
+			local_defensiveness = 0.25
 		}
 		area_modifier = {
 		}
 		country_modifiers = {
+			global_tax_income = -3
 		}
 		on_upgraded = {
 		}
@@ -1287,12 +1297,13 @@ Dwarven_magic_Barrier10 = {
 		}
 		province_modifiers = {
 			local_hostile_attrition = 1
-			max_attrition = 2
-			local_defensiveness = 0.70
+			max_attrition = 1
+			local_defensiveness = 0.50
 		}
 		area_modifier = {
 		}
 		country_modifiers = {
+			global_tax_income = -12
 		}
 		on_upgraded = {
 		}
@@ -1368,7 +1379,7 @@ Dwarven_magic_Barrier11 = {
 			factor = 200
 		}
 		province_modifiers = {	
-			local_defensiveness = 0.15
+			local_defensiveness = 0.10
 		}
 		area_modifier = {
 		}
@@ -1386,12 +1397,12 @@ Dwarven_magic_Barrier11 = {
 		}
 		province_modifiers = {
 			local_hostile_attrition = 0.5
-			max_attrition = 1
-			local_defensiveness = 0.35
+			local_defensiveness = 0.25
 		}
 		area_modifier = {
 		}
 		country_modifiers = {
+			global_tax_income = -3
 		}
 		on_upgraded = {
 		}
@@ -1405,12 +1416,13 @@ Dwarven_magic_Barrier11 = {
 		}
 		province_modifiers = {
 			local_hostile_attrition = 1
-			max_attrition = 2
-			local_defensiveness = 0.70
+			max_attrition = 1
+			local_defensiveness = 0.50
 		}
 		area_modifier = {
 		}
 		country_modifiers = {
+			global_tax_income = -12
 		}
 		on_upgraded = {
 		}
@@ -1486,7 +1498,7 @@ Dwarven_magic_Barrier12 = {
 			factor = 200
 		}
 		province_modifiers = {	
-			local_defensiveness = 0.15
+			local_defensiveness = 0.10
 		}
 		area_modifier = {
 		}
@@ -1504,12 +1516,12 @@ Dwarven_magic_Barrier12 = {
 		}
 		province_modifiers = {
 			local_hostile_attrition = 0.5
-			max_attrition = 1
-			local_defensiveness = 0.35
+			local_defensiveness = 0.25
 		}
 		area_modifier = {
 		}
 		country_modifiers = {
+			global_tax_income = -3
 		}
 		on_upgraded = {
 		}
@@ -1523,12 +1535,13 @@ Dwarven_magic_Barrier12 = {
 		}
 		province_modifiers = {
 			local_hostile_attrition = 1
-			max_attrition = 2
-			local_defensiveness = 0.70
+			max_attrition = 1
+			local_defensiveness = 0.50
 		}
 		area_modifier = {
 		}
 		country_modifiers = {
+			global_tax_income = -12
 		}
 		on_upgraded = {
 		}
@@ -1604,7 +1617,7 @@ Dwarven_magic_Barrier13 = {
 			factor = 200
 		}
 		province_modifiers = {	
-			local_defensiveness = 0.15
+			local_defensiveness = 0.10
 		}
 		area_modifier = {
 		}
@@ -1622,12 +1635,12 @@ Dwarven_magic_Barrier13 = {
 		}
 		province_modifiers = {
 			local_hostile_attrition = 0.5
-			max_attrition = 1
-			local_defensiveness = 0.35
+			local_defensiveness = 0.25
 		}
 		area_modifier = {
 		}
 		country_modifiers = {
+			global_tax_income = -3
 		}
 		on_upgraded = {
 		}
@@ -1641,12 +1654,13 @@ Dwarven_magic_Barrier13 = {
 		}
 		province_modifiers = {
 			local_hostile_attrition = 1
-			max_attrition = 2
-			local_defensiveness = 0.70
+			max_attrition = 1
+			local_defensiveness = 0.50
 		}
 		area_modifier = {
 		}
 		country_modifiers = {
+			global_tax_income = -12
 		}
 		on_upgraded = {
 		}
@@ -1722,7 +1736,7 @@ Dwarven_magic_Barrier14 = {
 			factor = 200
 		}
 		province_modifiers = {	
-			local_defensiveness = 0.15
+			local_defensiveness = 0.10
 		}
 		area_modifier = {
 		}
@@ -1740,12 +1754,12 @@ Dwarven_magic_Barrier14 = {
 		}
 		province_modifiers = {
 			local_hostile_attrition = 0.5
-			max_attrition = 1
-			local_defensiveness = 0.35
+			local_defensiveness = 0.25
 		}
 		area_modifier = {
 		}
 		country_modifiers = {
+			global_tax_income = -3
 		}
 		on_upgraded = {
 		}
@@ -1759,12 +1773,13 @@ Dwarven_magic_Barrier14 = {
 		}
 		province_modifiers = {
 			local_hostile_attrition = 1
-			max_attrition = 2
-			local_defensiveness = 0.70
+			max_attrition = 1
+			local_defensiveness = 0.50
 		}
 		area_modifier = {
 		}
 		country_modifiers = {
+			global_tax_income = -12
 		}
 		on_upgraded = {
 		}
@@ -1840,7 +1855,7 @@ Dwarven_magic_Barrier15 = {
 			factor = 200
 		}
 		province_modifiers = {	
-			local_defensiveness = 0.15
+			local_defensiveness = 0.10
 		}
 		area_modifier = {
 		}
@@ -1858,12 +1873,12 @@ Dwarven_magic_Barrier15 = {
 		}
 		province_modifiers = {
 			local_hostile_attrition = 0.5
-			max_attrition = 1
-			local_defensiveness = 0.35
+			local_defensiveness = 0.25
 		}
 		area_modifier = {
 		}
 		country_modifiers = {
+			global_tax_income = -3
 		}
 		on_upgraded = {
 		}
@@ -1877,12 +1892,13 @@ Dwarven_magic_Barrier15 = {
 		}
 		province_modifiers = {
 			local_hostile_attrition = 1
-			max_attrition = 2
-			local_defensiveness = 0.70
+			max_attrition = 1
+			local_defensiveness = 0.50
 		}
 		area_modifier = {
 		}
 		country_modifiers = {
+			global_tax_income = -12
 		}
 		on_upgraded = {
 		}
@@ -1958,7 +1974,7 @@ Dwarven_magic_Barrier16 = {
 			factor = 200
 		}
 		province_modifiers = {	
-			local_defensiveness = 0.15
+			local_defensiveness = 0.10
 		}
 		area_modifier = {
 		}
@@ -1976,12 +1992,12 @@ Dwarven_magic_Barrier16 = {
 		}
 		province_modifiers = {
 			local_hostile_attrition = 0.5
-			max_attrition = 1
-			local_defensiveness = 0.35
+			local_defensiveness = 0.25
 		}
 		area_modifier = {
 		}
 		country_modifiers = {
+			global_tax_income = -3
 		}
 		on_upgraded = {
 		}
@@ -1995,12 +2011,13 @@ Dwarven_magic_Barrier16 = {
 		}
 		province_modifiers = {
 			local_hostile_attrition = 1
-			max_attrition = 2
-			local_defensiveness = 0.70
+			max_attrition = 1
+			local_defensiveness = 0.50
 		}
 		area_modifier = {
 		}
 		country_modifiers = {
+			global_tax_income = -12
 		}
 		on_upgraded = {
 		}
@@ -2076,7 +2093,7 @@ Dwarven_magic_Barrier17 = {
 			factor = 200
 		}
 		province_modifiers = {	
-			local_defensiveness = 0.15
+			local_defensiveness = 0.10
 		}
 		area_modifier = {
 		}
@@ -2094,12 +2111,12 @@ Dwarven_magic_Barrier17 = {
 		}
 		province_modifiers = {
 			local_hostile_attrition = 0.5
-			max_attrition = 1
-			local_defensiveness = 0.35
+			local_defensiveness = 0.25
 		}
 		area_modifier = {
 		}
 		country_modifiers = {
+			global_tax_income = -3
 		}
 		on_upgraded = {
 		}
@@ -2113,12 +2130,13 @@ Dwarven_magic_Barrier17 = {
 		}
 		province_modifiers = {
 			local_hostile_attrition = 1
-			max_attrition = 2
-			local_defensiveness = 0.70
+			max_attrition = 1
+			local_defensiveness = 0.50
 		}
 		area_modifier = {
 		}
 		country_modifiers = {
+			global_tax_income = -12
 		}
 		on_upgraded = {
 		}
@@ -2194,7 +2212,7 @@ Dwarven_magic_Barrier18 = {
 			factor = 200
 		}
 		province_modifiers = {	
-			local_defensiveness = 0.15
+			local_defensiveness = 0.10
 		}
 		area_modifier = {
 		}
@@ -2212,12 +2230,12 @@ Dwarven_magic_Barrier18 = {
 		}
 		province_modifiers = {
 			local_hostile_attrition = 0.5
-			max_attrition = 1
-			local_defensiveness = 0.35
+			local_defensiveness = 0.25
 		}
 		area_modifier = {
 		}
 		country_modifiers = {
+			global_tax_income = -3
 		}
 		on_upgraded = {
 		}
@@ -2231,12 +2249,13 @@ Dwarven_magic_Barrier18 = {
 		}
 		province_modifiers = {
 			local_hostile_attrition = 1
-			max_attrition = 2
-			local_defensiveness = 0.70
+			max_attrition = 1
+			local_defensiveness = 0.50
 		}
 		area_modifier = {
 		}
 		country_modifiers = {
+			global_tax_income = -12
 		}
 		on_upgraded = {
 		}
@@ -2312,7 +2331,7 @@ Dwarven_magic_Barrier19 = {
 			factor = 200
 		}
 		province_modifiers = {	
-			local_defensiveness = 0.15
+			local_defensiveness = 0.10
 		}
 		area_modifier = {
 		}
@@ -2330,12 +2349,12 @@ Dwarven_magic_Barrier19 = {
 		}
 		province_modifiers = {
 			local_hostile_attrition = 0.5
-			max_attrition = 1
-			local_defensiveness = 0.35
+			local_defensiveness = 0.25
 		}
 		area_modifier = {
 		}
 		country_modifiers = {
+			global_tax_income = -3
 		}
 		on_upgraded = {
 		}
@@ -2349,12 +2368,13 @@ Dwarven_magic_Barrier19 = {
 		}
 		province_modifiers = {
 			local_hostile_attrition = 1
-			max_attrition = 2
-			local_defensiveness = 0.70
+			max_attrition = 1
+			local_defensiveness = 0.50
 		}
 		area_modifier = {
 		}
 		country_modifiers = {
+			global_tax_income = -12
 		}
 		on_upgraded = {
 		}
@@ -2430,7 +2450,7 @@ Dwarven_magic_Barrier20 = {
 			factor = 200
 		}
 		province_modifiers = {	
-			local_defensiveness = 0.15
+			local_defensiveness = 0.10
 		}
 		area_modifier = {
 		}
@@ -2448,12 +2468,12 @@ Dwarven_magic_Barrier20 = {
 		}
 		province_modifiers = {
 			local_hostile_attrition = 0.5
-			max_attrition = 1
-			local_defensiveness = 0.35
+			local_defensiveness = 0.25
 		}
 		area_modifier = {
 		}
 		country_modifiers = {
+			global_tax_income = -3
 		}
 		on_upgraded = {
 		}
@@ -2467,12 +2487,13 @@ Dwarven_magic_Barrier20 = {
 		}
 		province_modifiers = {
 			local_hostile_attrition = 1
-			max_attrition = 2
-			local_defensiveness = 0.70
+			max_attrition = 1
+			local_defensiveness = 0.50
 		}
 		area_modifier = {
 		}
 		country_modifiers = {
+			global_tax_income = -12
 		}
 		on_upgraded = {
 		}
@@ -2548,7 +2569,7 @@ Dwarven_magic_Barrier21 = {
 			factor = 200
 		}
 		province_modifiers = {	
-			local_defensiveness = 0.15
+			local_defensiveness = 0.10
 		}
 		area_modifier = {
 		}
@@ -2566,12 +2587,12 @@ Dwarven_magic_Barrier21 = {
 		}
 		province_modifiers = {
 			local_hostile_attrition = 0.5
-			max_attrition = 1
-			local_defensiveness = 0.35
+			local_defensiveness = 0.25
 		}
 		area_modifier = {
 		}
 		country_modifiers = {
+			global_tax_income = -3
 		}
 		on_upgraded = {
 		}
@@ -2585,12 +2606,13 @@ Dwarven_magic_Barrier21 = {
 		}
 		province_modifiers = {
 			local_hostile_attrition = 1
-			max_attrition = 2
-			local_defensiveness = 0.70
+			max_attrition = 1
+			local_defensiveness = 0.50
 		}
 		area_modifier = {
 		}
 		country_modifiers = {
+			global_tax_income = -12
 		}
 		on_upgraded = {
 		}
@@ -2666,7 +2688,7 @@ Dwarven_magic_Barrier22 = {
 			factor = 200
 		}
 		province_modifiers = {	
-			local_defensiveness = 0.15
+			local_defensiveness = 0.10
 		}
 		area_modifier = {
 		}
@@ -2684,12 +2706,12 @@ Dwarven_magic_Barrier22 = {
 		}
 		province_modifiers = {
 			local_hostile_attrition = 0.5
-			max_attrition = 1
-			local_defensiveness = 0.35
+			local_defensiveness = 0.25
 		}
 		area_modifier = {
 		}
 		country_modifiers = {
+			global_tax_income = -3
 		}
 		on_upgraded = {
 		}
@@ -2703,12 +2725,13 @@ Dwarven_magic_Barrier22 = {
 		}
 		province_modifiers = {
 			local_hostile_attrition = 1
-			max_attrition = 2
-			local_defensiveness = 0.70
+			max_attrition = 1
+			local_defensiveness = 0.50
 		}
 		area_modifier = {
 		}
 		country_modifiers = {
+			global_tax_income = -12
 		}
 		on_upgraded = {
 		}
@@ -2784,7 +2807,7 @@ Dwarven_magic_Barrier23 = {
 			factor = 200
 		}
 		province_modifiers = {	
-			local_defensiveness = 0.15
+			local_defensiveness = 0.10
 		}
 		area_modifier = {
 		}
@@ -2802,12 +2825,12 @@ Dwarven_magic_Barrier23 = {
 		}
 		province_modifiers = {
 			local_hostile_attrition = 0.5
-			max_attrition = 1
-			local_defensiveness = 0.35
+			local_defensiveness = 0.25
 		}
 		area_modifier = {
 		}
 		country_modifiers = {
+			global_tax_income = -3
 		}
 		on_upgraded = {
 		}
@@ -2821,12 +2844,13 @@ Dwarven_magic_Barrier23 = {
 		}
 		province_modifiers = {
 			local_hostile_attrition = 1
-			max_attrition = 2
-			local_defensiveness = 0.70
+			max_attrition = 1
+			local_defensiveness = 0.50
 		}
 		area_modifier = {
 		}
 		country_modifiers = {
+			global_tax_income = -12
 		}
 		on_upgraded = {
 		}
@@ -2902,7 +2926,7 @@ Dwarven_magic_Barrier24 = {
 			factor = 200
 		}
 		province_modifiers = {	
-			local_defensiveness = 0.15
+			local_defensiveness = 0.10
 		}
 		area_modifier = {
 		}
@@ -2920,12 +2944,12 @@ Dwarven_magic_Barrier24 = {
 		}
 		province_modifiers = {
 			local_hostile_attrition = 0.5
-			max_attrition = 1
-			local_defensiveness = 0.35
+			local_defensiveness = 0.25
 		}
 		area_modifier = {
 		}
 		country_modifiers = {
+			global_tax_income = -3
 		}
 		on_upgraded = {
 		}
@@ -2939,12 +2963,13 @@ Dwarven_magic_Barrier24 = {
 		}
 		province_modifiers = {
 			local_hostile_attrition = 1
-			max_attrition = 2
-			local_defensiveness = 0.70
+			max_attrition = 1
+			local_defensiveness = 0.50
 		}
 		area_modifier = {
 		}
 		country_modifiers = {
+			global_tax_income = -12
 		}
 		on_upgraded = {
 		}
@@ -3020,7 +3045,7 @@ Dwarven_magic_Barrier25 = {
 			factor = 200
 		}
 		province_modifiers = {	
-			local_defensiveness = 0.15
+			local_defensiveness = 0.10
 		}
 		area_modifier = {
 		}
@@ -3038,12 +3063,12 @@ Dwarven_magic_Barrier25 = {
 		}
 		province_modifiers = {
 			local_hostile_attrition = 0.5
-			max_attrition = 1
-			local_defensiveness = 0.35
+			local_defensiveness = 0.25
 		}
 		area_modifier = {
 		}
 		country_modifiers = {
+			global_tax_income = -3
 		}
 		on_upgraded = {
 		}
@@ -3057,12 +3082,13 @@ Dwarven_magic_Barrier25 = {
 		}
 		province_modifiers = {
 			local_hostile_attrition = 1
-			max_attrition = 2
-			local_defensiveness = 0.70
+			max_attrition = 1
+			local_defensiveness = 0.50
 		}
 		area_modifier = {
 		}
 		country_modifiers = {
+			global_tax_income = -12
 		}
 		on_upgraded = {
 		}
@@ -3138,7 +3164,7 @@ Dwarven_magic_Barrier26 = {
 			factor = 200
 		}
 		province_modifiers = {	
-			local_defensiveness = 0.15
+			local_defensiveness = 0.10
 		}
 		area_modifier = {
 		}
@@ -3156,12 +3182,12 @@ Dwarven_magic_Barrier26 = {
 		}
 		province_modifiers = {
 			local_hostile_attrition = 0.5
-			max_attrition = 1
-			local_defensiveness = 0.35
+			local_defensiveness = 0.25
 		}
 		area_modifier = {
 		}
 		country_modifiers = {
+			global_tax_income = -3
 		}
 		on_upgraded = {
 		}
@@ -3175,12 +3201,13 @@ Dwarven_magic_Barrier26 = {
 		}
 		province_modifiers = {
 			local_hostile_attrition = 1
-			max_attrition = 2
-			local_defensiveness = 0.70
+			max_attrition = 1
+			local_defensiveness = 0.50
 		}
 		area_modifier = {
 		}
 		country_modifiers = {
+			global_tax_income = -12
 		}
 		on_upgraded = {
 		}
@@ -3256,7 +3283,7 @@ Dwarven_magic_Barrier27 = {
 			factor = 200
 		}
 		province_modifiers = {	
-			local_defensiveness = 0.15
+			local_defensiveness = 0.10
 		}
 		area_modifier = {
 		}
@@ -3274,12 +3301,12 @@ Dwarven_magic_Barrier27 = {
 		}
 		province_modifiers = {
 			local_hostile_attrition = 0.5
-			max_attrition = 1
-			local_defensiveness = 0.35
+			local_defensiveness = 0.25
 		}
 		area_modifier = {
 		}
 		country_modifiers = {
+			global_tax_income = -3
 		}
 		on_upgraded = {
 		}
@@ -3293,12 +3320,13 @@ Dwarven_magic_Barrier27 = {
 		}
 		province_modifiers = {
 			local_hostile_attrition = 1
-			max_attrition = 2
-			local_defensiveness = 0.70
+			max_attrition = 1
+			local_defensiveness = 0.50
 		}
 		area_modifier = {
 		}
 		country_modifiers = {
+			global_tax_income = -12
 		}
 		on_upgraded = {
 		}
@@ -3374,7 +3402,7 @@ Dwarven_magic_Barrier28 = {
 			factor = 200
 		}
 		province_modifiers = {	
-			local_defensiveness = 0.15
+			local_defensiveness = 0.10
 		}
 		area_modifier = {
 		}
@@ -3392,12 +3420,12 @@ Dwarven_magic_Barrier28 = {
 		}
 		province_modifiers = {
 			local_hostile_attrition = 0.5
-			max_attrition = 1
-			local_defensiveness = 0.35
+			local_defensiveness = 0.25
 		}
 		area_modifier = {
 		}
 		country_modifiers = {
+			global_tax_income = -3
 		}
 		on_upgraded = {
 		}
@@ -3411,12 +3439,13 @@ Dwarven_magic_Barrier28 = {
 		}
 		province_modifiers = {
 			local_hostile_attrition = 1
-			max_attrition = 2
-			local_defensiveness = 0.70
+			max_attrition = 1
+			local_defensiveness = 0.50
 		}
 		area_modifier = {
 		}
 		country_modifiers = {
+			global_tax_income = -12
 		}
 		on_upgraded = {
 		}
@@ -3492,7 +3521,7 @@ Dwarven_magic_Barrier29 = {
 			factor = 200
 		}
 		province_modifiers = {	
-			local_defensiveness = 0.15
+			local_defensiveness = 0.10
 		}
 		area_modifier = {
 		}
@@ -3510,12 +3539,12 @@ Dwarven_magic_Barrier29 = {
 		}
 		province_modifiers = {
 			local_hostile_attrition = 0.5
-			max_attrition = 1
-			local_defensiveness = 0.35
+			local_defensiveness = 0.25
 		}
 		area_modifier = {
 		}
 		country_modifiers = {
+			global_tax_income = -3
 		}
 		on_upgraded = {
 		}
@@ -3529,12 +3558,13 @@ Dwarven_magic_Barrier29 = {
 		}
 		province_modifiers = {
 			local_hostile_attrition = 1
-			max_attrition = 2
-			local_defensiveness = 0.70
+			max_attrition = 1
+			local_defensiveness = 0.50
 		}
 		area_modifier = {
 		}
 		country_modifiers = {
+			global_tax_income = -12
 		}
 		on_upgraded = {
 		}
@@ -3610,7 +3640,7 @@ Dwarven_magic_Barrier30 = {
 			factor = 200
 		}
 		province_modifiers = {	
-			local_defensiveness = 0.15
+			local_defensiveness = 0.10
 		}
 		area_modifier = {
 		}
@@ -3628,12 +3658,12 @@ Dwarven_magic_Barrier30 = {
 		}
 		province_modifiers = {
 			local_hostile_attrition = 0.5
-			max_attrition = 1
-			local_defensiveness = 0.35
+			local_defensiveness = 0.25
 		}
 		area_modifier = {
 		}
 		country_modifiers = {
+			global_tax_income = -3
 		}
 		on_upgraded = {
 		}
@@ -3647,12 +3677,13 @@ Dwarven_magic_Barrier30 = {
 		}
 		province_modifiers = {
 			local_hostile_attrition = 1
-			max_attrition = 2
-			local_defensiveness = 0.70
+			max_attrition = 1
+			local_defensiveness = 0.50
 		}
 		area_modifier = {
 		}
 		country_modifiers = {
+			global_tax_income = -12
 		}
 		on_upgraded = {
 		}
@@ -3728,7 +3759,7 @@ Dwarven_magic_Barrier31 = {
 			factor = 200
 		}
 		province_modifiers = {	
-			local_defensiveness = 0.15
+			local_defensiveness = 0.10
 		}
 		area_modifier = {
 		}
@@ -3746,12 +3777,12 @@ Dwarven_magic_Barrier31 = {
 		}
 		province_modifiers = {
 			local_hostile_attrition = 0.5
-			max_attrition = 1
-			local_defensiveness = 0.35
+			local_defensiveness = 0.25
 		}
 		area_modifier = {
 		}
 		country_modifiers = {
+			global_tax_income = -3
 		}
 		on_upgraded = {
 		}
@@ -3765,12 +3796,13 @@ Dwarven_magic_Barrier31 = {
 		}
 		province_modifiers = {
 			local_hostile_attrition = 1
-			max_attrition = 2
-			local_defensiveness = 0.70
+			max_attrition = 1
+			local_defensiveness = 0.50
 		}
 		area_modifier = {
 		}
 		country_modifiers = {
+			global_tax_income = -12
 		}
 		on_upgraded = {
 		}
@@ -3846,7 +3878,7 @@ Dwarven_magic_Barrier32 = {
 			factor = 200
 		}
 		province_modifiers = {	
-			local_defensiveness = 0.15
+			local_defensiveness = 0.10
 		}
 		area_modifier = {
 		}
@@ -3864,12 +3896,12 @@ Dwarven_magic_Barrier32 = {
 		}
 		province_modifiers = {
 			local_hostile_attrition = 0.5
-			max_attrition = 1
-			local_defensiveness = 0.35
+			local_defensiveness = 0.25
 		}
 		area_modifier = {
 		}
 		country_modifiers = {
+			global_tax_income = -3
 		}
 		on_upgraded = {
 		}
@@ -3883,12 +3915,13 @@ Dwarven_magic_Barrier32 = {
 		}
 		province_modifiers = {
 			local_hostile_attrition = 1
-			max_attrition = 2
-			local_defensiveness = 0.70
+			max_attrition = 1
+			local_defensiveness = 0.50
 		}
 		area_modifier = {
 		}
 		country_modifiers = {
+			global_tax_income = -12
 		}
 		on_upgraded = {
 		}
@@ -3964,7 +3997,7 @@ Dwarven_magic_Barrier33 = {
 			factor = 200
 		}
 		province_modifiers = {	
-			local_defensiveness = 0.15
+			local_defensiveness = 0.10
 		}
 		area_modifier = {
 		}
@@ -3982,12 +4015,12 @@ Dwarven_magic_Barrier33 = {
 		}
 		province_modifiers = {
 			local_hostile_attrition = 0.5
-			max_attrition = 1
-			local_defensiveness = 0.35
+			local_defensiveness = 0.25
 		}
 		area_modifier = {
 		}
 		country_modifiers = {
+			global_tax_income = -3
 		}
 		on_upgraded = {
 		}
@@ -4001,12 +4034,13 @@ Dwarven_magic_Barrier33 = {
 		}
 		province_modifiers = {
 			local_hostile_attrition = 1
-			max_attrition = 2
-			local_defensiveness = 0.70
+			max_attrition = 1
+			local_defensiveness = 0.50
 		}
 		area_modifier = {
 		}
 		country_modifiers = {
+			global_tax_income = -12
 		}
 		on_upgraded = {
 		}
@@ -4082,7 +4116,7 @@ Dwarven_magic_Barrier34 = {
 			factor = 200
 		}
 		province_modifiers = {	
-			local_defensiveness = 0.15
+			local_defensiveness = 0.10
 		}
 		area_modifier = {
 		}
@@ -4100,12 +4134,12 @@ Dwarven_magic_Barrier34 = {
 		}
 		province_modifiers = {
 			local_hostile_attrition = 0.5
-			max_attrition = 1
-			local_defensiveness = 0.35
+			local_defensiveness = 0.25
 		}
 		area_modifier = {
 		}
 		country_modifiers = {
+			global_tax_income = -3
 		}
 		on_upgraded = {
 		}
@@ -4119,12 +4153,13 @@ Dwarven_magic_Barrier34 = {
 		}
 		province_modifiers = {
 			local_hostile_attrition = 1
-			max_attrition = 2
-			local_defensiveness = 0.70
+			max_attrition = 1
+			local_defensiveness = 0.50
 		}
 		area_modifier = {
 		}
 		country_modifiers = {
+			global_tax_income = -12
 		}
 		on_upgraded = {
 		}
@@ -4200,7 +4235,7 @@ Dwarven_magic_Barrier35 = {
 			factor = 200
 		}
 		province_modifiers = {	
-			local_defensiveness = 0.15
+			local_defensiveness = 0.10
 		}
 		area_modifier = {
 		}
@@ -4218,12 +4253,12 @@ Dwarven_magic_Barrier35 = {
 		}
 		province_modifiers = {
 			local_hostile_attrition = 0.5
-			max_attrition = 1
-			local_defensiveness = 0.35
+			local_defensiveness = 0.25
 		}
 		area_modifier = {
 		}
 		country_modifiers = {
+			global_tax_income = -3
 		}
 		on_upgraded = {
 		}
@@ -4237,12 +4272,13 @@ Dwarven_magic_Barrier35 = {
 		}
 		province_modifiers = {
 			local_hostile_attrition = 1
-			max_attrition = 2
-			local_defensiveness = 0.70
+			max_attrition = 1
+			local_defensiveness = 0.50
 		}
 		area_modifier = {
 		}
 		country_modifiers = {
+			global_tax_income = -12
 		}
 		on_upgraded = {
 		}
@@ -4318,7 +4354,7 @@ Dwarven_magic_Barrier36 = {
 			factor = 200
 		}
 		province_modifiers = {	
-			local_defensiveness = 0.15
+			local_defensiveness = 0.10
 		}
 		area_modifier = {
 		}
@@ -4336,12 +4372,12 @@ Dwarven_magic_Barrier36 = {
 		}
 		province_modifiers = {
 			local_hostile_attrition = 0.5
-			max_attrition = 1
-			local_defensiveness = 0.35
+			local_defensiveness = 0.25
 		}
 		area_modifier = {
 		}
 		country_modifiers = {
+			global_tax_income = -3
 		}
 		on_upgraded = {
 		}
@@ -4355,12 +4391,13 @@ Dwarven_magic_Barrier36 = {
 		}
 		province_modifiers = {
 			local_hostile_attrition = 1
-			max_attrition = 2
-			local_defensiveness = 0.70
+			max_attrition = 1
+			local_defensiveness = 0.50
 		}
 		area_modifier = {
 		}
 		country_modifiers = {
+			global_tax_income = -12
 		}
 		on_upgraded = {
 		}
@@ -4436,7 +4473,7 @@ Dwarven_magic_Barrier37 = {
 			factor = 200
 		}
 		province_modifiers = {	
-			local_defensiveness = 0.15
+			local_defensiveness = 0.10
 		}
 		area_modifier = {
 		}
@@ -4454,12 +4491,12 @@ Dwarven_magic_Barrier37 = {
 		}
 		province_modifiers = {
 			local_hostile_attrition = 0.5
-			max_attrition = 1
-			local_defensiveness = 0.35
+			local_defensiveness = 0.25
 		}
 		area_modifier = {
 		}
 		country_modifiers = {
+			global_tax_income = -3
 		}
 		on_upgraded = {
 		}
@@ -4473,12 +4510,13 @@ Dwarven_magic_Barrier37 = {
 		}
 		province_modifiers = {
 			local_hostile_attrition = 1
-			max_attrition = 2
-			local_defensiveness = 0.70
+			max_attrition = 1
+			local_defensiveness = 0.50
 		}
 		area_modifier = {
 		}
 		country_modifiers = {
+			global_tax_income = -12
 		}
 		on_upgraded = {
 		}
@@ -4554,7 +4592,7 @@ Dwarven_magic_Barrier38 = {
 			factor = 200
 		}
 		province_modifiers = {	
-			local_defensiveness = 0.15
+			local_defensiveness = 0.10
 		}
 		area_modifier = {
 		}
@@ -4572,12 +4610,12 @@ Dwarven_magic_Barrier38 = {
 		}
 		province_modifiers = {
 			local_hostile_attrition = 0.5
-			max_attrition = 1
-			local_defensiveness = 0.35
+			local_defensiveness = 0.25
 		}
 		area_modifier = {
 		}
 		country_modifiers = {
+			global_tax_income = -3
 		}
 		on_upgraded = {
 		}
@@ -4591,12 +4629,13 @@ Dwarven_magic_Barrier38 = {
 		}
 		province_modifiers = {
 			local_hostile_attrition = 1
-			max_attrition = 2
-			local_defensiveness = 0.70
+			max_attrition = 1
+			local_defensiveness = 0.50
 		}
 		area_modifier = {
 		}
 		country_modifiers = {
+			global_tax_income = -12
 		}
 		on_upgraded = {
 		}
@@ -4672,7 +4711,7 @@ Dwarven_magic_Barrier39 = {
 			factor = 200
 		}
 		province_modifiers = {	
-			local_defensiveness = 0.15
+			local_defensiveness = 0.10
 		}
 		area_modifier = {
 		}
@@ -4690,12 +4729,12 @@ Dwarven_magic_Barrier39 = {
 		}
 		province_modifiers = {
 			local_hostile_attrition = 0.5
-			max_attrition = 1
-			local_defensiveness = 0.35
+			local_defensiveness = 0.25
 		}
 		area_modifier = {
 		}
 		country_modifiers = {
+			global_tax_income = -3
 		}
 		on_upgraded = {
 		}
@@ -4709,12 +4748,13 @@ Dwarven_magic_Barrier39 = {
 		}
 		province_modifiers = {
 			local_hostile_attrition = 1
-			max_attrition = 2
-			local_defensiveness = 0.70
+			max_attrition = 1
+			local_defensiveness = 0.50
 		}
 		area_modifier = {
 		}
 		country_modifiers = {
+			global_tax_income = -12
 		}
 		on_upgraded = {
 		}
@@ -4790,7 +4830,7 @@ Dwarven_magic_Barrier40 = {
 			factor = 200
 		}
 		province_modifiers = {	
-			local_defensiveness = 0.15
+			local_defensiveness = 0.10
 		}
 		area_modifier = {
 		}
@@ -4808,12 +4848,12 @@ Dwarven_magic_Barrier40 = {
 		}
 		province_modifiers = {
 			local_hostile_attrition = 0.5
-			max_attrition = 1
-			local_defensiveness = 0.35
+			local_defensiveness = 0.25
 		}
 		area_modifier = {
 		}
 		country_modifiers = {
+			global_tax_income = -3
 		}
 		on_upgraded = {
 		}
@@ -4827,12 +4867,13 @@ Dwarven_magic_Barrier40 = {
 		}
 		province_modifiers = {
 			local_hostile_attrition = 1
-			max_attrition = 2
-			local_defensiveness = 0.70
+			max_attrition = 1
+			local_defensiveness = 0.50
 		}
 		area_modifier = {
 		}
 		country_modifiers = {
+			global_tax_income = -12
 		}
 		on_upgraded = {
 		}
@@ -4908,7 +4949,7 @@ Dwarven_magic_Barrier41 = {
 			factor = 200
 		}
 		province_modifiers = {	
-			local_defensiveness = 0.15
+			local_defensiveness = 0.10
 		}
 		area_modifier = {
 		}
@@ -4926,12 +4967,12 @@ Dwarven_magic_Barrier41 = {
 		}
 		province_modifiers = {
 			local_hostile_attrition = 0.5
-			max_attrition = 1
-			local_defensiveness = 0.35
+			local_defensiveness = 0.25
 		}
 		area_modifier = {
 		}
 		country_modifiers = {
+			global_tax_income = -3
 		}
 		on_upgraded = {
 		}
@@ -4945,12 +4986,13 @@ Dwarven_magic_Barrier41 = {
 		}
 		province_modifiers = {
 			local_hostile_attrition = 1
-			max_attrition = 2
-			local_defensiveness = 0.70
+			max_attrition = 1
+			local_defensiveness = 0.50
 		}
 		area_modifier = {
 		}
 		country_modifiers = {
+			global_tax_income = -12
 		}
 		on_upgraded = {
 		}
@@ -5026,7 +5068,7 @@ Dwarven_magic_Barrier42 = {
 			factor = 200
 		}
 		province_modifiers = {	
-			local_defensiveness = 0.15
+			local_defensiveness = 0.10
 		}
 		area_modifier = {
 		}
@@ -5044,12 +5086,12 @@ Dwarven_magic_Barrier42 = {
 		}
 		province_modifiers = {
 			local_hostile_attrition = 0.5
-			max_attrition = 1
-			local_defensiveness = 0.35
+			local_defensiveness = 0.25
 		}
 		area_modifier = {
 		}
 		country_modifiers = {
+			global_tax_income = -3
 		}
 		on_upgraded = {
 		}
@@ -5063,12 +5105,13 @@ Dwarven_magic_Barrier42 = {
 		}
 		province_modifiers = {
 			local_hostile_attrition = 1
-			max_attrition = 2
-			local_defensiveness = 0.70
+			max_attrition = 1
+			local_defensiveness = 0.50
 		}
 		area_modifier = {
 		}
 		country_modifiers = {
+			global_tax_income = -12
 		}
 		on_upgraded = {
 		}
@@ -5144,7 +5187,7 @@ Dwarven_magic_Barrier43 = {
 			factor = 200
 		}
 		province_modifiers = {	
-			local_defensiveness = 0.15
+			local_defensiveness = 0.10
 		}
 		area_modifier = {
 		}
@@ -5162,12 +5205,12 @@ Dwarven_magic_Barrier43 = {
 		}
 		province_modifiers = {
 			local_hostile_attrition = 0.5
-			max_attrition = 1
-			local_defensiveness = 0.35
+			local_defensiveness = 0.25
 		}
 		area_modifier = {
 		}
 		country_modifiers = {
+			global_tax_income = -3
 		}
 		on_upgraded = {
 		}
@@ -5181,12 +5224,13 @@ Dwarven_magic_Barrier43 = {
 		}
 		province_modifiers = {
 			local_hostile_attrition = 1
-			max_attrition = 2
-			local_defensiveness = 0.70
+			max_attrition = 1
+			local_defensiveness = 0.50
 		}
 		area_modifier = {
 		}
 		country_modifiers = {
+			global_tax_income = -12
 		}
 		on_upgraded = {
 		}
@@ -5262,7 +5306,7 @@ Dwarven_magic_Barrier44 = {
 			factor = 200
 		}
 		province_modifiers = {	
-			local_defensiveness = 0.15
+			local_defensiveness = 0.10
 		}
 		area_modifier = {
 		}
@@ -5280,12 +5324,12 @@ Dwarven_magic_Barrier44 = {
 		}
 		province_modifiers = {
 			local_hostile_attrition = 0.5
-			max_attrition = 1
-			local_defensiveness = 0.35
+			local_defensiveness = 0.25
 		}
 		area_modifier = {
 		}
 		country_modifiers = {
+			global_tax_income = -3
 		}
 		on_upgraded = {
 		}
@@ -5299,12 +5343,13 @@ Dwarven_magic_Barrier44 = {
 		}
 		province_modifiers = {
 			local_hostile_attrition = 1
-			max_attrition = 2
-			local_defensiveness = 0.70
+			max_attrition = 1
+			local_defensiveness = 0.50
 		}
 		area_modifier = {
 		}
 		country_modifiers = {
+			global_tax_income = -12
 		}
 		on_upgraded = {
 		}
@@ -5380,7 +5425,7 @@ Dwarven_magic_Barrier46 = {
 			factor = 200
 		}
 		province_modifiers = {	
-			local_defensiveness = 0.15
+			local_defensiveness = 0.10
 		}
 		area_modifier = {
 		}
@@ -5398,12 +5443,12 @@ Dwarven_magic_Barrier46 = {
 		}
 		province_modifiers = {
 			local_hostile_attrition = 0.5
-			max_attrition = 1
-			local_defensiveness = 0.35
+			local_defensiveness = 0.25
 		}
 		area_modifier = {
 		}
 		country_modifiers = {
+			global_tax_income = -3
 		}
 		on_upgraded = {
 		}
@@ -5417,12 +5462,13 @@ Dwarven_magic_Barrier46 = {
 		}
 		province_modifiers = {
 			local_hostile_attrition = 1
-			max_attrition = 2
-			local_defensiveness = 0.70
+			max_attrition = 1
+			local_defensiveness = 0.50
 		}
 		area_modifier = {
 		}
 		country_modifiers = {
+			global_tax_income = -12
 		}
 		on_upgraded = {
 		}
@@ -5498,7 +5544,7 @@ Dwarven_magic_Barrier47 = {
 			factor = 200
 		}
 		province_modifiers = {	
-			local_defensiveness = 0.15
+			local_defensiveness = 0.10
 		}
 		area_modifier = {
 		}
@@ -5516,12 +5562,12 @@ Dwarven_magic_Barrier47 = {
 		}
 		province_modifiers = {
 			local_hostile_attrition = 0.5
-			max_attrition = 1
-			local_defensiveness = 0.35
+			local_defensiveness = 0.25
 		}
 		area_modifier = {
 		}
 		country_modifiers = {
+			global_tax_income = -3
 		}
 		on_upgraded = {
 		}
@@ -5535,12 +5581,13 @@ Dwarven_magic_Barrier47 = {
 		}
 		province_modifiers = {
 			local_hostile_attrition = 1
-			max_attrition = 2
-			local_defensiveness = 0.70
+			max_attrition = 1
+			local_defensiveness = 0.50
 		}
 		area_modifier = {
 		}
 		country_modifiers = {
+			global_tax_income = -12
 		}
 		on_upgraded = {
 		}
@@ -5616,7 +5663,7 @@ Dwarven_magic_Barrier48 = {
 			factor = 200
 		}
 		province_modifiers = {	
-			local_defensiveness = 0.15
+			local_defensiveness = 0.10
 		}
 		area_modifier = {
 		}
@@ -5634,12 +5681,12 @@ Dwarven_magic_Barrier48 = {
 		}
 		province_modifiers = {
 			local_hostile_attrition = 0.5
-			max_attrition = 1
-			local_defensiveness = 0.35
+			local_defensiveness = 0.25
 		}
 		area_modifier = {
 		}
 		country_modifiers = {
+			global_tax_income = -3
 		}
 		on_upgraded = {
 		}
@@ -5653,19 +5700,21 @@ Dwarven_magic_Barrier48 = {
 		}
 		province_modifiers = {
 			local_hostile_attrition = 1
-			max_attrition = 2
-			local_defensiveness = 0.70
+			max_attrition = 1
+			local_defensiveness = 0.50
 		}
 		area_modifier = {
 		}
 		country_modifiers = {
+			global_tax_income = -12
 		}
 		on_upgraded = {
 		}
 	}
 }
+
 Dwarven_magic_Barrier49 = {
-	start = 4272
+	start = 4272 
 	date = 1600.01.01
 	time = {
 		months = 12
@@ -5734,7 +5783,7 @@ Dwarven_magic_Barrier49 = {
 			factor = 200
 		}
 		province_modifiers = {	
-			local_defensiveness = 0.15
+			local_defensiveness = 0.10
 		}
 		area_modifier = {
 		}
@@ -5752,12 +5801,12 @@ Dwarven_magic_Barrier49 = {
 		}
 		province_modifiers = {
 			local_hostile_attrition = 0.5
-			max_attrition = 1
-			local_defensiveness = 0.35
+			local_defensiveness = 0.25
 		}
 		area_modifier = {
 		}
 		country_modifiers = {
+			global_tax_income = -3
 		}
 		on_upgraded = {
 		}
@@ -5771,12 +5820,132 @@ Dwarven_magic_Barrier49 = {
 		}
 		province_modifiers = {
 			local_hostile_attrition = 1
-			max_attrition = 2
-			local_defensiveness = 0.70
+			max_attrition = 1
+			local_defensiveness = 0.50
 		}
 		area_modifier = {
 		}
 		country_modifiers = {
+			global_tax_income = -12
+		}
+		on_upgraded = {
+		}
+	}
+}
+Dwarven_magic_Barrier50 = {
+	start = 4360
+	date = 1600.01.01
+	time = {
+		months = 12
+	}
+	build_cost = 50
+	can_be_moved = no
+	move_days_per_unit_distance = 1
+	starting_tier = 0
+	type = monument
+	build_trigger = {	
+		owner = {
+			has_country_flag = DA_can_build_Runic_barrier
+		}
+	}
+	on_built = {		
+	}
+	on_destroyed = {		
+	}
+	can_use_modifiers_trigger = {
+		AND = {
+			custom_trigger_tooltip = {
+				tooltip = dwarven_monuments_can_use_tooltip
+					dwarven_monuments_has_acceptable_culture_or_race = yes
+			}
+			province_is_or_accepts_culture = yes
+		}
+	}
+	can_upgrade_trigger = {
+		AND = {
+			custom_trigger_tooltip = {
+				tooltip = dwarven_monuments_can_use_tooltip
+					dwarven_monuments_has_acceptable_culture_or_race = yes
+			}
+			province_is_or_accepts_culture = yes
+			custom_trigger_tooltip = {
+				tooltip = DA_can_upgrade_runic_barrier
+				DA_can_upgrade_DRB = yes
+			}
+		}
+	}
+	keep_trigger = {
+	}
+	tier_0 = {
+		upgrade_time = {
+			months = 0
+		}
+		cost_to_upgrade = {
+			factor = 0
+		}
+		province_modifiers = {
+			local_defensiveness = 0.05
+		}
+		area_modifier = {
+		}
+		country_modifiers = {
+			
+		}
+		on_upgraded = {
+		}
+	}
+	tier_1 = {
+		upgrade_time = {
+			months = 60
+		}
+		cost_to_upgrade = {
+			factor = 200
+		}
+		province_modifiers = {	
+			local_defensiveness = 0.10
+		}
+		area_modifier = {
+		}
+		country_modifiers = {
+		}
+		on_upgraded = {
+		}
+	}
+	tier_2 = {
+		upgrade_time = {
+			months = 120
+		}
+		cost_to_upgrade = {
+			factor = 700
+		}
+		province_modifiers = {
+			local_hostile_attrition = 0.5
+			local_defensiveness = 0.25
+		}
+		area_modifier = {
+		}
+		country_modifiers = {
+			global_tax_income = -3
+		}
+		on_upgraded = {
+		}
+	}
+	tier_3 = {
+		upgrade_time = {
+			months = 240
+		}
+		cost_to_upgrade = {
+			factor = 1400
+		}
+		province_modifiers = {
+			local_hostile_attrition = 1
+			max_attrition = 1
+			local_defensiveness = 0.50
+		}
+		area_modifier = {
+		}
+		country_modifiers = {
+			global_tax_income = -12
 		}
 		on_upgraded = {
 		}

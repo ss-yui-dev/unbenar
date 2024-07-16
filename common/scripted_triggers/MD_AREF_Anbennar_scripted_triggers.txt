@@ -9,10 +9,13 @@ st_md_capital_in_cannor = {
         capital_scope = {
             continent = europe
         }
-		all_owned_province = {
-			NOT = {
-				has_terrain = dwarven_hold
-                has_terrain = dwarven_hold_surface
+        NOT = {
+			num_of_owned_provinces_with = {
+				value = 1
+				OR = {
+					has_terrain = dwarven_hold
+					has_terrain = dwarven_hold_surface
+				}
 			}
 		}
     }
@@ -25,10 +28,13 @@ st_md_capital_in_haless = {
                 superregion = forbidden_lands_superregion
             }
         }
-		all_owned_province = {
-			NOT = {
-				has_terrain = dwarven_hold
-                has_terrain = dwarven_hold_surface
+        NOT = {
+			num_of_owned_provinces_with = {
+				value = 1
+				OR = {
+					has_terrain = dwarven_hold
+					has_terrain = dwarven_hold_surface
+				}
 			}
 		}
     }
@@ -52,10 +58,13 @@ st_md_capital_in_forbidden_lands = {
         capital_scope = {
             superregion = forbidden_lands_superregion
         }
-		all_owned_province = {
-			NOT = {
-				has_terrain = dwarven_hold
-                has_terrain = dwarven_hold_surface
+        NOT = {
+			num_of_owned_provinces_with = {
+				value = 1
+				OR = {
+					has_terrain = dwarven_hold
+					has_terrain = dwarven_hold_surface
+				}
 			}
 		}
     }
@@ -65,10 +74,13 @@ st_md_capital_in_bulwar = {
         capital_scope = {
             superregion = bulwar_superregion
         }
-		all_owned_province = {
-			NOT = {
-				has_terrain = dwarven_hold
-                has_terrain = dwarven_hold_surface
+        NOT = {
+			num_of_owned_provinces_with = {
+				value = 1
+				OR = {
+					has_terrain = dwarven_hold
+					has_terrain = dwarven_hold_surface
+				}
 			}
 		}
     }
@@ -81,10 +93,13 @@ st_md_capital_in_sarhal = {
                 superregion = bulwar_superregion
             }
         }
-		all_owned_province = {
-			NOT = {
-				has_terrain = dwarven_hold
-                has_terrain = dwarven_hold_surface
+        NOT = {
+			num_of_owned_provinces_with = {
+				value = 1
+				OR = {
+					has_terrain = dwarven_hold
+					has_terrain = dwarven_hold_surface
+				}
 			}
 		}
     }
@@ -97,10 +112,13 @@ st_md_capital_in_aelantir = {
                 continent = south_america
             }
         }
-		all_owned_province = {
-			NOT = {
-				has_terrain = dwarven_hold
-                has_terrain = dwarven_hold_surface
+        NOT = {
+			num_of_owned_provinces_with = {
+				value = 1
+				OR = {
+					has_terrain = dwarven_hold
+					has_terrain = dwarven_hold_surface
+				}
 			}
 		}
     }

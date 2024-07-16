@@ -346,6 +346,19 @@ interaction = {
 		}
     }
     effect = {
+		hidden_effect = {
+			remove_country_modifier = sale_land_1
+			remove_country_modifier = sale_land_2
+			remove_country_modifier = sale_land_3
+			remove_country_modifier = sale_land_4
+			remove_country_modifier = sale_land_5
+			remove_country_modifier = sale_land_6
+			remove_country_modifier = sale_land_7
+			remove_country_modifier = sale_land_8
+			remove_country_modifier = sale_land_9
+			remove_country_modifier = sale_land_10
+			remove_country_modifier = sale_land_11
+		}
 		if = {
 			limit = {
 				crown_land_share = 10

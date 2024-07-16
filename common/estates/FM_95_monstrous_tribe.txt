@@ -1,0 +1,6 @@
+estate_monstrous_tribes = {
+	privileges = {
+		estate_monstrous_tribes_pioneer_initiatives
+		estate_monstrous_tribes_kobold_drake_riders
+	}
+}

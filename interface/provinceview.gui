@@ -783,7 +783,7 @@ guiTypes = {
 
 			instantTextBoxType = {
 				name = "tax"
-				position = { x = 35 y = 160}
+				position = { x = 35 y = 130}
 				textureFile = ""
 				font = "vic_18"
 				borderSize = {x = 2 y = 2}
@@ -796,7 +796,7 @@ guiTypes = {
 
 			instantTextBoxType = {
 				name = "tax_value"
-				position = { x = 85 y = 160}
+				position = { x = 85 y = 133}
 				textureFile = ""
 				font = "vic_18"
 				borderSize = {x = 2 y = 2}
@@ -808,7 +808,7 @@ guiTypes = {
 
 			instantTextBoxType = {
 				name = "production"
-				position = { x = 35 y = 189}
+				position = { x = 35 y = 160}
 				textureFile = ""
 				font = "vic_18"
 				borderSize = {x = 2 y = 2}
@@ -821,7 +821,7 @@ guiTypes = {
 
 			instantTextBoxType = {
 				name = "production_value"
-				position = { x = 85 y = 189}
+				position = { x = 85 y = 160}
 				textureFile = ""
 				font = "vic_18"
 				borderSize = {x = 2 y = 2}
@@ -833,7 +833,7 @@ guiTypes = {
 
 			instantTextBoxType = {
 				name = "total"
-				position = { x = 35 y = 130}
+				position = { x = 35 y = 189}
 				textureFile = ""
 				font = "vic_18"
 				borderSize = {x = 2 y = 2}
@@ -846,7 +846,7 @@ guiTypes = {
 
 			instantTextBoxType = {
 				name = "total_value"
-				position = { x = 85 y = 133}
+				position = { x = 85 y = 189}
 				textureFile = ""
 				font = "vic_18"
 				borderSize = {x = 2 y = 2}
@@ -3012,7 +3012,7 @@ guiTypes = {
 				{
 					name ="background"
 					spriteType = "GFX_culture_change_bg"
-					position = { x= -14 y = -37 }
+					position = { x= -14 y = -18 }
 					Orientation = "UPPER_LEFT"
 				}
 
@@ -3031,10 +3031,10 @@ guiTypes = {
 
 				instantTextBoxType = {
 					name = "label_type"
-					position = { x = 15 y = -27 }
+					position = { x = 15 y = -10 }
 					textureFile = ""
 					font = "vic_18"
-					borderSize = {x = 15 y = 16}
+					borderSize = {x = 5 y = 5}
 					text = "CULTURE"
 					maxWidth = 250
 					maxHeight = 20
@@ -3044,10 +3044,10 @@ guiTypes = {
 
 				instantTextBoxType = {
 					name = "cost_label_type"
-					position = { x = 274 y = -27 }
+					position = { x = 274 y = -10 }
 					textureFile = ""
 					font = "vic_18"
-					borderSize = {x = 15 y = 16}
+					borderSize = {x = 5 y = 5}
 					text = "HEADER_COST"
 					maxWidth = 250
 					maxHeight = 20
@@ -3057,7 +3057,7 @@ guiTypes = {
 
 				listboxType = {
 					name = "cultures"
-					position = { x = 0 y = 18 }
+					position = { x = 0 y = 25 }
 					backGround=""
 					size = { x=410 y = 360}
 					horizontal = 0
@@ -3116,17 +3116,17 @@ guiTypes = {
 				iconType = {
 					name ="icon_fire"
 					spriteType = "GFX_icon_fire"
-					position = { x= 334 y = -30 }
+					position = { x= 304 y = -30 }
 				}
 				iconType = {
 					name ="icon_shock"
 					spriteType = "GFX_icon_shock"
-					position = { x= 371 y = -30 }
+					position = { x= 340 y = -30 }
 				}
 				iconType = {
 					name ="icon_morale"
 					spriteType = "GFX_icon_morale"
-					position = { x= 407 y = -30 }
+					position = { x= 378 y = -30 }
 				}
 
 				instantTextBoxType = {
@@ -6180,7 +6180,7 @@ guiTypes = {
 
 		iconType =	{
 			name ="culture_option_bg"
-			position = { x= 16 y = 0 }
+			position = { x= 5 y = 0 }
 			Orientation = "UPPER_LEFT"
 			quadTextureSprite = "GFX_culture_option"
 		}

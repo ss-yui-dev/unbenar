@@ -1,6 +1,39 @@
 
 DA_Runeforged_fort = {
-	cost = 2000
+	cost = 250
+	time = 30
+
+	build_trigger = {
+	}
+
+	bonus_manufactory = { # Will apply an extra modifier if these goods
+		damestear
+		precursor_relics
+		mithril
+	}
+
+	modifier = {
+		fort_level = 1
+		local_hostile_attrition = 1
+	}
+	bonus_modifier = {
+		local_development_cost = -0.1
+	}
+	onmap = no
+	show_separate = yes # Means as a manufactory it will be shown according to the old way
+	influencing_fort = yes
+
+	ai_will_do = {
+		factor = 0
+	}
+	on_built = {
+	}
+	on_destroyed = {
+	}
+}
+
+DA_Runeforged_fort_t2 = {
+	cost = 750
 	time = 30
 
 	build_trigger = {
@@ -14,7 +47,7 @@ DA_Runeforged_fort = {
 
 	modifier = {
 		fort_level = 2
-		local_hostile_attrition = 2
+		local_hostile_attrition = 1.5
 	}
 	bonus_modifier = {
 		local_development_cost = -0.2
@@ -27,6 +60,51 @@ DA_Runeforged_fort = {
 		factor = 0
 	}
 	on_built = {
+		if = {
+			limit = { has_building = DA_Runeforged_fort }
+			remove_building = DA_Runeforged_fort
+		}
+	}
+	on_destroyed = {
+	}
+}
+
+DA_Runeforged_fort_t3 = {
+	cost = 1600
+	time = 30
+
+	build_trigger = {
+	}
+
+	bonus_manufactory = { # Will apply an extra modifier if these goods
+		damestear
+		precursor_relics
+		mithril
+	}
+
+	modifier = {
+		fort_level = 3
+		local_hostile_attrition = 2
+	}
+	bonus_modifier = {
+		local_development_cost = -0.3
+	}
+	onmap = no
+	show_separate = yes # Means as a manufactory it will be shown according to the old way
+	influencing_fort = yes
+
+	ai_will_do = {
+		factor = 0
+	}
+	on_built = {
+		if = {
+			limit = { has_building = DA_Runeforged_fort }
+			remove_building = DA_Runeforged_fort
+		}
+		if = {
+			limit = { has_building = DA_Runeforged_fort_t2 }
+			remove_building = DA_Runeforged_fort_t2
+		}
 	}
 	on_destroyed = {
 	}
@@ -46,7 +124,7 @@ DA_Hehogrim_Runeforged_fort = {
 	}
 
 	modifier = {
-		fort_level = 2
+		fort_level = 4
 		local_hostile_attrition = 3
 		local_defensiveness = 0.15
 		local_defender_dice_roll_bonus = 1
@@ -65,6 +143,14 @@ DA_Hehogrim_Runeforged_fort = {
 		if = {
 			limit = { has_building = DA_Runeforged_fort }
 			remove_building = DA_Runeforged_fort
+		}
+		if = {
+			limit = { has_building = DA_Runeforged_fort_t2 }
+			remove_building = DA_Runeforged_fort_t2
+		}
+		if = {
+			limit = { has_building = DA_Runeforged_fort_t3 }
+			remove_building = DA_Runeforged_fort_t3
 		}
 	}
 	on_destroyed = {
@@ -88,6 +174,8 @@ DA_Runeforged_Amldihr_fort = {
 		fort_level = 4
 		local_hostile_attrition = 5
 		max_attrition = 5
+		local_defensiveness = 0.30
+		local_defender_dice_roll_bonus = 1
 	}
 	bonus_modifier = {
 		local_development_cost = -0.4
@@ -138,5 +226,128 @@ DA_Reinforced_capital = {
 	on_built = {
 	}
 	on_destroyed = {
+	}
+}
+
+DA_railway_work = {
+	cost = 30
+	time = 30
+
+	indestructible = yes
+
+	build_trigger = {
+	}
+
+	modifier = {
+	}
+
+	on_built = {
+		hidden_effect = {
+			remove_building = DA_railway_work
+			remove_province_modifier = DA_rail_faster_mod_1
+			remove_province_modifier = DA_rail_trade_mod_1
+			remove_province_modifier = DA_rail_traps_mod_1
+			remove_province_modifier = DA_rail_supply_mod_1
+			remove_province_modifier = DA_rail_faster_mod_2
+			remove_province_modifier = DA_rail_trade_mod_2
+			remove_province_modifier = DA_rail_traps_mod_2
+			remove_province_modifier = DA_rail_supply_mod_2
+			if = {
+				limit = { 
+					owner = {
+						has_country_flag = DA_rail_faster1_c
+						NOT = { has_country_flag = DA_rail_faster2_c }
+					}
+				}
+				add_permanent_province_modifier = {
+					name = DA_rail_faster_mod_1
+					duration = -1
+				}
+			}
+			if = {
+				limit = { 
+					owner = {
+						has_country_flag = DA_rail_trade1_c
+						NOT = { has_country_flag = DA_rail_trade2_c }
+					}
+				}
+				add_permanent_province_modifier = {
+					name = DA_rail_trade_mod_1
+					duration = -1
+				}
+			}
+			if = {
+				limit = { 
+					owner = {
+						has_country_flag = DA_rail_traps1_c
+						NOT = { has_country_flag = DA_rail_traps2_c }
+					}
+				}
+				add_permanent_province_modifier = {
+					name = DA_rail_traps_mod_1
+					duration = -1
+				}
+			}
+			if = {
+				limit = { 
+					owner = {
+						has_country_flag = DA_rail_supply1_c
+						NOT = { has_country_flag = DA_rail_supply2_c }
+					}
+				}
+				add_permanent_province_modifier = {
+					name = DA_rail_supply_mod_1
+					duration = -1
+				}
+			}
+			if = {
+				limit = { 
+					owner = {
+						has_country_flag = DA_rail_faster2_c
+					}
+				}
+				add_permanent_province_modifier = {
+					name = DA_rail_faster_mod_2
+					duration = -1
+				}
+			}
+			if = {
+				limit = { 
+					owner = {
+						has_country_flag = DA_rail_trade2_c
+					}
+				}
+				add_permanent_province_modifier = {
+					name = DA_rail_trade_mod_2
+					duration = -1
+				}
+			}
+			if = {
+				limit = { 
+					owner = {
+						has_country_flag = DA_rail_traps2_c
+					}
+				}
+				add_permanent_province_modifier = {
+					name = DA_rail_traps_mod_2
+					duration = -1
+				}
+			}
+			if = {
+				limit = { 
+					owner = {
+						has_country_flag = DA_rail_supply2_c
+					}
+				}
+				add_permanent_province_modifier = {
+					name = DA_rail_supply_mod_2
+					duration = -1
+				}
+			}
+		}
+    }
+
+	ai_will_do = {
+		factor = 0
 	}
 }

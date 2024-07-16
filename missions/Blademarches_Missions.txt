@@ -1,41 +1,37 @@
-
 blademarches_1 = {
 	slot = 1
 	generic = no
 	ai = yes
 	has_country_shield = yes
-	potential = {
-		tag = B33
-	}
-	
+	potential = { tag = B33 } 
+
 	B33_vernham_school_of_sword = {
 		icon = appease_the_estates
-		required_missions = { B33_the_old_kingdom_of_devaced }
 		position = 3
-		
+		required_missions = { B33_the_old_kingdom_of_devaced } 
 		provinces_to_highlight = {
-			province_id = 808 #Vernham
+			province_id = 808
 			OR = {
-				NOT = { owned_by = ROOT }
-				NOT = { has_building = training_fields }
-				NOT = { has_building = university }
-				NOT = { base_manpower = 15 }
+				NOT = { owned_by = ROOT } 
+				NOT = { has_building = training_fields } 
+				NOT = { has_building = university } 
+				NOT = { base_manpower = 10 } 
 			}
 		}
-		
+
 		trigger = {
-			808 = { #Vernham
+			808 = {
 				owned_by = ROOT
 				has_building = training_fields
 				has_building = university
-				base_manpower = 15
+				base_manpower = 10
 			}
 		}
-		
+
 		effect = {
-			808 = { #Vernham
+			808 = {
 				add_permanent_province_modifier = {
-					name = blademarches_vernham_university
+					name = "blademarches_vernham_university"
 					duration = -1
 				}
 			}
@@ -46,58 +42,76 @@ blademarches_1 = {
 			}
 		}
 	}
-	
+
 	B33_vernham_officer_training_curriculum = {
 		icon = mission_rb_monopolize_the_channel
-		required_missions = { B33_vernham_school_of_sword }
 		position = 4
-		
+		required_missions = { B33_vernham_school_of_sword } 
 		provinces_to_highlight = {
-			province_id = 808 #Vernham
-			NOT = { owned_by = ROOT }
+			province_id = 808
+			NOT = { owned_by = ROOT } 
 		}
-		
+
 		trigger = {
-			808 = { #Vernham
-				owned_by = ROOT
-			}
+			808 = { owned_by = ROOT } 
 			army_tradition = 50
 			grand_captain = 3
 			mil_power = 300
 		}
-		
+
 		effect = {
 			add_country_modifier = {
-				name = blademarches_vernham_curriculum 
+				name = "blademarches_vernham_curriculum"
 				duration = -1
 			}
 			add_mil_power = -300
 		}
 	}
-}
 
+	B33_bright_hussars = {
+		icon = mission_conquer_5_states
+		position = 5
+		required_missions = { B33_vernham_officer_training_curriculum } 
+		provinces_to_highlight = {  } 
+
+		trigger = {
+			num_of_cavalry = 10
+			has_idea = B33_bright_hussars_and_their_blinding_charge
+			if = {
+				limit = { has_dlc = "Cradle of Civilization" }
+				army_professionalism = 0.5
+			}
+			else = {
+				army_tradition = 50
+			}
+		}
+
+		effect = {
+			add_prestige = 15
+			country_event = { id = flavor_blademarches.12 }
+		} 
+	}
+}
 blademarches_2 = {
 	slot = 2
 	generic = no
 	ai = yes
 	has_country_shield = yes
-	potential = {
-		tag = B33
-	}
-	
+	potential = { tag = B33 } 
+
 	B33_the_old_kingdom_of_devaced = {
-		icon = mission_have_two_subjects
-		required_missions = { B33_a_worthy_wielder }
+		icon = mission_control_the_desh
 		position = 2
+		required_missions = { B33_a_worthy_wielder } 
 		provinces_to_highlight = {
-			OR = { 
+			OR = {
 				area = devaced_area
 				area = oudeben_area
 				area = vernham_area
 			}
-			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+			NOT = { country_or_non_sovereign_subject_holds = ROOT } 
 		}
-		
+
 		trigger = {
 			devaced_area = {
 				type = all
@@ -112,156 +126,1143 @@ blademarches_2 = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}
 		}
-		
+
 		effect = {
 			add_country_modifier = {
-				name = blademarches_surge_of_newcomers
-				duration = 7300 #20 years
+				name = "blademarches_surge_of_newcomers"
+				duration = 7300
 			}
 			oudmerewood_area = {
 				limit = {
-					NOT = { is_core = ROOT }
+					NOT = { is_core = ROOT } 
+					NOT = { owned_by = ROOT } 
 				}
 				add_permanent_claim = ROOT
 			}
 			catelsvord_area = {
 				limit = {
-					NOT = { is_core = ROOT }
+					NOT = { is_core = ROOT } 
+					NOT = { owned_by = ROOT } 
 				}
 				add_permanent_claim = ROOT
 			}
 		}
 	}
-	
+
 	B33_restore_old_vernham = {
 		icon = claim_tirol
-		required_missions = { B33_the_old_kingdom_of_devaced }
 		position = 3
-		
+		required_missions = { B33_the_old_kingdom_of_devaced } 
 		provinces_to_highlight = {
-			province_id = 800 #Old Vernham
+			province_id = 800
 			OR = {
-				NOT = { owned_by = ROOT }
-				NOT = { development = 20 }
+				NOT = { owned_by = ROOT } 
+				NOT = { development = 20 } 
 			}
 		}
-		
+
 		trigger = {
-			800 = { #Old Vernham
+			800 = {
 				owned_by = ROOT
 				development = 20
 			}
 		}
-		
+
 		effect = {
-			800 = { #Old Vernham
-				change_trade_goods = iron
-			}
+			800 = { change_trade_goods = iron } 
 			dostans_way_area = {
 				limit = {
-					NOT = { is_core = ROOT }
+					NOT = { is_core = ROOT } 
+					NOT = { owned_by = ROOT } 
 				}
 				add_permanent_claim = ROOT
 			}
 		}
 	}
-	
+
 	B33_fortify_dostans_way = {
 		icon = claim_the_borderlands
-		required_missions = { B33_restore_old_vernham }
 		position = 4
-		
+		required_missions = { B33_restore_old_vernham } 
 		provinces_to_highlight = {
-			province_id = 803 #Dostan's Way
+			province_id = 803
 			OR = {
-				NOT = { owned_by = ROOT }
-				NOT = { has_fort_building_trigger = yes }
+				NOT = { owned_by = ROOT } 
+				NOT = { has_fort_building_trigger = yes } 
 			}
 		}
-		
+
 		trigger = {
-			803 = { #Dostan's Way
+			803 = {
 				owned_by = ROOT
 				has_fort_building_trigger = yes
 			}
-			army_size = 30
 		}
-		
+
 		effect = {
-			dostanor_region = {
+			803 = {
+				add_permanent_province_modifier = {
+					name = "bop_castans_gate"
+					duration = -1
+				}
+			}
+		}
+	}
+}
+blademarches_3 = {
+	slot = 3
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = { tag = B33 } 
+	
+	
+	B33_a_worthy_wielder = {
+		icon = mission_swear_fealty_knight
+		position = 1
+		provinces_to_highlight = {  } 
+
+		trigger = {
+			has_ruler_modifier = wielding_calindal
+			stability = 1
+			army_size_percentage = 0.5
+			legitimacy = 80
+		}
+
+		effect = {
+			devaced_area = {
 				limit = {
-					NOT = { is_core = ROOT }
+					NOT = { is_core = ROOT } 
+					NOT = { owned_by = ROOT } 
+				}
+				add_permanent_claim = ROOT
+			}
+			oudeben_area = {
+				limit = {
+					NOT = { is_core = ROOT } 
+					NOT = { owned_by = ROOT } 
+				}
+				add_permanent_claim = ROOT
+			}
+			vernham_area = {
+				limit = {
+					NOT = { is_core = ROOT } 
+					NOT = { owned_by = ROOT } 
+				}
+				add_permanent_claim = ROOT
+			}
+			blademarch_area = {
+				limit = {
+					NOT = { is_core = ROOT } 
+					NOT = { owned_by = ROOT } 
+				}
+				add_permanent_claim = ROOT
+			}
+			banesfork_area = {
+				limit = {
+					NOT = { is_core = ROOT } 
+					NOT = { owned_by = ROOT } 
+				}
+				add_permanent_claim = ROOT
+			}
+			clovenwood_area = {
+				limit = {
+					NOT = { is_core = ROOT } 
+					NOT = { owned_by = ROOT } 
+				}
+				add_permanent_claim = ROOT
+			}
+			beastgrave_area = {
+				limit = {
+					NOT = { is_core = ROOT } 
+					NOT = { owned_by = ROOT } 
 				}
 				add_permanent_claim = ROOT
 			}
 		}
 	}
 	
-	B33_the_corvurian_campaigns = {
-		icon = mission_landsknecht_soldier
-		required_missions = { B33_fortify_dostans_way }
-		position = 6
-		
+	B33_the_eastern_marches = {
+		icon = prosper_in_piedmont
+		position = 2
+		required_missions = { B33_a_worthy_wielder } 
 		provinces_to_highlight = {
-			area = baldostan_area
-			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+			OR = {
+				area = medirleigh_area
+				area = swapstoke_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT } 
+		}
+
+		trigger = {
+			medirleigh_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			swapstoke_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+
+		effect = {
+			dryadsdale_area = {
+				limit = {
+					NOT = { is_core = ROOT } 
+					NOT = { owned_by = ROOT } 
+				}
+				add_permanent_claim = ROOT
+			}
+			hornwood_area = {
+				limit = {
+					NOT = { is_core = ROOT } 
+					NOT = { owned_by = ROOT } 
+				}
+				add_permanent_claim = ROOT
+			}
+			doewood_area = {
+				limit = {
+					NOT = { is_core = ROOT } 
+					NOT = { owned_by = ROOT } 
+				}
+				add_permanent_claim = ROOT
+			}
+			marrhold_area = {
+				limit = {
+					NOT = { is_core = ROOT } 
+					NOT = { owned_by = ROOT } 
+				}
+				add_permanent_claim = ROOT
+			}
+			if = {
+				limit = { 4097 = { owned_by = B36 }  } 
+				ROOT = {
+					add_casus_belli = {
+						target = B36
+						type = cb_vassalize_mission
+						months = 180
+					}
+				}
+			}
+		}
+	}
+
+	B33_attack_on_marrhold = {
+		icon = alpine_defenses
+		position = 3
+		required_missions = { B33_the_eastern_marches } 
+		provinces_to_highlight = {
+			area = marrhold_area
+			NOT = { country_or_non_sovereign_subject_holds = ROOT } 
+		}
+
+		trigger = {
+			OR = {
+				alliance_with = B36
+				marrhold_area = {
+					type = all
+					country_or_non_sovereign_subject_holds = ROOT
+				}
+			}
 		}
 		
+		effect = {
+			hidden_effect = {
+				#option for ally 
+				if = {
+					limit = { alliance_with = B36 }
+					add_country_modifier = {
+						name = blademarches_griffon_attache
+						duration = -1
+					}
+					B36 = { 
+						country_event = { id = bladegriffon_flavor.1 } 
+						set_country_flag = griffon_blade_pact
+					}
+					country_event = { id = bladegriffon_flavor.1 }
+					add_historical_friend = B36
+					B36 = {
+						add_historical_friend = PREV
+					}
+					set_country_flag = griffon_blade_pact
+				}
+				#option for subject
+				else_if = {
+					limit = {
+						marrhold_area = {
+							type = all
+							owned_by = B36
+						}
+						B36 = { is_subject_of = ROOT }
+					}
+					add_country_modifier = {
+						name = blademarches_griffon_attache
+						duration = -1
+					}
+					B36 = {
+						country_event = { id = bladegriffon_flavor.1 }
+						set_country_flag = griffon_blade_pact
+					}
+					country_event = { id = bladegriffon_flavor.1 }
+					add_historical_friend = B36
+					B36 = {
+						add_historical_friend = PREV
+					}
+					set_country_flag = griffon_blade_pact
+					add_prestige = 15
+				}
+				#fallback/conquest
+				else = {
+					add_country_modifier = {
+						name = "blademarches_veteran_army"
+						duration = 3650
+					}
+				}
+			}
+			#Tooltips
+			custom_tooltip = bpo_rewards_when_marrhold_alliance_or_subject
+			tooltip = {
+				add_country_modifier = {
+						name = blademarches_griffon_attache
+						duration = -1
+					}
+				B36 = {
+					add_country_modifier = {
+						name = marrhold_blade_attache
+						duration = -1
+					}
+				}	
+				add_historical_friend = B36
+				set_country_flag = griffon_blade_pact
+			}
+			custom_tooltip = bpo_rewards_when__marrhold_conquest
+			tooltip = {
+				add_country_modifier = {
+					name = "blademarches_veteran_army"
+					duration = 3650
+				}
+			}
+		
+		}
+	}
+
+	B33_hegemon_of_south = {
+		icon = mission_unite_home_region
+		position = 4
+		required_missions = { B33_attack_on_marrhold } 
+		provinces_to_highlight = {
+			region = south_castanor_region
+			NOT = { owned_by = ROOT } 
+		}
+
+		trigger = {
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+				value = 45
+				region = south_castanor_region
+			}
+		}
+
+		effect = {
+			add_prestige = 50
+			add_splendor = 300
+			add_country_modifier = {
+				name = "blademarches_hegemon_of_the_south"
+				duration = 3650
+			}
+		}
+	}
+
+
+	B33_way_forward = {
+		icon = mission_thinking_king
+		position = 5
+		required_missions = {
+			B33_fortify_dostans_way
+			B33_restore_the_stewards_hold
+		}
+		provinces_to_highlight = {  } 
+
+		trigger = {
+			adm_power = 100
+			dip_power = 100
+			mil_power = 100
+			reform_level = 2
+		}
+
+		effect = {
+			country_event = { id = bop_flavor.1 } 
+			add_adm_power = -100
+			add_dip_power = -100
+			add_mil_power = -100
+			add_splendor = 150
+			if = {
+				limit = {
+					OR = {
+						culture_group = elven
+						culture = half_orc
+					}
+				}
+				country_event = {
+					id = bop_flavor.2
+					days = 14
+				}
+			}
+			else = {
+				lock_racial_admin = yes
+			}
+		}
+	}
+}
+blademarches_4 = {
+	slot = 4
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = { tag = B33 } 
+
+	B33_blademarches_proper = {
+		icon = mission_conquer_50_development
+		position = 2
+		required_missions = { B33_a_worthy_wielder } 
+		provinces_to_highlight = {
+			OR = {
+				AND = {
+					OR = {
+						area = blademarch_area
+						area = banesfork_area
+					}
+					NOT = { owned_by = ROOT } 
+				}
+				AND = {
+					OR = {
+						area = clovenwood_area
+						area = beastgrave_area
+					}
+					NOT = { country_or_non_sovereign_subject_holds = ROOT } 
+				}
+			}
+		}
+
+		trigger = {
+			blademarch_area = {
+				type = all
+				owned_by = ROOT
+			}
+			banesfork_area = {
+				type = all
+				owned_by = ROOT
+			}
+			clovenwood_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			beastgrave_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+
+		effect = {
+			medirleigh_area = {
+				limit = {
+					NOT = { is_core = ROOT } 
+					NOT = { owned_by = ROOT } 
+				}
+				add_permanent_claim = ROOT
+			}
+			swapstoke_area = {
+				limit = {
+					NOT = { is_core = ROOT } 
+					NOT = { owned_by = ROOT } 
+				}
+				add_permanent_claim = ROOT
+			}
+			817 = { move_capital_effect = yes } 
+		}
+	}
+
+	B33_the_dragonfell_memorial = {
+		icon = public_works
+		position = 3
+		required_missions = { B33_blademarches_proper } 
+		provinces_to_highlight = {
+			province_id = 816
+			OR = {
+				NOT = { owned_by = ROOT } 
+				NOT = { development = 15 } 
+				NOT = { has_tax_building_trigger = yes } 
+			}
+		}
+
+		trigger = {
+			816 = {
+				owned_by = ROOT
+				development = 15
+				has_tax_building_trigger = yes
+			}
+			philosopher = 1
+		}
+
+		effect = {
+			816 = {
+				add_permanent_province_modifier = {
+					name = "blademarches_dragonfell_memorial"
+					duration = -1
+				}
+			}
+		}
+	}
+
+	B33_restore_the_stewards_hold = {
+		icon = take_the_bishoprics
+		position = 4
+		required_missions = { B33_the_dragonfell_memorial } 
+		provinces_to_highlight = {
+			province_id = 819
+			OR = {
+				NOT = { owned_by = ROOT } 
+				NOT = { development = 15 } 
+				NOT = { has_tax_building_trigger = yes } 
+			}
+		}
+
+		trigger = {
+			819 = {
+				owned_by = ROOT
+				development = 15
+				has_tax_building_trigger = yes
+			}
+			dip_power = 50
+		}
+
+		effect = {
+			add_dip_power = -50
+			819 = {
+				add_permanent_province_modifier = {
+					name = "blademarches_home_of_bladestewards"
+					duration = -1
+				}
+			}
+		}
+	}
+}
+
+generic_override_5 = {
+    slot = 5
+    generic = no
+    ai = yes
+    
+    potential = {
+      tag = B33 
+    }
+    has_country_shield = no
+}
+
+blademarches_5_religious = {
+	slot = 5
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = { tag = B33 } 
+	
+	B33_becoming_corinite = {
+		icon = mission_corin
+		position = 2
+		provinces_to_highlight = {  } 
+
+		trigger = {
+			religion = corinite
+			religious_unity = 0.8
+		}
+
+		effect = {
+			add_country_modifier = {
+				name = "blademarches_corinite_fervor"
+				duration = 3650
+			}
+			
+			country_event = {
+				id = bop_flavor.14
+				days = 7
+			}
+			
+			if = {
+				limit = { exists = B58 } 
+				add_historical_rival = B58
+				B58 = {
+					add_historical_rival = PREV
+				}
+			}
+			if = {
+				limit = { exists = B02 } 
+				add_historical_friend = B02
+				B02 = {
+					add_historical_friend = PREV
+				}
+			}
+		}
+	}
+
+	B33_paragon_of_corin = {
+		icon = mission_sword_of_the_reformation
+		position = 3
+		required_missions = { B33_becoming_corinite } 
+		provinces_to_highlight = {  } 
+
+		trigger = {
+			religion = corinite
+			reform_level = 4
+			if = {
+				limit = { has_dlc = "Emperor" } 
+				is_defender_of_faith_of_tier = 4
+			}
+			else = {
+				is_defender_of_faith = yes
+				calc_true_if = {
+					all_known_country = { religion = corinite }
+					amount = 20
+				} 
+			}
+		}
+
+		effect = {
+			if = {
+				limit = { has_country_modifier = "blademarches_corinite_fervor"	}
+				remove_country_modifier = "blademarches_corinite_fervor"
+			}
+			add_country_modifier = {
+				name = "blademarches_corinite_fervor"
+				duration = 5475
+			}
+			set_country_flag = blademarches_sword_of_corin_enabled
+			add_government_reform = blademarches_sword_of_corin
+		}
+	}
+
+	B33_corinite_emperor = {
+		icon = mission_dancing_with_dead
+		position = 4
+		required_missions = { B33_paragon_of_corin } 
+		provinces_to_highlight = {  } 
+
+		trigger = {
+			OR = {
+				is_emperor = yes
+				has_country_modifier = "blademarches_might_of_the_empire"
+			}
+		}
+		
+		effect = {
+			if = {
+				limit = { has_country_modifier = "blademarches_corinite_fervor"	}
+				remove_country_modifier = "blademarches_corinite_fervor"
+			}
+			add_country_modifier = {
+				name = "blademarches_corinite_fervor"
+				duration = 9125
+			}
+			if = {
+				limit = { is_emperor = yes }
+				add_imperial_influence = 50
+			}
+			else = {
+				add_prestige = 50
+				add_splendor = 500
+			}
+		} 
+	}
+}
+####Racial Military Branches
+blademarches_5_racial_military_elven_start = {
+	slot = 5
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = {
+		tag = B33
+		has_country_modifier = elven_administration
+		OR = {
+			has_country_flag = BOP_IMPERIAL_PATH
+			has_country_flag = BOP_ROYAL_PATH
+		}
+	} 
+	
+	B33_elven_military_start = {
+		icon = mission_elf_smiling
+		position = 5
+		provinces_to_highlight = {  } 
+
+		trigger = {
+			if = {
+				limit = { has_dlc = "Cradle of Civilization" }
+				army_professionalism = 0.2
+			}
+			else = {
+				army_tradition = 30
+			}
+		}
+
+		effect = {
+			country_event = { id = bop_army_diversity.7 }
+		}
+	}
+}
+
+blademarches_5_racial_military_elven_keep = {
+	slot = 5
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = {
+		tag = B33
+		has_country_modifier = elven_administration
+		has_country_flag = bop_keep_elven_military
+		OR = {
+			has_country_flag = BOP_IMPERIAL_PATH
+			has_country_flag = BOP_ROYAL_PATH
+		}
+	} 
+	
+	B33_elven_military_lifetime_of_service = {
+		icon = mission_aelnar_corps
+		position = 6
+		
+		required_missions = { B33_elven_military_start }
+		
+		provinces_to_highlight = {  } 
+
+		trigger = {
+			num_of_owned_provinces_with = {
+				value = 7
+				culture_group = elven
+				base_manpower = 10
+				has_manpower_building_trigger = yes
+			}
+			num_of_owned_provinces_with = {
+				value = 10
+				NOT = { culture_group = elven }
+				base_production = 8
+				base_tax = 5
+			}
+		}
+
+		effect = {
+			add_country_modifier = {
+				name = blademarches_elven_lifetime_recruitment
+				duration = -1
+			}
+			#unlock_estate_privilege = estate_bladestewards_bladesworn_elven
+		}
+	}
+}
+
+blademarches_5_racial_military_elven_abolish = {
+	slot = 5
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = {
+		tag = B33
+		has_country_modifier = elven_administration
+		has_country_flag = bop_abolish_elven_military
+		OR = {
+			has_country_flag = BOP_IMPERIAL_PATH
+			has_country_flag = BOP_ROYAL_PATH
+		}
+	} 
+	
+	B33_elven_military_elven_officers = {
+		icon = form_the_swiss_guard
+		position = 6
+		provinces_to_highlight = {  } 
+		
+		required_missions = { B33_elven_military_start }
+		
+		trigger = {
+			num_of_owned_provinces_with = {
+				value = 5
+				culture_group = elven
+				base_manpower = 10
+				has_forcelimit_building_trigger = yes
+			}
+			army_tradition = 50
+		}
+
+		effect = {
+			add_country_modifier = {
+				name = blademarches_elven_officers
+				duration = -1
+			}
+			#unlock_estate_privilege = estate_bladestewards_bladesworn_elven_elite
+		}
+	}
+}
+
+blademarches_5_racial_military_human_start = {
+	slot = 5
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = {
+		tag = B33
+		has_country_modifier = human_administration
+		OR = {
+			has_country_flag = BOP_IMPERIAL_PATH
+			has_country_flag = BOP_ROYAL_PATH
+		}
+	} 
+	
+	B33_human_military_start = {
+		icon = mission_conquer_tver
+		position = 5
+		provinces_to_highlight = {  } 
+
+		trigger = {
+			if = {
+				limit = { has_dlc = "Cradle of Civilization" }
+				army_professionalism = 0.2
+			}
+			else = {
+				army_tradition = 30
+			}
+		}
+
+		effect = {
+			country_event = { id = bop_army_diversity.8 }
+		}
+	}
+}
+
+blademarches_5_racial_military_human_elitist = {
+	slot = 5
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = {
+		tag = B33
+		has_country_modifier = human_administration
+		has_country_flag = bop_brilliant_human__military
+		OR = {
+			has_country_flag = BOP_IMPERIAL_PATH
+			has_country_flag = BOP_ROYAL_PATH
+		}
+	} 
+	
+	B33_human_military_human_brilliance = {
+		icon = mission_greentide
+		position = 6
+		provinces_to_highlight = {  } 
+		
+		required_missions = { B33_human_military_start }
+		
+		trigger = {
+			custom_trigger_tooltip = {
+				tooltip = BEST_DISCIPLINE
+				NOT = {
+					any_known_country = {
+						OR = {
+							culture_group = escanni
+							culture_group = anbennarian
+							culture_group = dostanorian
+							culture_group = lencori
+							culture_group = reachman
+							culture_group = gerudian
+						}
+						has_higher_discipline = yes
+					}
+				}
+			}
+		}
+
+		effect = {
+			add_country_modifier = {
+				name = blademarches_human_brilliance
+				duration = -1
+			}
+			#unlock_estate_privilege = estate_bladestewards_bladesworn_human
+		}
+	}
+}
+
+blademarches_5_racial_military_human_diverse = {
+	slot = 5
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = {
+		tag = B33
+		has_country_modifier = human_administration
+		has_country_flag = bop_diverse_human_military
+		OR = {
+			has_country_flag = BOP_IMPERIAL_PATH
+			has_country_flag = BOP_ROYAL_PATH
+		}
+	} 
+	
+	B33_human_military_seek_foreign_expertise = {
+		icon = mission_four_men
+		position = 6
+		provinces_to_highlight = {  } 
+		
+		required_missions = { B33_human_military_start }
+		
+		trigger = {
+			has_country_modifier = blademarches_elven_expertise
+			has_country_modifier = blademarches_hobgoblin_expertise
+			has_country_modifier = blademarches_harimari_expertise
+			has_country_modifier = blademarches_dwarven_expertise
+			has_country_modifier = blademarches_gnomish_expertise
+		}
+
+		effect = {
+			country_event = { id = bop_army_diversity.6 }
+			#unlock_estate_privilege = estate_bladestewards_bladesworn_human
+		}
+	}
+}
+
+blademarches_5_racial_military_half_orc_start = {
+	slot = 5
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = {
+		tag = B33
+		has_country_modifier = half_orcish_administration
+		OR = {
+			has_country_flag = BOP_IMPERIAL_PATH
+			has_country_flag = BOP_ROYAL_PATH
+		}
+	} 
+	
+	B33_half_orc_military_start = {
+		icon = mission_orc_chillin
+		position = 5
+		provinces_to_highlight = {  } 
+		
+		trigger = {
+			if = {
+				limit = { has_dlc = "Cradle of Civilization" }
+				army_professionalism = 0.2
+			}
+			else = {
+				army_tradition = 30
+			}
+		}
+
+		effect = {
+			country_event = { id = bop_army_diversity.9 }
+		}
+	}
+}
+
+blademarches_5_racial_military_half_orc_warrior_elite = {
+	slot = 5
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = {
+		tag = B33
+		has_country_modifier = half_orcish_administration
+		has_country_flag = bop_elite_half_orc_military
+		OR = {
+			has_country_flag = BOP_IMPERIAL_PATH
+			has_country_flag = BOP_ROYAL_PATH
+		}
+	} 
+	
+	B33_half_orc_military_warrior_elite = {
+		icon = gory_to_the_black_army
+		position = 6
+		provinces_to_highlight = {  } 
+		
+		required_missions = { B33_half_orc_military_start }
+		
+		trigger = {
+			if = {
+				limit = { has_dlc = "Cradle of Civilization" }
+				num_of_regiments_at_full_drill = 20
+				army_professionalism = 0.4
+			}
+			else = {
+				has_global_modifier_value = {
+					which = discipline  
+					value = 0.05
+				}
+				has_global_modifier_value = {
+					which = infantry_power  
+					value = 0.1
+				}
+				army_tradition = 50
+			}
+		}
+
+		effect = {
+			add_country_modifier = {
+				name = blademarches_half_orc_warrior_elite
+				duration = -1
+			}
+			#unlock_estate_privilege = estate_bladestewards_bladesworn_half_orc
+		}
+	}
+}
+
+blademarches_5_racial_military_half_orc_hybrid = {
+	slot = 5
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = {
+		tag = B33
+		has_country_modifier = half_orcish_administration
+		has_country_flag = bop_hybrid_half_orc_military
+		OR = {
+			has_country_flag = BOP_IMPERIAL_PATH
+			has_country_flag = BOP_ROYAL_PATH
+		}
+	} 
+	
+	B33_half_orc_military_hybrid_force = {
+		icon = mercenary_companies
+		position = 6
+		provinces_to_highlight = {  } 
+
+		required_missions = { B33_half_orc_military_start }
+
+		trigger = {
+			accepted_culture = marcher
+			accepted_culture = green_orc
+			num_of_owned_provinces_with = {
+				value = 3
+				culture = marcher 
+				base_manpower = 5
+				has_manpower_building_trigger = yes
+			}
+			num_of_owned_provinces_with = {
+				value = 3
+				culture = green_orc
+				base_manpower = 5
+				has_manpower_building_trigger = yes
+			}
+		}
+
+		effect = {
+			add_country_modifier = {
+				name = blademarches_half_orc_hybrid_force
+				duration = -1
+			}
+			#unlock_estate_privilege = estate_bladestewards_bladesworn_half_orc
+		}
+	}
+}
+
+
+# Dummy Branching
+blademarches_5_racial_military_branching = {
+	slot = 5
+	generic = no
+	ai = yes
+	potential = {
+		tag = B33
+		OR = {
+			has_country_flag = BOP_IMPERIAL_PATH
+			has_country_flag = BOP_ROYAL_PATH
+		}
+		NOT = {
+			OR = {
+				has_country_flag = bop_keep_elven_military
+				has_country_flag = bop_abolish_elven_military
+				has_country_flag = bop_brilliant_human__military
+				has_country_flag = bop_diverse_human_military
+				has_country_flag = bop_elite_half_orc_military
+				has_country_flag = bop_hybrid_half_orc_military
+			}
+		}
+	}
+	has_country_shield = yes
+	
+	per_branching_3_6 = {
+		icon = mission_unknown_mission
+		required_missions = {
+			B33_elven_military_start
+			B33_human_military_start
+			B33_half_orc_military_start
+		}
+		position = 6
+		effect = { custom_tooltip = bop_this_is_a_branching_mission }
+	}
+}
+
+blademarches_wide_1 = {
+	slot = 1
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = {
+		tag = B33
+		has_country_flag = BOP_IMPERIAL_PATH
+	}
+
+	B33_the_corvurian_campaigns = {
+		icon = mission_head_on_spike
+		position = 7
+		required_missions = { B33_Preparing_Conquest } 
+		provinces_to_highlight = {
+			area = baldostan_area
+			NOT = { country_or_non_sovereign_subject_holds = ROOT } 
+		}
+
 		trigger = {
 			baldostan_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
 		}
-		
+
 		effect = {
 			add_country_modifier = {
-				name = blademarches_corvurian_integration
-				duration = 3650 #10 years
+				name = "blademarches_corvurian_integration"
+				duration = 3650
 			}
 			add_prestige = 15
-			
 		}
 	}
-	
+
 	B33_into_the_folly = {
 		icon = mission_advance_to_the_dnieper
-		required_missions = { B33_the_corvurian_campaigns }
 		position = 8
-		
+		required_missions = { B33_the_corvurian_campaigns } 
 		provinces_to_highlight = {
-			province_id = 804 #Glademarch
-			NOT = { owned_by = ROOT }
+			province_id = 804
+			NOT = { owned_by = ROOT } 
 		}
-		
+
 		trigger = {
 			adm_power = 300
-			804 = { #Glademarch
-				owned_by = ROOT
-			}
+			804 = { owned_by = ROOT } 
 		}
-		
+
 		effect = {
 			daravans_folly_region = {
 				limit = {
-					NOT = { is_core = ROOT }
+					NOT = { is_core = ROOT } 
+					NOT = { owned_by = ROOT } 
 				}
 				add_permanent_claim = ROOT
 			}
-			country_event = { id = flavor_blademarches.14 }
+			country_event = { id = flavor_blademarches.14 } 
 		}
 	}
-	
+
 	B33_avenge_the_folly = {
 		icon = mission_build_up_to_force_limit
-		required_missions = { B33_into_the_folly }
 		position = 9
-		
+		required_missions = { B33_into_the_folly } 
 		provinces_to_highlight = {
 			region = daravans_folly_region
-			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+			NOT = { country_or_non_sovereign_subject_holds = ROOT } 
 		}
-		
+
 		trigger = {
 			daravans_folly_region = {
 				type = all
@@ -269,43 +1270,44 @@ blademarches_2 = {
 			}
 			philosopher = 3
 		}
-		
+
 		effect = {
-			446 = { #Dreadmire
-				add_permanent_province_modifier = {
-					name = blademarches_grave_of_castan_the_steward
+			446 = {
+				add_province_modifier = {
+					name = "blademarches_grave_of_castan_the_steward"
 					duration = -1
 				}
 				change_province_name = "Steward's Grave"
 			}
 			west_overmarch_area = {
 				limit = {
-					NOT = { is_core = ROOT }
+					NOT = { is_core = ROOT } 
+					NOT = { owned_by = ROOT } 
 				}
 				add_permanent_claim = ROOT
 			}
 			east_overmarch_area = {
 				limit = {
-					NOT = { is_core = ROOT }
+					NOT = { is_core = ROOT } 
+					NOT = { owned_by = ROOT } 
 				}
 				add_permanent_claim = ROOT
 			}
 		}
 	}
-	
+
 	B33_southern_marches = {
 		icon = alpine_fortifications
-		required_missions = { B33_avenge_the_folly }
-		position = 11
-		
+		position = 10
+		required_missions = { B33_avenge_the_folly } 
 		provinces_to_highlight = {
-			OR = { 
+			OR = {
 				area = west_overmarch_area
 				area = east_overmarch_area
 			}
-			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+			NOT = { country_or_non_sovereign_subject_holds = ROOT } 
 		}
-		
+
 		trigger = {
 			west_overmarch_area = {
 				type = all
@@ -316,108 +1318,72 @@ blademarches_2 = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}
 		}
-		
+
 		effect = {
-			510 = { #Bal Ourod
+			510 = {
 				add_permanent_province_modifier = {
-					name = blademarches_bal_ouord_fortifications
+					name = "blademarches_bal_ouord_fortifications"
 					duration = -1
 				}
 			}
 		}
 	}
 }
-
-blademarches_3 = {
+blademarches_wide_3 = {
 	slot = 3
 	generic = no
 	ai = yes
 	has_country_shield = yes
 	potential = {
 		tag = B33
+		has_country_flag = BOP_IMPERIAL_PATH
+		reform_level = 5
 	}
 	
-	B33_a_worthy_wielder = {
-		icon = mission_swear_fealty_knight
-		position = 1
-		
-		trigger = {
-			has_ruler_modifier = wielding_calindal
-			stability = 3
-			army_size_percentage = 1.0
-		}
-		
-		effect = {
-			devaced_area = {
+	B33_Preparing_Conquest = {
+		icon = mission_assemble_an_army
+		position = 6
+		required_missions = { B33_way_forward } 
+		provinces_to_highlight = {  } 
+
+		trigger = { 
+			army_size = 40
+			if = {
+				limit = { has_dlc = "Cradle of Civilization" }
+				army_professionalism = 0.2
+			}
+			else = {
+				army_tradition = 30
+			}
+		} 
+
+		effect = { 
+			add_army_tradition = -20
+			set_country_flag = blademarches_imperial_army_enabled
+			add_government_reform = blademarches_imperial_blademarcher_army
+			
+			dostanor_region = {
 				limit = {
 					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
 				}
 				add_permanent_claim = ROOT
 			}
-			oudeben_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
-			vernham_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
-			escerfork_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
-			humacvord_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
-			blademarch_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
-			banesfork_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
-			clovenwood_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
-			beastgrave_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
-		}
+		} 
 	}
 	
 	B33_towards_trialmount = {
 		icon = mission_cannons_firing
-		required_missions = { B33_a_worthy_wielder }
-		position = 2
-		
+		position = 7
+		required_missions = { B33_Preparing_Conquest } 
 		provinces_to_highlight = {
-			OR = { 
+			OR = {
 				area = escerfork_area
 				area = humacvord_area
 			}
-			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+			NOT = { country_or_non_sovereign_subject_holds = ROOT } 
 		}
-		
+
 		trigger = {
 			escerfork_area = {
 				type = all
@@ -428,101 +1394,38 @@ blademarches_3 = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}
 		}
-		
+
 		effect = {
 			burnoll_area = {
 				limit = {
-					NOT = { is_core = ROOT }
+					NOT = { is_core = ROOT } 
+					NOT = { owned_by = ROOT } 
 				}
 				add_permanent_claim = ROOT
 			}
 			themin_area = {
 				limit = {
-					NOT = { is_core = ROOT }
+					NOT = { is_core = ROOT } 
+					NOT = { owned_by = ROOT } 
 				}
 				add_permanent_claim = ROOT
 			}
 		}
 	}
 	
-	B33_hegemon_of_south = {
-		icon = mission_unite_home_region
-		required_missions = { 
-			B33_towards_trialmount
-			B33_attack_on_marrhold
-			B33_fortify_dostans_way
-		}
-		position = 5
-		
-		provinces_to_highlight = {
-			region = south_castanor_region
-			NOT = { owned_by = ROOT }
-		}
-		
-		trigger = {
-			num_of_owned_provinces_with = {
-				value = 45
-				region = south_castanor_region
-			}
-		}
-		
-		effect = {
-			add_prestige = 100
-			add_country_modifier = {
-				name = blademarches_hegemon_of_the_south
-				duration = 3650
-			}
-		}
-	}
-	
-	B33_the_grand_army_of_blademarches = {
-		icon = mission_conquer_5_states
-		required_missions = { 
-			B33_hegemon_of_south
-			}
-		position = 7
-		
-		trigger = {
-			army_size = 100
-			grand_captain = 2
-		}
-		
-		effect = {
-			southgate_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
-			castonath_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
-			trialmount_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
-			country_event = { id = flavor_blademarches.12 }
-		}
-	}
 	B33_a_squanderer_redeemed = {
 		icon = secure_our_rule
-		required_missions = { B33_the_grand_army_of_blademarches }
 		position = 8
-		
+		required_missions = { B33_towards_trialmount } 
 		provinces_to_highlight = {
-			OR = { 
+			OR = {
 				area = southgate_area
 				area = castonath_area
 				area = trialmount_area
 			}
-			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+			NOT = { country_or_non_sovereign_subject_holds = ROOT } 
 		}
-		
+
 		trigger = {
 			southgate_area = {
 				type = all
@@ -537,27 +1440,26 @@ blademarches_3 = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}
 		}
-		
+
 		effect = {
-			843 = { #Trialwood
-				add_permanent_province_modifier = {
-					name = blademarches_grave_of_elecast
+			843 = {
+				add_province_modifier = {
+					name = "blademarches_grave_of_elecast"
 					duration = -1
 				}
 			}
 		}
 	}
-	
+
 	B33_home_of_clarimonde = {
 		icon = protect_against_the_turks
-		required_missions = { B33_a_squanderer_redeemed }
 		position = 9
-		
+		required_missions = { B33_a_squanderer_redeemed } 
 		provinces_to_highlight = {
 			area = oldhaven_area
-			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+			NOT = { country_or_non_sovereign_subject_holds = ROOT } 
 		}
-		
+
 		trigger = {
 			oldhaven_area = {
 				type = all
@@ -566,56 +1468,61 @@ blademarches_3 = {
 			has_ruler_modifier = wielding_calindal
 			adm_power = 100
 		}
-		
+
 		effect = {
-			874 = { #Oldhaven
-				add_permanent_province_modifier = {
-					name = blademarches_home_of_clarimonde
+			874 = {
+				add_province_modifier = {
+					name = "blademarches_home_of_clarimonde"
 					duration = -1
 				}
 			}
 			add_adm_power = -100
 		}
 	}
-	
+
 	B33_the_stewards_war = {
 		icon = venture_captains
-		required_missions = { B33_home_of_clarimonde }
 		position = 10
-		
+		required_missions = { B33_home_of_clarimonde } 
+		provinces_to_highlight = {  } 
+
 		trigger = {
 			prestige = 100
 			legitimacy = 100
 			army_size = 100
 		}
-		
+
 		effect = {
 			inner_castanor_region = {
 				limit = {
-					NOT = { is_core = ROOT }
+					NOT = { is_core = ROOT } 
+					NOT = { owned_by = ROOT } 
 				}
 				add_permanent_claim = ROOT
 			}
 			west_castanor_region = {
 				limit = {
-					NOT = { is_core = ROOT }
+					NOT = { is_core = ROOT } 
+					NOT = { owned_by = ROOT } 
 				}
 				add_permanent_claim = ROOT
 			}
 			south_castanor_region = {
 				limit = {
-					NOT = { is_core = ROOT }
+					NOT = { is_core = ROOT } 
+					NOT = { owned_by = ROOT } 
 				}
 				add_permanent_claim = ROOT
 			}
 		}
 	}
-	
+
 	B33_imperial_blademarches = {
 		icon = mission_empire
-		required_missions = { B33_the_stewards_war }
 		position = 11
-		
+		required_missions = { B33_the_stewards_war } 
+		provinces_to_highlight = {  } 
+
 		trigger = {
 			total_development = 1000
 			has_ruler_modifier = wielding_calindal
@@ -623,358 +1530,1064 @@ blademarches_3 = {
 			dip = 5
 			adm = 5
 		}
-		
+
 		effect = {
 			add_country_modifier = {
-				name = blademarches_might_of_the_empire
+				name = "blademarches_might_of_the_empire"
 				duration = -1
 			}
-			override_country_name = EMPIRE_OF_THE_BLADE
+			override_country_name = "EMPIRE_OF_THE_BLADE"
 		}
 	}
-}
 
-blademarches_4 = {
-	slot = 4
-	generic = no
-	ai = yes
-	has_country_shield = yes
 	
-	potential = {
-		tag = B33
-	}
-	
-	B33_blademarches_proper = {
-		icon = mission_assemble_an_army
-		required_missions = { B33_a_worthy_wielder }
-		position = 2
-		
-		provinces_to_highlight = {
-			OR = {
-				AND = {
-					OR = { 
-						area = blademarch_area
-						area = banesfork_area
-					}
-					NOT = { owned_by = ROOT }
-				}
-				AND = {
-					OR = { 
-						area = clovenwood_area
-						area = beastgrave_area
-					}
-					NOT = { country_or_non_sovereign_subject_holds = ROOT }
-				}
-			}
-		}
-		
-		trigger = {
-			blademarch_area = {
-				type = all
-				owned_by = ROOT
-			}
-			banesfork_area = {
-				type = all
-				owned_by = ROOT
-			}
-			clovenwood_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-			beastgrave_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-		}
-		
-		effect = {
-			medirleigh_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
-			swapstoke_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
-			817 = { #Bladeskeep
-				move_capital_effect = yes
-			}
-		}
-	}
-	
-	B33_the_eastern_marches = {
-		icon = prosper_in_piedmont
-		required_missions = { B33_blademarches_proper }
-		position = 3
-		
-		provinces_to_highlight = {
-			OR = { 
-				area = medirleigh_area
-				area = swapstoke_area
-			}
-			NOT = { country_or_non_sovereign_subject_holds = ROOT }
-		}
-		
-		trigger = {
-			medirleigh_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-			swapstoke_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-		}
-		
-		effect = {
-			dryadsdale_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
-			hornwood_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
-			doewood_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
-			marrhold_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
-			if = {
-				limit = { 4097 = { owned_by = B36 } }
-				ROOT = {
-					add_casus_belli = {
-						target = B36
-						type = cb_vassalize_mission
-						months = 120
-					}
-				}
-			}
-		}
-	}
-	
-	B33_attack_on_marrhold = {
-		icon = alpine_defenses
-		required_missions = { B33_the_eastern_marches }
-		position = 4
-		
-		provinces_to_highlight = {
-			area = marrhold_area
-			NOT = { country_or_non_sovereign_subject_holds = ROOT }
-		}
-		
-		trigger = {
-			marrhold_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-		}
-		
-		effect = {
-			oldhaven_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
-			add_country_modifier = {
-				name = blademarches_veteran_army
-				duration = 3650 #10 years
-			}
-		}
-	}
-	
-	B33_prepare_the_deepwoods_expedition = {
-		icon = medici_bank_ledgers
-		required_missions = { B33_attack_on_marrhold }
-		position = 6
-		
-		provinces_to_highlight = {
-			OR = { 
-				province_id = 889 #Hornwood
-				province_id = 813 #Banesfork
-			}
-			OR = {
-				NOT = { owned_by = ROOT }
-				NOT = { has_fort_building_trigger = yes }
-			}
-		}
-		
-		trigger = {
-			army_size = 50
-			889 = { #Hornwood
-				owned_by = ROOT
-				has_fort_building_trigger = yes
-			}
-			813 = { #Banesfork
-				owned_by = ROOT
-				has_fort_building_trigger = yes
-			}
-		}
-		
-		effect = {
-			west_deepwoods_region = {
-				limit = {
-					NOT = { is_core = ROOT }
-				}
-				add_claim = ROOT
-			}
-			east_deepwoods_region = {
-				limit = {
-					NOT = { is_core = ROOT }
-				}
-				add_claim = ROOT
-			}
-		}
-	}
-	
-	B33_sword_upon_the_deepwoods = {
-		icon = mission_rb_conquer_the_highlands
-		required_missions = { B33_prepare_the_deepwoods_expedition }
-		position = 8
-		
-		provinces_to_highlight = {
-			OR = { 
-				province_id = 3054 #Vyr Selothyd
-				province_id = 3068 #Vyr Trynn
-			}
-			NOT = { country_or_non_sovereign_subject_holds = ROOT }
-		}
-		
-		trigger = {
-			3054 = {
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-			3068 = {
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-		}
-		
-		effect = {
-			add_country_modifier = {
-				name = blademarches_army_enthusiasm
-				duration = 3650 #10 years
-			}
-			deepwoods_mountain_grove = {
-				limit = {
-					NOT = { is_core = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
-		}
-	}
-	
-	B33_triumph = {
-		icon = neapolitan_govenance
-		required_missions = { B33_sword_upon_the_deepwoods}
-		position = 9
-		
-		provinces_to_highlight = {
-			superregion = deepwoods_superregion
-			NOT = { country_or_non_sovereign_subject_holds = ROOT }
-		}
-		
-		trigger = {
-			deepwoods_superregion = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-		}
-		
-		effect = {
-			country_event = { id = flavor_blademarches.13 }
-		}
-	}
 }
-
-blademarches_5 = {
+blademarches_wide_5 = {
 	slot = 5
 	generic = no
 	ai = yes
 	has_country_shield = yes
 	potential = {
 		tag = B33
+		has_country_flag = BOP_IMPERIAL_PATH
+	}
+
+	B33_prepare_the_deepwoods_expedition = {
+		icon = medici_bank_ledgers
+		position = 7
+		required_missions = { B33_Preparing_Conquest } 
+		provinces_to_highlight = {
+			OR = {
+				province_id = 889
+				province_id = 813
+			}
+			OR = {
+				NOT = { owned_by = ROOT } 
+				NOT = { has_fort_building_trigger = yes } 
+			}
+		}
+
+		trigger = {
+			army_size = 50
+			889 = {
+				owned_by = ROOT
+				has_fort_building_trigger = yes
+			}
+			813 = {
+				owned_by = ROOT
+				has_fort_building_trigger = yes
+			}
+		}
+
+		effect = {
+			west_deepwoods_region = {
+				limit = {
+					NOT = { is_core = ROOT } 
+					NOT = { owned_by = ROOT } 
+				}
+				add_claim = ROOT
+			}
+			east_deepwoods_region = {
+				limit = {
+					NOT = { is_core = ROOT } 
+					NOT = { owned_by = ROOT } 
+				}
+				add_claim = ROOT
+			}
+		}
+	}
+
+	B33_sword_upon_the_deepwoods = {
+		icon = mission_rb_conquer_the_highlands
+		position = 8
+		required_missions = { B33_prepare_the_deepwoods_expedition } 
+		provinces_to_highlight = {
+			OR = {
+				province_id = 3054
+				province_id = 3068
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT } 
+		}
+
+		trigger = {
+			3054 = { country_or_non_sovereign_subject_holds = ROOT } 
+			3068 = { country_or_non_sovereign_subject_holds = ROOT } 
+		}
+
+		effect = {
+			add_country_modifier = {
+				name = "blademarches_army_enthusiasm"
+				duration = 3650
+			}
+			clirypriah_area = {
+				limit = {
+					NOT = { is_core = ROOT } 
+					NOT = { owned_by = ROOT } 
+				}
+				add_permanent_claim = ROOT
+			}
+			prehnryn_area = {
+				limit = {
+					NOT = { is_core = ROOT } 
+					NOT = { owned_by = ROOT } 
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+
+	B33_triumph = {
+		icon = neapolitan_govenance
+		position = 9
+		required_missions = { B33_sword_upon_the_deepwoods } 
+		provinces_to_highlight = {
+			superregion = deepwoods_superregion
+			NOT = { country_or_non_sovereign_subject_holds = ROOT } 
+		}
+
+		trigger = {
+			deepwoods_superregion = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+
+		effect = { country_event = { id = flavor_blademarches.13 }  } 
+	}
+}
+blademarches_tall_1 = {
+	slot = 1
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = {
+		tag = B33
+		has_country_flag = BOP_ROYAL_PATH
+	}
+
+	B33_breadbasket_of_blademarches = {
+		icon = mission_pol_breadbasket_europe
+		position = 7
+		required_missions = { B33_developing_the_kingdom } 
+		provinces_to_highlight = { }
+
+		trigger = {
+			devaced_area = {
+				owned_by = ROOT
+				has_manpower_building_trigger = yes
+				base_production = 3
+				type = all
+			}
+			catelsvord_area = { 
+				owned_by = ROOT
+				has_manpower_building_trigger = yes
+				base_production = 3
+				type = all
+			}
+		}
+
+		effect = {
+			medium_increase_of_halfling_tolerance_effect = yes
+			add_estate_loyalty = {
+				estate = estate_nobles
+				loyalty = -15
+			}
+			798 = {
+				change_trade_goods = grain
+				add_base_manpower = 3
+			}
+			797 = {
+				change_trade_goods = grain
+				add_base_tax = 3
+				add_base_production = 1
+				add_base_manpower = 3
+				add_halfling_minority_size_effect = yes
+			}
+			791 = {
+				change_trade_goods = livestock
+				add_base_manpower = 2
+			}
+			799 = {
+				change_trade_goods = livestock
+				add_base_manpower = 2
+			}
+			793 = {
+				change_trade_goods = livestock
+				add_base_manpower = 2
+			}
+		}
+	}
+
+	B33_towards_silvermere = {
+		icon = mission_rb_import_potatoes
+		position = 8
+		required_missions = { B33_breadbasket_of_blademarches } 
+		provinces_to_highlight = {	}
+
+		trigger = {
+			oudeben_area = {
+				owned_by = ROOT
+				has_manpower_building_trigger = yes
+				base_production = 3
+				type = all
+			}
+		}
+
+		effect = {
+			add_estate_loyalty = {
+				estate = estate_nobles
+				loyalty = -5
+			}
+			801 = {
+				change_trade_goods = livestock
+				add_base_manpower = 1
+			}
+			810 = {
+				change_trade_goods = grain
+				add_base_manpower = 2
+			}
+			809 = {
+				change_trade_goods = salt
+				add_base_tax = 2
+				add_base_production = 1
+				add_base_manpower = 1
+			}
+			themin_area = {
+				limit = {
+					NOT = { is_core = ROOT } 
+					NOT = { owned_by = ROOT } 
+				}
+				add_permanent_claim = ROOT
+			}
+		}
 	}
 	
-	B33_the_dragonfell_memorial = {
-		icon = public_works
-		required_missions = { B33_blademarches_proper}
-		position = 3
-		
-		provinces_to_highlight = {
-			province_id = 816 #Dragonfell
-			OR = {
-				NOT = { owned_by = ROOT }
-				NOT = { development = 15 }
-				NOT = { has_tax_building_trigger = yes }
-			}
-		}
+	B33_question_of_navy = {
+		icon = mission_ne_great_lakes_conquest
+		position = 10
+		required_missions = { B33_towards_silvermere } 
+		provinces_to_highlight = { }
 		
 		trigger = {
-			816 = { #Dragonfell
-				owned_by = ROOT
-				development = 15
-				has_tax_building_trigger = yes
-			}
-			philosopher = 3
+			dip_power = 300
+			owns_core_province = 809
 		}
-		
+
 		effect = {
-			816 = { #Dragonfell
-				add_permanent_province_modifier = {
-					name = blademarches_dragonfell_memorial
-					duration = -1
+			country_event = { id = bop_flavor.4 } 
+			add_dip_power = -300
+		}
+	}
+	
+	B33_lady_of_the_lake = {
+		icon = mission_star_ascendency
+		position = 12
+		required_missions = { B33_question_of_navy } 
+		provinces_to_highlight = { } 
+
+		trigger = {
+			#is_year = 1600
+			custom_trigger_tooltip = {
+				tooltip = LAKELADY_EXPLANATION
+				has_country_flag = lakelady_unlocked
+			}
+			religion = corinite
+			has_ruler_modifier = wielding_calindal
+			809 = {
+				owned_by = ROOT
+				has_building = cathedral
+				religion = corinite
+			}
+		}
+
+		effect = {
+			add_country_modifier = {
+				name = blademarches_strength_of_the_kingdom
+				duration = -1
+			}
+			country_event = {
+				id = bop_flavor.13
+				days = 7 
+			} 
+		} 
+	}
+}
+blademarches_tall_2 = {
+	slot = 2
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = {
+		tag = B33
+		has_country_flag = BOP_ROYAL_PATH
+	}
+
+	B33_developing_bladekeep = {
+		icon = mission_magnificent_castle
+		position = 7
+		required_missions = { B33_developing_the_kingdom } 
+		provinces_to_highlight = {  } 
+
+		trigger = {
+			817 = {
+				has_fort_building_trigger = yes
+				has_tax_building_trigger = yes
+				has_production_building_trigger = yes
+				development = 20
+			}
+			816 = {
+				has_tax_building_trigger = yes
+				base_tax = 5
+			}
+			819 = {
+				has_manpower_building_trigger = yes
+				base_manpower = 5
+			}
+			818 = {
+				has_trade_building_trigger = yes
+				base_production = 5
+			}
+		}
+
+		effect = {
+			817 = {
+				change_trade_goods = iron
+				if = {
+					limit = {
+						NOT = { has_dlc = "Leviathan" } 
+					}
+					add_permanent_province_modifier = {
+						name = "bop_castle_bladekeep"
+						duration = -1
+					}
 				}
+				else = {
+					add_great_project_tier = {
+						type = castle_bladekeep
+						tier = 1
+					}
+				}
+			}
+			819 = { change_trade_goods = grain } 
+			818 = { change_trade_goods = copper } 
+		}
+	}
+
+	B33_dragons_hoard = {
+		icon = mission_entrepot_of_india
+		position = 8
+		required_missions = { B33_developing_bladekeep } 
+		provinces_to_highlight = { }
+		
+		trigger = {
+			treasury = 300
+			816 = {
+				OR = {
+					has_production_building_trigger = yes
+					trade_goods = gold
+				}
+				base_production = 8
+			}
+		}
+
+		effect = {
+			add_treasury = -300
+			medium_increase_of_dwarven_tolerance_effect = yes
+			816 = {
+				add_dwarven_minority_size_effect = yes
+				if = {
+					limit = { NOT = { trade_goods = gold }  } 
+					change_trade_goods = gold
+				}
+				else = { add_base_production = 2 } 
+			}
+		}
+	}
+
+	B33_claiming_the_coast = {
+		icon = mission_rb_conquer_the_isles
+		position = 9
+		required_missions = { B33_towards_silvermere } 
+		provinces_to_highlight = {  } 
+
+		trigger = {
+			oudmerewood_area = {
+				type = all
+				owned_by = ROOT
+			}
+		}
+
+		effect = {
+			oudmerewood_area = { add_orcish_minority_size_effect = yes } 
+			country_event = { id = bop_flavor.8 } 
+			if = {
+				limit = {
+					themin_area = {
+						type = all
+						owned_by = ROOT
+					}
+				}
+				themin_area = {
+					change_trade_goods = livestock
+					add_base_manpower = 1
+					add_base_tax = 2
+				}
+			}
+			else = {
+				custom_tooltip = themin_bonus_mission
 			}
 		}
 	}
 	
-	B33_restore_the_stewards_hold = {
-		icon = take_the_bishoprics
-		required_missions = { B33_the_dragonfell_memorial}
-		position = 4
-		
-		provinces_to_highlight = {
-			province_id = 819 #Steward's Hold
-			OR = {
-				NOT = { owned_by = ROOT }
-				NOT = { development = 15 }
-				NOT = { has_tax_building_trigger = yes }
-			}
-		}
-		
+	B33_from_the_bottom = {
+		icon = mission_swiss_mercenaries_flipped
+		position = 11
+		required_missions = { B33_army_reform } 
+		provinces_to_highlight = {  } 
+
 		trigger = {
-			819 = { #Steward's Hold
-				owned_by = ROOT
-				development = 15
-				has_tax_building_trigger = yes
+			is_at_war = no
+			if = {
+				limit = { has_dlc = "Cradle of Civilization" }
+				army_professionalism = 0.6
 			}
-			dip_power = 50
-		}
-		
-		effect = {
-			add_dip_power = -50
-			819 = { #Steward's Hold
-				add_permanent_province_modifier = {
-					name = blademarches_home_of_bladestewards
-					duration = -1
+			else_if = {
+				limit = { has_country_modifier = elven_military }
+				has_global_modifier_value = {
+					which = discipline
+					value = 0.25
 				}
+			}
+			else = {
+				has_global_modifier_value = {
+					which = discipline
+					value = 0.15
+				}
+			}
+			mil_power = 250
+			NOT = { has_country_modifier = blademarches_modernizing_the_army } 
+			years_of_income = 0.5
+			stability = 1
+		}
+
+		effect = {
+			add_years_of_income = -0.5
+			add_mil_power = -250
+			add_army_tradition = -15
+			add_country_modifier = {
+				name = "blademarches_blademarcher_drill"
+				duration = -1
+			}
+			add_country_modifier = {
+				name = "blademarches_modernizing_the_army"
+				duration = 3650
 			}
 		}
 	}
 }
+blademarches_tall_3 = {
+	slot = 3
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = {
+		tag = B33
+		has_country_flag = BOP_ROYAL_PATH
+	}
+	
+	B33_developing_the_kingdom = {
+		icon = adjust_the_general_means
+		position = 6
+		provinces_to_highlight = {  } 
+
+		trigger = {
+			total_development = 150
+			years_of_income = 0.5
+			OR = {
+				full_idea_group = economic_ideas
+				full_idea_group = infrastructure_ideas
+			}
+		}
+
+		effect = {
+			add_years_of_income = -0.5
+			add_country_modifier = {
+				name = "blademarches_developing_the_marches"
+				duration = 18250
+			}
+			country_event = {
+				id = bop_flavor.10
+			}				
+		}
+	}
+	B33_developing_vernham = {
+		icon = mission_city_prosperity
+		position = 7
+		required_missions = { B33_developing_the_kingdom } 
+		provinces_to_highlight = { }
+		
+		trigger = {
+			estate_loyalty = {
+				estate = estate_burghers
+				loyalty = 50
+			}
+			808 = {
+				has_tax_building_trigger = yes
+				has_courthouse_building_trigger = yes
+				has_trade_building_trigger = yes
+				development = 15
+			}
+		}
+
+		
+
+		effect = {
+			add_dip_power = -200
+			medium_increase_of_dwarven_tolerance_effect = yes
+			medium_increase_of_halfling_tolerance_effect = yes
+			medium_increase_of_gnomish_tolerance_effect = yes
+			808 = {
+				change_trade_goods = cloth
+				add_base_tax = 2
+				add_base_production = 2
+				add_base_manpower = 1
+				add_dwarven_minority_size_effect = yes
+				add_halfling_minority_size_effect = yes
+				add_gnomish_minority_size_effect = yes
+				add_permanent_province_modifier = {
+					name = "bop_small_quarter"
+					duration = -1
+				}
+			}
+		}
+	}
+
+	B33_vernham_gemcutting = {
+		icon = mission_rb_inland_india
+		position = 8
+		required_missions = { B33_developing_vernham } 
+		provinces_to_highlight = {  } 
+
+		trigger = {
+			has_institution = global_trade
+			808 = {
+				has_production_building_trigger = yes
+				development = 25
+				base_production = 10
+			}
+		}
+
+		effect = {
+			808 = {
+				change_trade_goods = gems
+				add_permanent_province_modifier = {
+					name = "bop_vernham_cut"
+					duration = -1
+				}
+			}
+		}
+	}
+
+	B33_forge_of_war = {
+		icon = mission_assemble_an_army_and_factory_smoke
+		position = 9
+		required_missions = {
+			B33_vernham_gemcutting
+			B33_industrialize_south
+			B33_dragons_hoard
+		}
+		provinces_to_highlight = {  } 
+
+		trigger = {
+			reform_level = 8
+			has_estate = estate_artificers
+			#has_country_modifier = blademarches_grand_army
+			years_of_income = 1
+			num_of_owned_provinces_with = {
+				value = 5
+				has_production_building_trigger = yes
+				has_building = weapons
+			}
+			num_of_owned_provinces_with = {
+				value = 15
+				has_manufactory_trigger = yes
+			}
+		}
+
+		effect = {
+			add_estate_loyalty = {
+				estate = estate_burghers
+				loyalty = -20
+			}
+			unlock_government_reform = {
+				government_reform = blademarches_war_economy
+			}
+			#set_country_flag = blademarches_war_economy_enabled
+			country_event = { id = bop_flavor.9 } 
+		}
+	}
+	
+	
+	B33_army_reform = {
+		icon = assert_our_sovereignty
+		position = 10
+		provinces_to_highlight = {  } 
+
+		trigger = {
+			has_ruler_modifier = wielding_calindal
+			if = {
+				limit = { has_dlc = "Cradle of Civilization" }
+				army_professionalism = 0.2
+			}
+			mil_power = 250
+			reform_level = 5
+		}
+
+		effect = {
+			add_army_tradition = -15
+			add_mil_power = -250
+			set_country_flag = blademarches_royal_army_enabled
+			add_government_reform = blademarches_royal_blademarcher_army
+			add_country_modifier = {
+				name = "blademarches_modernizing_the_army"
+				duration = 3650
+			}
+		}
+	}
+
+	B33_blademarcher_soldier = {
+		icon = mission_plc_prevent_deluge
+		position = 11
+		required_missions = { B33_army_reform } 
+		provinces_to_highlight = {  } 
+
+		trigger = {
+			is_at_war = no
+			mil_power = 250
+			NOT = { has_country_modifier = blademarches_modernizing_the_army } 
+			years_of_income = 0.5
+			stability = 1
+			num_of_owned_provinces_with = {
+				value = 3
+				has_production_building_trigger = yes
+				has_building = weapons
+			}
+		}
+
+		effect = {
+			add_years_of_income = -0.5
+			add_mil_power = -250
+			add_army_tradition = -15
+			add_country_modifier = {
+				name = "blademarches_blademarcher_steel"
+				duration = -1
+			}
+			add_country_modifier = {
+				name = "blademarches_modernizing_the_army"
+				duration = 3650
+			}
+		}
+	}
+	
+	B33_reform_finish = {
+		icon = military_self_reliance
+		position = 12
+		required_missions = {
+			B33_blademarcher_soldier
+			B33_from_the_top
+			B33_from_the_bottom
+		}
+		provinces_to_highlight = {  } 
+
+		trigger = {
+			if = {
+				limit = { has_dlc = "Cradle of Civilization" }
+				army_professionalism = 1
+			}
+			NOT = { has_country_modifier = blademarches_modernizing_the_army } 
+			has_ruler_modifier = wielding_calindal
+		}
+
+		effect = {
+			custom_tooltip = reform_finisher_tooltip
+			remove_country_modifier = blademarches_blademarcher_drill
+			remove_country_modifier = blademarches_blademarcher_steel
+			remove_country_modifier = blademarches_blademarcher_leadership
+			add_country_modifier = {
+				name = "blademarches_grand_army"
+				duration = -1
+			}
+			country_event = {
+				id = bop_flavor.5 
+				days = 30
+			} 
+			add_power_projection = {
+				type = 25_permanent_power_projection
+				amount = 25
+			}
+		}
+	}
+}
+blademarches_tall_4 = {
+	slot = 4
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = {
+		tag = B33
+		has_country_flag = BOP_ROYAL_PATH
+	} 
+
+	B33_developing_dostans_way = {
+		icon = mission_rb_prospect_for_coal
+		position = 7
+		required_missions = { B33_developing_the_kingdom } 
+		provinces_to_highlight = {  } 
+
+		trigger = {
+			dostans_way_area = {
+				owned_by = ROOT
+				if = {
+					limit = { NOT = { trade_goods = gold }  } 
+					has_production_building_trigger = yes
+				}
+				base_production = 5
+				type = all 
+			}
+		}
+
+		effect = {
+			medium_increase_of_dwarven_tolerance_effect = yes
+			medium_increase_of_gnomish_tolerance_effect = yes
+			country_event = {
+				id = bop_flavor.11
+				days = 30
+			} 
+			802 = {
+				add_gnomish_minority_size_effect = yes
+				add_dwarven_minority_size_effect = yes
+				change_trade_goods = copper
+				add_base_manpower = 1
+				add_base_tax = 1
+			}
+			803 = {
+				change_trade_goods = iron
+				add_dwarven_minority_size_effect = yes
+				add_base_manpower = 1
+			}
+			807 = {
+				change_trade_goods = iron
+				add_base_production = 1
+			}
+			805 = {
+				add_gnomish_minority_size_effect = yes
+				change_trade_goods = iron
+				add_base_tax = 1
+			}
+		}
+	}
+
+	B33_industrialize_south = {
+		icon = industrialized_rhineland
+		position = 8
+		required_missions = { B33_developing_dostans_way } 
+		provinces_to_highlight = {  } 
+
+		trigger = {
+			dostans_way_area = {
+				owned_by = ROOT
+				type = all
+			}
+			if = {
+				limit = { has_dlc = "Rule Britannia" } 
+				802 = {
+					trade_goods = coal
+					has_building = furnace
+				}
+			}
+			else = { 802 = { development = 30 }  } 
+		}
+
+		effect = {
+			country_event = {
+				id = bop_flavor.12
+				days = 1
+			} 
+			medium_increase_of_dwarven_tolerance_effect = yes
+			medium_increase_of_gnomish_tolerance_effect = yes
+			dostans_way_area = {
+				add_base_production = 3
+			}
+		}
+	}
+
+	B33_settling_the_east = {
+		icon = mission_green_village
+		position = 9
+		required_missions = { B33_developing_banesfork } 
+		provinces_to_highlight = {  } 
+
+		trigger = {
+			medirleigh_area = {
+				owned_by = ROOT
+				type = all
+			}
+			swapstoke_area = {
+				owned_by = ROOT
+				type = all
+			}
+			876 = { has_trade_building_trigger = yes } 
+			estate_loyalty = {
+				estate = estate_adventurers
+				loyalty = 50
+			}
+		}
+
+		effect = {
+			886 = {
+				add_local_autonomy = 75
+				change_trade_goods = grain
+			}
+			887 = {
+				add_local_autonomy = 75
+				if = {
+					limit = {
+						has_country_flag = BOP_ORC_SLAVERY
+						NOT = { has_country_modifier = the_abolish_slavery_act } 
+						NOT = { has_global_flag = orcish_slave_trade_banned_in_cannor } 
+					}
+					change_trade_goods = slaves
+				}
+				else = { change_trade_goods = fur } 
+			}
+			876 = {
+				add_halfling_minority_size_effect = yes
+				add_local_autonomy = 50
+				change_trade_goods = cloth
+			}
+			885 = {
+				add_local_autonomy = 75
+				if = {
+					limit = { has_country_flag = BOP_ORC_SLAVERY } 
+					change_trade_goods = slaves
+				}
+				else = { change_trade_goods = wine } 
+			}
+			877 = {
+				add_local_autonomy = 75
+				if = {
+					limit = {
+						has_country_flag = BOP_ORC_SLAVERY
+						NOT = { has_country_modifier = the_abolish_slavery_act } 
+						NOT = { has_global_flag = orcish_slave_trade_banned_in_cannor } 
+					} 
+					change_trade_goods = slaves
+				}
+				else = { change_trade_goods = grain } 
+			}
+			875 = {
+				add_local_autonomy = 75
+				change_trade_goods = livestock
+			}
+		}
+	}
+	B33_from_the_top = {
+		icon = the_russian_campaign
+		position = 11
+		required_missions = { B33_army_reform } 
+		provinces_to_highlight = {  } 
+
+		trigger = {
+			has_country_modifier = blademarches_vernham_curriculum
+			mil_power = 250
+			NOT = { has_country_modifier = blademarches_modernizing_the_army } 
+			years_of_income = 0.5
+			stability = 1
+		}
+
+		effect = {
+			add_mil_power = -250
+			add_army_tradition = -15
+			add_years_of_income = -0.5
+			add_country_modifier = {
+				name = "blademarches_blademarcher_leadership"
+				duration = -1
+			}
+			add_country_modifier = {
+				name = "blademarches_modernizing_the_army"
+				duration = 3650
+			}
+		}
+	}
+}
+blademarches_tall_5 = {
+	slot = 5
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = {
+		tag = B33
+		has_country_flag = BOP_ROYAL_PATH
+	}
+
+	B33_taming_the_forest = {
+		icon = mission_verdant_secret
+		position = 7
+		required_missions = { B33_developing_the_kingdom } 
+		provinces_to_highlight = {  } 
+
+		trigger = {
+			mil_power = 200
+			army_size = 30
+			813 = { has_fort_building_trigger = yes } 
+			clovenwood_area = {
+				owned_by = ROOT
+				base_production = 3
+				base_manpower = 3
+				#num_of_units_in_province = {
+				#	who = ROOT
+				#	amount = 5
+				#}
+				type = all 
+			}
+			beastgrave_area = {
+				owned_by = ROOT
+				base_production = 3
+				base_manpower = 3
+				#num_of_units_in_province = {
+				#	who = ROOT
+				#	amount = 5
+				#}
+				type = all 
+			}
+			banesfork_area = {
+				owned_by = ROOT
+				base_production = 3
+				base_manpower = 3
+				#num_of_units_in_province = {
+				#	who = ROOT
+				#	amount = 5
+				#}
+				type = all 
+			}
+		}
+
+		effect = {
+			add_mil_power = -200
+			815 = {
+				change_trade_goods = fur
+				add_base_production  = 2
+			}
+			811 = {
+				change_trade_goods = fur
+				add_base_tax = 1
+			}
+			814 = {
+				change_trade_goods = fur
+				add_base_tax = 1
+			}
+			812 = {
+				change_trade_goods = fur 
+				add_base_production = 2
+			} 
+			806 = {
+				change_trade_goods = copper
+				add_base_production = 1
+			}
+		}
+	}
+
+	B33_developing_banesfork = {
+		icon = mission_market
+		position = 8
+		required_missions = { B33_taming_the_forest } 
+		provinces_to_highlight = {  } 
+
+		trigger = {
+			treasury = 200 
+			813 = {
+				owned_by = ROOT
+				has_trade_building_trigger = yes
+				base_production = 8
+				base_tax = 5
+			}
+		}
+
+		effect = {
+			813 = {
+				change_trade_goods = cloth
+				add_center_of_trade_level = 1
+				if = {
+					limit = { 
+						NOT = {
+							culture_group = elven
+						} 
+					} 
+					add_elven_minority_size_effect = yes
+				}
+			}
+		}
+	}
+	B33_interventionism_1 = {
+		icon = mission_united_knight_order
+		position = 10
+		provinces_to_highlight = {  } 
+
+		trigger = {
+			land_forcelimit = 20
+			army_size = 20
+		}
+
+		effect = {
+			add_country_modifier = {
+				name = "blademarches_interventionism_1"
+				duration = -1
+			}
+		}
+	}
+
+	B33_interventionism_2 = {
+		icon = knights_of_the_new_world
+		position = 11
+		required_missions = { B33_interventionism_1 } 
+		provinces_to_highlight = {  } 
+
+		trigger = {
+			NOT = { current_age = age_of_discovery } 
+			land_forcelimit = 50
+			army_size = 50
+			religion = corinite
+		}
+
+		effect = {
+			remove_country_modifier = blademarches_interventionism_1
+			add_country_modifier = {
+				name = "blademarches_interventionism_2"
+				duration = -1
+			}
+		}
+	}
+
+	B33_interventionism_3 = {
+		icon = mission_modern_knight_army
+		position = 12
+		required_missions = { B33_interventionism_2 } 
+		provinces_to_highlight = {  } 
+
+		trigger = {
+			NOT = { current_age = age_of_discovery } 
+			NOT = { current_age = age_of_reformation } 
+			land_forcelimit = 100
+			army_size = 100
+		}
+
+		effect = {
+			remove_country_modifier = blademarches_interventionism_2
+			add_country_modifier = {
+				name = "blademarches_interventionism_3"
+				duration = -1
+			}
+		}
+	}
+}
+

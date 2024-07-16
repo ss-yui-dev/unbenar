@@ -74,8 +74,9 @@ country_event = {    # hold exploration menu
 					DA_Explorable_dig_2 = yes
 				}
 			}
-			add_treasury = -50
+			add_treasury = -25
 			custom_tooltip = DA_explore_dig_2_tooltip
+			DA_Show_Exploration_completion_Rate = { target = event_target:DA_explorable_province1 }
 			hidden_effect = { event_target:DA_explorable_province1 = { set_province_flag = DA_expedition_in_progress } }
 		}
 		else_if = {
@@ -84,8 +85,9 @@ country_event = {    # hold exploration menu
 					DA_Explorable_dig_3 = yes
 				}
 			}
-			add_treasury = -100
+			add_treasury = -50
 			custom_tooltip = DA_explore_dig_3_tooltip
+			DA_Show_Exploration_completion_Rate = { target = event_target:DA_explorable_province1 }
 			hidden_effect = { event_target:DA_explorable_province1 = { set_province_flag = DA_expedition_in_progress } }
 		}
 		else_if = {
@@ -94,8 +96,9 @@ country_event = {    # hold exploration menu
 					DA_Explorable_dig_4 = yes
 				}
 			}
-			add_treasury = -150
+			add_treasury = -100
 			custom_tooltip = DA_explore_dig_4_tooltip
+			DA_Show_Exploration_completion_Rate = { target = event_target:DA_explorable_province1 }
 			hidden_effect = { event_target:DA_explorable_province1 = { set_province_flag = DA_expedition_in_progress } }
 		}
 		else_if = {
@@ -104,8 +107,9 @@ country_event = {    # hold exploration menu
 					DA_Explorable_dig_5 = yes
 				}
 			}
-			add_treasury = -300
+			add_treasury = -200
 			custom_tooltip = DA_explore_dig_5_tooltip
+			DA_Show_Exploration_completion_Rate = { target = event_target:DA_explorable_province1 }
 			hidden_effect = { event_target:DA_explorable_province1 = { set_province_flag = DA_expedition_in_progress } }
 		}
 		else_if = {
@@ -114,8 +118,9 @@ country_event = {    # hold exploration menu
 					DA_Explorable_dig_6 = yes
 				}
 			}
-			add_treasury = -500
+			add_treasury = -300
 			custom_tooltip = DA_explore_dig_6_tooltip
+			DA_Show_Exploration_completion_Rate = { target = event_target:DA_explorable_province1 }
 			hidden_effect = { event_target:DA_explorable_province1 = { set_province_flag = DA_expedition_in_progress } }
 		}
 		else_if = {
@@ -124,8 +129,9 @@ country_event = {    # hold exploration menu
 					DA_Explorable_dig_7 = yes
 				}
 			}
-			add_treasury = -750
+			add_treasury = -500
 			custom_tooltip = DA_explore_dig_7_tooltip
+			DA_Show_Exploration_completion_Rate = { target = event_target:DA_explorable_province1 }
 			hidden_effect = { event_target:DA_explorable_province1 = { set_province_flag = DA_expedition_in_progress } }
 		}
 		else_if = {
@@ -134,8 +140,9 @@ country_event = {    # hold exploration menu
 					DA_Explorable_dig_8 = yes
 				}
 			}
-			add_treasury = -1000
+			add_treasury = -800
 			custom_tooltip = DA_explore_dig_8_tooltip
+			DA_Show_Exploration_completion_Rate = { target = event_target:DA_explorable_province1 }
 			hidden_effect = { event_target:DA_explorable_province1 = { set_province_flag = DA_expedition_in_progress } }
 		}
 		else_if = {
@@ -144,8 +151,9 @@ country_event = {    # hold exploration menu
 					DA_Explorable_dig_9 = yes
 				}
 			}
-			add_treasury = -2500
+			add_treasury = -1200
 			custom_tooltip = DA_explore_dig_9_tooltip
+			DA_Show_Exploration_completion_Rate = { target = event_target:DA_explorable_province1 }
 			hidden_effect = { event_target:DA_explorable_province1 = { set_province_flag = DA_expedition_in_progress } }
 		}
 		else_if = {
@@ -154,8 +162,9 @@ country_event = {    # hold exploration menu
 					DA_Explorable_dig_10 = yes
 				}
 			}
-			add_treasury = -5000
+			add_treasury = -2500
 			custom_tooltip = DA_explore_dig_10_tooltip
+			DA_Show_Exploration_completion_Rate = { target = event_target:DA_explorable_province1 }
 			hidden_effect = { event_target:DA_explorable_province1 = { set_province_flag = DA_expedition_in_progress } }
 		}
 		else_if = {
@@ -164,8 +173,9 @@ country_event = {    # hold exploration menu
 					DA_Explorable_dig_11 = yes
 				}
 			}
-			add_treasury = -10000
+			add_treasury = -5000
 			custom_tooltip = DA_explore_dig_11_tooltip
+			DA_Show_Exploration_completion_Rate = { target = event_target:DA_explorable_province1 }
 			hidden_effect = { event_target:DA_explorable_province1 = { set_province_flag = DA_expedition_in_progress } }
 		}
 		ai_chance = {
@@ -195,8 +205,9 @@ country_event = {    # hold exploration menu
 					DA_Explorable_dig_2 = yes
 				}
 			}
-			add_treasury = -50
+			add_treasury = -25
 			custom_tooltip = DA_explore_dig_2_tooltip
+			DA_Show_Exploration_completion_Rate = { target = event_target:DA_explorable_province2 }
 			hidden_effect = { event_target:DA_explorable_province2 = { set_province_flag = DA_expedition_in_progress } }
 		}
 		else_if = {
@@ -205,8 +216,9 @@ country_event = {    # hold exploration menu
 					DA_Explorable_dig_3 = yes
 				}
 			}
-			add_treasury = -100
+			add_treasury = -50
 			custom_tooltip = DA_explore_dig_3_tooltip
+			DA_Show_Exploration_completion_Rate = { target = event_target:DA_explorable_province2 }
 			hidden_effect = { event_target:DA_explorable_province2 = { set_province_flag = DA_expedition_in_progress } }
 		}
 		else_if = {
@@ -215,8 +227,9 @@ country_event = {    # hold exploration menu
 					DA_Explorable_dig_4 = yes
 				}
 			}
-			add_treasury = -150
+			add_treasury = -100
 			custom_tooltip = DA_explore_dig_4_tooltip
+			DA_Show_Exploration_completion_Rate = { target = event_target:DA_explorable_province2 }
 			hidden_effect = { event_target:DA_explorable_province2 = { set_province_flag = DA_expedition_in_progress } }
 		}
 		else_if = {
@@ -225,8 +238,9 @@ country_event = {    # hold exploration menu
 					DA_Explorable_dig_5 = yes
 				}
 			}
-			add_treasury = -300
+			add_treasury = -200
 			custom_tooltip = DA_explore_dig_5_tooltip
+			DA_Show_Exploration_completion_Rate = { target = event_target:DA_explorable_province2 }
 			hidden_effect = { event_target:DA_explorable_province2 = { set_province_flag = DA_expedition_in_progress } }
 		}
 		else_if = {
@@ -235,8 +249,9 @@ country_event = {    # hold exploration menu
 					DA_Explorable_dig_6 = yes
 				}
 			}
-			add_treasury = -500
+			add_treasury = -300
 			custom_tooltip = DA_explore_dig_6_tooltip
+			DA_Show_Exploration_completion_Rate = { target = event_target:DA_explorable_province2 }
 			hidden_effect = { event_target:DA_explorable_province2 = { set_province_flag = DA_expedition_in_progress } }
 		}
 		else_if = {
@@ -245,8 +260,9 @@ country_event = {    # hold exploration menu
 					DA_Explorable_dig_7 = yes
 				}
 			}
-			add_treasury = -750
+			add_treasury = -500
 			custom_tooltip = DA_explore_dig_7_tooltip
+			DA_Show_Exploration_completion_Rate = { target = event_target:DA_explorable_province2 }
 			hidden_effect = { event_target:DA_explorable_province2 = { set_province_flag = DA_expedition_in_progress } }
 		}
 		else_if = {
@@ -255,8 +271,9 @@ country_event = {    # hold exploration menu
 					DA_Explorable_dig_8 = yes
 				}
 			}
-			add_treasury = -1000
+			add_treasury = -800
 			custom_tooltip = DA_explore_dig_8_tooltip
+			DA_Show_Exploration_completion_Rate = { target = event_target:DA_explorable_province2 }
 			hidden_effect = { event_target:DA_explorable_province2 = { set_province_flag = DA_expedition_in_progress } }
 		}
 		else_if = {
@@ -265,8 +282,9 @@ country_event = {    # hold exploration menu
 					DA_Explorable_dig_9 = yes
 				}
 			}
-			add_treasury = -2500
+			add_treasury = -1200
 			custom_tooltip = DA_explore_dig_9_tooltip
+			DA_Show_Exploration_completion_Rate = { target = event_target:DA_explorable_province2 }
 			hidden_effect = { event_target:DA_explorable_province2 = { set_province_flag = DA_expedition_in_progress } }
 		}
 		else_if = {
@@ -275,8 +293,9 @@ country_event = {    # hold exploration menu
 					DA_Explorable_dig_10 = yes
 				}
 			}
-			add_treasury = -5000
+			add_treasury = -2500
 			custom_tooltip = DA_explore_dig_10_tooltip
+			DA_Show_Exploration_completion_Rate = { target = event_target:DA_explorable_province2 }
 			hidden_effect = { event_target:DA_explorable_province2 = { set_province_flag = DA_expedition_in_progress } }
 		}
 		else_if = {
@@ -285,8 +304,9 @@ country_event = {    # hold exploration menu
 					DA_Explorable_dig_11 = yes
 				}
 			}
-			add_treasury = -10000
+			add_treasury = -5000
 			custom_tooltip = DA_explore_dig_11_tooltip
+			DA_Show_Exploration_completion_Rate = { target = event_target:DA_explorable_province2 }
 			hidden_effect = { event_target:DA_explorable_province2 = { set_province_flag = DA_expedition_in_progress } }
 		}
 		ai_chance = {
@@ -317,8 +337,9 @@ country_event = {    # hold exploration menu
 					DA_Explorable_dig_2 = yes
 				}
 			}
-			add_treasury = -50
+			add_treasury = -25
 			custom_tooltip = DA_explore_dig_2_tooltip
+			DA_Show_Exploration_completion_Rate = { target = event_target:DA_explorable_province3 }
 			hidden_effect = { event_target:DA_explorable_province3 = { set_province_flag = DA_expedition_in_progress } }
 		}
 		else_if = {
@@ -327,8 +348,9 @@ country_event = {    # hold exploration menu
 					DA_Explorable_dig_3 = yes
 				}
 			}
-			add_treasury = -100
+			add_treasury = -50
 			custom_tooltip = DA_explore_dig_3_tooltip
+			DA_Show_Exploration_completion_Rate = { target = event_target:DA_explorable_province3 }
 			hidden_effect = { event_target:DA_explorable_province3 = { set_province_flag = DA_expedition_in_progress } }
 		}
 		else_if = {
@@ -337,8 +359,9 @@ country_event = {    # hold exploration menu
 					DA_Explorable_dig_4 = yes
 				}
 			}
-			add_treasury = -150
+			add_treasury = -100
 			custom_tooltip = DA_explore_dig_4_tooltip
+			DA_Show_Exploration_completion_Rate = { target = event_target:DA_explorable_province3 }
 			hidden_effect = { event_target:DA_explorable_province3 = { set_province_flag = DA_expedition_in_progress } }
 		}
 		else_if = {
@@ -347,8 +370,9 @@ country_event = {    # hold exploration menu
 					DA_Explorable_dig_5 = yes
 				}
 			}
-			add_treasury = -300
+			add_treasury = -200
 			custom_tooltip = DA_explore_dig_5_tooltip
+			DA_Show_Exploration_completion_Rate = { target = event_target:DA_explorable_province3 }
 			hidden_effect = { event_target:DA_explorable_province3 = { set_province_flag = DA_expedition_in_progress } }
 		}
 		else_if = {
@@ -357,8 +381,9 @@ country_event = {    # hold exploration menu
 					DA_Explorable_dig_6 = yes
 				}
 			}
-			add_treasury = -500
+			add_treasury = -300
 			custom_tooltip = DA_explore_dig_6_tooltip
+			DA_Show_Exploration_completion_Rate = { target = event_target:DA_explorable_province3 }
 			hidden_effect = { event_target:DA_explorable_province3 = { set_province_flag = DA_expedition_in_progress } }
 		}
 		else_if = {
@@ -367,8 +392,9 @@ country_event = {    # hold exploration menu
 					DA_Explorable_dig_7 = yes
 				}
 			}
-			add_treasury = -750
+			add_treasury = -500
 			custom_tooltip = DA_explore_dig_7_tooltip
+			DA_Show_Exploration_completion_Rate = { target = event_target:DA_explorable_province3 }
 			hidden_effect = { event_target:DA_explorable_province3 = { set_province_flag = DA_expedition_in_progress } }
 		}
 		else_if = {
@@ -377,8 +403,9 @@ country_event = {    # hold exploration menu
 					DA_Explorable_dig_8 = yes
 				}
 			}
-			add_treasury = -1000
+			add_treasury = -800
 			custom_tooltip = DA_explore_dig_8_tooltip
+			DA_Show_Exploration_completion_Rate = { target = event_target:DA_explorable_province3 }
 			hidden_effect = { event_target:DA_explorable_province3 = { set_province_flag = DA_expedition_in_progress } }
 		}
 		else_if = {
@@ -387,8 +414,9 @@ country_event = {    # hold exploration menu
 					DA_Explorable_dig_9 = yes
 				}
 			}
-			add_treasury = -2500
+			add_treasury = -1200
 			custom_tooltip = DA_explore_dig_9_tooltip
+			DA_Show_Exploration_completion_Rate = { target = event_target:DA_explorable_province3 }
 			hidden_effect = { event_target:DA_explorable_province3 = { set_province_flag = DA_expedition_in_progress } }
 		}
 		else_if = {
@@ -397,8 +425,9 @@ country_event = {    # hold exploration menu
 					DA_Explorable_dig_10 = yes
 				}
 			}
-			add_treasury = -5000
+			add_treasury = -2500
 			custom_tooltip = DA_explore_dig_10_tooltip
+			DA_Show_Exploration_completion_Rate = { target = event_target:DA_explorable_province3 }
 			hidden_effect = { event_target:DA_explorable_province3 = { set_province_flag = DA_expedition_in_progress } }
 		}
 		else_if = {
@@ -407,8 +436,9 @@ country_event = {    # hold exploration menu
 					DA_Explorable_dig_11 = yes
 				}
 			}
-			add_treasury = -10000
+			add_treasury = -5000
 			custom_tooltip = DA_explore_dig_11_tooltip
+			DA_Show_Exploration_completion_Rate = { target = event_target:DA_explorable_province3 }
 			hidden_effect = { event_target:DA_explorable_province3 = { set_province_flag = DA_expedition_in_progress } }
 		}
 		ai_chance = {
@@ -438,8 +468,9 @@ country_event = {    # hold exploration menu
 					DA_Explorable_dig_2 = yes
 				}
 			}
-			add_treasury = -50
+			add_treasury = -25
 			custom_tooltip = DA_explore_dig_2_tooltip
+			DA_Show_Exploration_completion_Rate = { target = event_target:DA_explorable_province4 }
 			hidden_effect = { event_target:DA_explorable_province4 = { set_province_flag = DA_expedition_in_progress } }
 		}
 		else_if = {
@@ -448,8 +479,9 @@ country_event = {    # hold exploration menu
 					DA_Explorable_dig_3 = yes
 				}
 			}
-			add_treasury = -100
+			add_treasury = -50
 			custom_tooltip = DA_explore_dig_3_tooltip
+			DA_Show_Exploration_completion_Rate = { target = event_target:DA_explorable_province4 }
 			hidden_effect = { event_target:DA_explorable_province4 = { set_province_flag = DA_expedition_in_progress } }
 		}
 		else_if = {
@@ -458,8 +490,9 @@ country_event = {    # hold exploration menu
 					DA_Explorable_dig_4 = yes
 				}
 			}
-			add_treasury = -150
+			add_treasury = -100
 			custom_tooltip = DA_explore_dig_4_tooltip
+			DA_Show_Exploration_completion_Rate = { target = event_target:DA_explorable_province4 }
 			hidden_effect = { event_target:DA_explorable_province4 = { set_province_flag = DA_expedition_in_progress } }
 		}
 		else_if = {
@@ -468,8 +501,9 @@ country_event = {    # hold exploration menu
 					DA_Explorable_dig_5 = yes
 				}
 			}
-			add_treasury = -300
+			add_treasury = -200
 			custom_tooltip = DA_explore_dig_5_tooltip
+			DA_Show_Exploration_completion_Rate = { target = event_target:DA_explorable_province4 }
 			hidden_effect = { event_target:DA_explorable_province4 = { set_province_flag = DA_expedition_in_progress } }
 		}
 		else_if = {
@@ -478,8 +512,9 @@ country_event = {    # hold exploration menu
 					DA_Explorable_dig_6 = yes
 				}
 			}
-			add_treasury = -500
+			add_treasury = -300
 			custom_tooltip = DA_explore_dig_6_tooltip
+			DA_Show_Exploration_completion_Rate = { target = event_target:DA_explorable_province4 }
 			hidden_effect = { event_target:DA_explorable_province4 = { set_province_flag = DA_expedition_in_progress } }
 		}
 		else_if = {
@@ -488,8 +523,9 @@ country_event = {    # hold exploration menu
 					DA_Explorable_dig_7 = yes
 				}
 			}
-			add_treasury = -750
+			add_treasury = -500
 			custom_tooltip = DA_explore_dig_7_tooltip
+			DA_Show_Exploration_completion_Rate = { target = event_target:DA_explorable_province4 }
 			hidden_effect = { event_target:DA_explorable_province4 = { set_province_flag = DA_expedition_in_progress } }
 		}
 		else_if = {
@@ -498,8 +534,9 @@ country_event = {    # hold exploration menu
 					DA_Explorable_dig_8 = yes
 				}
 			}
-			add_treasury = -1000
+			add_treasury = -800
 			custom_tooltip = DA_explore_dig_8_tooltip
+			DA_Show_Exploration_completion_Rate = { target = event_target:DA_explorable_province4 }
 			hidden_effect = { event_target:DA_explorable_province4 = { set_province_flag = DA_expedition_in_progress } }
 		}
 		else_if = {
@@ -508,8 +545,9 @@ country_event = {    # hold exploration menu
 					DA_Explorable_dig_9 = yes
 				}
 			}
-			add_treasury = -2500
+			add_treasury = -1200
 			custom_tooltip = DA_explore_dig_9_tooltip
+			DA_Show_Exploration_completion_Rate = { target = event_target:DA_explorable_province4 }
 			hidden_effect = { event_target:DA_explorable_province4 = { set_province_flag = DA_expedition_in_progress } }
 		}
 		else_if = {
@@ -518,8 +556,9 @@ country_event = {    # hold exploration menu
 					DA_Explorable_dig_10 = yes
 				}
 			}
-			add_treasury = -5000
+			add_treasury = -2500
 			custom_tooltip = DA_explore_dig_10_tooltip
+			DA_Show_Exploration_completion_Rate = { target = event_target:DA_explorable_province4 }
 			hidden_effect = { event_target:DA_explorable_province4 = { set_province_flag = DA_expedition_in_progress } }
 		}
 		else_if = {
@@ -528,8 +567,9 @@ country_event = {    # hold exploration menu
 					DA_Explorable_dig_11 = yes
 				}
 			}
-			add_treasury = -10000
+			add_treasury = -5000
 			custom_tooltip = DA_explore_dig_11_tooltip
+			DA_Show_Exploration_completion_Rate = { target = event_target:DA_explorable_province4 }
 			hidden_effect = { event_target:DA_explorable_province4 = { set_province_flag = DA_expedition_in_progress } }
 		}
 		ai_chance = {
@@ -560,8 +600,9 @@ country_event = {    # hold exploration menu
 					DA_Explorable_dig_2 = yes
 				}
 			}
-			add_treasury = -50
+			add_treasury = -25
 			custom_tooltip = DA_explore_dig_2_tooltip
+			DA_Show_Exploration_completion_Rate = { target = event_target:DA_explorable_province5 }
 			hidden_effect = { event_target:DA_explorable_province5 = { set_province_flag = DA_expedition_in_progress } }
 		}
 		else_if = {
@@ -570,8 +611,9 @@ country_event = {    # hold exploration menu
 					DA_Explorable_dig_3 = yes
 				}
 			}
-			add_treasury = -100
+			add_treasury = -50
 			custom_tooltip = DA_explore_dig_3_tooltip
+			DA_Show_Exploration_completion_Rate = { target = event_target:DA_explorable_province5 }
 			hidden_effect = { event_target:DA_explorable_province5 = { set_province_flag = DA_expedition_in_progress } }
 		}
 		else_if = {
@@ -580,8 +622,9 @@ country_event = {    # hold exploration menu
 					DA_Explorable_dig_4 = yes
 				}
 			}
-			add_treasury = -150
+			add_treasury = -100
 			custom_tooltip = DA_explore_dig_4_tooltip
+			DA_Show_Exploration_completion_Rate = { target = event_target:DA_explorable_province5 }
 			hidden_effect = { event_target:DA_explorable_province5 = { set_province_flag = DA_expedition_in_progress } }
 		}
 		else_if = {
@@ -590,8 +633,9 @@ country_event = {    # hold exploration menu
 					DA_Explorable_dig_5 = yes
 				}
 			}
-			add_treasury = -300
+			add_treasury = -200
 			custom_tooltip = DA_explore_dig_5_tooltip
+			DA_Show_Exploration_completion_Rate = { target = event_target:DA_explorable_province5 }
 			hidden_effect = { event_target:DA_explorable_province5 = { set_province_flag = DA_expedition_in_progress } }
 		}
 		else_if = {
@@ -600,8 +644,9 @@ country_event = {    # hold exploration menu
 					DA_Explorable_dig_6 = yes
 				}
 			}
-			add_treasury = -500
+			add_treasury = -300
 			custom_tooltip = DA_explore_dig_6_tooltip
+			DA_Show_Exploration_completion_Rate = { target = event_target:DA_explorable_province5 }
 			hidden_effect = { event_target:DA_explorable_province5 = { set_province_flag = DA_expedition_in_progress } }
 		}
 		else_if = {
@@ -610,8 +655,9 @@ country_event = {    # hold exploration menu
 					DA_Explorable_dig_7 = yes
 				}
 			}
-			add_treasury = -750
+			add_treasury = -500
 			custom_tooltip = DA_explore_dig_7_tooltip
+			DA_Show_Exploration_completion_Rate = { target = event_target:DA_explorable_province5 }
 			hidden_effect = { event_target:DA_explorable_province5 = { set_province_flag = DA_expedition_in_progress } }
 		}
 		else_if = {
@@ -620,8 +666,9 @@ country_event = {    # hold exploration menu
 					DA_Explorable_dig_8 = yes
 				}
 			}
-			add_treasury = -1000
+			add_treasury = -800
 			custom_tooltip = DA_explore_dig_8_tooltip
+			DA_Show_Exploration_completion_Rate = { target = event_target:DA_explorable_province5 }
 			hidden_effect = { event_target:DA_explorable_province5 = { set_province_flag = DA_expedition_in_progress } }
 		}
 		else_if = {
@@ -630,8 +677,9 @@ country_event = {    # hold exploration menu
 					DA_Explorable_dig_9 = yes
 				}
 			}
-			add_treasury = -2500
+			add_treasury = -1200
 			custom_tooltip = DA_explore_dig_9_tooltip
+			DA_Show_Exploration_completion_Rate = { target = event_target:DA_explorable_province5 }
 			hidden_effect = { event_target:DA_explorable_province5 = { set_province_flag = DA_expedition_in_progress } }
 		}
 		else_if = {
@@ -640,8 +688,9 @@ country_event = {    # hold exploration menu
 					DA_Explorable_dig_10 = yes
 				}
 			}
-			add_treasury = -5000
+			add_treasury = -2500
 			custom_tooltip = DA_explore_dig_10_tooltip
+			DA_Show_Exploration_completion_Rate = { target = event_target:DA_explorable_province5 }
 			hidden_effect = { event_target:DA_explorable_province5 = { set_province_flag = DA_expedition_in_progress } }
 		}
 		else_if = {
@@ -650,8 +699,9 @@ country_event = {    # hold exploration menu
 					DA_Explorable_dig_11 = yes
 				}
 			}
-			add_treasury = -10000
+			add_treasury = -5000
 			custom_tooltip = DA_explore_dig_11_tooltip
+			DA_Show_Exploration_completion_Rate = { target = event_target:DA_explorable_province5 }
 			hidden_effect = { event_target:DA_explorable_province5 = { set_province_flag = DA_expedition_in_progress } }
 		}
 		ai_chance = {

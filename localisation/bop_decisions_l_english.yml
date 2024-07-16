@@ -1,0 +1,18 @@
+﻿l_english:
+ #Blade-Griffon Pact
+ blademarches_submission_title:0 "Subjugating the Blademarch"
+ blademarches_submission_desc:0 "The realms of Southern Castanor have always resisted the rightful authority of those who rule from Castonath. The soldiers of Blademarches, led by the Bladechosen Kings themselves, have been underestimated in the past - a grave mistake. Many would be invaders returned broken - and blind. Open conquest might not be the best course of action, and might in fact waste the military talents of their people. Let us instead demand their peaceful submission. We shall offer them autonomy in exchange for their military service."
+ marrhold_submission_title:0 "Subjugating the Griffonmarch"
+ marrhold_submission_desc:0 "The realms of Southern Castanor have always resisted the rightful authority of those who rule from Castonath. To set foot into Marrhold would invite death from above, as their legendary flying knights swoop down from the skies to drive out any who dare to approach the old Dwarven hold that now houses the Griffon Kings court. Open conquest might not be the best course of action, and might in fact waste the military talents of their people. Let us instead demand their peaceful submission. We shall offer them autonomy in exchange for their military service."
+ 
+ #Military Diversity
+ elven_military_expedition_title:0 "Research Elven Military Techniques"
+ elven_military_expedition_desc:0 "We can attempt to discover some military secrets of the Elves either through an official attache to our friends, or military espionage."
+ hobgoblin_military_expedition_title:0 "Research Hogoblin Military Techniques"
+ hobgoblin_military_expedition_desc:0 "We can attempt to discover some military secrets of the Hobgoblins either through an official attache to our friends, or military espionage."
+ harimari_military_expedition_title:0 "Research Harimari Military Techniques"
+ harimari_military_expedition_desc:0 "We can attempt to discover some military secrets of the Harimari either through an official attache to our friends, or military espionage."
+ dwarven_military_expedition_title:0 "Research Dwarven Military Techniques"
+ dwarven_military_expedition_desc:0 "We can attempt to discover some military secrets of the Dwarves either through an official attache to our friends, or military espionage."
+ gnomish_military_expedition_title:0 "Research Gnomish Military Techniques"
+ gnomish_military_expedition_desc:0 "We can attempt to discover some military secrets of the Gnomes either through an official attache to our friends, or military espionage."

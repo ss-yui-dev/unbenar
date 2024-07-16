@@ -5,7 +5,7 @@ DA_Explorable_dig_2 = {
 	NOT = { has_province_flag = DA_expedition_in_progress }
 	owned_by = root
 	owner = {
-		treasury = 50
+		treasury = 25
 	}
 }
 DA_Explorable_dig_3 = {
@@ -14,7 +14,7 @@ DA_Explorable_dig_3 = {
 	NOT = { has_province_flag = DA_expedition_in_progress }
 	owned_by = root
 	owner = {
-		treasury = 100
+		treasury = 50
 	}
 }
 DA_Explorable_dig_4 = {
@@ -23,7 +23,7 @@ DA_Explorable_dig_4 = {
 	NOT = { has_province_flag = DA_expedition_in_progress }
 	owned_by = root
 	owner = {
-		treasury = 150
+		treasury = 100
 	}
 }
 DA_Explorable_dig_5 = {
@@ -32,7 +32,7 @@ DA_Explorable_dig_5 = {
 	NOT = { has_province_flag = DA_expedition_in_progress }
 	owned_by = root
 	owner = {
-		treasury = 300
+		treasury = 200
 	}
 }
 DA_Explorable_dig_6 = {
@@ -41,7 +41,7 @@ DA_Explorable_dig_6 = {
 	NOT = { has_province_flag = DA_expedition_in_progress }
 	owned_by = root
 	owner = {
-		treasury = 500
+		treasury = 300
 	}
 }
 DA_Explorable_dig_7 = {
@@ -50,7 +50,7 @@ DA_Explorable_dig_7 = {
 	NOT = { has_province_flag = DA_expedition_in_progress }
 	owned_by = root
 	owner = {
-		treasury = 750
+		treasury = 500
 	}
 }
 DA_Explorable_dig_8 = {
@@ -59,7 +59,7 @@ DA_Explorable_dig_8 = {
 	NOT = { has_province_flag = DA_expedition_in_progress }
 	owned_by = root
 	owner = {
-		treasury = 1000
+		treasury = 800
 	}
 }
 DA_Explorable_dig_9 = {
@@ -68,7 +68,7 @@ DA_Explorable_dig_9 = {
 	NOT = { has_province_flag = DA_expedition_in_progress }
 	owned_by = root
 	owner = {
-		treasury = 2500
+		treasury = 1200
 	}
 }
 DA_Explorable_dig_10 = {
@@ -77,7 +77,7 @@ DA_Explorable_dig_10 = {
 	NOT = { has_province_flag = DA_expedition_in_progress }
 	owned_by = root
 	owner = {
-		treasury = 5000
+		treasury = 2500
 	}
 }
 DA_Explorable_dig_11 = {
@@ -86,7 +86,7 @@ DA_Explorable_dig_11 = {
 	NOT = { has_province_flag = DA_expedition_in_progress }
 	owned_by = root
 	owner = {
-		treasury = 10000
+		treasury = 5000
 	}
 }
 
@@ -97,7 +97,7 @@ DA_Expandable_dig_2 = {
 	NOT = { has_province_flag = DA_Expanded_dig_adk_2 }
 	NOT = { has_province_flag = DA_expedition_in_progress }
 	owner = {
-		treasury = 100
+		treasury = 50
 	}
 }
 
@@ -107,7 +107,7 @@ DA_Expandable_dig_3 = {
 	NOT = { has_province_flag = DA_Expanded_dig_adk_3 }
 	NOT = { has_province_flag = DA_expedition_in_progress }
 	owner = {
-		treasury = 200
+		treasury = 100
 	}
 }
 
@@ -117,7 +117,7 @@ DA_Expandable_dig_4 = {
 	NOT = { has_province_flag = DA_Expanded_dig_adk_4 }
 	NOT = { has_province_flag = DA_expedition_in_progress }
 	owner = {
-		treasury = 300
+		treasury = 200
 	}
 }
 
@@ -127,7 +127,7 @@ DA_Expandable_dig_5 = {
 	NOT = { has_province_flag = DA_Expanded_dig_adk_5 }
 	NOT = { has_province_flag = DA_expedition_in_progress }
 	owner = {
-		treasury = 600
+		treasury = 400
 	}
 }
 
@@ -137,7 +137,7 @@ DA_Expandable_dig_6 = {
 	NOT = { has_province_flag = DA_Expanded_dig_adk_6 }
 	NOT = { has_province_flag = DA_expedition_in_progress }
 	owner = {
-		treasury = 1000
+		treasury = 600
 	}
 }
 
@@ -147,7 +147,7 @@ DA_Expandable_dig_7 = {
 	NOT = { has_province_flag = DA_Expanded_dig_adk_7 }
 	NOT = { has_province_flag = DA_expedition_in_progress }
 	owner = {
-		treasury = 1500
+		treasury = 1000
 	}
 }
 
@@ -157,7 +157,7 @@ DA_Expandable_dig_8 = {
 	NOT = { has_province_flag = DA_Expanded_dig_adk_8 }
 	NOT = { has_province_flag = DA_expedition_in_progress }
 	owner = {
-		treasury = 2000
+		treasury = 1600
 	}
 }
 
@@ -167,7 +167,7 @@ DA_Expandable_dig_9 = {
 	NOT = { has_province_flag = DA_Expanded_dig_adk_9 }
 	NOT = { has_province_flag = DA_expedition_in_progress }
 	owner = {
-		treasury = 5000
+		treasury = 2400
 	}
 }
 
@@ -177,7 +177,7 @@ DA_Expandable_dig_10 = {
 	NOT = { has_province_flag = DA_Expanded_dig_adk_10 }
 	NOT = { has_province_flag = DA_expedition_in_progress }
 	owner = {
-		treasury = 10000
+		treasury = 5000
 	}
 }
 
@@ -187,11 +187,12 @@ DA_Expandable_dig_11 = {
 	NOT = { has_province_flag = DA_Expanded_dig_adk_11 }
 	NOT = { has_province_flag = DA_expedition_in_progress }
 	owner = {
-		treasury = 20000
+		treasury = 10000
 	}
 }
 
 DA_has_explorable_dig_level = {
+	is_core = owner
 	OR = {
 		DA_Explorable_dig_2 = yes
 		DA_Explorable_dig_3 = yes

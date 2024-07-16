@@ -2,12 +2,12 @@ guiTypes = {
 
 	windowType = {
 		name = "countrytechnologyview"
-		position = { x=0 y=140 }	
-		#position = { x=-600 y=140 }	
+		#position = { x=0 y=140 }	
+		position = { x=-600 y=140 }	
 		show_position = { x=0 y =140 }
 		hide_position = { x=-600 y =140 }	
 		animation_type = "decelerated"
-		animation_time = 10	
+		animation_time = 300	
 		size = { x=1024 y=100 }
 		moveable = 0
 		Orientation = "UPPER_LEFT"
@@ -21,7 +21,595 @@ guiTypes = {
 			Orientation = "UPPER_LEFT"
 
 		}
+		############# dwarven knowledge ###########
+	
+		guiButtonType = {
+			name = "DA_Fake_Info_button"
+			position = { x = 1040 y = 104 }
+			quadTextureSprite ="GFX_DA_info_button_1"
+			Orientation = "UPPER_LEFT"
+			scripted = yes
+			clicksound = back_click
+		}
+		guiButtonType = {
+			name = "DA_Fake_Capacity_button"
+			position = { x = 970 y = 398 }
+			quadTextureSprite ="GFX_DA_see_capacity_fake_button"
+			Orientation = "UPPER_LEFT"
+			scripted = yes
+			clicksound = back_click
+		}
+		instantTextBoxType = {
+			name = "DA_Prod_Capacity_shower"
+			position = { x = 760 y = 401 }
+			textureFile = ""
+			font = "vic_22"
+			borderSize = {x = 4 y = 4}	
+			text = ""
+			maxWidth = 512
+			maxHeight = 32
+			format = centre
+			scripted = yes
+			alwaystransparent = yes
+		}
+		guiButtonType = {
+			name = "DA_Fake_Research_progress_button"
+			position = { x = 970 y = 465 }
+			quadTextureSprite ="GFX_DA_see_capacity_fake_button"
+			Orientation = "UPPER_LEFT"
+			scripted = yes
+			clicksound = back_click
+		}
+		instantTextBoxType = {
+			name = "DA_Research_progress_shower"
+			position = { x = 760 y = 468 }
+			textureFile = ""
+			font = "vic_22"
+			borderSize = {x = 4 y = 4}	
+			text = ""
+			maxWidth = 512
+			maxHeight = 32
+			format = centre
+			scripted = yes
+			alwaystransparent = yes
+		}
+		guiButtonType = { # works
+			name = "DA_Runesmith_Menu_Button"
+			position = { x = 857 y = 392 }
+			quadTextureSprite ="GFX_DA_Tech_button_1"
+			Orientation = "UPPER_LEFT"
+			scripted = yes
+			clicksound = back_click
+		}
+
+		guiButtonType = { # works
+			name = "DA_Runesmith_Research_Button"
+			position = { x = 857 y = 459 }
+			quadTextureSprite ="GFX_DA_Tech_button_2"
+			Orientation = "UPPER_LEFT"
+			scripted = yes
+			clicksound = back_click
+		}
+
+	
+		guiButtonType = { # works
+			name = "DA_Building_Menu_Button"
+			position = { x = 857 y = 525 }
+			quadTextureSprite ="GFX_DA_Building_button_1"
+			Orientation = "UPPER_LEFT"
+			scripted = yes
+			clicksound = back_click
+		}
+	
+		guiButtonType = { # works
+			name = "DA_Metallurgy_Menu_Button"
+			position = { x = 722 y = 392 }
+			quadTextureSprite ="GFX_DA_Metallurgy_button_1"
+			Orientation = "UPPER_LEFT"
+			scripted = yes
+			clicksound = back_click
+		}
+	
+		guiButtonType = { # works
+			name = "DA_Met_COST_fake_button"
+			position = { x = 700 y = 465 }
+			quadTextureSprite ="GFX_DA_see_capacity_fake_button"
+			Orientation = "UPPER_LEFT"
+			scripted = yes
+			clicksound = back_click
+		}
+	
+		instantTextBoxType = {
+			name = "DA_Met_COST_Shower"
+			position = { x = 488 y = 470 }
+			textureFile = ""
+			font = "vic_22"
+			borderSize = {x = 4 y = 4}	
+			text = ""
+			maxWidth = 512
+			maxHeight = 32
+			format = centre
+			scripted = yes
+			alwaystransparent = yes
+		}
+		guiButtonType = { # works
+			name = "DA_Exploration_Button"
+			position = { x = 722 y = 525 }
+			quadTextureSprite ="GFX_DA_Exploration_Button"
+			Orientation = "UPPER_LEFT"
+			scripted = yes
+			clicksound = back_click
+		}
+	
+		instantTextBoxType = {
+			name = "DA_ADK_Shower"
+			position = { x = 364 y = 534 }
+			textureFile = ""
+			font = "vic_22"
+			borderSize = {x = 4 y = 4}	
+			text = ""
+			maxWidth = 512
+			maxHeight = 32
+			format = centre
+			scripted = yes
+			alwaystransparent = yes
+		}
+		############## Techs #################
+
+		instantTextBoxType = {
+			name = "DA_Tech_Shower.Magic_Theory"
+			position = { x = 407 y = 373 }
+			textureFile = ""
+			font = "vic_15"
+			borderSize = {x = 4 y = 4}	
+			text = ""
+			maxWidth = 512
+			maxHeight = 32
+			format = centre
+			scripted = yes
+			alwaystransparent = yes
+		}
+		instantTextBoxType = {
+			name = "DA_Tech_Shower.Metallurgy"
+			position = { x = 407 y = 399 }
+			textureFile = ""
+			font = "vic_15"
+			borderSize = {x = 4 y = 4}	
+			text = ""
+			maxWidth = 512
+			maxHeight = 32
+			format = centre
+			scripted = yes
+			alwaystransparent = yes
+		}
+		instantTextBoxType = {
+			name = "DA_Tech_Shower.Mechanics"
+			position = { x = 407 y = 425 }
+			textureFile = ""
+			font = "vic_15"
+			borderSize = {x = 4 y = 4}	
+			text = ""
+			maxWidth = 512
+			maxHeight = 32
+			format = centre
+			scripted = yes
+			alwaystransparent = yes
+		}
+		instantTextBoxType = {
+			name = "DA_Tech_Shower.Alchemy"
+			position = { x = 407 y = 451 }
+			textureFile = ""
+			font = "vic_15"
+			borderSize = {x = 4 y = 4}	
+			text = ""
+			maxWidth = 512
+			maxHeight = 32
+			format = centre
+			scripted = yes
+			alwaystransparent = yes
+		}
+		instantTextBoxType = {
+			name = "DA_Tech_Shower.Medicine"
+			position = { x = 407 y = 476 }
+			textureFile = ""
+			font = "vic_15"
+			borderSize = {x = 4 y = 4}	
+			text = ""
+			maxWidth = 512
+			maxHeight = 32
+			format = centre
+			scripted = yes
+			alwaystransparent = yes
+		}
+
+		###########################################
+		############## All Metals #################
+		###########################################
+
+
+		instantTextBoxType = {
+			name = "DA_Metal_Shower.Iron"
+			position = { x = 419 y = 145 }
+			textureFile = ""
+			font = "vic_15"
+			borderSize = {x = 4 y = 4}	
+			text = ""
+			maxWidth = 512
+			maxHeight = 32
+			format = centre
+			scripted = yes
+			alwaystransparent = yes
+		}
+		instantTextBoxType = {
+			name = "DA_Metal_Shower.Copper"
+			position = { x = 419 y = 168 }
+			textureFile = ""
+			font = "vic_15"
+			borderSize = {x = 4 y = 4}	
+			text = ""
+			maxWidth = 512
+			maxHeight = 32
+			format = centre
+			scripted = yes
+			alwaystransparent = yes
+		}
+		instantTextBoxType = {
+			name = "DA_Metal_Shower.Gold"
+			position = { x = 419 y = 191 }
+			textureFile = ""
+			font = "vic_15"
+			borderSize = {x = 4 y = 4}	
+			text = ""
+			maxWidth = 512
+			maxHeight = 32
+			format = centre
+			scripted = yes
+			alwaystransparent = yes
+		}
 		
+		instantTextBoxType = {
+			name = "DA_Metal_Shower.Silver"
+			position = { x = 419 y = 215 }
+			textureFile = ""
+			font = "vic_15"
+			borderSize = {x = 4 y = 4}	
+			text = ""
+			maxWidth = 512
+			maxHeight = 32
+			format = centre
+			scripted = yes
+			alwaystransparent = yes
+		}
+		instantTextBoxType = {
+			name = "DA_Metal_Shower.Tin"
+			position = { x = 419 y = 237 }
+			textureFile = ""
+			font = "vic_15"
+			borderSize = {x = 4 y = 4}	
+			text = ""
+			maxWidth = 512
+			maxHeight = 32
+			format = centre
+			scripted = yes
+			alwaystransparent = yes
+		}
+		instantTextBoxType = {
+			name = "DA_Metal_Shower.Aluminium"
+			position = { x = 419 y = 260 }
+			textureFile = ""
+			font = "vic_15"
+			borderSize = {x = 4 y = 4}	
+			text = ""
+			maxWidth = 512
+			maxHeight = 32
+			format = centre
+			scripted = yes
+			alwaystransparent = yes
+		}
+		instantTextBoxType = {
+			name = "DA_Metal_Shower.Titanium"
+			position = { x = 419 y = 285 }
+			textureFile = ""
+			font = "vic_15"
+			borderSize = {x = 4 y = 4}	
+			text = ""
+			maxWidth = 512
+			maxHeight = 32
+			format = centre
+			scripted = yes
+			alwaystransparent = yes
+		}
+		instantTextBoxType = {
+			name = "DA_Metal_Shower.Chromium"
+			position = { x = 419 y = 308 }
+			textureFile = ""
+			font = "vic_15"
+			borderSize = {x = 4 y = 4}	
+			text = ""
+			maxWidth = 512
+			maxHeight = 32
+			format = centre
+			scripted = yes
+			alwaystransparent = yes
+		}
+
+		# rares 1
+
+		instantTextBoxType = {
+			name = "DA_Metal_Shower.Quicksilver"
+			position = { x = 544 y = 145 }
+			textureFile = ""
+			font = "vic_15"
+			borderSize = {x = 4 y = 4}	
+			text = ""
+			maxWidth = 512
+			maxHeight = 32
+			format = centre
+			scripted = yes
+			alwaystransparent = yes
+		}
+		instantTextBoxType = {
+			name = "DA_Metal_Shower.Palladium"
+			position = { x = 544 y = 168 }
+			textureFile = ""
+			font = "vic_15"
+			borderSize = {x = 4 y = 4}	
+			text = ""
+			maxWidth = 512
+			maxHeight = 32
+			format = centre
+			scripted = yes
+			alwaystransparent = yes
+		}
+		instantTextBoxType = {
+			name = "DA_Metal_Shower.Platinum"
+			position = { x = 544 y = 191 }
+			textureFile = ""
+			font = "vic_15"
+			borderSize = {x = 4 y = 4}	
+			text = ""
+			maxWidth = 512
+			maxHeight = 32
+			format = centre
+			scripted = yes
+			alwaystransparent = yes
+		}
+		instantTextBoxType = {
+			name = "DA_Metal_Shower.Tantalum"
+			position = { x = 544 y = 215 }
+			textureFile = ""
+			font = "vic_15"
+			borderSize = {x = 4 y = 4}	
+			text = ""
+			maxWidth = 512
+			maxHeight = 32
+			format = centre
+			scripted = yes
+			alwaystransparent = yes
+		}
+		instantTextBoxType = {
+			name = "DA_Metal_Shower.Damestear"
+			position = { x = 544 y = 237 }
+			textureFile = ""
+			font = "vic_15"
+			borderSize = {x = 4 y = 4}	
+			text = ""
+			maxWidth = 512
+			maxHeight = 32
+			format = centre
+			scripted = yes
+			alwaystransparent = yes
+		}
+		instantTextBoxType = {
+			name = "DA_Metal_Shower.Meteoric_Silver"
+			position = { x = 544 y = 260 }
+			textureFile = ""
+			font = "vic_15"
+			borderSize = {x = 4 y = 4}	
+			text = ""
+			maxWidth = 512
+			maxHeight = 32
+			format = centre
+			scripted = yes
+			alwaystransparent = yes
+		}
+
+		# rares 2
+
+		instantTextBoxType = {
+			name = "DA_Metal_Shower.Dagrite"
+			position = { x = 670 y = 145 }
+			textureFile = ""
+			font = "vic_15"
+			borderSize = {x = 4 y = 4}	
+			text = ""
+			maxWidth = 512
+			maxHeight = 32
+			format = centre
+			scripted = yes
+			alwaystransparent = yes
+		}
+		instantTextBoxType = {
+			name = "DA_Metal_Shower.RoseMetal"
+			position = { x = 670 y = 168 }
+			textureFile = ""
+			font = "vic_15"
+			borderSize = {x = 4 y = 4}	
+			text = ""
+			maxWidth = 512
+			maxHeight = 32
+			format = centre
+			scripted = yes
+			alwaystransparent = yes
+		}
+		instantTextBoxType = {
+			name = "DA_Metal_Shower.Cold_iron"
+			position = { x = 670 y = 191 }
+			textureFile = ""
+			font = "vic_15"
+			borderSize = {x = 4 y = 4}	
+			text = ""
+			maxWidth = 512
+			maxHeight = 32
+			format = centre
+			scripted = yes
+			alwaystransparent = yes
+		}
+		instantTextBoxType = {
+			name = "DA_Metal_Shower.Mithril"
+			position = { x = 670 y = 215 }
+			textureFile = ""
+			font = "vic_15"
+			borderSize = {x = 4 y = 4}	
+			text = ""
+			maxWidth = 512
+			maxHeight = 32
+			format = centre
+			scripted = yes
+			alwaystransparent = yes
+		}
+		instantTextBoxType = {
+			name = "DA_Metal_Shower.EbonSteel"
+			position = { x = 670 y = 237 }
+			textureFile = ""
+			font = "vic_15"
+			borderSize = {x = 4 y = 4}	
+			text = ""
+			maxWidth = 512
+			maxHeight = 32
+			format = centre
+			scripted = yes
+			alwaystransparent = yes
+		}
+
+		# legendaries
+
+		instantTextBoxType = {
+			name = "DA_Metal_Shower.CinderSteel"
+			position = { x = 797 y = 145 }
+			textureFile = ""
+			font = "vic_15"
+			borderSize = {x = 4 y = 4}	
+			text = ""
+			maxWidth = 512
+			maxHeight = 32
+			format = centre
+			scripted = yes
+			alwaystransparent = yes
+		}
+		instantTextBoxType = {
+			name = "DA_Metal_Shower.Magnetite"
+			position = { x = 797 y = 168 }
+			textureFile = ""
+			font = "vic_15"
+			borderSize = {x = 4 y = 4}	
+			text = ""
+			maxWidth = 512
+			maxHeight = 32
+			format = centre
+			scripted = yes
+			alwaystransparent = yes
+		}
+		instantTextBoxType = {
+			name = "DA_Metal_Shower.Mistium"
+			position = { x = 797 y = 191 }
+			textureFile = ""
+			font = "vic_15"
+			borderSize = {x = 4 y = 4}	
+			text = ""
+			maxWidth = 512
+			maxHeight = 32
+			format = centre
+			scripted = yes
+			alwaystransparent = yes
+		}
+		
+		instantTextBoxType = {
+			name = "DA_Metal_Shower.Skyshard"
+			position = { x = 797 y = 215 }
+			textureFile = ""
+			font = "vic_15"
+			borderSize = {x = 4 y = 4}	
+			text = ""
+			maxWidth = 512
+			maxHeight = 32
+			format = centre
+			scripted = yes
+			alwaystransparent = yes
+		}
+		instantTextBoxType = {
+			name = "DA_Metal_Shower.Adamantium"
+			position = { x = 797 y = 237 }
+			textureFile = ""
+			font = "vic_15"
+			borderSize = {x = 4 y = 4}	
+			text = ""
+			maxWidth = 512
+			maxHeight = 32
+			format = centre
+			scripted = yes
+			alwaystransparent = yes
+		}
+		instantTextBoxType = {
+			name = "DA_Metal_Shower.Unastu_Argazen"
+			position = { x = 797 y = 260 }
+			textureFile = ""
+			font = "vic_15"
+			borderSize = {x = 4 y = 4}	
+			text = ""
+			maxWidth = 512
+			maxHeight = 32
+			format = centre
+			scripted = yes
+			alwaystransparent = yes
+		}
+		instantTextBoxType = {
+			name = "DA_Metal_Shower.Bloth_Dolur"
+			position = { x = 797 y = 285 }
+			textureFile = ""
+			font = "vic_15"
+			borderSize = {x = 4 y = 4}	
+			text = ""
+			maxWidth = 512
+			maxHeight = 32
+			format = centre
+			scripted = yes
+			alwaystransparent = yes
+		}
+		instantTextBoxType = {
+			name = "DA_Metal_Shower.Sylvanite"
+			position = { x = 797 y = 308 }
+			textureFile = ""
+			font = "vic_15"
+			borderSize = {x = 4 y = 4}	
+			text = ""
+			maxWidth = 512
+			maxHeight = 32
+			format = centre
+			scripted = yes
+			alwaystransparent = yes
+		}
+		instantTextBoxType = {
+			name = "DA_Metal_Shower.VoidSteel"
+			position = { x = 797 y = 332 }
+			textureFile = ""
+			font = "vic_15"
+			borderSize = {x = 4 y = 4}	
+			text = ""
+			maxWidth = 512
+			maxHeight = 32
+			format = centre
+			scripted = yes
+			alwaystransparent = yes
+		}
+
+
+
+
+
+
+		###########################################
+
 		guiButtonType = {
 			name = "close_button"
 			position = { x = 514 y = -1 }
@@ -124,7 +712,7 @@ guiTypes = {
 			iconType = {
 				name = "institution_red_banner"
 				spriteType ="GFX_institution_red_banner"	
-				position = { x = 21 y = 150 }
+				position = { x = 17 y = 150 }
 				orientation = "UPPER_LEFT"
 			}		
 			
@@ -314,11 +902,11 @@ guiTypes = {
 			spriteType = "GFX_prov_modifier_bg"
 			position = { x = 55 y = 27 }
 			Orientation = "UPPER_LEFT"
-		}		
+		}
 		
 		instantTextBoxType = {
 			name = "current_tech_level"
-			position = { x = 52 y = 30 }
+			position = { x = 52 y = 29 }
 			textureFile = ""
 			font = "vic_22"
 			borderSize = {x = 4 y = 4}	
@@ -676,7 +1264,7 @@ guiTypes = {
 		
 		instantTextBoxType = {
 			name = "current_tech_level"
-			position = { x = 52 y = 11 }
+			position = { x = 52 y = 10 }
 			textureFile = ""
 			font = "vic_22"
 			borderSize = {x = 4 y = 4}	
@@ -743,7 +1331,7 @@ guiTypes = {
 			position = { x= 33 y = 134 }
 			Orientation = "UPPER_LEFT"
 		}
-		
+
 		OverlappingElementsBoxType =
 		{
 			name = "required_institutions_box"
@@ -1136,7 +1724,7 @@ guiTypes = {
 		
 		instantTextBoxType = {
 			name = "current_tech_level"
-			position = { x = 52 y = 10 }
+			position = { x = 52 y = 9 }
 			textureFile = ""
 			font = "vic_22"
 			borderSize = {x = 4 y = 4}	
@@ -1203,7 +1791,7 @@ guiTypes = {
 			position = { x= 33 y = 132 }
 			Orientation = "UPPER_LEFT"
 		}
-		
+
 		OverlappingElementsBoxType =
 		{
 			name = "required_institutions_box"
@@ -2001,7 +2589,7 @@ guiTypes = {
 			Orientation = "UPPER_LEFT"
 		}		
 	}
-	
+
 	
 	windowType = {
 		name = "countrytechnologyview_researchfireitem"
@@ -2093,4 +2681,5 @@ guiTypes = {
 			scale = 0.64
 		}
 	}
+
 }

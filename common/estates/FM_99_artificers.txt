@@ -1,0 +1,6 @@
+estate_artificers = {
+	privileges = {
+		estate_artificers_land_rights
+		estate_artificers_new_world_charterz
+	}
+}

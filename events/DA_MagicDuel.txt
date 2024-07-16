@@ -1117,6 +1117,7 @@ country_event = {
 			trigger_switch = { #Here you define which event should the non-NPC country get if he win against the targetted NPC
 				on_trigger = has_ruler_flag
 				npc_lich = { event_target:attacker = { country_event = { id = DA_Verkal_Kozenad_event.4 } clr_ruler_flag = npc_lich clr_ruler_flag = fighting_NPC } }
+				npc_Dragon_Khugdihr = { event_target:attacker = { country_event = { id = DA_Khugdihr_event.2 } clr_ruler_flag = npc_Dragon_Khugdihr clr_ruler_flag = fighting_NPC } }
 			}
 			event_target:defender = { DA_magic_duel_npc_clear_magical_flag = yes } #This clear every special flag of the NPC. If they have custom spell (dragon breaths etc...), add the relevant flag to this effect
 		}
@@ -1142,6 +1143,7 @@ country_event = {
 			trigger_switch = { #Here you define which event should the non-NPC country get if he lose against the targetted NPC
 				on_trigger = has_ruler_flag
 				npc_lich = { event_target:attacker = { country_event = { id = DA_Verkal_Kozenad_event.5 } clr_ruler_flag = npc_lich clr_ruler_flag = fighting_NPC } }
+				npc_Dragon_Khugdihr = { event_target:attacker = { country_event = { id = DA_Khugdihr_event.3 } clr_ruler_flag = npc_Dragon_Khugdihr clr_ruler_flag = fighting_NPC } }
 			}
 			event_target:defender = { DA_magic_duel_npc_clear_magical_flag = yes } #This clear every special flag of the NPC. If they have custom spell (dragon breaths etc...), add the relevant flag to this effect
 		}
@@ -1469,6 +1471,11 @@ country_event = {
 				limit = { ROOT = { has_ruler_flag = npc_lich } } # Define the NPC you will fight
 				define_ruler = { name = "The Traitorous King" }      # This it the Name of the NPC
 				DA_magic_duel_initialize_stats_npc = { Lich=yes }   # You must define the stats of the NPC. Take exemple on Jorgurem
+			}
+			if = {
+				limit = { ROOT = { has_ruler_flag = npc_Dragon_Khugdihr } } # Define the NPC you will fight
+				define_ruler = { name = "Nimrith's Offspring" }      # This it the Name of the NPC
+				DA_magic_duel_initialize_stats_npc = { Dragon_Khugdihr=yes }   # You must define the stats of the NPC. Take exemple on Jorgurem
 			}
 			# country_event = { id = DA_magic_duel.1 }
 		}

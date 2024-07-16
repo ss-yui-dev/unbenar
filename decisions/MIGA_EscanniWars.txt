@@ -1,0 +1,161 @@
+country_decisions = {
+	ibevar_escanni_wars_victor_requirements = {
+		major = yes
+		
+		potential = {
+			has_global_flag = escanni_wars_global_flag
+			country_can_participate_in_escanni_wars = no
+			development_in_provinces = {
+				province_is_valid_for_escanni_wars = yes
+				value = 150
+			}
+			ai = no
+		}
+		
+		provinces_to_highlight = {
+			OR  = {
+				province_is_valid_for_escanni_wars = yes
+			}
+			NOT = { owned_by = ROOT }
+		}
+		
+		allow = {
+			is_free_or_tributary_trigger = yes
+
+			num_of_owned_provinces_with = {
+				value = 100
+				
+				OR = {
+					region = south_castanor_region
+					region = west_castanor_region
+					region = inner_castanor_region
+					area = cursewood_area
+					area = whistlevale_area
+				}
+			}
+
+			castonath_area = {
+				type = all
+				owned_by = ROOT
+			}
+			
+			if = {
+				limit = {
+					has_global_flag = escanni_wars_global_flag
+					NOT = {
+						had_global_flag = {
+							flag = escanni_wars_global_flag
+							days = 18250
+						}
+					}
+				}
+				
+				OR = {
+					custom_trigger_tooltip = {
+						had_global_flag = {
+							flag = escanni_wars_global_flag
+							days = 18250
+						}
+						tooltip = escanni_wars_50_years
+					}
+
+					AND = {
+						south_castanor_region = {
+							type = all
+							country_or_non_sovereign_subject_holds = ROOT
+						}
+						west_castanor_region = {
+							type = all
+							country_or_non_sovereign_subject_holds = ROOT
+						}
+						inner_castanor_region = {
+							type = all
+							country_or_non_sovereign_subject_holds = ROOT
+						}
+						cursewood_area = {
+							type = all
+							country_or_non_sovereign_subject_holds = ROOT
+						}
+						whistlevale_area = {
+							type = all
+							country_or_non_sovereign_subject_holds = ROOT
+						}
+					}
+				}
+			}
+			else = {
+				custom_trigger_tooltip = {
+					had_global_flag = {
+						flag = escanni_wars_global_flag
+						days = 18250
+					}
+					tooltip = escanni_wars_50_years
+				}
+			}
+		}
+		
+		effect = {
+			clr_global_flag = escanni_wars_global_flag
+			set_global_flag = escanni_wars_end_global_flag
+			
+			country_event = { id = escanni_wars.10 days = 1 }
+		}
+	}
+	
+	ibevar_escanni_bypass_requirements = {
+		major = yes
+		
+		potential = {
+			current_age = age_of_absolutism
+		
+			# Can trigger if the wars have not begun and the wars have not ended
+			NOT = { has_global_flag = escanni_wars_global_flag }
+			NOT = { has_global_flag = escanni_wars_end_global_flag }
+		
+			# and this country can participate in the escanni wars
+			development_in_provinces = {
+				province_is_valid_for_escanni_wars = yes
+				value = 150
+			}
+			
+			# but no other country can
+			NOT = { 
+				any_known_country = {
+					country_can_participate_in_escanni_wars = yes
+				}
+			}
+			
+			ai = no
+		}
+		
+		provinces_to_highlight = {
+			OR  = {
+				province_is_valid_for_escanni_wars = yes
+			}
+			NOT = { owned_by = ROOT }
+		}
+		
+		allow = {
+			is_free_or_tributary_trigger = yes
+			# and this country can participate in the escanni wars
+			development_in_provinces = {
+				province_is_valid_for_escanni_wars = yes
+				value = 150
+			}
+			
+			# but no other country can
+			NOT = { 
+				any_known_country = {
+					country_can_participate_in_escanni_wars = yes
+				}
+			}
+		}
+		
+		effect = {
+			set_global_flag = escanni_wars_bypass
+			
+			country_event = { id = escanni_wars.10 days = 1 }
+		}
+	}
+}
+

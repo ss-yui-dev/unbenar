@@ -297,6 +297,10 @@ monarchy = {
 				kumarkand_emperor_rule
 				vels_bacar_the_panykorun
 				covenblad_covenant_arbiters
+				
+				#BOP
+				blademarches_royal_faction
+				blademarches_imperial_faction
 			}
 		}
 		bureaucracy = { #Tier 3
@@ -339,8 +343,9 @@ monarchy = {
 				arverynnic_administration_reform
 				chien_ancestral_council_reform
 				orldhum_highlords_retinue
-
-
+				
+				#BOP
+				blademarches_ministry_of_war
 			}
 		}
 		state_and_religion = { #Tier 4
@@ -394,6 +399,9 @@ monarchy = {
 				just_another_cult
 
 				centaur_protection_racketeering_reform
+				
+				#BOP
+				blademarches_sword_of_corin
 			}
 		}
 		military_doctrines = { #Tier 5 1.35
@@ -483,6 +491,12 @@ monarchy = {
 				# manrent_reform
 				# merchant_arsenal_reform
 				# tercios_reform
+				
+				#BOP
+				blademarches_royal_blademarcher_army
+				blademarches_royal_bladesworn_army
+				blademarches_royal_new_model_army
+				blademarches_imperial_blademarcher_army	
 			}
 		}
 		deliberative_assembly = { #Tier 6
@@ -529,6 +543,11 @@ monarchy = {
 				bulwar_grand_assembly
 				alchemical_exploration_corps_reform
 				goblin_complaint_box
+				
+				#BOP
+				blademarches_council_of_blind_masters
+				blademarches_thing
+				blademarches_general_staff
 			}
 		}
 		growth_of_administration = { #Tier 7
@@ -575,6 +594,9 @@ monarchy = {
 				centaur_reformed_ordsiwyn_reform
 				argordstun_exemplary_meritocrats
 				blorc_victors_of_ozarmchadash
+				
+				#BOP
+				blademarches_marcher_meritocracy
 			}
 		}
 		economical_matters = { #Tier 8
@@ -609,6 +631,10 @@ monarchy = {
 				centaur_ogrish_production_methods_reform
 				goblin_dehoardings
 				goblin_mine_is_mine
+				
+				#BOP
+				blademarches_war_economy			
+				blademarches_sellblade_economy
 			}
 		}
 		legitimation_of_power = { #Tier 9
@@ -624,6 +650,11 @@ monarchy = {
 				command_consensus
 				goblin_all_the_above
 				blorc_lifetime_of_war
+				
+				#BOP
+				blademarches_blade_chosen
+				blademarches_blade_servant
+				blademarches_enlightened_monarchy
 			}
 		}
 		absolute_rule_vs_constitutional = { #Tier 10
@@ -971,6 +1002,9 @@ republic = {
 				vels_bacar_bacaran_republic
 				#love
 				amldihr_dutch_republic_reform
+
+				#BOP
+				blademarches_republic_reform
 			}
 		}
 		republican_virtues = { #Tier 2
@@ -1050,6 +1084,8 @@ republic = {
 				elected_clanspeakers_reform
 				railskulker_capital_on_train_tracks
 				besolaki_chaotic_republicanism
+				#BOP
+				blademarches_ministry_of_war
 			}
 		}
 		republic_and_religion = { #Tier 4
@@ -1101,6 +1137,8 @@ republic = {
 				blorc_codified_omens
 				just_another_cult
 				semayebaka_chapter_houses
+				#BOP
+				blademarches_sword_of_corin
 			}
 		}
 		military_doctrines = { #Tier 5
@@ -1190,6 +1228,8 @@ republic = {
 				# merchant_arsenal_reform
 				# tercios_reform
 				administrating_officers_reform
+				#BOP
+				blademarches_royal_new_model_army
 			}
 		}
 		parliamentary_vs_presidential = { #Tier 6
@@ -1225,6 +1265,8 @@ republic = {
 				goblin_cabinet_positions
 				circle_of_hands_reform
 
+				#BOP
+				blademarches_marcher_meritocracy
 			}
 		}
 		federalism_vs_unitarism_vs_confederacy = { #Tier 7
@@ -1247,6 +1289,10 @@ republic = {
 				autonomous_epednar_tribes_reform
 				communal_caves
 				#F23_trading_post_oversight
+				#BOP
+				blademarches_council_of_blind_masters
+				blademarches_thing
+				blademarches_general_staff	
 			}
 		}
 		economical_matters_republic = { #Tier 8
@@ -1436,10 +1482,16 @@ republic = {
 		military_rulership_reform
 		#prussian_republic_reform
 		military_dictatorship_reform
+		
+		#BOP
+		blademarches_republic_reform
 	}
 	exclusive_reforms = { 
 		dutch_republic
 		force_reelection_reform
+		
+		#BOP
+		blademarches_republic_reform
 	}
 }
 
@@ -1860,6 +1912,9 @@ theocracy = {
 				prabhi_reform
 				indep_prabhi_reform
 				senapti_reform
+				
+				#BOP
+				blademarches_theocracy_reform
 			}
 		}
 		internal_vs_external_mission = { #Tier 2
@@ -1957,6 +2012,9 @@ theocracy = {
 				shrine_guardians_reform
 				blorc_codified_omens
 				semayebaka_chapter_houses
+				
+				#BOP
+				blademarches_sword_of_corin
 			}
 		}
 		military_doctrines = { #Tier 5
@@ -2009,6 +2067,9 @@ theocracy = {
 			adventurer_administration
 			dwarovar_hold_restoration
 			dwarovar_settlement_consolidation
+			
+			#BOP
+			blademarches_royal_bladesworn_army
 			
 
 			#Invisible until unlocked
@@ -2078,6 +2139,9 @@ theocracy = {
 				corintar_the_circle_reborn
 				corintar_warrior_priests
 				ravenmarch_triumvirate_court
+				
+				#BOP
+				blademarches_marcher_meritocracy
 			}
 		}
 		clergy_in_administration = { #Tier 7
@@ -2097,6 +2161,11 @@ theocracy = {
 				balgarsmiths_administration
 				anb_warrior_monks_reform
 				consolidated_raj_reform
+				
+				#BOP
+				blademarches_council_of_blind_masters
+				blademarches_thing
+				blademarches_general_staff
 			}
 		}
 		economical_matters = { #Tier 8
@@ -2125,6 +2194,10 @@ theocracy = {
 				centaur_ogrish_production_methods_reform
 				goblin_dehoardings
 				goblin_mine_is_mine
+				
+				#BOP
+				blademarches_war_economy
+				blademarches_sellblade_economy
 			}
 		}
 		divine_cause = { #Tier 9
@@ -2200,6 +2273,9 @@ theocracy = {
 		# prussian_theocratic_reform
 		# militarized_crusader_order_reform
 		monastic_elections_reform
+		
+                #love
+		blademarches_theocracy_reform
 	}
 	exclusive_reforms = {
 		dutch_theocracy_reform
@@ -2208,22 +2284,37 @@ theocracy = {
 	exclusive_reforms = {
 		dutch_theocracy_reform
 		constitional_theocracy_reform
+		
+                #love
+		blademarches_theocracy_reform
 	}
 	exclusive_reforms = {
 		dutch_theocracy_reform
 		regionally_elected_commanders
+		
+                #love
+		blademarches_theocracy_reform
 	}
 	exclusive_reforms = {
 		dutch_theocracy_reform
 		monastic_elections_reform
+
+                #love		
+		blademarches_theocracy_reform
 	}
 	exclusive_reforms = {
 		dutch_theocracy_reform
 		commander_king_reform
+
+                #love		
+		blademarches_theocracy_reform
 	}
 	exclusive_reforms = {
 		dutch_theocracy_reform
 		admiral_king_reform
+
+                #love		
+		blademarches_theocracy_reform
 	}
 }
 

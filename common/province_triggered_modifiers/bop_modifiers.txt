@@ -1,0 +1,60 @@
+# Province Triggered modifiers are here.
+# These are added to provinces through the add_province_triggered_modifier effect
+#
+# Effects are fully scriptable here.
+
+bop_bladesworn_barracks = {
+	potential = {
+		owner = { 
+			tag = B33 
+			NOT = { has_reform = blademarches_royal_new_model_army }
+		}
+	}
+
+	trigger = {
+		owner = { 
+			tag = B33 
+			NOT = { has_reform = blademarches_royal_new_model_army }
+		}
+	}
+	#picture = "hold_has_parliament"
+	
+	has_samurai = yes
+	amount_of_samurai = 1
+	local_has_samurai = yes
+
+	#Province scope
+	on_activation = {
+	}
+
+	on_deactivation = {
+	}
+}
+
+bop_blessed_by_the_lady = {
+	potential = {
+		owner = { 
+			tag = B33 
+		}
+	}
+
+	trigger = {
+		owner = { 
+			tag = B33 
+			has_estate_privilege = estate_bladestewards_lakelady_cult
+		}
+	}
+	#picture = "hold_has_parliament"
+	
+	allowed_num_of_buildings = 1
+	local_prosperity_growth = 0.5 
+	local_monthly_devastation = -0.5 
+	local_governing_cost = -0.75
+
+	#Province scope
+	on_activation = {
+	}
+
+	on_deactivation = {
+	}
+}

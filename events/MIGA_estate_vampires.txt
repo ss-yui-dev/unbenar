@@ -1,0 +1,61 @@
+namespace = MIGA_aw_vampires
+
+#140 - Offer emigre estate to country
+province_event = {
+    id = MIGA_aw_vampires.140
+    title = aw_vampires.140.t
+    desc = aw_vampires.140.d
+    picture = DIPLOMACY_eventPicture
+    goto = ROOT
+    
+    mean_time_to_happen = {
+        years = 20
+    }
+    
+    trigger = {
+        OR = {
+            province_id = 441
+			province_id = 431
+			province_id = 257
+			AND = {
+				province_id = 1024
+				is_year = 1530
+			}
+			province_id = 4848
+        }
+
+        owner = {
+			stability = 1
+			NOT = { has_country_flag = has_vampires_estate }
+			NOT = { has_country_flag = refused_vampires }
+		}		
+    }
+    
+    #sure
+    option = {
+ 
+        name = aw_vampires.140.a
+        ai_chance = { factor = 100 }
+
+        owner = { add_stability = -1 }
+
+        hidden_effect = { 
+            owner = { set_country_flag = has_vampires_estate }
+            owner = { country_event = { id = vampires_estate_events.12 days = 2 } } 
+        }
+
+        custom_tooltip = estate_vampies_gain_tooltip
+    }
+
+    #no
+    option = {
+ 
+        name = aw_vampires.140.b
+        ai_chance = { factor = 100 }
+
+        owner = {
+			add_prestige = 10
+			set_country_flag = refused_vampires
+		}
+    }
+}

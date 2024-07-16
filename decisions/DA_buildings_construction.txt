@@ -2,6 +2,7 @@ country_decisions = {
 	DA_buildings_menu_decision = {
 		major = yes
 		potential = {
+			ai = yes
 			culture_group = dwarven
 			OR = {
 				has_country_flag = DA_can_build_runeforged_fort

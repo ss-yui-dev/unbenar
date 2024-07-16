@@ -7,31 +7,83 @@
 # General Traits
 ###############################################
 
-War_Rune_Mage_general_personality = {
+Low_Class_Rune_Mage_general_personality = {
+	allow = {
+		always = no			# cannot have them naturally
+	}
+	fire_damage_received = -0.025
+	shock_damage_received = -0.05
+}
+
+Middle_Class_Rune_Mage_general_personality = {
+	allow = {
+		always = no			# cannot have them naturally
+	}
+	siege_ability = 0.05
+	fire_damage_received = -0.05
+	shock_damage_received = -0.05
+	
+}
+
+High_Class_Rune_Mage_general_personality = {
 	allow = {
 		always = no			# cannot have them naturally
 	}
 	siege_ability = 0.10
-	shock_damage_received = -0.05
 	fire_damage_received = -0.05
-	movement_speed = -0.10
+	shock_damage_received = -0.05
+	morale_damage_received = -0.05
 }
 
-DA_Mithradum_war_mage = {
+Mithril_Class_Rune_Mage_general_personality = {
 	allow = {
 		always = no			# cannot have them naturally
 	}
-	discipline = 0.05
-	siege_ability = 0.1
+	discipline = 0.025
+	siege_ability = 0.125
+	fire_damage_received = -0.05
+	shock_damage_received = -0.05
 	morale_damage_received = -0.05
-	movement_speed = -0.05
 }
 
-War_Rune_Mage_admiral_personality = {
+Halanna_Chosen_Rune_Mage_general_personality = {
 	allow = {
-		always = no 		# cannot have them naturally
+		always = no			# cannot have them naturally
 	}
-	heavy_ship_hull_size_modifier = 0.10
+	discipline = 0.075
+	siege_ability = 0.20
+	fire_damage = 0.15
+	morale_damage = 0.10
+}
+
+###############################################
+# Admiral Traits
+###############################################
+
+Low_Class_Rune_Mage_admiral_personality = {
+	allow = {
+		always = no			# cannot have them naturally
+	}
 	ship_durability = 0.05
-	naval_attrition = -0.15
+	hull_size_modifier = 0.05
+	heavy_ship_power = 0.025
+}
+
+Middle_Class_Rune_Mage_admiral_personality = {
+	allow = {
+		always = no			# cannot have them naturally
+	}
+	ship_durability = 0.075
+	hull_size_modifier = 0.075
+	heavy_ship_power = 0.05
+	
+}
+
+High_Class_Rune_Mage_admiral_personality = {
+	allow = {
+		always = no			# cannot have them naturally
+	}
+	ship_durability = 0.10
+	hull_size_modifier = 0.10
+	heavy_ship_power = 0.10
 }

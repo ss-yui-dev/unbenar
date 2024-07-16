@@ -196,6 +196,10 @@ has_Dwarven_magic_Barrier = {
 			type = Dwarven_magic_Barrier49
 			tier = 1
 		}
+		has_great_project = {
+			type = Dwarven_magic_Barrier50
+			tier = 1
+		}
 	}
 }
 has_Dwarven_magic_Barrier_t2 = {
@@ -394,6 +398,10 @@ has_Dwarven_magic_Barrier_t2 = {
 		}
 		has_great_project = {
 			type = Dwarven_magic_Barrier49
+			tier = 2
+		}
+		has_great_project = {
+			type = Dwarven_magic_Barrier50
 			tier = 2
 		}
 	}
@@ -597,6 +605,10 @@ has_Dwarven_magic_Barrier_t3 = {
 			type = Dwarven_magic_Barrier49
 			tier = 3
 		}
+		has_great_project = {
+			type = Dwarven_magic_Barrier50
+			tier = 3
+		}
 	}
 }
 
@@ -621,5 +633,60 @@ DA_can_upgrade_DRB = {
 				has_country_flag = DA_can_build_Runic_barrier_t3
 			}
 		}
+	}
+}
+
+DA_is_Runic_barrier_province = {
+	OR = {
+		province_id = 62
+		province_id = 279
+		province_id = 526
+		province_id = 912
+		province_id = 2863
+		province_id = 2914
+		province_id = 2931
+		province_id = 2942
+		province_id = 2963
+		province_id = 2966
+		province_id = 2973
+		province_id = 4020
+		province_id = 4039
+		province_id = 4056
+		province_id = 4060
+		province_id = 4073
+		province_id = 4078
+		province_id = 4093
+		province_id = 4097
+		province_id = 4100
+		province_id = 4102
+		province_id = 4122
+		province_id = 4124
+		province_id = 4128
+		province_id = 4147
+		province_id = 4149
+		province_id = 4203
+		province_id = 4208
+		province_id = 4217
+		province_id = 4218
+		province_id = 4236
+		province_id = 4265
+		province_id = 4266
+		province_id = 4273
+		province_id = 4284
+		province_id = 4311
+		province_id = 4313
+		province_id = 4323
+		province_id = 4342
+		province_id = 4345
+		province_id = 4350
+		province_id = 4352
+		province_id = 4552
+		province_id = 4553
+		province_id = 5424
+		province_id = 2868
+		province_id = 4247
+		province_id = 4238
+		province_id = 4272
+		province_id = 4360
 	}
 }

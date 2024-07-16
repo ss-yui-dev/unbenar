@@ -1,0 +1,49 @@
+estate_action_RECRUIT_MILITARY_MINISTER_BLADESTEWARDS = {
+	generate_estate_advisor = {
+		estate = estate_bladestewards
+		type = army_reformer
+	}
+	#add_estate_influence_modifier = {
+	#	estate = estate_burghers
+	#	desc = EST_VAL_BURGHER_MINISTER
+	#	influence = 15
+	#	duration = 10950
+	#}
+	add_estate_loyalty = {
+		estate = estate_bladestewards
+		loyalty = -10
+	}
+}
+
+estate_action_RECRUIT_RELIGIOUS_MINISTER_BLADESTEWARDS = {
+	generate_estate_advisor = {
+		estate = estate_bladestewards
+		type = theologian
+	}
+	#add_estate_influence_modifier = {
+	#	estate = estate_burghers
+	#	desc = EST_VAL_BURGHER_MINISTER
+	#	influence = 15
+	#	duration = 10950
+	#}
+	add_estate_loyalty = {
+		estate = estate_bladestewards
+		loyalty = -10
+	}
+}
+
+bop_on_war_declaration_effect = {
+	if = {
+		limit = { has_country_modifier = bladesworn_charity }
+		remove_country_modifier = bladesworn_charity
+	}
+	if = {
+		limit = { has_country_modifier = bladesworn_adventurers }
+		remove_country_modifier = bladesworn_adventurers
+	}
+	if = {
+		limit = { has_country_modifier = bladesworn_guard }
+		remove_country_modifier = bladesworn_guard
+	}
+}
+

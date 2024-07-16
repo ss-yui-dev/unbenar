@@ -2,7 +2,6 @@ Hold_restorer = {
 	monarch_power = ADM
 	
 	# Bonus
-	all_power_cost = -0.05
 	build_time = -0.10
 
 	skill_scaled_modifier = { 
@@ -37,7 +36,7 @@ DA_runesmith = {
 	monarch_power = DIP
 	
 	# Bonus
-	global_trade_goods_size_modifier = 0.10
+	global_trade_goods_size_modifier = 0.05
 
 	skill_scaled_modifier = { 
 		trigger = {

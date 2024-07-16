@@ -1,0 +1,79 @@
+country_decisions = {
+	blademarches_submission = {
+		major = yes
+		potential = {
+			#government_rank = 2
+			castonath_area = {
+				type = all
+				owned_by = ROOT
+			}
+			B33 = { exists = yes }
+			NOT = { tag = B33 }
+			NOT = { ROOT = { is_subject_of = B33 } }
+			NOT = { B33 = { is_subject_of = ROOT } }
+		}
+		allow = {
+			castonath_area = {
+				type = all
+				owned_by = ROOT
+			}
+			NOT = { is_at_war = yes }
+			NOT = { is_subject = yes }
+			B33 = { exists = yes }
+			B33 = { NOT = { is_at_war = yes } }
+			B33 = { NOT = { is_subject = yes } }
+			num_of_owned_provinces_with = {
+				value = 30
+				region = inner_castanor_region
+			}
+			dip_power = 100
+			mil_power = 50
+		}
+		effect = {
+			add_dip_power = -100
+			add_mil_power = -50
+			B33 = {
+				country_event = {
+					id = bladegriffon_flavor.4
+				}
+			}
+		}
+	}
+	marrhold_submission = {
+		major = yes
+		potential = {
+			#government_rank = 2
+			castonath_area = {
+				type = all
+				owned_by = ROOT
+			}
+			B36 = { exists = yes }
+			NOT = { tag = B36 }
+			NOT = { ROOT = { is_subject_of = B36 } }
+			NOT = { B36 = { is_subject_of = ROOT } }
+		}
+		allow = {
+			castonath_area = {
+				type = all
+				owned_by = ROOT
+			}
+			NOT = { is_at_war = yes }
+			NOT = { is_subject = yes }
+			B36 = { exists = yes }
+			B36 = { NOT = { is_at_war = yes } }
+			B36 = { NOT = { is_subject = yes } }
+			dip_power = 100
+			mil_power = 50
+		}
+		effect = {
+			
+			add_dip_power = -100
+			add_mil_power = -50
+			B36 = {
+				country_event = {
+					id = bladegriffon_flavor.4
+				}
+			}
+		}
+	}
+}

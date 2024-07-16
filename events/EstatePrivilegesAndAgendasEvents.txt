@@ -304,6 +304,9 @@ country_event = {
 		clr_country_flag = estate_kabiurgarko_present_agenda
 		clr_country_flag = estate_khelorvalshi_present_agenda
 		clr_country_flag = estate_ahati_present_agenda
+                #love
+		clr_country_flag = estate_bladestewards_present_agenda
+                #love
 		clear_estate_agenda_cache = ROOT
 	}
 
@@ -1624,6 +1627,55 @@ country_event = {
 			}
 		}
 	}
+        #love
+	#Blade Stewards
+	option = {
+		name = estate_privileges_and_agendas_events.3.bs
+		trigger = { has_country_flag = estate_bladestewards_present_agenda }
+		start_estate_agenda = estate_bladestewards
+		goto = estate_bladestewards
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 1.5
+				NOT = {
+					estate_loyalty = {
+						loyalty = 30
+						estate = estate_bladestewards
+					}
+				}
+			}
+			modifier = {
+				factor = 2
+				NOT = {
+					estate_loyalty = {
+						loyalty = 20
+						estate = estate_bladestewards
+					}
+				}
+			}
+			modifier = {
+				factor = 1.5
+				estate_influence = {
+					influence = 70
+					estate = estate_bladestewards
+				}
+			}
+			modifier = {
+				factor = 2
+				is_absolutism_active = yes
+				num_of_estate_privileges = {
+					estate = estate_bladestewards
+					value = 1
+				}
+				estate_loyalty = {
+					estate = estate_bladestewards
+					higher_than_influence = no
+				}
+			}
+		}
+	}
+        #love
 }
 
 country_event = {

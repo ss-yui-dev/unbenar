@@ -1,0 +1,750 @@
+#BLADEMARCHES PRIVILEGES
+
+estate_bladestewards_old_guard = {
+	icon = estate_eunuchs_royal_intrigue_keepers_privilege
+	max_absolutism = -10
+	influence = 0.20
+	loyalty = -0.15
+	is_valid = {
+		NOT = { has_estate_privilege = estate_bladestewards_bladesworn_established }
+		has_country_flag = bladesworn_abolished
+		NOT = { has_country_flag = bladesworn_rebellion_crushed }
+		NOT = { has_country_flag = bladesworn_rebellion_restored }
+	}
+	can_revoke = {
+		custom_trigger_tooltip = {
+			tooltip = BM_revokable_via_disaster
+			always = no
+		}
+	}
+	can_select = {
+		
+	}
+	penalties = {
+		land_morale = -0.05
+		land_maintenance_modifier = 0.1	
+		yearly_corruption = 0.1	
+	}
+	on_granted = {
+		
+	}
+	benefits = {
+	}
+	mechanics = {
+		exempt_from_seize_land
+	}
+	ai_will_do = {
+		factor = 0
+	}
+}
+
+estate_bladestewards_new_model_loyalists = {
+	icon = privilege_centralized
+	max_absolutism = 0
+	influence = -0.1
+	loyalty = 0.05
+	is_valid = {
+		NOT = { has_estate_privilege = estate_bladestewards_bladesworn_established }
+		has_country_flag = bladesworn_abolished
+		has_country_flag = bladesworn_rebellion_crushed
+	}
+	can_revoke = {
+		custom_trigger_tooltip = {
+			always = no
+		}
+	}
+	can_select = {
+		
+	}
+	penalties = {
+		
+	}
+	on_granted = {
+		
+	}
+	benefits = {
+		allowed_rajput_fraction = 0.05
+	}
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+estate_bladestewards_control_state = {
+	icon = privilege_devotion_red
+	max_absolutism = 0
+	influence = 0.25
+	loyalty = 0.2
+	is_valid = {
+		has_country_flag = bladesworn_unholy_path
+		religion = corinite
+	}
+	can_revoke = {
+		custom_trigger_tooltip = {
+			always = no
+		}
+	}
+	can_select = {
+		
+	}
+	penalties = {
+		all_power_cost = 0.05
+		global_unrest = 1
+	}
+	on_granted = {
+		custom_tooltip = BLADESTEWARDS_DISASTER_DISABLED
+	}
+	benefits = {
+		country_military_power = 1
+		monthly_bm_militarized_society = 0.1
+	}
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+estate_bladestewards_bladesworn_established = {
+	icon = privilege_force_limit
+	max_absolutism = -10
+	influence = 0.1
+	loyalty = 0.1
+	is_valid = {
+		NOT = { has_country_flag = bladesworn_abolished }
+		NOT = { has_country_flag = bladesworn_nationalized }
+	}
+	can_revoke = {
+		custom_trigger_tooltip = {
+			tooltip = BM_revokable_via_government_reform
+			always = no
+		}
+	}
+	can_select = {
+		
+	}
+	penalties = {
+		
+	}
+	on_granted = {
+		
+	}
+	benefits = {
+		has_samurai = yes
+	}
+	modifier_by_land_ownership = {
+		allowed_samurai_fraction = 0.35
+		special_unit_cost_modifier = -0.25
+		global_tax_modifier = -0.2
+	}
+	ai_will_do = {
+		factor = 0
+	}
+}
+
+estate_bladestewards_support_new_model = {
+	icon = privilege_royal_authority
+	max_absolutism = -10
+	loyalty = -0.25
+	influence = -0.15
+	max_absolutism = 5
+	is_valid = {
+		has_dlc = "Domination"
+		has_reform = blademarches_royal_new_model_army
+	}
+	can_select = {
+	}
+	on_granted = {
+	}
+	benefits = {
+		monthly_bm_militarized_society = 0.1
+	}
+	on_revoked = {
+		
+	}
+	conditional_modifier = {
+		trigger = {
+			has_estate_privilege = estate_bladestewards_new_model_loyalists
+		}
+		modifier = {
+			max_absolutism = 5
+			bladestewards_loyalty_modifier = 0.15
+		}
+	}
+	on_invalid = {
+		
+	}
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+estate_bladestewards_bladesworn_officers = {
+	icon = privilege_military
+	max_absolutism = 0
+	influence = 0.05
+	#conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
+	loyalty = 0.1
+	is_valid = {
+		OR = {
+			has_estate_privilege = estate_bladestewards_bladesworn_established
+			has_reform = blademarches_royal_bladesworn_army
+		}
+	}
+	can_select = {
+		army_tradition = 30
+		NOT = { has_estate_privilege = estate_nobles_officer_corp }
+		NOT = { has_estate_privilege = estate_nobles_command_of_the_military }
+	}
+	penalties = {
+		nobles_loyalty_modifier = -0.1
+	}
+	on_granted = {
+		add_army_tradition = -5
+		set_country_flag = no_noble_military
+	}
+	benefits = {
+		general_cost = -0.1
+		army_tradition_decay = -0.005
+		nobles_influence_modifier = -0.1
+	}
+	on_revoked = {
+		clr_country_flag = no_noble_military
+	}
+	ai_will_do = {
+		factor = 5
+	}
+}
+
+estate_bladestewards_bladesworn_officers_non_dom = {
+	icon = privilege_military
+	max_absolutism = 0
+	influence = 0.05
+	#conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
+	loyalty = 0.1
+	is_valid = {
+		NOT = { has_dlc = "Domination" }
+		has_country_modifier = blademarches_bladesworn_non_dom
+	}
+	can_select = {
+		army_tradition = 30
+		NOT = { has_estate_privilege = estate_nobles_officer_corp }
+		NOT = { has_estate_privilege = estate_nobles_command_of_the_military }
+	}
+	penalties = {
+		nobles_loyalty_modifier = -0.1
+	}
+	on_granted = {
+		add_army_tradition = -5
+		set_country_flag = no_noble_military
+	}
+	benefits = {
+		general_cost = -0.15
+		army_tradition_decay = -0.01
+		nobles_influence_modifier = -0.1
+	}
+	on_revoked = {
+		clr_country_flag = no_noble_military
+	}
+	ai_will_do = {
+		factor = 5
+	}
+}
+
+estate_bladestewards_bladesworn_elven = {
+	icon = privilege_cawa_offensive_fighters
+	max_absolutism = -5
+	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
+	influence = 0.0
+	loyalty = 0.0
+	is_valid = {
+		has_dlc = "Domination"
+		OR = {
+			has_estate_privilege = estate_bladestewards_bladesworn_established
+			has_reform = blademarches_royal_bladesworn_army
+		}
+		has_country_modifier = elven_military
+	}
+	can_select = {
+		if = {
+			limit = { has_dlc = "Cradle of Civilization" }
+			army_professionalism = 0.4
+		}
+	}
+	on_granted = {
+		add_country_modifier = {
+			name = blademarches_elven_bladesworn_modifier
+			duration = -1
+		}
+	}
+	on_revoked = {
+		remove_country_modifier = blademarches_elven_bladesworn_modifier
+	}
+	on_invalid = {
+		remove_country_modifier = blademarches_elven_bladesworn_modifier
+	}
+	penalties = {
+		allowed_samurai_fraction = -0.15
+	}
+	benefits = {
+		
+	}
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+estate_bladestewards_bladesworn_human = {
+	icon = privilege_demand_more_troops
+	max_absolutism = -5
+	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
+	influence = 0.0
+	loyalty = -0.005
+	is_valid = {
+		has_dlc = "Domination"
+		OR = {
+			has_estate_privilege = estate_bladestewards_bladesworn_established
+			has_reform = blademarches_royal_bladesworn_army
+		}
+		has_country_modifier = human_military
+		NOT = { has_country_flag = bop_abolished_elven_military }
+	}
+	can_select = {
+		if = {
+			limit = { has_dlc = "Cradle of Civilization" }
+			army_professionalism = 0.4
+		}
+	}
+	on_granted = {
+	
+	}
+	on_revoked = {
+		
+	}
+	on_invalid = {
+		
+	}
+	penalties = {
+		
+	}
+	benefits = {
+		allowed_samurai_fraction = 0.10
+	}
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+estate_bladestewards_bladesworn_elven_elite = {
+	icon = privilege_cawa_peacekeepers
+	max_absolutism = -5
+	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
+	influence = 0.0
+	loyalty = 0.0
+	is_valid = {
+		has_dlc = "Domination"
+		OR = {
+			has_estate_privilege = estate_bladestewards_bladesworn_established
+			has_reform = blademarches_royal_bladesworn_army
+		}
+		has_country_modifier = human_military
+		has_country_flag = bop_abolished_elven_military
+	}
+	can_select = {
+		if = {
+			limit = { has_dlc = "Cradle of Civilization" }
+			army_professionalism = 0.4
+		}
+	}
+	on_granted = {
+		add_country_modifier = {
+			name = blademarches_restricted_elven_bladesworn_modifier
+			duration = -1
+		}
+	}
+	on_revoked = {
+		remove_country_modifier = blademarches_restricted_elven_bladesworn_modifier
+	}
+	on_invalid = {
+		remove_country_modifier = blademarches_restricted_elven_bladesworn_modifier
+	}
+	penalties = {
+		allowed_samurai_fraction = -0.3
+	}
+	benefits = {
+		
+	}
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+estate_bladestewards_bladesworn_halforc = {
+	icon = privilege_carolean_charge
+	max_absolutism = -5
+	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
+	influence = 0.0
+	loyalty = 0.0
+	is_valid = {
+		has_dlc = "Domination"
+		OR = {
+			has_estate_privilege = estate_bladestewards_bladesworn_established
+			has_reform = blademarches_royal_bladesworn_army
+		}
+		has_country_modifier = half_orcish_military
+	}
+	can_select = {
+		if = {
+			limit = { has_dlc = "Cradle of Civilization" }
+			army_professionalism = 0.4
+		}
+	}
+	on_granted = {
+		add_country_modifier = {
+			name = blademarches_half_orc_bladesworn_modifier
+			duration = -1
+		}
+	}
+	on_revoked = {
+		remove_country_modifier = blademarches_half_orc_bladesworn_modifier
+	}
+	on_invalid = {
+		remove_country_modifier = blademarches_half_orc_bladesworn_modifier
+	}
+	penalties = {
+		
+	}
+	benefits = {
+		
+	}
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+estate_bladestewards_bladesworn_modernization = {
+	icon = privilege_supply_arms
+	max_absolutism = -5
+	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 2 } }
+	influence = 0.05
+	loyalty = -0.05
+	is_valid = {
+		has_dlc = "Domination"
+		has_reform = blademarches_royal_bladesworn_army
+	}
+	can_select = {
+		if = {
+			limit = { has_dlc = "Cradle of Civilization" }
+			army_professionalism = 1
+		}
+	}
+	on_granted = {
+		add_country_modifier = {
+			name = blademarches_modernized_bladesworn
+			duration = -1
+		}
+	}
+	on_revoked = {
+		remove_country_modifier = blademarches_modernized_bladesworn
+	}
+	on_invalid = {
+		remove_country_modifier = blademarches_modernized_bladesworn
+	}
+	penalties = {
+		artificers_loyalty_modifier = -0.1
+	}
+	benefits = {
+		artificers_influence_modifier = -0.1
+	}
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+estate_bladestewards_bladesworn_recruit_minister = {
+	icon = privilege_diplomat
+	loyalty = 0.0
+	influence = 0.05
+	max_absolutism = -5
+	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
+	is_valid = {
+		has_dlc = "Domination"
+		has_estate_privilege = estate_bladestewards_bladesworn_officers
+	}
+	can_select = {
+	}
+	on_granted = {
+		enable_estate_action = {
+			estate_action = RECRUIT_MILITARY_MINISTER_BLADESTEWARDS
+		}
+	}
+	on_revoked = {
+		disable_estate_action = {
+			estate_action = RECRUIT_MILITARY_MINISTER_BLADESTEWARDS
+		}
+	}
+	on_invalid = {
+		disable_estate_action = {
+			estate_action = RECRUIT_MILITARY_MINISTER_BLADESTEWARDS
+		}
+	}
+	ai_will_do = {
+		factor = 0
+	}
+}
+
+estate_bladestewards_bladepriests_rally_faithful = {
+	icon = privilege_manpower_of_true_faith
+	loyalty = 0.05
+	influence = 0.1
+	max_absolutism = -5
+	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
+	is_valid = {
+		has_dlc = "Domination"
+		religion = corinite
+	}
+	can_select = {
+	}
+	on_granted = {
+		#scaling_with_influence_privilege_tooltip = {
+		#	estate_privilege = estate_bladestewards_bladepriests_rally_faithful
+		#}
+	}
+	on_revoked = {
+		#scaling_with_influence_privilege_tooltip = {
+		#	estate_privilege = estate_bladestewards_bladepriests_rally_faithful
+		#}
+	}
+	influence_scaled_conditional_modifier = {	#Modifier that are applied if the specified conditions are true. At 100% Influence you gain 100% of the modifier.
+		trigger = {
+			NOT = {
+				estate_loyalty = {
+					estate = estate_bladestewards
+					loyalty = 30
+				}
+			}
+		}
+		modifier = {
+			manpower_recovery_speed = -0.2
+		}
+	}
+	influence_scaled_conditional_modifier = {	#Modifier that are applied if the specified conditions are true. At 100% Influence you gain 100% of the modifier.
+		trigger = {
+			estate_loyalty = {
+				estate = estate_bladestewards
+				loyalty = 30
+			}
+			NOT = {
+				estate_loyalty = {
+					estate = estate_bladestewards
+					loyalty = 60
+				}
+			}
+		}
+		modifier = {
+			manpower_recovery_speed = 0.10
+		}
+	}
+	influence_scaled_conditional_modifier = {	#Modifier that are applied if the specified conditions are true. At 100% Influence you gain 100% of the modifier.
+		trigger = {
+			estate_loyalty = {
+				estate = estate_bladestewards
+				loyalty = 60
+			}
+		}
+		modifier = {
+			manpower_recovery_speed = 0.2
+		}
+	}
+	ai_will_do = {
+		factor = 0
+	}
+}
+
+estate_bladestewards_bladepriests_blade_conversion = {
+	icon = privilege_tolerance_heretics
+	max_absolutism = -10
+	influence = 0.1
+	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
+	loyalty = 0.05
+	is_valid = {
+		
+	}
+	can_select = {
+		religion = corinite
+	}
+	penalties = {
+		church_loyalty_modifier = -0.1
+	}
+	on_granted = {
+	}
+	benefits = {
+		global_heretic_missionary_strength  = 0.01
+		global_heathen_missionary_strength  = 0.005
+		enforce_religion_cost = -0.2 
+	}
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+estate_bladestewards_bladepriests_administrative_support = {
+	icon = privilege_grant_autonomy
+	land_share = 5
+	max_absolutism = -5
+	influence = 0.10
+	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
+	loyalty = 0.05
+	is_valid = {	
+	}
+	on_granted = {
+	}
+	conditional_modifier = {
+		trigger = {
+			NOT = { has_estate_privilege = estate_bladestewards_old_guard }
+		}
+		modifier = {
+			yearly_corruption = -0.1
+		}
+	}
+	conditional_modifier = {
+		trigger = {
+			has_estate_privilege = estate_bladestewards_new_model_loyalists
+		}
+		modifier = {
+			max_absolutism = 5
+			bladestewards_loyalty_modifier = 0.15
+		}
+	}
+	penalties = {
+		church_loyalty_modifier = -0.15
+		burghers_loyalty_modifier = -0.1
+	}
+	benefits = {
+		church_influence_modifier = -0.1
+		burghers_influence_modifier = -0.1
+	}
+	modifier_by_land_ownership = {
+		global_tax_modifier = 0.50
+	}
+	mechanics = {
+		exempt_from_seize_land
+	}
+	ai_will_do = {
+		factor = 5
+	}
+}
+
+estate_bladestewards_bladepriests_recruit_minister = {
+	icon = privilege_missionary
+	loyalty = 0.0
+	influence = 0.05
+	max_absolutism = -5
+	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
+	is_valid = {
+		has_dlc = "Domination"
+	}
+	can_select = {
+	}
+	on_granted = {
+		enable_estate_action = {
+			estate_action = RECRUIT_RELIGIOUS_MINISTER_BLADESTEWARDS
+		}
+	}
+	on_revoked = {
+		disable_estate_action = {
+			estate_action = RECRUIT_RELIGIOUS_MINISTER_BLADESTEWARDS
+		}
+	}
+	on_invalid = {
+		disable_estate_action = {
+			estate_action = RECRUIT_RELIGIOUS_MINISTER_BLADESTEWARDS
+		}
+	}
+	ai_will_do = {
+		factor = 0
+	}
+}
+
+estate_bladestewards_chapter_houses = {
+	icon = privilege_multiple_professions
+	land_share = 5
+	max_absolutism = -5
+	influence = 0.1
+	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
+	loyalty = 0.05
+	is_valid = {
+		has_DLC = "Golden Century"
+		religion = corinite
+	}
+	penalties = {
+		global_tax_modifier = -0.1
+	}
+	on_granted = {
+		custom_tooltip = ENABLE_BLADESTEWARDS_HOLY_ORDER
+		#clear_corinite_holy_orders = yes
+	}
+	benefits = {
+		
+	}
+	ai_will_do = {
+		factor = 5
+	}
+	on_revoked = {
+		custom_tooltip = DISABLE_BLADESTEWARDS_HOLY_ORDER
+	}
+}
+
+estate_bladestewards_lakelady_cult = { #Legitimized Cult of the Lady of the Lake
+	icon = privilege_one_faith_one_culture
+	max_absolutism = 5
+	loyalty = 0.15
+	influence = 0.10
+	
+	is_valid = {
+		has_country_flag = lakelady_cult_unlocked
+		religion = corinite
+	}
+	
+	can_select = {
+	}
+	
+	on_granted = {
+		
+	}
+	
+	on_revoked = {
+		
+	}
+	
+	penalties = {
+		custom_tooltip = WATERY_TART
+		reverse_relation_with_same_religion = -20
+		governing_capacity_modifier = -0.25
+	}
+	benefits = {
+		war_exhaustion = -0.1
+		monthly_bm_militarized_society = 0.05
+		church_influence_modifier = -0.1
+	}
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+estate_bladestewards_loyalty_privilege = {
+	icon = privilege_land_rights
+	max_absolutism = -10
+	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 2 } }
+	loyalty = 0.1
+	influence = 0.1
+	penalties = {
+	}
+	benefits = {
+	}
+	ai_will_do = {
+		factor = 10
+		modifier = {
+			factor = 0
+			is_absolutism_active = yes
+		}
+	}
+}

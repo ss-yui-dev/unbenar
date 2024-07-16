@@ -1,0 +1,1724 @@
+
+namespace = DA_Blueprint_event
+
+################# nothing ##################
+
+province_event = {
+	id = DA_Blueprint_event.100 		# nothing
+	title = "DA_Blueprint_event.100.t"
+	desc = "DA_Blueprint_event.100.d"
+	picture = INVENTION_eventPicture
+
+	is_triggered_only = yes
+	option = {
+		name = "DA_Blueprint_event.100.a"
+	}
+}
+
+################# runic #################
+
+province_event = {
+	id = DA_Blueprint_event.101 		# 
+	title = "DA_Blueprint_event.101.t"
+	desc = "DA_Blueprint_event.101.d"
+	picture = DA_rifle_image_eventPicture
+
+	is_triggered_only = yes
+	option = {
+		name = "DA_Blueprint_event.101.a"
+		custom_tooltip = DA_Found_runic_bluprint_tt
+		DA_Found_Blue_rune_effect = {
+			Alchemy_1 = yes
+			Mechanics_1 = yes
+		}
+		owner = {
+			set_country_flag = DA_Unlocked.Runic_Blunderbuss
+		}
+	}
+}
+province_event = {
+	id = DA_Blueprint_event.102 		# 
+	title = "DA_Blueprint_event.102.t"
+	desc = "DA_Blueprint_event.102.d"
+	picture = DA_Battle_axes_image_eventPicture
+
+	is_triggered_only = yes
+	option = {
+		name = "DA_Blueprint_event.101.a"
+		custom_tooltip = DA_Found_runic_bluprint_tt
+		DA_Found_Blue_rune_effect = {
+			Alchemy_1 = yes
+		}
+		owner = {
+			set_country_flag = DA_Unlocked.Runic_Battle_axes
+		}
+	}
+}
+province_event = {
+	id = DA_Blueprint_event.103 		# 
+	title = "DA_Blueprint_event.103.t"
+	desc = "DA_Blueprint_event.103.d"
+	picture = DA_blade_image_eventPicture
+
+	is_triggered_only = yes
+	option = {
+		name = "DA_Blueprint_event.101.a"
+		custom_tooltip = DA_Found_runic_bluprint_tt
+		DA_Found_Blue_rune_effect = {
+			Alchemy_1 = yes
+		}
+		owner = {
+			set_country_flag = DA_Unlocked.Runic_Warhammers
+		}
+	}
+}
+province_event = {
+	id = DA_Blueprint_event.104 		# 
+	title = "DA_Blueprint_event.104.t"
+	desc = "DA_Blueprint_event.104.d"
+	picture = DA_artillery_2_image_eventPicture
+
+	is_triggered_only = yes
+	option = {
+		name = "DA_Blueprint_event.101.a"
+		custom_tooltip = DA_Found_runic_bluprint_tt
+		DA_Found_Blue_rune_effect = {
+			Alchemy_1 = yes
+			Mechanics_1 = yes
+		}
+		owner = {
+			set_country_flag = DA_Unlocked.Runic_Cannon
+		}
+	}
+}
+province_event = {
+	id = DA_Blueprint_event.105 		# 
+	title = "DA_Blueprint_event.105.t"
+	desc = "DA_Blueprint_event.105.d"
+	picture = DA_Power_Gauntlets_image_eventPicture
+
+	is_triggered_only = yes
+	option = {
+		name = "DA_Blueprint_event.101.a"
+		custom_tooltip = DA_Found_runic_bluprint_tt
+		DA_Found_Blue_rune_effect = {
+			Mechanics_1 = yes
+		}
+		owner = {
+			set_country_flag = DA_Unlocked.Runic_Power_Gauntlets
+		}
+	}
+}
+province_event = {
+	id = DA_Blueprint_event.106 		# 
+	title = "DA_Blueprint_event.106.t"
+	desc = "DA_Blueprint_event.106.d"
+	picture = DA_rifle_image_eventPicture
+
+	is_triggered_only = yes
+	option = {
+		name = "DA_Blueprint_event.101.a"
+		custom_tooltip = DA_Found_runic_bluprint_tt
+		DA_Found_Blue_rune_effect = {
+			Mechanics_1 = yes
+			Magic_Theory_1 = yes
+			Alchemy_1 = yes
+		}
+		owner = {
+			set_country_flag = DA_Unlocked.Runic_Rifles
+		}
+	}
+}
+province_event = {
+	id = DA_Blueprint_event.107 		# 
+	title = "DA_Blueprint_event.107.t"
+	desc = "DA_Blueprint_event.107.d"
+	picture = DA_artillery_2_image_eventPicture
+
+	is_triggered_only = yes
+	option = {
+		name = "DA_Blueprint_event.101.a"
+		custom_tooltip = DA_Found_runic_bluprint_tt
+		DA_Found_Blue_rune_effect = {
+			Mechanics_1 = yes
+			Alchemy_1 = yes
+		}
+		owner = {
+			set_country_flag = DA_Unlocked.Runic_Battering_ram
+		}
+	}
+}
+province_event = {
+	id = DA_Blueprint_event.108 		# 
+	title = "DA_Blueprint_event.108.t"
+	desc = "DA_Blueprint_event.108.d"
+	picture = DA_armor_image_eventPicture
+
+	is_triggered_only = yes
+	option = {
+		name = "DA_Blueprint_event.101.a"
+		custom_tooltip = DA_Found_runic_bluprint_tt
+		DA_Found_Blue_rune_effect = {
+			Medicine_1 = yes
+			Magic_Theory_1 = yes
+			Alchemy_1 = yes
+		}
+		owner = {
+			set_country_flag = DA_Unlocked.Runic_Enhancement
+		}
+	}
+}
+province_event = {
+	id = DA_Blueprint_event.109 		# 
+	title = "DA_Blueprint_event.109.t"
+	desc = "DA_Blueprint_event.109.d"
+	picture = DA_blade_image_eventPicture
+
+	is_triggered_only = yes
+	option = {
+		name = "DA_Blueprint_event.101.a"
+		custom_tooltip = DA_Found_runic_bluprint_tt
+		DA_Found_Blue_rune_effect = {
+			Magic_Theory_1 = yes
+			Alchemy_1 = yes
+		}
+		owner = {
+			set_country_flag = DA_Unlocked.Runic_Blade
+		}
+	}
+}
+province_event = {
+	id = DA_Blueprint_event.110 		# 
+	title = "DA_Blueprint_event.110.t"
+	desc = "DA_Blueprint_event.110.d"
+	picture = DA_Crossbow_image_eventPicture
+
+	is_triggered_only = yes
+	option = {
+		name = "DA_Blueprint_event.101.a"
+		custom_tooltip = DA_Found_runic_bluprint_tt
+		DA_Found_Blue_rune_effect = {
+			Mechanics_1 = yes
+			Magic_Theory_1 = yes
+		}
+		owner = {
+			set_country_flag = DA_Unlocked.Runic_Crossbow
+		}
+	}
+}
+province_event = {
+	id = DA_Blueprint_event.111 		# 
+	title = "DA_Blueprint_event.111.t"
+	desc = "DA_Blueprint_event.111.d"
+	picture = DA_spear_image_eventPicture
+
+	is_triggered_only = yes
+	option = {
+		name = "DA_Blueprint_event.101.a"
+		custom_tooltip = DA_Found_runic_bluprint_tt
+		DA_Found_Blue_rune_effect = {
+			Alchemy_1 = yes
+		}
+		owner = {
+			set_country_flag = DA_Unlocked.Runic_Throwing_spear
+		}
+	}
+}
+province_event = {
+	id = DA_Blueprint_event.112 		# 
+	title = "DA_Blueprint_event.112.t"
+	desc = "DA_Blueprint_event.112.d"
+	picture = DA_Shield_image_eventPicture
+
+	is_triggered_only = yes
+	option = {
+		name = "DA_Blueprint_event.101.a"
+		custom_tooltip = DA_Found_runic_bluprint_tt
+		DA_Found_Blue_rune_effect = {
+			Alchemy_1 = yes
+		}
+		owner = {
+			set_country_flag = DA_Unlocked.Runic_Tower_shield
+		}
+	}
+}
+province_event = {
+	id = DA_Blueprint_event.113 		# 
+	title = "DA_Blueprint_event.113.t"
+	desc = "DA_Blueprint_event.113.d"
+	picture = DA_spear_image_eventPicture
+
+	is_triggered_only = yes
+	option = {
+		name = "DA_Blueprint_event.101.a"
+		custom_tooltip = DA_Found_runic_bluprint_tt
+		DA_Found_Blue_rune_effect = {
+			Magic_Theory_1 = yes
+			Alchemy_1 = yes
+		}
+		owner = {
+			set_country_flag = DA_Unlocked.Runic_Pike
+		}
+	}
+}
+province_event = {
+	id = DA_Blueprint_event.114 		# 
+	title = "DA_Blueprint_event.114.t"
+	desc = "DA_Blueprint_event.114.d"
+	picture = DA_rifle_image_eventPicture
+
+	is_triggered_only = yes
+	option = {
+		name = "DA_Blueprint_event.101.a"
+		custom_tooltip = DA_Found_runic_bluprint_tt
+		DA_Found_Blue_rune_effect = {
+			Mechanics_1 = yes
+			Magic_Theory_1 = yes
+			Alchemy_1 = yes
+		}
+		owner = {
+			set_country_flag = DA_Unlocked.Runic_Arquebus
+		}
+	}
+}
+
+province_event = {
+	id = DA_Blueprint_event.115 		# 
+	title = "DA_Blueprint_event.115.t"
+	desc = "DA_Blueprint_event.115.d"
+	picture = DA_Crossbow_image_eventPicture
+
+	is_triggered_only = yes
+	option = {
+		name = "DA_Blueprint_event.101.a"
+		custom_tooltip = DA_Found_runic_bluprint_tt
+		DA_Found_Blue_rune_effect = {
+			Mechanics_1 = yes
+			Magic_Theory_1 = yes
+			Alchemy_1 = yes
+		}
+		owner = {
+			set_country_flag = DA_Unlocked.Runic_Recurved_Bow
+		}
+	}
+}
+
+province_event = {
+	id = DA_Blueprint_event.116 		# 
+	title = "DA_Blueprint_event.116.t"
+	desc = "DA_Blueprint_event.116.d"
+	picture = DA_Crossbow_image_eventPicture
+
+	is_triggered_only = yes
+	option = {
+		name = "DA_Blueprint_event.101.a"
+		custom_tooltip = DA_Found_runic_bluprint_tt
+		DA_Found_Blue_rune_effect = {
+			Mechanics_1 = yes
+			Magic_Theory_1 = yes
+			Alchemy_1 = yes
+		}
+		owner = {
+			set_country_flag = DA_Unlocked.Runic_Ballista
+		}
+	}
+}
+
+province_event = {
+	id = DA_Blueprint_event.117 		# 
+	title = "DA_Blueprint_event.117.t"
+	desc = "DA_Blueprint_event.117.d"
+	picture = DA_artillery_image_eventPicture
+
+	is_triggered_only = yes
+	option = {
+		name = "DA_Blueprint_event.101.a"
+		custom_tooltip = DA_Found_runic_bluprint_tt
+		DA_Found_Blue_rune_effect = {
+			Mechanics_1 = yes
+			Magic_Theory_1 = yes
+			Alchemy_1 = yes
+		}
+		owner = {
+			set_country_flag = DA_Unlocked.Runic_Basilisk
+		}
+	}
+}
+
+province_event = {
+	id = DA_Blueprint_event.140 		# 
+	title = "DA_Blueprint_event.140.t"
+	desc = "DA_Blueprint_event.140.d"
+	picture = DA_Golem_image_eventPicture
+
+	is_triggered_only = yes
+	option = {
+		name = "DA_Blueprint_event.101.a"
+		custom_tooltip = DA_Found_runic_bluprint_tt
+		DA_Found_Blue_rune_effect = {
+			Golem = yes
+			Mechanics_1 = yes
+			Magic_Theory_1 = yes
+			Alchemy_1 = yes
+		}
+		owner = {
+			set_country_flag = DA_Unlocked.Runic_Def_Golem_1
+		}
+	}
+}
+
+province_event = {
+	id = DA_Blueprint_event.141 		# 
+	title = "DA_Blueprint_event.141.t"
+	desc = "DA_Blueprint_event.141.d"
+	picture = DA_Golem_image_eventPicture
+
+	is_triggered_only = yes
+	option = {
+		name = "DA_Blueprint_event.101.a"
+		custom_tooltip = DA_Found_runic_bluprint_tt
+		DA_Found_Blue_rune_effect = {
+			Golem = yes
+			Mechanics_1 = yes
+			Magic_Theory_1 = yes
+			Alchemy_1 = yes
+		}
+		owner = {
+			set_country_flag = DA_Unlocked.Runic_Atk_Golem_1
+		}
+	}
+}
+
+province_event = {
+	id = DA_Blueprint_event.142		# 
+	title = "DA_Blueprint_event.142.t"
+	desc = "DA_Blueprint_event.142.d"
+	picture = DA_Golem_image_eventPicture
+
+	is_triggered_only = yes
+	option = {
+		name = "DA_Blueprint_event.101.a"
+		custom_tooltip = DA_Found_runic_bluprint_tt
+		DA_Found_Blue_rune_effect = {
+			ClockWork = yes
+			Mechanics_1 = yes
+		}
+		owner = {
+			set_country_flag = DA_Unlocked.Clock_limbs
+		}
+	}
+}
+
+province_event = {
+	id = DA_Blueprint_event.143 		# 
+	title = "DA_Blueprint_event.143.t"
+	desc = "DA_Blueprint_event.143.d"
+	picture = DA_rifle_image_eventPicture
+
+	is_triggered_only = yes
+	option = {
+		name = "DA_Blueprint_event.101.a"
+		custom_tooltip = DA_Found_runic_bluprint_tt
+		DA_Found_Blue_rune_effect = {
+			ClockWork = yes
+			Mechanics_1 = yes
+		}
+		owner = {
+			set_country_flag = DA_Unlocked.Clock_rifles
+		}
+	}
+}
+
+province_event = {
+	id = DA_Blueprint_event.144 		# 
+	title = "DA_Blueprint_event.144.t"
+	desc = "DA_Blueprint_event.144.d"
+	picture = DA_Power_Gauntlets_image_eventPicture
+
+	is_triggered_only = yes
+	option = {
+		name = "DA_Blueprint_event.101.a"
+		custom_tooltip = DA_Found_runic_bluprint_tt
+		DA_Found_Blue_rune_effect = {
+			ClockWork = yes
+			Mechanics_1 = yes
+		}
+		owner = {
+			set_country_flag = DA_Unlocked.Clock_gauntlets
+		}
+	}
+}
+province_event = {
+	id = DA_Blueprint_event.145 		# 
+	title = "DA_Blueprint_event.145.t"
+	desc = "DA_Blueprint_event.145.d"
+	picture = DA_spear_image_eventPicture
+
+	is_triggered_only = yes
+	option = {
+		name = "DA_Blueprint_event.101.a"
+		custom_tooltip = DA_Found_runic_bluprint_tt
+		DA_Found_Blue_rune_effect = {
+			ClockWork = yes
+			Mechanics_1 = yes
+		}
+		owner = {
+			set_country_flag = DA_Unlocked.Clock_Voulge
+		}
+	}
+}
+province_event = {
+	id = DA_Blueprint_event.146 		# 
+	title = "DA_Blueprint_event.146.t"
+	desc = "DA_Blueprint_event.146.d"
+	picture = DA_Crossbow_image_eventPicture
+
+	is_triggered_only = yes
+	option = {
+		name = "DA_Blueprint_event.101.a"
+		custom_tooltip = DA_Found_runic_bluprint_tt
+		DA_Found_Blue_rune_effect = {
+			ClockWork = yes
+			Mechanics_1 = yes
+		}
+		owner = {
+			set_country_flag = DA_Unlocked.Clock_rep_crossbow
+		}
+	}
+}
+province_event = {
+	id = DA_Blueprint_event.147 		# 
+	title = "DA_Blueprint_event.147.t"
+	desc = "DA_Blueprint_event.147.d"
+	picture = DA_Crossbow_image_eventPicture
+
+	is_triggered_only = yes
+	option = {
+		name = "DA_Blueprint_event.101.a"
+		custom_tooltip = DA_Found_runic_bluprint_tt
+		DA_Found_Blue_rune_effect = {
+			ClockWork = yes
+			Mechanics_1 = yes
+		}
+		owner = {
+			set_country_flag = DA_Unlocked.Clock_ballista
+		}
+	}
+}
+province_event = {
+	id = DA_Blueprint_event.148 		# 
+	title = "DA_Blueprint_event.148.t"
+	desc = "DA_Blueprint_event.148.d"
+	picture = DA_artillery_image_eventPicture
+
+	is_triggered_only = yes
+	option = {
+		name = "DA_Blueprint_event.101.a"
+		custom_tooltip = DA_Found_runic_bluprint_tt
+		DA_Found_Blue_rune_effect = {
+			ClockWork = yes
+			Mechanics_1 = yes
+		}
+		owner = {
+			set_country_flag = DA_Unlocked.Clock_bombard
+		}
+	}
+}
+
+province_event = {
+	id = DA_Blueprint_event.149 		# 
+	title = "DA_Blueprint_event.149.t"
+	desc = "DA_Blueprint_event.149.d"
+	picture = DA_Hammer_image_eventPicture
+
+	is_triggered_only = yes
+	option = {
+		name = "DA_Blueprint_event.101.a"
+		custom_tooltip = DA_Found_runic_bluprint_tt
+		DA_Found_Blue_rune_effect = {
+			Explosive = yes
+			Alchemy_1 = yes
+			Mechanics_1 = yes
+		}
+		owner = {
+			set_country_flag = DA_Unlocked.Expl_Bludgeon
+		}
+	}
+}
+
+province_event = {
+	id = DA_Blueprint_event.150 		# 
+	title = "DA_Blueprint_event.150.t"
+	desc = "DA_Blueprint_event.150.d"
+	picture = DA_Hammer_image_eventPicture
+
+	is_triggered_only = yes
+	option = {
+		name = "DA_Blueprint_event.101.a"
+		custom_tooltip = DA_Found_runic_bluprint_tt
+		DA_Found_Blue_rune_effect = {
+			Explosive = yes
+			Alchemy_1 = yes
+		}
+		owner = {
+			set_country_flag = DA_Unlocked.Expl_Morning_Star
+		}
+	}
+}
+
+province_event = {
+	id = DA_Blueprint_event.151 		# 
+	title = "DA_Blueprint_event.151.t"
+	desc = "DA_Blueprint_event.151.d"
+	picture = DA_blade_image_eventPicture
+
+	is_triggered_only = yes
+	option = {
+		name = "DA_Blueprint_event.101.a"
+		custom_tooltip = DA_Found_runic_bluprint_tt
+		DA_Found_Blue_rune_effect = {
+			Explosive = yes
+			Alchemy_1 = yes
+			Mechanics_1 = yes
+		}
+		owner = {
+			set_country_flag = DA_Unlocked.Expl_Longsword
+		}
+	}
+}
+
+province_event = {
+	id = DA_Blueprint_event.152 		# 
+	title = "DA_Blueprint_event.152.t"
+	desc = "DA_Blueprint_event.152.d"
+	picture = DA_spear_image_eventPicture
+
+	is_triggered_only = yes
+	option = {
+		name = "DA_Blueprint_event.101.a"
+		custom_tooltip = DA_Found_runic_bluprint_tt
+		DA_Found_Blue_rune_effect = {
+			Explosive = yes
+			Alchemy_1 = yes
+		}
+		owner = {
+			set_country_flag = DA_Unlocked.Expl_Javelin
+		}
+	}
+}
+
+province_event = {
+	id = DA_Blueprint_event.153 		# 
+	title = "DA_Blueprint_event.153.t"
+	desc = "DA_Blueprint_event.153.d"
+	picture = DA_spear_image_eventPicture
+
+	is_triggered_only = yes
+	option = {
+		name = "DA_Blueprint_event.101.a"
+		custom_tooltip = DA_Found_runic_bluprint_tt
+		DA_Found_Blue_rune_effect = {
+			Explosive = yes
+			Alchemy_1 = yes
+		}
+		owner = {
+			set_country_flag = DA_Unlocked.Expl_Arbalest
+		}
+	}
+}
+
+province_event = {
+	id = DA_Blueprint_event.154 		# 
+	title = "DA_Blueprint_event.154.t"
+	desc = "DA_Blueprint_event.154.d"
+	picture = DA_Power_Gauntlets_image_eventPicture
+
+	is_triggered_only = yes
+	option = {
+		name = "DA_Blueprint_event.101.a"
+		custom_tooltip = DA_Found_runic_bluprint_tt
+		DA_Found_Blue_rune_effect = {
+			Explosive = yes
+			Alchemy_1 = yes
+			Mechanics_1 = yes
+		}
+		owner = {
+			set_country_flag = DA_Unlocked.Expl_Hand_Cannon
+		}
+	}
+}
+
+province_event = {
+	id = DA_Blueprint_event.155 		# 
+	title = "DA_Blueprint_event.155.t"
+	desc = "DA_Blueprint_event.155.d"
+	picture = DA_blade_image_eventPicture
+
+	is_triggered_only = yes
+	option = {
+		name = "DA_Blueprint_event.101.a"
+		custom_tooltip = DA_Found_runic_bluprint_tt
+		DA_Found_Blue_rune_effect = {
+			Explosive = yes
+			Alchemy_1 = yes
+			Mechanics_1 = yes
+		}
+		owner = {
+			set_country_flag = DA_Unlocked.Expl_Throwing_Knife
+		}
+	}
+}
+
+################# steam-powered #################
+
+province_event = {
+	id = DA_Blueprint_event.200 		# 
+	title = "DA_Blueprint_event.200.t"
+	desc = "DA_Blueprint_event.200.d"
+	picture = DA_tank_image_eventPicture
+
+	is_triggered_only = yes
+	option = {
+		name = "DA_Blueprint_event.101.a"
+		custom_tooltip = DA_Found_steam_bluprint_tt
+		DA_Found_Blue_rune_effect = {
+			Motorization = yes
+			Mechanics_2 = yes
+			Magic_Theory_2 = yes
+		}
+		owner = {
+			set_country_flag = DA_Unlocked.Runic_Steam_Tanks
+		}
+	}
+}
+province_event = {
+	id = DA_Blueprint_event.201 		# 
+	title = "DA_Blueprint_event.201.t"
+	desc = "DA_Blueprint_event.201.d"
+	picture = DA_armor_image_eventPicture
+
+	is_triggered_only = yes
+	option = {
+		name = "DA_Blueprint_event.101.a"
+		custom_tooltip = DA_Found_steam_bluprint_tt
+		DA_Found_Blue_rune_effect = {
+			Alchemy_1 = yes
+			Mechanics_2 = yes
+		}
+		owner = {
+			set_country_flag = DA_Unlocked.Steam_Powered_Exosuit
+		}
+	}
+}
+province_event = {
+	id = DA_Blueprint_event.202 		# 
+	title = "DA_Blueprint_event.202.t"
+	desc = "DA_Blueprint_event.202.d"
+	picture = DA_artillery_image_eventPicture
+
+	is_triggered_only = yes
+	option = {
+		name = "DA_Blueprint_event.101.a"
+		custom_tooltip = DA_Found_steam_bluprint_tt
+		DA_Found_Blue_rune_effect = {
+			Mechanics_2 = yes
+		}
+		owner = {
+			set_country_flag = DA_Unlocked.Steam_Powered_Artillery
+		}
+	}
+}
+province_event = {
+	id = DA_Blueprint_event.203 		# 
+	title = "DA_Blueprint_event.203.t"
+	desc = "DA_Blueprint_event.203.d"
+	picture = DA_spear_image_eventPicture
+
+	is_triggered_only = yes
+	option = {
+		name = "DA_Blueprint_event.101.a"
+		custom_tooltip = DA_Found_steam_bluprint_tt
+		DA_Found_Blue_rune_effect = {
+			Mechanics_2 = yes
+		}
+		owner = {
+			set_country_flag = DA_Unlocked.Steam_Powered_Drill_Spears
+		}
+	}
+}
+province_event = {
+	id = DA_Blueprint_event.204 		#  
+	title = "DA_Blueprint_event.204.t"
+	desc = "DA_Blueprint_event.204.d"
+	picture = DA_Ranged_complicated_image_eventPicture
+
+	is_triggered_only = yes
+	option = {
+		name = "DA_Blueprint_event.101.a"
+		custom_tooltip = DA_Found_steam_bluprint_tt
+		DA_Found_Blue_rune_effect = {
+			Alchemy_2 = yes
+			Mechanics_2 = yes
+		}
+		owner = {
+			set_country_flag = DA_Unlocked.Steam_Flamethrowers
+		}
+	}
+}
+province_event = {
+	id = DA_Blueprint_event.205 		#  
+	title = "DA_Blueprint_event.205.t"
+	desc = "DA_Blueprint_event.205.d"
+	picture = DA_ChainSaw_image_eventPicture
+
+	is_triggered_only = yes
+	option = {
+		name = "DA_Blueprint_event.101.a"
+		custom_tooltip = DA_Found_steam_bluprint_tt
+		DA_Found_Blue_rune_effect = {
+			Alchemy_2 = yes
+			Mechanics_2 = yes
+		}
+		owner = {
+			set_country_flag = DA_Unlocked.Steam_Power_Saws
+		}
+	}
+}
+province_event = {
+	id = DA_Blueprint_event.206 		#  
+	title = "DA_Blueprint_event.206.t"
+	desc = "DA_Blueprint_event.206.d"
+	picture = DA_Ranged_complicated_image_eventPicture
+
+	is_triggered_only = yes
+	option = {
+		name = "DA_Blueprint_event.101.a"
+		custom_tooltip = DA_Found_steam_bluprint_tt
+		DA_Found_Blue_rune_effect = {
+			Alchemy_2 = yes
+			Mechanics_2 = yes
+		}
+		owner = {
+			set_country_flag = DA_Unlocked.Steam_Grenade_Launchers
+		}
+	}
+}
+province_event = {
+	id = DA_Blueprint_event.240 		# 
+	title = "DA_Blueprint_event.240.t"
+	desc = "DA_Blueprint_event.240.d"
+	picture = DA_Golem_image_eventPicture
+
+	is_triggered_only = yes
+	option = {
+		name = "DA_Blueprint_event.101.a"
+		custom_tooltip = DA_Found_steam_bluprint_tt
+		DA_Found_Blue_rune_effect = {
+			Golem = yes
+			Mechanics_2 = yes
+		}
+		owner = {
+			set_country_flag = DA_Unlocked.Runic_Def_Golem_2
+		}
+	}
+}
+
+province_event = {
+	id = DA_Blueprint_event.241 		# 
+	title = "DA_Blueprint_event.241.t"
+	desc = "DA_Blueprint_event.241.d"
+	picture = DA_Golem_image_eventPicture
+
+	is_triggered_only = yes
+	option = {
+		name = "DA_Blueprint_event.101.a"
+		custom_tooltip = DA_Found_steam_bluprint_tt
+		DA_Found_Blue_rune_effect = {
+			Golem = yes
+			Mechanics_2 = yes
+		}
+		owner = {
+			set_country_flag = DA_Unlocked.Runic_Atk_Golem_2
+		}
+	}
+}
+
+province_event = {
+	id = DA_Blueprint_event.242		# 
+	title = "DA_Blueprint_event.242.t"
+	desc = "DA_Blueprint_event.242.d"
+	picture = DA_armor_image_eventPicture
+
+	is_triggered_only = yes
+	option = {
+		name = "DA_Blueprint_event.101.a"
+		custom_tooltip = DA_Found_steam_bluprint_tt
+		DA_Found_Blue_rune_effect = {
+			ClockWork = yes
+			Alchemy_2 = yes
+			Mechanics_2 = yes
+		}
+		owner = {
+			set_country_flag = DA_Unlocked.Clock_exoskeleton
+		}
+	}
+}
+
+province_event = {
+	id = DA_Blueprint_event.243 		# 
+	title = "DA_Blueprint_event.243.t"
+	desc = "DA_Blueprint_event.243.d"
+	picture = DA_rifle_image_eventPicture
+
+	is_triggered_only = yes
+	option = {
+		name = "DA_Blueprint_event.101.a"
+		custom_tooltip = DA_Found_steam_bluprint_tt
+		DA_Found_Blue_rune_effect = {
+			ClockWork = yes
+			Alchemy_2 = yes
+			Mechanics_2 = yes
+		}
+		owner = {
+			set_country_flag = DA_Unlocked.Clock_Steam_rifles
+		}
+	}
+}
+
+province_event = {
+	id = DA_Blueprint_event.244 		# 
+	title = "DA_Blueprint_event.244.t"
+	desc = "DA_Blueprint_event.244.d"
+	picture = DA_Power_Gauntlets_image_eventPicture
+
+	is_triggered_only = yes
+	option = {
+		name = "DA_Blueprint_event.101.a"
+		custom_tooltip = DA_Found_steam_bluprint_tt
+		DA_Found_Blue_rune_effect = {
+			ClockWork = yes
+			Alchemy_2 = yes
+			Mechanics_2 = yes
+		}
+		owner = {
+			set_country_flag = DA_Unlocked.Clock_Steam_gauntlets
+		}
+	}
+}
+
+province_event = {
+	id = DA_Blueprint_event.245 		# 
+	title = "DA_Blueprint_event.245.t"
+	desc = "DA_Blueprint_event.245.d"
+	picture = DA_tank_image_eventPicture
+
+	is_triggered_only = yes
+	option = {
+		name = "DA_Blueprint_event.101.a"
+		custom_tooltip = DA_Found_steam_bluprint_tt
+		DA_Found_Blue_rune_effect = {
+			Motorization = yes
+			ClockWork = yes
+			Alchemy_2 = yes
+			Mechanics_2 = yes
+		}
+		owner = {
+			set_country_flag = DA_Unlocked.Clock_Steam_Tanks
+		}
+	}
+}
+
+province_event = {
+	id = DA_Blueprint_event.246 		# 
+	title = "DA_Blueprint_event.246.t"
+	desc = "DA_Blueprint_event.246.d"
+	picture = DA_artillery_image_eventPicture
+
+	is_triggered_only = yes
+	option = {
+		name = "DA_Blueprint_event.101.a"
+		custom_tooltip = DA_Found_steam_bluprint_tt
+		DA_Found_Blue_rune_effect = {
+			ClockWork = yes
+			Alchemy_2 = yes
+			Mechanics_2 = yes
+		}
+		owner = {
+			set_country_flag = DA_Unlocked.Clock_Steam_Bombard
+		}
+	}
+}
+
+province_event = {
+	id = DA_Blueprint_event.247 		# 
+	title = "DA_Blueprint_event.247.t"
+	desc = "DA_Blueprint_event.247.d"
+	picture = DA_ballista_image_eventPicture
+
+	is_triggered_only = yes
+	option = {
+		name = "DA_Blueprint_event.101.a"
+		custom_tooltip = DA_Found_steam_bluprint_tt
+		DA_Found_Blue_rune_effect = {
+			ClockWork = yes
+			Alchemy_2 = yes
+			Magic_Theory_1 = yes
+			Mechanics_2 = yes
+		}
+		owner = {
+			set_country_flag = DA_Unlocked.Clock_Steam_Ballista
+		}
+	}
+}
+
+province_event = {
+	id = DA_Blueprint_event.248 		# 
+	title = "DA_Blueprint_event.248.t"
+	desc = "DA_Blueprint_event.248.d"
+	picture = DA_Vehicle_civilian_image_eventPicture
+
+	is_triggered_only = yes
+	option = {
+		name = "DA_Blueprint_event.101.a"
+		custom_tooltip = DA_Found_steam_bluprint_tt
+		DA_Found_Blue_rune_effect = {
+			Motorization = yes
+			Alchemy_2 = yes
+			Magic_Theory_1 = yes
+			Mechanics_2 = yes
+		}
+		owner = {
+			set_country_flag = DA_Unlocked.Vehicle_Driller
+		}
+	}
+}
+
+province_event = {
+	id = DA_Blueprint_event.249 		# 
+	title = "DA_Blueprint_event.249.t"
+	desc = "DA_Blueprint_event.249.d"
+	picture = DA_tank_advanced_image_eventPicture
+
+	is_triggered_only = yes
+	option = {
+		name = "DA_Blueprint_event.101.a"
+		custom_tooltip = DA_Found_steam_bluprint_tt
+		DA_Found_Blue_rune_effect = {
+			Motorization = yes
+			Alchemy_2 = yes
+			Mechanics_3 = yes
+		}
+		owner = {
+			set_country_flag = DA_Unlocked.Vehicle_Runesteel_Ravager
+		}
+	}
+}
+
+province_event = {
+	id = DA_Blueprint_event.250 		# 
+	title = "DA_Blueprint_event.250.t"
+	desc = "DA_Blueprint_event.250.d"
+	picture = DA_tank_advanced_image_eventPicture
+
+	is_triggered_only = yes
+	option = {
+		name = "DA_Blueprint_event.101.a"
+		custom_tooltip = DA_Found_steam_bluprint_tt
+		DA_Found_Blue_rune_effect = {
+			Motorization = yes
+			Alchemy_2 = yes
+			Mechanics_2 = yes
+		}
+		owner = {
+			set_country_flag = DA_Unlocked.Vehicle_Forgefire_Fury
+		}
+	}
+}
+
+province_event = {
+	id = DA_Blueprint_event.251 		# 
+	title = "DA_Blueprint_event.251.t"
+	desc = "DA_Blueprint_event.251.d"
+	picture = DA_Mecha_image_eventPicture
+
+	is_triggered_only = yes
+	option = {
+		name = "DA_Blueprint_event.101.a"
+		custom_tooltip = DA_Found_steam_bluprint_tt
+		DA_Found_Blue_rune_effect = {
+			Motorization = yes
+			Golem = yes
+			Alchemy_2 = yes
+			Magic_Theory_3 = yes
+			Mechanics_3 = yes
+		}
+		owner = {
+			set_country_flag = DA_Unlocked.Vehicle_Steam_Arcanomech_Vanguard
+		}
+	}
+}
+
+province_event = {
+	id = DA_Blueprint_event.252 		# 
+	title = "DA_Blueprint_event.252.t"
+	desc = "DA_Blueprint_event.252.d"
+	picture = DA_Mecha_image_eventPicture
+
+	is_triggered_only = yes
+	option = {
+		name = "DA_Blueprint_event.101.a"
+		custom_tooltip = DA_Found_steam_bluprint_tt
+		DA_Found_Blue_rune_effect = {
+			Motorization = yes
+			Golem = yes
+			Alchemy_2 = yes
+			Magic_Theory_3 = yes
+			Mechanics_3 = yes
+		}
+		owner = {
+			set_country_flag = DA_Unlocked.Vehicle_Steam_Arcanomech_Holder
+		}
+	}
+}
+
+province_event = {
+	id = DA_Blueprint_event.253 		# 
+	title = "DA_Blueprint_event.253.t"
+	desc = "DA_Blueprint_event.253.d"
+	picture = DA_Golem_image_eventPicture
+
+	is_triggered_only = yes
+	option = {
+		name = "DA_Blueprint_event.101.a"
+		custom_tooltip = DA_Found_steam_bluprint_tt
+		DA_Found_Blue_rune_effect = {
+			Bio_Construct = yes
+			Alchemy_3 = yes
+			Medicine_3 = yes
+		}
+		owner = {
+			set_country_flag = DA_Unlocked.Bio_cons_Abomination
+		}
+	}
+}
+
+province_event = {
+	id = DA_Blueprint_event.254 		# 
+	title = "DA_Blueprint_event.254.t"
+	desc = "DA_Blueprint_event.254.d"
+	picture = DA_Golem_image_eventPicture
+
+	is_triggered_only = yes
+	option = {
+		name = "DA_Blueprint_event.101.a"
+		custom_tooltip = DA_Found_steam_bluprint_tt
+		DA_Found_Blue_rune_effect = {
+			Bio_Construct = yes
+			Alchemy_3 = yes
+			Medicine_3 = yes
+		}
+		owner = {
+			set_country_flag = DA_Unlocked.Bio_cons_Living_Armor
+		}
+	}
+}
+
+province_event = {
+	id = DA_Blueprint_event.255 		# 
+	title = "DA_Blueprint_event.255.t"
+	desc = "DA_Blueprint_event.255.d"
+	picture = DA_Golem_image_eventPicture
+
+	is_triggered_only = yes
+	option = {
+		name = "DA_Blueprint_event.101.a"
+		custom_tooltip = DA_Found_steam_bluprint_tt
+		DA_Found_Blue_rune_effect = {
+			Bio_Construct = yes
+			Alchemy_3 = yes
+			Medicine_3 = yes
+		}
+		owner = {
+			set_country_flag = DA_Unlocked.Bio_cons_Chimera
+		}
+	}
+}
+
+province_event = {
+	id = DA_Blueprint_event.256 		# images about bio contruct need redoing
+	title = "DA_Blueprint_event.256.t"
+	desc = "DA_Blueprint_event.256.d"
+	picture = INVENTION_eventPicture
+
+	is_triggered_only = yes
+	option = {
+		name = "DA_Blueprint_event.101.a"
+		custom_tooltip = DA_Found_steam_bluprint_tt
+		DA_Found_Blue_rune_effect = {
+			Bio_Construct = yes
+			Alchemy_4 = yes
+			Medicine_4 = yes
+		}
+		owner = {
+			set_country_flag = DA_Unlocked.Bio_cons_Purple_Worm
+		}
+	}
+}
+
+province_event = {
+	id = DA_Blueprint_event.257 		# 
+	title = "DA_Blueprint_event.257.t"
+	desc = "DA_Blueprint_event.257.d"
+	picture = INVENTION_eventPicture
+
+	is_triggered_only = yes
+	option = {
+		name = "DA_Blueprint_event.101.a"
+		custom_tooltip = DA_Found_steam_bluprint_tt
+		DA_Found_Blue_rune_effect = {
+			Bio_Construct = yes
+			Alchemy_3 = yes
+			Medicine_3 = yes
+		}
+		owner = {
+			set_country_flag = DA_Unlocked.Bio_cons_Ram
+		}
+	}
+}
+
+################# runic circuits #################
+province_event = {
+	id = DA_Blueprint_event.300 		# 
+	title = "DA_Blueprint_event.300.t"
+	desc = "DA_Blueprint_event.300.d"
+	picture = DA_armor_image_eventPicture
+
+	is_triggered_only = yes
+	option = {
+		name = "DA_Blueprint_event.101.a"
+		custom_tooltip = DA_Found_Electrical_Blueprint_tt
+		DA_Found_Blue_rune_effect = {
+			Alchemy_2 = yes
+			Mechanics_3 = yes
+		}
+		owner = {
+			set_country_flag = DA_Unlocked.Electric_Armor
+		}
+	}
+}
+province_event = {
+	id = DA_Blueprint_event.301 		# 
+	title = "DA_Blueprint_event.301.t"
+	desc = "DA_Blueprint_event.301.d"
+	picture = DA_artillery_image_eventPicture
+
+	is_triggered_only = yes
+	option = {
+		name = "DA_Blueprint_event.101.a"
+		custom_tooltip = DA_Found_Electrical_Blueprint_tt
+		DA_Found_Blue_rune_effect = {
+			Alchemy_3 = yes
+			Mechanics_3 = yes
+		}
+		owner = {
+			set_country_flag = DA_Unlocked.Electric_Automatic_artillery
+		}
+	}
+}
+province_event = {
+	id = DA_Blueprint_event.302 		# 
+	title = "DA_Blueprint_event.302.t"
+	desc = "DA_Blueprint_event.302.d"
+	picture = DA_rifle_image_eventPicture
+
+	is_triggered_only = yes
+	option = {
+		name = "DA_Blueprint_event.101.a"
+		custom_tooltip = DA_Found_Electrical_Blueprint_tt
+		DA_Found_Blue_rune_effect = {
+			Alchemy_2 = yes
+			Mechanics_3 = yes
+		}
+		owner = {
+			set_country_flag = DA_Unlocked.Electric_Automatic_Rifle
+		}
+	}
+}
+province_event = {
+	id = DA_Blueprint_event.303 		# 
+	title = "DA_Blueprint_event.303.t"
+	desc = "DA_Blueprint_event.303.d"
+	picture = DA_Hammer_image_eventPicture
+
+	is_triggered_only = yes
+	option = {
+		name = "DA_Blueprint_event.101.a"
+		custom_tooltip = DA_Found_Electrical_Blueprint_tt
+		DA_Found_Blue_rune_effect = {
+			Alchemy_2 = yes
+			Mechanics_3 = yes
+		}
+		owner = {
+			set_country_flag = DA_Unlocked.Electric_Warhammer
+		}
+	}
+}
+province_event = {
+	id = DA_Blueprint_event.304 		# 
+	title = "DA_Blueprint_event.304.t"
+	desc = "DA_Blueprint_event.304.d"
+	picture = DA_Ranged_complicated_image_eventPicture
+
+	is_triggered_only = yes
+	option = {
+		name = "DA_Blueprint_event.101.a"
+		custom_tooltip = DA_Found_Electrical_Blueprint_tt
+		DA_Found_Blue_rune_effect = {
+			Explosive = yes
+			Alchemy_4 = yes
+			Magic_Theory_3 = yes
+			Mechanics_4 = yes
+		}
+		owner = {
+			set_country_flag = DA_Unlocked.Electric_Minigun
+		}
+	}
+}
+province_event = {
+	id = DA_Blueprint_event.340 		# 
+	title = "DA_Blueprint_event.340.t"
+	desc = "DA_Blueprint_event.340.d"
+	picture = DA_Golem_image_eventPicture
+
+	is_triggered_only = yes
+	option = {
+		name = "DA_Blueprint_event.101.a"
+		custom_tooltip = DA_Found_Electrical_Blueprint_tt
+		DA_Found_Blue_rune_effect = {
+			Golem = yes
+			Mechanics_3 = yes
+		}
+		owner = {
+			set_country_flag = DA_Unlocked.Runic_Def_Golem_3
+		}
+	}
+}
+
+province_event = {
+	id = DA_Blueprint_event.341 		# 
+	title = "DA_Blueprint_event.341.t"
+	desc = "DA_Blueprint_event.341.d"
+	picture = DA_Golem_image_eventPicture
+
+	is_triggered_only = yes
+	option = {
+		name = "DA_Blueprint_event.101.a"
+		custom_tooltip = DA_Found_Electrical_Blueprint_tt
+		DA_Found_Blue_rune_effect = {
+			Golem = yes
+			Mechanics_3 = yes
+		}
+		owner = {
+			set_country_flag = DA_Unlocked.Runic_Atk_Golem_3
+		}
+	}
+}
+province_event = {
+	id = DA_Blueprint_event.342		# 
+	title = "DA_Blueprint_event.342.t"
+	desc = "DA_Blueprint_event.342.d"
+	picture = DA_armor_image_eventPicture
+
+	is_triggered_only = yes
+	option = {
+		name = "DA_Blueprint_event.101.a"
+		custom_tooltip = DA_Found_Electrical_Blueprint_tt
+		DA_Found_Blue_rune_effect = {
+			ClockWork = yes
+			Alchemy_2 = yes
+			Mechanics_3 = yes
+		}
+		owner = {
+			set_country_flag = DA_Unlocked.Clock_electric_exoskeleton
+		}
+	}
+}
+
+province_event = {
+	id = DA_Blueprint_event.343 		# 
+	title = "DA_Blueprint_event.343.t"
+	desc = "DA_Blueprint_event.343.d"
+	picture = DA_rifle_image_eventPicture
+
+	is_triggered_only = yes
+	option = {
+		name = "DA_Blueprint_event.101.a"
+		custom_tooltip = DA_Found_Electrical_Blueprint_tt
+		DA_Found_Blue_rune_effect = {
+			ClockWork = yes
+			Alchemy_2 = yes
+			Mechanics_3 = yes
+		}
+		owner = {
+			set_country_flag = DA_Unlocked.Clock_electric_rifles
+		}
+	}
+}
+
+province_event = {
+	id = DA_Blueprint_event.344 		# 
+	title = "DA_Blueprint_event.344.t"
+	desc = "DA_Blueprint_event.344.d"
+	picture = DA_Power_Gauntlets_image_eventPicture
+
+	is_triggered_only = yes
+	option = {
+		name = "DA_Blueprint_event.101.a"
+		custom_tooltip = DA_Found_Electrical_Blueprint_tt
+		DA_Found_Blue_rune_effect = {
+			ClockWork = yes
+			Alchemy_2 = yes
+			Magic_Theory_2 = yes
+			Mechanics_3 = yes
+		}
+		owner = {
+			set_country_flag = DA_Unlocked.Clock_electric_gauntlets
+		}
+	}
+}
+
+province_event = {
+	id = DA_Blueprint_event.345 		# 
+	title = "DA_Blueprint_event.345.t"
+	desc = "DA_Blueprint_event.345.d"
+	picture = DA_Clockwork_dragon_eventPicture
+
+	is_triggered_only = yes
+	option = {
+		name = "DA_Blueprint_event.101.a"
+		custom_tooltip = DA_Found_Electrical_Blueprint_tt
+		DA_Found_Blue_rune_effect = {
+			ClockWork = yes
+			Golem = yes
+			Alchemy_3 = yes
+			Mechanics_4 = yes
+		}
+		owner = {
+			set_country_flag = DA_Unlocked.ClockWork_Dragon
+		}
+	}
+}
+
+province_event = {
+	id = DA_Blueprint_event.346 		# 
+	title = "DA_Blueprint_event.346.t"
+	desc = "DA_Blueprint_event.346.d"
+	picture = DA_artillery_image_eventPicture
+
+	is_triggered_only = yes
+	option = {
+		name = "DA_Blueprint_event.101.a"
+		custom_tooltip = DA_Found_Electrical_Blueprint_tt
+		DA_Found_Blue_rune_effect = {
+			ClockWork = yes
+			Alchemy_2 = yes
+			Mechanics_3 = yes
+		}
+		owner = {
+			set_country_flag = DA_Unlocked.Clock_electric_Bombard
+		}
+	}
+}
+
+province_event = {
+	id = DA_Blueprint_event.347 		# 
+	title = "DA_Blueprint_event.347.t"
+	desc = "DA_Blueprint_event.347.d"
+	picture = DA_ballista_image_eventPicture
+
+	is_triggered_only = yes
+	option = {
+		name = "DA_Blueprint_event.101.a"
+		custom_tooltip = DA_Found_Electrical_Blueprint_tt
+		DA_Found_Blue_rune_effect = {
+			ClockWork = yes
+			Alchemy_2 = yes
+			Mechanics_3 = yes
+		}
+		owner = {
+			set_country_flag = DA_Unlocked.Clock_electric_Ballista
+		}
+	}
+}
+
+province_event = {
+	id = DA_Blueprint_event.348 		# 
+	title = "DA_Blueprint_event.348.t"
+	desc = "DA_Blueprint_event.348.d"
+	picture = DA_rifle_image_eventPicture
+
+	is_triggered_only = yes
+	option = {
+		name = "DA_Blueprint_event.101.a"
+		custom_tooltip = DA_Found_Electrical_Blueprint_tt
+		DA_Found_Blue_rune_effect = {
+			Tesla = yes
+			Alchemy_2 = yes
+			Mechanics_3 = yes
+		}
+		owner = {
+			set_country_flag = DA_Unlocked.Tesla_Rifles
+		}
+	}
+}
+
+province_event = {
+	id = DA_Blueprint_event.349 		# 
+	title = "DA_Blueprint_event.349.t"
+	desc = "DA_Blueprint_event.349.d"
+	picture = DA_Hammer_image_eventPicture
+
+	is_triggered_only = yes
+	option = {
+		name = "DA_Blueprint_event.101.a"
+		custom_tooltip = DA_Found_Electrical_Blueprint_tt
+		DA_Found_Blue_rune_effect = {
+			Tesla = yes
+			Alchemy_2 = yes
+			Mechanics_3 = yes
+		}
+		owner = {
+			set_country_flag = DA_Unlocked.Tesla_Warhammer
+		}
+	}
+}
+
+province_event = {
+	id = DA_Blueprint_event.350 		# 
+	title = "DA_Blueprint_event.350.t"
+	desc = "DA_Blueprint_event.350.d"
+	picture = DA_armor_image_eventPicture
+
+	is_triggered_only = yes
+	option = {
+		name = "DA_Blueprint_event.101.a"
+		custom_tooltip = DA_Found_Electrical_Blueprint_tt
+		DA_Found_Blue_rune_effect = {
+			Tesla = yes
+			Alchemy_2 = yes
+			Mechanics_3 = yes
+		}
+		owner = {
+			set_country_flag = DA_Unlocked.Tesla_Suit
+		}
+	}
+}
+
+province_event = {
+	id = DA_Blueprint_event.351 		# 
+	title = "DA_Blueprint_event.351.t"
+	desc = "DA_Blueprint_event.351.d"
+	picture = DA_artillery_image_eventPicture
+
+	is_triggered_only = yes
+	option = {
+		name = "DA_Blueprint_event.101.a"
+		custom_tooltip = DA_Found_Electrical_Blueprint_tt
+		DA_Found_Blue_rune_effect = {
+			Tesla = yes
+			Alchemy_2 = yes
+			Mechanics_3 = yes
+		}
+		owner = {
+			set_country_flag = DA_Unlocked.Tesla_Culverin
+		}
+	}
+}
+
+province_event = {
+	id = DA_Blueprint_event.352 		# 
+	title = "DA_Blueprint_event.352.t"
+	desc = "DA_Blueprint_event.352.d"
+	picture = DA_ballista_image_eventPicture
+
+	is_triggered_only = yes
+	option = {
+		name = "DA_Blueprint_event.101.a"
+		custom_tooltip = DA_Found_Electrical_Blueprint_tt
+		DA_Found_Blue_rune_effect = {
+			Tesla = yes
+			Alchemy_3 = yes
+			Mechanics_4 = yes
+		}
+		owner = {
+			set_country_flag = DA_Unlocked.Tesla_Railgun
+		}
+	}
+}
+
+province_event = {
+	id = DA_Blueprint_event.353 		# 
+	title = "DA_Blueprint_event.353.t"
+	desc = "DA_Blueprint_event.353.d"
+	picture = DA_Hammer_image_eventPicture
+
+	is_triggered_only = yes
+	option = {
+		name = "DA_Blueprint_event.101.a"
+		custom_tooltip = DA_Found_Electrical_Blueprint_tt
+		DA_Found_Blue_rune_effect = {
+			Resonance = yes
+			Alchemy_2 = yes
+			Mechanics_3 = yes
+		}
+		owner = {
+			set_country_flag = DA_Unlocked.Resonance_Warhammers
+		}
+	}
+}
+province_event = {
+	id = DA_Blueprint_event.354 		# 
+	title = "DA_Blueprint_event.354.t"
+	desc = "DA_Blueprint_event.354.d"
+	picture = DA_rifle_image_eventPicture
+
+	is_triggered_only = yes
+	option = {
+		name = "DA_Blueprint_event.101.a"
+		custom_tooltip = DA_Found_Electrical_Blueprint_tt
+		DA_Found_Blue_rune_effect = {
+			Resonance = yes
+			Alchemy_2 = yes
+			Mechanics_3 = yes
+		}
+		owner = {
+			set_country_flag = DA_Unlocked.Resonance_Rifles
+		}
+	}
+}
+province_event = {
+	id = DA_Blueprint_event.355 		# 
+	title = "DA_Blueprint_event.355.t"
+	desc = "DA_Blueprint_event.355.d"
+	picture = DA_spear_image_eventPicture
+
+	is_triggered_only = yes
+	option = {
+		name = "DA_Blueprint_event.101.a"
+		custom_tooltip = DA_Found_Electrical_Blueprint_tt
+		DA_Found_Blue_rune_effect = {
+			Resonance = yes
+			Alchemy_2 = yes
+			Mechanics_3 = yes
+		}
+		owner = {
+			set_country_flag = DA_Unlocked.Resonance_Spears
+		}
+	}
+}
+
+province_event = {
+	id = DA_Blueprint_event.356 		# 
+	title = "DA_Blueprint_event.356.t"
+	desc = "DA_Blueprint_event.356.d"
+	picture = DA_spear_image_eventPicture
+
+	is_triggered_only = yes
+	option = {
+		name = "DA_Blueprint_event.101.a"
+		custom_tooltip = DA_Found_Electrical_Blueprint_tt
+		DA_Found_Blue_rune_effect = {
+			Resonance = yes
+			Alchemy_2 = yes
+			Mechanics_3 = yes
+		}
+		owner = {
+			set_country_flag = DA_Unlocked.Resonance_Throwing_Spears
+		}
+	}
+}
+
+province_event = {
+	id = DA_Blueprint_event.357 		# 
+	title = "DA_Blueprint_event.357.t"
+	desc = "DA_Blueprint_event.357.d"
+	picture = DA_ballista_image_eventPicture
+
+	is_triggered_only = yes
+	option = {
+		name = "DA_Blueprint_event.101.a"
+		custom_tooltip = DA_Found_Electrical_Blueprint_tt
+		DA_Found_Blue_rune_effect = {
+			Resonance = yes
+			Alchemy_2 = yes
+			Mechanics_3 = yes
+		}
+		owner = {
+			set_country_flag = DA_Unlocked.Resonance_Ballista
+		}
+	}
+}
+
+province_event = {
+	id = DA_Blueprint_event.358 		# 
+	title = "DA_Blueprint_event.358.t"
+	desc = "DA_Blueprint_event.358.d"
+	picture = DA_Mecha_image_eventPicture
+
+	is_triggered_only = yes
+	option = {
+		name = "DA_Blueprint_event.101.a"
+		custom_tooltip = DA_Found_Electrical_Blueprint_tt
+		DA_Found_Blue_rune_effect = {
+			Motorization = yes
+			Alchemy_4 = yes
+			Magic_Theory_3 = yes
+			Mechanics_4 = yes
+		}
+		owner = {
+			set_country_flag = DA_Unlocked.Vehicle_Electric_Arcanomech_Annihilator
+		}
+	}
+}
+
+# Knowledge and reward BPs, to be expanded
+
+province_event = {
+	id = DA_Blueprint_event.400 		# Soul_Genesis unlocked
+	title = "DA_Blueprint_event.400.t"
+	desc = "DA_Blueprint_event.400.d"
+	picture = INVENTION_eventPicture
+
+	is_triggered_only = yes
+	option = {
+		name = "DA_Blueprint_event.101.a"
+		custom_tooltip = DA_Tech_available_tt
+		DA_Allow_Tech.Soul_Genesis = yes
+		custom_tooltip = DA_new_Tech_missions_available_tt 
+		owner = {
+			set_country_flag = DA_Unlocked.Soul_Genesis_Enhanced_Clones
+		}
+	}
+}
+
+province_event = {
+	id = DA_Blueprint_event.401 		#  Soul_Genesis BP
+	title = "DA_Blueprint_event.401.t"
+	desc = "DA_Blueprint_event.401.d"
+	picture = INVENTION_eventPicture
+
+	is_triggered_only = yes
+	option = {
+		name = "DA_Blueprint_event.101.a"
+		custom_tooltip = DA_Found_Electrical_Blueprint_tt
+		DA_Found_Blue_rune_effect = {
+			Soul_Genesis = yes
+			Enhancement = yes
+			Medicine_4 = yes
+			Alchemy_4 = yes
+		}
+		owner = {
+			set_country_flag = DA_Unlocked.Soul_Genesis_Enhanced_Clones
+		}
+	}
+}

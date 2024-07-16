@@ -221,7 +221,7 @@ guiTypes = {
 			font = "vic_18"
 			borderSize = {x = 0 y = 0 }	
 			text = ""	
-			maxWidth = 60
+			maxWidth = 50
 			maxHeight = 20
 			format = centre
 		}

@@ -1,0 +1,8 @@
+estate_mages = {
+	privileges = {
+		estate_xia_military
+		estate_mages_land_rights
+		estate_mages_new_world_mission
+		estate_mages_kobold_drake_riders
+	}
+}

@@ -1,0 +1,9 @@
+
+not_primitive_nation = {
+	development_cost = -0.5
+	religion = yes
+}
+
+miga_republic_rule_for_life = {
+	reelection_cost = -1
+}

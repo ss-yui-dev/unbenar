@@ -1,0 +1,505 @@
+DA_give_Unique_Metallurgy_modifiers = {
+	if = {
+		limit = {
+			has_country_flag = DA_Unique_mod.BLUEPRINT.Flag.$DA_unit$.Golem.1
+		}
+		add_country_modifier = {
+			name = DA_Unique_mod.BLUEPRINT.$DA_unit$.Golem.1
+			duration = -1
+		}
+	}
+	if = {
+		limit = {
+			has_country_flag = DA_Unique_mod.BLUEPRINT.Flag.$DA_unit$.Golem.2
+		}
+		add_country_modifier = {
+			name = DA_Unique_mod.BLUEPRINT.$DA_unit$.Golem.2
+			duration = -1
+		}
+	}
+	if = {
+		limit = {
+			has_country_flag = DA_Unique_mod.BLUEPRINT.Flag.$DA_unit$.Golem.3
+		}
+		add_country_modifier = {
+			name = DA_Unique_mod.BLUEPRINT.$DA_unit$.Golem.3
+			duration = -1
+		}
+	}
+	if = {
+		limit = {
+			has_country_flag = DA_Unique_mod.BLUEPRINT.Flag.$DA_unit$.ClockWork.1
+		}
+		add_country_modifier = {
+			name = DA_Unique_mod.BLUEPRINT.$DA_unit$.ClockWork.1
+			duration = -1
+		}
+	}
+	if = {
+		limit = {
+			has_country_flag = DA_Unique_mod.BLUEPRINT.Flag.$DA_unit$.ClockWork.2
+		}
+		add_country_modifier = {
+			name = DA_Unique_mod.BLUEPRINT.$DA_unit$.ClockWork.2
+			duration = -1
+		}
+	}
+	if = {
+		limit = {
+			has_country_flag = DA_Unique_mod.BLUEPRINT.Flag.$DA_unit$.ClockWork.3
+		}
+		add_country_modifier = {
+			name = DA_Unique_mod.BLUEPRINT.$DA_unit$.ClockWork.3
+			duration = -1
+		}
+	}
+	if = {
+		limit = {
+			has_country_flag = DA_Unique_mod.BLUEPRINT.Flag.$DA_unit$.ClockWork.Dragon
+		}
+		add_country_modifier = {
+			name = DA_Unique_mod.BLUEPRINT.$DA_unit$.ClockWork.Dragon
+			duration = -1
+		}
+	}
+	if = {
+		limit = {
+			has_country_flag = DA_Unique_mod.BLUEPRINT.Flag.$DA_unit$.TESLA.3
+		}
+		add_country_modifier = {
+			name = DA_Unique_mod.BLUEPRINT.$DA_unit$.TESLA.3
+			duration = -1
+		}
+	}
+	if = {
+		limit = {
+			has_country_flag = DA_Unique_mod.BLUEPRINT.Flag.$DA_unit$.RESONANCE.3
+		}
+		add_country_modifier = {
+			name = DA_Unique_mod.BLUEPRINT.$DA_unit$.RESONANCE.3
+			duration = -1
+		}
+	}
+	if = {
+		limit = {
+			has_country_flag = DA_Unique_mod.BLUEPRINT.Flag.$DA_unit$.EXPLOSIVE_MELEE.1
+		}
+		add_country_modifier = {
+			name = DA_Unique_mod.BLUEPRINT.$DA_unit$.EXPLOSIVE_MELEE.1
+			duration = -1
+		}
+	}
+	if = {
+		limit = {
+			has_country_flag = DA_Unique_mod.BLUEPRINT.Flag.$DA_unit$.EXPLOSIVE_RANGED.1
+		}
+		add_country_modifier = {
+			name = DA_Unique_mod.BLUEPRINT.$DA_unit$.EXPLOSIVE_RANGED.1
+			duration = -1
+		}
+	}
+	if = {
+		limit = {
+			has_country_flag = DA_Unique_mod.BLUEPRINT.Flag.$DA_unit$.MOTORIZATION.2
+		}
+		add_country_modifier = {
+			name = DA_Unique_mod.BLUEPRINT.$DA_unit$.MOTORIZATION.2
+			duration = -1
+		}
+	}
+	if = {
+		limit = {
+			has_country_flag = DA_Unique_mod.BLUEPRINT.Flag.$DA_unit$.MOTORIZATION.2.Vanguard
+		}
+		add_country_modifier = {
+			name = DA_Unique_mod.BLUEPRINT.$DA_unit$.MOTORIZATION.2.Vanguard
+			duration = -1
+		}
+	}
+	if = {
+		limit = {
+			has_country_flag = DA_Unique_mod.BLUEPRINT.Flag.$DA_unit$.MOTORIZATION.2.Holder
+		}
+		add_country_modifier = {
+			name = DA_Unique_mod.BLUEPRINT.$DA_unit$.MOTORIZATION.2.Holder
+			duration = -1
+		}
+	}
+	if = {
+		limit = {
+			has_country_flag = DA_Unique_mod.BLUEPRINT.Flag.$DA_unit$.MOTORIZATION.3.ArcanoMech_Annihilator
+		}
+		add_country_modifier = {
+			name = DA_Unique_mod.BLUEPRINT.$DA_unit$.MOTORIZATION.3.ArcanoMech_Annihilator
+			duration = -1
+		}
+	}
+	if = {
+		limit = {
+			has_country_flag = DA_Unique_mod.BLUEPRINT.Flag.$DA_unit$.Bio_Construct.3.Abomination
+		}
+		add_country_modifier = {
+			name = DA_Unique_mod.BLUEPRINT.$DA_unit$.Bio_Construct.3.Abomination
+			duration = -1
+		}
+	}
+	if = {
+		limit = {
+			has_country_flag = DA_Unique_mod.BLUEPRINT.Flag.$DA_unit$.Bio_Construct.3.Living_Armor
+		}
+		add_country_modifier = {
+			name = DA_Unique_mod.BLUEPRINT.$DA_unit$.Bio_Construct.3.Living_Armor
+			duration = -1
+		}
+	}
+	if = {
+		limit = {
+			has_country_flag = DA_Unique_mod.BLUEPRINT.Flag.$DA_unit$.Bio_Construct.3.Chimera
+		}
+		add_country_modifier = {
+			name = DA_Unique_mod.BLUEPRINT.$DA_unit$.Bio_Construct.3.Chimera
+			duration = -1
+		}
+	}
+	if = {
+		limit = {
+			has_country_flag = DA_Unique_mod.BLUEPRINT.Flag.$DA_unit$.Bio_Construct.3.Purple_Worm
+		}
+		add_country_modifier = {
+			name = DA_Unique_mod.BLUEPRINT.$DA_unit$.Bio_Construct.3.Purple_Worm
+			duration = -1
+		}
+	}
+	if = {
+		limit = {
+			has_country_flag = DA_Unique_mod.BLUEPRINT.Flag.$DA_unit$.Bio_Construct.3.Ram
+		}
+		add_country_modifier = {
+			name = DA_Unique_mod.BLUEPRINT.$DA_unit$.Bio_Construct.3.Ram
+			duration = -1
+		}
+	}
+	if = {
+		limit = {
+			has_country_flag = DA_Unique_mod.BLUEPRINT.Flag.$DA_unit$.Mithradum.1
+		}
+		add_country_modifier = {
+			name = DA_Unique_mod.BLUEPRINT.$DA_unit$.Mithradum.1
+			duration = -1
+		}
+	}
+	if = {
+		limit = {
+			has_country_flag = DA_Unique_mod.BLUEPRINT.Flag.$DA_unit$.Mithradum.2
+		}
+		add_country_modifier = {
+			name = DA_Unique_mod.BLUEPRINT.$DA_unit$.Mithradum.2
+			duration = -1
+		}
+	}
+	if = {
+		limit = {
+			has_country_flag = DA_Unique_mod.BLUEPRINT.Flag.$DA_unit$.Mithradum.3
+		}
+		add_country_modifier = {
+			name = DA_Unique_mod.BLUEPRINT.$DA_unit$.Mithradum.3
+			duration = -1
+		}
+	}
+
+	#runes
+
+	
+	if = {
+		limit = {
+			has_country_flag = DA_Unique_mod.RUNE.Flag.$DA_unit$.RESOLVE
+		}
+		add_country_modifier = {
+			name = DA_Unique_mod.RUNE.$DA_unit$.RESOLVE
+			duration = -1
+		}
+	}
+	if = {
+		limit = {
+			has_country_flag = DA_Unique_mod.RUNE.Flag.$DA_unit$.Enhancement.1
+		}
+		add_country_modifier = {
+			name = DA_Unique_mod.RUNE.$DA_unit$.Enhancement.1
+			duration = -1
+		}
+	}
+	if = {
+		limit = {
+			has_country_flag = DA_Unique_mod.RUNE.Flag.$DA_unit$.Enhancement.2
+		}
+		add_country_modifier = {
+			name = DA_Unique_mod.RUNE.$DA_unit$.Enhancement.2
+			duration = -1
+		}
+	}
+	if = {
+		limit = {
+			has_country_flag = DA_Unique_mod.RUNE.Flag.$DA_unit$.fire.1
+		}
+		add_country_modifier = {
+			name = DA_Unique_mod.RUNE.$DA_unit$.fire.1
+			duration = -1
+		}
+	}
+	if = {
+		limit = {
+			has_country_flag = DA_Unique_mod.RUNE.Flag.$DA_unit$.water.1
+		}
+		add_country_modifier = {
+			name = DA_Unique_mod.RUNE.$DA_unit$.water.1
+			duration = -1
+		}
+	}
+	if = {
+		limit = {
+			has_country_flag = DA_Unique_mod.RUNE.Flag.$DA_unit$.earth.1
+		}
+		add_country_modifier = {
+			name = DA_Unique_mod.RUNE.$DA_unit$.earth.1
+			duration = -1
+		}
+	}
+	if = {
+		limit = {
+			has_country_flag = DA_Unique_mod.RUNE.Flag.$DA_unit$.air.1
+		}
+		add_country_modifier = {
+			name = DA_Unique_mod.RUNE.$DA_unit$.air.1
+			duration = -1
+		}
+	}
+	if = {
+		limit = {
+			has_country_flag = DA_Unique_mod.RUNE.Flag.$DA_unit$.life.1
+		}
+		add_country_modifier = {
+			name = DA_Unique_mod.RUNE.$DA_unit$.life.1
+			duration = -1
+		}
+	}
+	if = {
+		limit = {
+			has_country_flag = DA_Unique_mod.RUNE.Flag.$DA_unit$.death.1
+		}
+		add_country_modifier = {
+			name = DA_Unique_mod.RUNE.$DA_unit$.death.1
+			duration = -1
+		}
+	}
+	if = {
+		limit = {
+			has_country_flag = DA_Unique_mod.RUNE.Flag.$DA_unit$.time.1
+		}
+		add_country_modifier = {
+			name = DA_Unique_mod.RUNE.$DA_unit$.time.1
+			duration = -1
+		}
+	}
+	if = {
+		limit = {
+			has_country_flag = DA_Unique_mod.RUNE.Flag.$DA_unit$.space.1
+		}
+		add_country_modifier = {
+			name = DA_Unique_mod.RUNE.$DA_unit$.space.1
+			duration = -1
+		}
+	}
+	# metals and alloys
+
+	if = {
+		limit = {
+			has_country_flag = DA_Unique_mod.METAL.Flag.$DA_unit$.Adamantium
+		}
+		add_country_modifier = {
+			name = DA_Unique_mod.METAL.$DA_unit$.Adamantium
+			duration = -1
+		}
+	}
+	if = {
+		limit = {
+			has_country_flag = DA_Unique_mod.METAL.Flag.$DA_unit$.Unastu_Argazen
+		}
+		add_country_modifier = {
+			name = DA_Unique_mod.METAL.$DA_unit$.Unastu_Argazen
+			duration = -1
+		}
+	}
+	if = {
+		limit = {
+			has_country_flag = DA_Unique_mod.METAL.Flag.$DA_unit$.Bloth_Dolur
+		}
+		add_country_modifier = {
+			name = DA_Unique_mod.METAL.$DA_unit$.Bloth_Dolur
+			duration = -1
+		}
+	}
+	if = {
+		limit = {
+			has_country_flag = DA_Unique_mod.METAL.Flag.$DA_unit$.Sylvanite
+		}
+		add_country_modifier = {
+			name = DA_Unique_mod.METAL.$DA_unit$.Sylvanite
+			duration = -1
+		}
+	}
+	if = {
+		limit = {
+			has_country_flag = DA_Unique_mod.METAL.Flag.$DA_unit$.VoidSteel
+		}
+		add_country_modifier = {
+			name = DA_Unique_mod.METAL.$DA_unit$.VoidSteel
+			duration = -1
+		}
+	}
+	if = {
+		limit = {
+			has_country_flag = DA_Unique_mod.METAL.Flag.$DA_unit$.Magnetite
+		}
+		add_country_modifier = {
+			name = DA_Unique_mod.METAL.$DA_unit$.Magnetite
+			duration = -1
+		}
+	}
+	if = {
+		limit = {
+			has_country_flag = DA_Unique_mod.METAL.Flag.$DA_unit$.Mistium
+		}
+		add_country_modifier = {
+			name = DA_Unique_mod.METAL.$DA_unit$.Mistium
+			duration = -1
+		}
+	}
+	if = {
+		limit = {
+			has_country_flag = DA_Unique_mod.METAL.Flag.$DA_unit$.Skyshard
+		}
+		add_country_modifier = {
+			name = DA_Unique_mod.METAL.$DA_unit$.Skyshard
+			duration = -1
+		}
+	}
+	if = {
+		limit = {
+			has_country_flag = DA_Unique_mod.METAL.Flag.$DA_unit$.Cindersteel
+		}
+		add_country_modifier = {
+			name = DA_Unique_mod.METAL.$DA_unit$.Cindersteel
+			duration = -1
+		}
+	}
+	
+}
+
+DA_remove_Unique_Metallurgy_modifiers = {
+	remove_country_modifier = DA_Unique_mod.BLUEPRINT.$DA_unit$.Golem.1
+	remove_country_modifier = DA_Unique_mod.BLUEPRINT.$DA_unit$.Golem.2
+	remove_country_modifier = DA_Unique_mod.BLUEPRINT.$DA_unit$.Golem.3
+	remove_country_modifier = DA_Unique_mod.BLUEPRINT.$DA_unit$.ClockWork.1
+	remove_country_modifier = DA_Unique_mod.BLUEPRINT.$DA_unit$.ClockWork.2
+	remove_country_modifier = DA_Unique_mod.BLUEPRINT.$DA_unit$.ClockWork.3
+	remove_country_modifier = DA_Unique_mod.BLUEPRINT.$DA_unit$.ClockWork.Dragon
+	remove_country_modifier = DA_Unique_mod.BLUEPRINT.$DA_unit$.TESLA.3
+	remove_country_modifier = DA_Unique_mod.BLUEPRINT.$DA_unit$.RESONANCE.3
+	remove_country_modifier = DA_Unique_mod.BLUEPRINT.$DA_unit$.EXPLOSIVE_MELEE.1
+	remove_country_modifier = DA_Unique_mod.BLUEPRINT.$DA_unit$.EXPLOSIVE_RANGED.1
+	remove_country_modifier = DA_Unique_mod.BLUEPRINT.$DA_unit$.MOTORIZATION.2
+	remove_country_modifier = DA_Unique_mod.BLUEPRINT.$DA_unit$.MOTORIZATION.2.Vanguard
+	remove_country_modifier = DA_Unique_mod.BLUEPRINT.$DA_unit$.MOTORIZATION.2.Holder
+	remove_country_modifier = DA_Unique_mod.BLUEPRINT.$DA_unit$.MOTORIZATION.3.ArcanoMech_Annihilator
+	remove_country_modifier = DA_Unique_mod.BLUEPRINT.$DA_unit$.Bio_Construct.3.Abomination
+	remove_country_modifier = DA_Unique_mod.BLUEPRINT.$DA_unit$.Bio_Construct.3.Living_Armor
+	remove_country_modifier = DA_Unique_mod.BLUEPRINT.$DA_unit$.Bio_Construct.3.Chimera
+	remove_country_modifier = DA_Unique_mod.BLUEPRINT.$DA_unit$.Bio_Construct.3.Purple_Worm
+	remove_country_modifier = DA_Unique_mod.BLUEPRINT.$DA_unit$.Bio_Construct.3.Ram
+	remove_country_modifier = DA_Unique_mod.BLUEPRINT.$DA_unit$.Mithradum.1
+	remove_country_modifier = DA_Unique_mod.BLUEPRINT.$DA_unit$.Mithradum.2
+	remove_country_modifier = DA_Unique_mod.BLUEPRINT.$DA_unit$.Mithradum.3
+
+	#runes
+
+	
+	remove_country_modifier = DA_Unique_mod.RUNE.$DA_unit$.RESOLVE
+	remove_country_modifier = DA_Unique_mod.RUNE.$DA_unit$.Enhancement.1
+	remove_country_modifier = DA_Unique_mod.RUNE.$DA_unit$.Enhancement.2
+	remove_country_modifier = DA_Unique_mod.RUNE.$DA_unit$.fire.1
+	remove_country_modifier = DA_Unique_mod.RUNE.$DA_unit$.water.1
+	remove_country_modifier = DA_Unique_mod.RUNE.$DA_unit$.earth.1
+	remove_country_modifier = DA_Unique_mod.RUNE.$DA_unit$.air.1
+	remove_country_modifier = DA_Unique_mod.RUNE.$DA_unit$.life.1
+	remove_country_modifier = DA_Unique_mod.RUNE.$DA_unit$.death.1
+	remove_country_modifier = DA_Unique_mod.RUNE.$DA_unit$.time.1
+	remove_country_modifier = DA_Unique_mod.RUNE.$DA_unit$.space.1
+
+	# metals and alloys
+
+	remove_country_modifier = DA_Unique_mod.METAL.$DA_unit$.Adamantium
+	remove_country_modifier = DA_Unique_mod.METAL.$DA_unit$.Unastu_Argazen
+	remove_country_modifier = DA_Unique_mod.METAL.$DA_unit$.Bloth_Dolur
+	remove_country_modifier = DA_Unique_mod.METAL.$DA_unit$.Sylvanite
+	remove_country_modifier = DA_Unique_mod.METAL.$DA_unit$.VoidSteel
+	remove_country_modifier = DA_Unique_mod.METAL.$DA_unit$.Magnetite
+	remove_country_modifier = DA_Unique_mod.METAL.$DA_unit$.Mistium
+	remove_country_modifier = DA_Unique_mod.METAL.$DA_unit$.Skyshard
+	remove_country_modifier = DA_Unique_mod.METAL.$DA_unit$.Cindersteel
+
+	# flags
+
+	clr_country_flag = DA_Unique_mod.BLUEPRINT.Flag.$DA_unit$.Golem.1
+	clr_country_flag = DA_Unique_mod.BLUEPRINT.Flag.$DA_unit$.Golem.2
+	clr_country_flag = DA_Unique_mod.BLUEPRINT.Flag.$DA_unit$.Golem.3
+	clr_country_flag = DA_Unique_mod.BLUEPRINT.Flag.$DA_unit$.ClockWork.1
+	clr_country_flag = DA_Unique_mod.BLUEPRINT.Flag.$DA_unit$.ClockWork.2
+	clr_country_flag = DA_Unique_mod.BLUEPRINT.Flag.$DA_unit$.ClockWork.3
+	clr_country_flag = DA_Unique_mod.BLUEPRINT.Flag.$DA_unit$.ClockWork.Dragon
+	clr_country_flag = DA_Unique_mod.BLUEPRINT.Flag.$DA_unit$.TESLA.3
+	clr_country_flag = DA_Unique_mod.BLUEPRINT.Flag.$DA_unit$.RESONANCE.3
+	clr_country_flag = DA_Unique_mod.BLUEPRINT.Flag.$DA_unit$.EXPLOSIVE_MELEE.1
+	clr_country_flag = DA_Unique_mod.BLUEPRINT.Flag.$DA_unit$.EXPLOSIVE_RANGED.1
+	clr_country_flag = DA_Unique_mod.BLUEPRINT.Flag.$DA_unit$.MOTORIZATION.2
+	clr_country_flag = DA_Unique_mod.BLUEPRINT.Flag.$DA_unit$.MOTORIZATION.2.Vanguard
+	clr_country_flag = DA_Unique_mod.BLUEPRINT.Flag.$DA_unit$.MOTORIZATION.2.Holder
+	clr_country_flag = DA_Unique_mod.BLUEPRINT.Flag.$DA_unit$.MOTORIZATION.3.ArcanoMech_Annihilator
+	clr_country_flag = DA_Unique_mod.BLUEPRINT.Flag.$DA_unit$.Bio_Construct.3.Abomination
+	clr_country_flag = DA_Unique_mod.BLUEPRINT.Flag.$DA_unit$.Bio_Construct.3.Living_Armor
+	clr_country_flag = DA_Unique_mod.BLUEPRINT.Flag.$DA_unit$.Bio_Construct.3.Chimera
+	clr_country_flag = DA_Unique_mod.BLUEPRINT.Flag.$DA_unit$.Bio_Construct.3.Purple_Worm
+	clr_country_flag = DA_Unique_mod.BLUEPRINT.Flag.$DA_unit$.Bio_Construct.3.Ram
+	clr_country_flag = DA_Unique_mod.BLUEPRINT.Flag.$DA_unit$.Mithradum.1
+	clr_country_flag = DA_Unique_mod.BLUEPRINT.Flag.$DA_unit$.Mithradum.2
+	clr_country_flag = DA_Unique_mod.BLUEPRINT.Flag.$DA_unit$.Mithradum.3
+	
+	#runes
+	
+	
+	clr_country_flag = DA_Unique_mod.RUNE.Flag.$DA_unit$.RESOLVE
+	clr_country_flag = DA_Unique_mod.RUNE.Flag.$DA_unit$.Enhancement.1
+	clr_country_flag = DA_Unique_mod.RUNE.Flag.$DA_unit$.Enhancement.2
+	clr_country_flag = DA_Unique_mod.RUNE.Flag.$DA_unit$.fire.1
+	clr_country_flag = DA_Unique_mod.RUNE.Flag.$DA_unit$.water.1
+	clr_country_flag = DA_Unique_mod.RUNE.Flag.$DA_unit$.earth.1
+	clr_country_flag = DA_Unique_mod.RUNE.Flag.$DA_unit$.air.1
+	clr_country_flag = DA_Unique_mod.RUNE.Flag.$DA_unit$.life.1
+	clr_country_flag = DA_Unique_mod.RUNE.Flag.$DA_unit$.death.1
+	clr_country_flag = DA_Unique_mod.RUNE.Flag.$DA_unit$.time.1
+	clr_country_flag = DA_Unique_mod.RUNE.Flag.$DA_unit$.space.1
+	
+	# metals and alloys
+	
+	clr_country_flag = DA_Unique_mod.METAL.Flag.$DA_unit$.Adamantium
+	clr_country_flag = DA_Unique_mod.METAL.Flag.$DA_unit$.Unastu_Argazen
+	clr_country_flag = DA_Unique_mod.METAL.Flag.$DA_unit$.Bloth_Dolur
+	clr_country_flag = DA_Unique_mod.METAL.Flag.$DA_unit$.Sylvanite
+	clr_country_flag = DA_Unique_mod.METAL.Flag.$DA_unit$.VoidSteel
+	clr_country_flag = DA_Unique_mod.METAL.Flag.$DA_unit$.Magnetite
+	clr_country_flag = DA_Unique_mod.METAL.Flag.$DA_unit$.Mistium
+	clr_country_flag = DA_Unique_mod.METAL.Flag.$DA_unit$.Skyshard
+	clr_country_flag = DA_Unique_mod.METAL.Flag.$DA_unit$.Cindersteel
+
+
+	
+}

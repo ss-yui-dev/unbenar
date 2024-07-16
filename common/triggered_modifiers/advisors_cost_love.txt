@@ -1,0 +1,225 @@
+adm_advisor_6 = {
+	potential = {
+		employed_advisor = {
+			category = ADM
+			skill = 6
+		}
+	}
+	trigger = {
+		employed_advisor = {
+			category = ADM
+			skill = 6
+		}
+	}
+	adm_advisor_cost = 0.1
+}
+adm_advisor_7 = {
+	potential = {
+		employed_advisor = {
+			category = ADM
+			skill = 7
+		}
+	}
+	trigger = {
+		employed_advisor = {
+			category = ADM
+			skill = 7
+		}
+	}
+	adm_advisor_cost = 0.2
+}
+adm_advisor_8 = {
+	potential = {
+		employed_advisor = {
+			category = ADM
+			skill = 8
+		}
+	}
+	trigger = {
+		employed_advisor = {
+			category = ADM
+			skill = 8
+		}
+	}
+	adm_advisor_cost = 0.3
+}
+adm_advisor_9 = {
+	potential = {
+		employed_advisor = {
+			category = ADM
+			skill = 9
+		}
+	}
+	trigger = {
+		employed_advisor = {
+			category = ADM
+			skill = 9
+		}
+	}
+	adm_advisor_cost = 0.4
+}
+adm_advisor_10 = {
+	potential = {
+		employed_advisor = {
+			category = ADM
+			skill = 10
+		}
+	}
+	trigger = {
+		employed_advisor = {
+			category = ADM
+			skill = 10
+		}
+	}
+	adm_advisor_cost = 0.5
+}
+dip_advisor_6 = {
+	potential = {
+		employed_advisor = {
+			category = DIP
+			skill = 6
+		}
+	}
+	trigger = {
+		employed_advisor = {
+			category = DIP
+			skill = 6
+		}
+	}
+	dip_advisor_cost = 0.1
+}
+dip_advisor_7 = {
+	potential = {
+		employed_advisor = {
+			category = DIP
+			skill = 7
+		}
+	}
+	trigger = {
+		employed_advisor = {
+			category = DIP
+			skill = 7
+		}
+	}
+	dip_advisor_cost = 0.2
+}
+dip_advisor_8 = {
+	potential = {
+		employed_advisor = {
+			category = DIP
+			skill = 8
+		}
+	}
+	trigger = {
+		employed_advisor = {
+			category = DIP
+			skill = 8
+		}
+	}
+	dip_advisor_cost = 0.3
+}
+dip_advisor_9 = {
+	potential = {
+		employed_advisor = {
+			category = DIP
+			skill = 9
+		}
+	}
+	trigger = {
+		employed_advisor = {
+			category = DIP
+			skill = 9
+		}
+	}
+	dip_advisor_cost = 0.4
+}
+dip_advisor_10 = {
+	potential = {
+		employed_advisor = {
+			category = DIP
+			skill = 10
+		}
+	}
+	trigger = {
+		employed_advisor = {
+			category = DIP
+			skill = 10
+		}
+	}
+	dip_advisor_cost = 0.5
+}
+mil_advisor_6 = {
+	potential = {
+		employed_advisor = {
+			category = MIL
+			skill = 6
+		}
+	}
+	trigger = {
+		employed_advisor = {
+			category = MIL
+			skill = 6
+		}
+	}
+	mil_advisor_cost = 0.1
+}
+mil_advisor_7 = {
+	potential = {
+		employed_advisor = {
+			category = MIL
+			skill = 7
+		}
+	}
+	trigger = {
+		employed_advisor = {
+			category = MIL
+			skill = 7
+		}
+	}
+	mil_advisor_cost = 0.2
+}
+mil_advisor_8 = {
+	potential = {
+		employed_advisor = {
+			category = MIL
+			skill = 8
+		}
+	}
+	trigger = {
+		employed_advisor = {
+			category = MIL
+			skill = 8
+		}
+	}
+	mil_advisor_cost = 0.3
+}
+mil_advisor_9 = {
+	potential = {
+		employed_advisor = {
+			category = MIL
+			skill = 9
+		}
+	}
+	trigger = {
+		employed_advisor = {
+			category = MIL
+			skill = 9
+		}
+	}
+	mil_advisor_cost = 0.4
+}
+mil_advisor_10 = {
+	potential = {
+		employed_advisor = {
+			category = MIL
+			skill = 10
+		}
+	}
+	trigger = {
+		employed_advisor = {
+			category = MIL
+			skill = 10
+		}
+	}
+	mil_advisor_cost = 0.5
+}

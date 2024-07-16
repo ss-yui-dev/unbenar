@@ -10,7 +10,6 @@ DA_great_mage_creation_process = {
 		custom_tooltip = DA_adk.6.tt0
 		hidden_effect = {
 			DA_clear_ruler_personalities = yes
-			add_ruler_personality = immortal_personality
 			add_ruler_personality = mage_personality
 			random_list = { # talented in 3
 				1 = { trigger = { NOT = { has_ruler_flag = abjuration_1 } NOT = { has_ruler_flag = abjuration_2 } } set_ruler_flag = abjuration_1 }
@@ -52,7 +51,6 @@ DA_great_mage_creation_process = {
 		custom_tooltip = DA_adk.6.tt1
 		hidden_effect = {
 			DA_clear_ruler_personalities = yes
-			add_ruler_personality = immortal_personality
 			add_ruler_personality = mage_personality
 			random_list = { # talented in 5
 				1 = { trigger = { NOT = { has_ruler_flag = abjuration_1 } NOT = { has_ruler_flag = abjuration_2 } } set_ruler_flag = abjuration_1 }
@@ -114,7 +112,6 @@ DA_great_mage_creation_process = {
 		custom_tooltip = DA_adk.6.tt2
 		hidden_effect = {
 			DA_clear_ruler_personalities = yes
-			add_ruler_personality = immortal_personality
 			add_ruler_personality = mage_personality
 			random_list = { # renowned in 2
 				1 = { set_ruler_flag = abjuration_1 set_ruler_flag = abjuration_2 }
@@ -176,7 +173,6 @@ DA_great_mage_creation_process = {
 		custom_tooltip = DA_adk.6.tt3
 		hidden_effect = {
 			DA_clear_ruler_personalities = yes
-			add_ruler_personality = immortal_personality
 			add_ruler_personality = mage_personality
 			random_list = { # renowned in 3
 				1 = { set_ruler_flag = abjuration_1 set_ruler_flag = abjuration_2 }
@@ -268,8 +264,8 @@ DA_province_ADK_relative_to_dig_level = {
 			NOT = { has_province_flag = DA_looked_dig_adk_6 }
 		}
 		owner = {
-			tooltip = { add_adk_effect = { add = 7 } }
-			hidden_effect = { change_variable = { ancientDwarvenKnowledge = 7 } }
+			tooltip = { add_adk_effect = { add = 6 } }
+			hidden_effect = { change_variable = { ancientDwarvenKnowledge = 6 } }
 		}
 	}
 	else_if = {
@@ -278,8 +274,8 @@ DA_province_ADK_relative_to_dig_level = {
 			NOT = { has_province_flag = DA_looked_dig_adk_7 }
 		}
 		owner = {
-			tooltip = { add_adk_effect = { add = 10 } }
-			hidden_effect = { change_variable = { ancientDwarvenKnowledge = 10 } }
+			tooltip = { add_adk_effect = { add = 8 } }
+			hidden_effect = { change_variable = { ancientDwarvenKnowledge = 8 } }
 		}
 	}
 	else_if = {
@@ -288,8 +284,8 @@ DA_province_ADK_relative_to_dig_level = {
 			NOT = { has_province_flag = DA_looked_dig_adk_8 }
 		}
 		owner = {
-			tooltip = { add_adk_effect = { add = 14 } }
-			hidden_effect = { change_variable = { ancientDwarvenKnowledge = 14 } }
+			tooltip = { add_adk_effect = { add = 11 } }
+			hidden_effect = { change_variable = { ancientDwarvenKnowledge = 11 } }
 		}
 	}
 	else_if = {
@@ -298,8 +294,8 @@ DA_province_ADK_relative_to_dig_level = {
 			NOT = { has_province_flag = DA_looked_dig_adk_9 }
 		}
 		owner = {
-			tooltip = { add_adk_effect = { add = 18 } }
-			hidden_effect = { change_variable = { ancientDwarvenKnowledge = 18 } }
+			tooltip = { add_adk_effect = { add = 14 } }
+			hidden_effect = { change_variable = { ancientDwarvenKnowledge = 14 } }
 		}
 	}
 	else_if = {
@@ -308,8 +304,8 @@ DA_province_ADK_relative_to_dig_level = {
 			NOT = { has_province_flag = DA_looked_dig_adk_10 }
 		}
 		owner = {
-			tooltip = { add_adk_effect = { add = 22 } }
-			hidden_effect = { change_variable = { ancientDwarvenKnowledge = 22 } }
+			tooltip = { add_adk_effect = { add = 17 } }
+			hidden_effect = { change_variable = { ancientDwarvenKnowledge = 17 } }
 		}
 	}
 	else_if = {
@@ -318,8 +314,8 @@ DA_province_ADK_relative_to_dig_level = {
 			NOT = { has_province_flag = DA_looked_dig_adk_11 }
 		}
 		owner = {
-			tooltip = { add_adk_effect = { add = 26 } }
-			hidden_effect = { change_variable = { ancientDwarvenKnowledge = 26 } }
+			tooltip = { add_adk_effect = { add = 20 } }
+			hidden_effect = { change_variable = { ancientDwarvenKnowledge = 20 } }
 		}
 	}
 	else = { # should never go here
@@ -334,7 +330,7 @@ DA_province_gold_relative_to_dig_level = {
 			NOT = { has_province_flag = DA_looked_dig_adk_2 }
 		}
 		owner = {
-			add_treasury = 100
+			add_treasury = 50
 		}
 	}
 	else_if = {
@@ -343,7 +339,7 @@ DA_province_gold_relative_to_dig_level = {
 			NOT = { has_province_flag = DA_looked_dig_adk_3 }
 		}
 		owner = {
-			add_treasury = 200
+			add_treasury = 100
 		}
 	}
 	else_if = {
@@ -352,7 +348,7 @@ DA_province_gold_relative_to_dig_level = {
 			NOT = { has_province_flag = DA_looked_dig_adk_4 }
 		}
 		owner = {
-			add_treasury = 300
+			add_treasury = 200
 		}
 	}
 	else_if = {
@@ -361,7 +357,7 @@ DA_province_gold_relative_to_dig_level = {
 			NOT = { has_province_flag = DA_looked_dig_adk_5 }
 		}
 		owner = {
-			add_treasury = 600
+			add_treasury = 400
 		}
 	}
 	else_if = {
@@ -370,7 +366,7 @@ DA_province_gold_relative_to_dig_level = {
 			NOT = { has_province_flag = DA_looked_dig_adk_6 }
 		}
 		owner = {
-			add_treasury = 1000
+			add_treasury = 600
 		}
 	}
 	else_if = {
@@ -379,7 +375,7 @@ DA_province_gold_relative_to_dig_level = {
 			NOT = { has_province_flag = DA_looked_dig_adk_7 }
 		}
 		owner = {
-			add_treasury = 1500
+			add_treasury = 1000
 		}
 	}
 	else_if = {
@@ -388,7 +384,7 @@ DA_province_gold_relative_to_dig_level = {
 			NOT = { has_province_flag = DA_looked_dig_adk_8 }
 		}
 		owner = {
-			add_treasury = 2000
+			add_treasury = 1600
 		}
 	}
 	else_if = {
@@ -397,7 +393,7 @@ DA_province_gold_relative_to_dig_level = {
 			NOT = { has_province_flag = DA_looked_dig_adk_9 }
 		}
 		owner = {
-			add_treasury = 5000
+			add_treasury = 2000
 		}
 	}
 	else_if = {
@@ -406,7 +402,7 @@ DA_province_gold_relative_to_dig_level = {
 			NOT = { has_province_flag = DA_looked_dig_adk_10 }
 		}
 		owner = {
-			add_treasury = 10000
+			add_treasury = 5000
 		}
 	}
 	else_if = {
@@ -415,7 +411,7 @@ DA_province_gold_relative_to_dig_level = {
 			NOT = { has_province_flag = DA_looked_dig_adk_11 }
 		}
 		owner = {
-			add_treasury = 20000
+			add_treasury = 10000
 		}
 	}
 	else = { # should never go here
@@ -440,7 +436,15 @@ DA_province_prestige_relative_to_dig_level = {
 			NOT = { has_province_flag = DA_looked_dig_adk_3 }
 		}
 		owner = {
-			add_prestige = 3
+			if = {
+				limit = {
+					prestige = 100
+				}
+				add_splendor = 3
+			}
+			else = {
+				add_prestige = 3
+			}
 		}
 	}
 	else_if = {
@@ -449,7 +453,15 @@ DA_province_prestige_relative_to_dig_level = {
 			NOT = { has_province_flag = DA_looked_dig_adk_4 }
 		}
 		owner = {
-			add_prestige = 5
+			if = {
+				limit = {
+					prestige = 100
+				}
+				add_splendor = 4
+			}
+			else = {
+				add_prestige = 4
+			}
 		}
 	}
 	else_if = {
@@ -458,7 +470,15 @@ DA_province_prestige_relative_to_dig_level = {
 			NOT = { has_province_flag = DA_looked_dig_adk_5 }
 		}
 		owner = {
-			add_prestige = 7
+			if = {
+				limit = {
+					prestige = 100
+				}
+				add_splendor = 5
+			}
+			else = {
+				add_prestige = 5
+			}
 		}
 	}
 	else_if = {
@@ -467,7 +487,15 @@ DA_province_prestige_relative_to_dig_level = {
 			NOT = { has_province_flag = DA_looked_dig_adk_6 }
 		}
 		owner = {
-			add_prestige = 8
+			if = {
+				limit = {
+					prestige = 100
+				}
+				add_splendor = 6
+			}
+			else = {
+				add_prestige = 6
+			}
 		}
 	}
 	else_if = {
@@ -476,7 +504,15 @@ DA_province_prestige_relative_to_dig_level = {
 			NOT = { has_province_flag = DA_looked_dig_adk_7 }
 		}
 		owner = {
-			add_prestige = 10
+			if = {
+				limit = {
+					prestige = 100
+				}
+				add_splendor = 7
+			}
+			else = {
+				add_prestige = 7
+			}
 		}
 	}
 	else_if = {
@@ -485,7 +521,15 @@ DA_province_prestige_relative_to_dig_level = {
 			NOT = { has_province_flag = DA_looked_dig_adk_8 }
 		}
 		owner = {
-			add_prestige = 15
+			if = {
+				limit = {
+					prestige = 100
+				}
+				add_splendor = 8
+			}
+			else = {
+				add_prestige = 8
+			}
 		}
 	}
 	else_if = {
@@ -494,7 +538,15 @@ DA_province_prestige_relative_to_dig_level = {
 			NOT = { has_province_flag = DA_looked_dig_adk_9 }
 		}
 		owner = {
-			add_prestige = 20
+			if = {
+				limit = {
+					prestige = 100
+				}
+				add_splendor = 9
+			}
+			else = {
+				add_prestige = 9
+			}
 		}
 	}
 	else_if = {
@@ -503,7 +555,15 @@ DA_province_prestige_relative_to_dig_level = {
 			NOT = { has_province_flag = DA_looked_dig_adk_10 }
 		}
 		owner = {
-			add_prestige = 25
+			if = {
+				limit = {
+					prestige = 100
+				}
+				add_splendor = 10
+			}
+			else = {
+				add_prestige = 10
+			}
 		}
 	}
 	else_if = {
@@ -512,7 +572,15 @@ DA_province_prestige_relative_to_dig_level = {
 			NOT = { has_province_flag = DA_looked_dig_adk_11 }
 		}
 		owner = {
-			add_prestige = 30
+			if = {
+				limit = {
+					prestige = 100
+				}
+				add_splendor = 11
+			}
+			else = {
+				add_prestige = 11
+			}
 		}
 	}
 	else = { # should never go here
@@ -528,7 +596,7 @@ DA_province_goblins_relative_to_dig_level = {
 		}
 		
 		spawn_rebels = {
-			type = goblin_tide_rebel
+			type = DA_Deep_goblins_rebels
 			size = 1
 		}
 	}
@@ -539,7 +607,7 @@ DA_province_goblins_relative_to_dig_level = {
 		}
 		
 		spawn_rebels = {
-			type = goblin_tide_rebel
+			type = DA_Deep_goblins_rebels
 			size = 1
 		}
 	}
@@ -549,7 +617,7 @@ DA_province_goblins_relative_to_dig_level = {
 			NOT = { has_province_flag = DA_looked_dig_adk_4 }
 		}
 		spawn_rebels = {
-			type = goblin_tide_rebel
+			type = DA_Deep_goblins_rebels
 			size = 1
 		}
 	}
@@ -559,7 +627,7 @@ DA_province_goblins_relative_to_dig_level = {
 			NOT = { has_province_flag = DA_looked_dig_adk_5 }
 		}
 		spawn_rebels = {
-			type = goblin_tide_rebel
+			type = DA_Deep_goblins_rebels
 			size = 1
 		}
 	}
@@ -569,7 +637,7 @@ DA_province_goblins_relative_to_dig_level = {
 			NOT = { has_province_flag = DA_looked_dig_adk_6 }
 		}
 		spawn_rebels = {
-			type = goblin_tide_rebel
+			type = DA_Deep_goblins_rebels
 			size = 2
 		}
 	}
@@ -579,7 +647,7 @@ DA_province_goblins_relative_to_dig_level = {
 			NOT = { has_province_flag = DA_looked_dig_adk_7 }
 		}
 		spawn_rebels = {
-			type = goblin_tide_rebel
+			type = DA_Deep_goblins_rebels
 			size = 2
 		}
 	}
@@ -589,7 +657,7 @@ DA_province_goblins_relative_to_dig_level = {
 			NOT = { has_province_flag = DA_looked_dig_adk_8 }
 		}
 		spawn_rebels = {
-			type = goblin_tide_rebel
+			type = DA_Deep_goblins_rebels
 			size = 2
 		}
 	}
@@ -599,7 +667,7 @@ DA_province_goblins_relative_to_dig_level = {
 			NOT = { has_province_flag = DA_looked_dig_adk_9 }
 		}
 		spawn_rebels = {
-			type = goblin_tide_rebel
+			type = DA_Deep_goblins_rebels
 			size = 3
 		}
 	}
@@ -609,7 +677,7 @@ DA_province_goblins_relative_to_dig_level = {
 			NOT = { has_province_flag = DA_looked_dig_adk_10 }
 		}
 		spawn_rebels = {
-			type = goblin_tide_rebel
+			type = DA_Deep_goblins_rebels
 			size = 4
 		}
 	}
@@ -619,7 +687,7 @@ DA_province_goblins_relative_to_dig_level = {
 			NOT = { has_province_flag = DA_looked_dig_adk_11 }
 		}
 		spawn_rebels = {
-			type = goblin_tide_rebel
+			type = DA_Deep_goblins_rebels
 			size = 5
 		}
 	}
@@ -697,7 +765,7 @@ DA_give_king_treasury = {
 	}
 	else_if = {
 		limit = { 
-			# add_prestige = 2
+			add_prestige = 2
 			DA_has_dig_level_8_or_higher = yes
 			NOT = { has_province_flag = DA_looked_dig_adk_8 }
 		}
@@ -758,8 +826,8 @@ DA_mad_scientist_effect = {
 			NOT = { has_province_flag = DA_looked_dig_adk_2 }
 		}
 		owner = {
-			tooltip = { add_adk_effect = { add = 4 } }
-			hidden_effect = { change_variable = { ancientDwarvenKnowledge = 4 } }
+			tooltip = { add_adk_effect = { add = 5 } }
+			hidden_effect = { change_variable = { ancientDwarvenKnowledge = 5 } }
 		}
 	}
 	else_if = {
@@ -778,8 +846,8 @@ DA_mad_scientist_effect = {
 			NOT = { has_province_flag = DA_looked_dig_adk_4 }
 		}
 		owner = {
-			tooltip = { add_adk_effect = { add = 8 } }
-			hidden_effect = { change_variable = { ancientDwarvenKnowledge = 8 } }
+			tooltip = { add_adk_effect = { add = 7 } }
+			hidden_effect = { change_variable = { ancientDwarvenKnowledge = 7 } }
 		}
 	}
 	else_if = {
@@ -788,8 +856,8 @@ DA_mad_scientist_effect = {
 			NOT = { has_province_flag = DA_looked_dig_adk_5 }
 		}
 		owner = {
-			tooltip = { add_adk_effect = { add = 12 } }
-			hidden_effect = { change_variable = { ancientDwarvenKnowledge = 12 } }
+			tooltip = { add_adk_effect = { add = 8 } }
+			hidden_effect = { change_variable = { ancientDwarvenKnowledge = 8 } }
 		}
 	}
 	else_if = {
@@ -798,8 +866,8 @@ DA_mad_scientist_effect = {
 			NOT = { has_province_flag = DA_looked_dig_adk_6 }
 		}
 		owner = {
-			tooltip = { add_adk_effect = { add = 16 } }
-			hidden_effect = { change_variable = { ancientDwarvenKnowledge = 16 } }
+			tooltip = { add_adk_effect = { add = 10 } }
+			hidden_effect = { change_variable = { ancientDwarvenKnowledge = 10 } }
 		}
 	}
 	else_if = {
@@ -808,8 +876,8 @@ DA_mad_scientist_effect = {
 			NOT = { has_province_flag = DA_looked_dig_adk_7 }
 		}
 		owner = {
-			tooltip = { add_adk_effect = { add = 24 } }
-			hidden_effect = { change_variable = { ancientDwarvenKnowledge = 24 } }
+			tooltip = { add_adk_effect = { add = 14 } }
+			hidden_effect = { change_variable = { ancientDwarvenKnowledge = 14 } }
 		}
 	}
 	else_if = {
@@ -818,8 +886,8 @@ DA_mad_scientist_effect = {
 			NOT = { has_province_flag = DA_looked_dig_adk_8 }
 		}
 		owner = {
-			tooltip = { add_adk_effect = { add = 28 } }
-			hidden_effect = { change_variable = { ancientDwarvenKnowledge = 28 } }
+			tooltip = { add_adk_effect = { add = 18 } }
+			hidden_effect = { change_variable = { ancientDwarvenKnowledge = 18 } }
 		}
 	}
 	else_if = {
@@ -828,8 +896,8 @@ DA_mad_scientist_effect = {
 			NOT = { has_province_flag = DA_looked_dig_adk_9 }
 		}
 		owner = {
-			tooltip = { add_adk_effect = { add = 34 } }
-			hidden_effect = { change_variable = { ancientDwarvenKnowledge = 34 } }
+			tooltip = { add_adk_effect = { add = 22 } }
+			hidden_effect = { change_variable = { ancientDwarvenKnowledge = 22 } }
 		}
 	}
 	else_if = {
@@ -838,8 +906,8 @@ DA_mad_scientist_effect = {
 			NOT = { has_province_flag = DA_looked_dig_adk_10 }
 		}
 		owner = {
-			tooltip = { add_adk_effect = { add = 40 } }
-			hidden_effect = { change_variable = { ancientDwarvenKnowledge = 40 } }
+			tooltip = { add_adk_effect = { add = 26 } }
+			hidden_effect = { change_variable = { ancientDwarvenKnowledge = 26 } }
 		}
 	}
 	else_if = {
@@ -848,8 +916,8 @@ DA_mad_scientist_effect = {
 			NOT = { has_province_flag = DA_looked_dig_adk_11 }
 		}
 		owner = {
-			tooltip = { add_adk_effect = { add = 50 } }
-			hidden_effect = { change_variable = { ancientDwarvenKnowledge = 50 } }
+			tooltip = { add_adk_effect = { add = 30 } }
+			hidden_effect = { change_variable = { ancientDwarvenKnowledge = 30 } }
 		}
 	}
 	else = { # should never go here
@@ -1282,6 +1350,11 @@ DA_clear_ruler_personalities = {
 		remove_ruler_personality = obsessive_perfectionist_personality
 		remove_ruler_personality = malevolent_personality
 		remove_ruler_personality = immortal_personality
+		remove_ruler_personality = reformist_personality
+		remove_ruler_personality = enlightened_personality
+		remove_ruler_personality = absolutist_personality
+		remove_ruler_personality = legendary_pirate_personality
+		remove_ruler_personality = patron_of_arts_personality
 		remove_ruler_personality = mage_personality
 		remove_ruler_personality = humane_personality
 		remove_ruler_personality = petty_personality
@@ -1374,12 +1447,6 @@ DA_clear_ruler_personalities = {
 }
 
 DA_apply_new_personalities = {
-	if = {
-		limit = {
-			has_country_flag = DA_ruler_wants_immortal_personality
-		}
-		add_ruler_personality = immortal_personality
-	}
 	if = {
 		limit = {
 			has_country_flag = DA_ruler_wants_mage_personality
@@ -1860,4 +1927,323 @@ DA_clr_HO_effect = {
 		remove_province_modifier = DA_local_explored_dig_10
 		remove_province_modifier = DA_local_explored_dig_11
 	}
+}
+DA_save_current_ruler_magic_schools = {
+	if = {
+		limit = {
+			has_ruler_flag = abjuration_1
+		}
+		set_country_flag = had_abjuration_1
+	}
+	if = {
+		limit = {
+			has_ruler_flag = abjuration_2
+		}
+		set_country_flag = had_abjuration_2
+	}
+	if = {
+		limit = {
+			has_ruler_flag = abjuration_3
+		}
+		set_country_flag = had_abjuration_3
+	}
+	if = {
+		limit = {
+			has_ruler_flag = transmutation_1
+		}
+		set_country_flag = had_transmutation_1
+	}
+	if = {
+		limit = {
+			has_ruler_flag = transmutation_2
+		}
+		set_country_flag = had_transmutation_2
+	}
+	if = {
+		limit = {
+			has_ruler_flag = transmutation_3
+		}
+		set_country_flag = had_transmutation_3
+	}
+	if = {
+		limit = {
+			has_ruler_flag = divination_1
+		}
+		set_country_flag = had_divination_1
+	}
+	if = {
+		limit = {
+			has_ruler_flag = divination_2
+		}
+		set_country_flag = had_divination_2
+	}
+	if = {
+		limit = {
+			has_ruler_flag = divination_3
+		}
+		set_country_flag = had_divination_3
+	}
+	if = {
+		limit = {
+			has_ruler_flag = evocation_1
+		}
+		set_country_flag = had_evocation_1
+	}
+	if = {
+		limit = {
+			has_ruler_flag = evocation_2
+		}
+		set_country_flag = had_evocation_2
+	}
+	if = {
+		limit = {
+			has_ruler_flag = evocation_3
+		}
+		set_country_flag = had_evocation_3
+	}
+	if = {
+		limit = {
+			has_ruler_flag = conjuration_1
+		}
+		set_country_flag = had_conjuration_1
+	}
+	if = {
+		limit = {
+			has_ruler_flag = conjuration_2
+		}
+		set_country_flag = had_conjuration_2
+	}
+	if = {
+		limit = {
+			has_ruler_flag = conjuration_3
+		}
+		set_country_flag = had_conjuration_3
+	}
+	if = {
+		limit = {
+			has_ruler_flag = enchantment_1
+		}
+		set_country_flag = had_enchantment_1
+	}
+	if = {
+		limit = {
+			has_ruler_flag = enchantment_2
+		}
+		set_country_flag = had_enchantment_2
+	}
+	if = {
+		limit = {
+			has_ruler_flag = enchantment_3
+		}
+		set_country_flag = had_enchantment_3
+	}
+	if = {
+		limit = {
+			has_ruler_flag = illusion_1
+		}
+		set_country_flag = had_illusion_1
+	}
+	if = {
+		limit = {
+			has_ruler_flag = illusion_2
+		}
+		set_country_flag = had_illusion_2
+	}
+	if = {
+		limit = {
+			has_ruler_flag = illusion_3
+		}
+		set_country_flag = had_illusion_3
+	}
+	if = {
+		limit = {
+			has_ruler_flag = necromancy_1
+		}
+		set_country_flag = had_necromancy_1
+	}
+	if = {
+		limit = {
+			has_ruler_flag = necromancy_2
+		}
+		set_country_flag = had_necromancy_2
+	}
+	if = {
+		limit = {
+			has_ruler_flag = necromancy_3
+		}
+		set_country_flag = had_necromancy_3
+	}
+	set_country_flag = DA_saved_some_runes
+}
+
+DA_apply_old_ruler_magic_schools = {
+	if = {
+		limit = {
+			has_country_flag = had_abjuration_1
+		}
+		clr_country_flag = had_abjuration_1
+		set_ruler_flag = abjuration_1
+	}
+	if = {
+		limit = {
+			has_country_flag = had_abjuration_2
+		}
+		clr_country_flag = had_abjuration_2
+		set_ruler_flag = abjuration_2
+	}
+	if = {
+		limit = {
+			has_country_flag = had_abjuration_3
+		}
+		clr_country_flag = had_abjuration_3
+		set_ruler_flag = abjuration_3
+	}
+	if = {
+		limit = {
+			has_country_flag = had_transmutation_1
+		}
+		clr_country_flag = had_transmutation_1
+		set_ruler_flag = transmutation_1
+	}
+	if = {
+		limit = {
+			has_country_flag = had_transmutation_2
+		}
+		clr_country_flag = had_transmutation_2
+		set_ruler_flag = transmutation_2
+	}
+	if = {
+		limit = {
+			has_country_flag = had_transmutation_3
+		}
+		clr_country_flag = had_transmutation_3
+		set_ruler_flag = transmutation_3
+	}
+	if = {
+		limit = {
+			has_country_flag = had_divination_1
+		}
+		clr_country_flag = had_divination_1
+		set_ruler_flag = divination_1
+	}
+	if = {
+		limit = {
+			has_country_flag = had_divination_2
+		}
+		clr_country_flag = had_divination_2
+		set_ruler_flag = divination_2
+	}
+	if = {
+		limit = {
+			has_country_flag = had_divination_3
+		}
+		clr_country_flag = had_divination_3
+		set_ruler_flag = divination_3
+	}
+	if = {
+		limit = {
+			has_country_flag = had_evocation_1
+		}
+		clr_country_flag = had_evocation_1
+		set_ruler_flag = evocation_1
+	}
+	if = {
+		limit = {
+			has_country_flag = had_evocation_2
+		}
+		clr_country_flag = had_evocation_2
+		set_ruler_flag = evocation_2
+	}
+	if = {
+		limit = {
+			has_country_flag = had_evocation_3
+		}
+		clr_country_flag = had_evocation_3
+		set_ruler_flag = evocation_3
+	}
+	if = {
+		limit = {
+			has_country_flag = had_conjuration_1
+		}
+		clr_country_flag = had_conjuration_1
+		set_ruler_flag = conjuration_1
+	}
+	if = {
+		limit = {
+			has_country_flag = had_conjuration_2
+		}
+		clr_country_flag = had_conjuration_2
+		set_ruler_flag = conjuration_2
+	}
+	if = {
+		limit = {
+			has_country_flag = had_conjuration_3
+		}
+		clr_country_flag = had_conjuration_3
+		set_ruler_flag = conjuration_3
+	}
+	if = {
+		limit = {
+			has_country_flag = had_enchantment_1
+		}
+		clr_country_flag = had_enchantment_1
+		set_ruler_flag = enchantment_1
+	}
+	if = {
+		limit = {
+			has_country_flag = had_enchantment_2
+		}
+		clr_country_flag = had_enchantment_2
+		set_ruler_flag = enchantment_2
+	}
+	if = {
+		limit = {
+			has_country_flag = had_enchantment_3
+		}
+		clr_country_flag = had_enchantment_3
+		set_ruler_flag = enchantment_3
+	}
+	if = {
+		limit = {
+			has_country_flag = had_illusion_1
+		}
+		clr_country_flag = had_illusion_1
+		set_ruler_flag = illusion_1
+	}
+	if = {
+		limit = {
+			has_country_flag = had_illusion_2
+		}
+		clr_country_flag = had_illusion_2
+		set_ruler_flag = illusion_2
+	}
+	if = {
+		limit = {
+			has_country_flag = had_illusion_3
+		}
+		clr_country_flag = had_illusion_3
+		set_ruler_flag = illusion_3
+	}
+	if = {
+		limit = {
+			has_country_flag = had_necromancy_1
+		}
+		clr_country_flag = had_necromancy_1
+		set_ruler_flag = necromancy_1
+	}
+	if = {
+		limit = {
+			has_country_flag = had_necromancy_2
+		}
+		clr_country_flag = had_necromancy_2
+		set_ruler_flag = necromancy_2
+	}
+	if = {
+		limit = {
+			has_country_flag = had_necromancy_3
+		}
+		clr_country_flag = had_necromancy_3
+		set_ruler_flag = necromancy_3
+	}
+	clr_country_flag = DA_saved_some_runes
 }

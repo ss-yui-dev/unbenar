@@ -1,0 +1,183 @@
+namespace = MIGA_events
+
+# Powerful Mage Heir
+country_event = {
+	id =  MIGA_events.1
+	title =  magic_ruler.103.t
+	desc =  magic_ruler.103.d
+	picture = NEW_HEIR_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = A32
+		OR = {
+			has_consort = yes
+			has_heir = yes
+		}
+		has_regency = no
+		OR = {
+			government = monarchy
+			is_tribal = yes
+		}
+		is_lesser_in_union = no
+		has_government_attribute = heir
+	}
+	
+	mean_time_to_happen = {
+		months = 100
+		modifier = {
+			factor = 0.25
+			OR = {
+				ruler_has_mage_personality = yes
+				consort_has_mage_personality = yes
+			}
+		}
+	}
+
+	option = {
+		name = magic_ruler.103.a
+		trigger = {
+			has_heir = no
+		}
+		
+		define_heir = {
+			dynasty = ROOT
+			age = 0
+			male = yes
+			change_adm = 2
+			change_dip = 2
+			change_mil = 2
+		}
+		set_heir_mage_effect = yes
+	}
+	
+	option = {
+		name = magic_ruler.103.a
+		trigger = {
+			has_heir = yes
+		}
+		ai_chance = {
+			factor = 75
+		}
+		
+		define_heir = {
+			dynasty = ROOT
+			age = 0
+			male = yes
+			change_adm = 2
+			change_dip = 2
+			change_mil = 2
+		}
+		set_heir_mage_effect = yes
+		
+		reduce_legitimacy_large_effect = yes
+	}
+	
+	option = {
+		name = magic_ruler.104.b
+		trigger = {
+			has_heir = yes
+		}
+		ai_chance = {
+			factor = 25
+		}
+		
+		increase_legitimacy_medium_effect = yes
+	}
+}
+
+#Adenica
+#Horse picking
+country_event = {
+	id = MIGA_events.10
+	title = flavor_adenica.10.t
+	desc = flavor_adenica.10.d
+	picture = LAND_MILITARY_eventPicture
+	
+	is_triggered_only = yes
+	trigger = {
+		has_country_flag = adenica_horse_event_unlocked
+		NOT = { has_ruler_flag = adenica_horse_concluded }
+	}
+	
+	#Adenican Courser
+	option = {
+		name = flavor_adenica.10.a
+		set_country_flag = adenica_courser_picked
+	}
+
+	#Arbarani Destrier
+	option = {
+		name = flavor_adenica.10.b
+		set_country_flag = arbarani_destrier_picked
+	}
+
+	#Elikhandi Courser
+	option = {
+		name = flavor_adenica.10.c
+		set_country_flag = elikhandi_courser_picked
+	}
+
+	#Alenic Rouncey
+	option = {
+		name = flavor_adenica.10.e
+		set_country_flag = alenic_rouncey_picked
+	}
+	after = {
+		country_event = {
+			id = MIGA_events.11
+		}
+	}
+}
+
+# The approach
+country_event = {
+	id = MIGA_events.11
+	title = flavor_adenica.11.t
+	desc = flavor_adenica.11.d
+	picture = LAND_MILITARY_eventPicture
+	
+	#fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+		always = yes
+	}
+
+	#Approach carefully
+	option = {
+		name = flavor_adenica.11.a
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 1.5
+				ruler_has_personality = craven_personality
+			}
+			modifier = {
+				factor = 1.5
+				ruler_has_personality = careful_personality
+			}
+		}
+		country_event = {
+			id = flavor_adenica.12
+		}
+		
+	}
+	
+	#Approach with boldness
+	option = {
+		name = flavor_adenica.11.b
+		ai_chance = {
+			factor = 50
+		}
+		country_event = {
+			id = flavor_adenica.13
+		}
+		add_estate_loyalty_modifier = {
+			estate = estate_adventurers
+			desc = adenica_adventurers_loyalty_impressed
+			loyalty = 10
+			duration = 7300
+		}
+	}
+}

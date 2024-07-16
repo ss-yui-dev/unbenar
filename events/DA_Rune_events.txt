@@ -1,0 +1,858 @@
+
+namespace = DA_Rune_event
+
+################# Runes found in exploration ##################
+
+province_event = {
+	id = DA_Rune_event.100 		# nothing
+	title = "DA_Rune_event.100.t"
+	desc = "DA_Rune_event.100.d"
+	picture = INVENTION_eventPicture
+
+	is_triggered_only = yes
+	option = {
+		name = "DA_Rune_event.100.a"
+	}
+}
+
+################# Advanced Runes #################
+
+province_event = {
+	id = DA_Rune_event.101 		# 
+	title = "DA_Rune_event.101.t"
+	desc = "DA_Rune_event.101.d"
+	picture = INVENTION_eventPicture
+
+	is_triggered_only = yes
+	option = {
+		name = "DA_Rune_event.101.a"
+		custom_tooltip = DA_Found_advanced_rune_tt
+		DA_Found_Blue_rune_effect = {
+			Alchemy_1 = yes
+			Magic_Theory_1 = yes
+		}
+		owner = {
+			set_country_flag = DA_Unlocked.Rune_Durability
+		}
+	}
+}
+province_event = {
+	id = DA_Rune_event.102 		# 
+	title = "DA_Rune_event.102.t"
+	desc = "DA_Rune_event.102.d"
+	picture = INVENTION_eventPicture
+
+	is_triggered_only = yes
+	option = {
+		name = "DA_Rune_event.101.a"
+		custom_tooltip = DA_Found_advanced_rune_tt
+		DA_Found_Blue_rune_effect = {
+			Alchemy_1 = yes
+			Magic_Theory_1 = yes
+		}
+		owner = {
+			set_country_flag = DA_Unlocked.Rune_Protection
+		}
+	}
+}
+province_event = {
+	id = DA_Rune_event.103 		# 
+	title = "DA_Rune_event.103.t"
+	desc = "DA_Rune_event.103.d"
+	picture = INVENTION_eventPicture
+
+	is_triggered_only = yes
+	option = {
+		name = "DA_Rune_event.101.a"
+		custom_tooltip = DA_Found_advanced_rune_tt
+		DA_Found_Blue_rune_effect = {
+			Medicine_1 = yes
+			Alchemy_1 = yes
+			Magic_Theory_1 = yes
+		}
+		owner = {
+			set_country_flag = DA_Unlocked.Rune_Precision
+		}
+	}
+}
+province_event = {
+	id = DA_Rune_event.104 		# 
+	title = "DA_Rune_event.104.t"
+	desc = "DA_Rune_event.104.d"
+	picture = INVENTION_eventPicture
+
+	is_triggered_only = yes
+	option = {
+		name = "DA_Rune_event.101.a"
+		custom_tooltip = DA_Found_advanced_rune_tt
+		DA_Found_Blue_rune_effect = {
+			Alchemy_1 = yes
+			Magic_Theory_1 = yes
+		}
+		owner = {
+			set_country_flag = DA_Unlocked.Rune_Resolve
+		}
+	}
+}
+province_event = {
+	id = DA_Rune_event.105 		# 
+	title = "DA_Rune_event.105.t"
+	desc = "DA_Rune_event.105.d"
+	picture = INVENTION_eventPicture
+
+	is_triggered_only = yes
+	option = {
+		name = "DA_Rune_event.101.a"
+		custom_tooltip = DA_Found_advanced_rune_tt
+		DA_Found_Blue_rune_effect = {
+			Medicine_1 = yes
+			Alchemy_1 = yes
+			Magic_Theory_2 = yes
+		}
+		owner = {
+			set_country_flag = DA_Unlocked.Rune_Rage
+		}
+	}
+}
+
+province_event = {
+	id = DA_Rune_event.140 		# 
+	title = "DA_Rune_event.140.t"
+	desc = "DA_Rune_event.140.d"
+	picture = INVENTION_eventPicture
+
+	is_triggered_only = yes
+	option = {
+		name = "DA_Rune_event.101.a"
+		custom_tooltip = DA_Found_advanced_rune_tt
+		DA_Found_Blue_rune_effect = {
+			Elemental_Magic_Earth = yes
+			Magic_Theory_1 = yes
+		}
+		owner = {
+			set_country_flag = DA_Unlocked.Earth_Earthen_Grasp
+		}
+	}
+}
+
+province_event = {
+	id = DA_Rune_event.141 		# 
+	title = "DA_Rune_event.141.t"
+	desc = "DA_Rune_event.141.d"
+	picture = INVENTION_eventPicture
+
+	is_triggered_only = yes
+	option = {
+		name = "DA_Rune_event.101.a"
+		custom_tooltip = DA_Found_advanced_rune_tt
+		DA_Found_Blue_rune_effect = {
+			Elemental_Magic_Earth = yes
+			Magic_Theory_1 = yes
+		}
+		owner = {
+			set_country_flag = DA_Unlocked.Earth_StoneSkin
+		}
+	}
+}
+
+province_event = {
+	id = DA_Rune_event.142 		# 
+	title = "DA_Rune_event.142.t"
+	desc = "DA_Rune_event.142.d"
+	picture = INVENTION_eventPicture
+
+	is_triggered_only = yes
+	option = {
+		name = "DA_Rune_event.101.a"
+		custom_tooltip = DA_Found_advanced_rune_tt
+		DA_Found_Blue_rune_effect = {
+			Elemental_Magic_Earth = yes
+			Magic_Theory_1 = yes
+		}
+		owner = {
+			set_country_flag = DA_Unlocked.Earth_Earthbound_Strength
+		}
+	}
+}
+
+province_event = {
+	id = DA_Rune_event.145 		# 
+	title = "DA_Rune_event.145.t"
+	desc = "DA_Rune_event.145.d"
+	picture = INVENTION_eventPicture
+
+	is_triggered_only = yes
+	option = {
+		name = "DA_Rune_event.101.a"
+		custom_tooltip = DA_Found_advanced_rune_tt
+		DA_Found_Blue_rune_effect = {
+			Elemental_Magic_Air = yes
+			Magic_Theory_1 = yes
+		}
+		owner = {
+			set_country_flag = DA_Unlocked.Air_Windborne_Swiftness
+		}
+	}
+}
+
+province_event = {
+	id = DA_Rune_event.146 		# 
+	title = "DA_Rune_event.146.t"
+	desc = "DA_Rune_event.146.d"
+	picture = INVENTION_eventPicture
+
+	is_triggered_only = yes
+	option = {
+		name = "DA_Rune_event.101.a"
+		custom_tooltip = DA_Found_advanced_rune_tt
+		DA_Found_Blue_rune_effect = {
+			Elemental_Magic_Air = yes
+			Magic_Theory_1 = yes
+		}
+		owner = {
+			set_country_flag = DA_Unlocked.Air_Galeforce_Impact
+		}
+	}
+}
+
+province_event = {
+	id = DA_Rune_event.147 		# 
+	title = "DA_Rune_event.147.t"
+	desc = "DA_Rune_event.147.d"
+	picture = INVENTION_eventPicture
+
+	is_triggered_only = yes
+	option = {
+		name = "DA_Rune_event.101.a"
+		custom_tooltip = DA_Found_advanced_rune_tt
+		DA_Found_Blue_rune_effect = {
+			Elemental_Magic_Air = yes
+			Magic_Theory_1 = yes
+		}
+		owner = {
+			set_country_flag = DA_Unlocked.Air_Airy_Shielding
+		}
+	}
+}
+
+province_event = {
+	id = DA_Rune_event.150 		# 
+	title = "DA_Rune_event.150.t"
+	desc = "DA_Rune_event.150.d"
+	picture = INVENTION_eventPicture
+
+	is_triggered_only = yes
+	option = {
+		name = "DA_Rune_event.101.a"
+		custom_tooltip = DA_Found_advanced_rune_tt
+		DA_Found_Blue_rune_effect = {
+			Elemental_Magic_Fire = yes
+			Magic_Theory_1 = yes
+		}
+		owner = {
+			set_country_flag = DA_Unlocked.Fire_Pyrokinetic_Shield
+		}
+	}
+}
+
+province_event = {
+	id = DA_Rune_event.151 		# 
+	title = "DA_Rune_event.151.t"
+	desc = "DA_Rune_event.151.d"
+	picture = INVENTION_eventPicture
+
+	is_triggered_only = yes
+	option = {
+		name = "DA_Rune_event.101.a"
+		custom_tooltip = DA_Found_advanced_rune_tt
+		DA_Found_Blue_rune_effect = {
+			Elemental_Magic_Fire = yes
+			Magic_Theory_1 = yes
+		}
+		owner = {
+			set_country_flag = DA_Unlocked.Fire_Scorching_Aura
+		}
+	}
+}
+province_event = {
+	id = DA_Rune_event.152 		# 
+	title = "DA_Rune_event.152.t"
+	desc = "DA_Rune_event.152.d"
+	picture = INVENTION_eventPicture
+
+	is_triggered_only = yes
+	option = {
+		name = "DA_Rune_event.101.a"
+		custom_tooltip = DA_Found_advanced_rune_tt
+		DA_Found_Blue_rune_effect = {
+			Elemental_Magic_Fire = yes
+			Magic_Theory_1 = yes
+		}
+		owner = {
+			set_country_flag = DA_Unlocked.Fire_Flameburst_Impact
+		}
+	}
+}
+
+province_event = {
+	id = DA_Rune_event.155 		# 
+	title = "DA_Rune_event.155.t"
+	desc = "DA_Rune_event.155.d"
+	picture = INVENTION_eventPicture
+
+	is_triggered_only = yes
+	option = {
+		name = "DA_Rune_event.101.a"
+		custom_tooltip = DA_Found_advanced_rune_tt
+		DA_Found_Blue_rune_effect = {
+			Elemental_Magic_Water = yes
+			Magic_Theory_1 = yes
+		}
+		owner = {
+			set_country_flag = DA_Unlocked.Water_Torrential_Defense
+		}
+	}
+}
+
+province_event = {
+	id = DA_Rune_event.156 		# 
+	title = "DA_Rune_event.156.t"
+	desc = "DA_Rune_event.156.d"
+	picture = INVENTION_eventPicture
+
+	is_triggered_only = yes
+	option = {
+		name = "DA_Rune_event.101.a"
+		custom_tooltip = DA_Found_advanced_rune_tt
+		DA_Found_Blue_rune_effect = {
+			Elemental_Magic_Water = yes
+			Magic_Theory_1 = yes
+		}
+		owner = {
+			set_country_flag = DA_Unlocked.Water_Calming_Water
+		}
+	}
+}
+
+province_event = {
+	id = DA_Rune_event.157 		# 
+	title = "DA_Rune_event.157.t"
+	desc = "DA_Rune_event.157.d"
+	picture = INVENTION_eventPicture
+
+	is_triggered_only = yes
+	option = {
+		name = "DA_Rune_event.101.a"
+		custom_tooltip = DA_Found_advanced_rune_tt
+		DA_Found_Blue_rune_effect = {
+			Elemental_Magic_Water = yes
+			Magic_Theory_1 = yes
+		}
+		owner = {
+			set_country_flag = DA_Unlocked.Water_Frostbite_Grasp
+		}
+	}
+}
+
+province_event = {
+	id = DA_Rune_event.160 		# 
+	title = "DA_Rune_event.160.t"
+	desc = "DA_Rune_event.160.d"
+	picture = INVENTION_eventPicture
+
+	is_triggered_only = yes
+	option = {
+		name = "DA_Rune_event.101.a"
+		custom_tooltip = DA_Found_advanced_rune_tt
+		DA_Found_Blue_rune_effect = {
+			Enhancement = yes
+			Magic_Theory_2 = yes
+			Medicine_2 = yes
+			Alchemy_2 = yes
+		}
+		owner = {
+			set_country_flag = DA_Unlocked.Enhancement_Muscle_density
+		}
+	}
+}
+
+province_event = {
+	id = DA_Rune_event.161 		# 
+	title = "DA_Rune_event.161.t"
+	desc = "DA_Rune_event.161.d"
+	picture = INVENTION_eventPicture
+
+	is_triggered_only = yes
+	option = {
+		name = "DA_Rune_event.101.a"
+		custom_tooltip = DA_Found_advanced_rune_tt
+		DA_Found_Blue_rune_effect = {
+			Enhancement = yes
+			Magic_Theory_2 = yes
+			Medicine_2 = yes
+			Alchemy_2 = yes
+		}
+		owner = {
+			set_country_flag = DA_Unlocked.Enhancement_Dynamic_Vision
+		}
+	}
+}
+
+province_event = {
+	id = DA_Rune_event.162 		# 
+	title = "DA_Rune_event.162.t"
+	desc = "DA_Rune_event.162.d"
+	picture = INVENTION_eventPicture
+
+	is_triggered_only = yes
+	option = {
+		name = "DA_Rune_event.101.a"
+		custom_tooltip = DA_Found_advanced_rune_tt
+		DA_Found_Blue_rune_effect = {
+			Enhancement = yes
+			Magic_Theory_2 = yes
+			Medicine_2 = yes
+			Alchemy_2 = yes
+		}
+		owner = {
+			set_country_flag = DA_Unlocked.Enhancement_Reflexes
+		}
+	}
+}
+
+################# runic circuits #################
+
+province_event = {
+	id = DA_Rune_event.200 		# 
+	title = "DA_Rune_event.200.t"
+	desc = "DA_Rune_event.200.d"
+	picture = INVENTION_eventPicture
+
+	is_triggered_only = yes
+	option = {
+		name = "DA_Rune_event.101.a"
+		custom_tooltip = DA_Found_Runic_circuit_tt
+		DA_Found_Blue_rune_effect = {
+			Alchemy_3 = yes
+			Magic_Theory_3 = yes
+		}
+		owner = {
+			set_country_flag = DA_Unlocked.Circuit_Force_Field
+		}
+	}
+}
+province_event = {
+	id = DA_Rune_event.201 		# 
+	title = "DA_Rune_event.201.t"
+	desc = "DA_Rune_event.201.d"
+	picture = INVENTION_eventPicture
+
+	is_triggered_only = yes
+	option = {
+		name = "DA_Rune_event.101.a"
+		custom_tooltip = DA_Found_Runic_circuit_tt
+		DA_Found_Blue_rune_effect = {
+			Alchemy_3 = yes
+			Magic_Theory_3 = yes
+		}
+		owner = {
+			set_country_flag = DA_Unlocked.Circuit_Shock_Absorber
+		}
+	}
+}
+province_event = {
+	id = DA_Rune_event.202 		# 
+	title = "DA_Rune_event.202.t"
+	desc = "DA_Rune_event.202.d"
+	picture = INVENTION_eventPicture
+
+	is_triggered_only = yes
+	option = {
+		name = "DA_Rune_event.101.a"
+		custom_tooltip = DA_Found_Runic_circuit_tt
+		DA_Found_Blue_rune_effect = {
+			Alchemy_3 = yes
+			Magic_Theory_3 = yes
+			Mechanics_3 = yes
+		}
+		owner = {
+			set_country_flag = DA_Unlocked.Circuit_Kinetic_Accellerator
+		}
+	}
+}
+province_event = {
+	id = DA_Rune_event.203 		# 
+	title = "DA_Rune_event.203.t"
+	desc = "DA_Rune_event.203.d"
+	picture = INVENTION_eventPicture
+
+	is_triggered_only = yes
+	option = {
+		name = "DA_Rune_event.101.a"
+		custom_tooltip = DA_Found_Runic_circuit_tt
+		DA_Found_Blue_rune_effect = {
+			Medicine_3 = yes
+			Alchemy_3 = yes
+			Magic_Theory_3 = yes
+		}
+		owner = {
+			set_country_flag = DA_Unlocked.Circuit_Hightened_Focus
+		}
+	}
+}
+province_event = {
+	id = DA_Rune_event.204 		#
+	title = "DA_Rune_event.204.t"
+	desc = "DA_Rune_event.204.d"
+	picture = INVENTION_eventPicture
+
+	is_triggered_only = yes
+	option = {
+		name = "DA_Rune_event.101.a"
+		custom_tooltip = DA_Found_Runic_circuit_tt
+		DA_Found_Blue_rune_effect = {
+			Alchemy_3 = yes
+			Magic_Theory_3 = yes
+			Mechanics_3 = yes
+		}
+		owner = {
+			set_country_flag = DA_Unlocked.Circuit_Impact_Amplifier
+		}
+	}
+}
+
+province_event = {
+	id = DA_Rune_event.240 		#
+	title = "DA_Rune_event.240.t"
+	desc = "DA_Rune_event.240.d"
+	picture = INVENTION_eventPicture
+
+	is_triggered_only = yes
+	option = {
+		name = "DA_Rune_event.101.a"
+		custom_tooltip = DA_Found_Runic_circuit_tt
+		DA_Found_Blue_rune_effect = {
+			Enhancement = yes
+			Medicine_3 = yes
+			Alchemy_3 = yes
+			Magic_Theory_3 = yes
+		}
+		owner = {
+			set_country_flag = DA_Unlocked.Enhancement_Muscle_Bone_density
+		}
+	}
+}
+province_event = {
+	id = DA_Rune_event.241 		#
+	title = "DA_Rune_event.241.t"
+	desc = "DA_Rune_event.241.d"
+	picture = INVENTION_eventPicture
+
+	is_triggered_only = yes
+	option = {
+		name = "DA_Rune_event.101.a"
+		custom_tooltip = DA_Found_Runic_circuit_tt
+		DA_Found_Blue_rune_effect = {
+			Enhancement = yes
+			Medicine_3 = yes
+			Alchemy_3 = yes
+			Magic_Theory_3 = yes
+		}
+		owner = {
+			set_country_flag = DA_Unlocked.Enhancement_Senses
+		}
+	}
+}
+province_event = {
+	id = DA_Rune_event.242 		#
+	title = "DA_Rune_event.242.t"
+	desc = "DA_Rune_event.242.d"
+	picture = INVENTION_eventPicture
+
+	is_triggered_only = yes
+	option = {
+		name = "DA_Rune_event.101.a"
+		custom_tooltip = DA_Found_Runic_circuit_tt
+		DA_Found_Blue_rune_effect = {
+			Enhancement = yes
+			Medicine_3 = yes
+			Alchemy_3 = yes
+			Magic_Theory_3 = yes
+		}
+		owner = {
+			set_country_flag = DA_Unlocked.Enhancement_Hightened_Reflexes
+		}
+	}
+}
+province_event = {
+	id = DA_Rune_event.245 		#
+	title = "DA_Rune_event.245.t"
+	desc = "DA_Rune_event.245.d"
+	picture = INVENTION_eventPicture
+
+	is_triggered_only = yes
+	option = {
+		name = "DA_Rune_event.101.a"
+		custom_tooltip = DA_Found_Runic_circuit_tt
+		DA_Found_Blue_rune_effect = {
+			Universal_Law_Life = yes
+			Medicine_3 = yes
+			Alchemy_3 = yes
+			Magic_Theory_3 = yes
+		}
+		owner = {
+			set_country_flag = DA_Unlocked.Life_Vitality
+		}
+	}
+}
+province_event = {
+	id = DA_Rune_event.246 		#
+	title = "DA_Rune_event.246.t"
+	desc = "DA_Rune_event.246.d"
+	picture = INVENTION_eventPicture
+
+	is_triggered_only = yes
+	option = {
+		name = "DA_Rune_event.101.a"
+		custom_tooltip = DA_Found_Runic_circuit_tt
+		DA_Found_Blue_rune_effect = {
+			Universal_Law_Life = yes
+			Medicine_3 = yes
+			Alchemy_3 = yes
+			Magic_Theory_3 = yes
+		}
+		owner = {
+			set_country_flag = DA_Unlocked.Life_Renawal
+		}
+	}
+}
+province_event = {
+	id = DA_Rune_event.247 		#
+	title = "DA_Rune_event.247.t"
+	desc = "DA_Rune_event.247.d"
+	picture = INVENTION_eventPicture
+
+	is_triggered_only = yes
+	option = {
+		name = "DA_Rune_event.101.a"
+		custom_tooltip = DA_Found_Runic_circuit_tt
+		DA_Found_Blue_rune_effect = {
+			Universal_Law_Life = yes
+			Medicine_3 = yes
+			Alchemy_3 = yes
+			Magic_Theory_3 = yes
+		}
+		owner = {
+			set_country_flag = DA_Unlocked.Life_Adaptation
+		}
+	}
+}
+province_event = {
+	id = DA_Rune_event.248 		#
+	title = "DA_Rune_event.248.t"
+	desc = "DA_Rune_event.248.d"
+	picture = INVENTION_eventPicture
+
+	is_triggered_only = yes
+	option = {
+		name = "DA_Rune_event.101.a"
+		custom_tooltip = DA_Found_Runic_circuit_tt
+		DA_Found_Blue_rune_effect = {
+			Universal_Law_Life = yes
+			Medicine_3 = yes
+			Alchemy_3 = yes
+			Magic_Theory_3 = yes
+		}
+		owner = {
+			set_country_flag = DA_Unlocked.Life_Movement
+		}
+	}
+}
+province_event = {
+	id = DA_Rune_event.251 		#
+	title = "DA_Rune_event.251.t"
+	desc = "DA_Rune_event.251.d"
+	picture = INVENTION_eventPicture
+
+	is_triggered_only = yes
+	option = {
+		name = "DA_Rune_event.101.a"
+		custom_tooltip = DA_Found_Runic_circuit_tt
+		DA_Found_Blue_rune_effect = {
+			Universal_Law_Death = yes
+			Medicine_3 = yes
+			Alchemy_3 = yes
+			Magic_Theory_3 = yes
+		}
+		owner = {
+			set_country_flag = DA_Unlocked.Death_Decay
+		}
+	}
+}
+province_event = {
+	id = DA_Rune_event.252 		#
+	title = "DA_Rune_event.252.t"
+	desc = "DA_Rune_event.252.d"
+	picture = INVENTION_eventPicture
+
+	is_triggered_only = yes
+	option = {
+		name = "DA_Rune_event.101.a"
+		custom_tooltip = DA_Found_Runic_circuit_tt
+		DA_Found_Blue_rune_effect = {
+			Universal_Law_Death = yes
+			Alchemy_3 = yes
+			Magic_Theory_4 = yes
+		}
+		owner = {
+			set_country_flag = DA_Unlocked.Death_Memorial
+		}
+	}
+}
+province_event = {
+	id = DA_Rune_event.253 		#
+	title = "DA_Rune_event.253.t"
+	desc = "DA_Rune_event.253.d"
+	picture = INVENTION_eventPicture
+
+	is_triggered_only = yes
+	option = {
+		name = "DA_Rune_event.101.a"
+		custom_tooltip = DA_Found_Runic_circuit_tt
+		DA_Found_Blue_rune_effect = {
+			Universal_Law_Death = yes
+			Medicine_3 = yes
+			Alchemy_3 = yes
+			Magic_Theory_4 = yes
+		}
+		owner = {
+			set_country_flag = DA_Unlocked.Death_Stillness
+		}
+	}
+}
+
+province_event = {
+	id = DA_Rune_event.257 		#
+	title = "DA_Rune_event.257.t"
+	desc = "DA_Rune_event.257.d"
+	picture = INVENTION_eventPicture
+
+	is_triggered_only = yes
+	option = {
+		name = "DA_Rune_event.101.a"
+		custom_tooltip = DA_Found_Runic_circuit_tt
+		DA_Found_Blue_rune_effect = {
+			Universal_Law_Time = yes
+			Medicine_4 = yes
+			Alchemy_3 = yes
+			Magic_Theory_4 = yes
+		}
+		owner = {
+			set_country_flag = DA_Unlocked.Time_Perception
+		}
+	}
+}
+province_event = {
+	id = DA_Rune_event.258 		#
+	title = "DA_Rune_event.258.t"
+	desc = "DA_Rune_event.258.d"
+	picture = INVENTION_eventPicture
+
+	is_triggered_only = yes
+	option = {
+		name = "DA_Rune_event.101.a"
+		custom_tooltip = DA_Found_Runic_circuit_tt
+		DA_Found_Blue_rune_effect = {
+			Universal_Law_Time = yes
+			Medicine_3 = yes
+			Alchemy_3 = yes
+			Magic_Theory_3 = yes
+		}
+		owner = {
+			set_country_flag = DA_Unlocked.Time_Change
+		}
+	}
+}
+province_event = {
+	id = DA_Rune_event.259 		#
+	title = "DA_Rune_event.259.t"
+	desc = "DA_Rune_event.259.d"
+	picture = INVENTION_eventPicture
+
+	is_triggered_only = yes
+	option = {
+		name = "DA_Rune_event.101.a"
+		custom_tooltip = DA_Found_Runic_circuit_tt
+		DA_Found_Blue_rune_effect = {
+			Universal_Law_Time = yes
+			Medicine_3 = yes
+			Alchemy_3 = yes
+			Magic_Theory_3 = yes
+		}
+		owner = {
+			set_country_flag = DA_Unlocked.Time_Life_Death_Cycle
+		}
+	}
+}
+province_event = {
+	id = DA_Rune_event.262 		#
+	title = "DA_Rune_event.262.t"
+	desc = "DA_Rune_event.262.d"
+	picture = INVENTION_eventPicture
+
+	is_triggered_only = yes
+	option = {
+		name = "DA_Rune_event.101.a"
+		custom_tooltip = DA_Found_Runic_circuit_tt
+		DA_Found_Blue_rune_effect = {
+			Universal_Law_Space = yes
+			Medicine_3 = yes
+			Alchemy_3 = yes
+			Magic_Theory_3 = yes
+		}
+		owner = {
+			set_country_flag = DA_Unlocked.Space_Teleportation
+		}
+	}
+}
+province_event = {
+	id = DA_Rune_event.263 		#
+	title = "DA_Rune_event.263.t"
+	desc = "DA_Rune_event.263.d"
+	picture = INVENTION_eventPicture
+
+	is_triggered_only = yes
+	option = {
+		name = "DA_Rune_event.101.a"
+		custom_tooltip = DA_Found_Runic_circuit_tt
+		DA_Found_Blue_rune_effect = {
+			Universal_Law_Space = yes
+			Alchemy_3 = yes
+			Magic_Theory_3 = yes
+		}
+		owner = {
+			set_country_flag = DA_Unlocked.Space_Dimensional_Damage
+		}
+	}
+}
+province_event = {
+	id = DA_Rune_event.264 		#
+	title = "DA_Rune_event.264.t"
+	desc = "DA_Rune_event.264.d"
+	picture = INVENTION_eventPicture
+
+	is_triggered_only = yes
+	option = {
+		name = "DA_Rune_event.101.a"
+		custom_tooltip = DA_Found_Runic_circuit_tt
+		DA_Found_Blue_rune_effect = {
+			Universal_Law_Space = yes
+			Medicine_3 = yes
+			Alchemy_3 = yes
+			Magic_Theory_3 = yes
+		}
+		owner = {
+			set_country_flag = DA_Unlocked.Space_Spatial_Perception
+		}
+	}
+}

@@ -1,0 +1,41 @@
+gov_blademarches_republic = {
+	rank = {
+		1 = STRATOCRACY
+		2 = STRATOCRACY
+		3 = STRATOCRACY
+	}
+	ruler_male = {
+		1 = LORD_PROTECTOR
+		2 = LORD_PROTECTOR
+		3 = LORD_PROTECTOR
+	}
+	ruler_female = {
+		1 = LADY_PROTECTOR
+		2 = LADY_PROTECTOR
+		3 = LADY_PROTECTOR
+	}
+	trigger = {
+		has_reform = blademarches_republic_reform
+	}
+}
+
+gov_blademarches_theocracy = {
+	rank = {
+		1 = CRUSADER_ORDER
+		2 = CRUSADER_ORDER
+		3 = CRUSADER_EMPIRE
+	}
+	ruler_male = {
+		1 = GRAND_MASTER
+		2 = LORD_COMMANDER
+		3 = COMMANDER_EMPEROR
+	}
+	ruler_female = {
+		1 = GRAND_MISTRESS
+		2 = LADY_COMMANDER
+		3 = COMMANDER_EMPEROR
+	}
+	trigger = {
+		has_reform = blademarches_theocracy_reform
+	}
+}
