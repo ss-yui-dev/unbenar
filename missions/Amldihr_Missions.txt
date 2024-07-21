@@ -266,7 +266,7 @@
 				}
 				remove_province_modifier = dwarovar_rail
 			}
-			add_years_of_income = 2.5
+			add_years_of_income = 1 #love
 			add_country_modifier = {
 				name = "almdihr_made_the_high_mint"
 				duration = 7300
@@ -1206,7 +1206,7 @@ amldihr_3 = {
 				}
 			}
 			add_yearly_manpower = 5
-			add_years_of_income = 5
+			add_years_of_income = 1 #love
 		}
 	}
 

@@ -913,6 +913,10 @@ fort_15th = {
 			}
 			remove_province_modifier = estate_nobles_development_of_castles_mod
 		}
+		if = { # Anbennar Kobold Traps
+			limit = { has_province_flag = has_kobold_traps }
+			province_event = { id = theatre_of_attrition.8 }
+		}
 		if = {
 			limit = {
 				owner =  { ai = yes }
@@ -1505,7 +1509,10 @@ fort_16th = {
 				province_event = { id = kheionai.2 }
 			}
 		}
-
+		if = { # Anbennar Kobold Traps
+			limit = { has_province_flag = has_kobold_traps }
+			province_event = { id = theatre_of_attrition.8 }
+		}
 
 		if = {
 			limit = {
@@ -2452,7 +2459,10 @@ fort_17th = {
 			}
 			remove_province_modifier = estate_nobles_development_of_castles_mod
 		}
-
+		if = { # Anbennar Kobold Traps
+			limit = { has_province_flag = has_kobold_traps }
+			province_event = { id = theatre_of_attrition.8 }
+		}		
 		if = {
 			limit = {
 				owner =  { ai = yes }
@@ -3382,6 +3392,10 @@ fort_18th = {
 				province_event = { id = kheionai.2 }
 			}
 		}
+		if = { # Anbennar Kobold Traps
+			limit = { has_province_flag = has_kobold_traps }
+			province_event = { id = theatre_of_attrition.8 }
+		}		
 		remove_province_modifier = command_elephant_fort_buff
 		if = {
 			limit = {

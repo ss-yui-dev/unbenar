@@ -20,9 +20,9 @@ historical_friend = Y59 #Thirabnir
 		dynasty = "Tonanzuir"
 		birth_date = 1369.11.4
 		culture = sunrise_elf
-		adm = 6
-		dip = 6
-		mil = 6
+		adm = 3
+		dip = 3
+		mil = 3
 	}
 	
 	add_ruler_personality = just_personality

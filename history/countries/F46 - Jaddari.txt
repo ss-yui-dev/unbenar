@@ -21,9 +21,9 @@ add_army_tradition = 60
 		name = "Jaddar"
 		dynasty = "Jexiszuir"
 		birth_date = 1161.11.12
-		adm = 4
+		adm = 3
 		dip = 6
-		mil = 7
+		mil = 5
 	}
 	
 	add_ruler_personality = zealot_personality

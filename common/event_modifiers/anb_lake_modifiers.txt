@@ -95,7 +95,7 @@ federation_linguistic_academy = {
 
 lake_growing_administration = {
 	advisor_pool = 1
-	advisor_cost = -0.15
+	advisor_cost = -0.15 #love
 }
 
 lake_exhibition = {

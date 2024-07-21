@@ -106,6 +106,14 @@ guiTypes = {
 			scripted = yes
 		}
 
+		#Jaddari Gov Mechanic
+		iconType = {
+			name = "jaddari_desert_legion_bg"
+			position = { x= 29 y = 229 }
+			quadTextureSprite = "GFX_jaddari_desert_legion_bg" 
+			scripted = yes
+		}
+
 		### ------- Government -------
 
 		iconType =
@@ -373,7 +381,7 @@ guiTypes = {
 			name = "specific_governments_list"
 			position = { x = 32 y = 228 } #do not set position here, set it above in specific_governments_list_position
 			size = { x = 300 y = 122 }
-				scrollbartype = "standardlistbox_slider"
+			scrollbartype = "standardlistbox_slider"
 		}
 
 		### -----------
@@ -438,7 +446,7 @@ guiTypes = {
 
 			instantTextBoxType = {
 				name = "accepted_cultures_label"
-				position = { x = 57 y = 400 }
+				position = { x = 57 y = 400 } #1.35 y was 352
 				format = centre
 				font = "vic_18"
 				maxWidth = 180
@@ -448,7 +456,7 @@ guiTypes = {
 
 			guiButtonType = {
 				name = "accepted_sort_name_btn"
-				position = { x=27 y =430 }
+				position = { x= 27 y = 430 } #1.35 y was 377
 				quadTextureSprite ="GFX_culture_name_sort"
 				tooltip = ""
 				tooltipText =""
@@ -569,7 +577,7 @@ guiTypes = {
 
 		windowType = {
 			name = "assimilated_cultures_window"
-			position = { x = 0 y = 48 }
+			position = { x = 0 y = 48 } #1.35 y was 0
 
 			instantTextBoxType = {
 				name = "assimilated_cultures_label"
@@ -765,7 +773,7 @@ guiTypes = {
 			spacing = 0
 		}
 
-		OverlappingElementsBoxType = {
+		OverlappingElementsBoxType = { #1.35
 			name = "modifiers_box_4"
 			position = { x = 370 y = 226 }
 			size = { x = 265 y = 32 }
@@ -849,6 +857,28 @@ guiTypes = {
 			scripted = yes
 			spriteType = image_harpy_queendom_ui
 			orientation = UPPER_LEFT
+		}
+
+		guiButtonType = {
+			name = "harpylen_button_1"
+			position = { x = 48 y = 232 }
+			quadTextureSprite = "GFX_harpylen_queendom_claim_button_1"
+			scripted = yes
+			clicksound = back_click
+		}
+		guiButtonType = {
+			name = "harpylen_button_2"
+			position = { x = 150 y = 232 }
+			quadTextureSprite = "GFX_harpylen_queendom_claim_button_2"
+			scripted = yes
+			clicksound = back_click
+		}
+		guiButtonType = {
+			name = "harpylen_button_3"
+			position = { x = 250 y = 232 }
+			quadTextureSprite = "GFX_harpylen_queendom_claim_button_3"
+			scripted = yes
+			clicksound = back_click
 		}
 
 		#Effelai Gov Buttons
@@ -936,12 +966,10 @@ guiTypes = {
 			}
 		}
 	}
-
-	################################################################################################
-	## --- The interactions in the shogunate sub window
+	#1.35 new until line 938
 	windowType = {
 		name = "government_view_states_general_mechanic"
-		position = { x = 0 y = 0 }
+		position = { x=0 y=0 }
 		size = { x=280 y=50 }
 		moveable = 0
 		orientation = "UPPER_LEFT"
@@ -967,7 +995,7 @@ guiTypes = {
 			spriteType = "GFX_monarchists"
 			position = { x= 254 y = 5 }
 			frame = 1
-	}
+		}
 		iconType = {
 			name ="current_value_icon"
 			spriteType = "GFX_war_overview_indicator"
@@ -984,14 +1012,14 @@ guiTypes = {
 			orientation = "UPPER_LEFT"
 			format = centre
 		}
-		}
+	}
 
 	################################################################################################
 	## --- The special governments with interactions and powers. They will be added to "specific_governments_list" from code
 
 	windowType = {
 		name = "government_mechanic_interactions"
-		backGround =""
+		backGround = ""
 		position = { x = 0 y = 0 }
 		size = { x = 300 y = 100 }
 		moveable = 0
@@ -1003,9 +1031,9 @@ guiTypes = {
 		smoothListboxType = {
 			name = "government_interaction_list"
 			position = { x = 0 y = 0 }
-		backGround =""
-		size = { x = 300 y = 100 }
-		Orientation = "UPPER_LEFT"
+			backGround = ""
+			size = { x = 300 y = 100 }
+			Orientation = "UPPER_LEFT"
 			horizontal = 1
 			spacing = 0
 			borderSize = { x = 0 y = 0 }
@@ -1016,7 +1044,7 @@ guiTypes = {
 	windowType = {
 		name = "government_interaction_type"
 		size = { x = 100 y = 100 }
-		backGround =""
+		backGround = ""
 		moveable = 0
 		dontRender = ""
 		horizontalBorder = ""
@@ -1028,16 +1056,16 @@ guiTypes = {
 			quadTextureSprite = "GFX_russian_ability_ADM" #placeholder so we don't get an assert - you have to set something - but this will be overridden by the interaction's icon
 			position = { x = 8 y = 4 }
 			tooltip = ""
-			tooltipText =""
+			tooltipText = ""
 			delayedTooltipText = ""
 			buttonFont = "vic_18"
 			Orientation = "UPPER_LEFT"
 			clicksound = back_click
 			text = ""
 		}
-
+		
 		#bar and frame for the power type associated with this interaction (if it's unique to the interaction - if not, these will be hidden)
-		iconType = {
+		iconType = { 
 			name = "government_power_bar"
 			spriteType = "GFX_government_power_bar"
 			position = { x = 20 y = 78 }
@@ -1052,11 +1080,11 @@ guiTypes = {
 			alwaystransparent = yes
 		}
 	}
-
+	
 	#button for government powers that aren't singly linked to interactions
 	windowType = {
 		name = "government_shared_power"
-		backGround =""
+		backGround = ""
 		position = { x = 0 y = 0 }
 		size = { x = 300 y = 20 }
 		moveable = 0

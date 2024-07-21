@@ -362,7 +362,7 @@ idea_var_advisor_13 = {
 		}
 		modifier = {
 			meritocracy = 0.25
-			cavalry_cost = -0.03
+			cavalry_power = 0.01
 		}
 
 	}

@@ -798,20 +798,20 @@ ramsteel_razam_headquarters_province = {
 	regiment_recruit_speed = -0.50
 }
 ramsteel_first_charge_buff = {
-	cavalry_power = 0.2
+	cavalry_power = 0.1
 	land_morale = 0.05
 }
 ramsteel_perfect_pairing_buff = {
 	cavalry_power = 0.10
 }
 ramsteel_perfect_pairing_bonus_buff = {
-	cavalry_power = 0.15
+	cavalry_power = 0.10
 }
 ramsteel_mithril_barding_buff = {
-	cavalry_power = 0.20
+	cavalry_power = 0.15
 }
 ramsteel_mithril_barding_bonus_buff = {
-	cavalry_power = 0.25
+	cavalry_power = 0.20
 }
 ramsteel_small_morale_buff = {
 	land_morale = 0.05
@@ -6850,7 +6850,7 @@ H76_new_high_king = {
 }
 
 H76_gem_quarrying = {
-	trade_value = 0.15
+	trade_value_modifier = 0.15
 	trade_goods_size = 0.5
 }
 
