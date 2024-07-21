@@ -4151,4 +4151,3 @@ country_event = {
 		name = verkaldromak.177.a
 	}
 }
-

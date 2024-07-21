@@ -59,14 +59,14 @@ witch_king_modifier = {	#the witch king event should also give a ruler_flag, so 
 	
 	land_morale = 0.1
 	naval_morale = 0.1
-	# discipline = 0.1
+	# discipline = 0.1 #love
 	
 	ae_impact = 0.10
-	enemy_core_creation = 0.25
+	enemy_core_creation = 0.25 #love
 	
-	# manpower_recovery_speed = 0.25
-	# global_manpower_modifier = 0.25
-	# land_forcelimit_modifier = 0.5
+	# manpower_recovery_speed = 0.25 #love
+	# global_manpower_modifier = 0.25 #love
+	# land_forcelimit_modifier = 0.5 #love
 	land_maintenance_modifier = -0.1
 	
 	republican_tradition = -1
@@ -345,28 +345,41 @@ magic_realm_necromancy_undead_army_lost_control = {
 #Transmutation - used by both estate and realm magic
 magic_realm_transmutation_plant_growth_1 = {
 	supply_limit_modifier = 0.5
+	#trade_goods_size = 0.25 #love
 	trade_goods_size_modifier = 0.1
+	#local_unrest = -1 #love
 }
 
 magic_realm_transmutation_plant_growth_2 = {
 	supply_limit_modifier = 1
-	trade_goods_size_modifier = 0.2
+	#trade_goods_size = 0.5 #love
+	trade_goods_size_modifier = 0.2 #love
 	local_unrest = -1
 }
 
 magic_realm_transmutation_plant_growth_3 = {
 	supply_limit_modifier = 1
-	trade_goods_size_modifier = 0.3
+	#trade_goods_size = 0.75 #love
+	trade_goods_size_modifier = 0.3 #love
 	local_unrest = -1
 }
 
 magic_realm_transmutation_plant_growth_4 = {
 	supply_limit_modifier = 1
-	trade_goods_size_modifier = 0.4
+	#trade_goods_size = 1 #love
+	trade_goods_size_modifier = 0.4 #love
 	local_unrest = -1
 }
 
 #Siege Magic
+siege_magic_instant_siege = {
+	local_defensiveness = -10
+	fort_level = -20
+}
+
+siege_no_hold_damage = {
+}
+
 siege_magic_elemental_besieger = {
 	local_defensiveness = -0.33
 }
@@ -401,15 +414,15 @@ ruler_recently_casted_spell = {
 # }
 magic_estate_aiding_construction_1 = {
 	build_time = -0.1
-	build_cost = -0.05
+	build_cost = -0.05 #love
 }
 magic_estate_aiding_construction_2 = {
 	build_time = -0.2
-	build_cost = -0.1
+	build_cost = -0.1 #love
 }
 magic_estate_aiding_construction_3 = {
 	build_time = -0.3
-	build_cost = -0.15
+	build_cost = -0.15 #love
 }
 
 magic_estate_magnificent_feast_1 = {

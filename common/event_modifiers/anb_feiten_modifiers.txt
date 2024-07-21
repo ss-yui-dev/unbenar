@@ -31,11 +31,11 @@ feiten_starting_balloon_research = {
 }
 feiten_xiao_yang_success = {
 	church_influence_modifier = 0.1
-	dip_advisor_cost = -0.1
+	dip_advisor_cost = -0.1 #love
 }
 feiten_da_jin_success = {
 	eunuchs_anb_influence_modifier = 0.1
-	mil_advisor_cost = -0.1
+	mil_advisor_cost = -0.1 #love
 }
 feiten_teamwork_success = {
 	innovativeness_gain = 0.5

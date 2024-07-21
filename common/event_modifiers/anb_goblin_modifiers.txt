@@ -26,7 +26,7 @@ cave_goblin_thieving_arrow = {
 	trade_company_governing_cost = -0.1
 }
 cave_goblin_spiderwretch = {
-	cavalry_fire = 1
+	cavalry_fire = 1 #love
 }
 cave_goblin_mountainshark = {
 	available_province_loot = 0.1

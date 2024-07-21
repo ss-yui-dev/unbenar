@@ -16,9 +16,9 @@ historical_rival = Y67 #Mo Hoang
 		name = "Sang"
 		dynasty = "Caoban"
 		birth_date = 1363.11.14
-		adm = 9
-		dip = 5
-		mil = 7
+		adm = 6
+		dip = 3
+		mil = 5
 	}
 	
 	add_ruler_personality = righteous_personality

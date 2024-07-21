@@ -4,9 +4,9 @@
 restructuring_administration = {
 	administrative_efficiency = -0.25
 	
-	legitimacy = -3
+	legitimacy = -3 #love
 	republican_tradition = -1
-	horde_unity = -3
+	horde_unity = -3 #love
 }
 
 restructuring_military = {
@@ -72,7 +72,7 @@ elven_military = {
 	#4 + 1.5 + 0.75 + 0.75 + 0.75 + 2 + 0.3 + 0.4 = 9.7
 	
 	#Negatives
-	war_exhaustion = 0.02		#-2 D / elves get weary of war quickly as they dont want to - its a big deal
+	war_exhaustion = 0.02 #love
 	manpower_recovery_speed = -0.5	#-5 B / very slow reproduction - worst in game
 	reinforce_speed = -0.33			#-2 B / elves are slow to rally
 	mercenary_discipline = -0.1 	#		imagine hiring human mercs as elven mil lol
@@ -101,7 +101,7 @@ dwarven_administration = {
 	production_efficiency = 0.2				#2 A / most industrious species
 	mil_tech_cost_modifier = -0.05			#0.5 B / guns
 	rival_border_fort_maintenance = -0.5	#3 E / GRUDGEBEARERS
-	inflation_reduction = 0.1			#1 E /  dwarves are good with money and dealing with gold
+	inflation_reduction = 0.1	#love
 	build_time = -0.1						#2 E / masterbuilders #Nerfed
 	
 	election_cycle = 12						#common long-lived cycle as its a generation of humans
@@ -155,7 +155,7 @@ dwarven_military = {
 	#Short people set
 	galley_power = -0.2					#-2 D / you need long legs for galleys... and, well..
 	cavalry_cost = 0.2					#-2 B / standard small person cav malus
-	#cav_to_inf_ratio = -0.25				#-1 D / cant field as much cav effectively
+	#cav_to_inf_ratio = -0.25	#love
 	
 	#1.5 + 0.5 + 1.75 + 0.3 + 0.3 + 0.8 + 1.5 + 0.4 = 7.3
 	picture = "racial_mil_dwarf"
@@ -531,7 +531,7 @@ human_administration = {
 	all_power_cost = -0.025			#0.5 SS / 
 	#ae_impact = -0.1					#1 douchebags of the world so everyone is used to it
 	culture_conversion_cost = -0.25	#1 B / to balance against majority modifiers
-	culture_conversion_time = -0.25
+	culture_conversion_time = -0.25	#love
 	
 	#1 + 0.75 = 1.75
 	picture = "racial_adm_human"
@@ -1034,25 +1034,25 @@ lizardfolk_military = {
 undead_military = {				#Zombies and skeletons created with necromancy
 	global_manpower_modifier = 1.5	#1.2 B
 	infantry_cost = -0.5 #5 A
-	cavalry_cost = -0.5
+	cavalry_cost = -0.5	#love
 	mercenary_manpower = -0.25
 	land_forcelimit_modifier = 0.75 #love
-	land_attrition = -0.5	#3.3 D
+	land_attrition = -0.5	#love
 	
 	manpower_recovery_speed = 0.5 #love
 	sailors_recovery_speed = 0.5 #Lol I'm not counting this
 	reinforce_speed = 3 #0.66 B
 	reinforce_cost_modifier = -0.5 #2 B
-	yearly_army_professionalism = -0.1
-
+	yearly_army_professionalism = -0.1	#love
+	
 	#5 + 0.6 + 4 + 3.3  + 10 + 0.66 + 2 - 7.5 - 0.5 = 17.56
 
-	movement_speed = -0.5 #-7.5 B
- 	drill_gain_modifier = -5 #-0.5 B
-	drill_decay_modifier = 5
-
- 	# infantry_power = -0.05
-	# cavalry_power = -0.2
+	movement_speed = -0.5	#love
+ 	drill_gain_modifier = -5	#love
+	drill_decay_modifier = 5	#love
+	
+ 	# infantry_power = -0.05	#love
+	# cavalry_power = -0.2	#love
  	artillery_power = -0.1
 	
 	land_morale = 0.1 #1 A
@@ -1066,14 +1066,14 @@ undead_military = {				#Zombies and skeletons created with necromancy
 	recover_army_morale_speed = 0.5 #2 E
 	recover_navy_morale_speed = 0.5
 	
-	reserves_organisation = 1 # 4 D Unbreakable
+	reserves_organisation = 1	#love
 	# shock_damage_received = -0.3
-	shock_damage = -0.15
-	fire_damage = -0.15
+	shock_damage = -0.15	#love
+	fire_damage = -0.15	#love
 	# fire_damage_received = -0.3
 	
-	war_exhaustion = -0.05	#negates attrition war exhaustion
-
+	war_exhaustion = -0.05	#love
+	
 	hostile_attrition = 2	#undead dudes harassing em
 	
 	global_unrest = 2

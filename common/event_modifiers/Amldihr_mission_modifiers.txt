@@ -2,7 +2,7 @@
 
 amldihr_restored_economy = {
 	development_cost = -0.10
-	build_cost = -0.15
+	build_cost = -0.05 #love
 	build_time = -0.15
 	global_tax_income = 24
 }
@@ -181,7 +181,7 @@ amldihr_early_vale_food = {
 }
 
 amldihr_builders_ready = {
-	build_cost = -0.25
+	build_cost = -0.10 #love
 	build_time = -0.25
 }
 

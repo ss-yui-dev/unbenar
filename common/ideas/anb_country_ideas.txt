@@ -333,45 +333,45 @@ A09_ideas = {
 
 #Pearlsedge ideas
 A11_ideas = {
-	start = {
-		naval_morale = 0.10
-		infantry_power = 0.15
-	}
-	bonus = {
-		tolerance_own = 2
-	}
+    start = {
+        naval_morale = 0.10
+        infantry_power = 0.15
+    }
+    bonus = {
+        diplomatic_reputation = 1
+    }
 
-	trigger = {
-		tag = A11 #Pearlsedge
-	}
-	free = yes
+    trigger = {
+        tag = A11 #Pearlsedge
+    }
+    free = yes
 
-	A11_heritage_of_reaver_settlers = {
-		colonists = 1
-		global_colonial_growth = 10
-	}
-	A11_the_house_of_trisfer = {
-		improve_relation_modifier = 0.2
-		diplomatic_reputation = 1
-	}
-	A11_defenders_of_the_dameshead = {
-		global_own_trade_power = 0.1
-		embargo_efficiency = 0.2
-	}
-	A11_pearls_in_our_name = {
-		global_trade_goods_size_modifier =0.1
-	}
-	A11_bald_heads_glistening_in_the_sun = {
-		land_morale = 0.05
-		discipline = 0.025
-	}
-	A11_pearlywine_vinyards = {
-		prestige = 1
-	}
-	A11_adeanic_emperors = {
-		imperial_authority = 0.1
-	}
-}
+    A11_heritage_of_reaver_settlers = {
+        colonists = 1
+        global_colonial_growth = 10
+    }
+    A11_the_house_of_trisfer = {
+        diplomatic_upkeep = 1
+    }
+    A11_defenders_of_the_dameshead = {
+        trade_efficiency = 0.1
+        embargo_efficiency = 0.2
+    }
+    A11_pearls_in_our_name = {
+        global_ship_trade_power = 0.2
+    }
+    A11_bald_heads_glistening_in_the_sun = {
+        discipline = 0.05
+    }
+    A11_pearlywine_vinyards = {
+        prestige = 1
+        global_trade_power = 0.1
+    }
+    A11_adeanic_emperors = {
+        imperial_authority = 0.1
+        warscore_cost_vs_other_religion = -0.15
+    }
+} 
 
 #Beepeck ideas
 A12_ideas = {
@@ -951,11 +951,11 @@ A29_ideas = {
 #Wex ideas
 A30_ideas = {
 	start = {
-		global_manpower_modifier = 0.1
-		discipline = 0.05
+		global_manpower_modifier = 0.15	# A - unchanged
+		ae_impact = -0.1			# A - less AE to somewhat counter wrong culture in EoA
 	}
 	bonus = {
-		global_missionary_strength = 0.02
+		discipline = 0.05			# S - Wexonards are tough and militaristic
 	}
 
 	trigger = {
@@ -963,30 +963,31 @@ A30_ideas = {
 	}
 	free = yes		#will be added at load.
 
-	A30_tunnels_of_wexkeep = {
+	A30_lords_of_the_wexkeep = {		# C / C - Wex\92s capital is the site of one of Balgar\92s Wonders which they stormed and took during the days of the Dragonwake, and has remained their capital ever since. Owning one of Balgar\92s Wonders gives them a bit of international recognition as a result.
 		defensiveness = 0.10
-		hostile_attrition = 1
+		prestige = 1
 	}
-	A30_diverse_neighbours = {
-		num_accepted_cultures = 1
+	A30_wex_must_rule = {			# C - Lothane III s\EDl Wex\92s motto and probably one of the most memorable quotes. His mentality of \91Wex Must Rule\92 by any means necessary leads to the Wexonards attempting to cajole and bully the Imperial Estates into line. In lore, it doesn\92t work and falls to pieces when he dies, but what if the player can keep Lothane\92s legacy alive, and the imperial crown in Wexkeep?
+		imperial_authority = 0.1
 	}
-	A30_wexonard_school_of_fencing = {	#aggressive german style
+	A30_wexonard_school_of_fencing = {	# A - Greatswords, greatswords, greatswords. The Greatsword Companies are renowned for their strength and skill at arms, and also start including orcish and half-orcish mercenaries from Escann, from the mid 16th century onward for their strength and skill with the blade. Even some Wexonard knights use greatswords on horseback.
 		infantry_power = 0.15
 	}
-	A30_leader_of_the_three_tribes = {	#they led those alenic dudes south
+	A30_court_of_the_grand_duke = {		# A - Wex\92s the only Grand Duchy left in the EoA after Esmaria and Dameria collapsed, and serving at the Grand Duke\92s court is thus a prized and notable position for any budding Wexonard philosopher, merchant patriarch or veteran soldier.
 		same_culture_advisor_cost = -0.2
 	}
-	A30_ironhills = {
-		production_efficiency = 0.1
+	A30_forges_of_the_iron_hill = {		# A - Ironhill is one of the largest and most productive iron mines in the EoA - maybe even Cannor - and is the backbone of the Wexonard economy and war machine. Cheap and readily-available iron, combined with improved casting techniques in the mid 16th century, allows for easier mass production of cannons, armour and weapons.
+		global_regiment_cost = -0.1
 	}
-	A30_all_roads_pass_through_wex = {
-		caravan_power = 0.2
+	A30_the_burgeoning_burghers_of_wex = {	# B - With trade lanes to Verne via the Cotumer, the Salt Road to Arannen, and with Wex\92s new conquests in the Damerian Dales sitting astride the roads from old Dameria to Esmaria and elsewhere, Wex is at the heart of Anbennarian trade with the east. Dostanor\92s reclamation simply further adds to the importance of Wexonard influence on trade talks.
+		global_trade_power = 0.1
+		global_prov_trade_power_modifier = 0.1
 	}
-	A30_hunter_companies = {	#skirmishers
-		land_attrition = -0.10
-		fire_damage = 0.1
+	A30_iron_within_iron_without = {		# S - The motto of House Robacard, lords of the Ironhill, and Grand Dukes of Wex following Camir Silmuna\92s emperorship and removal of House s\EDl Wex in the 18th century. Wexonards\92 reputation as tough, grim, no-nonsense men of war means they can take a lot of punishment where others would falter in the face of incoming fire - but building a few defensive field fortifications never hurts either.
+		fire_damage_received = -0.1
 	}
 }
+
 
 #Ibevar ideas
 A32_ideas = {
@@ -1571,41 +1572,40 @@ A58_ideas = {
 A59_ideas = {
 	start = {
 		hostile_attrition = 1.0
-		ae_impact = -0.10
+		global_regiment_cost = -0.1
 	}
 
 	bonus = {
-		land_morale = 0.1
+		unjustified_demands = -0.2
 	}
 
 	trigger = {
 		tag = A59 #Corvuria
 	}
 	free = yes
-
-	A59_servile_peasantry = {
-		global_manpower_modifier = 0.1
-		global_autonomy = -0.05
-	}
-	A59_black_knights_of_corvuria = {
-		cavalry_power = 0.10
-		discipline = 0.025
-	}
-	A59_i_am_the_land = {
-		stability_cost_modifier = -0.2
-		yearly_absolutism = 0.5
-	}
+	
 	A59_holders_of_the_sapphire_key = {
-		defensiveness = 0.2
-	}
-	A59_strengthen_the_karnvord_river_trade = {
-		caravan_power = 0.2
-	}
-	A59_the_masquerade = {
-		prestige = 1
+		stability_cost_modifier = -0.2
 	}
 	A59_legacy_of_warrior_kings = {
-		leader_land_fire = 1
+		morale_damage_received = -0.1
+	}
+	A59_black_knights_of_corvuria = {
+		discipline = 0.05
+		harsh_treatment_cost = -0.2
+	}
+	A59_i_am_the_land = {
+		max_absolutism = 10
+	}
+	A59_the_masquerade = {
+		nobles_loyalty_modifier = 0.1
+		vampires_loyalty_modifier = 0.1
+	}
+	A59_servile_peasantry = {
+		production_efficiency = 0.1
+	}
+	A59_strengthen_the_karnvord_river_trade = {
+		development_cost = -0.1
 	}
 }
 
@@ -1857,39 +1857,42 @@ A88_ideas = {
 #Leslinpar ideas
 A92_ideas = {
 	start = {
-		advisor_pool = 1
-		movement_speed = 0.15
+		global_tax_modifier = 0.1
+		same_culture_advisor_cost = -0.15
 	}
-
 	bonus = {
-		global_autonomy = -0.1
+		global_autonomy = -0.05
 	}
-
 	trigger = {
 		tag = A92 #Leslinpar
 	}
 	free = yes
 
-	A92_parks_and_recreation = {
-		prestige = 1
+	A92_rule_by_council = {
+		republican_tradition = 0.3
+		legitimacy = 1
+		devotion = 1
 	}
-	A92_leslin_waffles = {
-		improve_relation_modifier = 0.2
+	A92_the_stand_at_tendergrove = {
+		shock_damage_received = -0.1
 	}
-	A92_expert_woodworkers = {	#they make the boats that go down the river
-		production_efficiency = 0.1
+	A92_sabalian_warfare = {
+		army_tradition = 0.5
+		mil_advisor_cost = -0.25
 	}
-	A92_learnings_from_the_week_of_ice = {
-		global_tax_modifier = 0.1
-	}
-	A92_day_of_five_thousand_candles = {
-		stability_cost_modifier = -0.1
-	}
-	A92_annalise_nursing_academy = {
-		manpower_recovery_speed = 0.2
+	A92_minimalist_administration = {
+		free_policy = 1
 	}
 	A92_the_cones_of_leslinpar = {
-		ship_durability = 0.1
+		adm_advisor_cost = -0.25
+		advisor_pool = 1
+	}
+	A92_the_leslin_oak_restoration_act = {
+		build_cost = -0.1
+	}
+	A92_garden_of_the_empire = {
+		prestige = 0.5
+		development_cost = -0.05
 	}
 }
 
@@ -19341,11 +19344,11 @@ U20_ideas = {
 #Kumarkand
 F30_ideas = {
 	start = {
-		merc_maintenance_modifier = -0.25
+		mil_advisor_cost = -0.25
 		leader_land_shock = 1
 	}
 	bonus = {
-		cavalry_cost = -0.1
+		ae_impact = -0.2
 	}
 	trigger = {
 		tag = F30 #Kumarkand
@@ -19353,16 +19356,17 @@ F30_ideas = {
 	free = yes
 
 	F30_sarraka_auxiliaries = { #being a vassal of varamhar has its advantages, including sun elven mage cavalry auxiliaries. Surakel knows that we?ll allow for human mage cavalrymen once we gain our freedom. Known in common as sunrider
-		cavalry_shock = 0.1
+		cavalry_shock = 0.25
 	}
 	F30_dryland_farming = { #kumarkand means farmland, as such they know a thing or two about farming, and especially farming in dry climates
-		global_trade_goods_size_modifier = 0.1
+		development_cost = -0.05
+		global_manpower_modifier = 0.1
 	}
 	F30_kumarkandi_draft_horse = { #a favored workhorse in bulwar that?s endlessly stubborn and tough
 		production_efficiency = 0.1
 	}
 	F30_rangers_of_bulwar = { #kumarkand produces a lot of adventurers and rangers who grew bored of the pastoral lifestyle
-		mercenary_cost = -0.25
+		merc_maintenance_modifier = -0.2
 	}
 	F30_abtu_khati = { #a type of salted flatbread from Kumarkand, good for travel and best served with dips and meats.
 		global_supply_limit_modifier = 0.25
@@ -19381,9 +19385,11 @@ F41_ideas = {
 		movement_speed = 0.15
 		infantry_fire = 0.15
 	}
+
 	bonus = {
 		infantry_cost = -0.10
 	}
+
 	trigger = {
 		tag = F41
 	}
@@ -19391,7 +19397,6 @@ F41_ideas = {
 
 	F41_the_ancient_art_of_fortune_telling = { #It is said that the fortune tellers of Zanbar practice an ancient art, passed from generation to generation since the time the Djinn Brasan taught magic to humans. Akals and common folk alike have always consulted them before taking a important decision
 		monarch_admin_power = 1
-		candidate_random_bonus = 1
 	}
 	F41_the_gnollish_legacy = { #Zanbar has been under their influence during long periods of its history and has copied some of their "customs", like the use of violence to get what you want, the importance of your "pack" or family and the importance of "females" or women in society
 		unjustified_demands = -0.2
@@ -19401,11 +19406,9 @@ F41_ideas = {
 		leader_land_manuever = 1
 	}
 	F41_yamima_szel_arsasar = { #Zanbar is known for its many brothels where men come to spend all savings and where women are trained to become the highest class of courtesans in all of Bulwar. Historians speculate that during the age of greentide, one of them, Yamima Szel-Arsasar (or Yamima of the Redlight) yielded so much influence that she was more powerful than the Akal himself
-		global_unrest = -1
-		advisor_pool = 1
+		global_unrest = -2
 	}
 	F41_the_free_spirited_people_of_zanbar = { #The people of Zanbar have never been the biggest adepts of order and discipline. Life in the city can be quite chaotic and the zanbari have learned to innovate and adapt quickly to new ideas to make ends meet
-		innovativeness_gain = 0.25
 		idea_cost = -0.10
 	}
 	F41_silkworms_borrowers = { #Scholars believe that it was Zanbar that stole the secret of silk production from Rahen around 500 BA. Zanbaris will tell you that they simply borrowed them
@@ -19415,6 +19418,7 @@ F41_ideas = {
 		diplomatic_upkeep = 1
 	}
 }
+
 
 #Kalib
 F44_ideas = {
@@ -19620,10 +19624,10 @@ F31_ideas = {
 F35_ideas = {
 	start = {
 		prestige_decay = -0.01 #The city is old af and still in good shape
-		possible_adm_policy = 1
+		idea_cost = -0.1
 	}
 	bonus = {
-		governing_capacity_modifier = 0.10
+		expand_administration_cost = -1
 	}
 
 	trigger = {
@@ -19632,7 +19636,7 @@ F35_ideas = {
 	free = yes
 
 	F35_the_paper_spear = { #Since the bygone era of god kings, Azkabar was always the spearhead of innovations regarding administration. From the use of clay tablets to record trade deals and food stocks to the founding of schools to train scribes from a young age, Azkabar was always a step further from its rivals. It's not a surprise that latter, the gnolls, the Castanites and even the sun elves copied the Azkabari administrative system when they conquered Bulwar.
-		adm_tech_cost_modifier = -0.10
+		possible_adm_policy = 1
 	}
 	F35_the_seat_of_justice = { #This ancient order of learned mages codifies and protects the laws of Bulwar. This fairly democratic institution maintains legal consistency between the various Bulwari city states and ensures that all people are equal before the law no matter their station.
 		stability_cost_modifier = -0.15
@@ -19641,16 +19645,16 @@ F35_ideas = {
 		discipline = 0.05
 	}
 	F35_beneath_the_surface = { #Behind the fa?ade of its perfect society, Azkabar possess another, darker, face. At night, many frequents illegal establishments where they can evacuate the pressure of the Azkabari society by engaging in debauchery. Most of the time, these practices are limited to orgies, but some have indulged in more sinister practices.
-		heir_chance = 0.50
+		spy_offence = 0.3
 	}
 	F35_prisoners_of_azkabar = { #The infamous black prison was built in 1140 under the order of Jexis to contain all the mages in Bulwar that broke the law (in most cases just by being human). The jails are guarded by Allips, spectral creatures that are incorporeal remnant of dead persons that were driven to insanity. They were conjured by spellcasters to drive the prisoners to madness.
-		global_unrest = -1
+		global_autonomy = -0.1
 	}
 	F35_the_obsidian_walls = { #The twelves meters tall obsidian black walls surrounding the city give an sinister felling. They were built during the age of god kings but have strangely never deteriorated with time. The official reason is that it's thanks to a unique type of stone you can't find anymore in Bulwar. Others have a more... morbid... theory, about an ancient abjuration spell involving human sacrifices.
 		defensiveness = 0.20
 	}
 	F35_the_cult_of_the_eclipse = { #The adepts of the cult of the eclipse were always a source of concern for the leaders of the Sun Cult, old and new. These heretics believe the Onslaught was a salvation, meant to purge the humans that fell into corruption. Not a lot is known about the followers of the Deep Ones, but it is said that they meet in secret every new moon in their headquarters in the outskirts of Azkabar to work on their goal of bringing back their masters to rid mankind of its sinners once again.
-		tolerance_heretic = 2
+		tolerance_own = 2
 	}
 }
 
@@ -30921,7 +30925,7 @@ L69_ideas = {
 		same_culture_advisor_cost = -0.15
 		legitimacy = 0.5
 	}
-	L69_waters_of_life = { #lake lasadza. It provides alot of water for agriculture and such, and is home to many unique species of fish and other aquatic life. Basically lake victoria
+	L69_waters_of_the_life = { #lake lasadza. It provides alot of water for agriculture and such, and is home to many unique species of fish and other aquatic life. Basically lake victoria
 		production_efficiency = 0.1
 	}
 	L69_rushdown_tactics = { #good maneuverability in home terrain, great familiarity with the land and its peculiarities.
@@ -35197,6 +35201,48 @@ R21_ideas = {
 	}
 }
 
+#Khirnadhiman
+R22_ideas = {
+    start = {
+        fort_maintenance_modifier = -0.2
+		monarch_lifespan = 0.25
+    }
+    bonus = {
+		morale_damage_received = -0.10
+    }
+    trigger = {
+        tag = R22
+    }
+
+    free = yes
+    R22_the_heart_of_great_dhujat = { #was the heartland of great dhujat (sardavin was its capital)
+        years_of_nationalism = -5
+    }
+    R22_priceless_pachiderms = { #devighol is in dhugajirr in vic 3 so i thought it would be cool to have there be some based elephant people here, part of the triple alliance of Khinadhiman
+        cavalry_power = 0.15
+    }
+    R22_stubborn_rashidi = { #talks about how stubborn the Rashidi are as a people, and in particualr how much of a pain it was for Jaher to siege Khirnadhim itself, even though they had clearly lost, these are people who fight to the last bullet. Is in Xia Command in vic 3 part of the triple alliance of Khinadhiman
+        garrison_size = 0.15
+        war_exhaustion = -0.03
+    }
+    R22_harimari_sages_of_sardavin = { #talks about how this area is a major magical center for harimari mages and nobles, (in Khiraspid(quite magical) kingdom in vic 3) part of the triple alliance of Khinadhiman
+        mages_loyalty_modifier = 0.1
+        nobles_loyalty_modifier = 0.1
+		uppercastes_loyalty_modifier = 0.1
+    }
+    R22_northern_dynasty = { # talks about how the endless moon got on the throne of great dhujat similar to how lotus claw got on the throne of the sarnavan, both dynasties mirroring each other.
+        mercenary_discipline = 0.05
+        adventurers_loyalty_modifier = 0.1
+    }
+    R22_the_moderate_revolt = { # talks about how these lords being very multicultural were the first to support the moderate raja, lost, and now pretend to be golden palace, but in reality are something else.
+        manpower_in_accepted_culture_provinces = 0.2
+        num_accepted_cultures = 1
+    }
+    R22_endless_moon = { #talks about the endless moon amulet, made out of big chunk of the thingy, and it being powerful magic item that is in vic 3
+        prestige_decay = -0.01
+    }
+}
+
 #Sthanan ith Vussam  
 G81_ideas = { 
 	start = { 
@@ -38394,7 +38440,10 @@ S84_BM_ideas = {
 
 	trigger = {
 		tag = S84 #Bwa Dakinshi
-		religion = beast_memory
+		NOT = {
+			religion = shadow_pact
+			religion = righteous_path
+		}
 	}
 
 	free = yes
@@ -40941,7 +40990,7 @@ J90_ideas = {
 	}
 
 	J90_securing_our_homeland = { 
-		fort_maintenance_modifier = 0.15 #Our forts are well maintained, and the cityfolk help maintain them as well. This has protected us from many a Chaqanel raid. 
+		fort_maintenance_modifier = -0.15 #Our forts are well maintained, and the cityfolk help maintain them as well. This has protected us from many a Chaqanel raid. 
 	}
 	
 	J90_center_of_amadia = {
@@ -41431,5 +41480,170 @@ V15_ideas = {
 	V15_iron_gates_of_shoran = { 
 		defensiveness = 0.15
 	} 	
+}
+
+#Udralach
+J88_ideas = {
+	start = {
+		reinforce_speed = 0.15
+		unjustified_demands = -0.2
+	}
+	bonus = {
+		global_supply_limit_modifier = 0.25
+	}
+
+	trigger = {
+		tag = J88
+	}
+
+	free = yes
+
+	amadia_the_federation = {
+		production_efficiency = 0.1
+	}
+	J88_udras_attempt = {
+		possible_mil_policy = 1
+	}
+	J88_clearing_the_skies = {
+		culture_conversion_cost = -0.2
+	}
+	J88_wild_war_magic = {
+		morale_damage = 0.1
+	}
+	J88_visage_of_discipline = {
+		shock_damage_received = -0.1
+	}
+	J88_wood_trade = {
+		global_trade_power = 0.1	
+	}
+	J88_coal = {
+		build_cost = -0.1
+	}
+}
+
+#Ozgarom 
+H39_ideas = { 
+    start = { 
+        colonists = 1 
+        defensiveness = 0.20 
+    } 
+ 
+    bonus = { 
+        fire_damage_received = -0.1 
+    } 
+ 
+    trigger = { 
+        tag = H39 #Ozgarom 
+    } 
+    free = yes 
+ 
+    H39_our_free_fishers = {  
+        global_sailors_modifier = 0.1 
+        capture_ship_chance = 0.15 
+    } 
+    H39_vakar_ashgaran = {  
+        hostile_attrition = 1 
+    } 
+    H39_slaves_no_more = {  
+        land_morale = 0.15 
+    } 
+    H39_and_never_again_bound = { 
+ 		garrison_size = 0.25 
+    } 
+    H39_free_plantations = { 
+        development_cost = -0.1 
+    } 
+    H39_cult_of_bramash_the_liberator = {  
+        stability_cost_modifier = -0.2 
+        tolerance_own = 1 
+    } 
+ 	H39_convening_the_council = {  
+        reform_progress_growth = 0.15 
+    } 
+}
+
+#Havorton
+B86_ideas = {
+	start = { 
+        global_manpower_modifier = 0.15
+		land_maintenance_modifier = -0.1
+    } 
+ 
+    bonus = { 
+        diplomatic_reputation = 1
+    } 
+ 
+    trigger = { 
+        tag = B86 #Havorton
+    } 
+    free = yes 
+	
+	B86_battle_of_havorton = {
+		army_tradition = 0.5
+	}
+	B86_legacy_of_the_fierce = {
+		improve_relation_modifier = 0.2
+	}
+	B86_farcical_examples = {
+		global_unrest = -2
+	}
+	B86_the_havoric_throne = {
+		legitimacy = 1
+	}
+	B86_dostins_crackdown = {
+		global_autonomy = -0.05
+	}
+	B86_wool_of_all_weathers = {
+		prestige = 1
+	}
+	B86_spinstresses_societies = {
+		advisor_cost = -0.1
+		female_advisor_chance = 0.15
+	}
+}
+
+#Musaskalam
+F53_ideas = {
+	start = {
+		all_power_cost = -0.05		
+		fire_damage_received = -0.1	
+	}
+	
+	bonus = {
+		core_creation = -0.1			
+	}
+	
+	trigger = {
+		tag =	F53
+	}
+	free = yes
+
+	F53_hasahu_the_serpent_king = { 
+		manpower_in_true_faith_provinces = 0.15
+	}
+	
+	F53_the_serpent_domain = { 
+		governing_capacity_modifier = 0.15
+	}
+	
+	F53_bind_demons = { 
+		land_morale = 0.1
+	}
+	
+	F53_fear_the_lapis_eye = { 
+		global_unrest = -2
+	}
+
+	F53_lekas_magi = { 
+		advisor_cost = -0.1
+	}
+	
+	F53_heirs_to_the_djinn = { 
+		mages_loyalty_modifier = 0.1
+	}
+	
+	F53_fourth_power_of_antiquity = { 
+		ae_impact = -0.15
+	}
 }
 

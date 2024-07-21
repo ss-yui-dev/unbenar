@@ -552,7 +552,14 @@ guiTypes = {
 			quadTextureSprite ="GFX_swap_deity_button"
 			scripted = yes
 		}
-		
+
+		guiButtonType = {
+			name = "shadow_pact_reroll_portent"
+			position = { x = 195 y = 272 }
+			quadTextureSprite ="GFX_shadow_pact_button"
+			scripted = yes
+		}
+
 ############## ORTHODOX PATRIARCH AUTHORITY	###### 
 
 		windowType = {
@@ -1812,6 +1819,7 @@ guiTypes = {
 				name ="protestant_aspects_frame_bg"
 				spriteType = "GFX_country_religion_view_protestant_bg"
 				position = { x= 0 y = 16 }
+				alwaystransparent = yes
 			}
 
 			instantTextBoxType = {
@@ -2507,7 +2515,7 @@ guiTypes = {
 				name ="deity_listbox"
 				position = { x=56 y = -55}
 				backGround=""
-				size = { x=400 y =300} #Anbennar
+				size = { x=400 y =560} #Anbennar
 				Orientation = "UPPER_LEFT"
 				horizontal = 0
 				spacing = 1
@@ -2517,7 +2525,7 @@ guiTypes = {
 			
 			guiButtonType = {
 				name = "cancel"
-				position = { x=190 y = 230 }
+				position = { x=190 y = 510 }
 				quadTextureSprite ="GFX_standard_button_71"
 				buttonText = "BACK"
 				buttonFont = "vic_18"

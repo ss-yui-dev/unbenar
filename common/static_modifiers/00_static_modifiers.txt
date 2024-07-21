@@ -1746,7 +1746,7 @@ vassal_subject = {
 	naval_forcelimit_modifier = 0.1
 
 	#ANBENNAR
-	beso_skighubhen_influence = 0.1
+	beso_skighubhen_influence = 0.05
 }
 
 daimyo_subject = {
@@ -2613,8 +2613,8 @@ innovativeness = { #баф за 100 единиц
 
 	#Anbennar
 	tec_brilliance_influence = 0.01
-	pen_discombobulatorium_influence = 0.01
-	beso_caribhen_influence = 0.01
+	pen_discombobulatorium_influence = 0.025
+	beso_caribhen_influence = 0.05
 }
 
 rajput_regiment = {

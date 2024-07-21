@@ -1580,7 +1580,7 @@ strengthen_clergy_reform = {
 			is_revolutionary = no
 			NOT = { has_dlc = "Emperor" }
 		}
-		has_no_religion_specific_government_available = yes	#This way modders don't have to change this reform explicitly
+		#has_no_religion_specific_government_available = yes	#This way modders don't have to change this reform explicitly
 	}
 	modifiers = {
 		church_influence_modifier = 0.1
@@ -5731,8 +5731,8 @@ lockean_proviso_reform = {
 	}
 	trigger = {
 		OR = { 
-			#full_idea_group = economic_ideas
-			full_idea_group = development_ideas0
+			#full_idea_group = economic_ideas #love
+			full_idea_group = development_ideas0 #love
 		}
 		if = {
 			limit = {
@@ -5778,7 +5778,7 @@ embrace_the_economic_theory_reform = {
 	}
 	modifiers = {
 		interest = -0.5
-		inflation_reduction = 0.1
+		inflation_reduction = 0.1 #love
 	}
 	ai = {
 		factor = 1
@@ -5797,7 +5797,7 @@ war_economy_reform = {
 	trigger = {
 	}
 	modifiers = {
-		war_taxes_cost_modifier = -0.66
+		war_taxes_cost_modifier = -0.66 #love
 		global_regiment_cost = -0.1
 		global_ship_cost = -0.1
 	}
@@ -6071,7 +6071,7 @@ superiority_of_the_state_reform = {
 		NOT = { has_unlocked_government_reform = { government_reform = divided_aristocracy_reform } }
 	}
 	trigger = {
-		full_idea_group = imperialismus0
+		full_idea_group = imperialismus0 #love
 	}
 	modifiers = {
 		all_estate_influence_modifier = -0.1

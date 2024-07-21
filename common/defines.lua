@@ -151,7 +151,7 @@ NDiplomacy = {
 	SCALED_TRUCE_YEARS = 10,						-- Additional years of truce based on % of warscore taken in war (100% warscore = full scaled truce years)
 	REQUEST_HEIR_TRUCE = 5,
 	REQUEST_HEIR_AE = 20,
-	WARNING_YEARS = 20,								-- Years before warning expire
+	WARNING_YEARS = 10,								-- love
 	ANNUL_TREATIES_YEARS = 10,						-- Years before annul treaties expire
 	COALITION_YEARS = 20,							-- Years before coalition expire
 	REVANCHISM_MONTHLY_DECAY = 0.833,			-- about 20 years to decay all of it.
@@ -1748,7 +1748,7 @@ NAI = {
 	STATE_MAINTENANCE_BUDGET_FRACTION = 0.15, -- AI will spend a maximum of this fraction of monthly income on state maintenance
 	CORRUPTION_BUDGET_FRACTION = 0.5, -- love
 	COLONY_BUDGET_FRACTION = 1, -- (Anbennar) pdx: 0.4. AI will spend a maximum of this amount of monthly ducats for colonies.
-	ARMY_BUDGET_FRACTION = 4, -- love
+	ARMY_BUDGET_FRACTION = 2, -- love
 	NAVY_BUDGET_FRACTION = 0.65, -- love
 	FORT_BUDGET_FRACTION = 0.35, -- love
 	REGIMENTS_PER_GENERAL = 24, -- love
