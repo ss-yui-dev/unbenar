@@ -202,8 +202,8 @@ MIGA_estate_RC_adean = {
 		is_religion_enabled = corinite
 		OR = {
 			has_personal_deity = adean
-			has_personal_deity = adean_adenica_admin
-			has_personal_deity = adean_adenica_war
+			has_personal_deity = adean_upgraded_admin
+			has_personal_deity = adean_upgraded_war
 			has_estate_privilege = MIGA_estate_RC_adean
 		}
 		OR = {
@@ -216,8 +216,8 @@ MIGA_estate_RC_adean = {
 		religion = regent_court
 		OR = {
 			has_personal_deity = adean
-			has_personal_deity = adean_adenica_admin
-			has_personal_deity = adean_adenica_war
+			has_personal_deity = adean_upgraded_admin
+			has_personal_deity = adean_upgraded_war
 		}
 	}
 	
@@ -231,8 +231,8 @@ MIGA_estate_RC_adean = {
 				NOT = {
 					OR = {
 						has_personal_deity = adean
-						has_personal_deity = adean_adenica_admin
-						has_personal_deity = adean_adenica_war
+						has_personal_deity = adean_upgraded_admin
+						has_personal_deity = adean_upgraded_war
 					}
 				}
 				is_religion_enabled = ravelian
@@ -249,8 +249,8 @@ MIGA_estate_RC_adean = {
 			OR = {
 				OR = {
 					has_personal_deity = adean
-					has_personal_deity = adean_adenica_admin
-					has_personal_deity = adean_adenica_war
+					has_personal_deity = adean_upgraded_admin
+					has_personal_deity = adean_upgraded_war
 				}
 				is_religion_enabled = ravelian
 			}
@@ -278,7 +278,7 @@ MIGA_estate_RC_munas_moonsinger = {
 		OR = {
 			has_personal_deity = munas_moonsinger
 			has_personal_deity = munas_upgraded
-			has_personal_deity = munas_moonsinger_ibevar
+			# has_personal_deity = munas_moonsinger_ibevar
 			has_estate_privilege = MIGA_estate_RC_munas_moonsinger
 		}
 		OR = {
@@ -292,7 +292,7 @@ MIGA_estate_RC_munas_moonsinger = {
 		OR = {
 			has_personal_deity = munas_moonsinger
 			has_personal_deity = munas_upgraded
-			has_personal_deity = munas_moonsinger_ibevar
+			# has_personal_deity = munas_moonsinger_ibevar
 		}
 	}
 	
@@ -342,7 +342,7 @@ MIGA_estate_RC_munas_moonsinger = {
 					OR = {
 						has_personal_deity = munas_moonsinger
 						has_personal_deity = munas_upgraded
-						has_personal_deity = munas_moonsinger_ibevar
+						# has_personal_deity = munas_moonsinger_ibevar
 					}
 				}
 				is_religion_enabled = ravelian
@@ -361,7 +361,7 @@ MIGA_estate_RC_munas_moonsinger = {
 				OR = {
 					has_personal_deity = munas_moonsinger
 					has_personal_deity = munas_upgraded
-					has_personal_deity = munas_moonsinger_ibevar
+					# has_personal_deity = munas_moonsinger_ibevar
 				}
 				is_religion_enabled = ravelian
 			}
@@ -582,7 +582,7 @@ MIGA_estate_RC_ryala = {
 		is_religion_enabled = corinite
 		OR = {
 			has_personal_deity = ryala
-			has_personal_deity = ryala_seinathil_muse
+			has_personal_deity = ryala_upgraded
 			has_estate_privilege = MIGA_estate_RC_ryala
 		}
 		OR = {
@@ -595,7 +595,7 @@ MIGA_estate_RC_ryala = {
 		religion = regent_court
 		OR = {
 			has_personal_deity = ryala
-			has_personal_deity = ryala_seinathil_muse
+			has_personal_deity = ryala_upgraded
 		}
 	}
 	
@@ -609,7 +609,7 @@ MIGA_estate_RC_ryala = {
 				NOT = {
 					OR = {
 						has_personal_deity = ryala
-						has_personal_deity = ryala_seinathil_muse
+						has_personal_deity = ryala_upgraded
 					}
 				}
 				is_religion_enabled = ravelian
@@ -626,7 +626,7 @@ MIGA_estate_RC_ryala = {
 			OR = {
 				OR = {
 					has_personal_deity = ryala
-					has_personal_deity = ryala_seinathil_muse
+					has_personal_deity = ryala_upgraded
 				}
 				is_religion_enabled = ravelian
 			}
@@ -714,7 +714,7 @@ MIGA_estate_RC_falah = {
 		is_religion_enabled = corinite
 		OR = {
 			has_personal_deity = falah
-			has_personal_deity = falah_freemarches
+			has_personal_deity = falah_upgraded
 			has_estate_privilege = MIGA_estate_RC_falah
 		}
 		OR = {
@@ -727,7 +727,7 @@ MIGA_estate_RC_falah = {
 		religion = regent_court
 		OR = {
 			has_personal_deity = falah
-			has_personal_deity = falah_freemarches
+			has_personal_deity = falah_upgraded
 		}
 	}
 	
@@ -741,7 +741,7 @@ MIGA_estate_RC_falah = {
 				NOT = {
 					OR = {
 						has_personal_deity = falah
-						has_personal_deity = falah_freemarches
+						has_personal_deity = falah_upgraded
 					}
 				}
 				is_religion_enabled = ravelian
@@ -758,7 +758,7 @@ MIGA_estate_RC_falah = {
 			OR = {
 				OR = {
 					has_personal_deity = falah
-					has_personal_deity = falah_freemarches
+					has_personal_deity = falah_upgraded
 				}
 				is_religion_enabled = ravelian
 			}

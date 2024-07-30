@@ -126,7 +126,7 @@ anbenncost_imperial_palace = {
 			administrative_efficiency = 0.025
 		}
 		on_upgraded = {
-			owner = {
+			owner = {
 				add_imperial_influence = 10
 				add_absolutism = 10
 			}
@@ -350,13 +350,13 @@ silvelar_silver_spires = {
 		}
 		on_upgraded = {
 			define_advisor = {
-			type = treasurer
-			name = "Royy Doodlebug"
-			skill = 3
-			culture = imperial_gnome
-			religion = regent_court
-			location = 328
-			discount = yes
+				type = treasurer
+				name = "Royy Doodlebug"
+				skill = 3
+				culture = imperial_gnome
+				religion = regent_court
+				location = 328
+				discount = yes
 			}
 		}
 	}

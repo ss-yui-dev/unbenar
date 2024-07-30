@@ -123,14 +123,14 @@ nathalaire_city_of_pirates = {
 					create_pirate = 9999
 					create_pirate = 9999
 					create_pirate = 9999
-					while = {
-						limit = { PIR = { num_of_galley = 50 } }
-						kill_units = {
-							who = PIR
-							amount = 1
-							type = galley
-						}
-					}
+					# while = {
+					# 	limit = { PIR = { num_of_galley = 50 } }
+					# 	kill_units = {
+					# 		who = PIR
+					# 		amount = 1
+					# 		type = galley
+					# 	}
+					# }
 				}
 			}
 		}
@@ -201,14 +201,14 @@ nathalaire_city_of_pirates = {
 					create_pirate = 9999
 					create_pirate = 9999
 					create_pirate = 9999
-					while = {
-						limit = { PIR = { num_of_galley = 100 } }
-						kill_units = {
-							who = PIR
-							amount = 1
-							type = galley
-						}
-					}
+					# while = {
+					# 	limit = { PIR = { num_of_galley = 100 } }
+					# 	kill_units = {
+					# 		who = PIR
+					# 		amount = 1
+					# 		type = galley
+					# 	}
+					# }
 				}
 			}
 			add_base_production = 2
@@ -297,14 +297,14 @@ nathalaire_city_of_pirates = {
 					create_pirate = 9999
 					create_pirate = 9999
 					create_pirate = 9999
-					while = {
-						limit = { PIR = { num_of_galley = 150 } }
-						kill_units = {
-							who = PIR
-							amount = 1
-							type = galley
-						}
-					}
+					# while = {
+					# 	limit = { PIR = { num_of_galley = 150 } }
+					# 	kill_units = {
+					# 		who = PIR
+					# 		amount = 1
+					# 		type = galley
+					# 	}
+					# }
 				}
 			}
 			add_base_production = 2

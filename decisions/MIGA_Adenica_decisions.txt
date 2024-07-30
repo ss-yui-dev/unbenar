@@ -6,16 +6,16 @@ country_decisions = {
 		potential = {
 			has_country_flag = adenica_horse_event_unlocked
 			NOT = {
-				has_country_modifier = adenica_courser_picked
-				has_country_modifier = arbarani_destrier_picked
-				has_country_modifier = elikhandi_courser_picked
-				has_country_modifier = alenic_rouncey_picked
+				has_country_flag = adenica_courser_picked
+				has_country_flag = arbarani_destrier_picked
+				has_country_flag = elikhandi_courser_picked
+				has_country_flag = alenic_rouncey_picked
 			}
 			NOT = {
-				has_country_modifier = adenica_adenican_courser
-				has_country_modifier = adenica_arbarani_destrier
-				has_country_modifier = adenica_elikhandi_courser
-				has_country_modifier = adenica_alenic_rouncey
+				has_country_flag = adenica_adenican_courser
+				has_country_flag = adenica_arbarani_destrier
+				has_country_flag = adenica_elikhandi_courser
+				has_country_flag = adenica_alenic_rouncey
 			}
 		}
 		

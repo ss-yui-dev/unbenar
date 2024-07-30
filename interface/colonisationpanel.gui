@@ -101,7 +101,7 @@ guiTypes = {
 				Orientation = "UPPER_LEFT"
 				format = left
 				spacing = 35
-				borderSize = { x = 35 y = 35 }
+				# borderSize = { x = 35 y = 35 }
 		}		
 
 		iconType =

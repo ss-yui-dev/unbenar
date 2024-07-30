@@ -2335,6 +2335,11 @@ dwarven = {
 	}
 	kronium_dwarf = {
 		primary = I01 #Amldihr
+		#love
+		dynasty_names = {
+			Amldihrus
+		}
+		#love
 	}
 	quartz_dwarf = {
 		primary = I02 #Krakdhumvror

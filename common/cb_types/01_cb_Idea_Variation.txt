@@ -72,7 +72,7 @@ cb_dynastie = {
 	valid_for_subject = no
 
 	prerequisites = {
-		has_idea = diplomatic_corps_2
+		has_idea = diplomatic_corps
 		is_revolutionary = no
 		FROM = {
 			dynasty = ROOT

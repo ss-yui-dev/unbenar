@@ -248,7 +248,7 @@ idea_var_advisor_9 = {		# Administrator
 		}
 		modifier = {
 			meritocracy = 0.25
-			administrative_efficiency = 0.05
+			administrative_efficiency = 0.0075
 		}
 
 	}

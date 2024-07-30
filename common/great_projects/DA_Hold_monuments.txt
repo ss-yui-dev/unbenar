@@ -773,9 +773,6 @@ The_Dwarven_Laboratory = {
 			innovativeness_gain = 0.20
 		}
 		on_upgraded = {
-			owner = { 
-				change_innovativeness = 2
-			}
 			change_trade_goods = precursor_relics
 			custom_tooltip = DA_permanent_precursor_relics
 			hidden_effect = {
@@ -783,6 +780,9 @@ The_Dwarven_Laboratory = {
 				province_event = {
 					id = DA_Hul_Jorkad_event.2
 				}
+			}
+			owner = { 
+				change_innovativeness = 2
 			}
 		}
 	}
@@ -802,13 +802,13 @@ The_Dwarven_Laboratory = {
 			innovativeness_gain = 1.00
 		}
 		on_upgraded = {
-			owner = { 
-				change_innovativeness = 5
-			}
 			hidden_effect = {
 				province_event = {
 					id = DA_Hul_Jorkad_event.3
 				}
+			}
+			owner = { 
+				change_innovativeness = 5
 			}
 		}
 	}

@@ -465,18 +465,18 @@ country_event = {
 			}
 			#set_dynasty = original_dynasty
 			set_dynasty = "Amldihrus"
-			#define_heir = {
-			#	male = yes
-			#	dynasty = "Amldihrus"
-			#	age = 0
-			#	name = "Amldirus"
-			#	claim = 100
-			#	adm = 3
-			#	adm = 3
-			#	adm = 3
-			#	culture = ROOT
-			#	religion = ROOT
-			#}
+			define_heir = {
+				male = yes
+				dynasty = "Amldihrus"
+				age = 0
+				name = "Amldirus"
+				claim = 100
+				adm = 6
+				adm = 6
+				adm = 6
+				culture = ROOT
+				religion = ROOT
+			}
 			
 			custom_tooltip = recruit_mage_amldihr_republic_action_tooltip
 			add_prestige = 50
