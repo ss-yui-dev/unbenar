@@ -388,7 +388,7 @@ age_of_discovery = {
 				se_md_refund_splendor = { flagName = reduce_aggressive_expansion flagCategory = reduce_aggressive_expansion }
 			}
 		}
-		ab_md_1400s_transfer_vassal_wargoal = {
+		ab_transfer_vassal_wargoal = {
 			modifier = {
 				can_transfer_vassal_wargoal = yes
 				can_chain_claim = yes

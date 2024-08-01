@@ -449,17 +449,17 @@ temple = {
 				add_karma = -3
 			}
 		}
-		if = {
-			limit = {
-				owner =  {
-					religion = ravelian
-					has_estate_privilege = estate_church_influence_temples
-				}
-			}
-			owner =  {
-				add_papal_influence = -3
-			}
-		}
+		# if = {
+		# 	limit = {
+		# 		owner =  {
+		# 			religion = ravelian
+		# 			has_estate_privilege = estate_church_influence_temples
+		# 		}
+		# 	}
+		# 	owner =  {
+		# 		add_papal_influence = -3
+		# 	}
+		# }
 		Y72_remove_dev_from_building = { #1.35, Chien Binhrung
 			building = temple
 			type = tax
