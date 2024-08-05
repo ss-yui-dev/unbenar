@@ -366,6 +366,9 @@ age_of_discovery = {
 				custom_tooltip = feudal_de_jure_law
 				set_country_flag = feudal_de_jure_law
 			}
+			modifier = {
+				num_of_age_rewards = 1
+			}
 			ai_will_do = {
 				factor = 10
 			}
@@ -376,6 +379,7 @@ age_of_discovery = {
 		ab_md_1400s_justified_wars = {
 			modifier = {
 				ae_impact = -0.15
+				num_of_age_rewards = 1
 			}
 			ai_will_do = {
 				factor = 10
@@ -384,10 +388,11 @@ age_of_discovery = {
 				se_md_refund_splendor = { flagName = reduce_aggressive_expansion flagCategory = reduce_aggressive_expansion }
 			}
 		}
-		ab_md_1400s_transfer_vassal_wargoal = {
+		ab_transfer_vassal_wargoal = {
 			modifier = {
 				can_transfer_vassal_wargoal = yes
 				can_chain_claim = yes
+				num_of_age_rewards = 1
 			}
 			ai_will_do = {
 				factor = 10
@@ -399,6 +404,7 @@ age_of_discovery = {
 		ab_md_1400s_free_war_taxes = {
 			modifier = {
 				war_taxes_cost_modifier = -1.0
+				num_of_age_rewards = 1
 			}
 			ai_will_do = {
 				factor = 10
@@ -410,6 +416,7 @@ age_of_discovery = {
 		ab_md_1400s_cavalry_armies = {
 			modifier = {
 				cav_to_inf_ratio = 0.2
+				num_of_age_rewards = 1
 			}
 			ai_will_do = {
 				factor = 10
@@ -420,9 +427,9 @@ age_of_discovery = {
 		}
 		ab_md_1400s_attack_bonus_in_capital_terrain = {
 			modifier = {
-				# attack_bonus_in_capital_terrain = yes
 				attack_bonus_in_capital_terrain = 1
 				leader_land_manuever = 1
+				num_of_age_rewards = 1
 			}
 			ai_will_do = {
 				factor = 10
@@ -434,6 +441,7 @@ age_of_discovery = {
 		ab_md_1400s_hardened_soldiers = {
 			modifier = {
 				land_attrition = -0.1
+				num_of_age_rewards = 1
 			}
 			effect = {
 				se_md_add_or_upgrade_bonus = { bonusName = endurance flagName = reduced_attrition abilityName = ab_md_1400s_hardened_soldiers showTooltip = true }
@@ -445,6 +453,7 @@ age_of_discovery = {
 		ab_md_1400s_insecure_castles = {
 			modifier = {
 				artillery_levels_available_vs_fort = 1
+				num_of_age_rewards = 1
 			}
 			ai_will_do = {
 				factor = 10
@@ -456,6 +465,7 @@ age_of_discovery = {
 		ab_md_1400s_loyal_vassals = {
 			modifier = {
 				reduced_liberty_desire = 15
+				num_of_age_rewards = 1
 			}
 			ai_will_do = {
 				factor = 100
@@ -475,6 +485,7 @@ age_of_discovery = {
 		ab_md_1400s_mercenary_discipline = {
 			modifier = {
 				mercenary_discipline = 0.05
+				num_of_age_rewards = 1
 			}
 			ai_will_do = {
 				factor = 10
@@ -486,6 +497,7 @@ age_of_discovery = {
 		ab_md_1400s_cheap_counsel = {
 			modifier = {
 				advisor_cost = -0.05
+				num_of_age_rewards = 1
 			}
 			ai_will_do = {
 				factor = 10
@@ -497,6 +509,7 @@ age_of_discovery = {
 		ab_md_1400s_changing_world = {
 			modifier = {
 				culture_conversion_cost = -0.25
+				num_of_age_rewards = 1
 			}
 			effect = {
 				se_md_add_or_upgrade_bonus = { bonusName = culturalchange flagName = culture_conversion abilityName = ab_md_1400s_changing_world showTooltip = true }
@@ -508,6 +521,7 @@ age_of_discovery = {
 		ab_md_1400s_tyrant_acceptance = {
 			modifier = {
 				min_autonomy_in_territories = -0.10
+				num_of_age_rewards = 1
 			}
 			ai_will_do = {
 				factor = 10
@@ -516,10 +530,10 @@ age_of_discovery = {
 				se_md_add_or_upgrade_bonus = { bonusName = docile flagName = min_autonomy_in_territories abilityName = ab_md_1400s_tyrant_acceptance showTooltip = true }
 			}
 		}
-		ab_md_1500s_colony_boost_development = {
+		ab_colony_boost_development = {
 			modifier = {
 				colony_development_boost = 1
-				# can_colony_boost_development = yes
+				num_of_age_rewards = 1
 			}
 			ai_will_do = {
 				factor = 10
@@ -535,6 +549,7 @@ age_of_discovery = {
 		ab_md_1500s_early_colonial_interest = {
 			modifier = {
 				global_colonial_growth = 10
+				num_of_age_rewards = 1
 			}
 			ai_will_do = {
 				factor = 10
@@ -546,6 +561,7 @@ age_of_discovery = {
 		ab_md_1400s_competent_diplomats = {
 			modifier = {
 				improve_relation_modifier = 0.25
+				num_of_age_rewards = 1
 			}
 			effect = {
 				se_md_add_or_upgrade_bonus = { bonusName = diplomacy flagName = improve_relations abilityName = ab_md_1400s_competent_diplomats showTooltip = true }
@@ -558,6 +574,7 @@ age_of_discovery = {
 			modifier = {
 				interest = -0.5
 				yearly_corruption = -0.15
+				num_of_age_rewards = 1
 			}
 			ai_will_do = {
 				factor = 10
@@ -570,6 +587,7 @@ age_of_discovery = {
 			modifier = {
 				global_trade_power = 0.05
 				trade_efficiency = 0.05
+				num_of_age_rewards = 1
 			}
 			effect = {
 				se_md_add_or_upgrade_bonus = { bonusName = trade flagName = trade_efficiency abilityName = ab_md_1400s_savvy_merchants showTooltip = true }

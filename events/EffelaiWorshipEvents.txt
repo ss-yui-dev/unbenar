@@ -5949,7 +5949,7 @@ country_event = {
 
 	immediate = {
 		random_list = {
-			75 = {
+			0 = { #love
 
 			}
 			5 = {

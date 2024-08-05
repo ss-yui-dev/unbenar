@@ -17,7 +17,7 @@ alias[trigger:enum[scripted_effect_params_dollar]] = {
 
 ## scope = country
 ###Returns true if the country has hired an advisor of the specified type which has at least level X.
-alias[trigger:<advisor_type>] = int[1..5]
+alias[trigger:<advisor_type>] = int[1..10] #love
 
 ## scope = country
 ###Returns true if the country has at least X buildings from the specified building type.

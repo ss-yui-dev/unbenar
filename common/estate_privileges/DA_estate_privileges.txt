@@ -1699,7 +1699,7 @@ DA_RS_IND_DEV_Subterrean_agriculture_rig = {
 				}
 				OR = {
 					trade_goods = grain
-					trade_goods = serpentsbloom
+					# trade_goods = serpentsbloom
 					trade_goods = fungi
 				}
 			}
@@ -1715,7 +1715,7 @@ DA_RS_IND_DEV_Subterrean_agriculture_rig = {
 				}
 				OR = {
 					trade_goods = grain
-					trade_goods = serpentsbloom
+					# trade_goods = serpentsbloom
 					trade_goods = fungi
 				}
 			}
@@ -1731,7 +1731,7 @@ DA_RS_IND_DEV_Subterrean_agriculture_rig = {
 				}
 				OR = {
 					trade_goods = grain
-					trade_goods = serpentsbloom
+					# trade_goods = serpentsbloom
 					trade_goods = fungi
 				}
 			}

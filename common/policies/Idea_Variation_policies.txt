@@ -1350,7 +1350,7 @@ idea_variation_act_502 = {
 		}
 	}
 
-	build_cost = -0.05
+	build_cost = -0.08
 
 	ai_will_do = {
 		factor = 1
@@ -2398,7 +2398,7 @@ idea_variation_act_626 = {
 	}
 
 
-	build_cost = -0.05
+	build_cost = -0.08
 
 	ai_will_do = {
 		factor = 1
@@ -2659,7 +2659,7 @@ idea_variation_act_21 = {
 		}
 	}
 
-	build_cost = -0.05
+	build_cost = -0.08
 
 	ai_will_do = {
 		factor = 1

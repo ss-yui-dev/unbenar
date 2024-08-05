@@ -5355,7 +5355,7 @@ health_ideas = {
 		development_cost = -0.075
 	}
 	health_ideas_4 = {
-		monarch_lifespan = 5
+		monarch_lifespan = 0.5
 		global_autonomy = -0.05
 	}
 	health_ideas_5 = {

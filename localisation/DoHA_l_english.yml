@@ -28,6 +28,6 @@
  
  #estates
  estate_xia_military:0 "§TXia Military§!"
- estate_xia_military_desc:0 "The Xiaken have a peculiar military system. Only powerful martial masters go to battle, wielding techniques unimaginable to common people.\n\n§RThis privilege will reduce the effect of quantity ideas! §!"
+ estate_xia_military_desc:0 "The Xiaken have a peculiar military system. Only powerful martial masters go to battle, wielding techniques unimaginable to common people."
  estate_eunuchs_supremacy_over_crown:0 "Supremacy over the [Root.GetStateForm]"
  estate_eunuchs_supremacy_over_crown_desc:0 "With the scales tipping towards the decentralization of power, the Estates are increasingly able to dictate their priorities to the [Root.Monarch.GetTitle], leaving [Root.Monarch.GetHerHim] little choice but to agree to their will."

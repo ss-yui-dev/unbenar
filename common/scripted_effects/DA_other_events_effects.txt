@@ -765,7 +765,6 @@ DA_give_king_treasury = {
 	}
 	else_if = {
 		limit = { 
-			add_prestige = 2
 			DA_has_dig_level_8_or_higher = yes
 			NOT = { has_province_flag = DA_looked_dig_adk_8 }
 		}
@@ -1351,8 +1350,8 @@ DA_clear_ruler_personalities = {
 		remove_ruler_personality = malevolent_personality
 		remove_ruler_personality = immortal_personality
 		remove_ruler_personality = reformist_personality
-		remove_ruler_personality = enlightened_personality
-		remove_ruler_personality = absolutist_personality
+		# remove_ruler_personality = enlightened_personality
+		# remove_ruler_personality = absolutist_personality
 		remove_ruler_personality = legendary_pirate_personality
 		remove_ruler_personality = patron_of_arts_personality
 		remove_ruler_personality = mage_personality

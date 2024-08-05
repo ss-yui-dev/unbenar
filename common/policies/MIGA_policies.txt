@@ -3,14 +3,13 @@ the_economic_policy = {
 	monarch_power = ADM
 
 	potential = {
-		OR = {
+		AND = {
 			has_idea_group = economic_ideas
 			has_idea_group = trading_city_ideas
 		}
 	}
 	allow = {
-		full_idea_group = economic_ideas
-		OR = {
+		AND = {
 			full_idea_group = economic_ideas
 			full_idea_group = trading_city_ideas
 		}
@@ -30,14 +29,13 @@ the_infrastructure_policy = {
 	monarch_power = ADM
 
 	potential = {
-		OR = {
+		AND = {
 			has_idea_group = infrastructure_ideas
 			has_idea_group = trading_city_ideas
 		}
 	}
 	allow = {
-		full_idea_group = infrastructure_ideas
-		OR = {
+		AND = {
 			full_idea_group = infrastructure_ideas
 			full_idea_group = trading_city_ideas
 		}

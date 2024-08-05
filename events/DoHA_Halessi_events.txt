@@ -91,7 +91,7 @@ country_event = {
 			remove_country_modifier = DoHA_oni_adviser_ajgriijarul
 			remove_country_modifier = DoHA_oni_adviser_kabiurgarko
 			remove_country_modifier = DoHA_oni_adviser_khelorvalshi
-			country_event = { id = DoHA_Halessi.12 years = 10 }
+			country_event = { id = DoHA_Halessi.12 days = 3650 }
 		}
 	}
 	

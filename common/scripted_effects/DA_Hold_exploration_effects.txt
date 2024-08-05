@@ -3195,7 +3195,6 @@ DA_Set_level_as_explored = {
 	}
 	else_if = {
 		limit = { 
-			add_prestige = 2
 			DA_has_dig_level_8_or_higher = yes
 			NOT = { has_province_flag = DA_looked_dig_adk_8 }
 		}
