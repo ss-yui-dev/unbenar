@@ -8211,6 +8211,11 @@ tax_house = {
 				province_event = { id = kheionai.3 }
 			}
 		}
+		add_development_from_building = {
+			building = tax_house
+			type = tax
+			value = 2
+		}
 		#Anbennar
 		anbennar_building_effect = yes
 	}
@@ -8222,6 +8227,11 @@ tax_house = {
 			hidden_effect = {
 				province_event = { id = kheionai.3 }
 			}
+		}
+		remove_development_from_building = {
+			building = tax_house
+			type = tax
+			value = 2
 		}
 	}
 	onmap = no

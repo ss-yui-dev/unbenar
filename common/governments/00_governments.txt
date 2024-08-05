@@ -402,6 +402,7 @@ monarchy = {
 				
 				#BOP
 				blademarches_sword_of_corin
+				blademarches_large_cog
 			}
 		}
 		military_doctrines = { #Tier 5 1.35
@@ -1139,6 +1140,7 @@ republic = {
 				semayebaka_chapter_houses
 				#BOP
 				blademarches_sword_of_corin
+				blademarches_large_cog
 			}
 		}
 		military_doctrines = { #Tier 5
@@ -2015,6 +2017,7 @@ theocracy = {
 				
 				#BOP
 				blademarches_sword_of_corin
+				blademarches_large_cog
 			}
 		}
 		military_doctrines = { #Tier 5
@@ -2278,39 +2281,39 @@ theocracy = {
 		blademarches_theocracy_reform
 	}
 	exclusive_reforms = {
-		dutch_theocracy_reform
+		# dutch_theocracy_reform
 		theocratic_democracy_reform
 	}
 	exclusive_reforms = {
-		dutch_theocracy_reform
+		# dutch_theocracy_reform
 		constitional_theocracy_reform
 		
                 #love
 		blademarches_theocracy_reform
 	}
 	exclusive_reforms = {
-		dutch_theocracy_reform
+		# dutch_theocracy_reform
 		regionally_elected_commanders
 		
                 #love
 		blademarches_theocracy_reform
 	}
 	exclusive_reforms = {
-		dutch_theocracy_reform
+		# dutch_theocracy_reform
 		monastic_elections_reform
 
                 #love		
 		blademarches_theocracy_reform
 	}
 	exclusive_reforms = {
-		dutch_theocracy_reform
+		# dutch_theocracy_reform
 		commander_king_reform
 
                 #love		
 		blademarches_theocracy_reform
 	}
 	exclusive_reforms = {
-		dutch_theocracy_reform
+		# dutch_theocracy_reform
 		admiral_king_reform
 
                 #love		

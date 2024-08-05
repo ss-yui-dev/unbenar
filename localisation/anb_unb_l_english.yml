@@ -30,7 +30,7 @@
  mil_advisor_1: "Advisor cost nerf"
  mil_advisor_1_desc: "+10% advisor cost per lvl for 5+ lvls"
 
- advisor_cost_hint:0 "Advisors with lvl more than 5: §R+10% advisor cost§! per lvl"
+ advisor_cost_hint:0 "Advisors with lvl more than 5: §R+10% advisor cost§! per lvl on his category"
  
  splendor_2_age: "splendor balancer"
  splendor_3_age: "splendor balancer"
