@@ -141,17 +141,17 @@ philosopher = {
 ######################################################
 natural_scientist = {
 	monarch_power = ADM
-	skill_scaled_modifier = {
-		trigger = {
-			owner = {
-				has_government_mechanic = russian_modernization
-				NOT = { culture_group = PREV }
-			}
-		}
-		modifier = {
-			monthly_russian_modernization = 0.02
-		}
-	}
+	# skill_scaled_modifier = {
+	# 	trigger = {
+	# 		owner = {
+	# 			has_government_mechanic = russian_modernization
+	# 			NOT = { culture_group = PREV }
+	# 		}
+	# 	}
+	# 	modifier = {
+	# 		monthly_russian_modernization = 0.02
+	# 	}
+	# }
 
 	skill_scaled_modifier = {
 		trigger = {

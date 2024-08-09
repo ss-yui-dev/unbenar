@@ -5843,7 +5843,7 @@ alias[trigger:has_ever_humiliated] = scope[country]
 alias[trigger:num_of_tercio] = int
 
 ## scope = country
-alias[trigger:num_of_musketeer] = int
+alias[trigger:num_of_musketeers] = int
 
 ## scope = country
 alias[trigger:num_of_samurai] = int

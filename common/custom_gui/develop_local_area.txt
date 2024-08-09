@@ -6,6 +6,12 @@ custom_button = {
 	trigger = {
 		owned_by = FROM
 		is_state = yes
+		owner = {
+			treasury = 0
+			NOT = {
+				num_of_loans = 10
+			}
+		}
 		all_province = {
 			OR = {
 				NOT = { area = PREV }

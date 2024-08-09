@@ -141,7 +141,7 @@ guiTypes = {
 			name = "loyalty_entry"
 			position = { x = 0 y = 0 }
 			size = { x = 65 y = 26 }
-			format = left
+			# format = left
 
 			# iconType = {
 			# 	name = "loyalty_entry_background"

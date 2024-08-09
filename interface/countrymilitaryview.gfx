@@ -25,7 +25,7 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_naval_doctrine_icons"
 		texturefile = "gfx//interface//naval_doctrine_icons.dds"
-		noOfFrames = 31
+		noOfFrames = 32
 	}
 	
 	spriteType = {
