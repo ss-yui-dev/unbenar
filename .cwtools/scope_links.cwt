@@ -382,16 +382,16 @@ alias[effect:capital_scope] = {
 # scope = province
 # push_scope = country
 #Refers to the country that owns the current province scope.
-alias[effect:owner] = {
-	alias_name[effect] = alias_match_left[effect]
-}
+#alias[effect:owner] = {
+#	alias_name[effect] = alias_match_left[effect]
+#}
 
 # scope = province
 # push_scope = country
 #Refers to the country that controls the current province scope.
-alias[effect:controller] = {
-	alias_name[effect] = alias_match_left[effect]
-}
+#alias[effect:controller] = {
+#	alias_name[effect] = alias_match_left[effect]
+#}
 
 ## scope = province
 ## push_scope = province
@@ -797,6 +797,13 @@ alias[effect:random_owned_province] = {
 		alias_name[trigger] = alias_match_left[trigger]
 	}
 	alias_name[effect] = alias_match_left[effect]
+
+	## cardinality = 0..1
+	###Apply effect to random provinces in the area, use combined with amount
+	type = enum[random_repeating]
+	## cardinality = 0..1
+	###How many provinces to apply the effect, implies 'type = random' unless explicitly set
+	amount = int[1..inf]
 }
 
 ## push_scope = trade_node
@@ -974,7 +981,7 @@ alias[effect:random_trade_node_member_country] = {
 }
 
 ## push_scope = province
-## scope = trade_node
+## scope = { trade_node province }
 ###Scopes to every province in the current trade node.
 alias[effect:every_trade_node_member_province] = {
 	## cardinality = 0..1
@@ -1010,41 +1017,41 @@ alias[effect:unit_owner] = {
 
 #Triggers
 #These are not required as they are covered by the `scope_field` rule
-## scope = any
-###This is "NOR" rather than "NAND"
-alias[trigger:NOT] = {
-	alias_name[trigger] = alias_match_left[trigger]
-}
+# ## scope = any
+# ###This is "NOR" rather than "NAND"
+# alias[trigger:NOT] = {
+# 	alias_name[trigger] = alias_match_left[trigger]
+# }
 
-## scope = any
-alias[trigger:OR] = {
-	alias_name[trigger] = alias_match_left[trigger]
-}
+# ## scope = any
+# alias[trigger:OR] = {
+# 	alias_name[trigger] = alias_match_left[trigger]
+# }
 
-## scope = any
-alias[trigger:AND] = {
-	alias_name[trigger] = alias_match_left[trigger]
-}
+# ## scope = any
+# alias[trigger:AND] = {
+# 	alias_name[trigger] = alias_match_left[trigger]
+# }
 
-## scope = any
-alias[trigger:root] = {
-	alias_name[trigger] = alias_match_left[trigger]
-}
+# ## scope = any
+# alias[trigger:root] = {
+# 	alias_name[trigger] = alias_match_left[trigger]
+# }
 
-## scope = any
-alias[trigger:prev] = {
-	alias_name[trigger] = alias_match_left[trigger]
-}
+# ## scope = any
+# alias[trigger:prev] = {
+# 	alias_name[trigger] = alias_match_left[trigger]
+# }
 
-## scope = any
-alias[trigger:from] = {
-	alias_name[trigger] = alias_match_left[trigger]
-}
+# ## scope = any
+# alias[trigger:from] = {
+# 	alias_name[trigger] = alias_match_left[trigger]
+# }
 
-## scope = any
-alias[trigger:this] = {
-	alias_name[trigger] = alias_match_left[trigger]
-}
+# ## scope = any
+# alias[trigger:this] = {
+# 	alias_name[trigger] = alias_match_left[trigger]
+# }
 
 
 
@@ -1104,16 +1111,16 @@ alias[trigger:capital_scope] = {
 # scope = province
 # push_scope = country
 #Refers to the country that owns the current province scope.
-alias[trigger:owner] = {
-	alias_name[trigger] = alias_match_left[trigger]
-}
+#alias[trigger:owner] = {
+#	alias_name[trigger] = alias_match_left[trigger]
+#}
 
 # scope = province
 # push_scope = country
 #Refers to the country that controls the current province scope.
-alias[trigger:controller] = {
-	alias_name[trigger] = alias_match_left[trigger]
-}
+#alias[trigger:controller] = {
+#	alias_name[trigger] = alias_match_left[trigger]
+#}
 
 ## scope = province
 ## push_scope = province
@@ -1510,7 +1517,7 @@ alias[trigger:any_trade_node_member_country] = {
 }
 
 ## push_scope = province
-## scope = trade_node
+## scope = { trade_node province }
 ###Scopes to all provinces in the current trade node.
 alias[trigger:all_trade_node_member_province] = {
 	alias_name[trigger] = alias_match_left[trigger]

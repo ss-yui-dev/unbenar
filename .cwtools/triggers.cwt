@@ -29,7 +29,7 @@ alias[trigger:<idea_group>] = int[0..8]
 
 ## scope = province
 ###Returns true if the support for the specified institution in the province is at least X.
-alias[trigger:<institution>] = int[0..100]
+alias[trigger:<institution>] = float
 
 ## scope = country
 ###Returns true if the country has a tolerance of at least X of the specified religion. Note: No correct localisation.
@@ -1104,6 +1104,9 @@ alias[trigger:has_active_debate] = bool
 ## scope = country
 ###Returns true if the country has activated a fervor effect.
 alias[trigger:has_active_fervor] = bool
+## scope = country
+###Returns true if the country has activated a fervor effect.
+alias[trigger:has_active_fervor] = <fervor>
 
 ## scope = country
 ###Returns true if country has the specified policy active.
@@ -2892,7 +2895,7 @@ alias[trigger:native_hostileness] = int
 
 ## scope = province
 ###Returns true if size of natives in the province is at least X.
-alias[trigger:native_size] = int
+alias[trigger:native_size] = float
 
 ## scope = country
 ###Returns true if the country has a naval force limit of at least X, or at least as large a naval force limit as the specified country.
@@ -3648,6 +3651,11 @@ alias[trigger:province_distance] = {
 	who = scope[province]
 	distance = int
 }
+alias[trigger:province_distance] = {
+	who = scope[country]
+	distance = int
+}
+
 ## scope = province
 ###Returns true if the province has the ID X or the same ID as the specified province scope.
 alias[trigger:province_id] = <province_id>
@@ -4025,7 +4033,7 @@ alias[trigger:started_in] = date_field
 
 ## scope = country
 ###Returns true if Statists vs Orangists is at least X.
-alias[trigger:statists_vs_orangists] = float[0.0..1.0]
+alias[trigger:statists_vs_orangists] = float
 
 ## scope = country
 ###Returns true if the country receives subsidies of at least X% of its monthly income.
@@ -4561,10 +4569,11 @@ alias[trigger:is_in_important_war] = bool
 
 
 ## scope = country
+## severity = warning
 ###Checks whether the country's government uses a specified attribute
 alias[trigger:has_government_attribute] = enum[government_attributes]
-
 ## scope = country
+## severity = warning
 ###Checks whether the country's government uses a specified attribute
 alias[trigger:has_government_attribute] = value[custom_attribute]
 
@@ -5545,12 +5554,6 @@ alias[trigger:receives_military_access_from] = scope[country]
 ###Returns true if the scope currently receives Military Access from the specified country
 alias[trigger:receives_military_access_from] = enum[country_tags]
 
-## scope = country
-alias[trigger:has_unlocked_government_reform] = <government_reform.new>
-
-## scope = country
-alias[trigger:has_unlocked_government_reform_tooltip] = <government_reform.new>
-
 ###DO NOT USE THIS. This key is used by Paradox Internally to test things but it has made into the released files of 1.34, so we are adding it here to avoid confusing errors.
 ## cardinality = 0..1
 alias[trigger:nationalism_debug] = int
@@ -5829,6 +5832,9 @@ alias[trigger:has_naval_doctrine] = <naval_doctrine>
 alias[trigger:has_naval_doctrine] = any
 
 ## scope = country
+alias[trigger:has_unembraced_institution] = <institution>
+
+## scope = country
 alias[trigger:has_unembraced_institution] = bool
 
 ## scope = country
@@ -5843,7 +5849,7 @@ alias[trigger:has_ever_humiliated] = scope[country]
 alias[trigger:num_of_tercio] = int
 
 ## scope = country
-alias[trigger:num_of_musketeers] = int
+alias[trigger:num_of_musketeers] = int #love
 
 ## scope = country
 alias[trigger:num_of_samurai] = int
@@ -5876,3 +5882,23 @@ alias[trigger:has_spare_flagship_capacity] = bool
 ## scope = country
 ###Returns true if the country is a neighbor of the specified province.
 alias[trigger:is_neighbor_of_province] = <province_id>
+
+## scope = any
+###Returns true if the given name matches the Name field of the descriptor.mod of any enabled mods, e.g. "Example Mod" will return true if a mod is enabled that contains Name="Example Mod" in its descriptor.mod
+alias[trigger:is_mod_active] = scalar
+
+## scope = country
+###Returns true if the country has an army of at least X k janissaries.
+alias[trigger:mamluks_percentage] = float[0.0..1.0]
+
+## scope = country
+alias[trigger:num_of_qizilbash] = int
+
+# scope = country
+alias[trigger:num_of_mamluks] = int
+
+# scope = country
+alias[trigger:monthly_trade_income] = int
+
+# scope = country
+alias[trigger:uses_legitimacy] = bool
