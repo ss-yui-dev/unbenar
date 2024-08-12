@@ -67,3 +67,8 @@
  merc_maintenance_tech_3: "merc balancer"
  merc_maintenance_tech_31: "merc balancer"
  merc_maintenance_tech_32: "merc balancer"
+
+ defensive_fort_1_nerf: "fort balancer"
+ defensive_fort_1_nerf_desc: "if u have fort on terrain with dice bonus and this fort is beginning to be besieged by the enemy, then you will lose the terrain dice bonus for your attacks on this fort of yours, which is now under siege"
+ defensive_fort_2_nerf: "fort balancer"
+ defensive_fort_2_nerf_desc: "if u have fort on terrain with dice bonus and this fort is beginning to be besieged by the enemy, then you will lose the terrain dice bonus for your attacks on this fort of yours, which is now under siege"

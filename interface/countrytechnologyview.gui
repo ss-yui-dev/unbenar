@@ -160,7 +160,7 @@ guiTypes = {
 			name = "DA_Tech_Shower.Magic_Theory"
 			position = { x = 407 y = 373 }
 			textureFile = ""
-			font = "vic_15"
+			font = "garamond_14"
 			borderSize = {x = 4 y = 4}	
 			text = ""
 			maxWidth = 512
@@ -173,7 +173,7 @@ guiTypes = {
 			name = "DA_Tech_Shower.Metallurgy"
 			position = { x = 407 y = 399 }
 			textureFile = ""
-			font = "vic_15"
+			font = "garamond_14"
 			borderSize = {x = 4 y = 4}	
 			text = ""
 			maxWidth = 512
@@ -186,7 +186,7 @@ guiTypes = {
 			name = "DA_Tech_Shower.Mechanics"
 			position = { x = 407 y = 425 }
 			textureFile = ""
-			font = "vic_15"
+			font = "garamond_14"
 			borderSize = {x = 4 y = 4}	
 			text = ""
 			maxWidth = 512
@@ -199,7 +199,7 @@ guiTypes = {
 			name = "DA_Tech_Shower.Alchemy"
 			position = { x = 407 y = 451 }
 			textureFile = ""
-			font = "vic_15"
+			font = "garamond_14"
 			borderSize = {x = 4 y = 4}	
 			text = ""
 			maxWidth = 512
@@ -212,7 +212,7 @@ guiTypes = {
 			name = "DA_Tech_Shower.Medicine"
 			position = { x = 407 y = 476 }
 			textureFile = ""
-			font = "vic_15"
+			font = "garamond_14"
 			borderSize = {x = 4 y = 4}	
 			text = ""
 			maxWidth = 512
@@ -231,7 +231,7 @@ guiTypes = {
 			name = "DA_Metal_Shower.Iron"
 			position = { x = 419 y = 145 }
 			textureFile = ""
-			font = "vic_15"
+			font = "garamond_14"
 			borderSize = {x = 4 y = 4}	
 			text = ""
 			maxWidth = 512
@@ -244,7 +244,7 @@ guiTypes = {
 			name = "DA_Metal_Shower.Copper"
 			position = { x = 419 y = 168 }
 			textureFile = ""
-			font = "vic_15"
+			font = "garamond_14"
 			borderSize = {x = 4 y = 4}	
 			text = ""
 			maxWidth = 512
@@ -257,7 +257,7 @@ guiTypes = {
 			name = "DA_Metal_Shower.Gold"
 			position = { x = 419 y = 191 }
 			textureFile = ""
-			font = "vic_15"
+			font = "garamond_14"
 			borderSize = {x = 4 y = 4}	
 			text = ""
 			maxWidth = 512
@@ -271,7 +271,7 @@ guiTypes = {
 			name = "DA_Metal_Shower.Silver"
 			position = { x = 419 y = 215 }
 			textureFile = ""
-			font = "vic_15"
+			font = "garamond_14"
 			borderSize = {x = 4 y = 4}	
 			text = ""
 			maxWidth = 512
@@ -284,7 +284,7 @@ guiTypes = {
 			name = "DA_Metal_Shower.Tin"
 			position = { x = 419 y = 237 }
 			textureFile = ""
-			font = "vic_15"
+			font = "garamond_14nd_14"
 			borderSize = {x = 4 y = 4}	
 			text = ""
 			maxWidth = 512
@@ -297,7 +297,7 @@ guiTypes = {
 			name = "DA_Metal_Shower.Aluminium"
 			position = { x = 419 y = 260 }
 			textureFile = ""
-			font = "vic_15"
+			font = "garamond_14"
 			borderSize = {x = 4 y = 4}	
 			text = ""
 			maxWidth = 512
@@ -310,7 +310,7 @@ guiTypes = {
 			name = "DA_Metal_Shower.Titanium"
 			position = { x = 419 y = 285 }
 			textureFile = ""
-			font = "vic_15"
+			font = "garamond_14"
 			borderSize = {x = 4 y = 4}	
 			text = ""
 			maxWidth = 512
@@ -323,7 +323,7 @@ guiTypes = {
 			name = "DA_Metal_Shower.Chromium"
 			position = { x = 419 y = 308 }
 			textureFile = ""
-			font = "vic_15"
+			font = "garamond_14"
 			borderSize = {x = 4 y = 4}	
 			text = ""
 			maxWidth = 512
@@ -339,7 +339,7 @@ guiTypes = {
 			name = "DA_Metal_Shower.Quicksilver"
 			position = { x = 544 y = 145 }
 			textureFile = ""
-			font = "vic_15"
+			font = "garamond_14"
 			borderSize = {x = 4 y = 4}	
 			text = ""
 			maxWidth = 512
@@ -352,7 +352,7 @@ guiTypes = {
 			name = "DA_Metal_Shower.Palladium"
 			position = { x = 544 y = 168 }
 			textureFile = ""
-			font = "vic_15"
+			font = "garamond_14"
 			borderSize = {x = 4 y = 4}	
 			text = ""
 			maxWidth = 512
@@ -365,7 +365,7 @@ guiTypes = {
 			name = "DA_Metal_Shower.Platinum"
 			position = { x = 544 y = 191 }
 			textureFile = ""
-			font = "vic_15"
+			font = "garamond_14"
 			borderSize = {x = 4 y = 4}	
 			text = ""
 			maxWidth = 512
@@ -378,7 +378,7 @@ guiTypes = {
 			name = "DA_Metal_Shower.Tantalum"
 			position = { x = 544 y = 215 }
 			textureFile = ""
-			font = "vic_15"
+			font = "garamond_14"
 			borderSize = {x = 4 y = 4}	
 			text = ""
 			maxWidth = 512
@@ -391,7 +391,7 @@ guiTypes = {
 			name = "DA_Metal_Shower.Damestear"
 			position = { x = 544 y = 237 }
 			textureFile = ""
-			font = "vic_15"
+			font = "garamond_14"
 			borderSize = {x = 4 y = 4}	
 			text = ""
 			maxWidth = 512
@@ -404,7 +404,7 @@ guiTypes = {
 			name = "DA_Metal_Shower.Meteoric_Silver"
 			position = { x = 544 y = 260 }
 			textureFile = ""
-			font = "vic_15"
+			font = "garamond_14"
 			borderSize = {x = 4 y = 4}	
 			text = ""
 			maxWidth = 512
@@ -420,7 +420,7 @@ guiTypes = {
 			name = "DA_Metal_Shower.Dagrite"
 			position = { x = 670 y = 145 }
 			textureFile = ""
-			font = "vic_15"
+			font = "garamond_14"
 			borderSize = {x = 4 y = 4}	
 			text = ""
 			maxWidth = 512
@@ -433,7 +433,7 @@ guiTypes = {
 			name = "DA_Metal_Shower.RoseMetal"
 			position = { x = 670 y = 168 }
 			textureFile = ""
-			font = "vic_15"
+			font = "garamond_14"
 			borderSize = {x = 4 y = 4}	
 			text = ""
 			maxWidth = 512
@@ -446,7 +446,7 @@ guiTypes = {
 			name = "DA_Metal_Shower.Cold_iron"
 			position = { x = 670 y = 191 }
 			textureFile = ""
-			font = "vic_15"
+			font = "garamond_14"
 			borderSize = {x = 4 y = 4}	
 			text = ""
 			maxWidth = 512
@@ -459,7 +459,7 @@ guiTypes = {
 			name = "DA_Metal_Shower.Mithril"
 			position = { x = 670 y = 215 }
 			textureFile = ""
-			font = "vic_15"
+			font = "garamond_14"
 			borderSize = {x = 4 y = 4}	
 			text = ""
 			maxWidth = 512
@@ -472,7 +472,7 @@ guiTypes = {
 			name = "DA_Metal_Shower.EbonSteel"
 			position = { x = 670 y = 237 }
 			textureFile = ""
-			font = "vic_15"
+			font = "garamond_14"
 			borderSize = {x = 4 y = 4}	
 			text = ""
 			maxWidth = 512
@@ -488,7 +488,7 @@ guiTypes = {
 			name = "DA_Metal_Shower.CinderSteel"
 			position = { x = 797 y = 145 }
 			textureFile = ""
-			font = "vic_15"
+			font = "garamond_14"
 			borderSize = {x = 4 y = 4}	
 			text = ""
 			maxWidth = 512
@@ -501,7 +501,7 @@ guiTypes = {
 			name = "DA_Metal_Shower.Magnetite"
 			position = { x = 797 y = 168 }
 			textureFile = ""
-			font = "vic_15"
+			font = "garamond_14"
 			borderSize = {x = 4 y = 4}	
 			text = ""
 			maxWidth = 512
@@ -514,7 +514,7 @@ guiTypes = {
 			name = "DA_Metal_Shower.Mistium"
 			position = { x = 797 y = 191 }
 			textureFile = ""
-			font = "vic_15"
+			font = "garamond_14"
 			borderSize = {x = 4 y = 4}	
 			text = ""
 			maxWidth = 512
@@ -528,7 +528,7 @@ guiTypes = {
 			name = "DA_Metal_Shower.Skyshard"
 			position = { x = 797 y = 215 }
 			textureFile = ""
-			font = "vic_15"
+			font = "garamond_14"
 			borderSize = {x = 4 y = 4}	
 			text = ""
 			maxWidth = 512
@@ -541,7 +541,7 @@ guiTypes = {
 			name = "DA_Metal_Shower.Adamantium"
 			position = { x = 797 y = 237 }
 			textureFile = ""
-			font = "vic_15"
+			font = "garamond_14"
 			borderSize = {x = 4 y = 4}	
 			text = ""
 			maxWidth = 512
@@ -554,7 +554,7 @@ guiTypes = {
 			name = "DA_Metal_Shower.Unastu_Argazen"
 			position = { x = 797 y = 260 }
 			textureFile = ""
-			font = "vic_15"
+			font = "garamond_14"
 			borderSize = {x = 4 y = 4}	
 			text = ""
 			maxWidth = 512
@@ -567,7 +567,7 @@ guiTypes = {
 			name = "DA_Metal_Shower.Bloth_Dolur"
 			position = { x = 797 y = 285 }
 			textureFile = ""
-			font = "vic_15"
+			font = "garamond_14"
 			borderSize = {x = 4 y = 4}	
 			text = ""
 			maxWidth = 512
@@ -580,7 +580,7 @@ guiTypes = {
 			name = "DA_Metal_Shower.Sylvanite"
 			position = { x = 797 y = 308 }
 			textureFile = ""
-			font = "vic_15"
+			font = "garamond_14"
 			borderSize = {x = 4 y = 4}	
 			text = ""
 			maxWidth = 512
@@ -593,7 +593,7 @@ guiTypes = {
 			name = "DA_Metal_Shower.VoidSteel"
 			position = { x = 797 y = 332 }
 			textureFile = ""
-			font = "vic_15"
+			font = "garamond_14"
 			borderSize = {x = 4 y = 4}	
 			text = ""
 			maxWidth = 512

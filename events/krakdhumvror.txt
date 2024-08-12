@@ -1,17 +1,11 @@
-﻿namespace = krakdhumvror
+﻿
+namespace = krakdhumvror
 #Mage Heir
 country_event = {
 	id = krakdhumvror.1
 	title = krakdhumvror.1.t
 	desc = krakdhumvror.1.d
-	#	picture = {
-	#		trigger = { has_dlc = "Star and Crescent" }
-	#		picture = muslimgfx_NEW_HEIR_eventPicture
-	#	}
-	#	picture = {
-	#		trigger = NOT = { has_dlc = "Star and Crescent" }
-	#		picture = KING_SICK_IN_BED_eventPicture
-	#	}
+
 	picture = KING_SICK_IN_BED_eventPicture
 	is_triggered_only = yes
 	fire_only_once = yes
@@ -45,23 +39,6 @@ country_event = {
 			}
 		}
 	}
-	#	option = { #Respect
-	#		name = krakdhumvror.1.b
-	#		
-	#		add_republican_tradition = 20
-	#		add_adm_power = 50
-	#		add_dip_power = 50
-	#		add_prestige = 20
-	#		
-	#	}
-	#	option = { #Fear
-	#		name = krakdhumvror.1.c
-	#		
-	#		add_republican_tradition = -20
-	#		add_mil_power = 100
-	#		add_army_tradition = 15
-	#		add_stability_or_adm_power = yes
-	#	}
 }
 
 #The Dwarf Question
@@ -314,8 +291,8 @@ country_event = {
 		add_treasury = 1000
 		add_prestige = 20
 		2868 = {
-			change_culture = no_culture
-			change_religion = no_religion
+			# change_culture = no_culture
+			# change_religion = no_religion
 			add_base_tax = -2
 			add_base_production = -2
 			add_base_manpower = -2
@@ -332,15 +309,6 @@ country_event = {
 			add_base_production = 2
 			add_base_manpower = 2
 		}
-		#I08 = {
-		#			limit = {
-		#				exists = yes
-		#			}
-		#			add_opinion = {
-		#				who = I08
-		#				modifier = krak_pillage
-		#			}
-		#		}
 	}
 }
 
@@ -372,15 +340,6 @@ country_event = {
 			change_religion = ROOT
 			add_devastation = 100
 		}
-		#I02 = {
-		#			limit = {
-		#				exists = yes
-		#			}
-		#			add_opinion = {
-		#				who = I02
-		#				modifier = krak_pillage
-		#			}
-		#		}
 		4121 = {
 			add_province_modifier = {
 				name = "krakdhumvror_adventurer_route"
@@ -393,11 +352,6 @@ country_event = {
 				duration = -1
 			}
 		}
-		# add_estate_loyalty_modifier = {
-		# 	estate = estate_adventurers
-		# 	loyalty = 10
-		# 	duration = 3650
-		# }
 	}
 }
 

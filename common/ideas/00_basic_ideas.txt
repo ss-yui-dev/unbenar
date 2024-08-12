@@ -1851,7 +1851,6 @@ humanist_ideas = {
 		tolerance_heretic = 4
 		tolerance_heathen = 4
 		can_not_build_missionaries = yes
-		may_not_convert_territories = yes
 	}
 	indirect_rule = {
 		years_of_nationalism = -10
@@ -5748,7 +5747,7 @@ zentra0 = {
 		}
 	}
 	bonus = {
-		max_absolutism_effect = 0.1
+		max_absolutism = 10
 		# global_allowed_num_of_manufactories = 1
 	}
 	zentra1 = {
