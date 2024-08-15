@@ -1,184 +1,184 @@
 country_decisions = {
-
-	ibevar_adenica_nation = {
-		major = yes
-		
-		potential = {
-			#tag = A32
-			has_country_modifier = ibevar_elfrealm_of_greater_ibevar
-			religion = regent_court
-			NOT = { has_country_flag = feudal_escann_kingdom }
-			NOT = { has_country_flag = adventurer_derived_government }
-			NOT = { has_country_flag = formed_adenica_flag }
-			NOT = { exists = B58 } #Adenica doesn't exist
-			was_never_end_game_tag_trigger = yes
-		}
-		
-		provinces_to_highlight = {
-			OR = {
-				AND = {
-					province_id = 774
-					OR = {
-						NOT = { is_core = ROOT }
-						NOT = { owned_by = ROOT }
-					}
-				}
-				AND = {
-					region = west_castanor_region
-					NOT = {
-						calc_true_if = {
-							amount = 10
-							all_province = {
-								region = west_castanor_region
-								owned_by = ROOT
-							}
-						}
-					}
-					NOT = { owned_by = ROOT }
-				}
-			}
-		}
-		
-		allow = {
-			#tag = A32
-			has_country_modifier = ibevar_elfrealm_of_greater_ibevar
-			primary_culture = moon_elf
-			adm_tech = 7
-			is_free_or_tributary_trigger = yes
-			is_nomad = no
-			is_at_war = no
-			owns_core_province = 774	#Taranton
-			if = {
-				limit = { has_dlc = "Wealth of Nations" }
-				has_personal_deity = adean
-			}
-			num_of_owned_provinces_with = {
-				value = 10
-				region = west_castanor_region
-			}
-
-			OR = {
-				adm = 5 #Ruler has at least 5 adm
-				ruler_has_personality = just_personality
-				ruler_has_personality = kind_hearted_personality
-				ruler_has_personality = bold_fighter_personality
-				ruler_has_personality = zealot_personality
-			}
-			
-			NOT = { ruler_has_personality = cruel_personality }
-			NOT = { ruler_has_personality = malevolent_personality }
-			NOT = { ruler_has_personality = craven_personality }
-			NOT = { ruler_has_personality = sinner_personality }
-		}
-		
-		effect = {
-			hidden_effect = {
-				change_tag_and_keep_color = { tag = B58 }
-			}
-			override_country_name = SILVER_DEMESNE
-			set_country_flag = feudal_escann_kingdom
-			set_country_flag = no_formable_culture_shift
-			hidden_effect = {
-				every_owned_province = {
-					limit = {
-						OR = {
-							region = west_castanor_region 
-							region = south_castanor_region 
-							region = inner_castanor_region 
-							area = cursewood_area 
-							area = whistlevale_area 
-						}
-						culture_is_human = yes
-					}
-					change_culture = adenner
-				}
-			}
-			add_accepted_culture = adenner
-			remove_non_electors_emperors_from_empire_effect = yes
-
-			#Claims
-			rohibon_area = {
-				limit = {
-					NOT = { owned_by = ROOT }
-				}
-				add_claim = B58
-			}
-			adenica_area = {
-				limit = {
-					NOT = { owned_by = ROOT }
-				}
-				add_claim = B58
-			}
-			taran_plains_area = {
-				limit = {
-					NOT = { owned_by = ROOT }
-				}
-				add_claim = B58
-			}
-			balmire_area = {
-				limit = {
-					NOT = { owned_by = ROOT }
-				}
-				add_claim = B58
-			}
-			falsemire_area = {
-				limit = {
-					NOT = { owned_by = ROOT }
-				}
-				add_claim = B58
-			}
-			verteben_area = {
-				limit = {
-					NOT = { owned_by = ROOT }
-				}
-				add_claim = B58
-			}
-			valefort_area = {
-				limit = {
-					NOT = { owned_by = ROOT }
-				}
-				add_claim = B58
-			}
-			
-			
-			add_prestige = 50
-			add_country_modifier = {
-				name = "centralization_modifier"
-				duration = 7300
-			}
-			set_country_flag = formed_adenica_flag
-			if = {
-				limit = { has_custom_ideas = no }
-				country_event = { id = ideagroups.1 } #Swap Ideas
-			}
-			swap_non_generic_missions = yes
-			hidden_effect = {
-				complete_mission = adenica_demand_chivalric_oaths
-			}
-			hidden_effect = {
-				set_variable = {
-					which = adenicaChivalryMissionsCompleted
-					value = 0
-				}
-				set_variable = {
-					which = adenicaReligiousWarsWon
-					value = 0
-				}
-				set_variable = {
-					which = adenicaWarsWon
-					value = 0
-				}
-				set_variable = {
-					which = adenicaOrcWarsWon
-					value = 0
-				}
-			}
-		}
-		ai_will_do = {
-			factor = 2
-		}
-		ai_importance = 400
-	}
+	# guardian; adenica already can be formed
+	#ibevar_adenica_nation = {
+	#	major = yes
+	#	
+	#	potential = {
+	#		#tag = A32
+	#		has_country_modifier = ibevar_elfrealm_of_greater_ibevar
+	#		religion = regent_court
+	#		NOT = { has_country_flag = feudal_escann_kingdom }
+	#		NOT = { has_country_flag = adventurer_derived_government }
+	#		NOT = { has_country_flag = formed_adenica_flag }
+	#		NOT = { exists = B58 } #Adenica doesn't exist
+	#		was_never_end_game_tag_trigger = yes
+	#	}
+	#	
+	#	provinces_to_highlight = {
+	#		OR = {
+	#			AND = {
+	#				province_id = 774
+	#				OR = {
+	#					NOT = { is_core = ROOT }
+	#					NOT = { owned_by = ROOT }
+	#				}
+	#			}
+	#			AND = {
+	#				region = west_castanor_region
+	#				NOT = {
+	#					calc_true_if = {
+	#						amount = 10
+	#						all_province = {
+	#							region = west_castanor_region
+	#							owned_by = ROOT
+	#						}
+	#					}
+	#				}
+	#				NOT = { owned_by = ROOT }
+	#			}
+	#		}
+	#	}
+	#	
+	#	allow = {
+	#		#tag = A32
+	#		has_country_modifier = ibevar_elfrealm_of_greater_ibevar
+	#		primary_culture = moon_elf
+	#		adm_tech = 7
+	#		is_free_or_tributary_trigger = yes
+	#		is_nomad = no
+	#		is_at_war = no
+	#		owns_core_province = 774	#Taranton
+	#		if = {
+	#			limit = { has_dlc = "Wealth of Nations" }
+	#			has_personal_deity = adean
+	#		}
+	#		num_of_owned_provinces_with = {
+	#			value = 10
+	#			region = west_castanor_region
+	#		}
+	#
+	#		OR = {
+	#			adm = 5 #Ruler has at least 5 adm
+	#			ruler_has_personality = just_personality
+	#			ruler_has_personality = kind_hearted_personality
+	#			ruler_has_personality = bold_fighter_personality
+	#			ruler_has_personality = zealot_personality
+	#		}
+	#		
+	#		NOT = { ruler_has_personality = cruel_personality }
+	#		NOT = { ruler_has_personality = malevolent_personality }
+	#		NOT = { ruler_has_personality = craven_personality }
+	#		NOT = { ruler_has_personality = sinner_personality }
+	#	}
+	#	
+	#	effect = {
+	#		hidden_effect = {
+	#			change_tag_and_keep_color = { tag = B58 }
+	#		}
+	#		override_country_name = SILVER_DEMESNE
+	#		set_country_flag = feudal_escann_kingdom
+	#		set_country_flag = no_formable_culture_shift
+	#		hidden_effect = {
+	#			every_owned_province = {
+	#				limit = {
+	#					OR = {
+	#						region = west_castanor_region 
+	#						region = south_castanor_region 
+	#						region = inner_castanor_region 
+	#						area = cursewood_area 
+	#						area = whistlevale_area 
+	#					}
+	#					culture_is_human = yes
+	#				}
+	#				change_culture = adenner
+	#			}
+	#		}
+	#		add_accepted_culture = adenner
+	#		remove_non_electors_emperors_from_empire_effect = yes
+	#
+	#		#Claims
+	#		rohibon_area = {
+	#			limit = {
+	#				NOT = { owned_by = ROOT }
+	#			}
+	#			add_claim = B58
+	#		}
+	#		adenica_area = {
+	#			limit = {
+	#				NOT = { owned_by = ROOT }
+	#			}
+	#			add_claim = B58
+	#		}
+	#		taran_plains_area = {
+	#			limit = {
+	#				NOT = { owned_by = ROOT }
+	#			}
+	#			add_claim = B58
+	#		}
+	#		balmire_area = {
+	#			limit = {
+	#				NOT = { owned_by = ROOT }
+	#			}
+	#			add_claim = B58
+	#		}
+	#		falsemire_area = {
+	#			limit = {
+	#				NOT = { owned_by = ROOT }
+	#			}
+	#			add_claim = B58
+	#		}
+	#		verteben_area = {
+	#			limit = {
+	#				NOT = { owned_by = ROOT }
+	#			}
+	#			add_claim = B58
+	#		}
+	#		valefort_area = {
+	#			limit = {
+	#				NOT = { owned_by = ROOT }
+	#			}
+	#			add_claim = B58
+	#		}
+	#		
+	#		
+	#		add_prestige = 50
+	#		add_country_modifier = {
+	#			name = "centralization_modifier"
+	#			duration = 7300
+	#		}
+	#		set_country_flag = formed_adenica_flag
+	#		if = {
+	#			limit = { has_custom_ideas = no }
+	#			country_event = { id = ideagroups.1 } #Swap Ideas
+	#		}
+	#		swap_non_generic_missions = yes
+	#		hidden_effect = {
+	#			complete_mission = adenica_demand_chivalric_oaths
+	#		}
+	#		hidden_effect = {
+	#			set_variable = {
+	#				which = adenicaChivalryMissionsCompleted
+	#				value = 0
+	#			}
+	#			set_variable = {
+	#				which = adenicaReligiousWarsWon
+	#				value = 0
+	#			}
+	#			set_variable = {
+	#				which = adenicaWarsWon
+	#				value = 0
+	#			}
+	#			set_variable = {
+	#				which = adenicaOrcWarsWon
+	#				value = 0
+	#			}
+	#		}
+	#	}
+	#	ai_will_do = {
+	#		factor = 2
+	#	}
+	#	ai_importance = 400
+	#}
 	
 	ibevar_marrhold_nation = {
 		major = yes
@@ -249,7 +249,7 @@ country_decisions = {
 			OR = {
 				culture_group = escanni
 				primary_culture = marrodic
-				accepted_culture = marrodic
+				#accepted_culture = marrodic	#guardian; miga bottom text
 				culture_group = dwarven
 			}
 			if = {
@@ -351,7 +351,7 @@ country_decisions = {
 			add_prestige = 25
 			set_country_flag = formed_marrhold_flag
 			clr_country_flag = 	knightly_order_adventurer
-			country_event = { id = adventurer.2 days = 10 }
+			#country_event = { id = adventurer.2 days = 10 } #guardian; ivent adventurer.2 is commented->comment this for proper display 
 			if = {
 				limit = { has_custom_ideas = no }
 				country_event = { id = ideagroups.1 } #Swap Ideas

@@ -1,5 +1,5 @@
 country_decisions = {
-
+	
 	asheniande_vampire_spread_cooldown_decision = {
 		major = no
 		
@@ -9,9 +9,11 @@ country_decisions = {
 		
 		allow = {
 			has_country_modifier = vamp_spread_cooldown
+			splendor = 50	#guardian; good decision for Asheniande; added splendor cost
 		}
 		
 		effect = {
+			add_splendor = -50
 			remove_country_modifier = vamp_spread_cooldown
 			if = {
 				limit = {
@@ -25,42 +27,43 @@ country_decisions = {
 		}
 	}
 	
-	asheniande_A60_another_wave_decision = {
-		major = no
-		
-		potential = {
-			tag = A60
-			mission_completed = A60_new_generation
-			mission_completed = A60_blood_court
-			NOT = { has_country_flag = asheniande_A60_another_wave_decision }
-		}
-		
-		allow = {
-			tag = A60
-			mission_completed = A60_new_generation
-			mission_completed = A60_blood_court
-			OR = {
-				ai = yes
-				splendor = 800
-			}
-		}
-		
-		effect = {
-			add_splendor = -800
-			every_country = {
-				limit = {
-					is_part_of_hre = yes
-					NOT = { has_country_flag = has_vampires_estate }
-				}
-				country_event = { id = vampires_estate_events.11 days = 7 }
-			}
-			hidden_effect = {
-				set_country_flag = asheniande_A60_another_wave_decision
-			}
-		}
-		ai_will_do = {
-			factor = 2
-		}
-		ai_importance = 400
-	}
+	#guardian; op decision
+	#asheniande_A60_another_wave_decision = {
+	#	major = no
+	#	
+	#	potential = {
+	#		tag = A60
+	#		mission_completed = A60_new_generation
+	#		mission_completed = A60_blood_court
+	#		NOT = { has_country_flag = asheniande_A60_another_wave_decision }
+	#	}
+	#	
+	#	allow = {
+	#		tag = A60
+	#		mission_completed = A60_new_generation
+	#		mission_completed = A60_blood_court
+	#		OR = {
+	#			ai = yes
+	#			splendor = 800
+	#		}
+	#	}
+	#	
+	#	effect = {
+	#		add_splendor = -800
+	#		every_country = {
+	#			limit = {
+	#				is_part_of_hre = yes
+	#				NOT = { has_country_flag = has_vampires_estate }
+	#			}
+	#			country_event = { id = vampires_estate_events.11 days = 7 }
+	#		}
+	#		hidden_effect = {
+	#			set_country_flag = asheniande_A60_another_wave_decision
+	#		}
+	#	}
+	#	ai_will_do = {
+	#		factor = 2
+	#	}
+	#	ai_importance = 400
+	#}
 }

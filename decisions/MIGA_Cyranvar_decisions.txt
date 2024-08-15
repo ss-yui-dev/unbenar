@@ -1,144 +1,145 @@
-country_decisions = {
-	
-	cyranvar_another_path = {
-		major = yes
-		
-		potential = {
-			tag = I45
-			OR = {
-				has_country_flag = cyranvar_isolationist_path
-				has_country_flag = cyranvar_open_path
-			}
-			NOT = {
-				AND = {
-					has_country_flag = cyranvar_isolationist_path
-					has_country_flag = cyranvar_open_path
-				}
-			}
-		}
-		
-		allow = {
-			tag = I45
-		}
-		
-		effect = {
-			if = {
-				limit = { has_country_flag = cyranvar_isolationist_path }
-				hidden_effect = { set_country_flag = cyranvar_open_path }
-				custom_tooltip = cyranvar_open_border_tooltip
-			}
-			else = {
-				hidden_effect = { set_country_flag = cyranvar_isolationist_path }
-				custom_tooltip = cyranvar_isolationist_tooltip
-			}
-		}
-		
-		ai_will_do = {
-			factor = 2
-		}
-		ai_importance = 400
-	}
-	
-	cyranvar_I45_internal_investment = {
-		major = yes
-		
-		potential = {	
-			tag = I45
-			NOT = { has_country_flag = cyranvar_I45_internal_investment }
-		}
-		
-		allow = {
-			OR = {
-				stability = 3
-				ai = yes
-			}
-			adm_power = 150
-			dip_power = 150
-			mil_power = 150
-			deepwoods_superregion = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-		}
-		
-		effect = {
-			add_adm_power = -150
-			add_dip_power = -150
-			add_mil_power = -150
-			3012 = {
-				add_base_tax = 1
-				add_base_production = 1
-				add_base_manpower = 1
-				center_of_trade = 1
-			}
-			3024 = {
-				add_base_tax = 1
-				add_base_production = 1
-				add_base_manpower = 1
-				center_of_trade = 1
-			}
-			3030 = {
-				add_base_tax = 1
-				add_base_production = 1
-				add_base_manpower = 1
-				center_of_trade = 1
-			}
-			3041 = {
-				add_base_tax = 1
-				add_base_production = 1
-				add_base_manpower = 1
-				center_of_trade = 1
-			}
-			3033 = {
-				add_base_tax = 1
-				add_base_production = 1
-				add_base_manpower = 1
-				center_of_trade = 1
-			}
-			3046 = {
-				add_base_tax = 1
-				add_base_production = 1
-				add_base_manpower = 1
-				center_of_trade = 1
-			}
-			3004 = {
-				add_base_tax = 1
-				add_base_production = 1
-				add_base_manpower = 1
-				center_of_trade = 1
-			}
-			3020 = {
-				add_base_tax = 1
-				add_base_production = 1
-				add_base_manpower = 1
-				center_of_trade = 1
-			}
-			3017 = {
-				add_base_tax = 1
-				add_base_production = 1
-				add_base_manpower = 1
-				center_of_trade = 1
-			}
-			if = {
-				limit = { ai = yes }
-				every_owned_province = {
-					limit = {
-						superregion = deepwoods_superregion
-						NOT = { culture = wood_elf }
-					}
-					change_religion = fey_court
-					change_culture = wood_elf
-					add_devastation = 10
-				}
-			}
-			hidden_effect = {
-				set_country_flag = cyranvar_I45_internal_investment
-			}
-		}
-		
-		ai_will_do = {
-			factor = 2
-		}
-		ai_importance = 400
-	}
-}
+# guardian; miga bottom text
+#country_decisions = {
+#	
+#	cyranvar_another_path = {
+#		major = yes
+#		
+#		potential = {
+#			tag = I45
+#			OR = {
+#				has_country_flag = cyranvar_isolationist_path
+#				has_country_flag = cyranvar_open_path
+#			}
+#			NOT = {
+#				AND = {
+#					has_country_flag = cyranvar_isolationist_path
+#					has_country_flag = cyranvar_open_path
+#				}
+#			}
+#		}
+#		
+#		allow = {
+#			tag = I45
+#		}
+#		
+#		effect = {
+#			if = {
+#				limit = { has_country_flag = cyranvar_isolationist_path }
+#				hidden_effect = { set_country_flag = cyranvar_open_path }
+#				custom_tooltip = cyranvar_open_border_tooltip
+#			}
+#			else = {
+#				hidden_effect = { set_country_flag = cyranvar_isolationist_path }
+#				custom_tooltip = cyranvar_isolationist_tooltip
+#			}
+#		}
+#		
+#		ai_will_do = {
+#			factor = 2
+#		}
+#		ai_importance = 400
+#	}
+#	
+#	cyranvar_I45_internal_investment = {
+#		major = yes
+#		
+#		potential = {	
+#			tag = I45
+#			NOT = { has_country_flag = cyranvar_I45_internal_investment }
+#		}
+#		
+#		allow = {
+#			OR = {
+#				stability = 3
+#				ai = yes
+#			}
+#			adm_power = 150
+#			dip_power = 150
+#			mil_power = 150
+#			deepwoods_superregion = {
+#				type = all
+#				country_or_non_sovereign_subject_holds = ROOT
+#			}
+#		}
+#		
+#		effect = {
+#			add_adm_power = -150
+#			add_dip_power = -150
+#			add_mil_power = -150
+#			3012 = {
+#				add_base_tax = 1
+#				add_base_production = 1
+#				add_base_manpower = 1
+#				center_of_trade = 1
+#			}
+#			3024 = {
+#				add_base_tax = 1
+#				add_base_production = 1
+#				add_base_manpower = 1
+#				center_of_trade = 1
+#			}
+#			3030 = {
+#				add_base_tax = 1
+#				add_base_production = 1
+#				add_base_manpower = 1
+#				center_of_trade = 1
+#			}
+#			3041 = {
+#				add_base_tax = 1
+#				add_base_production = 1
+#				add_base_manpower = 1
+#				center_of_trade = 1
+#			}
+#			3033 = {
+#				add_base_tax = 1
+#				add_base_production = 1
+#				add_base_manpower = 1
+#				center_of_trade = 1
+#			}
+#			3046 = {
+#				add_base_tax = 1
+#				add_base_production = 1
+#				add_base_manpower = 1
+#				center_of_trade = 1
+#			}
+#			3004 = {
+#				add_base_tax = 1
+#				add_base_production = 1
+#				add_base_manpower = 1
+#				center_of_trade = 1
+#			}
+#			3020 = {
+#				add_base_tax = 1
+#				add_base_production = 1
+#				add_base_manpower = 1
+#				center_of_trade = 1
+#			}
+#			3017 = {
+#				add_base_tax = 1
+#				add_base_production = 1
+#				add_base_manpower = 1
+#				center_of_trade = 1
+#			}
+#			if = {
+#				limit = { ai = yes }
+#				every_owned_province = {
+#					limit = {
+#						superregion = deepwoods_superregion
+#						NOT = { culture = wood_elf }
+#					}
+#					change_religion = fey_court
+#					change_culture = wood_elf
+#					add_devastation = 10
+#				}
+#			}
+#			hidden_effect = {
+#				set_country_flag = cyranvar_I45_internal_investment
+#			}
+#		}
+#		
+#		ai_will_do = {
+#			factor = 2
+#		}
+#		ai_importance = 400
+#	}
+#}

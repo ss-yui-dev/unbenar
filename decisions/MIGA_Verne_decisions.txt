@@ -1,141 +1,142 @@
-country_decisions = {
-	
-	MIGA_A33_the_hunt_for_eggs = {
-		major = yes
-		
-		potential = {
-			NOT = { tag = A33 }
-			OR = {
-				accepted_culture = vernman
-				primary_culture = vernman
-			}
-			
-			NOT = { mission_completed = A33_the_hunt_for_eggs }
-		}
-		
-		provinces_to_highlight = {
-			area = khenak_area
-			NOT = { country_or_non_sovereign_subject_holds = ROOT }
-		}
-		
-		allow = {
-			treasury = 400
-			khenak_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-		}
-		
-		effect = {
-			country_event = { id = verne.4 }
-			random_owned_province = {
-				limit = {
-					area = khenak_area
-					NOT = { has_province_modifier = aw_wyvern_1 }
-					NOT = { has_province_modifier = aw_wyvern_2 }
-				}
-				add_permanent_province_modifier = {
-					name = aw_wyvern_2
-					duration = -1
-				}
-			}
-			
-			hidden_effect = {
-				complete_mission = A33_the_hunt_for_eggs
-			}
-		}
-	}
-	
-	MIGA_A33_build_the_sanctuary = {
-		major = yes
-		
-		potential = {
-			NOT = { tag = A33 }
-			OR = {
-				accepted_culture = vernman
-				primary_culture = vernman
-			}
-			
-			mission_completed = A33_the_hunt_for_eggs
-			NOT = { mission_completed = A33_build_the_sanctuary }
-		}
-		
-		provinces_to_highlight = {
-			province_id = 331
-			OR = {
-				NOT = { owned_by = ROOT }
-				NOT = { is_core = ROOT }
-			}
-		}
-		
-		allow = {
-			has_country_modifier = verne_found_eggs
-			OR = { 
-				AND = { 
-					owns_core_province = 292
-					treasury = 600 
-				}
-				AND = { 
-					owns_core_province = 331
-					treasury = 400 
-				}
-			}
-		}
-		
-		effect = {
-			country_event = { id = verne.10 }
-			
-			hidden_effect = {
-				complete_mission = A33_build_the_sanctuary
-			}
-		}
-	}
-	
-	MIGA_A33_reviving_the_wyverns = {
-		major = yes
-		
-		potential = {
-			NOT = { tag = A33 }
-			OR = {
-				accepted_culture = vernman
-				primary_culture = vernman
-			}
-			
-			mission_completed = A33_build_the_sanctuary
-			NOT = { mission_completed = A33_reviving_the_wyverns }
-		}
-		
-		allow = {
-			any_owned_province = {
-				has_province_modifier = "verne_sanctuary"
-			}
-			OR = { 
-				ruler_has_mage_personality = yes
-				advisor = court_mage 
-			}
-		}
-		
-		effect = {
-			if = {
-				limit = { has_dlc = "Lions of the North"}
-				enable_mythical_cavalry = { mount = wyvern }
-				add_country_modifier = {
-					name = "verne_wyvern_riders_dlc"
-					duration = -1
-				}
-			}
-			else = {
-				add_country_modifier = {
-					name = "verne_wyvern_riders"
-					duration = -1
-				}
-			}
-			custom_tooltip = verne_wyvern_aces_tt
-			country_event = { id = verne.2 }
-			
-			hidden_effect = {
-				complete_mission = A33_reviving_the_wyverns
-			}
-		}
-	}
-}
+# guardian; verne is formable tag
+#country_decisions = {
+#	
+#	MIGA_A33_the_hunt_for_eggs = {
+#		major = yes
+#		
+#		potential = {
+#			NOT = { tag = A33 }
+#			OR = {
+#				accepted_culture = vernman
+#				primary_culture = vernman
+#			}
+#			
+#			NOT = { mission_completed = A33_the_hunt_for_eggs }
+#		}
+#		
+#		provinces_to_highlight = {
+#			area = khenak_area
+#			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+#		}
+#		
+#		allow = {
+#			treasury = 400
+#			khenak_area = {
+#				type = all
+#				country_or_non_sovereign_subject_holds = ROOT
+#			}
+#		}
+#		
+#		effect = {
+#			country_event = { id = verne.4 }
+#			random_owned_province = {
+#				limit = {
+#					area = khenak_area
+#					NOT = { has_province_modifier = aw_wyvern_1 }
+#					NOT = { has_province_modifier = aw_wyvern_2 }
+#				}
+#				add_permanent_province_modifier = {
+#					name = aw_wyvern_2
+#					duration = -1
+#				}
+#			}
+#			
+#			hidden_effect = {
+#				complete_mission = A33_the_hunt_for_eggs
+#			}
+#		}
+#	}
+#	
+#	MIGA_A33_build_the_sanctuary = {
+#		major = yes
+#		
+#		potential = {
+#			NOT = { tag = A33 }
+#			OR = {
+#				accepted_culture = vernman
+#				primary_culture = vernman
+#			}
+#			
+#			mission_completed = A33_the_hunt_for_eggs
+#			NOT = { mission_completed = A33_build_the_sanctuary }
+#		}
+#		
+#		provinces_to_highlight = {
+#			province_id = 331
+#			OR = {
+#				NOT = { owned_by = ROOT }
+#				NOT = { is_core = ROOT }
+#			}
+#		}
+#		
+#		allow = {
+#			has_country_modifier = verne_found_eggs
+#			OR = { 
+#				AND = { 
+#					owns_core_province = 292
+#					treasury = 600 
+#				}
+#				AND = { 
+#					owns_core_province = 331
+#					treasury = 400 
+#				}
+#			}
+#		}
+#		
+#		effect = {
+#			country_event = { id = verne.10 }
+#			
+#			hidden_effect = {
+#				complete_mission = A33_build_the_sanctuary
+#			}
+#		}
+#	}
+#	
+#	MIGA_A33_reviving_the_wyverns = {
+#		major = yes
+#		
+#		potential = {
+#			NOT = { tag = A33 }
+#			OR = {
+#				accepted_culture = vernman
+#				primary_culture = vernman
+#			}
+#			
+#			mission_completed = A33_build_the_sanctuary
+#			NOT = { mission_completed = A33_reviving_the_wyverns }
+#		}
+#		
+#		allow = {
+#			any_owned_province = {
+#				has_province_modifier = "verne_sanctuary"
+#			}
+#			OR = { 
+#				ruler_has_mage_personality = yes
+#				advisor = court_mage 
+#			}
+#		}
+#		
+#		effect = {
+#			if = {
+#				limit = { has_dlc = "Lions of the North"}
+#				enable_mythical_cavalry = { mount = wyvern }
+#				add_country_modifier = {
+#					name = "verne_wyvern_riders_dlc"
+#					duration = -1
+#				}
+#			}
+#			else = {
+#				add_country_modifier = {
+#					name = "verne_wyvern_riders"
+#					duration = -1
+#				}
+#			}
+#			custom_tooltip = verne_wyvern_aces_tt
+#			country_event = { id = verne.2 }
+#			
+#			hidden_effect = {
+#				complete_mission = A33_reviving_the_wyverns
+#			}
+#		}
+#	}
+#}

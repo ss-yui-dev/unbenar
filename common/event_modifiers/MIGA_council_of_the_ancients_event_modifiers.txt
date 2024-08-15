@@ -12,22 +12,25 @@ war_council_meeting_mod = {
 }
 
 council_of_the_chamber_mod = {
-	same_culture_advisor_cost = -0.2
-	advisor_pool = 2
+	same_culture_advisor_cost = -0.05
+	advisor_pool = 5
 }
 
 council_of_development_mod = {
-	development_cost = -0.1
+	development_cost = -0.05
 	global_monthly_devastation = -0.2
 }
 
 council_of_the_inquisition_mod = {
 	missionaries = 1
 	global_missionary_strength = 0.01
+	global_heretic_missionary_strength = 0.01
+	missionary_maintenance_cost = -0.2
 }
 
 council_of_diplomats_mod = {
 	diplomatic_reputation = 2
+	improve_relation_modifier = 0.1
 }
 
 council_of_artisans_mod = {
@@ -37,12 +40,12 @@ council_of_artisans_mod = {
 
 council_of_men_mod = {
 	global_institution_spread = 0.25
-	embracement_cost = -0.1
+	embracement_cost = -0.15
 }
 
  
 council_of_discipline_mod = {
-	yearly_army_professionalism = 0.005
+	yearly_army_professionalism = 0.01
 	drill_gain_modifier = 0.25
 	drill_decay_modifier = -0.25
 }
@@ -53,6 +56,6 @@ council_of_organization_mod = {
 }
 
 council_of_defensive_static_mod = {
-	defensiveness = 0.15
-	hostile_attrition = 1
+	defensiveness = 0.25
+	hostile_attrition = 2
 }
