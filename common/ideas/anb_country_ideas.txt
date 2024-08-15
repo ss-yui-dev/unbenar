@@ -20906,7 +20906,7 @@ H16_ideas = {
 		defensiveness = 0.15
 	}
 	H16_taigan_order_hierarchy = {
-		monarch_admin_power = 1
+		country_admin_power = 1 #love
 	}
 	H16_someboardgame = {
 		stability_cost_modifier = -0.15

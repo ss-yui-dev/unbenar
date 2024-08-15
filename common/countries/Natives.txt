@@ -5,18 +5,23 @@ graphical_culture = westerngfx
 
 color = { 203  164  103 }	
 
+#love START
 # Used for colonial nations
 historical_idea_groups = {	
 	expansion_ideas
+	quantity_ideas
 	trade_ideas		
-	plutocracy_ideas	
 	economic_ideas
-	quality_ideas	
-	maritime_ideas	
-	quantity_ideas	
-	administrative_ideas
+	defensive_ideas
+	maritime_ideas
+	public_administr
+	weapon_quality_0
+	galle0
+	development_ideas0
+	militarismus0
+	nationalismus0
 }
-
+#love END
 monarch_names = {
 	"Mapi #0" = 10
 	"Quando #0" = 10

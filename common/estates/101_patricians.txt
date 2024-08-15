@@ -316,6 +316,8 @@ estate_castonath_patricians = {
 		estate_patricians_castanor_upgraded_strong_duchies
 		estate_castonath_patricians_diplomatic_overseers
 		estate_castonath_patricians_indebted_to_patricians
+
+		love_estate_castonath_patricians_gov_cap #love
 	}
 
 	agendas = {

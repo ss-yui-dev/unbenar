@@ -8,11 +8,11 @@ bladestewards_order = {
     cost_type = adm_power
     per_province_effect = {
         add_base_production = 1
-	add_base_manpower = 1
-	change_estate_land_share = {
+	    add_base_manpower = 1
+	    change_estate_land_share = {
     		estate = estate_bladestewards
     		share = 3
-	}
+	    }
     }
     per_province_abandon_effect = {
         add_base_manpower = -1
