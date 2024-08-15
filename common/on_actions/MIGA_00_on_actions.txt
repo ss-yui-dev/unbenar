@@ -7,10 +7,10 @@
 
 # country
 on_startup = {
-	if = {
-		limit = { tag = G27 }
-		country_event = { id = MIGA_flavour_brelar.700 }
-	}
+	# if = {
+	# 	limit = { tag = G27 }
+	# 	country_event = { id = MIGA_flavour_brelar.700 }
+	# }
 	
 	if = {
 		limit = { tag = A01 }

@@ -1,5 +1,5 @@
 #
-#namespace = MIGA_flavour_brelar
+# namespace = MIGA_flavour_brelar
 #
 #country_event = {
 #	id = MIGA_flavour_brelar.700
