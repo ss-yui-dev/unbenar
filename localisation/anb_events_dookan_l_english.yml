@@ -44,6 +44,7 @@
  great_dookan_events.10.t:0 "Omen of Calamity"
  great_dookan_events.10.d:0 "Shaman steps out of his tent, where he spent several hours mutilating his own body to see an omen from Dookan through unbearable pain. His eyes are rolling and he screams that he saw something terrible, coming for us!"
  great_dookan_events.10.a:0 "A black day!"
+ great_dookan_events.10.c:0 "A black day!" #guardian
  great_dookan_events.10.b:0 "I guess it is time for him to leave his duties..."
  great_dookan_events.11.t:0 "Shake the Earth!"
  great_dookan_events.11.d:0 "Shamans wield power of Dookan himself and they can summon his wrath against enemies, who cowardly hide in their holds. Let's gather our shamans and let them destroy enemy's walls!"
@@ -56,6 +57,7 @@
  great_dookan_events.13.t:0 "Dookan's Mercy"
  great_dookan_events.13.d:0 "Last few years were full of challenges set up by Dookan to test us, but we managed to overcome them all. Today fear and anger left hearts of our people because our shaman's mind became clear and he proclaimed that our people overcame all Dookan's trials and the next year will bring peace and prosperity to our lands."
  great_dookan_events.13.a:0 "Even the strongest need a rest"
+ great_dookan_events.13.b:0 "Even the strongest need a rest" #guardian
  great_dookan_events.14:0 "Bad Omens, Bad Tidings, Bad Times"
  great_dookan_events.14.t:0 "Bad Omens, Bad Tidings, Bad Times"
  great_dookan_events.14.d:0 "We tried to keep the Shamans' findings a secret, but like a splash of blood into a then-calm pool, the rumour quickly spread throughout the land. And despite all our recent successes, it seems some are taking the omen seriously. Already there are those decrying our competence, pointing to mere coincidence and unlucky chance as proof of Dookan's disfavour. And it seems they are choosing to make their anger clear in the way Orcs do: with force of arms!"
@@ -69,6 +71,7 @@
  dookan_omen_of_wisdom_mil:0 "Omen of Wisdom"
  dookan_omen_of_destiny:0 "Omen of Destiny"
  dookan_omen_of_calamity:0 "Omen of Calamity"
+ dookan_omen_of_calamity_greentide:0 "Omen of Calamity" #guardian
  dookan_no_omen:0 "No Omen"
  dookans_mercy:0 "Dookan's Mercy"
  dookan_shake_the_earth:0 "Shake the Earth!"

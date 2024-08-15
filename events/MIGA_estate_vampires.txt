@@ -14,14 +14,14 @@ province_event = {
     
     trigger = {
         OR = {
-            province_id = 441
-			province_id = 431
-			province_id = 257
-			AND = {
-				province_id = 1024
-				is_year = 1530
-			}
-			province_id = 4848
+            province_id = 441   #mp meta simulator
+			province_id = 431   #mp meta simulator
+			#province_id = 257 #guardian; luciande small
+			#AND = {            
+			#	province_id = 1024
+			#	is_year = 1530
+			#}
+			#province_id = 4848 #cannot spread
         }
 
         owner = {

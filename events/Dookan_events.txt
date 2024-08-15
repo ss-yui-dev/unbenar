@@ -63,7 +63,7 @@ country_event = {
 		# add_army_professionalism = -0.025
 		add_country_modifier = {
 			name = dookan_gather_great_host
-			duration = 2555
+			duration = 2920 #guardian; 1825->2920 dookan was nerfed too much
 		}
 	}
 }
@@ -266,14 +266,32 @@ country_event = {
 	
 	option = {
 		name = great_dookan_events.10.a
+
+		trigger = {							#guardian_s
+			current_age = age_of_discovery
+		}
 		
 		add_country_modifier = {
-			name = "dookan_omen_of_calamity"	#+16 global unrest, -10% morale, -10% manpower recovery, -25% church power, +10% idea cost for 5 years
+			name = "dookan_omen_of_calamity_greentide"	#+16 global unrest, -10% morale, -10% manpower recovery, -25% church power, +10% idea cost for 5 years
 			duration = 1825
 		}
 		set_country_flag = dookan_is_angry_flag
 	}
 	
+	option = {
+		name = great_dookan_events.10.c
+
+		trigger = {
+			NOT = { current_age = age_of_discovery }
+		}									
+		
+		add_country_modifier = {
+			name = "dookan_omen_of_calamity"	#+7 global unrest, -5% morale, -10% manpower recovery, -25% church power, +10% idea cost for 5 years
+			duration = 1825
+		}
+		set_country_flag = dookan_is_angry_flag
+	}										#guardian_end
+
 	option = {
 		name = great_dookan_events.10.b
 		
@@ -370,6 +388,7 @@ country_event = {
 	trigger = {
 		religion = old_dookan
 		NOT = { has_country_modifier = dookan_omen_of_calamity }
+		NOT = { has_country_modifier = dookan_omen_of_calamity_greentide } #guardian
 		had_country_flag = {
 			flag = dookan_is_angry_flag
 			days = 1825
@@ -382,7 +401,10 @@ country_event = {
 	
 	option = {
 		name = great_dookan_events.13.a
-		 
+
+		trigger = {										
+			NOT = { current_age = age_of_discovery }
+		} 												#guandian
 		add_adm_power = 40
 		add_dip_power = 40
 		add_mil_power = 40
@@ -393,6 +415,23 @@ country_event = {
 		}
 		clr_country_flag = dookan_is_angry_flag
 	}
+
+	option = {								#guardian_s
+		name = great_dookan_events.13.b
+
+		trigger = {
+			current_age = age_of_discovery
+		} 
+		add_adm_power = 100
+		add_dip_power = 100
+		add_mil_power = 100
+		# add_yearly_manpower = 1
+		add_country_modifier = {
+			name = "dookans_mercy"	#+100% tax, +100% manpower recovery, -2.5% all power cost for 1 year
+			duration = 365
+		}
+		clr_country_flag = dookan_is_angry_flag
+	}										#guandian_end
 }
 
 # Omen of Calamity - Revolt!
