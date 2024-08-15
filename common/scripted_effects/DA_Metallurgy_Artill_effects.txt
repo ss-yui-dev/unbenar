@@ -107,7 +107,10 @@ DA_apply_Blueprint = {
 		set_country_flag = DA_Unique_mod.BLUEPRINT.Flag.$DA_unit$.$DA_Unique$
 		custom_tooltip = DA_Unique_blueprint_TT
 		tooltip = {
-			add_country_modifier = DA_Unique_mod.BLUEPRINT.$DA_unit$.$DA_Unique$
+			add_country_modifier = {
+				name = DA_Unique_mod.BLUEPRINT.$DA_unit$.$DA_Unique$
+				duration = -1
+			}
 		}
 	]
 	[[DA_Electrical]
@@ -115,7 +118,10 @@ DA_apply_Blueprint = {
 		set_country_flag = DA_Electrical_mod.BLUEPRINT.Flag.$DA_unit$.$DA_Electrical$
 		custom_tooltip = DA_Electrical_blueprint_TT
 		tooltip = {
-			add_country_modifier = DA_Electrical_mod.BLUEPRINT.$DA_unit$.$DA_Electrical$
+			add_country_modifier = {
+				name = DA_Electrical_mod.BLUEPRINT.$DA_unit$.$DA_Electrical$
+				duration = -1
+			} 
 		}
 	]
 }

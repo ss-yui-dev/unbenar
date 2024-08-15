@@ -5586,3 +5586,112 @@ DA_Unique_mod.BLUEPRINT.INFAN.ClockWork.Dragon = {
 DA_Unique_mod.BLUEPRINT.INFAN.ClockWork.Dragon = {
 
 }
+
+DA_Unique_mod.BLUEPRINT.INFAN.Bio_Construct.3.Living_Armor = {
+
+}
+
+DA_Unique_mod.BLUEPRINT.INFAN.Bio_Construct.3.Chimera = {
+
+}
+
+DA_Unique_mod.BLUEPRINT.INFAN.Bio_Construct.3.Purple_Worm = {
+
+}
+
+DA_Unique_mod.BLUEPRINT.INFAN.Bio_Construct.3.Ram = {
+
+}
+
+DA_Unique_mod.BLUEPRINT.CAVAL.MOTORIZATION.2.Vanguard = {
+
+}
+
+DA_Unique_mod.BLUEPRINT.CAVAL.MOTORIZATION.2.Holder = {
+
+}
+
+DA_Unique_mod.BLUEPRINT.CAVAL.Bio_Construct.3.Abomination = {
+
+}
+
+DA_Unique_mod.BLUEPRINT.CAVAL.Bio_Construct.3.Living_Armor = {
+
+}
+
+DA_Unique_mod.BLUEPRINT.CAVAL.Bio_Construct.3.Chimera = {
+
+}
+
+DA_Unique_mod.BLUEPRINT.CAVAL.Bio_Construct.3.Purple_Worm = {
+
+}
+
+DA_Unique_mod.BLUEPRINT.CAVAL.Bio_Construct.3.Ram = {
+
+}
+
+DA_Unique_mod.BLUEPRINT.ARTIL.Golem.1 = {
+
+}
+
+DA_Unique_mod.BLUEPRINT.ARTIL.Golem.2 = {
+
+}
+
+DA_Unique_mod.BLUEPRINT.ARTIL.Golem.3 = {
+
+}
+
+DA_Unique_mod.BLUEPRINT.ARTIL.ClockWork.Dragon = {
+
+}
+
+DA_Unique_mod.BLUEPRINT.ARTIL.MOTORIZATION.2.Vanguard = {
+
+}
+
+DA_Unique_mod.BLUEPRINT.ARTIL.MOTORIZATION.2.Holder = {
+
+}
+
+DA_Unique_mod.BLUEPRINT.ARTIL.MOTORIZATION.3.ArcanoMech_Annihilator = {
+
+}
+
+DA_Unique_mod.BLUEPRINT.ARTIL.Bio_Construct.3.Abomination = {
+
+}
+
+DA_Unique_mod.BLUEPRINT.ARTIL.Bio_Construct.3.Living_Armor = {
+
+}
+
+DA_Unique_mod.BLUEPRINT.ARTIL.Bio_Construct.3.Chimera = {
+
+}
+
+DA_Unique_mod.BLUEPRINT.ARTIL.Bio_Construct.3.Purple_Worm = {
+
+}
+
+DA_Unique_mod.BLUEPRINT.ARTIL.Bio_Construct.3.Ram = {
+
+}
+
+DA_runic_circuit_research = {
+	global_tax_modifier = -0.05
+	prestige_decay = 0.01
+}
+
+DA_Unique_mod.BLUEPRINT.ARTIL.Mithradum.1 = {
+
+}
+
+DA_Unique_mod.BLUEPRINT.ARTIL.Mithradum.2 = {
+
+}
+
+DA_Unique_mod.BLUEPRINT.ARTIL.Mithradum.3 = {
+
+}

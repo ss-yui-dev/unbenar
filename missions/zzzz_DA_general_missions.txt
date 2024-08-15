@@ -114,7 +114,7 @@ DA_mission_branch_1 = {
 
 		trigger = {
 			NOT = { has_country_modifier = DA_researching_rails } 
-			DA_own_Dagrite_provinces = { n_prov = 1 } 
+			DA_own_Dagrite_provinces = { amount = 1 } 
 		}
 
 		effect = {

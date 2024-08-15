@@ -721,10 +721,10 @@ country_event = {
 		highlight = yes
 		trigger = {
 			DA_own_Silver_provinces = {
-				n_prov = 2
+				amount = 2
 			}
 			DA_own_Platinum_provinces = {
-				n_prov = 1
+				amount = 1
 			}
 		}
 		country_event = {
@@ -844,7 +844,7 @@ country_event = {
 		highlight = yes
 		trigger = {
 			DA_own_damestear_provinces = {
-				n_prov = 1
+				amount = 1
 			}
 		}
 		country_event = {
@@ -859,7 +859,7 @@ country_event = {
 		trigger = {
 			any_ally = {
 				DA_own_damestear_provinces = {
-					n_prov = 1
+					amount = 1
 				}
 			}
 		}
