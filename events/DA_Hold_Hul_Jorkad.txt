@@ -28,7 +28,7 @@ province_event = {
 }
 
 
-country_event = {
+province_event = {
 	id = DA_Hul_Jorkad_event.2 # tier 1 restoration
 	title = "DA_Hul_Jorkad_event.2.t"
 	desc = "DA_Hul_Jorkad_event.2.d"

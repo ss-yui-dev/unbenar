@@ -985,12 +985,12 @@ country_event = {
 			limit = {
 				has_idea_group = dynasty0
 			}
-			add_idea = foreign_embassies_2
+			add_idea = foreign_embassies
 			add_idea = establish_cadet_branches
-			add_idea = cabinet_2
-			add_idea = diplomatic_corps_2
-			add_idea = benign_diplomats_2
-			add_idea = experienced_diplomats_2
+			add_idea = cabinet
+			add_idea = diplomatic_corps
+			add_idea = benign_diplomats
+			add_idea = experienced_diplomats
 			add_idea = dynastie4
 		}
 		if = {

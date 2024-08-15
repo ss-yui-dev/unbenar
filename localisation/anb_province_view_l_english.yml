@@ -28,7 +28,7 @@
  hold_depth_tt:0 "§YDig Depth§!"
  diggy_condition_tt:0 "§YCondition§!"
  start_digging_tt:0 "Start Digging!"
- diggy_diggy_bar_progress_tt:0 "Progress: [Root.GetHoldProgress]%"
+ diggy_diggy_bar_progress_tt:0 "Progress: [Root.dig_percent_loc]"
  hold_building_progress_tt:0 "Progress: [Root.GetHoldBuildingProgress]%"
  diggy_time_tt:0 "The restauration/digging operations will take us §Y[Root.finalTime.GetValue]§! years to complete.\n\n--------------------\nDigging Time is affected by the hold's current depth, §Ylocal and global construction speed modifiers§!, racial administration, and events."
  diggy_cost_tt:0 "The restauration/digging operations will cost us §Y[Root.finalCost.GetValue]§! ¤\n\n--------------------\nDigging Cost is affected by hold's current depth, §Ylocal and global construction cost modifiers§! and events."

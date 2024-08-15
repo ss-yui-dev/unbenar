@@ -2005,7 +2005,7 @@ blademarches_tall_3 = {
 			years_of_income = 0.5
 			OR = {
 				full_idea_group = economic_ideas
-				full_idea_group = infrastructure_ideas
+				full_idea_group = development_ideas0
 			}
 		}
 
@@ -2027,9 +2027,15 @@ blademarches_tall_3 = {
 		provinces_to_highlight = { }
 		
 		trigger = {
-			estate_loyalty = {
-				estate = estate_burghers
-				loyalty = 50
+			OR = {
+				estate_loyalty = {
+					estate = estate_burghers
+					loyalty = 50
+				}
+				estate_loyalty = {
+					estate = estate_castonath_patricians
+					loyalty = 50
+				}
 			}
 			808 = {
 				has_tax_building_trigger = yes

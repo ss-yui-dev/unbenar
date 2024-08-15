@@ -1,6 +1,0 @@
-spriteTypes = {
-	spriteType = {
-		name = "idite_nahui"
-		texturefile = "gfx//interface//ideas_EU4//idite_nahui.dds"
-	}
-}

@@ -1,0 +1,103 @@
+
+namespace = fort_balancer
+
+province_event = {
+	id = fort_balancer.1
+	title = fort_balancer.1.t
+	desc = fort_balancer.1.desc
+
+	hidden = yes
+
+	picture = KING_SICK_IN_BED_eventPicture
+
+	is_triggered_only = yes
+
+	trigger = {
+		fort_level = 1
+		AND = {
+			NOT = {
+				has_province_modifier = defensive_fort_1_nerf
+			}
+			NOT = {
+				has_province_modifier = defensive_fort_2_nerf
+			}
+		}
+		# has_siege = yes
+	}
+
+	# mean_time_to_happen = {
+	# 	days = 1
+	# }
+
+	immediate = {
+		if = {
+			limit = {
+				OR = {
+					has_terrain = glacier
+					has_terrain = forest
+					has_terrain = bloodgroves
+					has_terrain = gladeway
+					has_terrain = ancient_forest
+					has_terrain = hills
+					has_terrain = woods
+					has_terrain = jungle
+					has_terrain = marsh
+					has_terrain = highlands
+					has_terrain = dwarven_road
+					has_terrain = mushroom_forest_terrain
+					has_terrain = city_terrain
+				}
+			}
+			add_province_triggered_modifier = defensive_fort_1_nerf
+		}
+		if = {
+			limit = {
+				OR = {
+					has_terrain = mountain
+					has_terrain = dwarven_hold
+					has_terrain = dwarven_hold_surface
+					has_terrain = cavern
+					has_terrain = shadow_swamp_terrain
+				}
+			}
+			add_province_triggered_modifier = defensive_fort_2_nerf
+		}
+	}
+	option = {
+		name = fort_balancer.1.a
+	}
+}
+
+province_event = {
+	id = fort_balancer.2
+	title = fort_balancer.2.t
+	desc = fort_balancer.2.desc
+	hidden = yes
+
+	picture = KING_SICK_IN_BED_eventPicture
+
+	is_triggered_only = yes
+
+	trigger = {
+		NOT = {
+			fort_level = 1
+		}
+		OR = {
+			has_province_modifier = defensive_fort_1_nerf
+			has_province_modifier = defensive_fort_2_nerf
+		}
+	}
+
+	# mean_time_to_happen = {
+	# 	days = 1
+	# }
+
+	immediate = {
+		remove_province_triggered_modifier = defensive_fort_1_nerf
+		remove_province_triggered_modifier = defensive_fort_2_nerf
+	}
+
+	option = {
+		name = fort_balancer.2.a
+	}
+}

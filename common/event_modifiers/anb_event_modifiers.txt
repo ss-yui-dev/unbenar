@@ -1,6 +1,6 @@
 
 strong_colonial_rush = {
-	# colonists = 1
+	# colonists = 1 #love
 	colonist_placement_chance = 0.15 #To encourage not abusing colony cost reduction by putting empty colonies everywhere
 	colony_development_boost = 1 #Dev cost was very abusable by players and the AI never used it, so this should be better to help them build a decent homeland
 	global_regiment_cost = -0.66
@@ -14,7 +14,7 @@ strong_colonial_rush = {
 }
 
 pioneer_rush = {
-	colonists = 1
+	# colonists = 1 #love
 	global_colonial_growth = 20
 	global_tax_income = 48 # Cost of the colonists, 1 here, 1 from exploration
 	#idea_cost = -0.25 #love

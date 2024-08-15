@@ -251,9 +251,9 @@ complete_artwork_effect_textiles = {
 			power_type = persian_influence
 			value = 25
 		}
-		add_mercantilism_or_monarch_power = {
-			amount = 3
-		}
+		# add_mercantilism_or_monarch_power = {
+		# 	amount = 3
+		# }
 	}
 	else_if = {
 		limit = { check_variable = { which = art_quality value = 3 } }
@@ -262,9 +262,9 @@ complete_artwork_effect_textiles = {
 			power_type = persian_influence
 			value = 20
 		}
-		add_mercantilism_or_monarch_power = {
-			amount = 2
-		}
+		# add_mercantilism_or_monarch_power = {
+		# 	amount = 2
+		# }
 	}
 	else_if = {
 		limit = { check_variable = { which = art_quality value = 2 } }
@@ -273,9 +273,9 @@ complete_artwork_effect_textiles = {
 			power_type = persian_influence
 			value = 15
 		}
-		add_mercantilism_or_monarch_power = {
-			amount = 1
-		}
+		# add_mercantilism_or_monarch_power = {
+		# 	amount = 1
+		# }
 	}
 	else_if = {
 		limit = { check_variable = { which = art_quality value = 1 } }

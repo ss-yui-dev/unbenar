@@ -297,7 +297,7 @@ country_decisions = {
 			if = {
 				limit = { has_country_flag = adventurer_derived_government }
 				adventurer_legacy_effect = yes
-				country_event = { id = adventurer.2 days = 1 }
+				# country_event = { id = adventurer.2 days = 1 }
 				change_government = monarchy
 			}
 			if = {
@@ -351,7 +351,9 @@ country_decisions = {
 			add_prestige = 25
 			set_country_flag = formed_marrhold_flag
 			clr_country_flag = 	knightly_order_adventurer
-			#country_event = { id = adventurer.2 days = 10 } #guardian; ivent adventurer.2 is commented->comment this for proper display 
+
+			# country_event = { id = adventurer.2 days = 10 } #guardian; ivent adventurer.2 is commented->comment this for proper display
+
 			if = {
 				limit = { has_custom_ideas = no }
 				country_event = { id = ideagroups.1 } #Swap Ideas

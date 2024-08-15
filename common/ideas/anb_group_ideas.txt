@@ -384,7 +384,7 @@ kobold_ideas = {
 		production_efficiency = 0.1
 	}
 	kobold_war_against_the_tallfolk = {
-		war_exhaustion = -0.02
+    war_exhaustion = -0.03 #love
 	}
 	kobold_entrenched_territories = {
 		fort_maintenance_modifier = -0.15
@@ -1048,7 +1048,7 @@ gerudian_ideas = {
 		manpower_recovery_speed = 0.10
 	}
 	gerudian_troll_hunters = {
-		war_exhaustion_cost = -0.15
+		war_exhaustion = -0.03 #love
 	}
 	gerudian_land_of_the_drowned_giants = {
 		tolerance_own = 1.0
@@ -1086,7 +1086,7 @@ harpy_ideas = {
 		harsh_treatment_cost = -0.5
 	}
 	harpy_relieving_songs = {
-		war_exhaustion_cost = -0.25
+		war_exhaustion = -0.03 #love
 	}
 	harpy_the_odd_hunt = {
 		institution_spread_from_true_faith = 0.2
@@ -2045,7 +2045,7 @@ kai_ideas = {
 		prestige = 0.5
 	}
 	kai_warlords_of_the_thidinkai = {
-		war_exhaustion_cost = -0.1
+		war_exhaustion = -0.03 #love
 	}
 	kai_emigrant_traders = {	#Many Thidinkai become traders elsewhere as the land is quite meh for trade
 		merchants = 1
@@ -2373,7 +2373,7 @@ talilibeti_ideas = {
 		global_unrest = -1
 	}
 	bonus = {
-		war_exhaustion_cost = -0.15
+		war_exhaustion = -0.03 #love
 	}
 	trigger = {
 		primary_culture = talilibeti

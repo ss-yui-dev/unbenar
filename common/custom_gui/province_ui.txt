@@ -4674,16 +4674,309 @@ custom_icon = {
 		owner = { tag = FROM }
 		has_construction = digging_deeper
 	}
-	frame = { number = 10 trigger = { if = { limit = { is_capital = yes } check_variable = { cProgress = 90 } } else = { construction_progress = 0.90 } } }
-	frame = { number = 9 trigger = { if = { limit = { is_capital = yes } check_variable = { cProgress = 80 } } else = { construction_progress = 0.8 } } }
-	frame = { number = 8 trigger = { if = { limit = { is_capital = yes } check_variable = { cProgress = 70 } } else = { construction_progress = 0.7 } } }
-	frame = { number = 7 trigger = { if = { limit = { is_capital = yes } check_variable = { cProgress = 60 } } else = { construction_progress = 0.6 } } }
-	frame = { number = 6 trigger = { if = { limit = { is_capital = yes } check_variable = { cProgress = 50 } } else = { construction_progress = 0.5 } } }
-	frame = { number = 5 trigger = { if = { limit = { is_capital = yes } check_variable = { cProgress = 40 } } else = { construction_progress = 0.4 } } }
-	frame = { number = 4 trigger = { if = { limit = { is_capital = yes } check_variable = { cProgress = 30 } } else = { construction_progress = 0.3 } } }
-	frame = { number = 3 trigger = { if = { limit = { is_capital = yes } check_variable = { cProgress = 20 } } else = { construction_progress = 0.2 } } }
-	frame = { number = 2 trigger = { if = { limit = { is_capital = yes } check_variable = { cProgress = 10 } } else = { construction_progress = 0.1 } } }
-	frame = { number = 1 trigger = { always = yes } }
+	# frame = { number = 10 trigger = { if = { limit = { is_capital = yes } check_variable = { cProgress = 0.90 } } else = { construction_progress = 0.90 } } }
+	# frame = { number = 9 trigger = { if = { limit = { is_capital = yes } check_variable = { cProgress = 0.80 } } else = { construction_progress = 0.8 } } }
+	# frame = { number = 8 trigger = { if = { limit = { is_capital = yes } check_variable = { cProgress = 0.70 } } else = { construction_progress = 0.7 } } }
+	# frame = { number = 7 trigger = { if = { limit = { is_capital = yes } check_variable = { cProgress = 0.60 } } else = { construction_progress = 0.6 } } }
+	# frame = { number = 6 trigger = { if = { limit = { is_capital = yes } check_variable = { cProgress = 0.50 } } else = { construction_progress = 0.5 } } }
+	# frame = { number = 5 trigger = { if = { limit = { is_capital = yes } check_variable = { cProgress = 0.40 } } else = { construction_progress = 0.4 } } }
+	# frame = { number = 4 trigger = { if = { limit = { is_capital = yes } check_variable = { cProgress = 0.30 } } else = { construction_progress = 0.3 } } }
+	# frame = { number = 3 trigger = { if = { limit = { is_capital = yes } check_variable = { cProgress = 0.20 } } else = { construction_progress = 0.2 } } }
+
+	frame = {
+		number = 10
+		trigger = {
+			if = {
+				limit = {
+					is_capital = yes
+				}
+				variable_arithmetic_trigger = {
+					export_to_variable = {
+						which = cProgress
+						value = trigger_value:construction_progress
+					}
+					change_variable = {
+						which = cProgress
+						which = cons_prog
+					}
+					subtract_variable = {
+						cProgress = 0.5
+					}
+					multiply_variable = {
+						cProgress = 2
+					}
+					check_variable = {
+						cProgress = 0.9
+					}
+				}
+			}
+			else = {
+				construction_progress = 0.9
+			}
+		}
+	}
+	frame = {
+		number = 9
+		trigger = {
+			if = {
+				limit = {
+					is_capital = yes
+				}
+				variable_arithmetic_trigger = {
+					export_to_variable = {
+						which = cProgress
+						value = trigger_value:construction_progress
+					}
+					change_variable = {
+						which = cProgress
+						which = cons_prog
+					}
+					subtract_variable = {
+						cProgress = 0.5
+					}
+					multiply_variable = {
+						cProgress = 2
+					}
+					check_variable = {
+						cProgress = 0.8
+					}
+				}
+			}
+			else = {
+				construction_progress = 0.8
+			}
+		}
+	}
+	frame = {
+		number = 8
+		trigger = {
+			if = {
+				limit = {
+					is_capital = yes
+				}
+				variable_arithmetic_trigger = {
+					export_to_variable = {
+						which = cProgress
+						value = trigger_value:construction_progress
+					}
+					change_variable = {
+						which = cProgress
+						which = cons_prog
+					}
+					subtract_variable = {
+						cProgress = 0.5
+					}
+					multiply_variable = {
+						cProgress = 2
+					}
+					check_variable = {
+						cProgress = 0.7
+					}
+				}
+			}
+			else = {
+				construction_progress = 0.7
+			}
+		}
+	}
+	frame = {
+		number = 7
+		trigger = {
+			if = {
+				limit = {
+					is_capital = yes
+				}
+				variable_arithmetic_trigger = {
+					export_to_variable = {
+						which = cProgress
+						value = trigger_value:construction_progress
+					}
+					change_variable = {
+						which = cProgress
+						which = cons_prog
+					}
+					subtract_variable = {
+						cProgress = 0.5
+					}
+					multiply_variable = {
+						cProgress = 2
+					}
+					check_variable = {
+						cProgress = 0.6
+					}
+				}
+			}
+			else = {
+				construction_progress = 0.6
+			}
+		}
+	}
+	frame = {
+		number = 6
+		trigger = {
+			if = {
+				limit = {
+					is_capital = yes
+				}
+				variable_arithmetic_trigger = {
+					export_to_variable = {
+						which = cProgress
+						value = trigger_value:construction_progress
+					}
+					change_variable = {
+						which = cProgress
+						which = cons_prog
+					}
+					subtract_variable = {
+						cProgress = 0.5
+					}
+					multiply_variable = {
+						cProgress = 2
+					}
+					check_variable = {
+						cProgress = 0.5
+					}
+				}
+			}
+			else = {
+				construction_progress = 0.5
+			}
+		}
+	}
+	frame = {
+		number = 5
+		trigger = {
+			if = {
+				limit = {
+					is_capital = yes
+				}
+				variable_arithmetic_trigger = {
+					export_to_variable = {
+						which = cProgress
+						value = trigger_value:construction_progress
+					}
+					change_variable = {
+						which = cProgress
+						which = cons_prog
+					}
+					subtract_variable = {
+						cProgress = 0.5
+					}
+					multiply_variable = {
+						cProgress = 2
+					}
+					check_variable = {
+						cProgress = 0.4
+					}
+				}
+			}
+			else = {
+				construction_progress = 0.4
+			}
+		}
+	}
+	frame = {
+		number = 4
+		trigger = {
+			if = {
+				limit = {
+					is_capital = yes
+				}
+				variable_arithmetic_trigger = {
+					export_to_variable = {
+						which = cProgress
+						value = trigger_value:construction_progress
+					}
+					change_variable = {
+						which = cProgress
+						which = cons_prog
+					}
+					subtract_variable = {
+						cProgress = 0.5
+					}
+					multiply_variable = {
+						cProgress = 2
+					}
+					check_variable = {
+						cProgress = 0.3
+					}
+				}
+			}
+			else = {
+				construction_progress = 0.3
+			}
+		}
+	}
+	frame = {
+		number = 3
+		trigger = {
+			if = {
+				limit = {
+					is_capital = yes
+				}
+				variable_arithmetic_trigger = {
+					export_to_variable = {
+						which = cProgress
+						value = trigger_value:construction_progress
+					}
+					change_variable = {
+						which = cProgress
+						which = cons_prog
+					}
+					subtract_variable = {
+						cProgress = 0.5
+					}
+					multiply_variable = {
+						cProgress = 2
+					}
+					check_variable = {
+						cProgress = 0.2
+					}
+				}
+			}
+			else = {
+				construction_progress = 0.2
+			}
+		}
+	}
+	frame = {
+		number = 2
+		trigger = {
+			if = {
+				limit = {
+					is_capital = yes
+				}
+				variable_arithmetic_trigger = {
+					export_to_variable = {
+						which = cProgress
+						value = trigger_value:construction_progress
+					}
+					change_variable = {
+						which = cProgress
+						which = cons_prog
+					}
+					subtract_variable = {
+						cProgress = 0.5
+					}
+					multiply_variable = {
+						cProgress = 2
+					}
+					check_variable = {
+						cProgress = 0.1
+					}
+				}
+			}
+			else = {
+				construction_progress = 0.1
+			}
+		}
+	}
+	frame = {
+		number = 1
+		trigger = {
+			always = yes
+		}
+	}
 }
 custom_icon = {
     name = diggy_diggy_bar_frame

@@ -8,7 +8,7 @@ country_decisions = {
 	dynastie_promoten = {
 		major = yes
 		potential = {
-			has_idea = foreign_embassies_2
+			has_idea = foreign_embassies
 			is_vassal = no
 		}
 

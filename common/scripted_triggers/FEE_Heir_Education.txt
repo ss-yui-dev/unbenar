@@ -60,12 +60,12 @@ government_does_not_use_hereditary_heir = {
 		government = republic
 		AND = {
 			government = theocracy
-			NOT = {
-				OR = {
-					# has_reform = ajuraan_theocracy_reform
-					has_reform = dynastic_theocracy_reform
-				}
-			}
+			# NOT = {
+			# 	OR = {
+			# 		# has_reform = ajuraan_theocracy_reform
+			# 		has_reform = dynastic_theocracy_reform
+			# 	}
+			# }
 		}
 		has_reform = states_general_reform
 		has_reform = mamluk_government

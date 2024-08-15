@@ -9679,8 +9679,8 @@ on_four_year_pulse_4 = {
 		# 100 = GE_reform_cycle.2
 		# 100 = GE_reform_cycle.3 #papal_embassy_reform
 		# 100 = GE_reform_cycle.4
-		100 = GE_reform_cycle.5 #diplomatic_positions
-		100 = GE_reform_cycle.6
+		# 100 = GE_reform_cycle.5 #diplomatic_positions
+		# 100 = GE_reform_cycle.6
 		100 = GE_reform_cycle.7 #promote_nobles
 		100 = GE_reform_cycle.8
 		100 = GE_reform_cycle_monarchy.201 #NEW #Promote Nobles
@@ -9704,29 +9704,29 @@ on_four_year_pulse_4 = {
 		100 = GE_reform_cycle.24
 		100 = GE_reform_cycle.25 #decentralized
 		100 = GE_reform_cycle.26
-		100 = GE_reform_cycle.27 #regional_fort
-		100 = GE_reform_cycle.28
+		# 100 = GE_reform_cycle.27 #regional_fort
+		# 100 = GE_reform_cycle.28
 		# 100 = GE_reform_cycle.29 #theocrat
 		# 100 = GE_reform_cycle.30
-		100 = GE_reform_cycle.31 #casa_de_india
-		100 = GE_reform_cycle.32
+		# 100 = GE_reform_cycle.31 #casa_de_india
+		# 100 = GE_reform_cycle.32
 		#T4
 		100 = GE_reform_cycle.33 #administrative_clergy
 		100 = GE_reform_cycle.34
 		# 100 = GE_reform_cycle_monarchy.301 #NEW #Administrative Clergy
-		100 = GE_reform_cycle_monarchy.302
+		# 100 = GE_reform_cycle_monarchy.302
 		100 = GE_reform_cycle.35 #administrative_nobles
 		100 = GE_reform_cycle.36
 		100 = GE_reform_cycle.37 #administrative_civilians
 		100 = GE_reform_cycle.38
-		100 = GE_reform_cycle.39 #integrate_bankers
-		100 = GE_reform_cycle.40
-		100 = GE_reform_cycle.41 #colonial_gov
-		100 = GE_reform_cycle.42
+		# 100 = GE_reform_cycle.39 #integrate_bankers
+		# 100 = GE_reform_cycle.40
+		# 100 = GE_reform_cycle.41 #colonial_gov
+		# 100 = GE_reform_cycle.42
 		# 100 = GE_reform_cycle.43 #fredrickan_reforms
 		# 100 = GE_reform_cycle.44
-		100 = GE_reform_cycle.45 #academy_of_science
-		100 = GE_reform_cycle.46
+		# 100 = GE_reform_cycle.45 #academy_of_science
+		# 100 = GE_reform_cycle.46
 		#T5
 		100 = GE_reform_cycle.47 #royal_decree
 		100 = GE_reform_cycle.48
@@ -9748,22 +9748,22 @@ on_four_year_pulse_4 = {
 		# 1000 = GE_reform_cycle.63
 		# 1000 = GE_reform_cycle.64
 		#T3.5
-		100 = GE_reform_cycle.65 #Feudal_levy
-		100 = GE_reform_cycle.66
-		150 = GE_reform_cycle_monarchy.3503
+		# 100 = GE_reform_cycle.65 #Feudal_levy
+		# 100 = GE_reform_cycle.66
+		# 150 = GE_reform_cycle_monarchy.3503
 		# 150 = GE_reform_cycle_monarchy.3504
-		100 = GE_reform_cycle.67 #Mercenary_corps
-		100 = GE_reform_cycle.68
-		100 = GE_reform_cycle.69 #Professional_army
-		100 = GE_reform_cycle.70
-		100 = GE_reform_cycle_monarchy.3501
-		200 = GE_reform_cycle_monarchy.3502
+		# 100 = GE_reform_cycle.67 #Mercenary_corps
+		# 100 = GE_reform_cycle.68
+		# 100 = GE_reform_cycle.69 #Professional_army
+		# 100 = GE_reform_cycle.70
+		# 100 = GE_reform_cycle_monarchy.3501
+		# 200 = GE_reform_cycle_monarchy.3502
 		#T7
 
 		#Theocracies
 
 		#T1
-		100 = GE_reform_cycle.70 #Leading_Clergy
+		# 100 = GE_reform_cycle.70 #Leading_Clergy
 		100 = GE_reform_cycle.71
 		100 = GE_reform_cycle.72
 		100 = GE_reform_cycle.73
@@ -9787,12 +9787,12 @@ on_four_year_pulse_4 = {
 		100 = GE_reform_cycle.89 # Combat_Heretics
 		100 = GE_reform_cycle.90
 		#T4
-		100 = GE_reform_cycle.91 # Holy_Orthodoxy
-		100 = GE_reform_cycle.92
-		100 = GE_reform_cycle.93 # Inquisition
-		100 = GE_reform_cycle.94
-		100 = GE_reform_cycle.95 # Religious_Pragmatism
-		100 = GE_reform_cycle.96
+		# 100 = GE_reform_cycle.91 # Holy_Orthodoxy
+		# 100 = GE_reform_cycle.92
+		# 100 = GE_reform_cycle.93 # Inquisition
+		# 100 = GE_reform_cycle.94
+		# 100 = GE_reform_cycle.95 # Religious_Pragmatism
+		# 100 = GE_reform_cycle.96
 		#T5
 
 		#T6

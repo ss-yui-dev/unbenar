@@ -12,6 +12,13 @@ ibevar_ai_boost = {
 	global_monthly_devastation = -0.1
 }
 
+#love
+venail_ai_boost = {
+	global_tax_income = 48
+	global_colonial_growth = 20
+}
+#love
+
 ibevar_arcane_knights = {
 	shock_damage = 0.1
 	fire_damage_received = -0.1
