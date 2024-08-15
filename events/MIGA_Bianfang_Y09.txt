@@ -1,44 +1,44 @@
-namespace = MIGA_bianfan
-
-province_event = {
-	id = MIGA_bianfan.1
-	title = MIGA_bianfan.1.t
-	desc = MIGA_bianfan.1.desc
-	picture = LAND_MILITARY_eventPicture
-
-	hidden = yes
-	
-	trigger = {
-		controlled_by = owner
-		has_state_edict = yanification_edict
-		OR = {
-			has_human_majority_trigger = yes
-			has_harimari_majority_trigger = yes
-			AND = {
-				owner = { has_country_flag = orc_yanification_enabled_flag }
-				has_orcish_majority_trigger = yes
-			}
-			AND = {
-				owner = { has_country_flag = hobgoblin_yanification_enabled_flag }
-				has_hobgoblin_majority_trigger = yes
-			}
-		}
-		NOT = { culture_group = yan }
-		NOT = { culture = east_harimari }
-		NOT = { culture = dragon_command }
-		#has_province_flag = yanification_acceptance
-	}
-	
-	mean_time_to_happen = {
-		months = 180
-	}
-
-	option = {
-		name = MIGA_bianfan.1.a
-		ai_chance = {
-			factor = 1
-		}
-		
-		province_event = { id = bianfang.300 }
-	}
-}
+#namespace = MIGA_bianfan
+#
+#province_event = {
+#	id = MIGA_bianfan.1
+#	title = MIGA_bianfan.1.t
+#	desc = MIGA_bianfan.1.desc
+#	picture = LAND_MILITARY_eventPicture
+#
+#	hidden = yes
+#	
+#	trigger = {
+#		controlled_by = owner
+#		has_state_edict = yanification_edict
+#		OR = {
+#			has_human_majority_trigger = yes
+#			has_harimari_majority_trigger = yes
+#			AND = {
+#				owner = { has_country_flag = orc_yanification_enabled_flag }
+#				has_orcish_majority_trigger = yes
+#			}
+#			AND = {
+#				owner = { has_country_flag = hobgoblin_yanification_enabled_flag }
+#				has_hobgoblin_majority_trigger = yes
+#			}
+#		}
+#		NOT = { culture_group = yan }
+#		NOT = { culture = east_harimari }
+#		NOT = { culture = dragon_command }
+#		#has_province_flag = yanification_acceptance
+#	}
+#	
+#	mean_time_to_happen = {
+#		months = 180
+#	}
+#
+#	option = {
+#		name = MIGA_bianfan.1.a
+#		ai_chance = {
+#			factor = 1
+#		}
+#		
+#		province_event = { id = bianfang.300 }
+#	}
+#}

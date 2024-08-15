@@ -313,12 +313,19 @@ dookan_omen_of_destiny = {
 	yearly_army_professionalism = -0.01
 	church_power_modifier = -0.25
 }
-dookan_omen_of_calamity = {
+dookan_omen_of_calamity = {			#reduced debuff and revard after greentide (debuff was too easy to overcome)
 	global_unrest = 7 #love
 	discipline = -0.05 #love
 	manpower_recovery_speed = -0.05 #love
 	church_power_modifier = -0.25
 	global_tax_modifier = -0.05 #love
+}
+dookan_omen_of_calamity_greentide = { #guardian; old calamity effect during age of greentide
+	global_unrest = 16
+	discipline = -0.1
+	manpower_recovery_speed = -0.1
+	church_power_modifier = -0.25
+	global_tax_modifier = -0.1
 }
 dookan_no_omen = {
 	prestige = -1

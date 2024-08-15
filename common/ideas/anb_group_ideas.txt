@@ -384,7 +384,7 @@ kobold_ideas = {
 		production_efficiency = 0.1
 	}
 	kobold_war_against_the_tallfolk = {
-		war_exhaustion = -0.03 #love
+    war_exhaustion = -0.03 #love
 	}
 	kobold_entrenched_territories = {
 		fort_maintenance_modifier = -0.15

@@ -1,126 +1,128 @@
-country_decisions = {
 
-	ibevar_horse_for_a_king = {
-		major = yes
-		
-		potential = {
-			has_country_flag = adenica_horse_event_unlocked
-			NOT = {
-				has_country_flag = adenica_courser_picked
-				has_country_flag = arbarani_destrier_picked
-				has_country_flag = elikhandi_courser_picked
-				has_country_flag = alenic_rouncey_picked
-			}
-			NOT = {
-				has_country_flag = adenica_adenican_courser
-				has_country_flag = adenica_arbarani_destrier
-				has_country_flag = adenica_elikhandi_courser
-				has_country_flag = adenica_alenic_rouncey
-			}
-		}
-		
-		allow = {
-			mission_completed = adenica_horse_for_a_king
-		}
-		
-		effect = {
-			hidden_effect = { clr_ruler_flag = adenica_horse_concluded }
-			country_event = { id = MIGA_events.10 }
-		}
-		
-		ai_will_do = {
-			factor = 2
-		}
-		ai_importance = 400
-	}
-	
-	adenica_another_path = {
-		major = yes
-		
-		potential = {
-			tag = B58
-			OR = {
-				mission_completed = adenica_dutiful_servent
-				mission_completed = adenica_righteous_spear
-			}
-			NOT = {
-				AND = {
-					mission_completed = adenica_dutiful_servent
-					mission_completed = adenica_righteous_spear
-				}
-			}
-		}
-		
-		allow = {
-			tag = B58
-			AND = {
-				mission_completed = adenica_reclaim_castonath
-				mission_completed = adenica_knight_radiant
-				mission_completed = adenica_honor_fallen
-			}
-		}
-		
-		effect = {
-			if = {
-				limit = { mission_completed = adenica_dutiful_servent }
-				complete_mission = adenica_righteous_spear
-				custom_tooltip = adenica_unlock_purge_heresy_cb_tt
-				set_country_flag = adenica_war_chosen
-			}
-			else = {
-				complete_mission = adenica_dutiful_servent
-				custom_tooltip = adenica_dutiful_servent_effect_tt
-			}
-		}
-		
-		ai_will_do = {
-			factor = 2
-		}
-		ai_importance = 400
-	}
-	
-	adenica_cossacks = {
-		major = no
-		potential = {
-			has_dlc = "The Cossacks"
-			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
-				OR = {
-					has_terrain = steppe
-					culture_group = triunic
-				}
-				value = 25
-			}
-			can_activate_cossacks = yes
-			NOT = { has_unlocked_estate = { estate = estate_cossacks } }
-			has_global_modifier_value = {
-				which = cavalry_power
-				value = 0.2
-			}
-		}
-		provinces_to_highlight = {
-			OR = {
-				has_terrain = steppe
-				culture_group = triunic
-			}
-		}
-		allow = {
-			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
-				has_terrain = steppe
-				value = 25
-			}
-			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
-				culture_group = triunic
-				value = 25
-			}
-			mil_power = 200
-			high_tolerance_human_race_trigger = yes
-		}
-		effect = {
-			add_mil_power = -200
-			unlock_estate = {
-				estate = estate_cossacks
-				show_conditions = yes
-			}
-		}
-	}
-}
+# guardian; miga bottom text
+#country_decisions = { 
+#
+#	ibevar_horse_for_a_king = {
+#		major = yes
+#		
+#		potential = {
+#			has_country_flag = adenica_horse_event_unlocked
+#			NOT = {
+#				has_country_modifier = adenica_courser_picked
+#				has_country_modifier = arbarani_destrier_picked
+#				has_country_modifier = elikhandi_courser_picked
+#				has_country_modifier = alenic_rouncey_picked
+#			}
+#			NOT = {
+#				has_country_modifier = adenica_adenican_courser
+#				has_country_modifier = adenica_arbarani_destrier
+#				has_country_modifier = adenica_elikhandi_courser
+#				has_country_modifier = adenica_alenic_rouncey
+#			}
+#		}
+#		
+#		allow = {
+#			mission_completed = adenica_horse_for_a_king
+#		}
+#		
+#		effect = {
+#			hidden_effect = { clr_ruler_flag = adenica_horse_concluded }
+#			country_event = { id = MIGA_events.10 }
+#		}
+#		
+#		ai_will_do = {
+#			factor = 2
+#		}
+#		ai_importance = 400
+#	}
+#	
+#	adenica_another_path = {
+#		major = yes
+#		
+#		potential = {
+#			tag = B58
+#			OR = {
+#				mission_completed = adenica_dutiful_servent
+#				mission_completed = adenica_righteous_spear
+#			}
+#			NOT = {
+#				AND = {
+#					mission_completed = adenica_dutiful_servent
+#					mission_completed = adenica_righteous_spear
+#				}
+#			}
+#		}
+#		
+#		allow = {
+#			tag = B58
+#			AND = {
+#				mission_completed = adenica_reclaim_castonath
+#				mission_completed = adenica_knight_radiant
+#				mission_completed = adenica_honor_fallen
+#			}
+#		}
+#		
+#		effect = {
+#			if = {
+#				limit = { mission_completed = adenica_dutiful_servent }
+#				complete_mission = adenica_righteous_spear
+#				custom_tooltip = adenica_unlock_purge_heresy_cb_tt
+#				set_country_flag = adenica_war_chosen
+#			}
+#			else = {
+#				complete_mission = adenica_dutiful_servent
+#				custom_tooltip = adenica_dutiful_servent_effect_tt
+#			}
+#		}
+#		
+#		ai_will_do = {
+#			factor = 2
+#		}
+#		ai_importance = 400
+#	}
+#	
+#	adenica_cossacks = {
+#		major = no
+#		potential = {
+#			has_dlc = "The Cossacks"
+#			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+#				OR = {
+#					has_terrain = steppe
+#					culture_group = triunic
+#				}
+#				value = 25
+#			}
+#			can_activate_cossacks = yes
+#			NOT = { has_unlocked_estate = { estate = estate_cossacks } }
+#			has_global_modifier_value = {
+#				which = cavalry_power
+#				value = 0.2
+#			}
+#		}
+#		provinces_to_highlight = {
+#			OR = {
+#				has_terrain = steppe
+#				culture_group = triunic
+#			}
+#		}
+#		allow = {
+#			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+#				has_terrain = steppe
+#				value = 25
+#			}
+#			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+#				culture_group = triunic
+#				value = 25
+#			}
+#			mil_power = 200
+#			high_tolerance_human_race_trigger = yes
+#		}
+#		effect = {
+#			add_mil_power = -200
+#			unlock_estate = {
+#				estate = estate_cossacks
+#				show_conditions = yes
+#			}
+#		}
+#	}
+#}

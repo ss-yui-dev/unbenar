@@ -1,79 +1,79 @@
-namespace = MIGA_ameion
-
-province_event = {
-	id = MIGA_ameion.1
-	title = MIGA_ameion.1.t
-	desc = MIGA_ameion.1.desc
-	picture = LAND_MILITARY_eventPicture
-
-	hidden = yes
-	
-	trigger = {
-		owner = {
-			OR = {
-				tag = G52
-				tag = G00
-				primary_culture = klereyen
-			}
-		}
-		AND = {
-			culture_group = taychendi_ruinborn_elf
-			any_neighbor_province = {
-				culture = klereyen
-			}
-			religion = kheionism
-		}
-	}
-	
-	mean_time_to_happen = {
-		months = 180
-	}
-
-	option = {
-		name = MIGA_ameion.1.a
-		ai_chance = {
-			factor = 1
-		}
-		
-		change_culture = klereyen
-	}
-}
-
-province_event = {
-	id = MIGA_ameion.2
-	title = MIGA_ameion.1.t
-	desc = MIGA_ameion.1.desc
-	picture = LAND_MILITARY_eventPicture
-
-	hidden = yes
-	
-	trigger = {
-		owner = {
-			OR = {
-				tag = G52
-				tag = G00
-				primary_culture = astolbhen
-			}
-		}
-		AND = {
-			culture_group = devandi_ruinborn_elf
-			any_neighbor_province = {
-				culture = astolbhen
-			}
-			religion = kheionism
-		}
-	}
-	
-	mean_time_to_happen = {
-		months = 180
-	}
-
-	option = {
-		name = MIGA_ameion.1.a
-		ai_chance = {
-			factor = 1
-		}
-		
-		change_culture = astolbhen
-	}
-}
+#namespace = MIGA_ameion
+#
+#province_event = {
+#	id = MIGA_ameion.1
+#	title = MIGA_ameion.1.t
+#	desc = MIGA_ameion.1.desc
+#	picture = LAND_MILITARY_eventPicture
+#
+#	hidden = yes
+#	
+#	trigger = {
+#		owner = {
+#			OR = {
+#				tag = G52
+#				tag = G00
+#				primary_culture = klereyen
+#			}
+#		}
+#		AND = {
+#			culture_group = taychendi_ruinborn_elf
+#			any_neighbor_province = {
+#				culture = klereyen
+#			}
+#			religion = kheionism
+#		}
+#	}
+#	
+#	mean_time_to_happen = {
+#		months = 180
+#	}
+#
+#	option = {
+#		name = MIGA_ameion.1.a
+#		ai_chance = {
+#			factor = 1
+#		}
+#		
+#		change_culture = klereyen
+#	}
+#}
+#
+#province_event = {
+#	id = MIGA_ameion.2
+#	title = MIGA_ameion.1.t
+#	desc = MIGA_ameion.1.desc
+#	picture = LAND_MILITARY_eventPicture
+#
+#	hidden = yes
+#	
+#	trigger = {
+#		owner = {
+#			OR = {
+#				tag = G52
+#				tag = G00
+#				primary_culture = astolbhen
+#			}
+#		}
+#		AND = {
+#			culture_group = devandi_ruinborn_elf
+#			any_neighbor_province = {
+#				culture = astolbhen
+#			}
+#			religion = kheionism
+#		}
+#	}
+#	
+#	mean_time_to_happen = {
+#		months = 180
+#	}
+#
+#	option = {
+#		name = MIGA_ameion.1.a
+#		ai_chance = {
+#			factor = 1
+#		}
+#		
+#		change_culture = astolbhen
+#	}
+#}

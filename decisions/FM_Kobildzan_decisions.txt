@@ -1,37 +1,38 @@
 country_decisions = {
 	
-	kobildzan_another_path = {
-		major = no
-		
-		potential = {
-			tag = Z38
-			OR = {
-				has_country_flag = kobold_dragon_path
-				has_country_flag = kobold_artificier_path
-			}
-		}
-
-		allow = {
-			tag = Z38
-			OR = {
-				has_country_flag = kobold_dragon_path
-				has_country_flag = kobold_artificier_path
-			}
-		}
-		
-		effect = {
-			if = {
-				limit = { has_country_flag = kobold_dragon_path }
-				clr_country_flag = kobold_dragon_path
-				set_country_flag = kobold_artificier_path
-			}
-			else = {
-				clr_country_flag = kobold_artificier_path
-				set_country_flag = kobold_dragon_path
-			}
-			swap_non_generic_missions = yes
-		}
-	}
+	# guardian; another quest branching ignore
+	#kobildzan_another_path = {
+	#	major = no
+	#	
+	#	potential = {
+	#		tag = Z38
+	#		OR = {
+	#			has_country_flag = kobold_dragon_path
+	#			has_country_flag = kobold_artificier_path
+	#		}
+	#	}
+	#
+	#	allow = {
+	#		tag = Z38
+	#		OR = {
+	#			has_country_flag = kobold_dragon_path
+	#			has_country_flag = kobold_artificier_path
+	#		}
+	#	}
+	#	
+	#	effect = {
+	#		if = {
+	#			limit = { has_country_flag = kobold_dragon_path }
+	#			clr_country_flag = kobold_dragon_path
+	#			set_country_flag = kobold_artificier_path
+	#		}
+	#		else = {
+	#			clr_country_flag = kobold_artificier_path
+	#			set_country_flag = kobold_dragon_path
+	#		}
+	#		swap_non_generic_missions = yes
+	#	}
+	#}
 	
 	estate_kobold_raise_drake_riders = {
 		color = { 195 160 20 }
