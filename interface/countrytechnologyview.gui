@@ -284,7 +284,7 @@ guiTypes = {
 			name = "DA_Metal_Shower.Tin"
 			position = { x = 419 y = 237 }
 			textureFile = ""
-			font = "garamond_14nd_14"
+			font = "garamond_14"
 			borderSize = {x = 4 y = 4}	
 			text = ""
 			maxWidth = 512

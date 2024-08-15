@@ -145,7 +145,7 @@ country_event = {
 				which = DA_research_progress_MAX
 			} }
 			country_event = {
-				id = DA_Runesmiths_events.2.1
+				id = DA_Runesmiths_events_2.1
 			}
 		}
 		ai_chance = { factor = 1 }

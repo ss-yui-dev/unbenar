@@ -1,8 +1,8 @@
 
-namespace = DA_Runesmiths_events.2
+namespace = DA_Runesmiths_events_2
 
 country_event = {
-	id = DA_Runesmiths_events.2.1
+	id = DA_Runesmiths_events_2.1
 	title = DA_Runesmiths_events.2.t
 	desc = DA_Runesmiths_events.2.d
 	picture = INVENTION_eventPicture
