@@ -657,7 +657,7 @@ ai_nation = {
 	
 	inflation_reduction = 0.1
 
-	build_cost = -0.25
+	build_cost = -0.4 #love
 
 	advisor_cost = -0.5 #love
 

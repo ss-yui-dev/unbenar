@@ -10120,6 +10120,7 @@ terrain_woodland = {
 	build_trigger = {
 		OR = {
 			has_terrain = forest
+			has_terrain = ancient_forest
 			has_terrain = woods
 			has_terrain = bloodgroves
 		}

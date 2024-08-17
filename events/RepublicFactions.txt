@@ -251,10 +251,11 @@ province_event = {
 				has_government_attribute = is_merchant_republic
 				has_reform = veche_republic
 			}
+			has_factions = yes #love
 		}
 		NOT = { has_province_modifier = influential_nobles }
 		NOT = { has_province_modifier = influential_guild_members }
-		has_factions = yes #Anbennar
+
 	}
 
 	mean_time_to_happen = {
