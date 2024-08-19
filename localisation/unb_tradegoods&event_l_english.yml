@@ -12,5 +12,27 @@ TEA_CULTURE_EXCHANGE:0 "Cannor-Yanshen tea trade"
 
 unb_price.2.t:0 "Cyranvar Monopolizes Exotic Wood Trade "
 unb_price.2.d:0 "Exotic wood from Deepwood has relatively recently become an import item to Cannor. The reasons were not only to the difficulties in processing and using, but also to the unwillingness of the forest elves to share their resources. The situation changed when the elves lost their positions to the orcs and goblins. During this time, exotic wood has partially replaced conventional wood in the production of goods. Now, in the situation where Cannor could not simply abandon Deepwood lumber, the elves, as the only supplier of wood (who can stand up for theirself), decided to significantly raise the price of their goods."
-unb_price.2.a:0 "Cannorians will have to trade on Cyranvary terms or look for another source of lumber"
+unb_price.2.a:0 "Cannorians have to trade on Cyranvary terms or look for another source of lumber"
 CYRANVAR_WOOD_MONOPOLY:0 "Cyranvar exotic wood monopoly"
+
+unb_price.3.t:0 "[Root.GetName] Fins Another Source of Exotic Lumber"
+unb_price.3.d:0 "Cannoran merchants were able to find a way to deliver exotic at an acceptable price. No doubt, Cyranvary trade monopoly has come to end."
+unb_price.3.a:0 "Interesting development"
+unb_price.3.b:0 "I hope we've made enough money."
+CYRANVAR_MONOPOLY_NO_MORE:0 "Cyranvar monopoly broken"
+
+unb_price.4.t:0 ""
+unb_price.4.d:0 ""
+unb_price.4.a:0 ""
+LIVESTOCK_SUS_DEMAND_INCREASE:0 "Strange livestock demand increase"
+
+unb_price.5.t:0 "The Command Takes Control over Raheni Slave Trade"
+unb_price.5.d:0 "The latest Command conqest opened up the opportunity to fully re-enslave inhabitants fo Kharnayana Delta. Slave armies were deemed to be unworthy of life under the law of Wuhyun and soon the slave market was overflowing with those who were once able to overthrow harimari goverment."
+unb_price.5.a:0 "No brass dragon can help them now"
+MONSTROUS_SLAVE_TRADE_BHUVAURI:0 "Command slave trade"
+
+unb_price.6.t:0 "[Root.GetName] are going to purchase slaves for digging"
+unb_price.6.d:0 "[Root.GetAdjective] people are undoubtedly suitable for excavations, but we could use some external help. Traders from the surface world could provide us with an influx of labor to do the simplest jobs, if we can afford cost"
+unb_price.6.a:0 "Make a deal with slave traders"
+unb_price.6.b:0 "We do not have money for this"
+SLAVE_DIG_TRADE:0 "Slave dig labour force"

@@ -160,6 +160,9 @@ country_event = {
 
 	option = {
 		name = unb_price.3.a
+		trigger = {
+			NOT = { tag = I45 }
+		}
 		change_price = {
 			trade_goods = tropical_wood
 			key = CYRANVAR_MONOPOLY_NO_MORE
@@ -169,12 +172,19 @@ country_event = {
 		change_price = {
 			trade_goods = lumber
 			key = CYRANVAR_MONOPOLY_NO_MORE
-			value = -0.6
+			value = -0.50
 			duration = -1
 		}		
-        add_years_of_income = 0.25
+        add_years_of_income = 0.5
         add_prestige = 20
     }    
+	option = {
+		name = unb_price.3.b
+		trigger = {
+			tag = I45
+		}
+        add_prestige = -10
+    }   
 }
 
 
@@ -497,7 +507,7 @@ country_event = {
 	id = unb_price.9
 	title = unb_price.9.t
 	desc = unb_price.9.d
-	picture = APOSTLE_eventPicture
+	picture = FARMING_WIFE_eventPicture
 
 	fire_only_once = yes
 	
@@ -727,13 +737,167 @@ country_event = {
 }
 
 #16 Греки получают дотступ к оливкам (трейдшейр в брасане) - повышение их трейдвелью, товар в провинции из региона алеканд заменяется на оливки, шутка на тему "такое ощущение, что это должно было всегда тут быть"
+
+country_event = {
+	id = unb_price.13
+	title = unb_price.13.t
+	desc = unb_price.13.d
+	picture = TRADEGOODS_eventPicture
+
+	fire_only_once = yes
+	
+	major = yes
+
+	trigger = {
+		AND = {
+			#capital_scope = { cuntinent = south_america }
+			culture_group = kheionai_ruinborn_elf
+			1309 = {	#Brasan
+				trade_share = {
+					country = ROOT					
+					share = 5
+				}	
+			}
+		}
+			NOT = { has_global_flag = olives_in_kheionai}
+	}
+
+	mean_time_to_happen = {
+		months = 1
+	}
+
+	immediate = {
+		hidden_effect = {
+			set_global_flag = olives_in_kheionai
+			#в случайную провинцию с нитками в Алеканде накинуть 7 дева, оливки, мануфактуру
+		}
+	}
+
+	option = {
+		name = unb_price.13.a
+		change_price = {
+			trade_goods = olive_oil
+			key = KHEIONAI_OLIVES
+			value = 0.1
+			duration = -1
+		}
+		add_prestige = 50
+	}
+}
+
 #17 Цены на растительные продукты падают из-за заклинания plant growth 
+#пока что это выглядит так, будто нужно проверять модификатор в каждой провинции, значит лучше обойтись без ивента
+
 #18 Пивной холд с монументом хотя бы первого уровня, 50+ инноваций - новые сорта пива, которые разлетелись по всему миру: +велью пива
 #19 Ингридиенты для создания оберегов - повышение спроса на соль, слоновую кость, бумагу во время спириттайда
+#has_global_flag = rending_active
+
+country_event = {
+	id = unb_price.14
+	title = unb_price.14.t
+	desc = unb_price.14.d
+	picture = TRADEGOODS_eventPicture
+
+	fire_only_once = yes
+	
+	major = yes
+
+	trigger = {
+		AND = {
+			#capital_scope = { continent = asia }
+			has_global_flag = rending_active
+		}
+			NOT = { has_global_flag = materials_for_wards}
+	}
+
+	mean_time_to_happen = {
+		months = 1
+	}
+
+	immediate = {
+		hidden_effect = {
+			set_global_flag = materials_for_wards
+		}
+	}
+
+	option = {
+		name = unb_price.14.a
+		change_price = {
+			trade_goods = salt
+			key = WARD_MATERIALS
+			value = 0.05
+			duration = -1
+		}
+		change_price = {
+			trade_goods = ivory
+			key = WARD_MATERIALS
+			value = 0.05
+			duration = -1
+		}
+		change_price = {
+			trade_goods = paper
+			key = WARD_MATERIALS
+			value = 0.05
+			duration = -1
+		}		
+	}
+}
+
+
 #20 что-то связанное с мандатом
 #21 бульварская мифическая кавалерия увеличивает спрос на ткани
+
+
+country_event = {
+	id = unb_price.15
+	title = unb_price.15.t
+	desc = unb_price.15.d
+	picture = TRADEGOODS_eventPicture
+
+	fire_only_once = yes
+	
+	major = yes
+
+	trigger = {
+		AND = {
+			#проверка гп
+			has_country_flag = established_zamukaras_flag
+		}
+			NOT = { has_global_flag = carpets_for_zamukaras }
+	}
+
+	mean_time_to_happen = {
+		months = 1
+	}
+
+	immediate = {
+		hidden_effect = {
+			set_global_flag = carpets_for_zamukaras
+		}
+	}
+
+	option = {
+		name = unb_price.15.a
+		change_price = {
+			trade_goods = cloth
+			key = CARPET_CAVALRY
+			value = 0.07
+			duration = -1
+		}
+		change_price = {
+			trade_goods = silk
+			key = CARPET_CAVALRY
+			value = 0.07
+			duration = -1
+		}	
+	}
+}
+
 #22 изобретение шампанского
 #23 китовая ворвань - топливо для кораблей гномов - повышение спроса на китов
+
+
+
 #24 страна в дипвудсе с определённой инновационностью может начать производить *замена пальмового масла* - спавнится в провинции с древним лесом + гудс
 #25 Создание промышленного производства gunpowder; ковров
 #26 Изобретение сыра

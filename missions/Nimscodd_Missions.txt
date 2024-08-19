@@ -1002,6 +1002,9 @@ hierarchy_2 = {
 				duration = -1
 			}
 			mission_reward_artifice_points_2 = yes
+			A79 = {
+				country_event = { id = unb_price.16 days = 60 random = 30 }
+			}				
 			custom_tooltip = nimscodd_design_the_heirarch_tt
 		}
 	}
