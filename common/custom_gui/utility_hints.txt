@@ -1,3 +1,6 @@
 custom_text_box = {
 	name = advisor_cost_hint
+	potential = {
+
+	}
 }

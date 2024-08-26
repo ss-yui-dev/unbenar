@@ -24,10 +24,10 @@ estate_church_land_rights = {
 	benefits = {
 		governing_capacity = 100
 	}
-	conditional_modifier = {
-		trigger = { has_government_mechanic = russian_modernization_mechanic }
-		modifier = { monthly_russian_modernization = -0.03 }
-	}
+	# conditional_modifier = {
+	# 	trigger = { has_government_mechanic = russian_modernization_mechanic }
+	# 	modifier = { monthly_russian_modernization = -0.03 }
+	# }
 	#conditional_modifier = {
 	#	trigger = { has_government_mechanic = ottoman_decadence_mechanic }
 	#	modifier = { monthly_ottoman_decadence = 0.02 }

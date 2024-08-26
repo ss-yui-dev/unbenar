@@ -4,6 +4,9 @@ custom_button = {
 	potential = {
 		ai = no
 	}
+	trigger = {
+		ai = no
+	}
 	effect = {
 		custom_tooltip = dev_sum_clicks_decision_acitve_tooltip
 		hidden_effect = {
@@ -20,6 +23,9 @@ custom_button = {
 	potential = {
 		ai = no
 	}
+	trigger = {
+		ai = no
+	}
 	effect = {
 		custom_tooltip = dev_sum_clicks_decision_acitve_tooltip
 		hidden_effect = {
@@ -34,6 +40,9 @@ custom_button = {
 	name = dev_clicks
 	tooltip = "dev_sum_clicks_decision_tooltip"
 	potential = {
+		ai = no
+	}
+	trigger = {
 		ai = no
 	}
 	effect = {

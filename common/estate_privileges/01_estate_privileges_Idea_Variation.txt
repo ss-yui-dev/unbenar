@@ -507,7 +507,7 @@ estate_priv_idea_variation_1_10 = {
 	influence = 0.05
 
 	is_valid = {
-		religion = catholic
+		religion = ravelian #love
 		NOT = { tag = PAP }
 	}
 	benefits = {
