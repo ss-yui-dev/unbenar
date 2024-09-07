@@ -361,10 +361,10 @@ estate_cossacks_establish_the_cossack_regiments = {
 		enables_cossack_regiments
 		exempt_from_seize_land
 	}
-	# conditional_modifier = {
-	# 	trigger = { has_government_mechanic = russian_modernization_mechanic }
-	# 	modifier = { monthly_russian_modernization = -0.01 }
-	# }
+	conditional_modifier = {
+		trigger = { has_government_mechanic = russian_modernization_mechanic }
+		modifier = { monthly_russian_modernization = -0.01 }
+	}
 	ai_will_do = {
 		factor = 1
 		modifier = {

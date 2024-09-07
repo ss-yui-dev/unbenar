@@ -2244,6 +2244,7 @@ country_event = {
 			NOT = {
 				tag = S70	#Yezel Mora
 				tag = I46	#Tugund-Darakh
+				religion = xhazobkult #Has it's own event for changing religion
 				has_ruler_flag = xhazob_patron	#Great Xhaz
 			}
 			any_neighbor_country = {
@@ -2475,6 +2476,7 @@ country_event = {
 			NOT = {
 				tag = S70	#Yezel Mora
 				tag = I46	#Tugund-Darakh
+				religion = xhazobkult
 				has_ruler_flag = xhazob_patron	#Great Xhaz
 			}
 			if = {
@@ -2556,5 +2558,15 @@ country_event = {
 			NOT = { has_heir_flag = monstrous_foreign_education }
 		}
 		country_event = { id = monstrous.23 }
+	}
+
+	option = {
+		name = monstrous.1000.a
+		ai_chance = { factor = 100 }
+		trigger = {
+			stability = 0
+			religion = xhazobkult
+		}
+		country_event = { id = xhazobkult_events.2001 }
 	}
 }

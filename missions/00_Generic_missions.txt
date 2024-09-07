@@ -365,7 +365,7 @@ diplomatic_missions = {
 				custom_tooltip = dominant_home_node_reward_tooltip
 			}
 			custom_tooltip = " "
-			# add_mercantilism_or_monarch_power = { amount = 3 }
+			add_mercantilism_or_monarch_power = { amount = 3 }
 		}
 	}
 	trade_company_region_abroad = {

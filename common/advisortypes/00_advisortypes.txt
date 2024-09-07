@@ -2081,6 +2081,17 @@ army_organiser = {
 		}
 	}
 
+	skill_scaled_modifier = { 
+		trigger = { 
+			owner = { 
+				has_country_flag = karakhanbar_improved_advisors 
+			} 
+		} 
+		modifier = { 
+			drill_decay_modifier = -0.05 
+		} 
+	}
+
 	chance = {
 		factor = 1
 	}
@@ -2255,6 +2266,17 @@ quartermaster = {
 		modifier = {
 			movement_speed = 0.02
 		}
+	}
+
+	skill_scaled_modifier = { 
+		trigger = { 
+			owner = { 
+				has_country_flag = karakhanbar_improved_advisors 
+			} 
+		} 
+		modifier = { 
+			monthly_karakhanbar_flames_of_the_black_hearth_power = 0.1
+		} 
 	}
 
 	chance = {
@@ -2439,6 +2461,17 @@ fortification_expert = {
 		modifier = {
 			siege_ability = 0.02
 		}
+	}
+
+	skill_scaled_modifier = { 
+		trigger = { 
+			owner = { 
+				has_country_flag = karakhanbar_improved_advisors 
+			} 
+		} 
+		modifier = { 
+			artillery_power = 0.02 
+		} 
 	}
 
 	chance = {

@@ -49,9 +49,9 @@ estate_bladestewards_new_model_loyalists = {
 		has_country_flag = bladesworn_rebellion_crushed
 	}
 	can_revoke = {
-		custom_trigger_tooltip = {
+		# custom_trigger_tooltip = {
 			always = no
-		}
+		# }
 	}
 	can_select = {
 		
@@ -80,9 +80,9 @@ estate_bladestewards_control_state = {
 		religion = corinite
 	}
 	can_revoke = {
-		custom_trigger_tooltip = {
+		# custom_trigger_tooltip = {
 			always = no
-		}
+		# }
 	}
 	can_select = {
 		
@@ -716,7 +716,7 @@ estate_bladestewards_lakelady_cult = { #Legitimized Cult of the Lady of the Lake
 	}
 	
 	penalties = {
-		custom_tooltip = WATERY_TART
+		# custom_tooltip = WATERY_TART
 		reverse_relation_with_same_religion = -20
 		governing_capacity_modifier = -0.25
 	}

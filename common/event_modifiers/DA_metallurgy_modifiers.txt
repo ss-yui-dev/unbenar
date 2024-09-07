@@ -1,7 +1,7 @@
 
 DA_Mine_1 = {
 	trade_goods_size = 0.02
-	local_development_cost = -0.1 #love
+	# local_development_cost = -0.1 #love
 	local_amount_of_cawa = 1
 	local_has_musketeers = yes
 	amount_of_musketeers = 0.3 #love
@@ -9,28 +9,28 @@ DA_Mine_1 = {
 }
 DA_Mine_2 = {
 	trade_goods_size = 0.02	#guardian; no trade goods from mines (we already have goods from dip dev); low value to display on trademap
-	local_development_cost = -0.2 #love 
+	# local_development_cost = -0.2 #love 
 	local_has_musketeers = yes
 	amount_of_musketeers = 0.6 #love
 	local_amount_of_hussars = 0.55
 }
 DA_Mine_3 = {
 	trade_goods_size = 0.02
-	local_development_cost = -0.3 #love
+	# local_development_cost = -0.3 #love
 	local_has_musketeers = yes
 	amount_of_musketeers = 0.9 #love
 	local_amount_of_hussars = 0.55
 }
 DA_Mine_4 = {
 	trade_goods_size = 0.02
-	local_development_cost = -0.4 #love
+	# local_development_cost = -0.4 #love
 	local_has_musketeers = yes
 	amount_of_musketeers = 1.2 #love
 	local_amount_of_hussars = 0.55
 }
 DA_Mine_5 = {
 	trade_goods_size = 0.02
-	local_development_cost = -0.5 #love
+	# local_development_cost = -0.5 #love
 	local_has_musketeers = yes
 	amount_of_musketeers = 1.5 #love
 	local_amount_of_hussars = 0.55
@@ -38,7 +38,7 @@ DA_Mine_5 = {
 DA_Hold_Mine = {
 	trade_goods_size = 0.02
 	local_has_musketeers = yes
-	amount_of_musketeers = 3
+	amount_of_musketeers = 2 #love
 	local_amount_of_hussars = 0.35
 }
 DA_forge_restarted = {

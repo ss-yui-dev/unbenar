@@ -17,31 +17,31 @@ on_startup = {
 		country_event = { id = coalition_against_lorent.1 }
 	}
 	
-	if = {
-		limit = {
-			OR = {
-				culture_is_elven = yes
-				culture_is_ruinborn = yes
-			}
-		}
-		every_owned_province = {
-			limit = {
-				OR = {
-					has_terrain = forest
-					has_terrain = bloodgroves
-					has_terrain = gladeway
-					has_terrain = fey_gladeway
-					has_terrain = ancient_forest
-					has_terrain = woods
-					has_terrain = jungle
-				}
-			}
-			add_province_modifier = {
-				name = MIGA_elven_forest
-				duration = -1
-			}
-		}
-	}
+	# if = {
+	# 	limit = {
+	# 		OR = {
+	# 			culture_is_elven = yes
+	# 			culture_is_ruinborn = yes
+	# 		}
+	# 	}
+	# 	every_owned_province = {
+	# 		limit = {
+	# 			OR = {
+	# 				has_terrain = forest
+	# 				has_terrain = bloodgroves
+	# 				has_terrain = gladeway
+	# 				has_terrain = fey_gladeway
+	# 				has_terrain = ancient_forest
+	# 				has_terrain = woods
+	# 				has_terrain = jungle
+	# 			}
+	# 		}
+	# 		add_province_modifier = {
+	# 			name = MIGA_elven_forest
+	# 			duration = -1
+	# 		}
+	# 	}
+	# }
 }
 
 on_province_owner_change = {

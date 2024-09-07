@@ -6,14 +6,16 @@ MIGA_estate_action_RAISE_DRAKE_RIDERS = {
 		force_limit_percentage = 0.02
 	}
 	if = {
-		OR = {
-			estate_influence = {
-				estate = estate_monstrous_tribes
-				influence = 60
-			}
-			estate_influence = {
-				estate = estate_mages
-				influence = 60
+		limit = {
+			OR = {
+				estate_influence = {
+					estate = estate_monstrous_tribes
+					influence = 60
+				}
+				estate_influence = {
+					estate = estate_mages
+					influence = 60
+				}
 			}
 		}
 		create_unit_forcelimit_percentage = {

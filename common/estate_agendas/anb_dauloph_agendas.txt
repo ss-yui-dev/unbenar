@@ -1086,10 +1086,10 @@ estate_daulophs_crush_revolts = {
 		NOT = {
 			OR = {
 				has_spawned_rebels = noble_rebels
-				# has_spawned_rebels = polish_noble_rebels  #love
+				has_spawned_rebels = polish_noble_rebels
 				#Clergy agenda covers heretic rebels
 				has_spawned_rebels = heretic_rebels
-				# has_spawned_rebels = lollard_rebels #love
+				has_spawned_rebels = lollard_rebels
 			}
 		}
 	}

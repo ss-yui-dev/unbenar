@@ -163,21 +163,23 @@ estate_middlecastes = {
 		}
 		influence = 5
 	}
-	influence_modifier = {
-		desc = EST_VAL_EAST_AFRICAN_TRADE_CITIES
-		trigger = {
-			capital_scope = {
-				OR = {
-					area = central_swahili_coast_area
-					area = mombasa_area
-					area = mozambique_area
-					area = northern_swahili_coast_area
-					area = mogadishu_area
-				}
-			}
-		}
-		influence = 5
-	}
+	#love
+	# influence_modifier = {
+	# 	desc = EST_VAL_EAST_AFRICAN_TRADE_CITIES
+	# 	trigger = {
+	# 		capital_scope = {
+	# 			OR = {
+	# 				area = central_swahili_coast_area
+	# 				area = mombasa_area
+	# 				area = mozambique_area
+	# 				area = northern_swahili_coast_area
+	# 				area = mogadishu_area
+	# 			}
+	# 		}
+	# 	}
+	# 	influence = 5
+	# }
+	#love
 	influence_modifier = {
 		desc = EST_VAL_LOW_TRADE_INCOME
 		trigger = {
@@ -241,6 +243,7 @@ estate_middlecastes = {
 	privileges = {
 		estate_middlecastes_organization_caste
 		estate_middlecastes_organization_caste_dhenijanraj
+		estate_middlecastes_organization_caste_bhuvauri
 		estate_middlecastes_organization_reformed
 		estate_middlecastes_land_rights
 		estate_middlecastes_land_of_commerce

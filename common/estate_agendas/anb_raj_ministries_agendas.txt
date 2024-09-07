@@ -100,12 +100,12 @@ estate_raj_ministries_develop_x = {
 			NOT = { owned_by = root }
 		}
 	}
-    task_requirements = {
+	task_requirements = {
 		event_target:agenda_province = {
 			base_tax = "province_adm_var"
 		}
-    }
-    task_completed_effect = {
+	}
+	task_completed_effect = {
 		on_completed_agenda_effect = {
 			estate = estate_raj_ministries
 		}
@@ -114,8 +114,8 @@ estate_raj_ministries_develop_x = {
 			loyalty = 10
 		}
 		add_prestige = 10
-    }
-        failing_effect = {
+	}
+	failing_effect = {
 		on_failed_agenda_effect = yes
 		clr_auto_complete_flag = yes
 		event_target:agenda_province = {
@@ -127,13 +127,13 @@ estate_raj_ministries_develop_x = {
 				}
 			}
 		}
-        add_estate_loyalty_modifier = {
-            estate = estate_raj_ministries
+		add_estate_loyalty_modifier = {
+			estate = estate_raj_ministries
 			desc = EST_VAL_AGENDA_DENIED
 			loyalty = -5
 			duration = 7300
-        }
-    }
+		}
+	}
 }
 
 #### Build a university
@@ -218,12 +218,12 @@ estate_raj_ministries_build_university_in_y = {
 			NOT = { owned_by = root }
 		}
 	}
-    task_requirements = {
+	task_requirements = {
 		event_target:agenda_province = {
 			has_building = university
 		}
-    }
-    task_completed_effect = {
+	}
+	task_completed_effect = {
 		on_completed_agenda_effect = {
 			estate = estate_raj_ministries
 		}
@@ -234,9 +234,12 @@ estate_raj_ministries_build_university_in_y = {
 		add_adm_power = 35
 		add_dip_power = 35
 		add_mil_power = 35
-		raj_cohesion_change = { amount = 50 ministries_agenda = yes }
-    }
-        failing_effect = {
+		if = {
+			limit = { NOT = { tag = R38 } }
+			raj_cohesion_change = { amount = 50 ministries_agenda = yes }
+		}
+	}
+	failing_effect = {
 		on_failed_agenda_effect = yes
 		clr_auto_complete_flag = yes
 		event_target:agenda_province = {
@@ -248,14 +251,17 @@ estate_raj_ministries_build_university_in_y = {
 				}
 			}
 		}
-        add_estate_loyalty_modifier = {
-            estate = estate_raj_ministries
+		add_estate_loyalty_modifier = {
+			estate = estate_raj_ministries
 			desc = EST_VAL_AGENDA_DENIED
 			loyalty = -5
 			duration = 7300
-        }
-		raj_cohesion_change = { amount = -50 ministries_agenda = yes }
-    }
+		}
+		if = {
+			limit = { NOT = { tag = R38 } }
+			raj_cohesion_change = { amount = -50 ministries_agenda = yes }
+		}
+	}
 }
 
 estate_raj_ministries_build_production_building_in_y = {
@@ -455,7 +461,7 @@ estate_raj_ministries_build_production_building_in_y = {
 			NOT = { owned_by = root }
 		}
 	}
-    task_requirements = {
+	task_requirements = {
 		if = {
 			limit = {
 				check_variable = {
@@ -475,8 +481,8 @@ estate_raj_ministries_build_production_building_in_y = {
 				}
 			}
 		}
-    }
-    task_completed_effect = {
+	}
+	task_completed_effect = {
 		on_completed_agenda_effect = {
 			estate = estate_raj_ministries
 		}
@@ -499,9 +505,12 @@ estate_raj_ministries_build_production_building_in_y = {
 				add_base_production = 1
 			}
 		}
-		raj_cohesion_change = { amount = 50 ministries_agenda = yes }
-    }
-        failing_effect = {
+		if = {
+			limit = { NOT = { tag = R38 } }
+			raj_cohesion_change = { amount = 50 ministries_agenda = yes }
+		}
+	}
+	failing_effect = {
 		on_failed_agenda_effect = yes
 		clr_auto_complete_flag = yes
 		event_target:agenda_province = {
@@ -513,14 +522,17 @@ estate_raj_ministries_build_production_building_in_y = {
 				}
 			}
 		}
-        add_estate_loyalty_modifier = {
-            estate = estate_raj_ministries
+		add_estate_loyalty_modifier = {
+			estate = estate_raj_ministries
 			desc = EST_VAL_AGENDA_DENIED
 			loyalty = -5
 			duration = 7300
-        }
-		raj_cohesion_change = { amount = -50 ministries_agenda = yes }
-    }
+		}
+		if = {
+			limit = { NOT = { tag = R38 } }
+			raj_cohesion_change = { amount = -50 ministries_agenda = yes }
+		}
+	}
 }
 
 
@@ -592,7 +604,7 @@ estate_raj_ministries_build_manufactory_in_y = {
 			NOT = { owned_by = root }
 		}
 	}
-    task_requirements = {
+	task_requirements = {
 		event_target:agenda_province = {
 			custom_trigger_tooltip = {
 				tooltip = has_manufactory_trigger_tooltip
@@ -719,8 +731,8 @@ estate_raj_ministries_build_manufactory_in_y = {
 				}
 			}
 		}
-    }
-    task_completed_effect = {
+	}
+	task_completed_effect = {
 		on_completed_agenda_effect = {
 			estate = estate_raj_ministries
 		}
@@ -735,9 +747,12 @@ estate_raj_ministries_build_manufactory_in_y = {
 				duration = 5475
 			}
 		}
-		raj_cohesion_change = { amount = 50 ministries_agenda = yes }
-    }
-        failing_effect = {
+		if = {
+			limit = { NOT = { tag = R38 } }
+			raj_cohesion_change = { amount = 50 ministries_agenda = yes }
+		}
+	}
+	failing_effect = {
 		on_failed_agenda_effect = yes
 		clr_auto_complete_flag = yes
 		event_target:agenda_province = {
@@ -749,14 +764,17 @@ estate_raj_ministries_build_manufactory_in_y = {
 				}
 			}
 		}
-        add_estate_loyalty_modifier = {
-            estate = estate_raj_ministries
+		add_estate_loyalty_modifier = {
+			estate = estate_raj_ministries
 			desc = EST_VAL_AGENDA_DENIED
 			loyalty = -5
 			duration = 7300
-        }
-		raj_cohesion_change = { amount = -50 ministries_agenda = yes }
-    }
+		}
+		if = {
+			limit = { NOT = { tag = R38 } }
+			raj_cohesion_change = { amount = -50 ministries_agenda = yes }
+		}
+	}
 }
 
 
@@ -775,7 +793,7 @@ estate_raj_ministries_recover_stability = {
 	task_requirements = {
 		stability = 1
 	}
-    task_completed_effect = {
+	task_completed_effect = {
 		on_completed_agenda_effect = {
 			estate = estate_raj_ministries
 		}
@@ -784,19 +802,25 @@ estate_raj_ministries_recover_stability = {
 			loyalty = 10
 		}
 		add_prestige = 10
-		raj_cohesion_change = { amount = 50 ministries_agenda = yes }
-    }
-        failing_effect = {
+		if = {
+			limit = { NOT = { tag = R38 } }
+			raj_cohesion_change = { amount = 50 ministries_agenda = yes }
+		}
+	}
+	failing_effect = {
 		on_failed_agenda_effect = yes
 		clr_auto_complete_flag = yes
-        add_estate_loyalty_modifier = {
-            estate = estate_raj_ministries
+		add_estate_loyalty_modifier = {
+			estate = estate_raj_ministries
 			desc = EST_VAL_AGENDA_DENIED
 			loyalty = -5
 			duration = 7300
-        }
-		raj_cohesion_change = { amount = -50 ministries_agenda = yes }
-    }
+		}
+		if = {
+			limit = { NOT = { tag = R38 } }
+			raj_cohesion_change = { amount = -50 ministries_agenda = yes }
+		}
+	}
 }
 
 #Stabilise Country II
@@ -814,7 +838,7 @@ estate_raj_ministries_increase_stability = {
 	task_requirements = {
 		stability = 3
 	}
-    task_completed_effect = {
+	task_completed_effect = {
 		on_completed_agenda_effect = {
 			estate = estate_raj_ministries
 		}
@@ -823,19 +847,25 @@ estate_raj_ministries_increase_stability = {
 			loyalty = 10
 		}
 		add_prestige = 10
-		raj_cohesion_change = { amount = 50 ministries_agenda = yes }
-    }
-        failing_effect = {
+		if = {
+			limit = { NOT = { tag = R38 } }
+			raj_cohesion_change = { amount = 50 ministries_agenda = yes }
+		}
+	}
+	failing_effect = {
 		on_failed_agenda_effect = yes
 		clr_auto_complete_flag = yes
-        add_estate_loyalty_modifier = {
-            estate = estate_raj_ministries
+		add_estate_loyalty_modifier = {
+			estate = estate_raj_ministries
 			desc = EST_VAL_AGENDA_DENIED
 			loyalty = -5
 			duration = 7300
-        }
-		raj_cohesion_change = { amount = -50 ministries_agenda = yes }
-    }
+		}
+		if = {
+			limit = { NOT = { tag = R38 } }
+			raj_cohesion_change = { amount = -50 ministries_agenda = yes }
+		}
+	}
 }
 
 #Reduce overextension
@@ -861,7 +891,7 @@ estate_raj_ministries_reduce_overextension = {
 	task_requirements = {
 		NOT = { overextension_percentage = 0.01 }
 	}
-    task_completed_effect = {
+	task_completed_effect = {
 		on_completed_agenda_effect = {
 			estate = estate_raj_ministries
 		}
@@ -870,19 +900,25 @@ estate_raj_ministries_reduce_overextension = {
 			loyalty = 10
 		}
 		add_adm_power = 50
-		raj_cohesion_change = { amount = 50 ministries_agenda = yes }
-    }
-        failing_effect = {
+		if = {
+			limit = { NOT = { tag = R38 } }
+			raj_cohesion_change = { amount = 50 ministries_agenda = yes }
+		}
+	}
+	failing_effect = {
 		on_failed_agenda_effect = yes
 		clr_auto_complete_flag = yes
-        add_estate_loyalty_modifier = {
-            estate = estate_raj_ministries
+		add_estate_loyalty_modifier = {
+			estate = estate_raj_ministries
 			desc = EST_VAL_AGENDA_DENIED
 			loyalty = -5
 			duration = 7300
-        }
-		raj_cohesion_change = { amount = -50 ministries_agenda = yes }
-    }
+		}
+		if = {
+			limit = { NOT = { tag = R38 } }
+			raj_cohesion_change = { amount = -50 ministries_agenda = yes }
+		}
+	}
 }
 
 #Hire/Fire advisor
@@ -903,7 +939,7 @@ estate_raj_ministries_hire_advisor = {
 		}
 		is_in_deficit = no
 	}
-    task_completed_effect = {
+	task_completed_effect = {
 		on_completed_agenda_effect = {
 			estate = estate_raj_ministries
 		}
@@ -911,19 +947,25 @@ estate_raj_ministries_hire_advisor = {
 			estate = estate_raj_ministries
 			loyalty = 10
 		}
-		raj_cohesion_change = { amount = 50 ministries_agenda = yes }
-    }
-        failing_effect = {
+		if = {
+			limit = { NOT = { tag = R38 } }
+			raj_cohesion_change = { amount = 50 ministries_agenda = yes }
+		}
+	}
+	failing_effect = {
 		on_failed_agenda_effect = yes
 		clr_auto_complete_flag = yes
-        add_estate_loyalty_modifier = {
-            estate = estate_raj_ministries
+		add_estate_loyalty_modifier = {
+			estate = estate_raj_ministries
 			desc = EST_VAL_AGENDA_DENIED
 			loyalty = -5
 			duration = 7300
-        }
-		raj_cohesion_change = { amount = -50 ministries_agenda = yes }
-    }
+		}
+		if = {
+			limit = { NOT = { tag = R38 } }
+			raj_cohesion_change = { amount = -50 ministries_agenda = yes }
+		}
+	}
 }
 
 estate_raj_ministries_fire_advisor = {
@@ -970,7 +1012,7 @@ estate_raj_ministries_fire_advisor = {
 			has_country_flag = just_fired_adm_advisor
 		}
 	}
-    task_completed_effect = {
+	task_completed_effect = {
 		on_completed_agenda_effect = {
 			estate = estate_raj_ministries
 		}
@@ -989,18 +1031,21 @@ estate_raj_ministries_fire_advisor = {
 		}
 		NOT = { has_country_flag = just_fired_adm_advisor }
 	}
-        failing_effect = {
+	failing_effect = {
 		on_failed_agenda_effect = yes
 		clr_auto_complete_flag = yes
-        add_estate_loyalty_modifier = {
-            estate = estate_raj_ministries
+		add_estate_loyalty_modifier = {
+			estate = estate_raj_ministries
 			desc = EST_VAL_AGENDA_DENIED
 			loyalty = -5
 			duration = 7300
-        }
+		}
 		clr_country_flag = need_to_fire_adm_advisor
-		raj_cohesion_change = { amount = -50 ministries_agenda = yes }
-    }
+		if = {
+			limit = { NOT = { tag = R38 } }
+			raj_cohesion_change = { amount = -50 ministries_agenda = yes }
+		}
+	}
 }
 
 #Reduce Inflation
@@ -1025,7 +1070,7 @@ estate_raj_ministries_restore_currency = {
 	task_requirements = {
 		NOT = { inflation = 5 }
 	}
-    task_completed_effect = {
+	task_completed_effect = {
 		on_completed_agenda_effect = {
 			estate = estate_raj_ministries
 		}
@@ -1037,19 +1082,25 @@ estate_raj_ministries_restore_currency = {
 			name = boom_economy
 			duration = 5475
 		}
-		raj_cohesion_change = { amount = 50 ministries_agenda = yes }
-    }
-        failing_effect = {
+		if = {
+			limit = { NOT = { tag = R38 } }
+			raj_cohesion_change = { amount = 50 ministries_agenda = yes }
+		}
+	}
+	failing_effect = {
 		on_failed_agenda_effect = yes
 		clr_auto_complete_flag = yes
-        add_estate_loyalty_modifier = {
-            estate = estate_raj_ministries
+		add_estate_loyalty_modifier = {
+			estate = estate_raj_ministries
 			desc = EST_VAL_AGENDA_DENIED
 			loyalty = -5
 			duration = 7300
-        }
-		raj_cohesion_change = { amount = -50 ministries_agenda = yes }
-    }
+		}
+		if = {
+			limit = { NOT = { tag = R38 } }
+			raj_cohesion_change = { amount = -50 ministries_agenda = yes }
+		}
+	}
 }
 
 #Recover Abysmal Inflation
@@ -1063,7 +1114,7 @@ estate_raj_ministries_recovery_from_hyperinflation = {
 	task_requirements = {
 		NOT = { inflation = 15 }
 	}
-    task_completed_effect = {
+	task_completed_effect = {
 		on_completed_agenda_effect = {
 			estate = estate_raj_ministries
 		}
@@ -1073,19 +1124,25 @@ estate_raj_ministries_recovery_from_hyperinflation = {
 		}
 		add_stability_or_adm_power = yes
 		add_inflation = -10
-		raj_cohesion_change = { amount = 50 ministries_agenda = yes }
-    }
-        failing_effect = {
+		if = {
+			limit = { NOT = { tag = R38 } }
+			raj_cohesion_change = { amount = 50 ministries_agenda = yes }
+		}
+	}
+	failing_effect = {
 		on_failed_agenda_effect = yes
 		clr_auto_complete_flag = yes
-        add_estate_loyalty_modifier = {
-            estate = estate_raj_ministries
+		add_estate_loyalty_modifier = {
+			estate = estate_raj_ministries
 			desc = EST_VAL_AGENDA_DENIED
 			loyalty = -5
 			duration = 7300
-        }
-		raj_cohesion_change = { amount = -50 ministries_agenda = yes }
-    }
+		}
+		if = {
+			limit = { NOT = { tag = R38 } }
+			raj_cohesion_change = { amount = -50 ministries_agenda = yes }
+		}
+	}
 }
 
 #Get a treasury
@@ -1126,19 +1183,25 @@ estate_raj_ministries_get_cash = {
 				loyalty = 15
 			}
 		}
-		raj_cohesion_change = { amount = 50 ministries_agenda = yes }
+		if = {
+			limit = { NOT = { tag = R38 } }
+			raj_cohesion_change = { amount = 50 ministries_agenda = yes }
+		}
 	}
-        failing_effect = {
+	failing_effect = {
 		on_failed_agenda_effect = yes
 		clr_auto_complete_flag = yes
-        add_estate_loyalty_modifier = {
-            estate = estate_raj_ministries
+		add_estate_loyalty_modifier = {
+			estate = estate_raj_ministries
 			desc = EST_VAL_AGENDA_DENIED
 			loyalty = -5
 			duration = 7300
-        }
-		raj_cohesion_change = { amount = -50 ministries_agenda = yes }
-    }
+		}
+		if = {
+			limit = { NOT = { tag = R38 } }
+			raj_cohesion_change = { amount = -50 ministries_agenda = yes }
+		}
+	}
 }
 
 #Pay off loans
@@ -1175,7 +1238,7 @@ estate_raj_ministries_pay_off_loans = {
 			is_bankrupt = no
 		}
 	}
-    task_completed_effect = {
+	task_completed_effect = {
 		on_completed_agenda_effect = {
 			estate = estate_raj_ministries
 		}
@@ -1188,19 +1251,25 @@ estate_raj_ministries_pay_off_loans = {
 			religion = root
 			discount = yes
 		}
-		raj_cohesion_change = { amount = 50 ministries_agenda = yes }
-    }
-        failing_effect = {
+		if = {
+			limit = { NOT = { tag = R38 } }
+			raj_cohesion_change = { amount = 50 ministries_agenda = yes }
+		}
+	}
+	failing_effect = {
 		on_failed_agenda_effect = yes
 		clr_auto_complete_flag = yes
-        add_estate_loyalty_modifier = {
-            estate = estate_raj_ministries
+		add_estate_loyalty_modifier = {
+			estate = estate_raj_ministries
 			desc = EST_VAL_AGENDA_DENIED
 			loyalty = -5
 			duration = 7300
-        }
-		raj_cohesion_change = { amount = -50 ministries_agenda = yes }
-    }
+		}
+		if = {
+			limit = { NOT = { tag = R38 } }
+			raj_cohesion_change = { amount = -50 ministries_agenda = yes }
+		}
+	}
 }
 
 #Improve Relations with X
@@ -1387,19 +1456,25 @@ estate_raj_ministries_relations_with_X = {
 			estate = estate_raj_ministries
 			loyalty = 15
 		}
-		raj_cohesion_change = { amount = 50 ministries_agenda = yes }
+		if = {
+			limit = { NOT = { tag = R38 } }
+			raj_cohesion_change = { amount = 50 ministries_agenda = yes }
+		}
 	}
-        failing_effect = {
+	failing_effect = {
 		on_failed_agenda_effect = yes
 		clr_auto_complete_flag = yes
-        add_estate_loyalty_modifier = {
-            estate = estate_raj_ministries
+		add_estate_loyalty_modifier = {
+			estate = estate_raj_ministries
 			desc = EST_VAL_AGENDA_DENIED
 			loyalty = -5
 			duration = 7300
-        }
-		raj_cohesion_change = { amount = -50 ministries_agenda = yes }
-    }
+		}
+		if = {
+			limit = { NOT = { tag = R38 } }
+			raj_cohesion_change = { amount = -50 ministries_agenda = yes }
+		}
+	}
 }
 
 estate_raj_ministries_reduce_liberty_desire_in_x = {
@@ -1447,19 +1522,25 @@ estate_raj_ministries_reduce_liberty_desire_in_x = {
 			loyalty = 10
 		}
 		add_dip_power = 50
-		raj_cohesion_change = { amount = 50 ministries_agenda = yes }
+		if = {
+			limit = { NOT = { tag = R38 } }
+			raj_cohesion_change = { amount = 50 ministries_agenda = yes }
+		}
 	}
-        failing_effect = {
+	failing_effect = {
 		on_failed_agenda_effect = yes
 		clr_auto_complete_flag = yes
-        add_estate_loyalty_modifier = {
-            estate = estate_raj_ministries
+		add_estate_loyalty_modifier = {
+			estate = estate_raj_ministries
 			desc = EST_VAL_AGENDA_DENIED
 			loyalty = -5
 			duration = 7300
-        }
-		raj_cohesion_change = { amount = -50 ministries_agenda = yes }
-    }
+		}
+		if = {
+			limit = { NOT = { tag = R38 } }
+			raj_cohesion_change = { amount = -50 ministries_agenda = yes }
+		}
+	}
 }
 
 #Prosperity
@@ -1493,12 +1574,12 @@ estate_raj_ministries_prosperity_in_x = {
 			NOT = { owned_by = root }
 		}
 	}
-    task_requirements = {
+	task_requirements = {
 		event_target:agenda_province = {
 			is_prosperous = yes
 		}
-    }
-    task_completed_effect = {
+	}
+	task_completed_effect = {
 		on_completed_agenda_effect = {
 			estate = estate_raj_ministries
 		}
@@ -1509,9 +1590,12 @@ estate_raj_ministries_prosperity_in_x = {
 		event_target:agenda_province = {
 			add_base_tax = 1
 		}
-		raj_cohesion_change = { amount = 50 ministries_agenda = yes }
-    }
-        failing_effect = {
+		if = {
+			limit = { NOT = { tag = R38 } }
+			raj_cohesion_change = { amount = 50 ministries_agenda = yes }
+		}
+	}
+	failing_effect = {
 		on_failed_agenda_effect = yes
 		clr_auto_complete_flag = yes
 		event_target:agenda_province = {
@@ -1523,14 +1607,17 @@ estate_raj_ministries_prosperity_in_x = {
 				}
 			}
 		}
-        add_estate_loyalty_modifier = {
-            estate = estate_raj_ministries
+		add_estate_loyalty_modifier = {
+			estate = estate_raj_ministries
 			desc = EST_VAL_AGENDA_DENIED
 			loyalty = -5
 			duration = 7300
-        }
-		raj_cohesion_change = { amount = -50 ministries_agenda = yes }
-    }
+		}
+		if = {
+			limit = { NOT = { tag = R38 } }
+			raj_cohesion_change = { amount = -50 ministries_agenda = yes }
+		}
+	}
 }
 
 #Remove devastation
@@ -1560,12 +1647,12 @@ estate_raj_ministries_remove_devastation_in_x = {
 			NOT = { owned_by = root }
 		}
 	}
-    task_requirements = {
+	task_requirements = {
 		event_target:agenda_province = {
 			NOT = { devastation = 1 }
 		}
-    }
-    task_completed_effect = {
+	}
+	task_completed_effect = {
 		on_completed_agenda_effect = {
 			estate = estate_raj_ministries
 		}
@@ -1580,9 +1667,12 @@ estate_raj_ministries_remove_devastation_in_x = {
 				add_prosperity = 50
 			}
 		}
-		raj_cohesion_change = { amount = 50 ministries_agenda = yes }
-    }
-    failing_effect = {
+		if = {
+			limit = { NOT = { tag = R38 } }
+			raj_cohesion_change = { amount = 50 ministries_agenda = yes }
+		}
+	}
+	failing_effect = {
 		on_failed_agenda_effect = yes
 		clr_auto_complete_flag = yes
 		event_target:agenda_province = {
@@ -1594,14 +1684,17 @@ estate_raj_ministries_remove_devastation_in_x = {
 				}
 			}
 		}
-        add_estate_loyalty_modifier = {
-            estate = estate_raj_ministries
+		add_estate_loyalty_modifier = {
+			estate = estate_raj_ministries
 			desc = EST_VAL_AGENDA_DENIED
 			loyalty = -5
 			duration = 7300
-        }
-		raj_cohesion_change = { amount = -50 ministries_agenda = yes }
-    }
+		}
+		if = {
+			limit = { NOT = { tag = R38 } }
+			raj_cohesion_change = { amount = -50 ministries_agenda = yes }
+		}
+	}
 }
 
 #Build Courthouse
@@ -1758,7 +1851,7 @@ estate_raj_ministries_build_courthouse_in_y = {
 			NOT = { owned_by = root }
 		}
 	}
-    task_requirements = {
+	task_requirements = {
 		if = {
 			limit = {
 				check_variable = {
@@ -1778,8 +1871,8 @@ estate_raj_ministries_build_courthouse_in_y = {
 				}
 			}
 		}
-    }
-    task_completed_effect = {
+	}
+	task_completed_effect = {
 		on_completed_agenda_effect = {
 			estate = estate_raj_ministries
 		}
@@ -1802,9 +1895,12 @@ estate_raj_ministries_build_courthouse_in_y = {
 				add_base_manpower = 1
 			}
 		}
-		raj_cohesion_change = { amount = 50 ministries_agenda = yes }
-    }
-        failing_effect = {
+		if = {
+			limit = { NOT = { tag = R38 } }
+			raj_cohesion_change = { amount = 50 ministries_agenda = yes }
+		}
+	}
+	failing_effect = {
 		on_failed_agenda_effect = yes
 		clr_auto_complete_flag = yes
 		event_target:agenda_province = {
@@ -1822,6 +1918,9 @@ estate_raj_ministries_build_courthouse_in_y = {
 			loyalty = -5
 			duration = 7300
 		}
-		raj_cohesion_change = { amount = -50 ministries_agenda = yes }
-    }
+		if = {
+			limit = { NOT = { tag = R38 } }
+			raj_cohesion_change = { amount = -50 ministries_agenda = yes }
+		}
+	}
 }

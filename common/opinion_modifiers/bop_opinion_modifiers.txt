@@ -1,4 +1,4 @@
-opinion_watery_tart = {
-	opinion = -75
-	yearly_decay = 1
-}
+# opinion_watery_tart = {
+# 	opinion = -75
+# 	yearly_decay = 1
+# }
