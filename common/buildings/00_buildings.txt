@@ -4171,6 +4171,7 @@ plantations = {
 		olive_oil
 		opium
 		palm_oil
+		maple_syrup #guardian; moved from farm estate
 	}
 	onmap = yes
 
@@ -4615,7 +4616,7 @@ farm_estate = {
 		tomato
 		beer
 		rum
-		maple_syrup
+		#maple_syrup; guardian; moved to plantations
 		cheese
 		maize
 		llama
