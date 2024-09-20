@@ -16202,6 +16202,9 @@ on_expanded_infrastructure = {
 	}
 }
 
+on_expanded_infrastructure_removed = {
+}
+
 #ROOT = province that was centralized in
 on_centralized_state = {
 	if = {

@@ -52,7 +52,7 @@ country_event = {
 			limit = { 6838 = { owned_by = ROOT } }
 			if = {
 				limit = { 6838 = { has_province_modifier = nomsyulhan_active_gateway } }
-				country_event = { id = nomsyulhan_gateway.40 } # Test Event
+				# country_event = { id = nomsyulhan_gateway.40 } # Test Event
 				# country_event = { id = nomsyulhan_gateway.70 } # Expedition UI Event
 			}
 			else_if = {

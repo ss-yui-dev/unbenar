@@ -232,14 +232,14 @@
  aristo4_desc: "With a higher understanding of our faith's laws and traditions we can honor the clerics correctly during state occasions.\nEnable §MPerform a Symbolic Gesture§W Estate Interaction."
  republik7: "Republican Routine"
  republik7_desc: "As a long standing republic, our government will more easily face and endure challenges."
- assimilation3: "Citizenship Through Service" #global_manpower_modifier = 0.15
+ assimilation3: "Citizenship Through Service"
  assimilation3_desc: "Men from newly integrated lands are incentivized to join our military force with a promise of citizenship at the end of contract."
- assimilation4: "Theological Tolerance" #religious_unity = 0.2
+ assimilation4: "Theological Tolerance"
  assimilation4_desc: "We don't really mind that the unfaithful live in our dominion, as long as they stay a minority."
- assimilation5: "Soothe Separatist Sentiment" #years_of_nationalism = -5
+ assimilation5: "Soothe Separatist Sentiment"
  assimilation5_desc: "Why rise up and revolt against our rule, when a mutually beneficial compromise can always be achieved?"
- assimilation6: "Community Cohesion" #monthly_reform_progress_modifier = 0.1,	stability_cost_modifier = -0.15
+ assimilation6: "Community Cohesion"
  assimilation6_desc: "What was up to yesterday only ours, is from today also yours. Our laws, our wealth, our institutions will serve us both and instill a sense of a shared community."
- assimilation7: "Dissect Defunct Doctrines" #shock_damage_received = -0.025
+ assimilation7: "Dissect Defunct Doctrines"
  assimilation7_desc: "Our new subjects may have lost their last war, but their military ideas weren't all awful. We will adapt the best of their past improvements into our own tactics."
- expan2: "Overseas Wars" #typo
+ expan2: "Overseas Wars"
