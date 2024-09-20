@@ -20676,7 +20676,7 @@ idea_variation_act_499 = {
 	}
 
 	diplomats = 1
-	diplomatic_upkeep = 10
+	diplomatic_upkeep = 4
 
 
 	ai_will_do = {
