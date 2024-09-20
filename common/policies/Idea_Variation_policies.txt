@@ -4169,6 +4169,7 @@ idea_variation_act_295 = {
 	}
 
 	reinforce_speed = 0.35
+	country_military_power = -2
 
 	ai_will_do = {
 		factor = 1
