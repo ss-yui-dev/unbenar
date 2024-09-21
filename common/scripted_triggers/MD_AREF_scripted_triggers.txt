@@ -308,16 +308,16 @@ st_md_has_60_city = {
 }
 
 st_md_build_fleet = {
-    num_of_light_ship = 10
     OR = {
+        num_of_light_ship = 10
         num_of_heavy_ship = 5
         num_of_galley = 20
     }
 }
 
 st_md_build_fleet_natives = {
-    num_of_light_ship = 2
     OR = {
+        num_of_light_ship = 2
         num_of_heavy_ship = 1
         num_of_galley = 4
     }

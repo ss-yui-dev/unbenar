@@ -356,14 +356,14 @@ guiTypes = {
 
 		OverlappingElementsBoxType = {
 			name = "modifiers"
-			backGround = ""
+			# backGround = ""
 			position = { x = 32 y = 427 }
 			size = { x = 320 y = 32 }
 			Orientation = "UPPER_LEFT"
-			horizontal = 1
+			# horizontal = 1
 			# format = left
 			spacing = 48
-			borderSize = { x = 32 y = 32 }
+			# borderSize = { x = 32 y = 32 }
 		}
 
 		guiButtonType = {
@@ -543,7 +543,7 @@ guiTypes = {
 
 			guiButtonType = {
 				name = "close_button"
-				position = { x = 478 y = -6 }
+				position = { x = 490 y = -18 }
 				quadTextureSprite ="GFX_closebutton2"
 				shortcut = "ESCAPE"
 				clicksound = close_window

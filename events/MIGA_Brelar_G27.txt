@@ -1,73 +1,73 @@
-
-namespace = MIGA_flavour_brelar
-
-country_event = {
-	id = MIGA_flavour_brelar.700
-	title = MIGA_flavour_brelar.700.t
-	desc = MIGA_flavour_brelar.700.desc
-	picture = ELECTION_REPUBLICAN_eventPicture
-
-	is_triggered_only = yes
-	fire_only_once = yes
-	
-	trigger = {
-		tag = G27
-	}
-	
-	option = {
-		name = MIGA_flavour_brelar.700.a
-		ai_chance = {
-			factor = 1
-		}
-		add_country_modifier = {
-			name = not_primitive_nation
-			duration = -1
-		}
-	}
-	
-	option = {
-		name = MIGA_flavour_brelar.700.b
-		ai_chance = {
-			factor = 0
-		}
-		define_ruler = {
-			adm = 2
-			dip = 3
-			mil = 3
-			age = 1500
-			name = "The Enchantress"
-			#female = yes #a trap lol
-		}
-		hidden_effect = {
-			set_ruler_flag = long_lived_ruler
-			set_ruler_flag = immortal_ruler
-			add_ruler_personality = mage_personality
-			add_ruler_personality = charismatic_negotiator_personality
-			add_ruler_personality = benevolent_personality
-			set_ruler_flag = enchantment_1
-			set_ruler_flag = enchantment_2
-			set_ruler_flag = enchantment_3
-			set_ruler_flag = illusion_1
-			set_ruler_flag = illusion_2
-			set_ruler_flag = illusion_3
-			set_ruler_flag = divination_1
-			set_ruler_flag = divination_2
-		}
-		hidden_effect = {
-			add_ruler_modifier = { name = miga_republic_rule_for_life duration = -1 hidden = yes }
-			add_ruler_modifier = { name = just_had_revolution_bringing_someone_to_power_timer duration = -1 hidden = yes }
-		}
-		add_country_modifier = {
-			name = not_primitive_nation
-			duration = -1
-		}
-	}
-	
-	option = {
-		name = MIGA_flavour_brelar.700.c
-		ai_chance = {
-			factor = 0
-		}
-		add_prestige = 5
-	}
-}
+#
+# namespace = MIGA_flavour_brelar
+#
+#country_event = {
+#	id = MIGA_flavour_brelar.700
+#	title = MIGA_flavour_brelar.700.t
+#	desc = MIGA_flavour_brelar.700.desc
+#	picture = ELECTION_REPUBLICAN_eventPicture
+#
+#	is_triggered_only = yes
+#	fire_only_once = yes
+#	
+#	trigger = {
+#		tag = G27
+#	}
+#	
+#	option = {
+#		name = MIGA_flavour_brelar.700.a
+#		ai_chance = {
+#			factor = 1
+#		}
+#		add_country_modifier = {
+#			name = not_primitive_nation
+#			duration = -1
+#		}
+#	}
+#	
+#	option = {
+#		name = MIGA_flavour_brelar.700.b
+#		ai_chance = {
+#			factor = 0
+#		}
+#		define_ruler = {
+#			adm = 2
+#			dip = 3
+#			mil = 3
+#			age = 1500
+#			name = "The Enchantress"
+#			#female = yes #a trap lol
+#		}
+#		hidden_effect = {
+#			set_ruler_flag = long_lived_ruler
+#			set_ruler_flag = immortal_ruler
+#			add_ruler_personality = mage_personality
+#			add_ruler_personality = charismatic_negotiator_personality
+#			add_ruler_personality = benevolent_personality
+#			set_ruler_flag = enchantment_1
+#			set_ruler_flag = enchantment_2
+#			set_ruler_flag = enchantment_3
+#			set_ruler_flag = illusion_1
+#			set_ruler_flag = illusion_2
+#			set_ruler_flag = illusion_3
+#			set_ruler_flag = divination_1
+#			set_ruler_flag = divination_2
+#		}
+#		hidden_effect = {
+#			add_ruler_modifier = { name = miga_republic_rule_for_life duration = -1 hidden = yes }
+#			add_ruler_modifier = { name = just_had_revolution_bringing_someone_to_power_timer duration = -1 hidden = yes }
+#		}
+#		add_country_modifier = {
+#			name = not_primitive_nation
+#			duration = -1
+#		}
+#	}
+#	
+#	option = {
+#		name = MIGA_flavour_brelar.700.c
+#		ai_chance = {
+#			factor = 0
+#		}
+#		add_prestige = 5
+#	}
+#}

@@ -770,147 +770,148 @@ country_event = {
 }
 
 ##Colonist stuck on settlement growth fix
-country_event = {
-	id = anb_miscevents.12
-	title = anb_miscevents.12.t
-	desc = anb_miscevents.12.d
-	picture = HUIZTILOPOCHTLI_eventPicture
+#love START
+# country_event = {
+# 	id = anb_miscevents.12
+# 	title = anb_miscevents.12.t
+# 	desc = anb_miscevents.12.d
+# 	picture = HUIZTILOPOCHTLI_eventPicture
 	
-	hidden = yes
+# 	hidden = yes
 	
-	mean_time_to_happen = {
-		months = 24
-	}
+# 	mean_time_to_happen = {
+# 		months = 24
+# 	}
 	
-	trigger = {
-		#has_country_flag = avoids_colonist_settlement_growth
-		num_of_colonists = 1
-		OR = {
-			NOT = { government = native }
-			has_institution = feudalism
-		}
-		OR = {
-			capital_scope = { has_colonist = yes } #This lower intensity and AI like putting their settler in the capital
-			AND = {
-				NOT = { colony = 1 }
-				any_owned_province = {
-					has_colonist = yes
-					is_city = yes
-				}
-			}
-		}
-		ai = yes
-		has_dlc = "Dharma"
-	}
+# 	trigger = {
+# 		#has_country_flag = avoids_colonist_settlement_growth
+# 		num_of_colonists = 1
+# 		OR = {
+# 			NOT = { government = native }
+# 			has_institution = feudalism
+# 		}
+# 		OR = {
+# 			capital_scope = { has_colonist = yes } #This lower intensity and AI like putting their settler in the capital
+# 			AND = {
+# 				NOT = { colony = 1 }
+# 				any_owned_province = {
+# 					has_colonist = yes
+# 					is_city = yes
+# 				}
+# 			}
+# 		}
+# 		ai = yes
+# 		has_dlc = "Dharma"
+# 	}
 	
-	option = {
-		name = debug.6.a
+# 	option = {
+# 		name = debug.6.a
 		
-		every_owned_province = {
-			limit = { has_colonist = yes is_city = yes }
-			cancel_construction = yes
-			owner = { add_treasury = 48 } # Refund for the settlement growth
-		}
-		if = {	#Create a colony and don't take their colonist away if they need it
-			limit = { 
-				any_owned_province = { is_city = yes has_empty_adjacent_province = yes } #Don't take away their colonists if they need to make a colony
-			}
-			random_owned_province = {
-				limit = { is_city = yes has_empty_adjacent_province = yes }
-				if = {
-					limit = { ROOT = { capital_scope = { OR = { superregion = escann_superregion region = west_forbidden_plains_region region = east_forbidden_plains_region } } } }
-					random_empty_neighbor_province = {
-						limit = {		#Don't colonize 0 0 0
-							development = 3
-							NOT = { has_province_modifier = cant_colonize }
-						}
-						create_colony = 400	#Boosted or this colony will finish slowly as the AI doesn't send their colonists
-					}
-				}
-				else = {
-					random_empty_neighbor_province = {
-						limit = {
-							development = 3
-							NOT = { has_province_modifier = cant_colonize }
-							NOT = { superregion = escann_superregion }
-							NOT = { region = west_forbidden_plains_region }	#No plains dwarves
-						}
-						create_colony = 300	#Boosted or this colony will finish slowly as the AI doesn't send their colonists
-					}
-				}
-			}
-		}
-		else_if = { #colonial frontiers stop AI doing colonizing with colonists, take them away
-			limit = {
-				any_owned_province = {
-					has_construction = siberian
-				}
-			}
-			add_country_modifier = {
-				name = dont_colonize_but_migrate
-				duration = 1825
-			}
-		}
-		else_if = { #Check if they still need their colonists
-			limit = {
-				NOT = { colony = 1 }
-				NOT = { any_owned_province = { is_colony = yes } }
-			}
-			if = { #turn off the colonist if all of escann is colonized
-				limit = {
-					capital_scope = {
-						superregion = escann_superregion
-					}
-				}
-				if = {
-					limit = { 
-						escann_superregion = {
-							is_city = yes
-							type = all
-						}
-					}
-					add_country_modifier = {	#Take away their colonist for the rest of the game
-						name = dont_colonize_but_migrate
-						duration = -1
-					}
-				}
-			}
-			else_if = { #Turn off the colonist if all the serpentspine is colonized
-				limit = {
-					capital_scope = {
-						continent = serpentspine
-					}
-				}
-				if = {
-					limit = { 
-						serpentspine = {
-							is_city = yes
-							type = all
-						}
-					}
-					add_country_modifier = {	#Take away their colonist for the rest of the game
-						name = dont_colonize_but_migrate
-						duration = -1
-					}
-				}
-			}
-			else_if = {
-				limit = { any_owned_province = { has_port = yes } }
-				add_country_modifier = {	#Take away their colonist a year
-					name = dont_colonize_temp
-					duration = 365
-				}
-			}
-			else = {
-				add_country_modifier = {	#Catch all to take away their colonist if they're not coastal
-					name = dont_colonize_but_migrate
-					duration = 1825
-				}
-			}
-		}
-	}
-}
-
+# 		every_owned_province = {
+# 			limit = { has_colonist = yes is_city = yes }
+# 			cancel_construction = yes
+# 			owner = { add_treasury = 48 } # Refund for the settlement growth
+# 		}
+# 		if = {	#Create a colony and don't take their colonist away if they need it
+# 			limit = { 
+# 				any_owned_province = { is_city = yes has_empty_adjacent_province = yes } #Don't take away their colonists if they need to make a colony
+# 			}
+# 			random_owned_province = {
+# 				limit = { is_city = yes has_empty_adjacent_province = yes }
+# 				if = {
+# 					limit = { ROOT = { capital_scope = { OR = { superregion = escann_superregion region = west_forbidden_plains_region region = east_forbidden_plains_region } } } }
+# 					random_empty_neighbor_province = {
+# 						limit = {		#Don't colonize 0 0 0
+# 							development = 3
+# 							NOT = { has_province_modifier = cant_colonize }
+# 						}
+# 						create_colony = 400	#Boosted or this colony will finish slowly as the AI doesn't send their colonists
+# 					}
+# 				}
+# 				else = {
+# 					random_empty_neighbor_province = {
+# 						limit = {
+# 							development = 3
+# 							NOT = { has_province_modifier = cant_colonize }
+# 							NOT = { superregion = escann_superregion }
+# 							NOT = { region = west_forbidden_plains_region }	#No plains dwarves
+# 						}
+# 						create_colony = 300	#Boosted or this colony will finish slowly as the AI doesn't send their colonists
+# 					}
+# 				}
+# 			}
+# 		}
+# 		else_if = { #colonial frontiers stop AI doing colonizing with colonists, take them away
+# 			limit = {
+# 				any_owned_province = {
+# 					has_construction = siberian
+# 				}
+# 			}
+# 			add_country_modifier = {
+# 				name = dont_colonize_but_migrate
+# 				duration = 1825
+# 			}
+# 		}
+# 		else_if = { #Check if they still need their colonists
+# 			limit = {
+# 				NOT = { colony = 1 }
+# 				NOT = { any_owned_province = { is_colony = yes } }
+# 			}
+# 			if = { #turn off the colonist if all of escann is colonized
+# 				limit = {
+# 					capital_scope = {
+# 						superregion = escann_superregion
+# 					}
+# 				}
+# 				if = {
+# 					limit = { 
+# 						escann_superregion = {
+# 							is_city = yes
+# 							type = all
+# 						}
+# 					}
+# 					add_country_modifier = {	#Take away their colonist for the rest of the game
+# 						name = dont_colonize_but_migrate
+# 						duration = -1
+# 					}
+# 				}
+# 			}
+# 			else_if = { #Turn off the colonist if all the serpentspine is colonized
+# 				limit = {
+# 					capital_scope = {
+# 						continent = serpentspine
+# 					}
+# 				}
+# 				if = {
+# 					limit = { 
+# 						serpentspine = {
+# 							is_city = yes
+# 							type = all
+# 						}
+# 					}
+# 					add_country_modifier = {	#Take away their colonist for the rest of the game
+# 						name = dont_colonize_but_migrate
+# 						duration = -1
+# 					}
+# 				}
+# 			}
+# 			else_if = {
+# 				limit = { any_owned_province = { has_port = yes } }
+# 				add_country_modifier = {	#Take away their colonist a year
+# 					name = dont_colonize_temp
+# 					duration = 365
+# 				}
+# 			}
+# 			else = {
+# 				add_country_modifier = {	#Catch all to take away their colonist if they're not coastal
+# 					name = dont_colonize_but_migrate
+# 					duration = 1825
+# 				}
+# 			}
+# 		}
+# 	}
+# }
+#love END
 ##Cleaning province
 province_event = {
 	id = anb_miscevents.13
@@ -1139,24 +1140,6 @@ country_event = {
 		trigger = { has_faction = adv_fortune_seekers }
 		add_adm_power = -25
 		add_country_modifier = { name = anb_adv_fortune_seekers_influence duration = 1825 }
-	}
-	option = {
-		name = anb_miscevents.19.d
-		trigger = { has_faction = tec_inventors }
-		add_adm_power = -25
-		add_country_modifier = { name = anb_tec_inventors_influence duration = 1825 }
-	}
-	option = {
-		name = anb_miscevents.19.e
-		trigger = { has_faction = tec_manufacturers }
-		add_dip_power = -25
-		add_country_modifier = { name = anb_tec_manufacturers_influence duration = 1825 }
-	}
-	option = {
-		name = anb_miscevents.19.f
-		trigger = { has_faction = tec_military_engineers }
-		add_mil_power = -25
-		add_country_modifier = { name = anb_tec_military_engineers_influence duration = 1825 }
 	}
 	option = {
 		name = anb_miscevents.19.g

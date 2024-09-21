@@ -15,7 +15,8 @@ age_of_revolutions = {
 		increase_autonomy_command = -2
 		debase_currency = -1
 		execute_rebel_acceptance_command = -10
-		seat_in_parliament = -3
+		automatic_seat_in_parliament = -2 #1.35
+		manual_seat_in_parliament = -2 #1.35
 		war_exhaustion = -1
 	}
 	
@@ -127,6 +128,9 @@ age_of_revolutions = {
 			modifier = {
 				liberty_desire_from_subject_development = -0.33
 			}
+			modifier = {
+				num_of_age_rewards = 1
+			}
 			ai_will_do = {
 				factor = 15
 				modifier = {
@@ -145,6 +149,7 @@ age_of_revolutions = {
 		ab_md_1700s_siege_blockades = {
 			modifier = {
 				siege_blockade_progress = 2
+				num_of_age_rewards = 1
 			}
 			ai_will_do = {
 				factor = 10
@@ -162,6 +167,7 @@ age_of_revolutions = {
 		ab_md_1700s_napoleonic_warfare = {
 			modifier = {
 				artillery_levels_available_vs_fort = 3
+				num_of_age_rewards = 1
 			}
 			ai_will_do = {
 				factor = 15
@@ -173,6 +179,7 @@ age_of_revolutions = {
 		ab_md_1700s_force_march = {
 			modifier = {
 				force_march_free = yes
+				num_of_age_rewards = 1
 			}
 			ai_will_do = {
 				factor = 10
@@ -184,6 +191,7 @@ age_of_revolutions = {
 		ab_md_1700s_more_ships_can_fire = {
 			modifier = {
 				global_naval_engagement_modifier = 0.20
+				num_of_age_rewards = 1
 			}
 			ai_will_do = {
 				factor = 10
@@ -195,6 +203,7 @@ age_of_revolutions = {
 		ab_md_1700s_no_distance_for_core = {
 			modifier = {
 				ignore_coring_distance = yes
+				num_of_age_rewards = 1
 			}
 			effect = {
 				se_md_refund_splendor = { flagName = has_had_conquest flagCategory = ignore_coring_distance }
@@ -216,6 +225,7 @@ age_of_revolutions = {
 		ab_md_1700s_backrow_artillery = {
 			modifier = {
 				backrow_artillery_damage = 0.20
+				num_of_age_rewards = 1
 			}
 			ai_will_do = {
 				factor = 15
@@ -230,6 +240,7 @@ age_of_revolutions = {
 				free_dip_policy = 1
 				free_mil_policy = 1
 				possible_policy = 1
+				num_of_age_rewards = 1
 			}
 			ai_will_do = {
 				factor = 10
@@ -242,6 +253,7 @@ age_of_revolutions = {
 			modifier = {
 				transport_attrition = -0.5
 				naval_attrition = -0.2
+				num_of_age_rewards = 1
 			}
 			ai_will_do = {
 				factor = 100
@@ -257,6 +269,7 @@ age_of_revolutions = {
 		ab_md_1700s_raise_taxes = {
 			modifier = {
 				global_tax_modifier = 0.15
+				num_of_age_rewards = 1
 			}
 			ai_will_do = {
 				factor = 10
@@ -268,6 +281,7 @@ age_of_revolutions = {
 		ab_md_1700s_imperial_projects = {
 			modifier = {
 				great_project_upgrade_cost = -0.30
+				num_of_age_rewards = 1
 			}
 			ai_will_do = {
 				factor = 10
@@ -279,6 +293,7 @@ age_of_revolutions = {
 		ab_md_1700s_additional_diplomat = {
 			modifier = {
 				diplomats = 1
+				num_of_age_rewards = 1
 			}
 			ai_will_do = {
 				factor = 10
@@ -291,6 +306,7 @@ age_of_revolutions = {
 			modifier = {
 				navy_tradition = 1
 				heavy_ship_cost = -0.15
+				num_of_age_rewards = 1
 			}
 			ai_will_do = {
 				factor = 100
@@ -306,6 +322,7 @@ age_of_revolutions = {
 		ab_md_1700s_quick_landings = {
 			modifier = {
 				movement_speed_onto_off_boat_modifier = 0.5
+				num_of_age_rewards = 1
 			}
 			ai_will_do = {
 				factor = 100
@@ -321,6 +338,7 @@ age_of_revolutions = {
 		ab_md_1700s_large_empire = {
 			modifier = {
 				governing_capacity = 200
+				num_of_age_rewards = 1
 			}
 			ai_will_do = {
 				factor = 10
@@ -332,6 +350,7 @@ age_of_revolutions = {
 		ab_md_1700s_tolerant_people = {
 			modifier = {
 				num_accepted_cultures = 2
+				num_of_age_rewards = 1
 			}
 			ai_will_do = {
 				factor = 10
@@ -344,6 +363,7 @@ age_of_revolutions = {
 			modifier = {
 				missionaries = 1
 				global_heathen_missionary_strength = 0.03
+				num_of_age_rewards = 1
 			}
 			ai_will_do = {
 				factor = 10
@@ -355,6 +375,7 @@ age_of_revolutions = {
 		ab_md_1700s_scientific_academies = {
 			modifier = {
 				global_institution_spread = 0.2
+				num_of_age_rewards = 1
 			}
 			ai_will_do = {
 				factor = 10

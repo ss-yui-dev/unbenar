@@ -30,9 +30,9 @@
  estate_artificer_main_estate: "Great Artificers Estate"
  estate_artificer_main_estate_desc: ""
 
- estate_monstrous_tribes_land_rights_1:0 "$ESTATE_NAME$ Land Rights"
+ estate_monstrous_tribes_land_rights_1:0 "$ESTATE_NAME$ Land Rights (+)"
  estate_monstrous_tribes_land_rights_1_desc:0 "The strength of the [Root.GetMonstrous TribesName] is the backbone of [Root.GetUsableName]. Granting them more land will only feed our own strength and allow us to grow even mightier in future!"
- estate_monstrous_tribes_land_rights_2:0 "$ESTATE_NAME$ Land Rights"
+ estate_monstrous_tribes_land_rights_2:0 "$ESTATE_NAME$ Land Rights (+)"
  estate_monstrous_tribes_land_rights_2_desc:0 "The strength of the [Root.GetMonstrous TribesName] is the backbone of [Root.GetUsableName]. Granting them more land will only feed our own strength and allow us to grow even mightier in future!"
- estate_monstrous_tribes_land_rights_3:0 "$ESTATE_NAME$ Land Rights"
+ estate_monstrous_tribes_land_rights_3:0 "$ESTATE_NAME$ Land Rights (+)"
  estate_monstrous_tribes_land_rights_3_desc:0 "The strength of the [Root.GetMonstrous TribesName] is the backbone of [Root.GetUsableName]. Granting them more land will only feed our own strength and allow us to grow even mightier in future!"

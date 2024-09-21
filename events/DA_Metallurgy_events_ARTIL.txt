@@ -1934,8 +1934,8 @@ country_event = {
 				DA_power.Rune = 0.00
 				DA_fire.Rune = 0.00
 				DA_shock.Rune = 0.00
-				DA_fire.Rune_rec = -0.00
-				DA_shock.Rune_rec = -0.00
+				# DA_fire.Rune_rec = -0.00
+				# DA_shock.Rune_rec = -0.00
 			#	DA_Unique = none
 			}
 		}

@@ -1,385 +1,386 @@
-country_decisions = {
-
-	MIGA_A99_fertility_potions = {
-		major = yes
-		
-		potential = {
-			OR = {
-				tag = Z38
-				tag = A79
-			}
-			NOT = { mission_completed = A99_fertility_potions }
-		}
-		
-		allow = {
-			OR = {
-				ruler_has_personality = infertile_personality
-				has_heir = no
-			}
-		}
-		
-		effect = {
-			country_event = {
-				id = flavor_varaine.100
-			}
-			
-			mission_reward_artifice_points_2 = yes
-			hidden_effect = {
-				complete_mission = A99_fertility_potions
-			}
-		}
-	}
-	
-	MIGA_A99_medicinal_potions = {
-		major = yes
-		
-		potential = {
-			OR = {
-				tag = Z38
-				tag = A79
-			}
-			mission_completed = A99_fertility_potions
-			NOT = { mission_completed = A99_medicinal_potions }
-		}
-		
-		allow = {
-			OR = {
-				ruler_age = 65
-				NOT = {
-					manpower_percentage = 0.1
-				}
-			}
-		}
-		
-		effect = {
-			country_event = {
-				id = flavor_varaine.200
-			}
-			
-			mission_reward_artifice_points_2 = yes
-			hidden_effect = {
-				complete_mission = A99_medicinal_potions
-			}
-		}
-	}
-	
-	MIGA_A99_mana_potions = {
-		major = yes
-		
-		potential = {
-			OR = {
-				tag = Z38
-				tag = A79
-			}
-			mission_completed = A99_medicinal_potions
-			NOT = { mission_completed = A99_mana_potions }
-		}
-		
-		allow = {
-			OR = {
-				ruler_has_mage_personality = yes
-				any_owned_province = {
-					trade_goods = damestear
-				}
-			}
-		}
-		
-		effect = {
-			country_event = {
-				id = flavor_varaine.300
-			}
-			
-			mission_reward_artifice_points_2 = yes
-			hidden_effect = {
-				complete_mission = A99_mana_potions
-			}
-		}
-	}
-	
-	MIGA_A99_trollskin_potion = {
-		major = yes
-		
-		potential = {
-			OR = {
-				tag = Z38
-				tag = A79
-			}
-			mission_completed = A99_mana_potions
-			NOT = { mission_completed = A99_trollskin_potion }
-		}
-		
-		allow = {
-			custom_trigger_tooltip = {
-				tooltip = A99_trollskin_potion_tt
-				OR = {
-					any_owned_province = {
-						has_any_troll_pop_trigger = yes
-					}
-					any_ally = {
-						any_owned_province = {
-							has_any_troll_pop_trigger = yes
-						}
-					}
-					any_subject_country = {
-						any_owned_province = {
-							has_any_troll_pop_trigger = yes
-						}
-					}
-				}
-			}
-		}
-		
-		effect = {
-			medium_increase_of_troll_tolerance_effect = yes
-			country_event = {
-				id = flavor_varaine.400
-			}
-			
-			mission_reward_artifice_points_2 = yes
-			hidden_effect = {
-				complete_mission = A99_trollskin_potion
-			}
-		}
-	}
-	
-	MIGA_A99_flight_potion = {
-		major = yes
-		
-		potential = {
-			OR = {
-				tag = Z38
-				tag = A79
-			}
-			mission_completed = A99_trollskin_potion
-			NOT = { mission_completed = A99_flight_potion }
-		}
-		
-		allow = {
-			custom_trigger_tooltip = {
-				tooltip = A99_flight_potion_tt
-				OR = {
-					any_owned_province = {
-						has_any_harpy_pop_trigger = yes
-					}
-					any_ally = {
-						any_owned_province = {
-							has_any_harpy_pop_trigger = yes
-						}
-					}
-					any_subject_country = {
-						any_owned_province = {
-							has_any_harpy_pop_trigger = yes
-						}
-					}
-				}
-			}
-		}
-		
-		effect = {
-			medium_increase_of_harpy_tolerance_effect = yes
-			country_event = {
-				id = flavor_varaine.500
-			}
-			
-			mission_reward_artifice_points_2 = yes
-			hidden_effect = {
-				complete_mission = A99_flight_potion
-			}
-		}
-	}
-	
-	MIGA_A99_potion_of_giants_strength = {
-		major = yes
-		
-		potential = {
-			OR = {
-				tag = Z38
-				tag = A79
-			}
-			mission_completed = A99_flight_potion
-			NOT = { mission_completed = A99_potion_of_giants_strength }
-		}
-		
-		allow = {
-			custom_trigger_tooltip = {
-				tooltip = A99_potion_of_giants_strength_tt
-				OR = {
-					any_owned_province = {
-						has_any_ogre_pop_trigger = yes
-					}
-					any_ally = {
-						any_owned_province = {
-							has_any_ogre_pop_trigger = yes
-						}
-					}
-					any_subject_country = {
-						any_owned_province = {
-							has_any_ogre_pop_trigger = yes
-						}
-					}
-				}
-			}
-		}
-		
-		effect = {
-			medium_increase_of_ogre_tolerance_effect = yes
-			country_event = {
-				id = flavor_varaine.600
-			}
-			
-			mission_reward_artifice_points_2 = yes
-			hidden_effect = {
-				complete_mission = A99_potion_of_giants_strength
-			}
-		}
-	}
-	
-	MIGA_A99_water_breathing_potion = {
-		major = yes
-		
-		potential = {
-			OR = {
-				tag = Z38
-				tag = A79
-			}
-			mission_completed = A99_potion_of_giants_strength
-			NOT = { mission_completed = A99_water_breathing_potion }
-		}
-		
-		allow = {
-			always = yes
-		}
-		
-		effect = {
-			# country_event = {
-			# 	id = flavor_varaine.700
-			# }
-			custom_tooltip = A99_unlocked_invention_water_potions
-			hidden_effect = {
-				set_country_flag = unlocked_artifice_invention_water_potion
-			}
-			
-			mission_reward_artifice_points_2 = yes
-			hidden_effect = {
-				complete_mission = A99_water_breathing_potion
-			}
-		}
-	}
-	
-	MIGA_A99_fire_breath_potion = {
-		major = yes
-		
-		potential = {
-			OR = {
-				tag = Z38
-				tag = A79
-			}
-			mission_completed = A99_water_breathing_potion
-			NOT = { mission_completed = A99_fire_breath_potion }
-		}
-		
-		allow = {
-			OR = {
-				development_in_provinces = {
-					value = 100
-					superregion = yanshen_superregion
-				}
-				any_known_country = {
-					development_in_provinces = {
-						value = 100
-						superregion = yanshen_superregion
-					}
-					has_opinion = {
-						who = ROOT
-						value = 170
-					}
-				}
-			}
-		}
-		
-		effect = {
-			medium_increase_of_kobold_tolerance_effect = yes
-			country_event = {
-				id = flavor_varaine.800
-			}
-			
-			mission_reward_artifice_points_2 = yes
-			hidden_effect = {
-				complete_mission = A99_fire_breath_potion
-			}
-		}
-	}
-	
-	MIGA_A99_the_ultimate_potion = {
-		major = yes
-		
-		potential = {
-			OR = {
-				tag = Z38
-				tag = A79
-			}
-			mission_completed = A99_fire_breath_potion
-			NOT = { mission_completed = A99_the_ultimate_potion }
-		}
-		
-		allow = {
-			if = {
-				limit = {
-					has_dlc = "Rule Britannia"
-				}
-				innovativeness = 100
-			}
-			estate_loyalty = {
-				estate = estate_artificers
-				loyalty = 75
-			}
-			custom_trigger_tooltip = {
-				tooltip = unlocked_artifice_invention_fertility_potion_tt
-				has_country_flag = unlocked_artifice_invention_fertility_potion
-			}
-			custom_trigger_tooltip = {
-				tooltip = unlocked_artifice_invention_medicinal_potion_tt
-				has_country_flag = unlocked_artifice_invention_medicinal_potion
-			}
-			custom_trigger_tooltip = {
-				tooltip = unlocked_artifice_invention_mana_potion_tt
-				has_country_flag = unlocked_artifice_invention_mana_potion
-			}
-			custom_trigger_tooltip = {
-				tooltip = unlocked_artifice_invention_trollskin_potion_tt
-				has_country_flag = unlocked_artifice_invention_trollskin_potion
-			}
-			custom_trigger_tooltip = {
-				tooltip = unlocked_artifice_invention_flight_potion_tt
-				has_country_flag = unlocked_artifice_invention_flight_potion
-			}
-			custom_trigger_tooltip = {
-				tooltip = unlocked_artifice_invention_strength_potion_tt
-				has_country_flag = unlocked_artifice_invention_strength_potion
-			}
-			custom_trigger_tooltip = {
-				tooltip = unlocked_artifice_invention_water_potion_tt
-				has_country_flag = unlocked_artifice_invention_water_potion
-			}
-			custom_trigger_tooltip = {
-				tooltip = unlocked_artifice_invention_fire_potion_tt
-				has_country_flag = unlocked_artifice_invention_fire_potion
-			}
-		}
-		
-		effect = {
-			add_country_modifier = {
-				name = A99_world_renowed_potions
-				duration = -1
-			}
-			country_event = {
-				id = flavor_varaine.900
-			}
-			
-			mission_reward_artifice_points_4 = yes
-			hidden_effect = {
-				complete_mission = A99_the_ultimate_potion
-			}
-		}
-	}
-}
+# guardian; varaine portions for hierarchy and kobold formable - miga bottom text
+#country_decisions = {
+#
+#	MIGA_A99_fertility_potions = {
+#		major = yes
+#		
+#		potential = {
+#			OR = {
+#				tag = Z38
+#				tag = A79
+#			}
+#			NOT = { mission_completed = A99_fertility_potions }
+#		}
+#		
+#		allow = {
+#			OR = {
+#				ruler_has_personality = infertile_personality
+#				has_heir = no
+#			}
+#		}
+#		
+#		effect = {
+#			country_event = {
+#				id = flavor_varaine.100
+#			}
+#			
+#			mission_reward_artifice_points_2 = yes
+#			hidden_effect = {
+#				complete_mission = A99_fertility_potions
+#			}
+#		}
+#	}
+#	
+#	MIGA_A99_medicinal_potions = {
+#		major = yes
+#		
+#		potential = {
+#			OR = {
+#				tag = Z38
+#				tag = A79
+#			}
+#			mission_completed = A99_fertility_potions
+#			NOT = { mission_completed = A99_medicinal_potions }
+#		}
+#		
+#		allow = {
+#			OR = {
+#				ruler_age = 65
+#				NOT = {
+#					manpower_percentage = 0.1
+#				}
+#			}
+#		}
+#		
+#		effect = {
+#			country_event = {
+#				id = flavor_varaine.200
+#			}
+#			
+#			mission_reward_artifice_points_2 = yes
+#			hidden_effect = {
+#				complete_mission = A99_medicinal_potions
+#			}
+#		}
+#	}
+#	
+#	MIGA_A99_mana_potions = {
+#		major = yes
+#		
+#		potential = {
+#			OR = {
+#				tag = Z38
+#				tag = A79
+#			}
+#			mission_completed = A99_medicinal_potions
+#			NOT = { mission_completed = A99_mana_potions }
+#		}
+#		
+#		allow = {
+#			OR = {
+#				ruler_has_mage_personality = yes
+#				any_owned_province = {
+#					trade_goods = damestear
+#				}
+#			}
+#		}
+#		
+#		effect = {
+#			country_event = {
+#				id = flavor_varaine.300
+#			}
+#			
+#			mission_reward_artifice_points_2 = yes
+#			hidden_effect = {
+#				complete_mission = A99_mana_potions
+#			}
+#		}
+#	}
+#	
+#	MIGA_A99_trollskin_potion = {
+#		major = yes
+#		
+#		potential = {
+#			OR = {
+#				tag = Z38
+#				tag = A79
+#			}
+#			mission_completed = A99_mana_potions
+#			NOT = { mission_completed = A99_trollskin_potion }
+#		}
+#		
+#		allow = {
+#			custom_trigger_tooltip = {
+#				tooltip = A99_trollskin_potion_tt
+#				OR = {
+#					any_owned_province = {
+#						has_any_troll_pop_trigger = yes
+#					}
+#					any_ally = {
+#						any_owned_province = {
+#							has_any_troll_pop_trigger = yes
+#						}
+#					}
+#					any_subject_country = {
+#						any_owned_province = {
+#							has_any_troll_pop_trigger = yes
+#						}
+#					}
+#				}
+#			}
+#		}
+#		
+#		effect = {
+#			medium_increase_of_troll_tolerance_effect = yes
+#			country_event = {
+#				id = flavor_varaine.400
+#			}
+#			
+#			mission_reward_artifice_points_2 = yes
+#			hidden_effect = {
+#				complete_mission = A99_trollskin_potion
+#			}
+#		}
+#	}
+#	
+#	MIGA_A99_flight_potion = {
+#		major = yes
+#		
+#		potential = {
+#			OR = {
+#				tag = Z38
+#				tag = A79
+#			}
+#			mission_completed = A99_trollskin_potion
+#			NOT = { mission_completed = A99_flight_potion }
+#		}
+#		
+#		allow = {
+#			custom_trigger_tooltip = {
+#				tooltip = A99_flight_potion_tt
+#				OR = {
+#					any_owned_province = {
+#						has_any_harpy_pop_trigger = yes
+#					}
+#					any_ally = {
+#						any_owned_province = {
+#							has_any_harpy_pop_trigger = yes
+#						}
+#					}
+#					any_subject_country = {
+#						any_owned_province = {
+#							has_any_harpy_pop_trigger = yes
+#						}
+#					}
+#				}
+#			}
+#		}
+#		
+#		effect = {
+#			medium_increase_of_harpy_tolerance_effect = yes
+#			country_event = {
+#				id = flavor_varaine.500
+#			}
+#			
+#			mission_reward_artifice_points_2 = yes
+#			hidden_effect = {
+#				complete_mission = A99_flight_potion
+#			}
+#		}
+#	}
+#	
+#	MIGA_A99_potion_of_giants_strength = {
+#		major = yes
+#		
+#		potential = {
+#			OR = {
+#				tag = Z38
+#				tag = A79
+#			}
+#			mission_completed = A99_flight_potion
+#			NOT = { mission_completed = A99_potion_of_giants_strength }
+#		}
+#		
+#		allow = {
+#			custom_trigger_tooltip = {
+#				tooltip = A99_potion_of_giants_strength_tt
+#				OR = {
+#					any_owned_province = {
+#						has_any_ogre_pop_trigger = yes
+#					}
+#					any_ally = {
+#						any_owned_province = {
+#							has_any_ogre_pop_trigger = yes
+#						}
+#					}
+#					any_subject_country = {
+#						any_owned_province = {
+#							has_any_ogre_pop_trigger = yes
+#						}
+#					}
+#				}
+#			}
+#		}
+#		
+#		effect = {
+#			medium_increase_of_ogre_tolerance_effect = yes
+#			country_event = {
+#				id = flavor_varaine.600
+#			}
+#			
+#			mission_reward_artifice_points_2 = yes
+#			hidden_effect = {
+#				complete_mission = A99_potion_of_giants_strength
+#			}
+#		}
+#	}
+#	
+#	MIGA_A99_water_breathing_potion = {
+#		major = yes
+#		
+#		potential = {
+#			OR = {
+#				tag = Z38
+#				tag = A79
+#			}
+#			mission_completed = A99_potion_of_giants_strength
+#			NOT = { mission_completed = A99_water_breathing_potion }
+#		}
+#		
+#		allow = {
+#			always = yes
+#		}
+#		
+#		effect = {
+#			# country_event = {
+#			# 	id = flavor_varaine.700
+#			# }
+#			custom_tooltip = A99_unlocked_invention_water_potions
+#			hidden_effect = {
+#				set_country_flag = unlocked_artifice_invention_water_potion
+#			}
+#			
+#			mission_reward_artifice_points_2 = yes
+#			hidden_effect = {
+#				complete_mission = A99_water_breathing_potion
+#			}
+#		}
+#	}
+#	
+#	MIGA_A99_fire_breath_potion = {
+#		major = yes
+#		
+#		potential = {
+#			OR = {
+#				tag = Z38
+#				tag = A79
+#			}
+#			mission_completed = A99_water_breathing_potion
+#			NOT = { mission_completed = A99_fire_breath_potion }
+#		}
+#		
+#		allow = {
+#			OR = {
+#				development_in_provinces = {
+#					value = 100
+#					superregion = yanshen_superregion
+#				}
+#				any_known_country = {
+#					development_in_provinces = {
+#						value = 100
+#						superregion = yanshen_superregion
+#					}
+#					has_opinion = {
+#						who = ROOT
+#						value = 170
+#					}
+#				}
+#			}
+#		}
+#		
+#		effect = {
+#			medium_increase_of_kobold_tolerance_effect = yes
+#			country_event = {
+#				id = flavor_varaine.800
+#			}
+#			
+#			mission_reward_artifice_points_2 = yes
+#			hidden_effect = {
+#				complete_mission = A99_fire_breath_potion
+#			}
+#		}
+#	}
+#	
+#	MIGA_A99_the_ultimate_potion = {
+#		major = yes
+#		
+#		potential = {
+#			OR = {
+#				tag = Z38
+#				tag = A79
+#			}
+#			mission_completed = A99_fire_breath_potion
+#			NOT = { mission_completed = A99_the_ultimate_potion }
+#		}
+#		
+#		allow = {
+#			if = {
+#				limit = {
+#					has_dlc = "Rule Britannia"
+#				}
+#				innovativeness = 100
+#			}
+#			estate_loyalty = {
+#				estate = estate_artificers
+#				loyalty = 75
+#			}
+#			custom_trigger_tooltip = {
+#				tooltip = unlocked_artifice_invention_fertility_potion_tt
+#				has_country_flag = unlocked_artifice_invention_fertility_potion
+#			}
+#			custom_trigger_tooltip = {
+#				tooltip = unlocked_artifice_invention_medicinal_potion_tt
+#				has_country_flag = unlocked_artifice_invention_medicinal_potion
+#			}
+#			custom_trigger_tooltip = {
+#				tooltip = unlocked_artifice_invention_mana_potion_tt
+#				has_country_flag = unlocked_artifice_invention_mana_potion
+#			}
+#			custom_trigger_tooltip = {
+#				tooltip = unlocked_artifice_invention_trollskin_potion_tt
+#				has_country_flag = unlocked_artifice_invention_trollskin_potion
+#			}
+#			custom_trigger_tooltip = {
+#				tooltip = unlocked_artifice_invention_flight_potion_tt
+#				has_country_flag = unlocked_artifice_invention_flight_potion
+#			}
+#			custom_trigger_tooltip = {
+#				tooltip = unlocked_artifice_invention_strength_potion_tt
+#				has_country_flag = unlocked_artifice_invention_strength_potion
+#			}
+#			custom_trigger_tooltip = {
+#				tooltip = unlocked_artifice_invention_water_potion_tt
+#				has_country_flag = unlocked_artifice_invention_water_potion
+#			}
+#			custom_trigger_tooltip = {
+#				tooltip = unlocked_artifice_invention_fire_potion_tt
+#				has_country_flag = unlocked_artifice_invention_fire_potion
+#			}
+#		}
+#		
+#		effect = {
+#			add_country_modifier = {
+#				name = A99_world_renowed_potions
+#				duration = -1
+#			}
+#			country_event = {
+#				id = flavor_varaine.900
+#			}
+#			
+#			mission_reward_artifice_points_4 = yes
+#			hidden_effect = {
+#				complete_mission = A99_the_ultimate_potion
+#			}
+#		}
+#	}
+#}

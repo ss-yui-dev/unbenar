@@ -90,7 +90,7 @@ spriteTypes = {
 		texturefile = "gfx/interface/ages/ab_justified_wars.dds"
 	}
 	spriteType = {
-		name = "GFX_ab_md_1400s_transfer_vassal_wargoal"
+		name = "GFX_ab_transfer_vassal_wargoal"
 		texturefile = "gfx/interface/ages/ab_transfer_vassal_wargoal.dds"
 	}
 	spriteType = {
@@ -269,10 +269,10 @@ spriteTypes = {
 		name = "GFX_ab_md_1600s_divine_right"
 		texturefile = "gfx/interface/ages/ab_md_divine_right.dds"
 	}
-	spriteType = {
-		name = "GFX_ab_md_1600s_colony_boost_development"
-		texturefile = "gfx/interface/ages/ab_colony_boost_development.dds"
-	}
+	# spriteType = {
+	# 	name = "GFX_ab_md_1600s_colony_boost_development"
+	# 	texturefile = "gfx/interface/ages/ab_colony_boost_development.dds"
+	# }
 	spriteType = {
 		name = "GFX_ab_md_1600s_religious_refugees"
 		texturefile = "gfx/interface/ages/ab_md_global_colonial_growth.dds"

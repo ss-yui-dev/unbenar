@@ -88,6 +88,7 @@ fort_maintence_age_1 = {
 		always = yes
 	}
 	fort_maintenance_modifier = -1
+	garrison_damage = 1 #guardian
 }
 
 ii_bankruptcy = {

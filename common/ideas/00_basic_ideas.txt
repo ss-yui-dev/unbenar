@@ -7,7 +7,6 @@
 # ROOT = country picking the idea
 # groups set to colonial=yes will be higher prioritized by the AI when spending power
 
-
 #ideas in the group can have effect = {} and removed_effect = {}
 
 aristocracy_ideas = {
@@ -1249,11 +1248,11 @@ exploration_ideas = {
 			factor = 2.0
 			num_of_ports = 20
 		}
-		# modifier = {	#sun elves wanting to reclaim homeland
-		# 	factor = 1000
-		# 	primary_culture = sun_elf
-		# 	num_of_ports = 5
-		# }
+#		modifier = {	#sun elves wanting to reclaim homeland
+#			factor = 1000
+#			primary_culture = sun_elf
+#			num_of_ports = 5
+#		}
 		# modifier = {
 		# 	factor = 20 #de facto x2
 		# 	culture_group = kheionai_ruinborn_elf
@@ -1851,7 +1850,6 @@ humanist_ideas = {
 		tolerance_heretic = 4
 		tolerance_heathen = 4
 		can_not_build_missionaries = yes
-		may_not_convert_territories = yes
 	}
 	indirect_rule = {
 		years_of_nationalism = -10
@@ -2689,7 +2687,7 @@ society_idea = {
 	ai_will_do = {
 		factor = 1
 		modifier = {
-			factor = 2
+			factor = 1.2
 			has_advisor = yes
 		}
 		modifier = {
@@ -2705,7 +2703,7 @@ society_idea = {
 			num_accepted_cultures = 3
 		}
 		modifier = {
-			factor = 10
+			factor = 1.5
 			AND = {
 				has_adm_advisor = yes
 				has_dip_advisor = yes
@@ -5355,7 +5353,7 @@ health_ideas = {
 		development_cost = -0.075
 	}
 	health_ideas_4 = {
-		monarch_lifespan = 5
+		monarch_lifespan = 0.5
 		global_autonomy = -0.05
 	}
 	health_ideas_5 = {
@@ -5748,7 +5746,7 @@ zentra0 = {
 		}
 	}
 	bonus = {
-		max_absolutism_effect = 0.1
+		max_absolutism = 10
 		# global_allowed_num_of_manufactories = 1
 	}
 	zentra1 = {
@@ -5787,19 +5785,19 @@ zentra0 = {
 			}
 		}
 		modifier = {
-			factor = 1.2
+			factor = 1.1
 			NOT = { num_of_cities = 8 }
 		}
 		modifier = {
-			factor = 0
+			factor = 0.75
 			total_development = 500
 		}
 		modifier = {
-			factor = 1.2
+			factor = 1.1
 			personality = ai_balanced
 		}
 		modifier = {
-			factor = 2
+			factor = 1.1
 			NOT = {
 				land_forcelimit = 15
 			}

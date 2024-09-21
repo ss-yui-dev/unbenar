@@ -1,6 +1,6 @@
 
 MIGA_elven_forest = {
-	local_development_cost = -0.15
+	local_development_cost = -0.05
 }
 
 ibevar_ai_boost = {
@@ -11,6 +11,13 @@ ibevar_ai_boost = {
 	global_prosperity_growth = 0.25
 	global_monthly_devastation = -0.1
 }
+
+#love
+venail_ai_boost = {
+	global_tax_income = 48
+	global_colonial_growth = 20
+}
+#love
 
 ibevar_arcane_knights = {
 	shock_damage = 0.1

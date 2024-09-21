@@ -22,7 +22,7 @@ increase_force_limit_from_colony = {
 	}
 
 	modifier_subject = {
-		land_forcelimit = -5
+		land_forcelimit_modifier = -0.2 #love
 		liberty_desire = 10
 	}
 }

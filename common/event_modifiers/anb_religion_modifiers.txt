@@ -313,12 +313,19 @@ dookan_omen_of_destiny = {
 	yearly_army_professionalism = -0.01
 	church_power_modifier = -0.25
 }
-dookan_omen_of_calamity = {
+dookan_omen_of_calamity = {			#reduced debuff and revard after greentide (debuff was too easy to overcome)
 	global_unrest = 7 #love
 	discipline = -0.05 #love
 	manpower_recovery_speed = -0.05 #love
 	church_power_modifier = -0.25
 	global_tax_modifier = -0.05 #love
+}
+dookan_omen_of_calamity_greentide = { #guardian; old calamity effect during age of greentide
+	global_unrest = 16
+	discipline = -0.1
+	manpower_recovery_speed = -0.1
+	church_power_modifier = -0.25
+	global_tax_modifier = -0.1
 }
 dookan_no_omen = {
 	prestige = -1
@@ -563,6 +570,7 @@ trial_of_the_reforged_chain = {
 	global_unrest = -2
 	stability_cost_modifier = -0.2
 }
+
 
 # Harmonizing religions
 harmonized_cannorian = {
@@ -2681,4 +2689,31 @@ shadow_pact_golem_mod = {
 shadow_pact_vulture_mod = {
 	movement_speed = 0.1
 	loot_amount = 0.5
+}
+
+#Feast of the Gods
+feast_gods_resisting_the_hunger = {
+	yearly_doom_reduction = 1
+}
+
+feast_gods_voracious_ruler = {
+	yearly_doom_reduction = -1
+}
+
+feast_gods_ravenous_soldiers = {
+	global_unrest = 3
+}
+
+feast_gods_sponsored_ogre_terrorizers = {
+	global_unrest = -2
+	yearly_doom_reduction = 1
+}
+
+feast_gods_hungry_populace = {
+	local_unrest = 2
+	local_production_efficiency = -0.25
+}
+
+feast_gods_hopeful_populace = {
+	yearly_doom_reduction = 1
 }

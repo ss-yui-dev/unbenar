@@ -1,0 +1,5703 @@
+
+wei_suo_system_reform_forcelimit_lvl_3_modifier = {
+	regiment_recruit_speed = -0.5
+}
+
+wei_suo_system_reform_manpower_lvl_3_modifier = {
+	garrison_growth = 0.3
+}
+
+DA_power.INFAN.-0 = {
+
+}
+DA_power.INFAN.-0.0 = {
+	
+}
+DA_power.INFAN.-0.00 = {
+	
+}
+DA_power.INFAN.-0.01 = {
+	is_musketeer_modifier = yes
+	infantry_power = -0.01
+}
+DA_power.INFAN.-0.02 = {
+	is_musketeer_modifier = yes
+	infantry_power = -0.02
+}
+DA_power.INFAN.-0.03 = {
+	is_musketeer_modifier = yes
+	infantry_power = -0.03
+}
+DA_power.INFAN.-0.04 = {
+	is_musketeer_modifier = yes
+	infantry_power = -0.04
+}
+DA_power.INFAN.-0.05 = {
+	is_musketeer_modifier = yes
+	infantry_power = -0.05
+}
+DA_power.INFAN.-0.06 = {
+	is_musketeer_modifier = yes
+	infantry_power = -0.06
+}
+DA_power.INFAN.-0.07 = {
+	is_musketeer_modifier = yes
+	infantry_power = -0.07
+}
+DA_power.INFAN.-0.08 = {
+	is_musketeer_modifier = yes
+	infantry_power = -0.08
+}
+DA_power.INFAN.-0.09 = {
+	is_musketeer_modifier = yes
+	infantry_power = -0.09
+}
+DA_power.INFAN.-0.10 = {
+	is_musketeer_modifier = yes
+	infantry_power = -0.10
+}
+DA_power.INFAN.-0.1 = {
+	is_musketeer_modifier = yes
+	infantry_power = -0.1
+}
+DA_power.INFAN.-0.11 = {
+	is_musketeer_modifier = yes
+	infantry_power = -0.11
+}
+DA_power.INFAN.-0.12 = {
+	is_musketeer_modifier = yes
+	infantry_power = -0.12
+}
+DA_power.INFAN.-0.13 = {
+	is_musketeer_modifier = yes
+	infantry_power = -0.13
+}
+DA_power.INFAN.-0.14 = {
+	is_musketeer_modifier = yes
+	infantry_power = -0.14
+}
+DA_power.INFAN.-0.15 = {
+	is_musketeer_modifier = yes
+	infantry_power = -0.15
+}
+DA_power.INFAN.-0.16 = {
+	is_musketeer_modifier = yes
+	infantry_power = -0.16
+}
+DA_power.INFAN.-0.17 = {
+	is_musketeer_modifier = yes
+	infantry_power = -0.17
+}
+DA_power.INFAN.-0.18 = {
+	is_musketeer_modifier = yes
+	infantry_power = -0.18
+}
+DA_power.INFAN.-0.19 = {
+	is_musketeer_modifier = yes
+	infantry_power = -0.19
+}
+DA_power.INFAN.-0.20 = {
+	is_musketeer_modifier = yes
+	infantry_power = -0.20
+}
+DA_power.INFAN.-0.2 = {
+	is_musketeer_modifier = yes
+	infantry_power = -0.2
+}
+DA_power.INFAN.-0.21 = {
+	is_musketeer_modifier = yes
+	infantry_power = -0.21
+}
+DA_power.INFAN.-0.22 = {
+	is_musketeer_modifier = yes
+	infantry_power = -0.22
+}
+DA_power.INFAN.-0.23 = {
+	is_musketeer_modifier = yes
+	infantry_power = -0.23
+}
+DA_power.INFAN.-0.24 = {
+	is_musketeer_modifier = yes
+	infantry_power = -0.24
+}
+DA_power.INFAN.-0.25 = {
+	is_musketeer_modifier = yes
+	infantry_power = -0.25
+}
+DA_power.INFAN.-0.26 = {
+	is_musketeer_modifier = yes
+	infantry_power = -0.26
+}
+DA_power.INFAN.-0.27 = {
+	is_musketeer_modifier = yes
+	infantry_power = -0.27
+}
+DA_power.INFAN.-0.28 = {
+	is_musketeer_modifier = yes
+	infantry_power = -0.28
+}
+DA_power.INFAN.-0.29 = {
+	is_musketeer_modifier = yes
+	infantry_power = -0.29
+}
+DA_power.INFAN.-0.30 = {
+	is_musketeer_modifier = yes
+	infantry_power = -0.30
+}
+DA_power.INFAN.-0.3 = {
+	is_musketeer_modifier = yes
+	infantry_power = -0.3
+}
+DA_power.INFAN.-0.31 = {
+	is_musketeer_modifier = yes
+	infantry_power = -0.31
+}
+DA_power.INFAN.-0.32 = {
+	is_musketeer_modifier = yes
+	infantry_power = -0.32
+}
+DA_power.INFAN.-0.33 = {
+	is_musketeer_modifier = yes
+	infantry_power = -0.33
+}
+DA_power.INFAN.-0.34 = {
+	is_musketeer_modifier = yes
+	infantry_power = -0.34
+}
+DA_power.INFAN.-0.35 = {
+	is_musketeer_modifier = yes
+	infantry_power = -0.35
+}
+DA_power.INFAN.-0.36 = {
+	is_musketeer_modifier = yes
+	infantry_power = -0.36
+}
+DA_power.INFAN.-0.37 = {
+	is_musketeer_modifier = yes
+	infantry_power = -0.37
+}
+DA_power.INFAN.-0.38 = {
+	is_musketeer_modifier = yes
+	infantry_power = -0.38
+}
+DA_power.INFAN.-0.39 = {
+	is_musketeer_modifier = yes
+	infantry_power = -0.39
+}
+DA_power.INFAN.-0.40 = {
+	is_musketeer_modifier = yes
+	infantry_power = -0.40
+}
+DA_power.INFAN.-0.4 = {
+	is_musketeer_modifier = yes
+	infantry_power = -0.4
+}
+DA_power.INFAN.-0.41 = {
+	is_musketeer_modifier = yes
+	infantry_power = -0.41
+}
+DA_power.INFAN.-0.42 = {
+	is_musketeer_modifier = yes
+	infantry_power = -0.42
+}
+DA_power.INFAN.-0.43 = {
+	is_musketeer_modifier = yes
+	infantry_power = -0.43
+}
+DA_power.INFAN.-0.44 = {
+	is_musketeer_modifier = yes
+	infantry_power = -0.44
+}
+DA_power.INFAN.-0.45 = {
+	is_musketeer_modifier = yes
+	infantry_power = -0.45
+}
+DA_power.INFAN.-0.46 = {
+	is_musketeer_modifier = yes
+	infantry_power = -0.46
+}
+DA_power.INFAN.-0.47 = {
+	is_musketeer_modifier = yes
+	infantry_power = -0.47
+}
+DA_power.INFAN.-0.48 = {
+	is_musketeer_modifier = yes
+	infantry_power = -0.48
+}
+DA_power.INFAN.-0.49 = {
+	is_musketeer_modifier = yes
+	infantry_power = -0.49
+}
+DA_power.INFAN.-0.50 = {
+	is_musketeer_modifier = yes
+	infantry_power = -0.50
+}
+DA_power.INFAN.-0.5 = {
+	is_musketeer_modifier = yes
+	infantry_power = -0.5
+}
+DA_power.INFAN.-0.51 = {
+	is_musketeer_modifier = yes
+	infantry_power = -0.51
+}
+DA_power.INFAN.-0.52 = {
+	is_musketeer_modifier = yes
+	infantry_power = -0.52
+}
+DA_power.INFAN.-0.53 = {
+	is_musketeer_modifier = yes
+	infantry_power = -0.53
+}
+DA_power.INFAN.-0.54 = {
+	is_musketeer_modifier = yes
+	infantry_power = -0.54
+}
+DA_power.INFAN.-0.55 = {
+	is_musketeer_modifier = yes
+	infantry_power = -0.55
+}
+DA_power.INFAN.-0.56 = {
+	is_musketeer_modifier = yes
+	infantry_power = -0.56
+}
+DA_power.INFAN.-0.57 = {
+	is_musketeer_modifier = yes
+	infantry_power = -0.57
+}
+DA_power.INFAN.-0.01 = {
+	is_musketeer_modifier = yes
+	infantry_power = -0.01
+}
+DA_power.INFAN.-0.58 = {
+	is_musketeer_modifier = yes
+	infantry_power = -0.58
+}
+DA_power.INFAN.-0.59 = {
+	is_musketeer_modifier = yes
+	infantry_power = -0.59
+}
+DA_power.INFAN.-0.60 = {
+	is_musketeer_modifier = yes
+	infantry_power = -0.60
+}
+DA_power.INFAN.-0.6 = {
+	is_musketeer_modifier = yes
+	infantry_power = -0.6
+}
+DA_power.INFAN.-0.61 = {
+	is_musketeer_modifier = yes
+	infantry_power = -0.61
+}
+DA_power.INFAN.-0.62 = {
+	is_musketeer_modifier = yes
+	infantry_power = -0.62
+}
+DA_power.INFAN.-0.63 = {
+	is_musketeer_modifier = yes
+	infantry_power = -0.63
+}
+DA_power.INFAN.-0.64 = {
+	is_musketeer_modifier = yes
+	infantry_power = -0.64
+}
+DA_power.INFAN.-0.65 = {
+	is_musketeer_modifier = yes
+	infantry_power = -0.65
+}
+DA_power.INFAN.-0.66 = {
+	is_musketeer_modifier = yes
+	infantry_power = -0.66
+}
+DA_power.INFAN.-0.67 = {
+	is_musketeer_modifier = yes
+	infantry_power = -0.67
+}
+DA_power.INFAN.-0.68 = {
+	is_musketeer_modifier = yes
+	infantry_power = -0.68
+}
+DA_power.INFAN.-0.69 = {
+	is_musketeer_modifier = yes
+	infantry_power = -0.69
+}
+DA_power.INFAN.-0.70 = {
+	is_musketeer_modifier = yes
+	infantry_power = -0.70
+}
+DA_power.INFAN.-0.7 = {
+	is_musketeer_modifier = yes
+	infantry_power = -0.7
+}
+DA_power.INFAN.-0.71 = {
+	is_musketeer_modifier = yes
+	infantry_power = -0.71
+}
+DA_power.INFAN.-0.72 = {
+	is_musketeer_modifier = yes
+	infantry_power = -0.72
+}
+DA_power.INFAN.-0.73 = {
+	is_musketeer_modifier = yes
+	infantry_power = -0.73
+}
+DA_power.INFAN.-0.74 = {
+	is_musketeer_modifier = yes
+	infantry_power = -0.74
+}
+DA_power.INFAN.-0.75 = {
+	is_musketeer_modifier = yes
+	infantry_power = -0.75
+}
+DA_power.INFAN.-0.76 = {
+	is_musketeer_modifier = yes
+	infantry_power = -0.76
+}
+DA_power.INFAN.-0.77 = {
+	is_musketeer_modifier = yes
+	infantry_power = -0.77
+}
+DA_power.INFAN.-0.78 = {
+	is_musketeer_modifier = yes
+	infantry_power = -0.78
+}
+DA_power.INFAN.-0.79 = {
+	is_musketeer_modifier = yes
+	infantry_power = -0.79
+}
+DA_power.INFAN.-0.80 = {
+	is_musketeer_modifier = yes
+	infantry_power = -0.80
+}
+DA_power.INFAN.-0.81 = {
+	is_musketeer_modifier = yes
+	infantry_power = -0.81
+}
+DA_power.INFAN.-0.82 = {
+	is_musketeer_modifier = yes
+	infantry_power = -0.82
+}
+DA_power.INFAN.-0.83 = {
+	is_musketeer_modifier = yes
+	infantry_power = -0.83
+}
+DA_power.INFAN.-0.84 = {
+	is_musketeer_modifier = yes
+	infantry_power = -0.84
+}
+DA_power.INFAN.-0.85 = {
+	is_musketeer_modifier = yes
+	infantry_power = -0.85
+}
+DA_power.INFAN.-0.86 = {
+	is_musketeer_modifier = yes
+	infantry_power = -0.86
+}
+DA_power.INFAN.-0.87 = {
+	is_musketeer_modifier = yes
+	infantry_power = -0.87
+}
+DA_power.INFAN.-0.88 = {
+	is_musketeer_modifier = yes
+	infantry_power = -0.88
+}
+DA_power.INFAN.-0.89 = {
+	is_musketeer_modifier = yes
+	infantry_power = -0.89
+}
+DA_power.INFAN.-0.90 = {
+	is_musketeer_modifier = yes
+	infantry_power = -0.90
+}
+DA_power.INFAN.-0.9 = {
+	is_musketeer_modifier = yes
+	infantry_power = -0.9
+}
+DA_power.INFAN.-0.91 = {
+	is_musketeer_modifier = yes
+	infantry_power = -0.91
+}
+DA_power.INFAN.-0.92 = {
+	is_musketeer_modifier = yes
+	infantry_power = -0.92
+}
+DA_power.INFAN.-0.93 = {
+	is_musketeer_modifier = yes
+	infantry_power = -0.93
+}
+DA_power.INFAN.-0.94 = {
+	is_musketeer_modifier = yes
+	infantry_power = -0.94
+}
+DA_power.INFAN.-0.95 = {
+	is_musketeer_modifier = yes
+	infantry_power = -0.95
+}
+DA_power.INFAN.-0.96 = {
+	is_musketeer_modifier = yes
+	infantry_power = -0.96
+}
+DA_power.INFAN.-0.97 = {
+	is_musketeer_modifier = yes
+	infantry_power = -0.97
+}
+DA_power.INFAN.-0.98 = {
+	is_musketeer_modifier = yes
+	infantry_power = -0.98
+}
+DA_power.INFAN.-0.99 = {
+	is_musketeer_modifier = yes
+	infantry_power = -0.99
+}
+DA_power.INFAN.-1.00 = {
+	is_musketeer_modifier = yes
+	infantry_power = -1.00
+}
+DA_power.INFAN.-1.0 = {
+	is_musketeer_modifier = yes
+	infantry_power = -1.0
+}
+DA_power.INFAN.-1 = {
+	is_musketeer_modifier = yes
+	infantry_power = -1
+}
+
+# fire
+
+DA_Fire.INFAN.-0 = {
+}
+DA_Fire.INFAN.-0.0 = {
+}
+DA_Fire.INFAN.-0.00 = {
+}
+DA_Fire.INFAN.-0.01 = {
+	is_musketeer_modifier = yes
+	fire_damage = -0.01
+}
+DA_Fire.INFAN.-0.02 = {
+	is_musketeer_modifier = yes
+	fire_damage = -0.02
+}
+DA_Fire.INFAN.-0.03 = {
+	is_musketeer_modifier = yes
+	fire_damage = -0.03
+}
+DA_Fire.INFAN.-0.04 = {
+	is_musketeer_modifier = yes
+	fire_damage = -0.04
+}
+DA_Fire.INFAN.-0.05 = {
+	is_musketeer_modifier = yes
+	fire_damage = -0.05
+}
+DA_Fire.INFAN.-0.06 = {
+	is_musketeer_modifier = yes
+	fire_damage = -0.06
+}
+DA_Fire.INFAN.-0.07 = {
+	is_musketeer_modifier = yes
+	fire_damage = -0.07
+}
+DA_Fire.INFAN.-0.08 = {
+	is_musketeer_modifier = yes
+	fire_damage = -0.08
+}
+DA_Fire.INFAN.-0.09 = {
+	is_musketeer_modifier = yes
+	fire_damage = -0.09
+}
+DA_Fire.INFAN.-0.10 = {
+	is_musketeer_modifier = yes
+	fire_damage = -0.10
+}
+DA_Fire.INFAN.-0.1 = {
+	is_musketeer_modifier = yes
+	fire_damage = -0.1
+}
+DA_Fire.INFAN.-0.11 = {
+	is_musketeer_modifier = yes
+	fire_damage = -0.11
+}
+DA_Fire.INFAN.-0.12 = {
+	is_musketeer_modifier = yes
+	fire_damage = -0.12
+}
+DA_Fire.INFAN.-0.13 = {
+	is_musketeer_modifier = yes
+	fire_damage = -0.13
+}
+DA_Fire.INFAN.-0.14 = {
+	is_musketeer_modifier = yes
+	fire_damage = -0.14
+}
+DA_Fire.INFAN.-0.15 = {
+	is_musketeer_modifier = yes
+	fire_damage = -0.15
+}
+DA_Fire.INFAN.-0.16 = {
+	is_musketeer_modifier = yes
+	fire_damage = -0.16
+}
+DA_Fire.INFAN.-0.17 = {
+	is_musketeer_modifier = yes
+	fire_damage = -0.17
+}
+DA_Fire.INFAN.-0.18 = {
+	is_musketeer_modifier = yes
+	fire_damage = -0.18
+}
+DA_Fire.INFAN.-0.19 = {
+	is_musketeer_modifier = yes
+	fire_damage = -0.19
+}
+DA_Fire.INFAN.-0.20 = {
+	is_musketeer_modifier = yes
+	fire_damage = -0.20
+}
+DA_Fire.INFAN.-0.2 = {
+	is_musketeer_modifier = yes
+	fire_damage = -0.2
+}
+DA_Fire.INFAN.-0.21 = {
+	is_musketeer_modifier = yes
+	fire_damage = -0.21
+}
+DA_Fire.INFAN.-0.22 = {
+	is_musketeer_modifier = yes
+	fire_damage = -0.22
+}
+DA_Fire.INFAN.-0.23 = {
+	is_musketeer_modifier = yes
+	fire_damage = -0.23
+}
+DA_Fire.INFAN.-0.24 = {
+	is_musketeer_modifier = yes
+	fire_damage = -0.24
+}
+DA_Fire.INFAN.-0.25 = {
+	is_musketeer_modifier = yes
+	fire_damage = -0.25
+}
+DA_Fire.INFAN.-0.26 = {
+	is_musketeer_modifier = yes
+	fire_damage = -0.26
+}
+DA_Fire.INFAN.-0.27 = {
+	is_musketeer_modifier = yes
+	fire_damage = -0.27
+}
+DA_Fire.INFAN.-0.28 = {
+	is_musketeer_modifier = yes
+	fire_damage = -0.28
+}
+DA_Fire.INFAN.-0.29 = {
+	is_musketeer_modifier = yes
+	fire_damage = -0.29
+}
+DA_Fire.INFAN.-0.30 = {
+	is_musketeer_modifier = yes
+	fire_damage = -0.30
+}
+DA_Fire.INFAN.-0.3 = {
+	is_musketeer_modifier = yes
+	fire_damage = -0.3
+}
+DA_Fire.INFAN.-0.31 = {
+	is_musketeer_modifier = yes
+	fire_damage = -0.31
+}
+DA_Fire.INFAN.-0.32 = {
+	is_musketeer_modifier = yes
+	fire_damage = -0.32
+}
+DA_Fire.INFAN.-0.33 = {
+	is_musketeer_modifier = yes
+	fire_damage = -0.33
+}
+DA_Fire.INFAN.-0.34 = {
+	is_musketeer_modifier = yes
+	fire_damage = -0.34
+}
+DA_Fire.INFAN.-0.35 = {
+	is_musketeer_modifier = yes
+	fire_damage = -0.35
+}
+DA_Fire.INFAN.-0.36 = {
+	is_musketeer_modifier = yes
+	fire_damage = -0.36
+}
+DA_Fire.INFAN.-0.37 = {
+	is_musketeer_modifier = yes
+	fire_damage = -0.37
+}
+DA_Fire.INFAN.-0.38 = {
+	is_musketeer_modifier = yes
+	fire_damage = -0.38
+}
+DA_Fire.INFAN.-0.39 = {
+	is_musketeer_modifier = yes
+	fire_damage = -0.39
+}
+DA_Fire.INFAN.-0.40 = {
+	is_musketeer_modifier = yes
+	fire_damage = -0.40
+}
+DA_Fire.INFAN.-0.4 = {
+	is_musketeer_modifier = yes
+	fire_damage = -0.4
+}
+DA_Fire.INFAN.-0.41 = {
+	is_musketeer_modifier = yes
+	fire_damage = -0.41
+}
+DA_Fire.INFAN.-0.42 = {
+	is_musketeer_modifier = yes
+	fire_damage = -0.42
+}
+DA_Fire.INFAN.-0.43 = {
+	is_musketeer_modifier = yes
+	fire_damage = -0.43
+}
+DA_Fire.INFAN.-0.44 = {
+	is_musketeer_modifier = yes
+	fire_damage = -0.44
+}
+DA_Fire.INFAN.-0.45 = {
+	is_musketeer_modifier = yes
+	fire_damage = -0.45
+}
+DA_Fire.INFAN.-0.46 = {
+	is_musketeer_modifier = yes
+	fire_damage = -0.46
+}
+DA_Fire.INFAN.-0.47 = {
+	is_musketeer_modifier = yes
+	fire_damage = -0.47
+}
+DA_Fire.INFAN.-0.48 = {
+	is_musketeer_modifier = yes
+	fire_damage = -0.48
+}
+DA_Fire.INFAN.-0.49 = {
+	is_musketeer_modifier = yes
+	fire_damage = -0.49
+}
+DA_Fire.INFAN.-0.50 = {
+	is_musketeer_modifier = yes
+	fire_damage = -0.50
+}
+DA_Fire.INFAN.-0.5 = {
+	is_musketeer_modifier = yes
+	fire_damage = -0.5
+}
+DA_Fire.INFAN.-0.51 = {
+	is_musketeer_modifier = yes
+	fire_damage = -0.51
+}
+DA_Fire.INFAN.-0.52 = {
+	is_musketeer_modifier = yes
+	fire_damage = -0.52
+}
+DA_Fire.INFAN.-0.53 = {
+	is_musketeer_modifier = yes
+	fire_damage = -0.53
+}
+DA_Fire.INFAN.-0.54 = {
+	is_musketeer_modifier = yes
+	fire_damage = -0.54
+}
+DA_Fire.INFAN.-0.55 = {
+	is_musketeer_modifier = yes
+	fire_damage = -0.55
+}
+DA_Fire.INFAN.-0.56 = {
+	is_musketeer_modifier = yes
+	fire_damage = -0.56
+}
+DA_Fire.INFAN.-0.57 = {
+	is_musketeer_modifier = yes
+	fire_damage = -0.57
+}
+DA_Fire.INFAN.-0.01 = {
+	is_musketeer_modifier = yes
+	fire_damage = -0.01
+}
+DA_Fire.INFAN.-0.58 = {
+	is_musketeer_modifier = yes
+	fire_damage = -0.58
+}
+DA_Fire.INFAN.-0.59 = {
+	is_musketeer_modifier = yes
+	fire_damage = -0.59
+}
+DA_Fire.INFAN.-0.60 = {
+	is_musketeer_modifier = yes
+	fire_damage = -0.60
+}
+DA_Fire.INFAN.-0.6 = {
+	is_musketeer_modifier = yes
+	fire_damage = -0.6
+}
+DA_Fire.INFAN.-0.61 = {
+	is_musketeer_modifier = yes
+	fire_damage = -0.61
+}
+DA_Fire.INFAN.-0.62 = {
+	is_musketeer_modifier = yes
+	fire_damage = -0.62
+}
+DA_Fire.INFAN.-0.63 = {
+	is_musketeer_modifier = yes
+	fire_damage = -0.63
+}
+DA_Fire.INFAN.-0.64 = {
+	is_musketeer_modifier = yes
+	fire_damage = -0.64
+}
+DA_Fire.INFAN.-0.65 = {
+	is_musketeer_modifier = yes
+	fire_damage = -0.65
+}
+DA_Fire.INFAN.-0.66 = {
+	is_musketeer_modifier = yes
+	fire_damage = -0.66
+}
+DA_Fire.INFAN.-0.67 = {
+	is_musketeer_modifier = yes
+	fire_damage = -0.67
+}
+DA_Fire.INFAN.-0.68 = {
+	is_musketeer_modifier = yes
+	fire_damage = -0.68
+}
+DA_Fire.INFAN.-0.69 = {
+	is_musketeer_modifier = yes
+	fire_damage = -0.69
+}
+DA_Fire.INFAN.-0.70 = {
+	is_musketeer_modifier = yes
+	fire_damage = -0.70
+}
+DA_Fire.INFAN.-0.7 = {
+	is_musketeer_modifier = yes
+	fire_damage = -0.7
+}
+DA_Fire.INFAN.-0.71 = {
+	is_musketeer_modifier = yes
+	fire_damage = -0.71
+}
+DA_Fire.INFAN.-0.72 = {
+	is_musketeer_modifier = yes
+	fire_damage = -0.72
+}
+DA_Fire.INFAN.-0.73 = {
+	is_musketeer_modifier = yes
+	fire_damage = -0.73
+}
+DA_Fire.INFAN.-0.74 = {
+	is_musketeer_modifier = yes
+	fire_damage = -0.74
+}
+DA_Fire.INFAN.-0.75 = {
+	is_musketeer_modifier = yes
+	fire_damage = -0.75
+}
+DA_Fire.INFAN.-0.76 = {
+	is_musketeer_modifier = yes
+	fire_damage = -0.76
+}
+DA_Fire.INFAN.-0.77 = {
+	is_musketeer_modifier = yes
+	fire_damage = -0.77
+}
+DA_Fire.INFAN.-0.78 = {
+	is_musketeer_modifier = yes
+	fire_damage = -0.78
+}
+DA_Fire.INFAN.-0.79 = {
+	is_musketeer_modifier = yes
+	fire_damage = -0.79
+}
+DA_Fire.INFAN.-0.80 = {
+	is_musketeer_modifier = yes
+	fire_damage = -0.80
+}
+DA_Fire.INFAN.-0.81 = {
+	is_musketeer_modifier = yes
+	fire_damage = -0.81
+}
+DA_Fire.INFAN.-0.82 = {
+	is_musketeer_modifier = yes
+	fire_damage = -0.82
+}
+DA_Fire.INFAN.-0.83 = {
+	is_musketeer_modifier = yes
+	fire_damage = -0.83
+}
+DA_Fire.INFAN.-0.84 = {
+	is_musketeer_modifier = yes
+	fire_damage = -0.84
+}
+DA_Fire.INFAN.-0.85 = {
+	is_musketeer_modifier = yes
+	fire_damage = -0.85
+}
+DA_Fire.INFAN.-0.86 = {
+	is_musketeer_modifier = yes
+	fire_damage = -0.86
+}
+DA_Fire.INFAN.-0.87 = {
+	is_musketeer_modifier = yes
+	fire_damage = -0.87
+}
+DA_Fire.INFAN.-0.88 = {
+	is_musketeer_modifier = yes
+	fire_damage = -0.88
+}
+DA_Fire.INFAN.-0.89 = {
+	is_musketeer_modifier = yes
+	fire_damage = -0.89
+}
+DA_Fire.INFAN.-0.90 = {
+	is_musketeer_modifier = yes
+	fire_damage = -0.90
+}
+DA_Fire.INFAN.-0.9 = {
+	is_musketeer_modifier = yes
+	fire_damage = -0.9
+}
+DA_Fire.INFAN.-0.91 = {
+	is_musketeer_modifier = yes
+	fire_damage = -0.91
+}
+DA_Fire.INFAN.-0.92 = {
+	is_musketeer_modifier = yes
+	fire_damage = -0.92
+}
+DA_Fire.INFAN.-0.93 = {
+	is_musketeer_modifier = yes
+	fire_damage = -0.93
+}
+DA_Fire.INFAN.-0.94 = {
+	is_musketeer_modifier = yes
+	fire_damage = -0.94
+}
+DA_Fire.INFAN.-0.95 = {
+	is_musketeer_modifier = yes
+	fire_damage = -0.95
+}
+DA_Fire.INFAN.-0.96 = {
+	is_musketeer_modifier = yes
+	fire_damage = -0.96
+}
+DA_Fire.INFAN.-0.97 = {
+	is_musketeer_modifier = yes
+	fire_damage = -0.97
+}
+DA_Fire.INFAN.-0.98 = {
+	is_musketeer_modifier = yes
+	fire_damage = -0.98
+}
+DA_Fire.INFAN.-0.99 = {
+	is_musketeer_modifier = yes
+	fire_damage = -0.99
+}
+DA_Fire.INFAN.-1.00 = {
+	is_musketeer_modifier = yes
+	fire_damage = -1.00
+}
+DA_Fire.INFAN.-1.0 = {
+	is_musketeer_modifier = yes
+	fire_damage = -1.0
+}
+DA_Fire.INFAN.-1 = {
+	is_musketeer_modifier = yes
+	fire_damage = -1
+}
+
+DA_shock.INFAN.-0 = {
+}
+DA_shock.INFAN.-0.0 = {
+}
+DA_shock.INFAN.-0.00 = {
+}
+DA_shock.INFAN.-0.01 = {
+	is_musketeer_modifier = yes
+	shock_damage = -0.01
+}
+DA_shock.INFAN.-0.02 = {
+	is_musketeer_modifier = yes
+	shock_damage = -0.02
+}
+DA_shock.INFAN.-0.03 = {
+	is_musketeer_modifier = yes
+	shock_damage = -0.03
+}
+DA_shock.INFAN.-0.04 = {
+	is_musketeer_modifier = yes
+	shock_damage = -0.04
+}
+DA_shock.INFAN.-0.05 = {
+	is_musketeer_modifier = yes
+	shock_damage = -0.05
+}
+DA_shock.INFAN.-0.06 = {
+	is_musketeer_modifier = yes
+	shock_damage = -0.06
+}
+DA_shock.INFAN.-0.07 = {
+	is_musketeer_modifier = yes
+	shock_damage = -0.07
+}
+DA_shock.INFAN.-0.08 = {
+	is_musketeer_modifier = yes
+	shock_damage = -0.08
+}
+DA_shock.INFAN.-0.09 = {
+	is_musketeer_modifier = yes
+	shock_damage = -0.09
+}
+DA_shock.INFAN.-0.10 = {
+	is_musketeer_modifier = yes
+	shock_damage = -0.10
+}
+DA_shock.INFAN.-0.1 = {
+	is_musketeer_modifier = yes
+	shock_damage = -0.1
+}
+DA_shock.INFAN.-0.11 = {
+	is_musketeer_modifier = yes
+	shock_damage = -0.11
+}
+DA_shock.INFAN.-0.12 = {
+	is_musketeer_modifier = yes
+	shock_damage = -0.12
+}
+DA_shock.INFAN.-0.13 = {
+	is_musketeer_modifier = yes
+	shock_damage = -0.13
+}
+DA_shock.INFAN.-0.14 = {
+	is_musketeer_modifier = yes
+	shock_damage = -0.14
+}
+DA_shock.INFAN.-0.15 = {
+	is_musketeer_modifier = yes
+	shock_damage = -0.15
+}
+DA_shock.INFAN.-0.16 = {
+	is_musketeer_modifier = yes
+	shock_damage = -0.16
+}
+DA_shock.INFAN.-0.17 = {
+	is_musketeer_modifier = yes
+	shock_damage = -0.17
+}
+DA_shock.INFAN.-0.18 = {
+	is_musketeer_modifier = yes
+	shock_damage = -0.18
+}
+DA_shock.INFAN.-0.19 = {
+	is_musketeer_modifier = yes
+	shock_damage = -0.19
+}
+DA_shock.INFAN.-0.20 = {
+	is_musketeer_modifier = yes
+	shock_damage = -0.20
+}
+DA_shock.INFAN.-0.2 = {
+	is_musketeer_modifier = yes
+	shock_damage = -0.2
+}
+DA_shock.INFAN.-0.21 = {
+	is_musketeer_modifier = yes
+	shock_damage = -0.21
+}
+DA_shock.INFAN.-0.22 = {
+	is_musketeer_modifier = yes
+	shock_damage = -0.22
+}
+DA_shock.INFAN.-0.23 = {
+	is_musketeer_modifier = yes
+	shock_damage = -0.23
+}
+DA_shock.INFAN.-0.24 = {
+	is_musketeer_modifier = yes
+	shock_damage = -0.24
+}
+DA_shock.INFAN.-0.25 = {
+	is_musketeer_modifier = yes
+	shock_damage = -0.25
+}
+DA_shock.INFAN.-0.26 = {
+	is_musketeer_modifier = yes
+	shock_damage = -0.26
+}
+DA_shock.INFAN.-0.27 = {
+	is_musketeer_modifier = yes
+	shock_damage = -0.27
+}
+DA_shock.INFAN.-0.28 = {
+	is_musketeer_modifier = yes
+	shock_damage = -0.28
+}
+DA_shock.INFAN.-0.29 = {
+	is_musketeer_modifier = yes
+	shock_damage = -0.29
+}
+DA_shock.INFAN.-0.30 = {
+	is_musketeer_modifier = yes
+	shock_damage = -0.30
+}
+DA_shock.INFAN.-0.3 = {
+	is_musketeer_modifier = yes
+	shock_damage = -0.3
+}
+DA_shock.INFAN.-0.31 = {
+	is_musketeer_modifier = yes
+	shock_damage = -0.31
+}
+DA_shock.INFAN.-0.32 = {
+	is_musketeer_modifier = yes
+	shock_damage = -0.32
+}
+DA_shock.INFAN.-0.33 = {
+	is_musketeer_modifier = yes
+	shock_damage = -0.33
+}
+DA_shock.INFAN.-0.34 = {
+	is_musketeer_modifier = yes
+	shock_damage = -0.34
+}
+DA_shock.INFAN.-0.35 = {
+	is_musketeer_modifier = yes
+	shock_damage = -0.35
+}
+DA_shock.INFAN.-0.36 = {
+	is_musketeer_modifier = yes
+	shock_damage = -0.36
+}
+DA_shock.INFAN.-0.37 = {
+	is_musketeer_modifier = yes
+	shock_damage = -0.37
+}
+DA_shock.INFAN.-0.38 = {
+	is_musketeer_modifier = yes
+	shock_damage = -0.38
+}
+DA_shock.INFAN.-0.39 = {
+	is_musketeer_modifier = yes
+	shock_damage = -0.39
+}
+DA_shock.INFAN.-0.40 = {
+	is_musketeer_modifier = yes
+	shock_damage = -0.40
+}
+DA_shock.INFAN.-0.4 = {
+	is_musketeer_modifier = yes
+	shock_damage = -0.4
+}
+DA_shock.INFAN.-0.41 = {
+	is_musketeer_modifier = yes
+	shock_damage = -0.41
+}
+DA_shock.INFAN.-0.42 = {
+	is_musketeer_modifier = yes
+	shock_damage = -0.42
+}
+DA_shock.INFAN.-0.43 = {
+	is_musketeer_modifier = yes
+	shock_damage = -0.43
+}
+DA_shock.INFAN.-0.44 = {
+	is_musketeer_modifier = yes
+	shock_damage = -0.44
+}
+DA_shock.INFAN.-0.45 = {
+	is_musketeer_modifier = yes
+	shock_damage = -0.45
+}
+DA_shock.INFAN.-0.46 = {
+	is_musketeer_modifier = yes
+	shock_damage = -0.46
+}
+DA_shock.INFAN.-0.47 = {
+	is_musketeer_modifier = yes
+	shock_damage = -0.47
+}
+DA_shock.INFAN.-0.48 = {
+	is_musketeer_modifier = yes
+	shock_damage = -0.48
+}
+DA_shock.INFAN.-0.49 = {
+	is_musketeer_modifier = yes
+	shock_damage = -0.49
+}
+DA_shock.INFAN.-0.50 = {
+	is_musketeer_modifier = yes
+	shock_damage = -0.50
+}
+DA_shock.INFAN.-0.5 = {
+	is_musketeer_modifier = yes
+	shock_damage = -0.5
+}
+DA_shock.INFAN.-0.51 = {
+	is_musketeer_modifier = yes
+	shock_damage = -0.51
+}
+DA_shock.INFAN.-0.52 = {
+	is_musketeer_modifier = yes
+	shock_damage = -0.52
+}
+DA_shock.INFAN.-0.53 = {
+	is_musketeer_modifier = yes
+	shock_damage = -0.53
+}
+DA_shock.INFAN.-0.54 = {
+	is_musketeer_modifier = yes
+	shock_damage = -0.54
+}
+DA_shock.INFAN.-0.55 = {
+	is_musketeer_modifier = yes
+	shock_damage = -0.55
+}
+DA_shock.INFAN.-0.56 = {
+	is_musketeer_modifier = yes
+	shock_damage = -0.56
+}
+DA_shock.INFAN.-0.57 = {
+	is_musketeer_modifier = yes
+	shock_damage = -0.57
+}
+DA_shock.INFAN.-0.01 = {
+	is_musketeer_modifier = yes
+	shock_damage = -0.01
+}
+DA_shock.INFAN.-0.58 = {
+	is_musketeer_modifier = yes
+	shock_damage = -0.58
+}
+DA_shock.INFAN.-0.59 = {
+	is_musketeer_modifier = yes
+	shock_damage = -0.59
+}
+DA_shock.INFAN.-0.60 = {
+	is_musketeer_modifier = yes
+	shock_damage = -0.60
+}
+DA_shock.INFAN.-0.6 = {
+	is_musketeer_modifier = yes
+	shock_damage = -0.6
+}
+DA_shock.INFAN.-0.61 = {
+	is_musketeer_modifier = yes
+	shock_damage = -0.61
+}
+DA_shock.INFAN.-0.62 = {
+	is_musketeer_modifier = yes
+	shock_damage = -0.62
+}
+DA_shock.INFAN.-0.63 = {
+	is_musketeer_modifier = yes
+	shock_damage = -0.63
+}
+DA_shock.INFAN.-0.64 = {
+	is_musketeer_modifier = yes
+	shock_damage = -0.64
+}
+DA_shock.INFAN.-0.65 = {
+	is_musketeer_modifier = yes
+	shock_damage = -0.65
+}
+DA_shock.INFAN.-0.66 = {
+	is_musketeer_modifier = yes
+	shock_damage = -0.66
+}
+DA_shock.INFAN.-0.67 = {
+	is_musketeer_modifier = yes
+	shock_damage = -0.67
+}
+DA_shock.INFAN.-0.68 = {
+	is_musketeer_modifier = yes
+	shock_damage = -0.68
+}
+DA_shock.INFAN.-0.69 = {
+	is_musketeer_modifier = yes
+	shock_damage = -0.69
+}
+DA_shock.INFAN.-0.70 = {
+	is_musketeer_modifier = yes
+	shock_damage = -0.70
+}
+DA_shock.INFAN.-0.7 = {
+	is_musketeer_modifier = yes
+	shock_damage = -0.7
+}
+DA_shock.INFAN.-0.71 = {
+	is_musketeer_modifier = yes
+	shock_damage = -0.71
+}
+DA_shock.INFAN.-0.72 = {
+	is_musketeer_modifier = yes
+	shock_damage = -0.72
+}
+DA_shock.INFAN.-0.73 = {
+	is_musketeer_modifier = yes
+	shock_damage = -0.73
+}
+DA_shock.INFAN.-0.74 = {
+	is_musketeer_modifier = yes
+	shock_damage = -0.74
+}
+DA_shock.INFAN.-0.75 = {
+	is_musketeer_modifier = yes
+	shock_damage = -0.75
+}
+DA_shock.INFAN.-0.76 = {
+	is_musketeer_modifier = yes
+	shock_damage = -0.76
+}
+DA_shock.INFAN.-0.77 = {
+	is_musketeer_modifier = yes
+	shock_damage = -0.77
+}
+DA_shock.INFAN.-0.78 = {
+	is_musketeer_modifier = yes
+	shock_damage = -0.78
+}
+DA_shock.INFAN.-0.79 = {
+	is_musketeer_modifier = yes
+	shock_damage = -0.79
+}
+DA_shock.INFAN.-0.80 = {
+	is_musketeer_modifier = yes
+	shock_damage = -0.80
+}
+DA_shock.INFAN.-0.81 = {
+	is_musketeer_modifier = yes
+	shock_damage = -0.81
+}
+DA_shock.INFAN.-0.82 = {
+	is_musketeer_modifier = yes
+	shock_damage = -0.82
+}
+DA_shock.INFAN.-0.83 = {
+	is_musketeer_modifier = yes
+	shock_damage = -0.83
+}
+DA_shock.INFAN.-0.84 = {
+	is_musketeer_modifier = yes
+	shock_damage = -0.84
+}
+DA_shock.INFAN.-0.85 = {
+	is_musketeer_modifier = yes
+	shock_damage = -0.85
+}
+DA_shock.INFAN.-0.86 = {
+	is_musketeer_modifier = yes
+	shock_damage = -0.86
+}
+DA_shock.INFAN.-0.87 = {
+	is_musketeer_modifier = yes
+	shock_damage = -0.87
+}
+DA_shock.INFAN.-0.88 = {
+	is_musketeer_modifier = yes
+	shock_damage = -0.88
+}
+DA_shock.INFAN.-0.89 = {
+	is_musketeer_modifier = yes
+	shock_damage = -0.89
+}
+DA_shock.INFAN.-0.90 = {
+	is_musketeer_modifier = yes
+	shock_damage = -0.90
+}
+DA_shock.INFAN.-0.9 = {
+	is_musketeer_modifier = yes
+	shock_damage = -0.9
+}
+DA_shock.INFAN.-0.91 = {
+	is_musketeer_modifier = yes
+	shock_damage = -0.91
+}
+DA_shock.INFAN.-0.92 = {
+	is_musketeer_modifier = yes
+	shock_damage = -0.92
+}
+DA_shock.INFAN.-0.93 = {
+	is_musketeer_modifier = yes
+	shock_damage = -0.93
+}
+DA_shock.INFAN.-0.94 = {
+	is_musketeer_modifier = yes
+	shock_damage = -0.94
+}
+DA_shock.INFAN.-0.95 = {
+	is_musketeer_modifier = yes
+	shock_damage = -0.95
+}
+DA_shock.INFAN.-0.96 = {
+	is_musketeer_modifier = yes
+	shock_damage = -0.96
+}
+DA_shock.INFAN.-0.97 = {
+	is_musketeer_modifier = yes
+	shock_damage = -0.97
+}
+DA_shock.INFAN.-0.98 = {
+	is_musketeer_modifier = yes
+	shock_damage = -0.98
+}
+DA_shock.INFAN.-0.99 = {
+	is_musketeer_modifier = yes
+	shock_damage = -0.99
+}
+DA_shock.INFAN.-1.00 = {
+	is_musketeer_modifier = yes
+	shock_damage = -1.00
+}
+DA_shock.INFAN.-1.0 = {
+	is_musketeer_modifier = yes
+	shock_damage = -1.0
+}
+DA_shock.INFAN.-1 = {
+	is_musketeer_modifier = yes
+	shock_damage = -1
+}
+
+DA_Fire.CAVAL.-0 = {
+}
+DA_Fire.CAVAL.-0.0 = {
+}
+DA_Fire.CAVAL.-0.00 = {
+}
+DA_Fire.CAVAL.-0.01 = {
+	is_hussars_modifier = yes
+	fire_damage = -0.01
+}
+DA_Fire.CAVAL.-0.02 = {
+	is_hussars_modifier = yes
+	fire_damage = -0.02
+}
+DA_Fire.CAVAL.-0.03 = {
+	is_hussars_modifier = yes
+	fire_damage = -0.03
+}
+DA_Fire.CAVAL.-0.04 = {
+	is_hussars_modifier = yes
+	fire_damage = -0.04
+}
+DA_Fire.CAVAL.-0.05 = {
+	is_hussars_modifier = yes
+	fire_damage = -0.05
+}
+DA_Fire.CAVAL.-0.06 = {
+	is_hussars_modifier = yes
+	fire_damage = -0.06
+}
+DA_Fire.CAVAL.-0.07 = {
+	is_hussars_modifier = yes
+	fire_damage = -0.07
+}
+DA_Fire.CAVAL.-0.08 = {
+	is_hussars_modifier = yes
+	fire_damage = -0.08
+}
+DA_Fire.CAVAL.-0.09 = {
+	is_hussars_modifier = yes
+	fire_damage = -0.09
+}
+DA_Fire.CAVAL.-0.10 = {
+	is_hussars_modifier = yes
+	fire_damage = -0.10
+}
+DA_Fire.CAVAL.-0.1 = {
+	is_hussars_modifier = yes
+	fire_damage = -0.1
+}
+DA_Fire.CAVAL.-0.11 = {
+	is_hussars_modifier = yes
+	fire_damage = -0.11
+}
+DA_Fire.CAVAL.-0.12 = {
+	is_hussars_modifier = yes
+	fire_damage = -0.12
+}
+DA_Fire.CAVAL.-0.13 = {
+	is_hussars_modifier = yes
+	fire_damage = -0.13
+}
+DA_Fire.CAVAL.-0.14 = {
+	is_hussars_modifier = yes
+	fire_damage = -0.14
+}
+DA_Fire.CAVAL.-0.15 = {
+	is_hussars_modifier = yes
+	fire_damage = -0.15
+}
+DA_Fire.CAVAL.-0.16 = {
+	is_hussars_modifier = yes
+	fire_damage = -0.16
+}
+DA_Fire.CAVAL.-0.17 = {
+	is_hussars_modifier = yes
+	fire_damage = -0.17
+}
+DA_Fire.CAVAL.-0.18 = {
+	is_hussars_modifier = yes
+	fire_damage = -0.18
+}
+DA_Fire.CAVAL.-0.19 = {
+	is_hussars_modifier = yes
+	fire_damage = -0.19
+}
+DA_Fire.CAVAL.-0.20 = {
+	is_hussars_modifier = yes
+	fire_damage = -0.20
+}
+DA_Fire.CAVAL.-0.2 = {
+	is_hussars_modifier = yes
+	fire_damage = -0.2
+}
+DA_Fire.CAVAL.-0.21 = {
+	is_hussars_modifier = yes
+	fire_damage = -0.21
+}
+DA_Fire.CAVAL.-0.22 = {
+	is_hussars_modifier = yes
+	fire_damage = -0.22
+}
+DA_Fire.CAVAL.-0.23 = {
+	is_hussars_modifier = yes
+	fire_damage = -0.23
+}
+DA_Fire.CAVAL.-0.24 = {
+	is_hussars_modifier = yes
+	fire_damage = -0.24
+}
+DA_Fire.CAVAL.-0.25 = {
+	is_hussars_modifier = yes
+	fire_damage = -0.25
+}
+DA_Fire.CAVAL.-0.26 = {
+	is_hussars_modifier = yes
+	fire_damage = -0.26
+}
+DA_Fire.CAVAL.-0.27 = {
+	is_hussars_modifier = yes
+	fire_damage = -0.27
+}
+DA_Fire.CAVAL.-0.28 = {
+	is_hussars_modifier = yes
+	fire_damage = -0.28
+}
+DA_Fire.CAVAL.-0.29 = {
+	is_hussars_modifier = yes
+	fire_damage = -0.29
+}
+DA_Fire.CAVAL.-0.30 = {
+	is_hussars_modifier = yes
+	fire_damage = -0.30
+}
+DA_Fire.CAVAL.-0.3 = {
+	is_hussars_modifier = yes
+	fire_damage = -0.3
+}
+DA_Fire.CAVAL.-0.31 = {
+	is_hussars_modifier = yes
+	fire_damage = -0.31
+}
+DA_Fire.CAVAL.-0.32 = {
+	is_hussars_modifier = yes
+	fire_damage = -0.32
+}
+DA_Fire.CAVAL.-0.33 = {
+	is_hussars_modifier = yes
+	fire_damage = -0.33
+}
+DA_Fire.CAVAL.-0.34 = {
+	is_hussars_modifier = yes
+	fire_damage = -0.34
+}
+DA_Fire.CAVAL.-0.35 = {
+	is_hussars_modifier = yes
+	fire_damage = -0.35
+}
+DA_Fire.CAVAL.-0.36 = {
+	is_hussars_modifier = yes
+	fire_damage = -0.36
+}
+DA_Fire.CAVAL.-0.37 = {
+	is_hussars_modifier = yes
+	fire_damage = -0.37
+}
+DA_Fire.CAVAL.-0.38 = {
+	is_hussars_modifier = yes
+	fire_damage = -0.38
+}
+DA_Fire.CAVAL.-0.39 = {
+	is_hussars_modifier = yes
+	fire_damage = -0.39
+}
+DA_Fire.CAVAL.-0.40 = {
+	is_hussars_modifier = yes
+	fire_damage = -0.40
+}
+DA_Fire.CAVAL.-0.4 = {
+	is_hussars_modifier = yes
+	fire_damage = -0.4
+}
+DA_Fire.CAVAL.-0.41 = {
+	is_hussars_modifier = yes
+	fire_damage = -0.41
+}
+DA_Fire.CAVAL.-0.42 = {
+	is_hussars_modifier = yes
+	fire_damage = -0.42
+}
+DA_Fire.CAVAL.-0.43 = {
+	is_hussars_modifier = yes
+	fire_damage = -0.43
+}
+DA_Fire.CAVAL.-0.44 = {
+	is_hussars_modifier = yes
+	fire_damage = -0.44
+}
+DA_Fire.CAVAL.-0.45 = {
+	is_hussars_modifier = yes
+	fire_damage = -0.45
+}
+DA_Fire.CAVAL.-0.46 = {
+	is_hussars_modifier = yes
+	fire_damage = -0.46
+}
+DA_Fire.CAVAL.-0.47 = {
+	is_hussars_modifier = yes
+	fire_damage = -0.47
+}
+DA_Fire.CAVAL.-0.48 = {
+	is_hussars_modifier = yes
+	fire_damage = -0.48
+}
+DA_Fire.CAVAL.-0.49 = {
+	is_hussars_modifier = yes
+	fire_damage = -0.49
+}
+DA_Fire.CAVAL.-0.50 = {
+	is_hussars_modifier = yes
+	fire_damage = -0.50
+}
+DA_Fire.CAVAL.-0.5 = {
+	is_hussars_modifier = yes
+	fire_damage = -0.5
+}
+DA_Fire.CAVAL.-0.51 = {
+	is_hussars_modifier = yes
+	fire_damage = -0.51
+}
+DA_Fire.CAVAL.-0.52 = {
+	is_hussars_modifier = yes
+	fire_damage = -0.52
+}
+DA_Fire.CAVAL.-0.53 = {
+	is_hussars_modifier = yes
+	fire_damage = -0.53
+}
+DA_Fire.CAVAL.-0.54 = {
+	is_hussars_modifier = yes
+	fire_damage = -0.54
+}
+DA_Fire.CAVAL.-0.55 = {
+	is_hussars_modifier = yes
+	fire_damage = -0.55
+}
+DA_Fire.CAVAL.-0.56 = {
+	is_hussars_modifier = yes
+	fire_damage = -0.56
+}
+DA_Fire.CAVAL.-0.57 = {
+	is_hussars_modifier = yes
+	fire_damage = -0.57
+}
+DA_Fire.CAVAL.-0.01 = {
+	is_hussars_modifier = yes
+	fire_damage = -0.01
+}
+DA_Fire.CAVAL.-0.58 = {
+	is_hussars_modifier = yes
+	fire_damage = -0.58
+}
+DA_Fire.CAVAL.-0.59 = {
+	is_hussars_modifier = yes
+	fire_damage = -0.59
+}
+DA_Fire.CAVAL.-0.60 = {
+	is_hussars_modifier = yes
+	fire_damage = -0.60
+}
+DA_Fire.CAVAL.-0.6 = {
+	is_hussars_modifier = yes
+	fire_damage = -0.6
+}
+DA_Fire.CAVAL.-0.61 = {
+	is_hussars_modifier = yes
+	fire_damage = -0.61
+}
+DA_Fire.CAVAL.-0.62 = {
+	is_hussars_modifier = yes
+	fire_damage = -0.62
+}
+DA_Fire.CAVAL.-0.63 = {
+	is_hussars_modifier = yes
+	fire_damage = -0.63
+}
+DA_Fire.CAVAL.-0.64 = {
+	is_hussars_modifier = yes
+	fire_damage = -0.64
+}
+DA_Fire.CAVAL.-0.65 = {
+	is_hussars_modifier = yes
+	fire_damage = -0.65
+}
+DA_Fire.CAVAL.-0.66 = {
+	is_hussars_modifier = yes
+	fire_damage = -0.66
+}
+DA_Fire.CAVAL.-0.67 = {
+	is_hussars_modifier = yes
+	fire_damage = -0.67
+}
+DA_Fire.CAVAL.-0.68 = {
+	is_hussars_modifier = yes
+	fire_damage = -0.68
+}
+DA_Fire.CAVAL.-0.69 = {
+	is_hussars_modifier = yes
+	fire_damage = -0.69
+}
+DA_Fire.CAVAL.-0.70 = {
+	is_hussars_modifier = yes
+	fire_damage = -0.70
+}
+DA_Fire.CAVAL.-0.7 = {
+	is_hussars_modifier = yes
+	fire_damage = -0.7
+}
+DA_Fire.CAVAL.-0.71 = {
+	is_hussars_modifier = yes
+	fire_damage = -0.71
+}
+DA_Fire.CAVAL.-0.72 = {
+	is_hussars_modifier = yes
+	fire_damage = -0.72
+}
+DA_Fire.CAVAL.-0.73 = {
+	is_hussars_modifier = yes
+	fire_damage = -0.73
+}
+DA_Fire.CAVAL.-0.74 = {
+	is_hussars_modifier = yes
+	fire_damage = -0.74
+}
+DA_Fire.CAVAL.-0.75 = {
+	is_hussars_modifier = yes
+	fire_damage = -0.75
+}
+DA_Fire.CAVAL.-0.76 = {
+	is_hussars_modifier = yes
+	fire_damage = -0.76
+}
+DA_Fire.CAVAL.-0.77 = {
+	is_hussars_modifier = yes
+	fire_damage = -0.77
+}
+DA_Fire.CAVAL.-0.78 = {
+	is_hussars_modifier = yes
+	fire_damage = -0.78
+}
+DA_Fire.CAVAL.-0.79 = {
+	is_hussars_modifier = yes
+	fire_damage = -0.79
+}
+DA_Fire.CAVAL.-0.80 = {
+	is_hussars_modifier = yes
+	fire_damage = -0.80
+}
+DA_Fire.CAVAL.-0.81 = {
+	is_hussars_modifier = yes
+	fire_damage = -0.81
+}
+DA_Fire.CAVAL.-0.82 = {
+	is_hussars_modifier = yes
+	fire_damage = -0.82
+}
+DA_Fire.CAVAL.-0.83 = {
+	is_hussars_modifier = yes
+	fire_damage = -0.83
+}
+DA_Fire.CAVAL.-0.84 = {
+	is_hussars_modifier = yes
+	fire_damage = -0.84
+}
+DA_Fire.CAVAL.-0.85 = {
+	is_hussars_modifier = yes
+	fire_damage = -0.85
+}
+DA_Fire.CAVAL.-0.86 = {
+	is_hussars_modifier = yes
+	fire_damage = -0.86
+}
+DA_Fire.CAVAL.-0.87 = {
+	is_hussars_modifier = yes
+	fire_damage = -0.87
+}
+DA_Fire.CAVAL.-0.88 = {
+	is_hussars_modifier = yes
+	fire_damage = -0.88
+}
+DA_Fire.CAVAL.-0.89 = {
+	is_hussars_modifier = yes
+	fire_damage = -0.89
+}
+DA_Fire.CAVAL.-0.90 = {
+	is_hussars_modifier = yes
+	fire_damage = -0.90
+}
+DA_Fire.CAVAL.-0.9 = {
+	is_hussars_modifier = yes
+	fire_damage = -0.9
+}
+DA_Fire.CAVAL.-0.91 = {
+	is_hussars_modifier = yes
+	fire_damage = -0.91
+}
+DA_Fire.CAVAL.-0.92 = {
+	is_hussars_modifier = yes
+	fire_damage = -0.92
+}
+DA_Fire.CAVAL.-0.93 = {
+	is_hussars_modifier = yes
+	fire_damage = -0.93
+}
+DA_Fire.CAVAL.-0.94 = {
+	is_hussars_modifier = yes
+	fire_damage = -0.94
+}
+DA_Fire.CAVAL.-0.95 = {
+	is_hussars_modifier = yes
+	fire_damage = -0.95
+}
+DA_Fire.CAVAL.-0.96 = {
+	is_hussars_modifier = yes
+	fire_damage = -0.96
+}
+DA_Fire.CAVAL.-0.97 = {
+	is_hussars_modifier = yes
+	fire_damage = -0.97
+}
+DA_Fire.CAVAL.-0.98 = {
+	is_hussars_modifier = yes
+	fire_damage = -0.98
+}
+DA_Fire.CAVAL.-0.99 = {
+	is_hussars_modifier = yes
+	fire_damage = -0.99
+}
+DA_Fire.CAVAL.-1.00 = {
+	is_hussars_modifier = yes
+	fire_damage = -1.00
+}
+DA_Fire.CAVAL.-1.0 = {
+	is_hussars_modifier = yes
+	fire_damage = -1.0
+}
+DA_Fire.CAVAL.-1 = {
+	is_hussars_modifier = yes
+	fire_damage = -1
+}
+
+DA_shock.CAVAL.-0 = {
+}
+DA_shock.CAVAL.-0.0 = {
+}
+DA_shock.CAVAL.-0.00 = {
+}
+DA_shock.CAVAL.-0.01 = {
+	is_hussars_modifier = yes
+	shock_damage = -0.01
+}
+DA_shock.CAVAL.-0.02 = {
+	is_hussars_modifier = yes
+	shock_damage = -0.02
+}
+DA_shock.CAVAL.-0.03 = {
+	is_hussars_modifier = yes
+	shock_damage = -0.03
+}
+DA_shock.CAVAL.-0.04 = {
+	is_hussars_modifier = yes
+	shock_damage = -0.04
+}
+DA_shock.CAVAL.-0.05 = {
+	is_hussars_modifier = yes
+	shock_damage = -0.05
+}
+DA_shock.CAVAL.-0.06 = {
+	is_hussars_modifier = yes
+	shock_damage = -0.06
+}
+DA_shock.CAVAL.-0.07 = {
+	is_hussars_modifier = yes
+	shock_damage = -0.07
+}
+DA_shock.CAVAL.-0.08 = {
+	is_hussars_modifier = yes
+	shock_damage = -0.08
+}
+DA_shock.CAVAL.-0.09 = {
+	is_hussars_modifier = yes
+	shock_damage = -0.09
+}
+DA_shock.CAVAL.-0.10 = {
+	is_hussars_modifier = yes
+	shock_damage = -0.10
+}
+DA_shock.CAVAL.-0.1 = {
+	is_hussars_modifier = yes
+	shock_damage = -0.1
+}
+DA_shock.CAVAL.-0.11 = {
+	is_hussars_modifier = yes
+	shock_damage = -0.11
+}
+DA_shock.CAVAL.-0.12 = {
+	is_hussars_modifier = yes
+	shock_damage = -0.12
+}
+DA_shock.CAVAL.-0.13 = {
+	is_hussars_modifier = yes
+	shock_damage = -0.13
+}
+DA_shock.CAVAL.-0.14 = {
+	is_hussars_modifier = yes
+	shock_damage = -0.14
+}
+DA_shock.CAVAL.-0.15 = {
+	is_hussars_modifier = yes
+	shock_damage = -0.15
+}
+DA_shock.CAVAL.-0.16 = {
+	is_hussars_modifier = yes
+	shock_damage = -0.16
+}
+DA_shock.CAVAL.-0.17 = {
+	is_hussars_modifier = yes
+	shock_damage = -0.17
+}
+DA_shock.CAVAL.-0.18 = {
+	is_hussars_modifier = yes
+	shock_damage = -0.18
+}
+DA_shock.CAVAL.-0.19 = {
+	is_hussars_modifier = yes
+	shock_damage = -0.19
+}
+DA_shock.CAVAL.-0.20 = {
+	is_hussars_modifier = yes
+	shock_damage = -0.20
+}
+DA_shock.CAVAL.-0.2 = {
+	is_hussars_modifier = yes
+	shock_damage = -0.2
+}
+DA_shock.CAVAL.-0.21 = {
+	is_hussars_modifier = yes
+	shock_damage = -0.21
+}
+DA_shock.CAVAL.-0.22 = {
+	is_hussars_modifier = yes
+	shock_damage = -0.22
+}
+DA_shock.CAVAL.-0.23 = {
+	is_hussars_modifier = yes
+	shock_damage = -0.23
+}
+DA_shock.CAVAL.-0.24 = {
+	is_hussars_modifier = yes
+	shock_damage = -0.24
+}
+DA_shock.CAVAL.-0.25 = {
+	is_hussars_modifier = yes
+	shock_damage = -0.25
+}
+DA_shock.CAVAL.-0.26 = {
+	is_hussars_modifier = yes
+	shock_damage = -0.26
+}
+DA_shock.CAVAL.-0.27 = {
+	is_hussars_modifier = yes
+	shock_damage = -0.27
+}
+DA_shock.CAVAL.-0.28 = {
+	is_hussars_modifier = yes
+	shock_damage = -0.28
+}
+DA_shock.CAVAL.-0.29 = {
+	is_hussars_modifier = yes
+	shock_damage = -0.29
+}
+DA_shock.CAVAL.-0.30 = {
+	is_hussars_modifier = yes
+	shock_damage = -0.30
+}
+DA_shock.CAVAL.-0.3 = {
+	is_hussars_modifier = yes
+	shock_damage = -0.3
+}
+DA_shock.CAVAL.-0.31 = {
+	is_hussars_modifier = yes
+	shock_damage = -0.31
+}
+DA_shock.CAVAL.-0.32 = {
+	is_hussars_modifier = yes
+	shock_damage = -0.32
+}
+DA_shock.CAVAL.-0.33 = {
+	is_hussars_modifier = yes
+	shock_damage = -0.33
+}
+DA_shock.CAVAL.-0.34 = {
+	is_hussars_modifier = yes
+	shock_damage = -0.34
+}
+DA_shock.CAVAL.-0.35 = {
+	is_hussars_modifier = yes
+	shock_damage = -0.35
+}
+DA_shock.CAVAL.-0.36 = {
+	is_hussars_modifier = yes
+	shock_damage = -0.36
+}
+DA_shock.CAVAL.-0.37 = {
+	is_hussars_modifier = yes
+	shock_damage = -0.37
+}
+DA_shock.CAVAL.-0.38 = {
+	is_hussars_modifier = yes
+	shock_damage = -0.38
+}
+DA_shock.CAVAL.-0.39 = {
+	is_hussars_modifier = yes
+	shock_damage = -0.39
+}
+DA_shock.CAVAL.-0.40 = {
+	is_hussars_modifier = yes
+	shock_damage = -0.40
+}
+DA_shock.CAVAL.-0.4 = {
+	is_hussars_modifier = yes
+	shock_damage = -0.4
+}
+DA_shock.CAVAL.-0.41 = {
+	is_hussars_modifier = yes
+	shock_damage = -0.41
+}
+DA_shock.CAVAL.-0.42 = {
+	is_hussars_modifier = yes
+	shock_damage = -0.42
+}
+DA_shock.CAVAL.-0.43 = {
+	is_hussars_modifier = yes
+	shock_damage = -0.43
+}
+DA_shock.CAVAL.-0.44 = {
+	is_hussars_modifier = yes
+	shock_damage = -0.44
+}
+DA_shock.CAVAL.-0.45 = {
+	is_hussars_modifier = yes
+	shock_damage = -0.45
+}
+DA_shock.CAVAL.-0.46 = {
+	is_hussars_modifier = yes
+	shock_damage = -0.46
+}
+DA_shock.CAVAL.-0.47 = {
+	is_hussars_modifier = yes
+	shock_damage = -0.47
+}
+DA_shock.CAVAL.-0.48 = {
+	is_hussars_modifier = yes
+	shock_damage = -0.48
+}
+DA_shock.CAVAL.-0.49 = {
+	is_hussars_modifier = yes
+	shock_damage = -0.49
+}
+DA_shock.CAVAL.-0.50 = {
+	is_hussars_modifier = yes
+	shock_damage = -0.50
+}
+DA_shock.CAVAL.-0.5 = {
+	is_hussars_modifier = yes
+	shock_damage = -0.5
+}
+DA_shock.CAVAL.-0.51 = {
+	is_hussars_modifier = yes
+	shock_damage = -0.51
+}
+DA_shock.CAVAL.-0.52 = {
+	is_hussars_modifier = yes
+	shock_damage = -0.52
+}
+DA_shock.CAVAL.-0.53 = {
+	is_hussars_modifier = yes
+	shock_damage = -0.53
+}
+DA_shock.CAVAL.-0.54 = {
+	is_hussars_modifier = yes
+	shock_damage = -0.54
+}
+DA_shock.CAVAL.-0.55 = {
+	is_hussars_modifier = yes
+	shock_damage = -0.55
+}
+DA_shock.CAVAL.-0.56 = {
+	is_hussars_modifier = yes
+	shock_damage = -0.56
+}
+DA_shock.CAVAL.-0.57 = {
+	is_hussars_modifier = yes
+	shock_damage = -0.57
+}
+DA_shock.CAVAL.-0.01 = {
+	is_hussars_modifier = yes
+	shock_damage = -0.01
+}
+DA_shock.CAVAL.-0.58 = {
+	is_hussars_modifier = yes
+	shock_damage = -0.58
+}
+DA_shock.CAVAL.-0.59 = {
+	is_hussars_modifier = yes
+	shock_damage = -0.59
+}
+DA_shock.CAVAL.-0.60 = {
+	is_hussars_modifier = yes
+	shock_damage = -0.60
+}
+DA_shock.CAVAL.-0.6 = {
+	is_hussars_modifier = yes
+	shock_damage = -0.6
+}
+DA_shock.CAVAL.-0.61 = {
+	is_hussars_modifier = yes
+	shock_damage = -0.61
+}
+DA_shock.CAVAL.-0.62 = {
+	is_hussars_modifier = yes
+	shock_damage = -0.62
+}
+DA_shock.CAVAL.-0.63 = {
+	is_hussars_modifier = yes
+	shock_damage = -0.63
+}
+DA_shock.CAVAL.-0.64 = {
+	is_hussars_modifier = yes
+	shock_damage = -0.64
+}
+DA_shock.CAVAL.-0.65 = {
+	is_hussars_modifier = yes
+	shock_damage = -0.65
+}
+DA_shock.CAVAL.-0.66 = {
+	is_hussars_modifier = yes
+	shock_damage = -0.66
+}
+DA_shock.CAVAL.-0.67 = {
+	is_hussars_modifier = yes
+	shock_damage = -0.67
+}
+DA_shock.CAVAL.-0.68 = {
+	is_hussars_modifier = yes
+	shock_damage = -0.68
+}
+DA_shock.CAVAL.-0.69 = {
+	is_hussars_modifier = yes
+	shock_damage = -0.69
+}
+DA_shock.CAVAL.-0.70 = {
+	is_hussars_modifier = yes
+	shock_damage = -0.70
+}
+DA_shock.CAVAL.-0.7 = {
+	is_hussars_modifier = yes
+	shock_damage = -0.7
+}
+DA_shock.CAVAL.-0.71 = {
+	is_hussars_modifier = yes
+	shock_damage = -0.71
+}
+DA_shock.CAVAL.-0.72 = {
+	is_hussars_modifier = yes
+	shock_damage = -0.72
+}
+DA_shock.CAVAL.-0.73 = {
+	is_hussars_modifier = yes
+	shock_damage = -0.73
+}
+DA_shock.CAVAL.-0.74 = {
+	is_hussars_modifier = yes
+	shock_damage = -0.74
+}
+DA_shock.CAVAL.-0.75 = {
+	is_hussars_modifier = yes
+	shock_damage = -0.75
+}
+DA_shock.CAVAL.-0.76 = {
+	is_hussars_modifier = yes
+	shock_damage = -0.76
+}
+DA_shock.CAVAL.-0.77 = {
+	is_hussars_modifier = yes
+	shock_damage = -0.77
+}
+DA_shock.CAVAL.-0.78 = {
+	is_hussars_modifier = yes
+	shock_damage = -0.78
+}
+DA_shock.CAVAL.-0.79 = {
+	is_hussars_modifier = yes
+	shock_damage = -0.79
+}
+DA_shock.CAVAL.-0.80 = {
+	is_hussars_modifier = yes
+	shock_damage = -0.80
+}
+DA_shock.CAVAL.-0.81 = {
+	is_hussars_modifier = yes
+	shock_damage = -0.81
+}
+DA_shock.CAVAL.-0.82 = {
+	is_hussars_modifier = yes
+	shock_damage = -0.82
+}
+DA_shock.CAVAL.-0.83 = {
+	is_hussars_modifier = yes
+	shock_damage = -0.83
+}
+DA_shock.CAVAL.-0.84 = {
+	is_hussars_modifier = yes
+	shock_damage = -0.84
+}
+DA_shock.CAVAL.-0.85 = {
+	is_hussars_modifier = yes
+	shock_damage = -0.85
+}
+DA_shock.CAVAL.-0.86 = {
+	is_hussars_modifier = yes
+	shock_damage = -0.86
+}
+DA_shock.CAVAL.-0.87 = {
+	is_hussars_modifier = yes
+	shock_damage = -0.87
+}
+DA_shock.CAVAL.-0.88 = {
+	is_hussars_modifier = yes
+	shock_damage = -0.88
+}
+DA_shock.CAVAL.-0.89 = {
+	is_hussars_modifier = yes
+	shock_damage = -0.89
+}
+DA_shock.CAVAL.-0.90 = {
+	is_hussars_modifier = yes
+	shock_damage = -0.90
+}
+DA_shock.CAVAL.-0.9 = {
+	is_hussars_modifier = yes
+	shock_damage = -0.9
+}
+DA_shock.CAVAL.-0.91 = {
+	is_hussars_modifier = yes
+	shock_damage = -0.91
+}
+DA_shock.CAVAL.-0.92 = {
+	is_hussars_modifier = yes
+	shock_damage = -0.92
+}
+DA_shock.CAVAL.-0.93 = {
+	is_hussars_modifier = yes
+	shock_damage = -0.93
+}
+DA_shock.CAVAL.-0.94 = {
+	is_hussars_modifier = yes
+	shock_damage = -0.94
+}
+DA_shock.CAVAL.-0.95 = {
+	is_hussars_modifier = yes
+	shock_damage = -0.95
+}
+DA_shock.CAVAL.-0.96 = {
+	is_hussars_modifier = yes
+	shock_damage = -0.96
+}
+DA_shock.CAVAL.-0.97 = {
+	is_hussars_modifier = yes
+	shock_damage = -0.97
+}
+DA_shock.CAVAL.-0.98 = {
+	is_hussars_modifier = yes
+	shock_damage = -0.98
+}
+DA_shock.CAVAL.-0.99 = {
+	is_hussars_modifier = yes
+	shock_damage = -0.99
+}
+DA_shock.CAVAL.-1.00 = {
+	is_hussars_modifier = yes
+	shock_damage = -1.00
+}
+DA_shock.CAVAL.-1.0 = {
+	is_hussars_modifier = yes
+	shock_damage = -1.0
+}
+DA_shock.CAVAL.-1 = {
+	is_hussars_modifier = yes
+	shock_damage = -1
+}
+
+DA_power.CAVAL.-0 = {
+
+}
+DA_power.CAVAL.-0.0 = {
+	
+}
+DA_power.CAVAL.-0.00 = {
+	
+}
+DA_power.CAVAL.-0.01 = {
+	is_hussars_modifier = yes
+	cavalry_power = -0.01
+}
+DA_power.CAVAL.-0.02 = {
+	is_hussars_modifier = yes
+	cavalry_power = -0.02
+}
+DA_power.CAVAL.-0.03 = {
+	is_hussars_modifier = yes
+	cavalry_power = -0.03
+}
+DA_power.CAVAL.-0.04 = {
+	is_hussars_modifier = yes
+	cavalry_power = -0.04
+}
+DA_power.CAVAL.-0.05 = {
+	is_hussars_modifier = yes
+	cavalry_power = -0.05
+}
+DA_power.CAVAL.-0.06 = {
+	is_hussars_modifier = yes
+	cavalry_power = -0.06
+}
+DA_power.CAVAL.-0.07 = {
+	is_hussars_modifier = yes
+	cavalry_power = -0.07
+}
+DA_power.CAVAL.-0.08 = {
+	is_hussars_modifier = yes
+	cavalry_power = -0.08
+}
+DA_power.CAVAL.-0.09 = {
+	is_hussars_modifier = yes
+	cavalry_power = -0.09
+}
+DA_power.CAVAL.-0.10 = {
+	is_hussars_modifier = yes
+	cavalry_power = -0.10
+}
+DA_power.CAVAL.-0.1 = {
+	is_hussars_modifier = yes
+	cavalry_power = -0.1
+}
+DA_power.CAVAL.-0.11 = {
+	is_hussars_modifier = yes
+	cavalry_power = -0.11
+}
+DA_power.CAVAL.-0.12 = {
+	is_hussars_modifier = yes
+	cavalry_power = -0.12
+}
+DA_power.CAVAL.-0.13 = {
+	is_hussars_modifier = yes
+	cavalry_power = -0.13
+}
+DA_power.CAVAL.-0.14 = {
+	is_hussars_modifier = yes
+	cavalry_power = -0.14
+}
+DA_power.CAVAL.-0.15 = {
+	is_hussars_modifier = yes
+	cavalry_power = -0.15
+}
+DA_power.CAVAL.-0.16 = {
+	is_hussars_modifier = yes
+	cavalry_power = -0.16
+}
+DA_power.CAVAL.-0.17 = {
+	is_hussars_modifier = yes
+	cavalry_power = -0.17
+}
+DA_power.CAVAL.-0.18 = {
+	is_hussars_modifier = yes
+	cavalry_power = -0.18
+}
+DA_power.CAVAL.-0.19 = {
+	is_hussars_modifier = yes
+	cavalry_power = -0.19
+}
+DA_power.CAVAL.-0.20 = {
+	is_hussars_modifier = yes
+	cavalry_power = -0.20
+}
+DA_power.CAVAL.-0.2 = {
+	is_hussars_modifier = yes
+	cavalry_power = -0.2
+}
+DA_power.CAVAL.-0.21 = {
+	is_hussars_modifier = yes
+	cavalry_power = -0.21
+}
+DA_power.CAVAL.-0.22 = {
+	is_hussars_modifier = yes
+	cavalry_power = -0.22
+}
+DA_power.CAVAL.-0.23 = {
+	is_hussars_modifier = yes
+	cavalry_power = -0.23
+}
+DA_power.CAVAL.-0.24 = {
+	is_hussars_modifier = yes
+	cavalry_power = -0.24
+}
+DA_power.CAVAL.-0.25 = {
+	is_hussars_modifier = yes
+	cavalry_power = -0.25
+}
+DA_power.CAVAL.-0.26 = {
+	is_hussars_modifier = yes
+	cavalry_power = -0.26
+}
+DA_power.CAVAL.-0.27 = {
+	is_hussars_modifier = yes
+	cavalry_power = -0.27
+}
+DA_power.CAVAL.-0.28 = {
+	is_hussars_modifier = yes
+	cavalry_power = -0.28
+}
+DA_power.CAVAL.-0.29 = {
+	is_hussars_modifier = yes
+	cavalry_power = -0.29
+}
+DA_power.CAVAL.-0.30 = {
+	is_hussars_modifier = yes
+	cavalry_power = -0.30
+}
+DA_power.CAVAL.-0.3 = {
+	is_hussars_modifier = yes
+	cavalry_power = -0.3
+}
+DA_power.CAVAL.-0.31 = {
+	is_hussars_modifier = yes
+	cavalry_power = -0.31
+}
+DA_power.CAVAL.-0.32 = {
+	is_hussars_modifier = yes
+	cavalry_power = -0.32
+}
+DA_power.CAVAL.-0.33 = {
+	is_hussars_modifier = yes
+	cavalry_power = -0.33
+}
+DA_power.CAVAL.-0.34 = {
+	is_hussars_modifier = yes
+	cavalry_power = -0.34
+}
+DA_power.CAVAL.-0.35 = {
+	is_hussars_modifier = yes
+	cavalry_power = -0.35
+}
+DA_power.CAVAL.-0.36 = {
+	is_hussars_modifier = yes
+	cavalry_power = -0.36
+}
+DA_power.CAVAL.-0.37 = {
+	is_hussars_modifier = yes
+	cavalry_power = -0.37
+}
+DA_power.CAVAL.-0.38 = {
+	is_hussars_modifier = yes
+	cavalry_power = -0.38
+}
+DA_power.CAVAL.-0.39 = {
+	is_hussars_modifier = yes
+	cavalry_power = -0.39
+}
+DA_power.CAVAL.-0.40 = {
+	is_hussars_modifier = yes
+	cavalry_power = -0.40
+}
+DA_power.CAVAL.-0.4 = {
+	is_hussars_modifier = yes
+	cavalry_power = -0.4
+}
+DA_power.CAVAL.-0.41 = {
+	is_hussars_modifier = yes
+	cavalry_power = -0.41
+}
+DA_power.CAVAL.-0.42 = {
+	is_hussars_modifier = yes
+	cavalry_power = -0.42
+}
+DA_power.CAVAL.-0.43 = {
+	is_hussars_modifier = yes
+	cavalry_power = -0.43
+}
+DA_power.CAVAL.-0.44 = {
+	is_hussars_modifier = yes
+	cavalry_power = -0.44
+}
+DA_power.CAVAL.-0.45 = {
+	is_hussars_modifier = yes
+	cavalry_power = -0.45
+}
+DA_power.CAVAL.-0.46 = {
+	is_hussars_modifier = yes
+	cavalry_power = -0.46
+}
+DA_power.CAVAL.-0.47 = {
+	is_hussars_modifier = yes
+	cavalry_power = -0.47
+}
+DA_power.CAVAL.-0.48 = {
+	is_hussars_modifier = yes
+	cavalry_power = -0.48
+}
+DA_power.CAVAL.-0.49 = {
+	is_hussars_modifier = yes
+	cavalry_power = -0.49
+}
+DA_power.CAVAL.-0.50 = {
+	is_hussars_modifier = yes
+	cavalry_power = -0.50
+}
+DA_power.CAVAL.-0.5 = {
+	is_hussars_modifier = yes
+	cavalry_power = -0.5
+}
+DA_power.CAVAL.-0.51 = {
+	is_hussars_modifier = yes
+	cavalry_power = -0.51
+}
+DA_power.CAVAL.-0.52 = {
+	is_hussars_modifier = yes
+	cavalry_power = -0.52
+}
+DA_power.CAVAL.-0.53 = {
+	is_hussars_modifier = yes
+	cavalry_power = -0.53
+}
+DA_power.CAVAL.-0.54 = {
+	is_hussars_modifier = yes
+	cavalry_power = -0.54
+}
+DA_power.CAVAL.-0.55 = {
+	is_hussars_modifier = yes
+	cavalry_power = -0.55
+}
+DA_power.CAVAL.-0.56 = {
+	is_hussars_modifier = yes
+	cavalry_power = -0.56
+}
+DA_power.CAVAL.-0.57 = {
+	is_hussars_modifier = yes
+	cavalry_power = -0.57
+}
+DA_power.CAVAL.-0.01 = {
+	is_hussars_modifier = yes
+	cavalry_power = -0.01
+}
+DA_power.CAVAL.-0.58 = {
+	is_hussars_modifier = yes
+	cavalry_power = -0.58
+}
+DA_power.CAVAL.-0.59 = {
+	is_hussars_modifier = yes
+	cavalry_power = -0.59
+}
+DA_power.CAVAL.-0.60 = {
+	is_hussars_modifier = yes
+	cavalry_power = -0.60
+}
+DA_power.CAVAL.-0.6 = {
+	is_hussars_modifier = yes
+	cavalry_power = -0.6
+}
+DA_power.CAVAL.-0.61 = {
+	is_hussars_modifier = yes
+	cavalry_power = -0.61
+}
+DA_power.CAVAL.-0.62 = {
+	is_hussars_modifier = yes
+	cavalry_power = -0.62
+}
+DA_power.CAVAL.-0.63 = {
+	is_hussars_modifier = yes
+	cavalry_power = -0.63
+}
+DA_power.CAVAL.-0.64 = {
+	is_hussars_modifier = yes
+	cavalry_power = -0.64
+}
+DA_power.CAVAL.-0.65 = {
+	is_hussars_modifier = yes
+	cavalry_power = -0.65
+}
+DA_power.CAVAL.-0.66 = {
+	is_hussars_modifier = yes
+	cavalry_power = -0.66
+}
+DA_power.CAVAL.-0.67 = {
+	is_hussars_modifier = yes
+	cavalry_power = -0.67
+}
+DA_power.CAVAL.-0.68 = {
+	is_hussars_modifier = yes
+	cavalry_power = -0.68
+}
+DA_power.CAVAL.-0.69 = {
+	is_hussars_modifier = yes
+	cavalry_power = -0.69
+}
+DA_power.CAVAL.-0.70 = {
+	is_hussars_modifier = yes
+	cavalry_power = -0.70
+}
+DA_power.CAVAL.-0.7 = {
+	is_hussars_modifier = yes
+	cavalry_power = -0.7
+}
+DA_power.CAVAL.-0.71 = {
+	is_hussars_modifier = yes
+	cavalry_power = -0.71
+}
+DA_power.CAVAL.-0.72 = {
+	is_hussars_modifier = yes
+	cavalry_power = -0.72
+}
+DA_power.CAVAL.-0.73 = {
+	is_hussars_modifier = yes
+	cavalry_power = -0.73
+}
+DA_power.CAVAL.-0.74 = {
+	is_hussars_modifier = yes
+	cavalry_power = -0.74
+}
+DA_power.CAVAL.-0.75 = {
+	is_hussars_modifier = yes
+	cavalry_power = -0.75
+}
+DA_power.CAVAL.-0.76 = {
+	is_hussars_modifier = yes
+	cavalry_power = -0.76
+}
+DA_power.CAVAL.-0.77 = {
+	is_hussars_modifier = yes
+	cavalry_power = -0.77
+}
+DA_power.CAVAL.-0.78 = {
+	is_hussars_modifier = yes
+	cavalry_power = -0.78
+}
+DA_power.CAVAL.-0.79 = {
+	is_hussars_modifier = yes
+	cavalry_power = -0.79
+}
+DA_power.CAVAL.-0.80 = {
+	is_hussars_modifier = yes
+	cavalry_power = -0.80
+}
+DA_power.CAVAL.-0.81 = {
+	is_hussars_modifier = yes
+	cavalry_power = -0.81
+}
+DA_power.CAVAL.-0.82 = {
+	is_hussars_modifier = yes
+	cavalry_power = -0.82
+}
+DA_power.CAVAL.-0.83 = {
+	is_hussars_modifier = yes
+	cavalry_power = -0.83
+}
+DA_power.CAVAL.-0.84 = {
+	is_hussars_modifier = yes
+	cavalry_power = -0.84
+}
+DA_power.CAVAL.-0.85 = {
+	is_hussars_modifier = yes
+	cavalry_power = -0.85
+}
+DA_power.CAVAL.-0.86 = {
+	is_hussars_modifier = yes
+	cavalry_power = -0.86
+}
+DA_power.CAVAL.-0.87 = {
+	is_hussars_modifier = yes
+	cavalry_power = -0.87
+}
+DA_power.CAVAL.-0.88 = {
+	is_hussars_modifier = yes
+	cavalry_power = -0.88
+}
+DA_power.CAVAL.-0.89 = {
+	is_hussars_modifier = yes
+	cavalry_power = -0.89
+}
+DA_power.CAVAL.-0.90 = {
+	is_hussars_modifier = yes
+	cavalry_power = -0.90
+}
+DA_power.CAVAL.-0.9 = {
+	is_hussars_modifier = yes
+	cavalry_power = -0.9
+}
+DA_power.CAVAL.-0.91 = {
+	is_hussars_modifier = yes
+	cavalry_power = -0.91
+}
+DA_power.CAVAL.-0.92 = {
+	is_hussars_modifier = yes
+	cavalry_power = -0.92
+}
+DA_power.CAVAL.-0.93 = {
+	is_hussars_modifier = yes
+	cavalry_power = -0.93
+}
+DA_power.CAVAL.-0.94 = {
+	is_hussars_modifier = yes
+	cavalry_power = -0.94
+}
+DA_power.CAVAL.-0.95 = {
+	is_hussars_modifier = yes
+	cavalry_power = -0.95
+}
+DA_power.CAVAL.-0.96 = {
+	is_hussars_modifier = yes
+	cavalry_power = -0.96
+}
+DA_power.CAVAL.-0.97 = {
+	is_hussars_modifier = yes
+	cavalry_power = -0.97
+}
+DA_power.CAVAL.-0.98 = {
+	is_hussars_modifier = yes
+	cavalry_power = -0.98
+}
+DA_power.CAVAL.-0.99 = {
+	is_hussars_modifier = yes
+	cavalry_power = -0.99
+}
+DA_power.CAVAL.-1.00 = {
+	is_hussars_modifier = yes
+	cavalry_power = -1.00
+}
+DA_power.CAVAL.-1.0 = {
+	is_hussars_modifier = yes
+	cavalry_power = -1.0
+}
+DA_power.CAVAL.-1 = {
+	is_hussars_modifier = yes
+	cavalry_power = -1
+}
+
+DA_Fire.ARTIL.-0 = {
+
+}
+DA_Fire.ARTIL.-0.0 = {
+	
+}
+DA_Fire.ARTIL.-0.01 = {
+	artillery_fire = -0.01
+}
+DA_Fire.ARTIL.-0.02 = {
+	artillery_fire = -0.02
+}
+DA_Fire.ARTIL.-0.03 = {
+	artillery_fire = -0.03
+}
+DA_Fire.ARTIL.-0.04 = {
+	artillery_fire = -0.04
+}
+DA_Fire.ARTIL.-0.05 = {
+	artillery_fire = -0.05
+}
+DA_Fire.ARTIL.-0.06 = {
+	artillery_fire = -0.06
+}
+DA_Fire.ARTIL.-0.07 = {
+	artillery_fire = -0.07
+}
+DA_Fire.ARTIL.-0.08 = {
+	artillery_fire = -0.08
+}
+DA_Fire.ARTIL.-0.09 = {
+	artillery_fire = -0.09
+}
+DA_Fire.ARTIL.-0.10 = {
+	artillery_fire = -0.10
+}
+DA_Fire.ARTIL.-0.1 = {
+	artillery_fire = -0.1
+}
+DA_Fire.ARTIL.-0.11 = {
+	artillery_fire = -0.11
+}
+DA_Fire.ARTIL.-0.12 = {
+	artillery_fire = -0.12
+}
+DA_Fire.ARTIL.-0.13 = {
+	artillery_fire = -0.13
+}
+DA_Fire.ARTIL.-0.14 = {
+	artillery_fire = -0.14
+}
+DA_Fire.ARTIL.-0.15 = {
+	artillery_fire = -0.15
+}
+DA_Fire.ARTIL.-0.16 = {
+	artillery_fire = -0.16
+}
+DA_Fire.ARTIL.-0.17 = {
+	artillery_fire = -0.17
+}
+DA_Fire.ARTIL.-0.18 = {
+	artillery_fire = -0.18
+}
+DA_Fire.ARTIL.-0.19 = {
+	artillery_fire = -0.19
+}
+DA_Fire.ARTIL.-0.20 = {
+	artillery_fire = -0.20
+}
+DA_Fire.ARTIL.-0.2 = {
+	artillery_fire = -0.2
+}
+DA_Fire.ARTIL.-0.21 = {
+	artillery_fire = -0.21
+}
+DA_Fire.ARTIL.-0.22 = {
+	artillery_fire = -0.22
+}
+DA_Fire.ARTIL.-0.23 = {
+	artillery_fire = -0.23
+}
+DA_Fire.ARTIL.-0.24 = {
+	artillery_fire = -0.24
+}
+DA_Fire.ARTIL.-0.25 = {
+	artillery_fire = -0.25
+}
+DA_Fire.ARTIL.-0.26 = {
+	artillery_fire = -0.26
+}
+DA_Fire.ARTIL.-0.27 = {
+	artillery_fire = -0.27
+}
+DA_Fire.ARTIL.-0.28 = {
+	artillery_fire = -0.28
+}
+DA_Fire.ARTIL.-0.29 = {
+	artillery_fire = -0.29
+}
+DA_Fire.ARTIL.-0.30 = {
+	artillery_fire = -0.30
+}
+DA_Fire.ARTIL.-0.3 = {
+	artillery_fire = -0.3
+}
+DA_Fire.ARTIL.-0.31 = {
+	artillery_fire = -0.31
+}
+DA_Fire.ARTIL.-0.32 = {
+	artillery_fire = -0.32
+}
+DA_Fire.ARTIL.-0.33 = {
+	artillery_fire = -0.33
+}
+DA_Fire.ARTIL.-0.34 = {
+	artillery_fire = -0.34
+}
+DA_Fire.ARTIL.-0.35 = {
+	artillery_fire = -0.35
+}
+DA_Fire.ARTIL.-0.36 = {
+	artillery_fire = -0.36
+}
+DA_Fire.ARTIL.-0.37 = {
+	artillery_fire = -0.37
+}
+DA_Fire.ARTIL.-0.38 = {
+	artillery_fire = -0.38
+}
+DA_Fire.ARTIL.-0.39 = {
+	artillery_fire = -0.39
+}
+DA_Fire.ARTIL.-0.40 = {
+	artillery_fire = -0.40
+}
+DA_Fire.ARTIL.-0.4 = {
+	artillery_fire = -0.4
+}
+DA_Fire.ARTIL.-0.41 = {
+	artillery_fire = -0.41
+}
+DA_Fire.ARTIL.-0.42 = {
+	artillery_fire = -0.42
+}
+DA_Fire.ARTIL.-0.43 = {
+	artillery_fire = -0.43
+}
+DA_Fire.ARTIL.-0.44 = {
+	artillery_fire = -0.44
+}
+DA_Fire.ARTIL.-0.45 = {
+	artillery_fire = -0.45
+}
+DA_Fire.ARTIL.-0.46 = {
+	artillery_fire = -0.46
+}
+DA_Fire.ARTIL.-0.47 = {
+	artillery_fire = -0.47
+}
+DA_Fire.ARTIL.-0.48 = {
+	artillery_fire = -0.48
+}
+DA_Fire.ARTIL.-0.49 = {
+	artillery_fire = -0.49
+}
+DA_Fire.ARTIL.-0.50 = {
+	artillery_fire = -0.50
+}
+DA_Fire.ARTIL.-0.5 = {
+	artillery_fire = -0.5
+}
+DA_Fire.ARTIL.-0.51 = {
+	artillery_fire = -0.51
+}
+DA_Fire.ARTIL.-0.52 = {
+	artillery_fire = -0.52
+}
+DA_Fire.ARTIL.-0.53 = {
+	artillery_fire = -0.53
+}
+DA_Fire.ARTIL.-0.54 = {
+	artillery_fire = -0.54
+}
+DA_Fire.ARTIL.-0.55 = {
+	artillery_fire = -0.55
+}
+DA_Fire.ARTIL.-0.56 = {
+	artillery_fire = -0.56
+}
+DA_Fire.ARTIL.-0.57 = {
+	artillery_fire = -0.57
+}
+DA_Fire.ARTIL.-0.01 = {
+	artillery_fire = -0.01
+}
+DA_Fire.ARTIL.-0.58 = {
+	artillery_fire = -0.58
+}
+DA_Fire.ARTIL.-0.59 = {
+	artillery_fire = -0.59
+}
+DA_Fire.ARTIL.-0.60 = {
+	artillery_fire = -0.60
+}
+DA_Fire.ARTIL.-0.6 = {
+	artillery_fire = -0.6
+}
+DA_Fire.ARTIL.-0.61 = {
+	artillery_fire = -0.61
+}
+DA_Fire.ARTIL.-0.62 = {
+	artillery_fire = -0.62
+}
+DA_Fire.ARTIL.-0.63 = {
+	artillery_fire = -0.63
+}
+DA_Fire.ARTIL.-0.64 = {
+	artillery_fire = -0.64
+}
+DA_Fire.ARTIL.-0.65 = {
+	artillery_fire = -0.65
+}
+DA_Fire.ARTIL.-0.66 = {
+	artillery_fire = -0.66
+}
+DA_Fire.ARTIL.-0.67 = {
+	artillery_fire = -0.67
+}
+DA_Fire.ARTIL.-0.68 = {
+	artillery_fire = -0.68
+}
+DA_Fire.ARTIL.-0.69 = {
+	artillery_fire = -0.69
+}
+DA_Fire.ARTIL.-0.70 = {
+	artillery_fire = -0.70
+}
+DA_Fire.ARTIL.-0.7 = {
+	artillery_fire = -0.7
+}
+DA_Fire.ARTIL.-0.71 = {
+	artillery_fire = -0.71
+}
+DA_Fire.ARTIL.-0.72 = {
+	artillery_fire = -0.72
+}
+DA_Fire.ARTIL.-0.73 = {
+	artillery_fire = -0.73
+}
+DA_Fire.ARTIL.-0.74 = {
+	artillery_fire = -0.74
+}
+DA_Fire.ARTIL.-0.75 = {
+	artillery_fire = -0.75
+}
+DA_Fire.ARTIL.-0.76 = {
+	artillery_fire = -0.76
+}
+DA_Fire.ARTIL.-0.77 = {
+	artillery_fire = -0.77
+}
+DA_Fire.ARTIL.-0.78 = {
+	artillery_fire = -0.78
+}
+DA_Fire.ARTIL.-0.79 = {
+	artillery_fire = -0.79
+}
+DA_Fire.ARTIL.-0.80 = {
+	artillery_fire = -0.80
+}
+DA_Fire.ARTIL.-0.81 = {
+	artillery_fire = -0.81
+}
+DA_Fire.ARTIL.-0.82 = {
+	artillery_fire = -0.82
+}
+DA_Fire.ARTIL.-0.83 = {
+	artillery_fire = -0.83
+}
+DA_Fire.ARTIL.-0.84 = {
+	artillery_fire = -0.84
+}
+DA_Fire.ARTIL.-0.85 = {
+	artillery_fire = -0.85
+}
+DA_Fire.ARTIL.-0.86 = {
+	artillery_fire = -0.86
+}
+DA_Fire.ARTIL.-0.87 = {
+	artillery_fire = -0.87
+}
+DA_Fire.ARTIL.-0.88 = {
+	artillery_fire = -0.88
+}
+DA_Fire.ARTIL.-0.89 = {
+	artillery_fire = -0.89
+}
+DA_Fire.ARTIL.-0.90 = {
+	artillery_fire = -0.90
+}
+DA_Fire.ARTIL.-0.9 = {
+	artillery_fire = -0.9
+}
+DA_Fire.ARTIL.-0.91 = {
+	artillery_fire = -0.91
+}
+DA_Fire.ARTIL.-0.92 = {
+	artillery_fire = -0.92
+}
+DA_Fire.ARTIL.-0.93 = {
+	artillery_fire = -0.93
+}
+DA_Fire.ARTIL.-0.94 = {
+	artillery_fire = -0.94
+}
+DA_Fire.ARTIL.-0.95 = {
+	artillery_fire = -0.95
+}
+DA_Fire.ARTIL.-0.96 = {
+	artillery_fire = -0.96
+}
+DA_Fire.ARTIL.-0.97 = {
+	artillery_fire = -0.97
+}
+DA_Fire.ARTIL.-0.98 = {
+	artillery_fire = -0.98
+}
+DA_Fire.ARTIL.-0.99 = {
+	artillery_fire = -0.99
+}
+DA_Fire.ARTIL.-1.00 = {
+	artillery_fire = -1.00
+}
+DA_Fire.ARTIL.-1.0 = {
+	artillery_fire = -1.0
+}
+DA_Fire.ARTIL.-1 = {
+	artillery_fire = -1
+}
+
+
+# shock
+
+DA_shock.ARTIL.-0 = {
+
+}
+DA_shock.ARTIL.-0.0 = {
+	
+}
+DA_shock.ARTIL.-0.01 = {
+	artillery_shock = -0.01
+}
+DA_shock.ARTIL.-0.02 = {
+	artillery_shock = -0.02
+}
+DA_shock.ARTIL.-0.03 = {
+	artillery_shock = -0.03
+}
+DA_shock.ARTIL.-0.04 = {
+	artillery_shock = -0.04
+}
+DA_shock.ARTIL.-0.05 = {
+	artillery_shock = -0.05
+}
+DA_shock.ARTIL.-0.06 = {
+	artillery_shock = -0.06
+}
+DA_shock.ARTIL.-0.07 = {
+	artillery_shock = -0.07
+}
+DA_shock.ARTIL.-0.08 = {
+	artillery_shock = -0.08
+}
+DA_shock.ARTIL.-0.09 = {
+	artillery_shock = -0.09
+}
+DA_shock.ARTIL.-0.10 = {
+	artillery_shock = -0.10
+}
+DA_shock.ARTIL.-0.1 = {
+	artillery_shock = -0.1
+}
+DA_shock.ARTIL.-0.11 = {
+	artillery_shock = -0.11
+}
+DA_shock.ARTIL.-0.12 = {
+	artillery_shock = -0.12
+}
+DA_shock.ARTIL.-0.13 = {
+	artillery_shock = -0.13
+}
+DA_shock.ARTIL.-0.14 = {
+	artillery_shock = -0.14
+}
+DA_shock.ARTIL.-0.15 = {
+	artillery_shock = -0.15
+}
+DA_shock.ARTIL.-0.16 = {
+	artillery_shock = -0.16
+}
+DA_shock.ARTIL.-0.17 = {
+	artillery_shock = -0.17
+}
+DA_shock.ARTIL.-0.18 = {
+	artillery_shock = -0.18
+}
+DA_shock.ARTIL.-0.19 = {
+	artillery_shock = -0.19
+}
+DA_shock.ARTIL.-0.20 = {
+	artillery_shock = -0.20
+}
+DA_shock.ARTIL.-0.2 = {
+	artillery_shock = -0.2
+}
+DA_shock.ARTIL.-0.21 = {
+	artillery_shock = -0.21
+}
+DA_shock.ARTIL.-0.22 = {
+	artillery_shock = -0.22
+}
+DA_shock.ARTIL.-0.23 = {
+	artillery_shock = -0.23
+}
+DA_shock.ARTIL.-0.24 = {
+	artillery_shock = -0.24
+}
+DA_shock.ARTIL.-0.25 = {
+	artillery_shock = -0.25
+}
+DA_shock.ARTIL.-0.26 = {
+	artillery_shock = -0.26
+}
+DA_shock.ARTIL.-0.27 = {
+	artillery_shock = -0.27
+}
+DA_shock.ARTIL.-0.28 = {
+	artillery_shock = -0.28
+}
+DA_shock.ARTIL.-0.29 = {
+	artillery_shock = -0.29
+}
+DA_shock.ARTIL.-0.30 = {
+	artillery_shock = -0.30
+}
+DA_shock.ARTIL.-0.3 = {
+	artillery_shock = -0.3
+}
+DA_shock.ARTIL.-0.31 = {
+	artillery_shock = -0.31
+}
+DA_shock.ARTIL.-0.32 = {
+	artillery_shock = -0.32
+}
+DA_shock.ARTIL.-0.33 = {
+	artillery_shock = -0.33
+}
+DA_shock.ARTIL.-0.34 = {
+	artillery_shock = -0.34
+}
+DA_shock.ARTIL.-0.35 = {
+	artillery_shock = -0.35
+}
+DA_shock.ARTIL.-0.36 = {
+	artillery_shock = -0.36
+}
+DA_shock.ARTIL.-0.37 = {
+	artillery_shock = -0.37
+}
+DA_shock.ARTIL.-0.38 = {
+	artillery_shock = -0.38
+}
+DA_shock.ARTIL.-0.39 = {
+	artillery_shock = -0.39
+}
+DA_shock.ARTIL.-0.40 = {
+	artillery_shock = -0.40
+}
+DA_shock.ARTIL.-0.4 = {
+	artillery_shock = -0.4
+}
+DA_shock.ARTIL.-0.41 = {
+	artillery_shock = -0.41
+}
+DA_shock.ARTIL.-0.42 = {
+	artillery_shock = -0.42
+}
+DA_shock.ARTIL.-0.43 = {
+	artillery_shock = -0.43
+}
+DA_shock.ARTIL.-0.44 = {
+	artillery_shock = -0.44
+}
+DA_shock.ARTIL.-0.45 = {
+	artillery_shock = -0.45
+}
+DA_shock.ARTIL.-0.46 = {
+	artillery_shock = -0.46
+}
+DA_shock.ARTIL.-0.47 = {
+	artillery_shock = -0.47
+}
+DA_shock.ARTIL.-0.48 = {
+	artillery_shock = -0.48
+}
+DA_shock.ARTIL.-0.49 = {
+	artillery_shock = -0.49
+}
+DA_shock.ARTIL.-0.50 = {
+	artillery_shock = -0.50
+}
+DA_shock.ARTIL.-0.5 = {
+	artillery_shock = -0.5
+}
+DA_shock.ARTIL.-0.51 = {
+	artillery_shock = -0.51
+}
+DA_shock.ARTIL.-0.52 = {
+	artillery_shock = -0.52
+}
+DA_shock.ARTIL.-0.53 = {
+	artillery_shock = -0.53
+}
+DA_shock.ARTIL.-0.54 = {
+	artillery_shock = -0.54
+}
+DA_shock.ARTIL.-0.55 = {
+	artillery_shock = -0.55
+}
+DA_shock.ARTIL.-0.56 = {
+	artillery_shock = -0.56
+}
+DA_shock.ARTIL.-0.57 = {
+	artillery_shock = -0.57
+}
+DA_shock.ARTIL.-0.01 = {
+	artillery_shock = -0.01
+}
+DA_shock.ARTIL.-0.58 = {
+	artillery_shock = -0.58
+}
+DA_shock.ARTIL.-0.59 = {
+	artillery_shock = -0.59
+}
+DA_shock.ARTIL.-0.60 = {
+	artillery_shock = -0.60
+}
+DA_shock.ARTIL.-0.6 = {
+	artillery_shock = -0.6
+}
+DA_shock.ARTIL.-0.61 = {
+	artillery_shock = -0.61
+}
+DA_shock.ARTIL.-0.62 = {
+	artillery_shock = -0.62
+}
+DA_shock.ARTIL.-0.63 = {
+	artillery_shock = -0.63
+}
+DA_shock.ARTIL.-0.64 = {
+	artillery_shock = -0.64
+}
+DA_shock.ARTIL.-0.65 = {
+	artillery_shock = -0.65
+}
+DA_shock.ARTIL.-0.66 = {
+	artillery_shock = -0.66
+}
+DA_shock.ARTIL.-0.67 = {
+	artillery_shock = -0.67
+}
+DA_shock.ARTIL.-0.68 = {
+	artillery_shock = -0.68
+}
+DA_shock.ARTIL.-0.69 = {
+	artillery_shock = -0.69
+}
+DA_shock.ARTIL.-0.70 = {
+	artillery_shock = -0.70
+}
+DA_shock.ARTIL.-0.7 = {
+	artillery_shock = -0.7
+}
+DA_shock.ARTIL.-0.71 = {
+	artillery_shock = -0.71
+}
+DA_shock.ARTIL.-0.72 = {
+	artillery_shock = -0.72
+}
+DA_shock.ARTIL.-0.73 = {
+	artillery_shock = -0.73
+}
+DA_shock.ARTIL.-0.74 = {
+	artillery_shock = -0.74
+}
+DA_shock.ARTIL.-0.75 = {
+	artillery_shock = -0.75
+}
+DA_shock.ARTIL.-0.76 = {
+	artillery_shock = -0.76
+}
+DA_shock.ARTIL.-0.77 = {
+	artillery_shock = -0.77
+}
+DA_shock.ARTIL.-0.78 = {
+	artillery_shock = -0.78
+}
+DA_shock.ARTIL.-0.79 = {
+	artillery_shock = -0.79
+}
+DA_shock.ARTIL.-0.80 = {
+	artillery_shock = -0.80
+}
+DA_shock.ARTIL.-0.81 = {
+	artillery_shock = -0.81
+}
+DA_shock.ARTIL.-0.82 = {
+	artillery_shock = -0.82
+}
+DA_shock.ARTIL.-0.83 = {
+	artillery_shock = -0.83
+}
+DA_shock.ARTIL.-0.84 = {
+	artillery_shock = -0.84
+}
+DA_shock.ARTIL.-0.85 = {
+	artillery_shock = -0.85
+}
+DA_shock.ARTIL.-0.86 = {
+	artillery_shock = -0.86
+}
+DA_shock.ARTIL.-0.87 = {
+	artillery_shock = -0.87
+}
+DA_shock.ARTIL.-0.88 = {
+	artillery_shock = -0.88
+}
+DA_shock.ARTIL.-0.89 = {
+	artillery_shock = -0.89
+}
+DA_shock.ARTIL.-0.90 = {
+	artillery_shock = -0.90
+}
+DA_shock.ARTIL.-0.9 = {
+	artillery_shock = -0.9
+}
+DA_shock.ARTIL.-0.91 = {
+	artillery_shock = -0.91
+}
+DA_shock.ARTIL.-0.92 = {
+	artillery_shock = -0.92
+}
+DA_shock.ARTIL.-0.93 = {
+	artillery_shock = -0.93
+}
+DA_shock.ARTIL.-0.94 = {
+	artillery_shock = -0.94
+}
+DA_shock.ARTIL.-0.95 = {
+	artillery_shock = -0.95
+}
+DA_shock.ARTIL.-0.96 = {
+	artillery_shock = -0.96
+}
+DA_shock.ARTIL.-0.97 = {
+	artillery_shock = -0.97
+}
+DA_shock.ARTIL.-0.98 = {
+	artillery_shock = -0.98
+}
+DA_shock.ARTIL.-0.99 = {
+	artillery_shock = -0.99
+}
+DA_shock.ARTIL.-1.00 = {
+	artillery_shock = -1.00
+}
+DA_shock.ARTIL.-1.0 = {
+	artillery_shock = -1.0
+}
+DA_shock.ARTIL.-1 = {
+	artillery_shock = -1
+}
+
+# combat ability
+
+DA_power.ARTIL.-0 = {
+
+}
+DA_power.ARTIL.-0.0 = {
+	
+}
+DA_power.ARTIL.-0.01 = {
+	artillery_power = -0.01
+}
+DA_power.ARTIL.-0.02 = {
+	artillery_power = -0.02
+}
+DA_power.ARTIL.-0.03 = {
+	artillery_power = -0.03
+}
+DA_power.ARTIL.-0.04 = {
+	artillery_power = -0.04
+}
+DA_power.ARTIL.-0.05 = {
+	artillery_power = -0.05
+}
+DA_power.ARTIL.-0.06 = {
+	artillery_power = -0.06
+}
+DA_power.ARTIL.-0.07 = {
+	artillery_power = -0.07
+}
+DA_power.ARTIL.-0.08 = {
+	artillery_power = -0.08
+}
+DA_power.ARTIL.-0.09 = {
+	artillery_power = -0.09
+}
+DA_power.ARTIL.-0.10 = {
+	artillery_power = -0.10
+}
+DA_power.ARTIL.-0.1 = {
+	artillery_power = -0.1
+}
+DA_power.ARTIL.-0.11 = {
+	artillery_power = -0.11
+}
+DA_power.ARTIL.-0.12 = {
+	artillery_power = -0.12
+}
+DA_power.ARTIL.-0.13 = {
+	artillery_power = -0.13
+}
+DA_power.ARTIL.-0.14 = {
+	artillery_power = -0.14
+}
+DA_power.ARTIL.-0.15 = {
+	artillery_power = -0.15
+}
+DA_power.ARTIL.-0.16 = {
+	artillery_power = -0.16
+}
+DA_power.ARTIL.-0.17 = {
+	artillery_power = -0.17
+}
+DA_power.ARTIL.-0.18 = {
+	artillery_power = -0.18
+}
+DA_power.ARTIL.-0.19 = {
+	artillery_power = -0.19
+}
+DA_power.ARTIL.-0.20 = {
+	artillery_power = -0.20
+}
+DA_power.ARTIL.-0.2 = {
+	artillery_power = -0.2
+}
+DA_power.ARTIL.-0.21 = {
+	artillery_power = -0.21
+}
+DA_power.ARTIL.-0.22 = {
+	artillery_power = -0.22
+}
+DA_power.ARTIL.-0.23 = {
+	artillery_power = -0.23
+}
+DA_power.ARTIL.-0.24 = {
+	artillery_power = -0.24
+}
+DA_power.ARTIL.-0.25 = {
+	artillery_power = -0.25
+}
+DA_power.ARTIL.-0.26 = {
+	artillery_power = -0.26
+}
+DA_power.ARTIL.-0.27 = {
+	artillery_power = -0.27
+}
+DA_power.ARTIL.-0.28 = {
+	artillery_power = -0.28
+}
+DA_power.ARTIL.-0.29 = {
+	artillery_power = -0.29
+}
+DA_power.ARTIL.-0.30 = {
+	artillery_power = -0.30
+}
+DA_power.ARTIL.-0.3 = {
+	artillery_power = -0.3
+}
+DA_power.ARTIL.-0.31 = {
+	artillery_power = -0.31
+}
+DA_power.ARTIL.-0.32 = {
+	artillery_power = -0.32
+}
+DA_power.ARTIL.-0.33 = {
+	artillery_power = -0.33
+}
+DA_power.ARTIL.-0.34 = {
+	artillery_power = -0.34
+}
+DA_power.ARTIL.-0.35 = {
+	artillery_power = -0.35
+}
+DA_power.ARTIL.-0.36 = {
+	artillery_power = -0.36
+}
+DA_power.ARTIL.-0.37 = {
+	artillery_power = -0.37
+}
+DA_power.ARTIL.-0.38 = {
+	artillery_power = -0.38
+}
+DA_power.ARTIL.-0.39 = {
+	artillery_power = -0.39
+}
+DA_power.ARTIL.-0.40 = {
+	artillery_power = -0.40
+}
+DA_power.ARTIL.-0.4 = {
+	artillery_power = -0.4
+}
+DA_power.ARTIL.-0.41 = {
+	artillery_power = -0.41
+}
+DA_power.ARTIL.-0.42 = {
+	artillery_power = -0.42
+}
+DA_power.ARTIL.-0.43 = {
+	artillery_power = -0.43
+}
+DA_power.ARTIL.-0.44 = {
+	artillery_power = -0.44
+}
+DA_power.ARTIL.-0.45 = {
+	artillery_power = -0.45
+}
+DA_power.ARTIL.-0.46 = {
+	artillery_power = -0.46
+}
+DA_power.ARTIL.-0.47 = {
+	artillery_power = -0.47
+}
+DA_power.ARTIL.-0.48 = {
+	artillery_power = -0.48
+}
+DA_power.ARTIL.-0.49 = {
+	artillery_power = -0.49
+}
+DA_power.ARTIL.-0.50 = {
+	artillery_power = -0.50
+}
+DA_power.ARTIL.-0.5 = {
+	artillery_power = -0.5
+}
+DA_power.ARTIL.-0.51 = {
+	artillery_power = -0.51
+}
+DA_power.ARTIL.-0.52 = {
+	artillery_power = -0.52
+}
+DA_power.ARTIL.-0.53 = {
+	artillery_power = -0.53
+}
+DA_power.ARTIL.-0.54 = {
+	artillery_power = -0.54
+}
+DA_power.ARTIL.-0.55 = {
+	artillery_power = -0.55
+}
+DA_power.ARTIL.-0.56 = {
+	artillery_power = -0.56
+}
+DA_power.ARTIL.-0.57 = {
+	artillery_power = -0.57
+}
+DA_power.ARTIL.-0.01 = {
+	artillery_power = -0.01
+}
+DA_power.ARTIL.-0.58 = {
+	artillery_power = -0.58
+}
+DA_power.ARTIL.-0.59 = {
+	artillery_power = -0.59
+}
+DA_power.ARTIL.-0.60 = {
+	artillery_power = -0.60
+}
+DA_power.ARTIL.-0.6 = {
+	artillery_power = -0.6
+}
+DA_power.ARTIL.-0.61 = {
+	artillery_power = -0.61
+}
+DA_power.ARTIL.-0.62 = {
+	artillery_power = -0.62
+}
+DA_power.ARTIL.-0.63 = {
+	artillery_power = -0.63
+}
+DA_power.ARTIL.-0.64 = {
+	artillery_power = -0.64
+}
+DA_power.ARTIL.-0.65 = {
+	artillery_power = -0.65
+}
+DA_power.ARTIL.-0.66 = {
+	artillery_power = -0.66
+}
+DA_power.ARTIL.-0.67 = {
+	artillery_power = -0.67
+}
+DA_power.ARTIL.-0.68 = {
+	artillery_power = -0.68
+}
+DA_power.ARTIL.-0.69 = {
+	artillery_power = -0.69
+}
+DA_power.ARTIL.-0.70 = {
+	artillery_power = -0.70
+}
+DA_power.ARTIL.-0.7 = {
+	artillery_power = -0.7
+}
+DA_power.ARTIL.-0.71 = {
+	artillery_power = -0.71
+}
+DA_power.ARTIL.-0.72 = {
+	artillery_power = -0.72
+}
+DA_power.ARTIL.-0.73 = {
+	artillery_power = -0.73
+}
+DA_power.ARTIL.-0.74 = {
+	artillery_power = -0.74
+}
+DA_power.ARTIL.-0.75 = {
+	artillery_power = -0.75
+}
+DA_power.ARTIL.-0.76 = {
+	artillery_power = -0.76
+}
+DA_power.ARTIL.-0.77 = {
+	artillery_power = -0.77
+}
+DA_power.ARTIL.-0.78 = {
+	artillery_power = -0.78
+}
+DA_power.ARTIL.-0.79 = {
+	artillery_power = -0.79
+}
+DA_power.ARTIL.-0.80 = {
+	artillery_power = -0.80
+}
+DA_power.ARTIL.-0.81 = {
+	artillery_power = -0.81
+}
+DA_power.ARTIL.-0.82 = {
+	artillery_power = -0.82
+}
+DA_power.ARTIL.-0.83 = {
+	artillery_power = -0.83
+}
+DA_power.ARTIL.-0.84 = {
+	artillery_power = -0.84
+}
+DA_power.ARTIL.-0.85 = {
+	artillery_power = -0.85
+}
+DA_power.ARTIL.-0.86 = {
+	artillery_power = -0.86
+}
+DA_power.ARTIL.-0.87 = {
+	artillery_power = -0.87
+}
+DA_power.ARTIL.-0.88 = {
+	artillery_power = -0.88
+}
+DA_power.ARTIL.-0.89 = {
+	artillery_power = -0.89
+}
+DA_power.ARTIL.-0.90 = {
+	artillery_power = -0.90
+}
+DA_power.ARTIL.-0.9 = {
+	artillery_power = -0.9
+}
+DA_power.ARTIL.-0.91 = {
+	artillery_power = -0.91
+}
+DA_power.ARTIL.-0.92 = {
+	artillery_power = -0.92
+}
+DA_power.ARTIL.-0.93 = {
+	artillery_power = -0.93
+}
+DA_power.ARTIL.-0.94 = {
+	artillery_power = -0.94
+}
+DA_power.ARTIL.-0.95 = {
+	artillery_power = -0.95
+}
+DA_power.ARTIL.-0.96 = {
+	artillery_power = -0.96
+}
+DA_power.ARTIL.-0.97 = {
+	artillery_power = -0.97
+}
+DA_power.ARTIL.-0.98 = {
+	artillery_power = -0.98
+}
+DA_power.ARTIL.-0.99 = {
+	artillery_power = -0.99
+}
+DA_power.ARTIL.-1.00 = {
+	artillery_power = -1.00
+}
+DA_power.ARTIL.-1.0 = {
+	artillery_power = -1.0
+}
+DA_power.ARTIL.-1 = {
+	artillery_power = -1
+}
+
+DA_Shock_rec.INFAN.0 = {
+}
+DA_Shock_rec.INFAN.0.0 = {
+}
+DA_Shock_rec.INFAN.0.00 = {
+}
+DA_Shock_rec.INFAN.0.01 = {
+	is_musketeer_modifier = yes
+	shock_damage_received = 0.01
+}
+DA_Shock_rec.INFAN.0.02 = {
+	is_musketeer_modifier = yes
+	shock_damage_received = 0.02
+}
+DA_Shock_rec.INFAN.0.03 = {
+	is_musketeer_modifier = yes
+	shock_damage_received = 0.03
+}
+DA_Shock_rec.INFAN.0.04 = {
+	is_musketeer_modifier = yes
+	shock_damage_received = 0.04
+}
+DA_Shock_rec.INFAN.0.05 = {
+	is_musketeer_modifier = yes
+	shock_damage_received = 0.05
+}
+DA_Shock_rec.INFAN.0.06 = {
+	is_musketeer_modifier = yes
+	shock_damage_received = 0.06
+}
+DA_Shock_rec.INFAN.0.07 = {
+	is_musketeer_modifier = yes
+	shock_damage_received = 0.07
+}
+DA_Shock_rec.INFAN.0.08 = {
+	is_musketeer_modifier = yes
+	shock_damage_received = 0.08
+}
+DA_Shock_rec.INFAN.0.09 = {
+	is_musketeer_modifier = yes
+	shock_damage_received = 0.09
+}
+DA_Shock_rec.INFAN.0.10 = {
+	is_musketeer_modifier = yes
+	shock_damage_received = 0.10
+}
+DA_Shock_rec.INFAN.0.1 = {
+	is_musketeer_modifier = yes
+	shock_damage_received = 0.1
+}
+DA_Shock_rec.INFAN.0.11 = {
+	is_musketeer_modifier = yes
+	shock_damage_received = 0.11
+}
+DA_Shock_rec.INFAN.0.12 = {
+	is_musketeer_modifier = yes
+	shock_damage_received = 0.12
+}
+DA_Shock_rec.INFAN.0.13 = {
+	is_musketeer_modifier = yes
+	shock_damage_received = 0.13
+}
+DA_Shock_rec.INFAN.0.14 = {
+	is_musketeer_modifier = yes
+	shock_damage_received = 0.14
+}
+DA_Shock_rec.INFAN.0.15 = {
+	is_musketeer_modifier = yes
+	shock_damage_received = 0.15
+}
+DA_Shock_rec.INFAN.0.16 = {
+	is_musketeer_modifier = yes
+	shock_damage_received = 0.16
+}
+DA_Shock_rec.INFAN.0.17 = {
+	is_musketeer_modifier = yes
+	shock_damage_received = 0.17
+}
+DA_Shock_rec.INFAN.0.18 = {
+	is_musketeer_modifier = yes
+	shock_damage_received = 0.18
+}
+DA_Shock_rec.INFAN.0.19 = {
+	is_musketeer_modifier = yes
+	shock_damage_received = 0.19
+}
+DA_Shock_rec.INFAN.0.20 = {
+	is_musketeer_modifier = yes
+	shock_damage_received = 0.20
+}
+DA_Shock_rec.INFAN.0.2 = {
+	is_musketeer_modifier = yes
+	shock_damage_received = 0.2
+}
+DA_Shock_rec.INFAN.0.21 = {
+	is_musketeer_modifier = yes
+	shock_damage_received = 0.21
+}
+DA_Shock_rec.INFAN.0.22 = {
+	is_musketeer_modifier = yes
+	shock_damage_received = 0.22
+}
+DA_Shock_rec.INFAN.0.23 = {
+	is_musketeer_modifier = yes
+	shock_damage_received = 0.23
+}
+DA_Shock_rec.INFAN.0.24 = {
+	is_musketeer_modifier = yes
+	shock_damage_received = 0.24
+}
+DA_Shock_rec.INFAN.0.25 = {
+	is_musketeer_modifier = yes
+	shock_damage_received = 0.25
+}
+DA_Shock_rec.INFAN.0.26 = {
+	is_musketeer_modifier = yes
+	shock_damage_received = 0.26
+}
+DA_Shock_rec.INFAN.0.27 = {
+	is_musketeer_modifier = yes
+	shock_damage_received = 0.27
+}
+DA_Shock_rec.INFAN.0.28 = {
+	is_musketeer_modifier = yes
+	shock_damage_received = 0.28
+}
+DA_Shock_rec.INFAN.0.29 = {
+	is_musketeer_modifier = yes
+	shock_damage_received = 0.29
+}
+DA_Shock_rec.INFAN.0.30 = {
+	is_musketeer_modifier = yes
+	shock_damage_received = 0.30
+}
+DA_Shock_rec.INFAN.0.3 = {
+	is_musketeer_modifier = yes
+	shock_damage_received = 0.3
+}
+DA_Shock_rec.INFAN.0.31 = {
+	is_musketeer_modifier = yes
+	shock_damage_received = 0.31
+}
+DA_Shock_rec.INFAN.0.32 = {
+	is_musketeer_modifier = yes
+	shock_damage_received = 0.32
+}
+DA_Shock_rec.INFAN.0.33 = {
+	is_musketeer_modifier = yes
+	shock_damage_received = 0.33
+}
+DA_Shock_rec.INFAN.0.34 = {
+	is_musketeer_modifier = yes
+	shock_damage_received = 0.34
+}
+DA_Shock_rec.INFAN.0.35 = {
+	is_musketeer_modifier = yes
+	shock_damage_received = 0.35
+}
+DA_Shock_rec.INFAN.0.36 = {
+	is_musketeer_modifier = yes
+	shock_damage_received = 0.36
+}
+DA_Shock_rec.INFAN.0.37 = {
+	is_musketeer_modifier = yes
+	shock_damage_received = 0.37
+}
+DA_Shock_rec.INFAN.0.38 = {
+	is_musketeer_modifier = yes
+	shock_damage_received = 0.38
+}
+DA_Shock_rec.INFAN.0.39 = {
+	is_musketeer_modifier = yes
+	shock_damage_received = 0.39
+}
+DA_Shock_rec.INFAN.0.40 = {
+	is_musketeer_modifier = yes
+	shock_damage_received = 0.40
+}
+DA_Shock_rec.INFAN.0.4 = {
+	is_musketeer_modifier = yes
+	shock_damage_received = 0.4
+}
+DA_Shock_rec.INFAN.0.41 = {
+	is_musketeer_modifier = yes
+	shock_damage_received = 0.41
+}
+DA_Shock_rec.INFAN.0.42 = {
+	is_musketeer_modifier = yes
+	shock_damage_received = 0.42
+}
+DA_Shock_rec.INFAN.0.43 = {
+	is_musketeer_modifier = yes
+	shock_damage_received = 0.43
+}
+DA_Shock_rec.INFAN.0.44 = {
+	is_musketeer_modifier = yes
+	shock_damage_received = 0.44
+}
+DA_Shock_rec.INFAN.0.45 = {
+	is_musketeer_modifier = yes
+	shock_damage_received = 0.45
+}
+DA_Shock_rec.INFAN.0.46 = {
+	is_musketeer_modifier = yes
+	shock_damage_received = 0.46
+}
+DA_Shock_rec.INFAN.0.47 = {
+	is_musketeer_modifier = yes
+	shock_damage_received = 0.47
+}
+DA_Shock_rec.INFAN.0.48 = {
+	is_musketeer_modifier = yes
+	shock_damage_received = 0.48
+}
+DA_Shock_rec.INFAN.0.49 = {
+	is_musketeer_modifier = yes
+	shock_damage_received = 0.49
+}
+DA_Shock_rec.INFAN.0.50 = {
+	is_musketeer_modifier = yes
+	shock_damage_received = 0.50
+}
+DA_Shock_rec.INFAN.0.5 = {
+	is_musketeer_modifier = yes
+	shock_damage_received = 0.5
+}
+DA_Shock_rec.INFAN.0.51 = {
+	is_musketeer_modifier = yes
+	shock_damage_received = 0.51
+}
+DA_Shock_rec.INFAN.0.52 = {
+	is_musketeer_modifier = yes
+	shock_damage_received = 0.52
+}
+DA_Shock_rec.INFAN.0.53 = {
+	is_musketeer_modifier = yes
+	shock_damage_received = 0.53
+}
+DA_Shock_rec.INFAN.0.54 = {
+	is_musketeer_modifier = yes
+	shock_damage_received = 0.54
+}
+DA_Shock_rec.INFAN.0.55 = {
+	is_musketeer_modifier = yes
+	shock_damage_received = 0.55
+}
+DA_Shock_rec.INFAN.0.56 = {
+	is_musketeer_modifier = yes
+	shock_damage_received = 0.56
+}
+DA_Shock_rec.INFAN.0.57 = {
+	is_musketeer_modifier = yes
+	shock_damage_received = 0.57
+}
+DA_Shock_rec.INFAN.0.01 = {
+	is_musketeer_modifier = yes
+	shock_damage_received = 0.01
+}
+DA_Shock_rec.INFAN.0.58 = {
+	is_musketeer_modifier = yes
+	shock_damage_received = 0.58
+}
+DA_Shock_rec.INFAN.0.59 = {
+	is_musketeer_modifier = yes
+	shock_damage_received = 0.59
+}
+DA_Shock_rec.INFAN.0.60 = {
+	is_musketeer_modifier = yes
+	shock_damage_received = 0.60
+}
+DA_Shock_rec.INFAN.0.6 = {
+	is_musketeer_modifier = yes
+	shock_damage_received = 0.6
+}
+DA_Shock_rec.INFAN.0.61 = {
+	is_musketeer_modifier = yes
+	shock_damage_received = 0.61
+}
+DA_Shock_rec.INFAN.0.62 = {
+	is_musketeer_modifier = yes
+	shock_damage_received = 0.62
+}
+DA_Shock_rec.INFAN.0.63 = {
+	is_musketeer_modifier = yes
+	shock_damage_received = 0.63
+}
+DA_Shock_rec.INFAN.0.64 = {
+	is_musketeer_modifier = yes
+	shock_damage_received = 0.64
+}
+DA_Shock_rec.INFAN.0.65 = {
+	is_musketeer_modifier = yes
+	shock_damage_received = 0.65
+}
+DA_Shock_rec.INFAN.0.66 = {
+	is_musketeer_modifier = yes
+	shock_damage_received = 0.66
+}
+DA_Shock_rec.INFAN.0.67 = {
+	is_musketeer_modifier = yes
+	shock_damage_received = 0.67
+}
+DA_Shock_rec.INFAN.0.68 = {
+	is_musketeer_modifier = yes
+	shock_damage_received = 0.68
+}
+DA_Shock_rec.INFAN.0.69 = {
+	is_musketeer_modifier = yes
+	shock_damage_received = 0.69
+}
+DA_Shock_rec.INFAN.0.70 = {
+	is_musketeer_modifier = yes
+	shock_damage_received = 0.70
+}
+DA_Shock_rec.INFAN.0.7 = {
+	is_musketeer_modifier = yes
+	shock_damage_received = 0.7
+}
+DA_Shock_rec.INFAN.0.71 = {
+	is_musketeer_modifier = yes
+	shock_damage_received = 0.71
+}
+DA_Shock_rec.INFAN.0.72 = {
+	is_musketeer_modifier = yes
+	shock_damage_received = 0.72
+}
+DA_Shock_rec.INFAN.0.73 = {
+	is_musketeer_modifier = yes
+	shock_damage_received = 0.73
+}
+DA_Shock_rec.INFAN.0.74 = {
+	is_musketeer_modifier = yes
+	shock_damage_received = 0.74
+}
+DA_Shock_rec.INFAN.0.75 = {
+	is_musketeer_modifier = yes
+	shock_damage_received = 0.75
+}
+DA_Shock_rec.INFAN.0.76 = {
+	is_musketeer_modifier = yes
+	shock_damage_received = 0.76
+}
+DA_Shock_rec.INFAN.0.77 = {
+	is_musketeer_modifier = yes
+	shock_damage_received = 0.77
+}
+DA_Shock_rec.INFAN.0.78 = {
+	is_musketeer_modifier = yes
+	shock_damage_received = 0.78
+}
+DA_Shock_rec.INFAN.0.79 = {
+	is_musketeer_modifier = yes
+	shock_damage_received = 0.79
+}
+DA_Shock_rec.INFAN.0.80 = {
+	is_musketeer_modifier = yes
+	shock_damage_received = 0.80
+}
+DA_Shock_rec.INFAN.0.8 = {
+	is_musketeer_modifier = yes
+	shock_damage_received = 0.80
+}
+DA_Shock_rec.INFAN.0.81 = {
+	is_musketeer_modifier = yes
+	shock_damage_received = 0.81
+}
+DA_Shock_rec.INFAN.0.82 = {
+	is_musketeer_modifier = yes
+	shock_damage_received = 0.82
+}
+DA_Shock_rec.INFAN.0.83 = {
+	is_musketeer_modifier = yes
+	shock_damage_received = 0.83
+}
+DA_Shock_rec.INFAN.0.84 = {
+	is_musketeer_modifier = yes
+	shock_damage_received = 0.84
+}
+DA_Shock_rec.INFAN.0.85 = {
+	is_musketeer_modifier = yes
+	shock_damage_received = 0.85
+}
+DA_Shock_rec.INFAN.0.86 = {
+	is_musketeer_modifier = yes
+	shock_damage_received = 0.86
+}
+DA_Shock_rec.INFAN.0.87 = {
+	is_musketeer_modifier = yes
+	shock_damage_received = 0.87
+}
+DA_Shock_rec.INFAN.0.88 = {
+	is_musketeer_modifier = yes
+	shock_damage_received = 0.88
+}
+DA_Shock_rec.INFAN.0.89 = {
+	is_musketeer_modifier = yes
+	shock_damage_received = 0.89
+}
+DA_Shock_rec.INFAN.0.90 = {
+	is_musketeer_modifier = yes
+	shock_damage_received = 0.90
+}
+DA_Shock_rec.INFAN.0.9 = {
+	is_musketeer_modifier = yes
+	shock_damage_received = 0.9
+}
+DA_Shock_rec.INFAN.0.91 = {
+	is_musketeer_modifier = yes
+	shock_damage_received = 0.91
+}
+DA_Shock_rec.INFAN.0.92 = {
+	is_musketeer_modifier = yes
+	shock_damage_received = 0.92
+}
+DA_Shock_rec.INFAN.0.93 = {
+	is_musketeer_modifier = yes
+	shock_damage_received = 0.93
+}
+DA_Shock_rec.INFAN.0.94 = {
+	is_musketeer_modifier = yes
+	shock_damage_received = 0.94
+}
+DA_Shock_rec.INFAN.0.95 = {
+	is_musketeer_modifier = yes
+	shock_damage_received = 0.95
+}
+DA_Shock_rec.INFAN.0.96 = {
+	is_musketeer_modifier = yes
+	shock_damage_received = 0.96
+}
+DA_Shock_rec.INFAN.0.97 = {
+	is_musketeer_modifier = yes
+	shock_damage_received = 0.97
+}
+DA_Shock_rec.INFAN.0.98 = {
+	is_musketeer_modifier = yes
+	shock_damage_received = 0.98
+}
+DA_Shock_rec.INFAN.0.99 = {
+	is_musketeer_modifier = yes
+	shock_damage_received = 0.99
+}
+DA_Shock_rec.INFAN.1.00 = {
+	is_musketeer_modifier = yes
+	shock_damage_received = 1.00
+}
+DA_Shock_rec.INFAN.1.0 = {
+	is_musketeer_modifier = yes
+	shock_damage_received = 1.0
+}
+DA_Shock_rec.INFAN.1 = {
+	is_musketeer_modifier = yes
+	shock_damage_received = 1
+}
+
+
+DA_Fire_rec.INFAN.0 = {
+}
+DA_Fire_rec.INFAN.0.0 = {
+}
+DA_Fire_rec.INFAN.0.00 = {
+}
+DA_Fire_rec.INFAN.0.01 = {
+	is_musketeer_modifier = yes
+	fire_damage_received = 0.01
+}
+DA_Fire_rec.INFAN.0.02 = {
+	is_musketeer_modifier = yes
+	fire_damage_received = 0.02
+}
+DA_Fire_rec.INFAN.0.03 = {
+	is_musketeer_modifier = yes
+	fire_damage_received = 0.03
+}
+DA_Fire_rec.INFAN.0.04 = {
+	is_musketeer_modifier = yes
+	fire_damage_received = 0.04
+}
+DA_Fire_rec.INFAN.0.05 = {
+	is_musketeer_modifier = yes
+	fire_damage_received = 0.05
+}
+DA_Fire_rec.INFAN.0.06 = {
+	is_musketeer_modifier = yes
+	fire_damage_received = 0.06
+}
+DA_Fire_rec.INFAN.0.07 = {
+	is_musketeer_modifier = yes
+	fire_damage_received = 0.07
+}
+DA_Fire_rec.INFAN.0.08 = {
+	is_musketeer_modifier = yes
+	fire_damage_received = 0.08
+}
+DA_Fire_rec.INFAN.0.09 = {
+	is_musketeer_modifier = yes
+	fire_damage_received = 0.09
+}
+DA_Fire_rec.INFAN.0.10 = {
+	is_musketeer_modifier = yes
+	fire_damage_received = 0.10
+}
+DA_Fire_rec.INFAN.0.1 = {
+	is_musketeer_modifier = yes
+	fire_damage_received = 0.1
+}
+DA_Fire_rec.INFAN.0.11 = {
+	is_musketeer_modifier = yes
+	fire_damage_received = 0.11
+}
+DA_Fire_rec.INFAN.0.12 = {
+	is_musketeer_modifier = yes
+	fire_damage_received = 0.12
+}
+DA_Fire_rec.INFAN.0.13 = {
+	is_musketeer_modifier = yes
+	fire_damage_received = 0.13
+}
+DA_Fire_rec.INFAN.0.14 = {
+	is_musketeer_modifier = yes
+	fire_damage_received = 0.14
+}
+DA_Fire_rec.INFAN.0.15 = {
+	is_musketeer_modifier = yes
+	fire_damage_received = 0.15
+}
+DA_Fire_rec.INFAN.0.16 = {
+	is_musketeer_modifier = yes
+	fire_damage_received = 0.16
+}
+DA_Fire_rec.INFAN.0.17 = {
+	is_musketeer_modifier = yes
+	fire_damage_received = 0.17
+}
+DA_Fire_rec.INFAN.0.18 = {
+	is_musketeer_modifier = yes
+	fire_damage_received = 0.18
+}
+DA_Fire_rec.INFAN.0.19 = {
+	is_musketeer_modifier = yes
+	fire_damage_received = 0.19
+}
+DA_Fire_rec.INFAN.0.20 = {
+	is_musketeer_modifier = yes
+	fire_damage_received = 0.20
+}
+DA_Fire_rec.INFAN.0.2 = {
+	is_musketeer_modifier = yes
+	fire_damage_received = 0.2
+}
+DA_Fire_rec.INFAN.0.21 = {
+	is_musketeer_modifier = yes
+	fire_damage_received = 0.21
+}
+DA_Fire_rec.INFAN.0.22 = {
+	is_musketeer_modifier = yes
+	fire_damage_received = 0.22
+}
+DA_Fire_rec.INFAN.0.23 = {
+	is_musketeer_modifier = yes
+	fire_damage_received = 0.23
+}
+DA_Fire_rec.INFAN.0.24 = {
+	is_musketeer_modifier = yes
+	fire_damage_received = 0.24
+}
+DA_Fire_rec.INFAN.0.25 = {
+	is_musketeer_modifier = yes
+	fire_damage_received = 0.25
+}
+DA_Fire_rec.INFAN.0.26 = {
+	is_musketeer_modifier = yes
+	fire_damage_received = 0.26
+}
+DA_Fire_rec.INFAN.0.27 = {
+	is_musketeer_modifier = yes
+	fire_damage_received = 0.27
+}
+DA_Fire_rec.INFAN.0.28 = {
+	is_musketeer_modifier = yes
+	fire_damage_received = 0.28
+}
+DA_Fire_rec.INFAN.0.29 = {
+	is_musketeer_modifier = yes
+	fire_damage_received = 0.29
+}
+DA_Fire_rec.INFAN.0.30 = {
+	is_musketeer_modifier = yes
+	fire_damage_received = 0.30
+}
+DA_Fire_rec.INFAN.0.3 = {
+	is_musketeer_modifier = yes
+	fire_damage_received = 0.3
+}
+DA_Fire_rec.INFAN.0.31 = {
+	is_musketeer_modifier = yes
+	fire_damage_received = 0.31
+}
+DA_Fire_rec.INFAN.0.32 = {
+	is_musketeer_modifier = yes
+	fire_damage_received = 0.32
+}
+DA_Fire_rec.INFAN.0.33 = {
+	is_musketeer_modifier = yes
+	fire_damage_received = 0.33
+}
+DA_Fire_rec.INFAN.0.34 = {
+	is_musketeer_modifier = yes
+	fire_damage_received = 0.34
+}
+DA_Fire_rec.INFAN.0.35 = {
+	is_musketeer_modifier = yes
+	fire_damage_received = 0.35
+}
+DA_Fire_rec.INFAN.0.36 = {
+	is_musketeer_modifier = yes
+	fire_damage_received = 0.36
+}
+DA_Fire_rec.INFAN.0.37 = {
+	is_musketeer_modifier = yes
+	fire_damage_received = 0.37
+}
+DA_Fire_rec.INFAN.0.38 = {
+	is_musketeer_modifier = yes
+	fire_damage_received = 0.38
+}
+DA_Fire_rec.INFAN.0.39 = {
+	is_musketeer_modifier = yes
+	fire_damage_received = 0.39
+}
+DA_Fire_rec.INFAN.0.40 = {
+	is_musketeer_modifier = yes
+	fire_damage_received = 0.40
+}
+DA_Fire_rec.INFAN.0.4 = {
+	is_musketeer_modifier = yes
+	fire_damage_received = 0.4
+}
+DA_Fire_rec.INFAN.0.41 = {
+	is_musketeer_modifier = yes
+	fire_damage_received = 0.41
+}
+DA_Fire_rec.INFAN.0.42 = {
+	is_musketeer_modifier = yes
+	fire_damage_received = 0.42
+}
+DA_Fire_rec.INFAN.0.43 = {
+	is_musketeer_modifier = yes
+	fire_damage_received = 0.43
+}
+DA_Fire_rec.INFAN.0.44 = {
+	is_musketeer_modifier = yes
+	fire_damage_received = 0.44
+}
+DA_Fire_rec.INFAN.0.45 = {
+	is_musketeer_modifier = yes
+	fire_damage_received = 0.45
+}
+DA_Fire_rec.INFAN.0.46 = {
+	is_musketeer_modifier = yes
+	fire_damage_received = 0.46
+}
+DA_Fire_rec.INFAN.0.47 = {
+	is_musketeer_modifier = yes
+	fire_damage_received = 0.47
+}
+DA_Fire_rec.INFAN.0.48 = {
+	is_musketeer_modifier = yes
+	fire_damage_received = 0.48
+}
+DA_Fire_rec.INFAN.0.49 = {
+	is_musketeer_modifier = yes
+	fire_damage_received = 0.49
+}
+DA_Fire_rec.INFAN.0.50 = {
+	is_musketeer_modifier = yes
+	fire_damage_received = 0.50
+}
+DA_Fire_rec.INFAN.0.5 = {
+	is_musketeer_modifier = yes
+	fire_damage_received = 0.5
+}
+DA_Fire_rec.INFAN.0.51 = {
+	is_musketeer_modifier = yes
+	fire_damage_received = 0.51
+}
+DA_Fire_rec.INFAN.0.52 = {
+	is_musketeer_modifier = yes
+	fire_damage_received = 0.52
+}
+DA_Fire_rec.INFAN.0.53 = {
+	is_musketeer_modifier = yes
+	fire_damage_received = 0.53
+}
+DA_Fire_rec.INFAN.0.54 = {
+	is_musketeer_modifier = yes
+	fire_damage_received = 0.54
+}
+DA_Fire_rec.INFAN.0.55 = {
+	is_musketeer_modifier = yes
+	fire_damage_received = 0.55
+}
+DA_Fire_rec.INFAN.0.56 = {
+	is_musketeer_modifier = yes
+	fire_damage_received = 0.56
+}
+DA_Fire_rec.INFAN.0.57 = {
+	is_musketeer_modifier = yes
+	fire_damage_received = 0.57
+}
+DA_Fire_rec.INFAN.0.01 = {
+	is_musketeer_modifier = yes
+	fire_damage_received = 0.01
+}
+DA_Fire_rec.INFAN.0.58 = {
+	is_musketeer_modifier = yes
+	fire_damage_received = 0.58
+}
+DA_Fire_rec.INFAN.0.59 = {
+	is_musketeer_modifier = yes
+	fire_damage_received = 0.59
+}
+DA_Fire_rec.INFAN.0.60 = {
+	is_musketeer_modifier = yes
+	fire_damage_received = 0.60
+}
+DA_Fire_rec.INFAN.0.6 = {
+	is_musketeer_modifier = yes
+	fire_damage_received = 0.6
+}
+DA_Fire_rec.INFAN.0.61 = {
+	is_musketeer_modifier = yes
+	fire_damage_received = 0.61
+}
+DA_Fire_rec.INFAN.0.62 = {
+	is_musketeer_modifier = yes
+	fire_damage_received = 0.62
+}
+DA_Fire_rec.INFAN.0.63 = {
+	is_musketeer_modifier = yes
+	fire_damage_received = 0.63
+}
+DA_Fire_rec.INFAN.0.64 = {
+	is_musketeer_modifier = yes
+	fire_damage_received = 0.64
+}
+DA_Fire_rec.INFAN.0.65 = {
+	is_musketeer_modifier = yes
+	fire_damage_received = 0.65
+}
+DA_Fire_rec.INFAN.0.66 = {
+	is_musketeer_modifier = yes
+	fire_damage_received = 0.66
+}
+DA_Fire_rec.INFAN.0.67 = {
+	is_musketeer_modifier = yes
+	fire_damage_received = 0.67
+}
+DA_Fire_rec.INFAN.0.68 = {
+	is_musketeer_modifier = yes
+	fire_damage_received = 0.68
+}
+DA_Fire_rec.INFAN.0.69 = {
+	is_musketeer_modifier = yes
+	fire_damage_received = 0.69
+}
+DA_Fire_rec.INFAN.0.70 = {
+	is_musketeer_modifier = yes
+	fire_damage_received = 0.70
+}
+DA_Fire_rec.INFAN.0.7 = {
+	is_musketeer_modifier = yes
+	fire_damage_received = 0.7
+}
+DA_Fire_rec.INFAN.0.71 = {
+	is_musketeer_modifier = yes
+	fire_damage_received = 0.71
+}
+DA_Fire_rec.INFAN.0.72 = {
+	is_musketeer_modifier = yes
+	fire_damage_received = 0.72
+}
+DA_Fire_rec.INFAN.0.73 = {
+	is_musketeer_modifier = yes
+	fire_damage_received = 0.73
+}
+DA_Fire_rec.INFAN.0.74 = {
+	is_musketeer_modifier = yes
+	fire_damage_received = 0.74
+}
+DA_Fire_rec.INFAN.0.75 = {
+	is_musketeer_modifier = yes
+	fire_damage_received = 0.75
+}
+DA_Fire_rec.INFAN.0.76 = {
+	is_musketeer_modifier = yes
+	fire_damage_received = 0.76
+}
+DA_Fire_rec.INFAN.0.77 = {
+	is_musketeer_modifier = yes
+	fire_damage_received = 0.77
+}
+DA_Fire_rec.INFAN.0.78 = {
+	is_musketeer_modifier = yes
+	fire_damage_received = 0.78
+}
+DA_Fire_rec.INFAN.0.79 = {
+	is_musketeer_modifier = yes
+	fire_damage_received = 0.79
+}
+DA_Fire_rec.INFAN.0.80 = {
+	is_musketeer_modifier = yes
+	fire_damage_received = 0.80
+}
+DA_Fire_rec.INFAN.0.8 = {
+	is_musketeer_modifier = yes
+	fire_damage_received = 0.80
+}
+DA_Fire_rec.INFAN.0.81 = {
+	is_musketeer_modifier = yes
+	fire_damage_received = 0.81
+}
+DA_Fire_rec.INFAN.0.82 = {
+	is_musketeer_modifier = yes
+	fire_damage_received = 0.82
+}
+DA_Fire_rec.INFAN.0.83 = {
+	is_musketeer_modifier = yes
+	fire_damage_received = 0.83
+}
+DA_Fire_rec.INFAN.0.84 = {
+	is_musketeer_modifier = yes
+	fire_damage_received = 0.84
+}
+DA_Fire_rec.INFAN.0.85 = {
+	is_musketeer_modifier = yes
+	fire_damage_received = 0.85
+}
+DA_Fire_rec.INFAN.0.86 = {
+	is_musketeer_modifier = yes
+	fire_damage_received = 0.86
+}
+DA_Fire_rec.INFAN.0.87 = {
+	is_musketeer_modifier = yes
+	fire_damage_received = 0.87
+}
+DA_Fire_rec.INFAN.0.88 = {
+	is_musketeer_modifier = yes
+	fire_damage_received = 0.88
+}
+DA_Fire_rec.INFAN.0.89 = {
+	is_musketeer_modifier = yes
+	fire_damage_received = 0.89
+}
+DA_Fire_rec.INFAN.0.90 = {
+	is_musketeer_modifier = yes
+	fire_damage_received = 0.90
+}
+DA_Fire_rec.INFAN.0.9 = {
+	is_musketeer_modifier = yes
+	fire_damage_received = 0.9
+}
+DA_Fire_rec.INFAN.0.91 = {
+	is_musketeer_modifier = yes
+	fire_damage_received = 0.91
+}
+DA_Fire_rec.INFAN.0.92 = {
+	is_musketeer_modifier = yes
+	fire_damage_received = 0.92
+}
+DA_Fire_rec.INFAN.0.93 = {
+	is_musketeer_modifier = yes
+	fire_damage_received = 0.93
+}
+DA_Fire_rec.INFAN.0.94 = {
+	is_musketeer_modifier = yes
+	fire_damage_received = 0.94
+}
+DA_Fire_rec.INFAN.0.95 = {
+	is_musketeer_modifier = yes
+	fire_damage_received = 0.95
+}
+DA_Fire_rec.INFAN.0.96 = {
+	is_musketeer_modifier = yes
+	fire_damage_received = 0.96
+}
+DA_Fire_rec.INFAN.0.97 = {
+	is_musketeer_modifier = yes
+	fire_damage_received = 0.97
+}
+DA_Fire_rec.INFAN.0.98 = {
+	is_musketeer_modifier = yes
+	fire_damage_received = 0.98
+}
+DA_Fire_rec.INFAN.0.99 = {
+	is_musketeer_modifier = yes
+	fire_damage_received = 0.99
+}
+DA_Fire_rec.INFAN.1.00 = {
+	is_musketeer_modifier = yes
+	fire_damage_received = 1.00
+}
+DA_Fire_rec.INFAN.1.0 = {
+	is_musketeer_modifier = yes
+	fire_damage_received = 1.0
+}
+DA_Fire_rec.INFAN.1 = {
+	is_musketeer_modifier = yes
+	fire_damage_received = 1
+}
+
+
+DA_Shock_rec.CAVAL.0 = {
+}
+DA_Shock_rec.CAVAL.0.0 = {
+}
+DA_Shock_rec.CAVAL.0.00 = {
+}
+DA_Shock_rec.CAVAL.0.01 = {
+	is_hussars_modifier = yes
+	shock_damage_received = 0.01
+}
+DA_Shock_rec.CAVAL.0.02 = {
+	is_hussars_modifier = yes
+	shock_damage_received = 0.02
+}
+DA_Shock_rec.CAVAL.0.03 = {
+	is_hussars_modifier = yes
+	shock_damage_received = 0.03
+}
+DA_Shock_rec.CAVAL.0.04 = {
+	is_hussars_modifier = yes
+	shock_damage_received = 0.04
+}
+DA_Shock_rec.CAVAL.0.05 = {
+	is_hussars_modifier = yes
+	shock_damage_received = 0.05
+}
+DA_Shock_rec.CAVAL.0.06 = {
+	is_hussars_modifier = yes
+	shock_damage_received = 0.06
+}
+DA_Shock_rec.CAVAL.0.07 = {
+	is_hussars_modifier = yes
+	shock_damage_received = 0.07
+}
+DA_Shock_rec.CAVAL.0.08 = {
+	is_hussars_modifier = yes
+	shock_damage_received = 0.08
+}
+DA_Shock_rec.CAVAL.0.09 = {
+	is_hussars_modifier = yes
+	shock_damage_received = 0.09
+}
+DA_Shock_rec.CAVAL.0.10 = {
+	is_hussars_modifier = yes
+	shock_damage_received = 0.10
+}
+DA_Shock_rec.CAVAL.0.1 = {
+	is_hussars_modifier = yes
+	shock_damage_received = 0.1
+}
+DA_Shock_rec.CAVAL.0.11 = {
+	is_hussars_modifier = yes
+	shock_damage_received = 0.11
+}
+DA_Shock_rec.CAVAL.0.12 = {
+	is_hussars_modifier = yes
+	shock_damage_received = 0.12
+}
+DA_Shock_rec.CAVAL.0.13 = {
+	is_hussars_modifier = yes
+	shock_damage_received = 0.13
+}
+DA_Shock_rec.CAVAL.0.14 = {
+	is_hussars_modifier = yes
+	shock_damage_received = 0.14
+}
+DA_Shock_rec.CAVAL.0.15 = {
+	is_hussars_modifier = yes
+	shock_damage_received = 0.15
+}
+DA_Shock_rec.CAVAL.0.16 = {
+	is_hussars_modifier = yes
+	shock_damage_received = 0.16
+}
+DA_Shock_rec.CAVAL.0.17 = {
+	is_hussars_modifier = yes
+	shock_damage_received = 0.17
+}
+DA_Shock_rec.CAVAL.0.18 = {
+	is_hussars_modifier = yes
+	shock_damage_received = 0.18
+}
+DA_Shock_rec.CAVAL.0.19 = {
+	is_hussars_modifier = yes
+	shock_damage_received = 0.19
+}
+DA_Shock_rec.CAVAL.0.20 = {
+	is_hussars_modifier = yes
+	shock_damage_received = 0.20
+}
+DA_Shock_rec.CAVAL.0.2 = {
+	is_hussars_modifier = yes
+	shock_damage_received = 0.2
+}
+DA_Shock_rec.CAVAL.0.21 = {
+	is_hussars_modifier = yes
+	shock_damage_received = 0.21
+}
+DA_Shock_rec.CAVAL.0.22 = {
+	is_hussars_modifier = yes
+	shock_damage_received = 0.22
+}
+DA_Shock_rec.CAVAL.0.23 = {
+	is_hussars_modifier = yes
+	shock_damage_received = 0.23
+}
+DA_Shock_rec.CAVAL.0.24 = {
+	is_hussars_modifier = yes
+	shock_damage_received = 0.24
+}
+DA_Shock_rec.CAVAL.0.25 = {
+	is_hussars_modifier = yes
+	shock_damage_received = 0.25
+}
+DA_Shock_rec.CAVAL.0.26 = {
+	is_hussars_modifier = yes
+	shock_damage_received = 0.26
+}
+DA_Shock_rec.CAVAL.0.27 = {
+	is_hussars_modifier = yes
+	shock_damage_received = 0.27
+}
+DA_Shock_rec.CAVAL.0.28 = {
+	is_hussars_modifier = yes
+	shock_damage_received = 0.28
+}
+DA_Shock_rec.CAVAL.0.29 = {
+	is_hussars_modifier = yes
+	shock_damage_received = 0.29
+}
+DA_Shock_rec.CAVAL.0.30 = {
+	is_hussars_modifier = yes
+	shock_damage_received = 0.30
+}
+DA_Shock_rec.CAVAL.0.3 = {
+	is_hussars_modifier = yes
+	shock_damage_received = 0.3
+}
+DA_Shock_rec.CAVAL.0.31 = {
+	is_hussars_modifier = yes
+	shock_damage_received = 0.31
+}
+DA_Shock_rec.CAVAL.0.32 = {
+	is_hussars_modifier = yes
+	shock_damage_received = 0.32
+}
+DA_Shock_rec.CAVAL.0.33 = {
+	is_hussars_modifier = yes
+	shock_damage_received = 0.33
+}
+DA_Shock_rec.CAVAL.0.34 = {
+	is_hussars_modifier = yes
+	shock_damage_received = 0.34
+}
+DA_Shock_rec.CAVAL.0.35 = {
+	is_hussars_modifier = yes
+	shock_damage_received = 0.35
+}
+DA_Shock_rec.CAVAL.0.36 = {
+	is_hussars_modifier = yes
+	shock_damage_received = 0.36
+}
+DA_Shock_rec.CAVAL.0.37 = {
+	is_hussars_modifier = yes
+	shock_damage_received = 0.37
+}
+DA_Shock_rec.CAVAL.0.38 = {
+	is_hussars_modifier = yes
+	shock_damage_received = 0.38
+}
+DA_Shock_rec.CAVAL.0.39 = {
+	is_hussars_modifier = yes
+	shock_damage_received = 0.39
+}
+DA_Shock_rec.CAVAL.0.40 = {
+	is_hussars_modifier = yes
+	shock_damage_received = 0.40
+}
+DA_Shock_rec.CAVAL.0.4 = {
+	is_hussars_modifier = yes
+	shock_damage_received = 0.4
+}
+DA_Shock_rec.CAVAL.0.41 = {
+	is_hussars_modifier = yes
+	shock_damage_received = 0.41
+}
+DA_Shock_rec.CAVAL.0.42 = {
+	is_hussars_modifier = yes
+	shock_damage_received = 0.42
+}
+DA_Shock_rec.CAVAL.0.43 = {
+	is_hussars_modifier = yes
+	shock_damage_received = 0.43
+}
+DA_Shock_rec.CAVAL.0.44 = {
+	is_hussars_modifier = yes
+	shock_damage_received = 0.44
+}
+DA_Shock_rec.CAVAL.0.45 = {
+	is_hussars_modifier = yes
+	shock_damage_received = 0.45
+}
+DA_Shock_rec.CAVAL.0.46 = {
+	is_hussars_modifier = yes
+	shock_damage_received = 0.46
+}
+DA_Shock_rec.CAVAL.0.47 = {
+	is_hussars_modifier = yes
+	shock_damage_received = 0.47
+}
+DA_Shock_rec.CAVAL.0.48 = {
+	is_hussars_modifier = yes
+	shock_damage_received = 0.48
+}
+DA_Shock_rec.CAVAL.0.49 = {
+	is_hussars_modifier = yes
+	shock_damage_received = 0.49
+}
+DA_Shock_rec.CAVAL.0.50 = {
+	is_hussars_modifier = yes
+	shock_damage_received = 0.50
+}
+DA_Shock_rec.CAVAL.0.5 = {
+	is_hussars_modifier = yes
+	shock_damage_received = 0.5
+}
+DA_Shock_rec.CAVAL.0.51 = {
+	is_hussars_modifier = yes
+	shock_damage_received = 0.51
+}
+DA_Shock_rec.CAVAL.0.52 = {
+	is_hussars_modifier = yes
+	shock_damage_received = 0.52
+}
+DA_Shock_rec.CAVAL.0.53 = {
+	is_hussars_modifier = yes
+	shock_damage_received = 0.53
+}
+DA_Shock_rec.CAVAL.0.54 = {
+	is_hussars_modifier = yes
+	shock_damage_received = 0.54
+}
+DA_Shock_rec.CAVAL.0.55 = {
+	is_hussars_modifier = yes
+	shock_damage_received = 0.55
+}
+DA_Shock_rec.CAVAL.0.56 = {
+	is_hussars_modifier = yes
+	shock_damage_received = 0.56
+}
+DA_Shock_rec.CAVAL.0.57 = {
+	is_hussars_modifier = yes
+	shock_damage_received = 0.57
+}
+DA_Shock_rec.CAVAL.0.01 = {
+	is_hussars_modifier = yes
+	shock_damage_received = 0.01
+}
+DA_Shock_rec.CAVAL.0.58 = {
+	is_hussars_modifier = yes
+	shock_damage_received = 0.58
+}
+DA_Shock_rec.CAVAL.0.59 = {
+	is_hussars_modifier = yes
+	shock_damage_received = 0.59
+}
+DA_Shock_rec.CAVAL.0.60 = {
+	is_hussars_modifier = yes
+	shock_damage_received = 0.60
+}
+DA_Shock_rec.CAVAL.0.6 = {
+	is_hussars_modifier = yes
+	shock_damage_received = 0.6
+}
+DA_Shock_rec.CAVAL.0.61 = {
+	is_hussars_modifier = yes
+	shock_damage_received = 0.61
+}
+DA_Shock_rec.CAVAL.0.62 = {
+	is_hussars_modifier = yes
+	shock_damage_received = 0.62
+}
+DA_Shock_rec.CAVAL.0.63 = {
+	is_hussars_modifier = yes
+	shock_damage_received = 0.63
+}
+DA_Shock_rec.CAVAL.0.64 = {
+	is_hussars_modifier = yes
+	shock_damage_received = 0.64
+}
+DA_Shock_rec.CAVAL.0.65 = {
+	is_hussars_modifier = yes
+	shock_damage_received = 0.65
+}
+DA_Shock_rec.CAVAL.0.66 = {
+	is_hussars_modifier = yes
+	shock_damage_received = 0.66
+}
+DA_Shock_rec.CAVAL.0.67 = {
+	is_hussars_modifier = yes
+	shock_damage_received = 0.67
+}
+DA_Shock_rec.CAVAL.0.68 = {
+	is_hussars_modifier = yes
+	shock_damage_received = 0.68
+}
+DA_Shock_rec.CAVAL.0.69 = {
+	is_hussars_modifier = yes
+	shock_damage_received = 0.69
+}
+DA_Shock_rec.CAVAL.0.70 = {
+	is_hussars_modifier = yes
+	shock_damage_received = 0.70
+}
+DA_Shock_rec.CAVAL.0.7 = {
+	is_hussars_modifier = yes
+	shock_damage_received = 0.7
+}
+DA_Shock_rec.CAVAL.0.71 = {
+	is_hussars_modifier = yes
+	shock_damage_received = 0.71
+}
+DA_Shock_rec.CAVAL.0.72 = {
+	is_hussars_modifier = yes
+	shock_damage_received = 0.72
+}
+DA_Shock_rec.CAVAL.0.73 = {
+	is_hussars_modifier = yes
+	shock_damage_received = 0.73
+}
+DA_Shock_rec.CAVAL.0.74 = {
+	is_hussars_modifier = yes
+	shock_damage_received = 0.74
+}
+DA_Shock_rec.CAVAL.0.75 = {
+	is_hussars_modifier = yes
+	shock_damage_received = 0.75
+}
+DA_Shock_rec.CAVAL.0.76 = {
+	is_hussars_modifier = yes
+	shock_damage_received = 0.76
+}
+DA_Shock_rec.CAVAL.0.77 = {
+	is_hussars_modifier = yes
+	shock_damage_received = 0.77
+}
+DA_Shock_rec.CAVAL.0.78 = {
+	is_hussars_modifier = yes
+	shock_damage_received = 0.78
+}
+DA_Shock_rec.CAVAL.0.79 = {
+	is_hussars_modifier = yes
+	shock_damage_received = 0.79
+}
+DA_Shock_rec.CAVAL.0.80 = {
+	is_hussars_modifier = yes
+	shock_damage_received = 0.80
+}
+DA_Shock_rec.CAVAL.0.8 = {
+	is_hussars_modifier = yes
+	shock_damage_received = 0.80
+}
+DA_Shock_rec.CAVAL.0.81 = {
+	is_hussars_modifier = yes
+	shock_damage_received = 0.81
+}
+DA_Shock_rec.CAVAL.0.82 = {
+	is_hussars_modifier = yes
+	shock_damage_received = 0.82
+}
+DA_Shock_rec.CAVAL.0.83 = {
+	is_hussars_modifier = yes
+	shock_damage_received = 0.83
+}
+DA_Shock_rec.CAVAL.0.84 = {
+	is_hussars_modifier = yes
+	shock_damage_received = 0.84
+}
+DA_Shock_rec.CAVAL.0.85 = {
+	is_hussars_modifier = yes
+	shock_damage_received = 0.85
+}
+DA_Shock_rec.CAVAL.0.86 = {
+	is_hussars_modifier = yes
+	shock_damage_received = 0.86
+}
+DA_Shock_rec.CAVAL.0.87 = {
+	is_hussars_modifier = yes
+	shock_damage_received = 0.87
+}
+DA_Shock_rec.CAVAL.0.88 = {
+	is_hussars_modifier = yes
+	shock_damage_received = 0.88
+}
+DA_Shock_rec.CAVAL.0.89 = {
+	is_hussars_modifier = yes
+	shock_damage_received = 0.89
+}
+DA_Shock_rec.CAVAL.0.90 = {
+	is_hussars_modifier = yes
+	shock_damage_received = 0.90
+}
+DA_Shock_rec.CAVAL.0.9 = {
+	is_hussars_modifier = yes
+	shock_damage_received = 0.9
+}
+DA_Shock_rec.CAVAL.0.91 = {
+	is_hussars_modifier = yes
+	shock_damage_received = 0.91
+}
+DA_Shock_rec.CAVAL.0.92 = {
+	is_hussars_modifier = yes
+	shock_damage_received = 0.92
+}
+DA_Shock_rec.CAVAL.0.93 = {
+	is_hussars_modifier = yes
+	shock_damage_received = 0.93
+}
+DA_Shock_rec.CAVAL.0.94 = {
+	is_hussars_modifier = yes
+	shock_damage_received = 0.94
+}
+DA_Shock_rec.CAVAL.0.95 = {
+	is_hussars_modifier = yes
+	shock_damage_received = 0.95
+}
+DA_Shock_rec.CAVAL.0.96 = {
+	is_hussars_modifier = yes
+	shock_damage_received = 0.96
+}
+DA_Shock_rec.CAVAL.0.97 = {
+	is_hussars_modifier = yes
+	shock_damage_received = 0.97
+}
+DA_Shock_rec.CAVAL.0.98 = {
+	is_hussars_modifier = yes
+	shock_damage_received = 0.98
+}
+DA_Shock_rec.CAVAL.0.99 = {
+	is_hussars_modifier = yes
+	shock_damage_received = 0.99
+}
+DA_Shock_rec.CAVAL.1.00 = {
+	is_hussars_modifier = yes
+	shock_damage_received = 1.00
+}
+DA_Shock_rec.CAVAL.1.0 = {
+	is_hussars_modifier = yes
+	shock_damage_received = 1.0
+}
+DA_Shock_rec.CAVAL.1 = {
+	is_hussars_modifier = yes
+	shock_damage_received = 1
+}
+
+DA_Fire_rec.CAVAL.0 = {
+}
+DA_Fire_rec.CAVAL.0.0 = {
+}
+DA_Fire_rec.CAVAL.0.00 = {
+}
+DA_Fire_rec.CAVAL.0.01 = {
+	is_hussars_modifier = yes
+	fire_damage_received = 0.01
+}
+DA_Fire_rec.CAVAL.0.02 = {
+	is_hussars_modifier = yes
+	fire_damage_received = 0.02
+}
+DA_Fire_rec.CAVAL.0.03 = {
+	is_hussars_modifier = yes
+	fire_damage_received = 0.03
+}
+DA_Fire_rec.CAVAL.0.04 = {
+	is_hussars_modifier = yes
+	fire_damage_received = 0.04
+}
+DA_Fire_rec.CAVAL.0.05 = {
+	is_hussars_modifier = yes
+	fire_damage_received = 0.05
+}
+DA_Fire_rec.CAVAL.0.06 = {
+	is_hussars_modifier = yes
+	fire_damage_received = 0.06
+}
+DA_Fire_rec.CAVAL.0.07 = {
+	is_hussars_modifier = yes
+	fire_damage_received = 0.07
+}
+DA_Fire_rec.CAVAL.0.08 = {
+	is_hussars_modifier = yes
+	fire_damage_received = 0.08
+}
+DA_Fire_rec.CAVAL.0.09 = {
+	is_hussars_modifier = yes
+	fire_damage_received = 0.09
+}
+DA_Fire_rec.CAVAL.0.10 = {
+	is_hussars_modifier = yes
+	fire_damage_received = 0.10
+}
+DA_Fire_rec.CAVAL.0.1 = {
+	is_hussars_modifier = yes
+	fire_damage_received = 0.1
+}
+DA_Fire_rec.CAVAL.0.11 = {
+	is_hussars_modifier = yes
+	fire_damage_received = 0.11
+}
+DA_Fire_rec.CAVAL.0.12 = {
+	is_hussars_modifier = yes
+	fire_damage_received = 0.12
+}
+DA_Fire_rec.CAVAL.0.13 = {
+	is_hussars_modifier = yes
+	fire_damage_received = 0.13
+}
+DA_Fire_rec.CAVAL.0.14 = {
+	is_hussars_modifier = yes
+	fire_damage_received = 0.14
+}
+DA_Fire_rec.CAVAL.0.15 = {
+	is_hussars_modifier = yes
+	fire_damage_received = 0.15
+}
+DA_Fire_rec.CAVAL.0.16 = {
+	is_hussars_modifier = yes
+	fire_damage_received = 0.16
+}
+DA_Fire_rec.CAVAL.0.17 = {
+	is_hussars_modifier = yes
+	fire_damage_received = 0.17
+}
+DA_Fire_rec.CAVAL.0.18 = {
+	is_hussars_modifier = yes
+	fire_damage_received = 0.18
+}
+DA_Fire_rec.CAVAL.0.19 = {
+	is_hussars_modifier = yes
+	fire_damage_received = 0.19
+}
+DA_Fire_rec.CAVAL.0.20 = {
+	is_hussars_modifier = yes
+	fire_damage_received = 0.20
+}
+DA_Fire_rec.CAVAL.0.2 = {
+	is_hussars_modifier = yes
+	fire_damage_received = 0.2
+}
+DA_Fire_rec.CAVAL.0.21 = {
+	is_hussars_modifier = yes
+	fire_damage_received = 0.21
+}
+DA_Fire_rec.CAVAL.0.22 = {
+	is_hussars_modifier = yes
+	fire_damage_received = 0.22
+}
+DA_Fire_rec.CAVAL.0.23 = {
+	is_hussars_modifier = yes
+	fire_damage_received = 0.23
+}
+DA_Fire_rec.CAVAL.0.24 = {
+	is_hussars_modifier = yes
+	fire_damage_received = 0.24
+}
+DA_Fire_rec.CAVAL.0.25 = {
+	is_hussars_modifier = yes
+	fire_damage_received = 0.25
+}
+DA_Fire_rec.CAVAL.0.26 = {
+	is_hussars_modifier = yes
+	fire_damage_received = 0.26
+}
+DA_Fire_rec.CAVAL.0.27 = {
+	is_hussars_modifier = yes
+	fire_damage_received = 0.27
+}
+DA_Fire_rec.CAVAL.0.28 = {
+	is_hussars_modifier = yes
+	fire_damage_received = 0.28
+}
+DA_Fire_rec.CAVAL.0.29 = {
+	is_hussars_modifier = yes
+	fire_damage_received = 0.29
+}
+DA_Fire_rec.CAVAL.0.30 = {
+	is_hussars_modifier = yes
+	fire_damage_received = 0.30
+}
+DA_Fire_rec.CAVAL.0.3 = {
+	is_hussars_modifier = yes
+	fire_damage_received = 0.3
+}
+DA_Fire_rec.CAVAL.0.31 = {
+	is_hussars_modifier = yes
+	fire_damage_received = 0.31
+}
+DA_Fire_rec.CAVAL.0.32 = {
+	is_hussars_modifier = yes
+	fire_damage_received = 0.32
+}
+DA_Fire_rec.CAVAL.0.33 = {
+	is_hussars_modifier = yes
+	fire_damage_received = 0.33
+}
+DA_Fire_rec.CAVAL.0.34 = {
+	is_hussars_modifier = yes
+	fire_damage_received = 0.34
+}
+DA_Fire_rec.CAVAL.0.35 = {
+	is_hussars_modifier = yes
+	fire_damage_received = 0.35
+}
+DA_Fire_rec.CAVAL.0.36 = {
+	is_hussars_modifier = yes
+	fire_damage_received = 0.36
+}
+DA_Fire_rec.CAVAL.0.37 = {
+	is_hussars_modifier = yes
+	fire_damage_received = 0.37
+}
+DA_Fire_rec.CAVAL.0.38 = {
+	is_hussars_modifier = yes
+	fire_damage_received = 0.38
+}
+DA_Fire_rec.CAVAL.0.39 = {
+	is_hussars_modifier = yes
+	fire_damage_received = 0.39
+}
+DA_Fire_rec.CAVAL.0.40 = {
+	is_hussars_modifier = yes
+	fire_damage_received = 0.40
+}
+DA_Fire_rec.CAVAL.0.4 = {
+	is_hussars_modifier = yes
+	fire_damage_received = 0.4
+}
+DA_Fire_rec.CAVAL.0.41 = {
+	is_hussars_modifier = yes
+	fire_damage_received = 0.41
+}
+DA_Fire_rec.CAVAL.0.42 = {
+	is_hussars_modifier = yes
+	fire_damage_received = 0.42
+}
+DA_Fire_rec.CAVAL.0.43 = {
+	is_hussars_modifier = yes
+	fire_damage_received = 0.43
+}
+DA_Fire_rec.CAVAL.0.44 = {
+	is_hussars_modifier = yes
+	fire_damage_received = 0.44
+}
+DA_Fire_rec.CAVAL.0.45 = {
+	is_hussars_modifier = yes
+	fire_damage_received = 0.45
+}
+DA_Fire_rec.CAVAL.0.46 = {
+	is_hussars_modifier = yes
+	fire_damage_received = 0.46
+}
+DA_Fire_rec.CAVAL.0.47 = {
+	is_hussars_modifier = yes
+	fire_damage_received = 0.47
+}
+DA_Fire_rec.CAVAL.0.48 = {
+	is_hussars_modifier = yes
+	fire_damage_received = 0.48
+}
+DA_Fire_rec.CAVAL.0.49 = {
+	is_hussars_modifier = yes
+	fire_damage_received = 0.49
+}
+DA_Fire_rec.CAVAL.0.50 = {
+	is_hussars_modifier = yes
+	fire_damage_received = 0.50
+}
+DA_Fire_rec.CAVAL.0.5 = {
+	is_hussars_modifier = yes
+	fire_damage_received = 0.5
+}
+DA_Fire_rec.CAVAL.0.51 = {
+	is_hussars_modifier = yes
+	fire_damage_received = 0.51
+}
+DA_Fire_rec.CAVAL.0.52 = {
+	is_hussars_modifier = yes
+	fire_damage_received = 0.52
+}
+DA_Fire_rec.CAVAL.0.53 = {
+	is_hussars_modifier = yes
+	fire_damage_received = 0.53
+}
+DA_Fire_rec.CAVAL.0.54 = {
+	is_hussars_modifier = yes
+	fire_damage_received = 0.54
+}
+DA_Fire_rec.CAVAL.0.55 = {
+	is_hussars_modifier = yes
+	fire_damage_received = 0.55
+}
+DA_Fire_rec.CAVAL.0.56 = {
+	is_hussars_modifier = yes
+	fire_damage_received = 0.56
+}
+DA_Fire_rec.CAVAL.0.57 = {
+	is_hussars_modifier = yes
+	fire_damage_received = 0.57
+}
+DA_Fire_rec.CAVAL.0.01 = {
+	is_hussars_modifier = yes
+	fire_damage_received = 0.01
+}
+DA_Fire_rec.CAVAL.0.58 = {
+	is_hussars_modifier = yes
+	fire_damage_received = 0.58
+}
+DA_Fire_rec.CAVAL.0.59 = {
+	is_hussars_modifier = yes
+	fire_damage_received = 0.59
+}
+DA_Fire_rec.CAVAL.0.60 = {
+	is_hussars_modifier = yes
+	fire_damage_received = 0.60
+}
+DA_Fire_rec.CAVAL.0.6 = {
+	is_hussars_modifier = yes
+	fire_damage_received = 0.6
+}
+DA_Fire_rec.CAVAL.0.61 = {
+	is_hussars_modifier = yes
+	fire_damage_received = 0.61
+}
+DA_Fire_rec.CAVAL.0.62 = {
+	is_hussars_modifier = yes
+	fire_damage_received = 0.62
+}
+DA_Fire_rec.CAVAL.0.63 = {
+	is_hussars_modifier = yes
+	fire_damage_received = 0.63
+}
+DA_Fire_rec.CAVAL.0.64 = {
+	is_hussars_modifier = yes
+	fire_damage_received = 0.64
+}
+DA_Fire_rec.CAVAL.0.65 = {
+	is_hussars_modifier = yes
+	fire_damage_received = 0.65
+}
+DA_Fire_rec.CAVAL.0.66 = {
+	is_hussars_modifier = yes
+	fire_damage_received = 0.66
+}
+DA_Fire_rec.CAVAL.0.67 = {
+	is_hussars_modifier = yes
+	fire_damage_received = 0.67
+}
+DA_Fire_rec.CAVAL.0.68 = {
+	is_hussars_modifier = yes
+	fire_damage_received = 0.68
+}
+DA_Fire_rec.CAVAL.0.69 = {
+	is_hussars_modifier = yes
+	fire_damage_received = 0.69
+}
+DA_Fire_rec.CAVAL.0.70 = {
+	is_hussars_modifier = yes
+	fire_damage_received = 0.70
+}
+DA_Fire_rec.CAVAL.0.7 = {
+	is_hussars_modifier = yes
+	fire_damage_received = 0.7
+}
+DA_Fire_rec.CAVAL.0.71 = {
+	is_hussars_modifier = yes
+	fire_damage_received = 0.71
+}
+DA_Fire_rec.CAVAL.0.72 = {
+	is_hussars_modifier = yes
+	fire_damage_received = 0.72
+}
+DA_Fire_rec.CAVAL.0.73 = {
+	is_hussars_modifier = yes
+	fire_damage_received = 0.73
+}
+DA_Fire_rec.CAVAL.0.74 = {
+	is_hussars_modifier = yes
+	fire_damage_received = 0.74
+}
+DA_Fire_rec.CAVAL.0.75 = {
+	is_hussars_modifier = yes
+	fire_damage_received = 0.75
+}
+DA_Fire_rec.CAVAL.0.76 = {
+	is_hussars_modifier = yes
+	fire_damage_received = 0.76
+}
+DA_Fire_rec.CAVAL.0.77 = {
+	is_hussars_modifier = yes
+	fire_damage_received = 0.77
+}
+DA_Fire_rec.CAVAL.0.78 = {
+	is_hussars_modifier = yes
+	fire_damage_received = 0.78
+}
+DA_Fire_rec.CAVAL.0.79 = {
+	is_hussars_modifier = yes
+	fire_damage_received = 0.79
+}
+DA_Fire_rec.CAVAL.0.80 = {
+	is_hussars_modifier = yes
+	fire_damage_received = 0.80
+}
+DA_Fire_rec.CAVAL.0.8 = {
+	is_hussars_modifier = yes
+	fire_damage_received = 0.80
+}
+DA_Fire_rec.CAVAL.0.81 = {
+	is_hussars_modifier = yes
+	fire_damage_received = 0.81
+}
+DA_Fire_rec.CAVAL.0.82 = {
+	is_hussars_modifier = yes
+	fire_damage_received = 0.82
+}
+DA_Fire_rec.CAVAL.0.83 = {
+	is_hussars_modifier = yes
+	fire_damage_received = 0.83
+}
+DA_Fire_rec.CAVAL.0.84 = {
+	is_hussars_modifier = yes
+	fire_damage_received = 0.84
+}
+DA_Fire_rec.CAVAL.0.85 = {
+	is_hussars_modifier = yes
+	fire_damage_received = 0.85
+}
+DA_Fire_rec.CAVAL.0.86 = {
+	is_hussars_modifier = yes
+	fire_damage_received = 0.86
+}
+DA_Fire_rec.CAVAL.0.87 = {
+	is_hussars_modifier = yes
+	fire_damage_received = 0.87
+}
+DA_Fire_rec.CAVAL.0.88 = {
+	is_hussars_modifier = yes
+	fire_damage_received = 0.88
+}
+DA_Fire_rec.CAVAL.0.89 = {
+	is_hussars_modifier = yes
+	fire_damage_received = 0.89
+}
+DA_Fire_rec.CAVAL.0.90 = {
+	is_hussars_modifier = yes
+	fire_damage_received = 0.90
+}
+DA_Fire_rec.CAVAL.0.9 = {
+	is_hussars_modifier = yes
+	fire_damage_received = 0.9
+}
+DA_Fire_rec.CAVAL.0.91 = {
+	is_hussars_modifier = yes
+	fire_damage_received = 0.91
+}
+DA_Fire_rec.CAVAL.0.92 = {
+	is_hussars_modifier = yes
+	fire_damage_received = 0.92
+}
+DA_Fire_rec.CAVAL.0.93 = {
+	is_hussars_modifier = yes
+	fire_damage_received = 0.93
+}
+DA_Fire_rec.CAVAL.0.94 = {
+	is_hussars_modifier = yes
+	fire_damage_received = 0.94
+}
+DA_Fire_rec.CAVAL.0.95 = {
+	is_hussars_modifier = yes
+	fire_damage_received = 0.95
+}
+DA_Fire_rec.CAVAL.0.96 = {
+	is_hussars_modifier = yes
+	fire_damage_received = 0.96
+}
+DA_Fire_rec.CAVAL.0.97 = {
+	is_hussars_modifier = yes
+	fire_damage_received = 0.97
+}
+DA_Fire_rec.CAVAL.0.98 = {
+	is_hussars_modifier = yes
+	fire_damage_received = 0.98
+}
+DA_Fire_rec.CAVAL.0.99 = {
+	is_hussars_modifier = yes
+	fire_damage_received = 0.99
+}
+DA_Fire_rec.CAVAL.1.00 = {
+	is_hussars_modifier = yes
+	fire_damage_received = 1.00
+}
+DA_Fire_rec.CAVAL.1.0 = {
+	is_hussars_modifier = yes
+	fire_damage_received = 1.0
+}
+DA_Fire_rec.CAVAL.1 = {
+	is_hussars_modifier = yes
+	fire_damage_received = 1
+}
+
+
+DA_Unique_mod.BLUEPRINT.INFAN.ClockWork.Dragon = {
+
+}
+
+DA_Unique_mod.BLUEPRINT.INFAN.MOTORIZATION.3.ArcanoMech_Annihilator = {
+
+}
+
+DA_Unique_mod.BLUEPRINT.INFAN.Bio_Construct.3.Abomination = {
+
+}
+
+DA_Unique_mod.BLUEPRINT.INFAN.ClockWork.Dragon = {
+
+}
+
+DA_Unique_mod.BLUEPRINT.INFAN.ClockWork.Dragon = {
+
+}
+
+DA_Unique_mod.BLUEPRINT.INFAN.ClockWork.Dragon = {
+
+}
+
+DA_Unique_mod.BLUEPRINT.INFAN.Bio_Construct.3.Living_Armor = {
+
+}
+
+DA_Unique_mod.BLUEPRINT.INFAN.Bio_Construct.3.Chimera = {
+
+}
+
+DA_Unique_mod.BLUEPRINT.INFAN.Bio_Construct.3.Purple_Worm = {
+
+}
+
+DA_Unique_mod.BLUEPRINT.INFAN.Bio_Construct.3.Ram = {
+
+}
+
+DA_Unique_mod.BLUEPRINT.CAVAL.MOTORIZATION.2.Vanguard = {
+
+}
+
+DA_Unique_mod.BLUEPRINT.CAVAL.MOTORIZATION.2.Holder = {
+
+}
+
+DA_Unique_mod.BLUEPRINT.CAVAL.Bio_Construct.3.Abomination = {
+
+}
+
+DA_Unique_mod.BLUEPRINT.CAVAL.Bio_Construct.3.Living_Armor = {
+
+}
+
+DA_Unique_mod.BLUEPRINT.CAVAL.Bio_Construct.3.Chimera = {
+
+}
+
+DA_Unique_mod.BLUEPRINT.CAVAL.Bio_Construct.3.Purple_Worm = {
+
+}
+
+DA_Unique_mod.BLUEPRINT.CAVAL.Bio_Construct.3.Ram = {
+
+}
+
+DA_Unique_mod.BLUEPRINT.ARTIL.Golem.1 = {
+
+}
+
+DA_Unique_mod.BLUEPRINT.ARTIL.Golem.2 = {
+
+}
+
+DA_Unique_mod.BLUEPRINT.ARTIL.Golem.3 = {
+
+}
+
+DA_Unique_mod.BLUEPRINT.ARTIL.ClockWork.Dragon = {
+
+}
+
+DA_Unique_mod.BLUEPRINT.ARTIL.MOTORIZATION.2.Vanguard = {
+
+}
+
+DA_Unique_mod.BLUEPRINT.ARTIL.MOTORIZATION.2.Holder = {
+
+}
+
+DA_Unique_mod.BLUEPRINT.ARTIL.MOTORIZATION.3.ArcanoMech_Annihilator = {
+
+}
+
+DA_Unique_mod.BLUEPRINT.ARTIL.Bio_Construct.3.Abomination = {
+
+}
+
+DA_Unique_mod.BLUEPRINT.ARTIL.Bio_Construct.3.Living_Armor = {
+
+}
+
+DA_Unique_mod.BLUEPRINT.ARTIL.Bio_Construct.3.Chimera = {
+
+}
+
+DA_Unique_mod.BLUEPRINT.ARTIL.Bio_Construct.3.Purple_Worm = {
+
+}
+
+DA_Unique_mod.BLUEPRINT.ARTIL.Bio_Construct.3.Ram = {
+
+}
+
+DA_runic_circuit_research = {
+	global_tax_modifier = -0.05
+	prestige_decay = 0.01
+}
+
+DA_Unique_mod.BLUEPRINT.ARTIL.Mithradum.1 = {
+
+}
+
+DA_Unique_mod.BLUEPRINT.ARTIL.Mithradum.2 = {
+
+}
+
+DA_Unique_mod.BLUEPRINT.ARTIL.Mithradum.3 = {
+
+}

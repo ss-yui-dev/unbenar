@@ -653,6 +653,7 @@ country_decisions = {
 				OR = {
 					has_province_modifier = restored_rail
 					has_province_modifier = advanced_rail
+					has_province_modifier = rocket_rail
 					AND = {
 						OR = {
 							has_terrain = dwarven_hold
@@ -682,6 +683,7 @@ country_decisions = {
 					OR = {
 						has_province_modifier = restored_rail
 						has_province_modifier = advanced_rail
+						has_province_modifier = rocket_rail
 						AND = {
 							OR = {
 								has_terrain = dwarven_hold
@@ -711,6 +713,7 @@ country_decisions = {
 							OR = {
 								has_province_modifier = restored_rail
 								has_province_modifier = advanced_rail
+								has_province_modifier = rocket_rail
 								AND = {
 									OR = {
 										has_terrain = dwarven_hold
@@ -759,10 +762,8 @@ country_decisions = {
 			is_state = yes
 			any_neighbor_province = {
 				OR = {
-					OR = {
-						has_province_modifier = advanced_rail
-						has_province_modifier = rocket_rail
-					}
+					has_province_modifier = advanced_rail
+					has_province_modifier = rocket_rail
 					AND = {
 						OR = {
 							has_terrain = dwarven_hold
@@ -790,10 +791,8 @@ country_decisions = {
 				is_state = yes
 				any_neighbor_province = {
 					OR = {
-						OR = {
-							has_province_modifier = advanced_rail
-							has_province_modifier = rocket_rail
-						}
+						has_province_modifier = advanced_rail
+						has_province_modifier = rocket_rail
 						AND = {
 							OR = {
 								has_terrain = dwarven_hold
@@ -822,6 +821,7 @@ country_decisions = {
 						any_neighbor_province = {
 							OR = {
 								has_province_modifier = advanced_rail
+								has_province_modifier = rocket_rail
 								AND = {
 									OR = {
 										has_terrain = dwarven_hold
@@ -932,6 +932,7 @@ country_decisions = {
 					culture_group = orcish
 					dwarovar_goblin_culture = yes
 					culture = cave_troll
+					culture_group = hobgoblin
 				}
 			}
 			else_if = {
@@ -942,6 +943,7 @@ country_decisions = {
 					culture_group = dwarven
 					culture = cave_troll
 					culture = silent_harimari
+					culture_group = hobgoblin
 				}
 			}
 			else_if = {
@@ -953,6 +955,7 @@ country_decisions = {
 					culture_group = dwarven
 					culture = cave_troll
 					culture = silent_harimari
+					culture_group = hobgoblin
 				}
 			}
 			is_city = yes
@@ -961,6 +964,7 @@ country_decisions = {
 		}
 		
 		allow = {
+			hidden_trigger = { capital_scope = { continent = serpentspine } }
 			if = {
 				limit = { NOT = { has_reform = dwarovar_righting_the_oldest_grudge } }
 				NOT = { num_of_cities = 3 }
@@ -978,6 +982,7 @@ country_decisions = {
 						culture_group = orcish
 						dwarovar_goblin_culture = yes
 						culture = cave_troll
+						culture_group = hobgoblin
 					}
 				}
 				else_if = {
@@ -988,6 +993,7 @@ country_decisions = {
 						culture_group = dwarven
 						culture = cave_troll
 						culture = silent_harimari
+						culture_group = hobgoblin
 					}
 				}
 				else_if = {
@@ -999,6 +1005,7 @@ country_decisions = {
 						culture_group = dwarven
 						culture = cave_troll
 						culture = silent_harimari
+						culture_group = hobgoblin
 					}
 				}
 				is_city = yes
@@ -1061,6 +1068,7 @@ country_decisions = {
 							culture_group = orcish
 							dwarovar_goblin_culture = yes
 							culture = cave_troll
+							culture_group = hobgoblin
 						}
 					}
 					else_if = {
@@ -1071,6 +1079,7 @@ country_decisions = {
 							culture_group = dwarven
 							culture = cave_troll
 							culture = silent_harimari
+							culture_group = hobgoblin
 						}
 					}
 					else_if = {
@@ -1082,6 +1091,7 @@ country_decisions = {
 							culture_group = dwarven
 							culture = cave_troll
 							culture = silent_harimari
+							culture_group = hobgoblin
 						}
 					}
 					is_city = yes
@@ -1174,6 +1184,7 @@ country_decisions = {
 				has_country_modifier = dwarven_administration
 				has_country_modifier = goblin_administration
 				has_country_modifier = kobold_administration
+				has_country_flag = allow_jorkad_dam_building
 			}
 			NOT = { has_global_flag = jorkad_dam_build }
 			NOT = { has_country_flag = dam_menu }
@@ -1508,10 +1519,13 @@ country_decisions = {
 						has_country_modifier = dwarovkron_amethyst
 						has_country_modifier = dwarovkron_diamond
 						has_country_modifier = dwarovkron_citrine
-						has_country_modifier = dwarovkron_ruby
 						has_country_modifier = dwarovkron_jade
 						has_country_modifier = dwarovkron_sapphire
 						has_country_modifier = dwarovkron_agate
+						OR = {
+							has_global_flag = dwarovkron_ruby_destroyed
+							has_country_modifier = dwarovkron_ruby
+						}
 					}
 					country_event = { id = diggy.200 }
 				}

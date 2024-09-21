@@ -1,5 +1,0 @@
-estate_burghers = {
-	privileges = {
-		MIGA_estate_burghers_forest_expansion
-	}
-}

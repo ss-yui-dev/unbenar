@@ -72,15 +72,16 @@ country_decisions = {
 		
 		effect = {
 			add_splendor = -800
-			add_country_modifier = {
-				name = ibevar_prosperous_ibevar
-				duration = 36500
-			}
+			# guardian; another 20% devcost for anather 100 years no thank you
+			#add_country_modifier = {
+			#	name = ibevar_prosperous_ibevar
+			#	duration = 36500
+			#}
 			custom_tooltip = ibevar_development_condition
-			hidden_effect = {
+			hidden_effect = { 
 				forlorn_vale_region = {
 					add_province_triggered_modifier = ibevar_infrastructure
-				}
+				} 
 				forlorn_vale_region = {
 					limit = {
 						owned_by = ROOT
@@ -91,9 +92,9 @@ country_decisions = {
 						duration = 18250 #50 years to outlast separatism and be useful. Using this is optional as the player can always just accept the cultures and leave them.
 					}
 				}
-				350 = {
+				350 = {	
 					add_province_triggered_modifier = ibevar_infrastructure
-				}
+				}	
 			}
 			hidden_effect = {
 				if = {
@@ -150,10 +151,10 @@ country_decisions = {
 				duration = 36500
 			}
 			custom_tooltip = ibevar_development_condition
-			hidden_effect = {
+			hidden_effect = {	
 				arbaran_area = {
 					add_province_triggered_modifier = ibevar_infrastructure
-				}
+				}	
 				arbaran_area = {
 					limit = { owned_by = ROOT }
 					add_province_modifier = {
@@ -162,9 +163,9 @@ country_decisions = {
 					}
 				}
 				
-				golden_plains_area = {
+				golden_plains_area = {	
 					add_province_triggered_modifier = ibevar_infrastructure
-				}
+				}	
 				golden_plains_area = {
 					limit = { owned_by = ROOT }
 					add_province_modifier = {
@@ -175,7 +176,7 @@ country_decisions = {
 				
 				cestir_area = {
 					add_province_triggered_modifier = ibevar_infrastructure
-				}
+				} 
 				cestir_area = {
 					limit = { owned_by = ROOT }
 					add_province_modifier = {
@@ -186,7 +187,7 @@ country_decisions = {
 				
 				verteben_area = {
 					add_province_triggered_modifier = ibevar_infrastructure
-				}
+				}	
 				verteben_area = {
 					limit = { owned_by = ROOT }
 					add_province_modifier = {
@@ -197,7 +198,7 @@ country_decisions = {
 				
 				valefort_area = {
 					add_province_triggered_modifier = ibevar_infrastructure
-				}
+				}	
 				valefort_area = {
 					limit = { owned_by = ROOT }
 					add_province_modifier = {
@@ -208,7 +209,7 @@ country_decisions = {
 				
 				rohibon_area = {
 					add_province_triggered_modifier = ibevar_infrastructure
-				}
+				}	
 				rohibon_area = {
 					limit = { owned_by = ROOT }
 					add_province_modifier = {
@@ -219,7 +220,7 @@ country_decisions = {
 				
 				taran_plains_area = {
 					add_province_triggered_modifier = ibevar_infrastructure
-				}
+				}	
 				taran_plains_area = {
 					limit = { owned_by = ROOT }
 					add_province_modifier = {

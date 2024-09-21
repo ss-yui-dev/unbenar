@@ -229,14 +229,15 @@ estate_ghulams = {
 	# 	}
 	# 	loyalty = 10
 	# }
-	loyalty_modifier = {
-		desc = EST_VAL_IS_CAUCASIAN_CULTURE_LOY
-		trigger = {
-			culture_group = caucasian
-		}
-		loyalty = 15
-	}
-
+	#love
+	# loyalty_modifier = {
+	# 	desc = EST_VAL_IS_CAUCASIAN_CULTURE_LOY
+	# 	trigger = {
+	# 		culture_group = caucasian
+	# 	}
+	# 	loyalty = 15
+	# }
+	#love
 	privileges = {
 		estate_ghulams_land_rights
 		estate_ghulams_military

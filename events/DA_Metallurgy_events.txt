@@ -219,7 +219,7 @@ country_event = {
 		has_country_flag = DA_enable_metallurgy_System
 		is_at_war = no
 		NOT = { num_of_hussars = 15 }
-		NOT = { num_of_musketeer = 40 }
+		NOT = { num_of_musketeers = 40 }
 	}
 	hidden = yes
 	is_triggered_only = yes

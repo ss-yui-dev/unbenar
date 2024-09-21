@@ -243,11 +243,12 @@ guiTypes = {
 			name = "imperialauthority_label"
 			position = { x = 403 y = 113 }
 			textureFile = ""
-			font = "vic_18"
-			borderSize = {x = 4 y = 0}
+			font = "Main_14" #love
+			borderSize = {x = 0 y = 0}
 			text = "HRE_IMPERIALAUTHORITY"
+			# fixedsize = {x = 130 y = 20}
 			maxWidth = 130
-			maxHeight = 32
+			maxHeight = 20
 			format = left
 		}
 

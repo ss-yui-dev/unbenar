@@ -106,6 +106,9 @@ age_of_reformation = {
 				custom_tooltip = religion_enforced_edict
 				set_country_flag = religion_enforced_edict
 			}
+			modifier = {
+				num_of_age_rewards = 1
+			}
 			ai_will_do = {
 				factor = 0
 			}
@@ -116,6 +119,7 @@ age_of_reformation = {
 		ab_md_1500s_warscore_vs_religion = {
 			modifier = {
 				warscore_cost_vs_other_religion = -0.25
+				num_of_age_rewards = 1
 			}
 			ai_will_do = {
 				factor = 10
@@ -127,6 +131,7 @@ age_of_reformation = {
 		ab_md_1500s_mercenary_discipline = {
 			modifier = {
 				mercenary_discipline = 0.05
+				num_of_age_rewards = 1
 			}
 			ai_will_do = {
 				factor = 10
@@ -138,6 +143,7 @@ age_of_reformation = {
 		ab_md_1500s_ship_power_propagation = {
 			modifier = {
 				ship_power_propagation = 0.2
+				num_of_age_rewards = 1
 			}
 			ai_will_do = {
 				factor = 10
@@ -150,6 +156,7 @@ age_of_reformation = {
 			modifier = {
 				institution_spread_from_true_faith = 0.5
 				global_institution_spread = 0.1
+				num_of_age_rewards = 1
 			}
 			ai_will_do = {
 				factor = 10
@@ -161,6 +168,7 @@ age_of_reformation = {
 		ab_md_1500s_prestige_per_development_from_conversion = {
 			modifier = {
 				prestige_per_development_from_conversion = 0.3
+				num_of_age_rewards = 1
 			}
 			ai_will_do = {
 				factor = 10
@@ -172,6 +180,7 @@ age_of_reformation = {
 		ab_md_1500s_additional_missionary = {
 			modifier = {
 				missionaries = 1
+				num_of_age_rewards = 1
 			}
 			ai_will_do = {
 				factor = 10
@@ -183,6 +192,7 @@ age_of_reformation = {
 		ab_md_1500s_attentive_listening = {
 			modifier = {
 				global_missionary_strength = 0.03
+				num_of_age_rewards = 1
 			}
 			ai_will_do = {
 				factor = 100
@@ -194,6 +204,7 @@ age_of_reformation = {
 		ab_md_1500s_hardened_soldiers = {
 			modifier = {
 				land_attrition = -0.1
+				num_of_age_rewards = 1
 			}
 			ai_will_do = {
 				factor = 10
@@ -205,6 +216,7 @@ age_of_reformation = {
 		ab_md_1500s_persecution_migration = {
 			modifier = {
 				culture_conversion_cost = -0.25
+				num_of_age_rewards = 1
 			}
 			ai_will_do = {
 				factor = 10
@@ -217,6 +229,7 @@ age_of_reformation = {
 			modifier = {
 				idea_cost = -0.05
 				all_power_cost = -0.01
+				num_of_age_rewards = 1
 			}
 			ai_will_do = {
 				factor = 10
@@ -228,6 +241,7 @@ age_of_reformation = {
 		ab_md_1500s_secret_religion = {
 			modifier = {
 				spy_offence = 0.25
+				num_of_age_rewards = 1
 			}
 			ai_will_do = {
 				factor = 10
@@ -239,6 +253,7 @@ age_of_reformation = {
 		ab_md_1500s_god_over_country = {
 			modifier = {
 				relation_with_same_religion = 25
+				num_of_age_rewards = 1
 			}
 			ai_will_do = {
 				factor = 10
@@ -251,6 +266,7 @@ age_of_reformation = {
 			modifier = {
 				merchants = 1
 				trade_efficiency = 0.05
+				num_of_age_rewards = 1
 			}
 			ai_will_do = {
 				factor = 10
@@ -263,6 +279,7 @@ age_of_reformation = {
 			modifier = {
 				development_cost = -0.03
 				build_cost = -0.03
+				num_of_age_rewards = 1
 			}
 			ai_will_do = {
 				factor = 10
@@ -271,10 +288,10 @@ age_of_reformation = {
 				se_md_add_or_upgrade_bonus = { bonusName = economy flagName = like_minded_immigration abilityName = ab_md_1500s_like_minded_immigration showTooltip = true }
 			}
 		}
-		ab_md_1600s_colony_boost_development = {
+		ab_aelantir_rush = {
 			modifier = {
 				colony_development_boost = 1
-				# can_colony_boost_development = yes
+				num_of_age_rewards = 1
 			}
 			ai_will_do = {
 				factor = 10
@@ -290,6 +307,7 @@ age_of_reformation = {
 		ab_md_1600s_religious_refugees = {
 			modifier = {
 				global_colonial_growth = 10
+				num_of_age_rewards = 1
 			}
 			ai_will_do = {
 				factor = 0
@@ -301,6 +319,7 @@ age_of_reformation = {
 		ab_md_1600s_colonial_charter = {
 			modifier = {
 				colonist_placement_chance = 0.1
+				num_of_age_rewards = 1
 			}
 			ai_will_do = {
 				factor = 0
