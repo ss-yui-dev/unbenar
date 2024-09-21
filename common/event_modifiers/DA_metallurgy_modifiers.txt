@@ -1,42 +1,44 @@
 
 DA_Mine_1 = {
 	trade_goods_size = 0.02
+	# local_development_cost = -0.1 #love
 	local_amount_of_cawa = 1
 	local_has_musketeers = yes
-	amount_of_musketeers = 0.50
-	local_amount_of_hussars = 0.55
+	amount_of_musketeers = 0.3 #love
+	local_amount_of_hussars = 0.3
 }
 DA_Mine_2 = {
 	trade_goods_size = 0.02	#guardian; no trade goods from mines (we already have goods from dip dev); low value to display on trademap
-	local_development_cost = -0.01 # -0.30 -> 0.025 guardian; see no reason for free devsoct in max efficiency range  
+	# local_development_cost = -0.2 #love 
 	local_has_musketeers = yes
-	amount_of_musketeers = 1.50
+	amount_of_musketeers = 0.6 #love
 	local_amount_of_hussars = 0.55
 }
 DA_Mine_3 = {
 	trade_goods_size = 0.02
-	local_development_cost = -0.60 #fix that too, if 40+ development will be easy to dev
+	# local_development_cost = -0.3 #love
 	local_has_musketeers = yes
-	amount_of_musketeers = 3.50
+	amount_of_musketeers = 0.9 #love
 	local_amount_of_hussars = 0.55
 }
 DA_Mine_4 = {
 	trade_goods_size = 0.02
-	local_development_cost = -0.90
+	# local_development_cost = -0.4 #love
 	local_has_musketeers = yes
-	amount_of_musketeers = 6
+	amount_of_musketeers = 1.2 #love
 	local_amount_of_hussars = 0.55
 }
 DA_Mine_5 = {
 	trade_goods_size = 0.02
+	# local_development_cost = -0.5 #love
 	local_has_musketeers = yes
-	amount_of_musketeers = 10
+	amount_of_musketeers = 1.5 #love
 	local_amount_of_hussars = 0.55
 }
 DA_Hold_Mine = {
 	trade_goods_size = 0.02
 	local_has_musketeers = yes
-	amount_of_musketeers = 3
+	amount_of_musketeers = 2 #love
 	local_amount_of_hussars = 0.35
 }
 DA_forge_restarted = {

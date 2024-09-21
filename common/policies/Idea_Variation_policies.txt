@@ -2856,7 +2856,7 @@ idea_variation_act_182 = {
 		full_idea_group = quantity_ideas
 	}
 
-	land_forcelimit = 25
+	land_forcelimit = 10
 
 	ai_will_do = {
 		factor = 1
@@ -4125,7 +4125,7 @@ idea_variation_act_293 = {
 	}
 
 	sailors_recovery_speed = 0.3
-	manpower_recovery_speed = 0.45
+	manpower_recovery_speed = 0.2
 
 	ai_will_do = {
 		factor = 1
@@ -4146,7 +4146,7 @@ idea_variation_act_294 = {
 		full_idea_group = diktatur0
 	}
 
-	global_manpower = 21
+	global_manpower = 20
 	global_unrest = 2
 
 	ai_will_do = {
@@ -4323,7 +4323,7 @@ idea_variation_act_26 = {
 		full_idea_group = standing_army_idea_groups
 	}
 
-	manpower_recovery_speed = 0.30
+	manpower_recovery_speed = 0.2
 
 	ai_will_do = {
 		factor = 1
@@ -4609,7 +4609,7 @@ idea_variation_act_210 = {
 		}
 	}
 
-	global_manpower = 15
+	global_manpower = 7
 
 	ai_will_do = {
 		factor = 1
@@ -5092,7 +5092,7 @@ idea_variation_act_37 = {
 		full_idea_group = conscription_ideas0
 	}
 
-	global_manpower = 15
+	global_manpower = 10
 
 	ai_will_do = {
 		factor = 1
@@ -5115,7 +5115,7 @@ idea_variation_act_51 = {
 		full_idea_group = conscription_ideas0
 	}
 
-	global_manpower = 15
+	global_manpower = 5
 
 	ai_will_do = {
 		factor = 1
@@ -5321,7 +5321,7 @@ idea_variation_act_231 = {
 		full_idea_group = conscription_ideas0
 	}
 
-	manpower_recovery_speed = 0.30
+	manpower_recovery_speed = 0.20
 
 	ai_will_do = {
 		factor = 1
@@ -5801,7 +5801,7 @@ idea_variation_act_521 = {
 		full_idea_group = conscription_ideas0
 	}
 
-	manpower_recovery_speed = 0.55
+	manpower_recovery_speed = 0.2
 
 	ai_will_do = {
 		factor = 1
@@ -8317,7 +8317,7 @@ idea_variation_act_350 = {
 		full_idea_group = health_ideas
 	}
 
-	manpower_recovery_speed = 0.35
+	manpower_recovery_speed = 0.3
 	sailors_recovery_speed = 0.1
 
 	ai_will_do = {
@@ -9223,7 +9223,7 @@ idea_variation_act_373 = {
 		full_idea_group = innovativeness_ideas
 	}
 
-	global_manpower = 15
+	global_manpower = 7
 
 	ai_will_do = {
 		factor = 1

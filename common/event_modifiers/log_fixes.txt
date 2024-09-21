@@ -1,5 +1,11 @@
 
+wei_suo_system_reform_forcelimit_lvl_3_modifier = {
+	regiment_recruit_speed = -0.5
+}
 
+wei_suo_system_reform_manpower_lvl_3_modifier = {
+	garrison_growth = 0.3
+}
 
 DA_power.INFAN.-0 = {
 

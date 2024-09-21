@@ -4628,7 +4628,6 @@ custom_button = {
 					owner = { country_event = { id = diggy.49 } }
 				}
 			}
-			set_country_flag = is_digging
 		}
 	}
 	tooltip = start_digging_tt

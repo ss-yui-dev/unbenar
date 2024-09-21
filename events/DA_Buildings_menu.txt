@@ -1907,6 +1907,7 @@ country_event = {	# The mod set up event, NOTHING WILL WORK WITHOUT THIS, DO NOT
 		}
 		every_province = {
 			limit = {
+				continent = serpentspine
 				is_wasteland = no
 				OR = {
 					has_terrain = mountain

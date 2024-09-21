@@ -2358,9 +2358,11 @@ blademarches_tall_4 = {
 				add_local_autonomy = 75
 				if = {
 					limit = {
-						has_country_flag = BOP_ORC_SLAVERY
-						NOT = { has_country_modifier = the_abolish_slavery_act } 
-						NOT = { has_global_flag = orcish_slave_trade_banned_in_cannor } 
+						owner = {
+							has_country_flag = BOP_ORC_SLAVERY
+							NOT = { has_country_modifier = the_abolish_slavery_act } 
+							NOT = { has_global_flag = orcish_slave_trade_banned_in_cannor } 
+						}
 					}
 					change_trade_goods = slaves
 				}
@@ -2374,7 +2376,11 @@ blademarches_tall_4 = {
 			885 = {
 				add_local_autonomy = 75
 				if = {
-					limit = { has_country_flag = BOP_ORC_SLAVERY } 
+					limit = { 
+						owner = {
+							has_country_flag = BOP_ORC_SLAVERY
+						}
+					}
 					change_trade_goods = slaves
 				}
 				else = { change_trade_goods = wine } 
@@ -2383,9 +2389,11 @@ blademarches_tall_4 = {
 				add_local_autonomy = 75
 				if = {
 					limit = {
-						has_country_flag = BOP_ORC_SLAVERY
-						NOT = { has_country_modifier = the_abolish_slavery_act } 
-						NOT = { has_global_flag = orcish_slave_trade_banned_in_cannor } 
+						owner = {
+							has_country_flag = BOP_ORC_SLAVERY
+							NOT = { has_country_modifier = the_abolish_slavery_act } 
+							NOT = { has_global_flag = orcish_slave_trade_banned_in_cannor } 	
+						}
 					} 
 					change_trade_goods = slaves
 				}

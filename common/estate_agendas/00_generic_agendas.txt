@@ -6640,10 +6640,7 @@ estate_burghers_build_production_building_in_y = {
 			}
 			else = {
 				event_target:agenda_province = {
-					OR = {
-						has_building = workshop
-						has_building = counting_house
-					}
+					has_production_building_trigger = yes #love
 				}
 			}
 		}
@@ -13504,34 +13501,34 @@ estate_cossacks_develop_x = {
 			}
 			save_event_target_as = agenda_province
 		}
-		random_owned_province = {
-			limit = {
-				is_state_core = root
-				OR = {
-					culture_group = east_slavic
-					culture_group = slavic
-				}
-			}
-			save_event_target_as = agenda_province
-		}
-		random_owned_province = {
-			limit = {
-				is_state_core = root
-				has_terrain = steppe
-			}
-			save_event_target_as = agenda_province
-		}
+		# random_owned_province = {
+		# 	limit = {
+		# 		is_state_core = root
+		# 		OR = {
+		# 			culture_group = east_slavic
+		# 			culture_group = slavic
+		# 		}
+		# 	}
+		# 	save_event_target_as = agenda_province
+		# }
 		random_owned_province = {
 			limit = {
 				is_state_core = root
 				has_terrain = steppe
-				OR = {
-					culture_group = east_slavic
-					culture_group = slavic
-				}
 			}
 			save_event_target_as = agenda_province
 		}
+		# random_owned_province = {
+		# 	limit = {
+		# 		is_state_core = root
+		# 		has_terrain = steppe
+		# 		OR = {
+		# 			culture_group = east_slavic
+		# 			culture_group = slavic
+		# 		}
+		# 	}
+		# 	save_event_target_as = agenda_province
+		# }
 		event_target:agenda_province = {
 			if = {
 				limit = {

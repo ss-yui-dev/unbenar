@@ -44,7 +44,7 @@ change_estate_land_share = {
 		birth_date = 1399.3.9
 		adm = 4
 		dip = 5
-		mil = 9 #love
+		mil = 6
 		leader = {
 			name = "Laskaris the Conqueror"
 			type = general
@@ -67,3 +67,4 @@ change_estate_land_share = {
 	set_country_flag = kheio_mil
 	change_personal_deity = kheio_mil_1
 }
+

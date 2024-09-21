@@ -34,37 +34,3 @@ on_religion_change = {
 }
 
 
-#blademarches_sellblade_economy_effect = {
-#	if = {
-#		limit = {
-#			NOT = { owner = { has_reform = blademarches_sellblade_economy } }
-#			#FROM = { has_reform = blademarches_sellblade_economy }
-#			has_province_modifier = bop_weapons_manufactory_bonus
-#		}
-#		remove_province_modifier = bop_weapons_manufactory_bonus
-#	}
-#	if = {
-#		limit = {
-#			NOT = { has_province_modifier = bop_weapons_manufactory_bonus }
-#			owner = { has_reform = blademarches_sellblade_economy } }
-#			#NOT = { FROM = { has_reform = blademarches_sellblade_economy } }
-#		}
-#		hidden_effect = {
-#			if = {
-#				limit = {
-#					has_building = weapons
-#				}
-#				add_province_modifier = { 
-#					name = bop_weapons_manufactory_bonus
-#					duration = -1
-#					#hidden = yes
-#				}
-#			}
-#		}
-#	}
-#}
-
-
-
-
-

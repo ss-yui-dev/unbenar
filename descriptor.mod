@@ -3,7 +3,7 @@ tags={
 	"Alternative History"
 	"Total Conversion"
 }
-name="unbenar"
+name="UNBENAR"
 replace_path="common/bookmarks"
 replace_path="common/church_aspects"
 replace_path="common/fetishist_cults"
@@ -30,3 +30,4 @@ replace_path="gfx/loadingscreens"
 replace_path="tutorial"
 picture="thumbnail.png"
 supported_version="v1.37.*.*"
+remote_file_id="2966553895"

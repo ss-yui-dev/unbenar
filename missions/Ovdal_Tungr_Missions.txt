@@ -2476,22 +2476,22 @@ strongbellow_c_4 = {
 				base_production = 25
 			}
 			if = { limit = { innovativeness = 100 }
-				treasury = 250000
+				treasury = 25000 #love
 			}
 			else_if = { limit = { innovativeness = 90 }
-				treasury = 300000
+				treasury = 30000 #love
 			}
 			else_if = { limit = { innovativeness = 80 }
-				treasury = 350000
+				treasury = 35000 #love
 			}
 			else_if = { limit = { innovativeness = 70 }
-				treasury = 400000
+				treasury = 40000 #love
 			}
 			else_if = { limit = { innovativeness = 60 }
-				treasury = 450000
+				treasury = 45000 #love
 			}
 			else = {
-				treasury = 500000
+				treasury = 50000 #love
 			}
 		} 
 
@@ -2503,22 +2503,22 @@ strongbellow_c_4 = {
 				add_mil_power = -200
 			}
 			if = { limit = { innovativeness = 100 }
-				add_treasury = -250000
+				add_treasury = -25000 #love
 			}
 			else_if = { limit = { innovativeness = 90 }
-				add_treasury = -300000
+				add_treasury = -30000 #love
 			}
 			else_if = { limit = { innovativeness = 80 }
-				add_treasury = -350000
+				add_treasury = -35000 #love
 			}
 			else_if = { limit = { innovativeness = 70 }
-				add_treasury = -400000
+				add_treasury = -40000 #love
 			}
 			else_if = { limit = { innovativeness = 60 }
-				add_treasury = -450000
+				add_treasury = -45000 #love
 			}
 			else = {
-				add_treasury = -500000
+				add_treasury = -50000 #love
 			}
 			526 = { # Ovdal Tungr
 				downgrade_improved_infrastructure = yes
