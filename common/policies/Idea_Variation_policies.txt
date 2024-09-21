@@ -3860,7 +3860,7 @@ idea_variation_act_240 = {
 		full_idea_group = generalstab0
 	}
 
-	assault_fort_ability = 1
+	assault_fort_ability = 0.25
 
 	ai_will_do = {
 		factor = 1
@@ -4169,6 +4169,7 @@ idea_variation_act_295 = {
 	}
 
 	reinforce_speed = 0.35
+	country_military_power = -2
 
 	ai_will_do = {
 		factor = 1
@@ -13765,7 +13766,7 @@ idea_variation_act_245 = {
 	}
 
 	garrison_size = 0.25
-	assault_fort_ability = 0.5
+	assault_fort_ability = 0.125
 
 	ai_will_do = {
 		factor = 1
@@ -20675,7 +20676,7 @@ idea_variation_act_499 = {
 	}
 
 	diplomats = 1
-	diplomatic_upkeep = 10
+	diplomatic_upkeep = 4
 
 
 	ai_will_do = {
