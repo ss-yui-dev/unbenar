@@ -230,12 +230,13 @@ country_event = { #Bhuvauri election (rotations)
 		trigger = { has_country_flag = bhuvauri_fangaulan_ruler } #Country flags instead of ruler flags--less prone to breaking
 		define_ruler = {
 			name = dakinshi_name
-			max_random_adm = 3
-			max_random_dip = 1
-			max_random_mil = 2
-			change_adm = 2
-			change_dip = 1
-			change_mil = 2
+			# 3 1 2 2 1 2
+			max_random_adm = 4
+			max_random_dip = 2
+			max_random_mil = 3
+			change_adm = 4
+			change_dip = 2
+			change_mil = 3
 			culture = dakinshi
 			religion = beast_memory
 			random_gender = yes #Dakinshi faction allows women
@@ -255,12 +256,13 @@ country_event = { #Bhuvauri election (rotations)
 		trigger = { has_country_flag = bhuvauri_dakinshi_ruler }
 		define_ruler = {
 			name = bulwari_name
-			max_random_adm = 1
-			max_random_dip = 3
-			max_random_mil = 2
-			change_adm = 1
-			change_dip = 2
-			change_mil = 2
+			# 1 3 2 1 2 2 
+			max_random_adm = 2
+			max_random_dip = 4
+			max_random_mil = 3
+			change_adm = 2
+			change_dip = 4
+			change_mil = 3
 			culture = surani
 			religion = high_philosophy
 		}
@@ -279,12 +281,12 @@ country_event = { #Bhuvauri election (rotations)
 		trigger = { has_country_flag = bhuvauri_bulwari_ruler }
 		define_ruler = {
 			name = fangaulan_name
-			max_random_adm = 2
-			max_random_dip = 1
-			max_random_mil = 3
-			change_adm = 2
-			change_dip = 1
-			change_mil = 2
+			max_random_adm = 3
+			max_random_dip = 2
+			max_random_mil = 4
+			change_adm = 3
+			change_dip = 2
+			change_mil = 4
 			culture = ndurubu
 			religion = fangaula_pantheon
 		}
