@@ -100,7 +100,7 @@ custom_button = {
 	name = DA_Fake_Info_button
 	tooltip = DA_Fake_Info_button_tt
 	potential = {
-		always = yes
+		has_country_flag = metall_menu_open
 	}
 	trigger = {
 		always = yes
@@ -117,7 +117,7 @@ custom_button = {
 	name = DA_Fake_Capacity_button
 	tooltip = DA_Fake_Capacity_button_tt
 	potential = {
-		always = yes
+		has_country_flag = metall_menu_open
 	}
 	trigger = {
 		always = yes
@@ -133,7 +133,7 @@ custom_button = {
 
 custom_text_box = {
     name = DA_Prod_Capacity_shower #Must match a scripted instantTextBoxType in a .gui file
-    potential = { always = yes } #Determines when the text is visible
+    potential = { has_country_flag = metall_menu_open } #Determines when the text is visible
     tooltip = DA_Prod_Capacity_shower_tt #Can use customizable localisation
     #To localize it, use the name of the button as a key, can also use customizable localisation
 }
@@ -142,7 +142,7 @@ custom_button = {
 	name = DA_Fake_Research_progress_button
 	tooltip = DA_Fake_Research_progress_button_tt
 	potential = {
-		always = yes
+		has_country_flag = metall_menu_open
 	}
 	trigger = {
 		always = yes
@@ -153,7 +153,7 @@ custom_button = {
 
 custom_text_box = {
     name = DA_Research_progress_shower #Must match a scripted instantTextBoxType in a .gui file
-    potential = { always = yes } #Determines when the text is visible
+    potential = { has_country_flag = metall_menu_open } #Determines when the text is visible
     tooltip = DA_Prod_Capacity_shower_tt #Can use customizable localisation
     #To localize it, use the name of the button as a key, can also use customizable localisation
 }
@@ -162,7 +162,7 @@ custom_button = {
 	name = DA_Runesmith_Menu_Button
 	tooltip = DA_Runesmith_Menu_Button_tt
 	potential = {
-		always = yes
+		has_country_flag = metall_menu_open
 	}
 	trigger = {
         OR = {
@@ -207,7 +207,7 @@ custom_button = {
 	name = DA_Runesmith_Research_Button
 	tooltip = DA_Runesmith_Research_Button_tt
 	potential = {
-		always = yes
+		has_country_flag = metall_menu_open
 	}
     trigger = {
         custom_trigger_tooltip = {
@@ -251,7 +251,7 @@ custom_button = {
 	name = DA_Building_Menu_Button
 	tooltip = DA_Building_Menu_Button_tt
 	potential = {
-		always = yes
+		has_country_flag = metall_menu_open
 	}
 	trigger = {
         culture_group = dwarven
@@ -280,7 +280,7 @@ custom_button = {
 	name = DA_Metallurgy_Menu_Button
 	tooltip = DA_Metallurgy_Menu_Button_tt
 	potential = {
-		always = yes
+		has_country_flag = metall_menu_open
 	}
 	trigger = {
         custom_trigger_tooltip = {
@@ -309,7 +309,7 @@ custom_button = {
 	name = DA_Exploration_Button
 	tooltip = DA_Exploration_Button_tt
 	potential = {
-		always = yes
+		has_country_flag = metall_menu_open
 	}
 	trigger = {
         custom_trigger_tooltip = {
@@ -435,7 +435,7 @@ custom_button = {
 	name = DA_Met_COST_fake_button
 	tooltip = DA_Met_COST_fake_button_tt
 	potential = {
-		always = yes
+		has_country_flag = metall_menu_open
 	}
 	trigger = {
 		always = yes
@@ -446,43 +446,43 @@ custom_button = {
 
 custom_text_box = {
     name = DA_Met_COST_Shower #Must match a scripted instantTextBoxType in a .gui file
-    potential = { always = yes } #Determines when the text is visible
+    potential = { has_country_flag = metall_menu_open } #Determines when the text is visible
     tooltip = DA_Met_COST_Shower.tt #Can use customizable localisation
     #To localize it, use the name of the button as a key, can also use customizable localisation
 }
 custom_text_box = {
     name = DA_ADK_Shower #Must match a scripted instantTextBoxType in a .gui file
-    potential = { always = yes } #Determines when the text is visible
+    potential = { has_country_flag = metall_menu_open } #Determines when the text is visible
     tooltip = DA_ADK_Shower.tt #Can use customizable localisation
     #To localize it, use the name of the button as a key, can also use customizable localisation
 }
 custom_text_box = {
     name = DA_Tech_Shower.Magic_Theory #Must match a scripted instantTextBoxType in a .gui file
-    potential = { always = yes } #Determines when the text is visible
+    potential = { has_country_flag = metall_menu_open } #Determines when the text is visible
     tooltip = DA_Tech_Shower.Magic_Theory.tt #Can use customizable localisation
     #To localize it, use the name of the button as a key, can also use customizable localisation
 }
 custom_text_box = {
     name = DA_Tech_Shower.Metallurgy #Must match a scripted instantTextBoxType in a .gui file
-    potential = { always = yes } #Determines when the text is visible
+    potential = { has_country_flag = metall_menu_open } #Determines when the text is visible
     tooltip = DA_Tech_Shower.Metallurgy.tt #Can use customizable localisation
     #To localize it, use the name of the button as a key, can also use customizable localisation
 }
 custom_text_box = {
     name = DA_Tech_Shower.Mechanics #Must match a scripted instantTextBoxType in a .gui file
-    potential = { always = yes } #Determines when the text is visible
+    potential = { has_country_flag = metall_menu_open } #Determines when the text is visible
     tooltip = DA_Tech_Shower.Mechanics.tt #Can use customizable localisation
     #To localize it, use the name of the button as a key, can also use customizable localisation
 }
 custom_text_box = {
     name = DA_Tech_Shower.Alchemy #Must match a scripted instantTextBoxType in a .gui file
-    potential = { always = yes } #Determines when the text is visible
+    potential = { has_country_flag = metall_menu_open } #Determines when the text is visible
     tooltip = DA_Tech_Shower.Alchemy.tt #Can use customizable localisation
     #To localize it, use the name of the button as a key, can also use customizable localisation
 }
 custom_text_box = {
     name = DA_Tech_Shower.Medicine #Must match a scripted instantTextBoxType in a .gui file
-    potential = { always = yes } #Determines when the text is visible
+    potential = { has_country_flag = metall_menu_open } #Determines when the text is visible
     tooltip = DA_Tech_Shower.Medicine.tt #Can use customizable localisation
     #To localize it, use the name of the button as a key, can also use customizable localisation
 }
@@ -493,56 +493,56 @@ custom_text_box = {
 
 custom_text_box = {
     name = DA_Metal_Shower.Iron #Must match a scripted instantTextBoxType in a .gui file
-    potential = { always = yes } #Determines when the text is visible
+    potential = { has_country_flag = metall_menu_open } #Determines when the text is visible
     tooltip = DA_Metal_Shower.Iron.tt #Can use customizable localisation
     #To localize it, use the name of the button as a key, can also use customizable localisation
 }
 
 custom_text_box = {
     name = DA_Metal_Shower.Copper #Must match a scripted instantTextBoxType in a .gui file
-    potential = { always = yes } #Determines when the text is visible
+    potential = { has_country_flag = metall_menu_open } #Determines when the text is visible
     tooltip = DA_Metal_Shower.Copper.tt #Can use customizable localisation
     #To localize it, use the name of the button as a key, can also use customizable localisation
 }
 
 custom_text_box = {
     name = DA_Metal_Shower.Gold #Must match a scripted instantTextBoxType in a .gui file
-    potential = { always = yes } #Determines when the text is visible
+    potential = { has_country_flag = metall_menu_open } #Determines when the text is visible
     tooltip = DA_Metal_Shower.Gold.tt #Can use customizable localisation
     #To localize it, use the name of the button as a key, can also use customizable localisation
 }
 
 custom_text_box = {
     name = DA_Metal_Shower.Silver #Must match a scripted instantTextBoxType in a .gui file
-    potential = { always = yes } #Determines when the text is visible
+    potential = { has_country_flag = metall_menu_open } #Determines when the text is visible
     tooltip = DA_Metal_Shower.Silver.tt #Can use customizable localisation
     #To localize it, use the name of the button as a key, can also use customizable localisation
 }
 
 custom_text_box = {
     name = DA_Metal_Shower.Tin #Must match a scripted instantTextBoxType in a .gui file
-    potential = { always = yes } #Determines when the text is visible
+    potential = { has_country_flag = metall_menu_open } #Determines when the text is visible
     tooltip = DA_Metal_Shower.Tin.tt #Can use customizable localisation
     #To localize it, use the name of the button as a key, can also use customizable localisation
 }
 
 custom_text_box = {
     name = DA_Metal_Shower.Aluminium #Must match a scripted instantTextBoxType in a .gui file
-    potential = { always = yes } #Determines when the text is visible
+    potential = { has_country_flag = metall_menu_open } #Determines when the text is visible
     tooltip = DA_Metal_Shower.Aluminium.tt #Can use customizable localisation
     #To localize it, use the name of the button as a key, can also use customizable localisation
 }
 
 custom_text_box = {
     name = DA_Metal_Shower.Titanium #Must match a scripted instantTextBoxType in a .gui file
-    potential = { always = yes } #Determines when the text is visible
+    potential = { has_country_flag = metall_menu_open } #Determines when the text is visible
     tooltip = DA_Metal_Shower.Titanium.tt #Can use customizable localisation
     #To localize it, use the name of the button as a key, can also use customizable localisation
 }
 
 custom_text_box = {
     name = DA_Metal_Shower.Chromium #Must match a scripted instantTextBoxType in a .gui file
-    potential = { always = yes } #Determines when the text is visible
+    potential = { has_country_flag = metall_menu_open } #Determines when the text is visible
     tooltip = DA_Metal_Shower.Chromium.tt #Can use customizable localisation
     #To localize it, use the name of the button as a key, can also use customizable localisation
 }
@@ -551,41 +551,41 @@ custom_text_box = {
 
 custom_text_box = {
     name = DA_Metal_Shower.Quicksilver #Must match a scripted instantTextBoxType in a .gui file
-    potential = { always = yes } #Determines when the text is visible
+    potential = { has_country_flag = metall_menu_open } #Determines when the text is visible
     tooltip = DA_Metal_Shower.Quicksilver.tt #Can use customizable localisation
     #To localize it, use the name of the button as a key, can also use customizable localisation
 }
 
 custom_text_box = {
     name = DA_Metal_Shower.Palladium #Must match a scripted instantTextBoxType in a .gui file
-    potential = { always = yes } #Determines when the text is visible
+    potential = { has_country_flag = metall_menu_open } #Determines when the text is visible
     tooltip = DA_Metal_Shower.Palladium.tt #Can use customizable localisation
     #To localize it, use the name of the button as a key, can also use customizable localisation
 }
 
 custom_text_box = {
     name = DA_Metal_Shower.Platinum #Must match a scripted instantTextBoxType in a .gui file
-    potential = { always = yes } #Determines when the text is visible
+    potential = { has_country_flag = metall_menu_open } #Determines when the text is visible
     tooltip = DA_Metal_Shower.Platinum.tt #Can use customizable localisation
     #To localize it, use the name of the button as a key, can also use customizable localisation
 }
 
 custom_text_box = {
     name = DA_Metal_Shower.Tantalum #Must match a scripted instantTextBoxType in a .gui file
-    potential = { always = yes } #Determines when the text is visible
+    potential = { has_country_flag = metall_menu_open } #Determines when the text is visible
     tooltip = DA_Metal_Shower.Tantalum.tt #Can use customizable localisation
     #To localize it, use the name of the button as a key, can also use customizable localisation
 }
 
 custom_text_box = {
     name = DA_Metal_Shower.Damestear #Must match a scripted instantTextBoxType in a .gui file
-    potential = { always = yes } #Determines when the text is visible
+    potential = { has_country_flag = metall_menu_open } #Determines when the text is visible
     tooltip = DA_Metal_Shower.Damestear.tt #Can use customizable localisation
     #To localize it, use the name of the button as a key, can also use customizable localisation
 }
 custom_text_box = {
     name = DA_Metal_Shower.Meteoric_Silver #Must match a scripted instantTextBoxType in a .gui file
-    potential = { always = yes } #Determines when the text is visible
+    potential = { has_country_flag = metall_menu_open } #Determines when the text is visible
     tooltip = DA_Metal_Shower.Meteoric_Silver.tt #Can use customizable localisation
     #To localize it, use the name of the button as a key, can also use customizable localisation
 }
@@ -595,31 +595,31 @@ custom_text_box = {
 
 custom_text_box = {
     name = DA_Metal_Shower.Dagrite #Must match a scripted instantTextBoxType in a .gui file
-    potential = { always = yes } #Determines when the text is visible
+    potential = { has_country_flag = metall_menu_open } #Determines when the text is visible
     tooltip = DA_Metal_Shower.Dagrite.tt #Can use customizable localisation
     #To localize it, use the name of the button as a key, can also use customizable localisation
 }
 custom_text_box = {
     name = DA_Metal_Shower.RoseMetal #Must match a scripted instantTextBoxType in a .gui file
-    potential = { always = yes } #Determines when the text is visible
+    potential = { has_country_flag = metall_menu_open } #Determines when the text is visible
     tooltip = DA_Metal_Shower.RoseMetal.tt #Can use customizable localisation
     #To localize it, use the name of the button as a key, can also use customizable localisation
 }
 custom_text_box = {
     name = DA_Metal_Shower.Cold_iron #Must match a scripted instantTextBoxType in a .gui file
-    potential = { always = yes } #Determines when the text is visible
+    potential = { has_country_flag = metall_menu_open } #Determines when the text is visible
     tooltip = DA_Metal_Shower.Cold_iron.tt #Can use customizable localisation
     #To localize it, use the name of the button as a key, can also use customizable localisation
 }
 custom_text_box = {
     name = DA_Metal_Shower.Mithril #Must match a scripted instantTextBoxType in a .gui file
-    potential = { always = yes } #Determines when the text is visible
+    potential = { has_country_flag = metall_menu_open } #Determines when the text is visible
     tooltip = DA_Metal_Shower.Mithril.tt #Can use customizable localisation
     #To localize it, use the name of the button as a key, can also use customizable localisation
 }
 custom_text_box = {
     name = DA_Metal_Shower.EbonSteel #Must match a scripted instantTextBoxType in a .gui file
-    potential = { always = yes } #Determines when the text is visible
+    potential = { has_country_flag = metall_menu_open } #Determines when the text is visible
     tooltip = DA_Metal_Shower.EbonSteel.tt #Can use customizable localisation
     #To localize it, use the name of the button as a key, can also use customizable localisation
 }
@@ -628,55 +628,55 @@ custom_text_box = {
 
 custom_text_box = {
     name = DA_Metal_Shower.CinderSteel #Must match a scripted instantTextBoxType in a .gui file
-    potential = { always = yes } #Determines when the text is visible
+    potential = { has_country_flag = metall_menu_open } #Determines when the text is visible
     tooltip = DA_Metal_Shower.CinderSteel.tt #Can use customizable localisation
     #To localize it, use the name of the button as a key, can also use customizable localisation
 }
 custom_text_box = {
     name = DA_Metal_Shower.Magnetite #Must match a scripted instantTextBoxType in a .gui file
-    potential = { always = yes } #Determines when the text is visible
+    potential = { has_country_flag = metall_menu_open } #Determines when the text is visible
     tooltip = DA_Metal_Shower.Magnetite.tt #Can use customizable localisation
     #To localize it, use the name of the button as a key, can also use customizable localisation
 }
 custom_text_box = {
     name = DA_Metal_Shower.Mistium #Must match a scripted instantTextBoxType in a .gui file
-    potential = { always = yes } #Determines when the text is visible
+    potential = { has_country_flag = metall_menu_open } #Determines when the text is visible
     tooltip = DA_Metal_Shower.Mistium.tt #Can use customizable localisation
     #To localize it, use the name of the button as a key, can also use customizable localisation
 }
 custom_text_box = {
     name = DA_Metal_Shower.Skyshard #Must match a scripted instantTextBoxType in a .gui file
-    potential = { always = yes } #Determines when the text is visible
+    potential = { has_country_flag = metall_menu_open } #Determines when the text is visible
     tooltip = DA_Metal_Shower.Skyshard.tt #Can use customizable localisation
     #To localize it, use the name of the button as a key, can also use customizable localisation
 }
 custom_text_box = {
     name = DA_Metal_Shower.Adamantium #Must match a scripted instantTextBoxType in a .gui file
-    potential = { always = yes } #Determines when the text is visible
+    potential = { has_country_flag = metall_menu_open } #Determines when the text is visible
     tooltip = DA_Metal_Shower.Adamantium.tt #Can use customizable localisation
     #To localize it, use the name of the button as a key, can also use customizable localisation
 }
 custom_text_box = {
     name = DA_Metal_Shower.Unastu_Argazen #Must match a scripted instantTextBoxType in a .gui file
-    potential = { always = yes } #Determines when the text is visible
+    potential = { has_country_flag = metall_menu_open } #Determines when the text is visible
     tooltip = DA_Metal_Shower.Unastu_Argazen.tt #Can use customizable localisation
     #To localize it, use the name of the button as a key, can also use customizable localisation
 }
 custom_text_box = {
     name = DA_Metal_Shower.Bloth_Dolur #Must match a scripted instantTextBoxType in a .gui file
-    potential = { always = yes } #Determines when the text is visible
+    potential = { has_country_flag = metall_menu_open } #Determines when the text is visible
     tooltip = DA_Metal_Shower.Bloth_Dolur.tt #Can use customizable localisation
     #To localize it, use the name of the button as a key, can also use customizable localisation
 }
 custom_text_box = {
     name = DA_Metal_Shower.Sylvanite #Must match a scripted instantTextBoxType in a .gui file
-    potential = { always = yes } #Determines when the text is visible
+    potential = { has_country_flag = metall_menu_open } #Determines when the text is visible
     tooltip = DA_Metal_Shower.Sylvanite.tt #Can use customizable localisation
     #To localize it, use the name of the button as a key, can also use customizable localisation
 }
 custom_text_box = {
     name = DA_Metal_Shower.VoidSteel #Must match a scripted instantTextBoxType in a .gui file
-    potential = { always = yes } #Determines when the text is visible
+    potential = { has_country_flag = metall_menu_open } #Determines when the text is visible
     tooltip = DA_Metal_Shower.VoidSteel.tt #Can use customizable localisation
     #To localize it, use the name of the button as a key, can also use customizable localisation
 }

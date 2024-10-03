@@ -5,5 +5,8 @@
     "cwtools.errors.ignore": [],
     "accessibility.signals.lineHasError": {
         "sound": "on"
-    }
+    },
+    "editor.formatOnPaste": false,
+    "editor.formatOnSave": false,
+    "editor.formatOnType": false
 }

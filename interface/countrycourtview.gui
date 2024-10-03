@@ -62,18 +62,18 @@ guiTypes = {
 		
 		### ------- Ruler -------	
 
-		listboxType = 
-		{
-			name ="monarch_ruler_personality_list"
-			position = { x=120 y =137}
-			backGround=""
-			size = { x=250 y =300}
-			Orientation = "UPPER_LEFT"
-			horizontal = 1
-			spacing = 2
-			scrollbartype = "standardlistbox_slider"
-			borderSize = {x = 0 y = 0}
-		}
+		# listboxType = 
+		# {
+		# 	name ="monarch_ruler_personality_list"
+		# 	position = { x=120 y =137}
+		# 	backGround=""
+		# 	size = { x=250 y =300}
+		# 	Orientation = "UPPER_LEFT"
+		# 	horizontal = 1
+		# 	spacing = 2
+		# 	scrollbartype = "standardlistbox_slider"
+		# 	borderSize = {x = 0 y = 0}
+		# }
 		
 		iconType =
 		{
@@ -223,18 +223,18 @@ guiTypes = {
 
 		### Heir ###
 
-		listboxType = 
-		{
-			name ="monarch_heir_personality_list"
-			position = { x=175 y =203}
-			backGround=""
-			size = { x=220 y =100}
-			Orientation = "UPPER_LEFT"
-			horizontal = 0
-			spacing = 2
-			scrollbartype = "standardlistbox_slider"
-			borderSize = {x = 0 y = 0}
-		}
+		# listboxType = 
+		# {
+		# 	name ="monarch_heir_personality_list"
+		# 	position = { x=175 y =203}
+		# 	backGround=""
+		# 	size = { x=220 y =100}
+		# 	Orientation = "UPPER_LEFT"
+		# 	horizontal = 0
+		# 	spacing = 2
+		# 	scrollbartype = "standardlistbox_slider"
+		# 	borderSize = {x = 0 y = 0}
+		# }
 
 		# iconType =
 		# {
@@ -413,18 +413,18 @@ guiTypes = {
 
 		### Queen ###
 
-		listboxType = 
-		{
-			name ="monarch_queen_personality_list"
-			position = { x=175 y =265}
-			backGround=""
-			size = { x=220 y =100}
-			Orientation = "UPPER_LEFT"
-			horizontal = 0
-			spacing = 2
-			scrollbartype = "standardlistbox_slider"
-			borderSize = {x = 0 y = 0}
-		}
+		# listboxType = 
+		# {
+		# 	name ="monarch_queen_personality_list"
+		# 	position = { x=175 y =265}
+		# 	backGround=""
+		# 	size = { x=220 y =100}
+		# 	Orientation = "UPPER_LEFT"
+		# 	horizontal = 0
+		# 	spacing = 2
+		# 	scrollbartype = "standardlistbox_slider"
+		# 	borderSize = {x = 0 y = 0}
+		# }
 
 		# iconType =
 		# {

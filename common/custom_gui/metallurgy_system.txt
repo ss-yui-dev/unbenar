@@ -1,0 +1,35 @@
+custom_button = {
+	name = show_mettalurgy
+	tooltip = hold_button_tt
+	potential = {
+		always = yes
+	}
+	trigger = {
+		always = yes
+	}
+	effect = {
+		if = {
+			limit = {
+				FROM = { NOT = { has_country_flag = metall_menu_open } } 
+			}
+			FROM = {
+				set_country_flag = metall_menu_open
+			}
+		}
+		else_if = {
+			limit = {
+				FROM = { has_country_flag = metall_menu_open }
+			}
+			FROM = {
+				clr_country_flag = metall_menu_open
+			}
+		}
+	}
+}
+
+custom_icon = {
+	name = metallurgy_system
+	potential = {
+		has_country_flag = metall_menu_open
+	}
+}

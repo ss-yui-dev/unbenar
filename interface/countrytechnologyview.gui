@@ -22,7 +22,14 @@ guiTypes = {
 
 		}
 		############# dwarven knowledge ###########
-	
+		iconType =
+		{
+			name ="metallurgy_system"
+			spriteType = "GFX_metallurgy_window"
+			position = { x= 546 y = 70 }
+			Orientation = "UPPER_LEFT"
+			scripted = yes
+		}
 		guiButtonType = {
 			name = "DA_Fake_Info_button"
 			position = { x = 1040 y = 104 }
@@ -653,6 +660,17 @@ guiTypes = {
 			hint_tag = "hint_techgroup"
 			shortcut = "n"
 		}
+
+		guiButtonType =
+		{
+			name ="show_mettalurgy"
+			spriteType = "GFX_institutions_large_icon"
+			position = { x= 104 y = 104 }
+			Orientation = "UPPER_LEFT"
+			hint_tag = "hint_techgroup"
+			scripted = yes
+		}
+		
 
 		iconType =
 		{

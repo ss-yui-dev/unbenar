@@ -1,0 +1,9 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_metallurgy_window"
+		texturefile = "gfx//interface//Metallurgy_window.dds"
+		transparencecheck = yes
+	}
+
+}
