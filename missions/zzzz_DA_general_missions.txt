@@ -114,7 +114,10 @@ DA_mission_branch_1 = {
 
 		trigger = {
 			NOT = { has_country_modifier = DA_researching_rails } 
-			DA_own_Dagrite_provinces = { amount = 1 } 
+			custom_trigger_tooltip = {				#gb - mission requirements description fix
+				tooltip = DA_dagrite_mine
+				DA_own_Dagrite_provinces = { amount = 1 }
+			}							#ge
 		}
 
 		effect = {
