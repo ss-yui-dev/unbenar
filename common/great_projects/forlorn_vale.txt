@@ -54,7 +54,7 @@ ibevar_temple_of_munas = {
 			}
 			#has_owner_religion = убираю, потому что к моменту постройки монумента это требование будет неактуально, но заметно перегружает панель требований
 			OR = {
-				AND = {
+				OR = {
 					religion_group = cannorian
 					religion = elven_forebears
 				}
