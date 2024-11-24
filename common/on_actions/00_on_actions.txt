@@ -16152,7 +16152,7 @@ on_capital_moved = {
 			owner = {
 				AND = {
 					has_reform = irkorzik_dunesworn_council_reform
-					has_country_flag = irkorzik_itinerant_capital
+					#has_country_flag = irkorzik_itinerant_capital
 				}
 			}
 		}
