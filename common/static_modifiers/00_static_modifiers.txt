@@ -1230,6 +1230,8 @@ corruption = {
     dragon_command_loyalty_modifier = 0.1
     acolytes_loyalty_modifier = 0.1
 	yearly_authority = -50
+		#unbenar
+	inflation_reduction = -25 #guardian
 }
 
 root_out_corruption = {
