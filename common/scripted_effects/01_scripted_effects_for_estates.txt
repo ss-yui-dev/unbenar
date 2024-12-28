@@ -3755,17 +3755,6 @@ on_province_tax_building_built_estate_privileges_effect = {
 			}
 		}
 	}
-	#if = {
-	#	limit = {
-	#		FROM = {
-	#			religion = ravelian	#Anbennar, form Catholic baby
-	#			has_estate_privilege = estate_church_influence_temples
-	#		}
-	#	}
-	#	FROM = {
-	#		add_papal_influence = 3
-	#	}
-	#}
 	if = {
 		limit = {
 			owner = {

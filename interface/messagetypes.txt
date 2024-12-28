@@ -11118,4 +11118,4 @@ SIDETRUCEENDS=
 		pausepopup=no
 		icon=no
 	}
-}
+}

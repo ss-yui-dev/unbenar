@@ -33,7 +33,7 @@
 ####################
 # Events and custom loc
 ####################
-DA_get_PCRM_EFFECT_TT: "The §YP.C.R.M.§! Invention currently provides the following Benefits:\n[DA_get_PCRM_PROD_EFF][DA_get_PCRM_TRADE_EFF][DA_get_PCRM_BUILD_TIME][DA_get_PCRM_ADM_EFF][DA_get_PCRM_GOODS_PROD]\nAn §RInvention Complexity§! of §Y[DA_Complexity.GetValue]§! has the following negative effects:\n[DA_get_PCRM_STATE_MAINT][DA_get_PCRM_GOV_CAP_MOD]"
+ DA_get_PCRM_EFFECT_TT: "The §YP.C.R.M.§! Invention currently provides the following Benefits:\n[DA_get_PCRM_PROD_EFF][DA_get_PCRM_TRADE_EFF][DA_get_PCRM_BUILD_TIME][DA_get_PCRM_ADM_EFF][DA_get_PCRM_GOODS_PROD]\nAn §RInvention Complexity§! of §Y[DA_Complexity.GetValue]§! has the following negative effects:\n[DA_get_PCRM_STATE_MAINT][DA_get_PCRM_GOV_CAP_MOD]"
 
  DA_project_event.98.t:0 "§RTheory§!: Alternating Runes"
  DA_project_event.98.d:0 "After years of research we have finally managed to apply the alternating runes theory. It is now possible to use have different part of one rune be used simultaneously by itself and an adiacent Rune. This allow us to theorically create a small device with many different runes inside it, each one of it retains at least its original power and sometimes can create an even bigger effect with the aid of intersected runes."
@@ -78,7 +78,7 @@ DA_get_PCRM_EFFECT_TT: "The §YP.C.R.M.§! Invention currently provides the foll
  DA_project_event.105.a:0 "That took a while"
 
 
-DA_get_PMRM_EFFECT_TT: "The §YP.M.R.M.§! Invention currently provides the following Benefits:\n[DA_get_PMRM_SHOCK][DA_get_PMRM_M_REC_SPEED][DA_get_PMRM_DISCIPLINE][DA_get_PMRM_MOVE_SPEED][DA_get_PMRM_ATTRITION]\nAn §RInvention Complexity§! of §Y[DA_Complexity.GetValue]§! has the following negative effects:\n[DA_get_PMRM_LAND_MAINT][DA_get_PMRM_LAND_FORCE_LIMIT]"
+ DA_get_PMRM_EFFECT_TT: "The §YP.M.R.M.§! Invention currently provides the following Benefits:\n[DA_get_PMRM_SHOCK][DA_get_PMRM_M_REC_SPEED][DA_get_PMRM_DISCIPLINE][DA_get_PMRM_MOVE_SPEED][DA_get_PMRM_ATTRITION]\nAn §RInvention Complexity§! of §Y[DA_Complexity.GetValue]§! has the following negative effects:\n[DA_get_PMRM_LAND_MAINT][DA_get_PMRM_LAND_FORCE_LIMIT]"
 
  DA_project_event.106.t:0 "§RProject§!: P.M.R.M."
  DA_project_event.106.d:0 "After the P.C.R.M. success, §RProject§! P.M.R.M. implements the alternating Runes theory in the military field.\nSoldiers will be able to use whatever rune has been applied on said device at any time it is needed, without having to carry many different Runes on him/herself.\nWe will now start to select whcih runes will be added to to the final product and how.\n\n§GPeriodical events will happen to let you choose how you want to handle the project.\nEvery Choice will give a PERMANENT modifier to the final invention§!\nEvery time you decide to take an upgraded version of a modifier you will gain 1 or 2 §RInvention Complexity§!.\nEach point of §RInvention Complexity§! will give a malus to the final Invention:\nEvery 1 §RInvention Complexity§!: Land Maintenance: §R+5%§!\nEvery 2 §RInvention Complexity§!: Land Force Limit modifier: §R-2,5%§!\n"

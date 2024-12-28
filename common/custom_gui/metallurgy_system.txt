@@ -1,11 +1,11 @@
 custom_button = {
 	name = show_mettalurgy
-	tooltip = hold_button_tt
+	tooltip = show_metallurgy_tt
 	potential = {
-		always = yes
+		culture_group = dwarven
 	}
 	trigger = {
-		always = yes
+		ai = no
 	}
 	effect = {
 		if = {

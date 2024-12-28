@@ -1,9 +1,5 @@
 spriteTypes = {
 	### 1.32.0
-	spriteType = {
-		name = "GFX_minimapchanger_bg"
-		texturefile = "gfx//interface//minimapchanger_bg.dds"
-	}
 	### Used in name_heir_message.gui
 	spriteType = {
 		name = "GFX_name_heir_message"
@@ -132,6 +128,7 @@ spriteTypes = {
 		transparencecheck = yes
 	}
 
+	### Used as a meme in courtview.gui
 	spriteType = {
 		name = "GFX_edicts_bg_overlay_60"
 		texturefile = "gfx/interface/edicts_bg_overlay_60.dds"
@@ -146,12 +143,6 @@ spriteTypes = {
 		name = "GFX_combat_bg_phase"
 		texturefile = "gfx/interface/combat_bg_phase.dds"
 	}
-
-	spriteType = {
-		name = "GFX_poop_combat"
-		texturefile = "gfx/interface/artemis_ui/poop_combat.dds"
-	}
-
 	
 	spriteType = {
 		name = "GFX_court_abdicate"
@@ -216,13 +207,6 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_combat_bg_artemis"	
 		texturefile = "gfx//interface//combat_bgv2.dds"
-		transparencecheck = yes
-	}
-
-	### Eoc
-	spriteType = {
-		name = "GFX_eoc_bg_reforms"	
-		texturefile = "gfx//interface//eoc_bg_reforms.dds"
 		transparencecheck = yes
 	}
 

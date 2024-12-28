@@ -1,5 +1,5 @@
 ﻿l_english:
- our_standing_tooltip:0 "[Root.FederationStandingROOT]\n"
+#  our_standing_tooltip:0 "[Root.FederationStandingROOT]\n"
  J01_standing_tooltip:0 "[J01.FederationStandingJ01]\n\n\n\n"
  J02_standing_tooltip:0 "[J02.FederationStandingJ02]\n\n\n\n"
  J03_standing_tooltip:0 "[J03.FederationStandingJ03]\n\n\n\n"

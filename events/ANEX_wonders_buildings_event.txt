@@ -3,7 +3,7 @@ namespace = national_wonder
 country_event = {
 	id = national_wonder.1
 	title = national_wonder.1.t
-	desc = national_wonder.1.d # Определение области что вы хотите построить
+	desc = national_wonder.1.d # Определение облаѝти что вы хотите поѝтроить
 	picture = GREAT_BUILDING_eventPicture
 
 	is_triggered_only = yes
@@ -111,13 +111,13 @@ country_event = {
 # country_event = {
 # 	id = national_wonder.2
 # 	title = national_wonder.2.t
-# 	desc = national_wonder.2.d #Описание условий для появления кнопки на постройку
+# 	desc = national_wonder.2.d #Опиѝание уѝловий длѝ поѝвлениѝ кнопки на поѝтройку
 # 	picture = GREAT_BUILDING_eventPicture
 
 # 	is_triggered_only = yes
 
 # 	option = {
-# 		name = national_wonder.2.a # Тригер на постройку конкретного здания
+# 		name = national_wonder.2.a # Тригер на поѝтройку конкретного зданиѝ
 # 		trigger = {
 			
 # 		}
@@ -157,7 +157,7 @@ country_event = {
 # country_event = {
 # 	id = national_wonder.3
 # 	title = national_wonder.2.t  
-# 	desc = national_wonder.2.d #Описание бонусов постройки и условий строительства
+# 	desc = national_wonder.2.d #Опиѝание бонуѝов поѝтройки и уѝловий ѝтроительѝтва
 # 	picture = GREAT_BUILDING_eventPicture
 
 # 	is_triggered_only = yes	
@@ -175,7 +175,7 @@ country_event = {
 # 	}
 
 # 	option = {
-# 		name = national_wonder.2.z # Не строим
+# 		name = national_wonder.2.z # Не ѝтроим
 # 		country_event = {
 # 			id = national_wonder.1
 # 		}
@@ -185,7 +185,7 @@ country_event = {
 # country_event = {
 # 	id = national_wonder.4
 # 	title = national_wonder.4.t  
-# 	desc = national_wonder.4.d # построили
+# 	desc = national_wonder.4.d # поѝтроили
 # 	picture = GREAT_BUILDING_eventPicture
 
 # 	is_triggered_only = yes	
@@ -203,7 +203,7 @@ country_event = {
 # 	}
 	
 # 	option = {
-# 		name = national_wonder.2.z # Не строим
+# 		name = national_wonder.2.z # Не ѝтроим
 # 		country_event = {
 # 			id = national_wonder.1
 # 		}
@@ -213,7 +213,7 @@ country_event = {
 # country_event = {
 # 	id = national_wonder.5
 # 	title = national_wonder.5.t  
-# 	desc = national_wonder.5.d #Описание бонусов постройки и условий строительства
+# 	desc = national_wonder.5.d #Опиѝание бонуѝов поѝтройки и уѝловий ѝтроительѝтва
 # 	picture = GREAT_BUILDING_eventPicture
 
 # 	is_triggered_only = yes	
@@ -232,7 +232,7 @@ country_event = {
 # 	}
 	
 # 	option = {
-# 		name = national_wonder.2.z # Не строим
+# 		name = national_wonder.2.z # Не ѝтроим
 # 		country_event = {
 # 			id = national_wonder.1
 # 		}
@@ -245,13 +245,13 @@ country_event = {
 # country_event = {
 # 	id = national_wonder.6
 # 	title = national_wonder.6.t
-# 	desc = national_wonder.6.d #Описание условий для появления кнопки на постройку
+# 	desc = national_wonder.6.d #Опиѝание уѝловий длѝ поѝвлениѝ кнопки на поѝтройку
 # 	picture = GREAT_BUILDING_eventPicture
 
 # 	is_triggered_only = yes
 
 # 	option = {
-# 		name = national_wonder.6.a # Тригер на постройку конкретного здания
+# 		name = national_wonder.6.a # Тригер на поѝтройку конкретного зданиѝ
 # 		trigger = {
 			
 # 		}
@@ -288,7 +288,7 @@ country_event = {
 # country_event = {
 # 	id = national_wonder.7
 # 	title = national_wonder.7.t  
-# 	desc = national_wonder.7.d #Описание бонусов постройки и условий строительства
+# 	desc = national_wonder.7.d #Опиѝание бонуѝов поѝтройки и уѝловий ѝтроительѝтва
 # 	picture = GREAT_BUILDING_eventPicture
 
 # 	is_triggered_only = yes	
@@ -307,7 +307,7 @@ country_event = {
 # 	}
 
 # 	option = {
-# 		name = national_wonder.2.z # Не строим
+# 		name = national_wonder.2.z # Не ѝтроим
 # 		country_event = {
 # 			id = national_wonder.1
 # 		}
@@ -317,7 +317,7 @@ country_event = {
 # country_event = {
 # 	id = national_wonder.8
 # 	title = national_wonder.8.t  
-# 	desc = national_wonder.8.d # построили
+# 	desc = national_wonder.8.d # поѝтроили
 # 	picture = GREAT_BUILDING_eventPicture
 
 # 	is_triggered_only = yes	
@@ -335,7 +335,7 @@ country_event = {
 # 	}
 	
 # 	option = {
-# 		name = national_wonder.2.z # Не строим
+# 		name = national_wonder.2.z # Не ѝтроим
 # 		country_event = {
 # 			id = national_wonder.1
 # 		}
@@ -345,7 +345,7 @@ country_event = {
 # country_event = {
 # 	id = national_wonder.9
 # 	title = national_wonder.9.t  
-# 	desc = national_wonder.9.d #Описание бонусов постройки и условий строительства
+# 	desc = national_wonder.9.d #Опиѝание бонуѝов поѝтройки и уѝловий ѝтроительѝтва
 # 	picture = GREAT_BUILDING_eventPicture
 
 # 	is_triggered_only = yes	
@@ -364,7 +364,7 @@ country_event = {
 # 	}
 	
 # 	option = {
-# 		name = national_wonder.2.z # Не строим
+# 		name = national_wonder.2.z # Не ѝтроим
 # 		country_event = {
 # 			id = national_wonder.1
 # 		}
@@ -378,13 +378,13 @@ country_event = {
 # country_event = {
 # 	id = national_wonder.10
 # 	title = national_wonder.10.t
-# 	desc = national_wonder.10.d #Описание условий для появления кнопки на постройку
+# 	desc = national_wonder.10.d #Опиѝание уѝловий длѝ поѝвлениѝ кнопки на поѝтройку
 # 	picture = GREAT_BUILDING_eventPicture
 
 # 	is_triggered_only = yes
 
 # 	option = {
-# 		name = national_wonder.10.a # Тригер на постройку конкретного здания
+# 		name = national_wonder.10.a # Тригер на поѝтройку конкретного зданиѝ
 # 		trigger = {
 			
 # 		}
@@ -421,7 +421,7 @@ country_event = {
 # country_event = {
 # 	id = national_wonder.11
 # 	title = national_wonder.11.t  
-# 	desc = national_wonder.11.d #Описание бонусов постройки и условий строительства
+# 	desc = national_wonder.11.d #Опиѝание бонуѝов поѝтройки и уѝловий ѝтроительѝтва
 # 	picture = GREAT_BUILDING_eventPicture
 
 # 	is_triggered_only = yes	
@@ -439,7 +439,7 @@ country_event = {
 # 	}
 
 # 	option = {
-# 		name = national_wonder.2.z # Не строим
+# 		name = national_wonder.2.z # Не ѝтроим
 # 		country_event = {
 # 			id = national_wonder.1
 # 		}
@@ -449,7 +449,7 @@ country_event = {
 # country_event = {
 # 	id = national_wonder.12
 # 	title = national_wonder.12.t  
-# 	desc = national_wonder.12.d # построили
+# 	desc = national_wonder.12.d # поѝтроили
 # 	picture = GREAT_BUILDING_eventPicture
 
 # 	is_triggered_only = yes	
@@ -466,7 +466,7 @@ country_event = {
 # 	}
 	
 # 	option = {
-# 		name = national_wonder.2.z # Не строим
+# 		name = national_wonder.2.z # Не ѝтроим
 # 		country_event = {
 # 			id = national_wonder.1
 # 		}
@@ -476,7 +476,7 @@ country_event = {
 # country_event = {
 # 	id = national_wonder.13
 # 	title = national_wonder.13.t  
-# 	desc = national_wonder.13.d #Описание бонусов постройки и условий строительства
+# 	desc = national_wonder.13.d #Опиѝание бонуѝов поѝтройки и уѝловий ѝтроительѝтва
 # 	picture = GREAT_BUILDING_eventPicture
 
 # 	is_triggered_only = yes	
@@ -494,7 +494,7 @@ country_event = {
 # 	}
 	
 # 	option = {
-# 		name = national_wonder.2.z # Не строим
+# 		name = national_wonder.2.z # Не ѝтроим
 # 		country_event = {
 # 			id = national_wonder.1
 # 		}
@@ -507,13 +507,13 @@ country_event = {
 # country_event = {
 # 	id = national_wonder.14
 # 	title = national_wonder.14.t
-# 	desc = national_wonder.14.d #Описание условий для появления кнопки на постройку
+# 	desc = national_wonder.14.d #Опиѝание уѝловий длѝ поѝвлениѝ кнопки на поѝтройку
 # 	picture = GREAT_BUILDING_eventPicture
 
 # 	is_triggered_only = yes
 
 # 	option = {
-# 		name = national_wonder.14.a # Тригер на постройку конкретного здания
+# 		name = national_wonder.14.a # Тригер на поѝтройку конкретного зданиѝ
 # 		trigger = {
 			
 # 		}
@@ -550,7 +550,7 @@ country_event = {
 # country_event = {
 # 	id = national_wonder.15
 # 	title = national_wonder.15.t  
-# 	desc = national_wonder.15.d #Описание бонусов постройки и условий строительства
+# 	desc = national_wonder.15.d #Опиѝание бонуѝов поѝтройки и уѝловий ѝтроительѝтва
 # 	picture = GREAT_BUILDING_eventPicture
 
 # 	is_triggered_only = yes	
@@ -568,7 +568,7 @@ country_event = {
 # 	}
 
 # 	option = {
-# 		name = national_wonder.2.z # Не строим
+# 		name = national_wonder.2.z # Не ѝтроим
 # 		country_event = {
 # 			id = national_wonder.1
 # 		}
@@ -578,7 +578,7 @@ country_event = {
 # country_event = {
 # 	id = national_wonder.16
 # 	title = national_wonder.16.t  
-# 	desc = national_wonder.16.d # построили
+# 	desc = national_wonder.16.d # поѝтроили
 # 	picture = GREAT_BUILDING_eventPicture
 
 # 	is_triggered_only = yes	
@@ -595,7 +595,7 @@ country_event = {
 # 	}
 	
 # 	option = {
-# 		name = national_wonder.2.z # Не строим
+# 		name = national_wonder.2.z # Не ѝтроим
 # 		country_event = {
 # 			id = national_wonder.1
 # 		}
@@ -605,7 +605,7 @@ country_event = {
 # country_event = {
 # 	id = national_wonder.17
 # 	title = national_wonder.17.t  
-# 	desc = national_wonder.17.d #Описание бонусов постройки и условий строительства
+# 	desc = national_wonder.17.d #Опиѝание бонуѝов поѝтройки и уѝловий ѝтроительѝтва
 # 	picture = GREAT_BUILDING_eventPicture
 
 # 	is_triggered_only = yes	
@@ -623,7 +623,7 @@ country_event = {
 # 	}
 	
 # 	option = {
-# 		name = national_wonder.2.z # Не строим
+# 		name = national_wonder.2.z # Не ѝтроим
 # 		country_event = {
 # 			id = national_wonder.1
 # 		}
@@ -636,13 +636,13 @@ country_event = {
 # country_event = {
 # 	id = national_wonder.18
 # 	title = national_wonder.18.t
-# 	desc = national_wonder.18.d #Описание условий для появления кнопки на постройку
+# 	desc = national_wonder.18.d #Опиѝание уѝловий длѝ поѝвлениѝ кнопки на поѝтройку
 # 	picture = GREAT_BUILDING_eventPicture
 
 # 	is_triggered_only = yes
 
 # 	option = {
-# 		name = national_wonder.18.a # Тригер на постройку конкретного здания
+# 		name = national_wonder.18.a # Тригер на поѝтройку конкретного зданиѝ
 # 		trigger = {
 			
 # 		}
@@ -679,7 +679,7 @@ country_event = {
 # country_event = {
 # 	id = national_wonder.19
 # 	title = national_wonder.19.t  
-# 	desc = national_wonder.19.d #Описание бонусов постройки и условий строительства
+# 	desc = national_wonder.19.d #Опиѝание бонуѝов поѝтройки и уѝловий ѝтроительѝтва
 # 	picture = GREAT_BUILDING_eventPicture
 
 # 	is_triggered_only = yes	
@@ -697,7 +697,7 @@ country_event = {
 # 	}
 
 # 	option = {
-# 		name = national_wonder.2.z # Не строим
+# 		name = national_wonder.2.z # Не ѝтроим
 # 		country_event = {
 # 			id = national_wonder.1
 # 		}
@@ -707,7 +707,7 @@ country_event = {
 # country_event = {
 # 	id = national_wonder.20
 # 	title = national_wonder.20.t  
-# 	desc = national_wonder.20.d # построили
+# 	desc = national_wonder.20.d # поѝтроили
 # 	picture = GREAT_BUILDING_eventPicture
 
 # 	is_triggered_only = yes	
@@ -724,7 +724,7 @@ country_event = {
 # 	}
 	
 # 	option = {
-# 		name = national_wonder.2.z # Не строим
+# 		name = national_wonder.2.z # Не ѝтроим
 # 		country_event = {
 # 			id = national_wonder.1
 # 		}
@@ -734,7 +734,7 @@ country_event = {
 # country_event = {
 # 	id = national_wonder.21
 # 	title = national_wonder.21.t  
-# 	desc = national_wonder.21.d #Описание бонусов постройки и условий строительства
+# 	desc = national_wonder.21.d #Опиѝание бонуѝов поѝтройки и уѝловий ѝтроительѝтва
 # 	picture = GREAT_BUILDING_eventPicture
 
 # 	is_triggered_only = yes	
@@ -752,7 +752,7 @@ country_event = {
 # 	}
 	
 # 	option = {
-# 		name = national_wonder.2.z # Не строим
+# 		name = national_wonder.2.z # Не ѝтроим
 # 		country_event = {
 # 			id = national_wonder.1
 # 		}
@@ -765,13 +765,13 @@ country_event = {
 # country_event = {
 # 	id = national_wonder.22
 # 	title = national_wonder.22.t
-# 	desc = national_wonder.22.d #Описание условий для появления кнопки на постройку
+# 	desc = national_wonder.22.d #Опиѝание уѝловий длѝ поѝвлениѝ кнопки на поѝтройку
 # 	picture = GREAT_BUILDING_eventPicture
 
 # 	is_triggered_only = yes
 
 # 	option = {
-# 		name = national_wonder.22.a # Тригер на постройку конкретного здания
+# 		name = national_wonder.22.a # Тригер на поѝтройку конкретного зданиѝ
 # 		trigger = {
 			
 # 		}
@@ -808,7 +808,7 @@ country_event = {
 # country_event = {
 # 	id = national_wonder.23
 # 	title = national_wonder.23.t  
-# 	desc = national_wonder.23.d #Описание бонусов постройки и условий строительства
+# 	desc = national_wonder.23.d #Опиѝание бонуѝов поѝтройки и уѝловий ѝтроительѝтва
 # 	picture = GREAT_BUILDING_eventPicture
 
 # 	is_triggered_only = yes	
@@ -826,7 +826,7 @@ country_event = {
 # 	}
 
 # 	option = {
-# 		name = national_wonder.2.z # Не строим
+# 		name = national_wonder.2.z # Не ѝтроим
 # 		country_event = {
 # 			id = national_wonder.1
 # 		}
@@ -836,7 +836,7 @@ country_event = {
 # country_event = {
 # 	id = national_wonder.24
 # 	title = national_wonder.24.t  
-# 	desc = national_wonder.24.d # построили
+# 	desc = national_wonder.24.d # поѝтроили
 # 	picture = GREAT_BUILDING_eventPicture
 
 # 	is_triggered_only = yes	
@@ -853,7 +853,7 @@ country_event = {
 # 	}
 	
 # 	option = {
-# 		name = national_wonder.2.z # Не строим
+# 		name = national_wonder.2.z # Не ѝтроим
 # 		country_event = {
 # 			id = national_wonder.1
 # 		}
@@ -863,7 +863,7 @@ country_event = {
 # country_event = {
 # 	id = national_wonder.25
 # 	title = national_wonder.25.t  
-# 	desc = national_wonder.25.d #Описание бонусов постройки и условий строительства
+# 	desc = national_wonder.25.d #Опиѝание бонуѝов поѝтройки и уѝловий ѝтроительѝтва
 # 	picture = GREAT_BUILDING_eventPicture
 
 # 	is_triggered_only = yes	
@@ -881,7 +881,7 @@ country_event = {
 # 	}
 	
 # 	option = {
-# 		name = national_wonder.2.z # Не строим
+# 		name = national_wonder.2.z # Не ѝтроим
 # 		country_event = {
 # 			id = national_wonder.1
 # 		}
@@ -894,13 +894,13 @@ country_event = {
 # country_event = {
 # 	id = national_wonder.26
 # 	title = national_wonder.26.t
-# 	desc = national_wonder.26.d #Описание условий для появления кнопки на постройку
+# 	desc = national_wonder.26.d #Опиѝание уѝловий длѝ поѝвлениѝ кнопки на поѝтройку
 # 	picture = GREAT_BUILDING_eventPicture
 
 # 	is_triggered_only = yes
 
 # 	option = {
-# 		name = national_wonder.26.a # Тригер на постройку конкретного здания
+# 		name = national_wonder.26.a # Тригер на поѝтройку конкретного зданиѝ
 # 		trigger = {
 			
 # 		}
@@ -937,7 +937,7 @@ country_event = {
 # country_event = {
 # 	id = national_wonder.27
 # 	title = national_wonder.27.t  
-# 	desc = national_wonder.27.d #Описание бонусов постройки и условий строительства
+# 	desc = national_wonder.27.d #Опиѝание бонуѝов поѝтройки и уѝловий ѝтроительѝтва
 # 	picture = GREAT_BUILDING_eventPicture
 
 # 	is_triggered_only = yes	
@@ -955,7 +955,7 @@ country_event = {
 # 	}
 
 # 	option = {
-# 		name = national_wonder.2.z # Не строим
+# 		name = national_wonder.2.z # Не ѝтроим
 # 		country_event = {
 # 			id = national_wonder.1
 # 		}
@@ -965,7 +965,7 @@ country_event = {
 # country_event = {
 # 	id = national_wonder.28
 # 	title = national_wonder.28.t  
-# 	desc = national_wonder.28.d # построили
+# 	desc = national_wonder.28.d # поѝтроили
 # 	picture = GREAT_BUILDING_eventPicture
 
 # 	is_triggered_only = yes	
@@ -982,7 +982,7 @@ country_event = {
 # 	}
 	
 # 	option = {
-# 		name = national_wonder.2.z # Не строим
+# 		name = national_wonder.2.z # Не ѝтроим
 # 		country_event = {
 # 			id = national_wonder.1
 # 		}
@@ -992,7 +992,7 @@ country_event = {
 # country_event = {
 # 	id = national_wonder.29
 # 	title = national_wonder.29.t  
-# 	desc = national_wonder.29.d #Описание бонусов постройки и условий строительства
+# 	desc = national_wonder.29.d #Опиѝание бонуѝов поѝтройки и уѝловий ѝтроительѝтва
 # 	picture = GREAT_BUILDING_eventPicture
 
 # 	is_triggered_only = yes	
@@ -1010,7 +1010,7 @@ country_event = {
 # 	}
 	
 # 	option = {
-# 		name = national_wonder.2.z # Не строим
+# 		name = national_wonder.2.z # Не ѝтроим
 # 		country_event = {
 # 			id = national_wonder.1
 # 		}
@@ -1023,13 +1023,13 @@ country_event = {
 # country_event = {
 # 	id = national_wonder.30
 # 	title = national_wonder.30.t
-# 	desc = national_wonder.30.d #Описание условий для появления кнопки на постройку
+# 	desc = national_wonder.30.d #Опиѝание уѝловий длѝ поѝвлениѝ кнопки на поѝтройку
 # 	picture = GREAT_BUILDING_eventPicture
 
 # 	is_triggered_only = yes
 
 # 	option = {
-# 		name = national_wonder.30.a # Тригер на постройку конкретного здания
+# 		name = national_wonder.30.a # Тригер на поѝтройку конкретного зданиѝ
 # 		trigger = {
 			
 # 		}
@@ -1066,7 +1066,7 @@ country_event = {
 # country_event = {
 # 	id = national_wonder.31
 # 	title = national_wonder.31.t  
-# 	desc = national_wonder.31.d #Описание бонусов постройки и условий строительства
+# 	desc = national_wonder.31.d #Опиѝание бонуѝов поѝтройки и уѝловий ѝтроительѝтва
 # 	picture = GREAT_BUILDING_eventPicture
 
 # 	is_triggered_only = yes	
@@ -1084,7 +1084,7 @@ country_event = {
 # 	}
 
 # 	option = {
-# 		name = national_wonder.2.z # Не строим
+# 		name = national_wonder.2.z # Не ѝтроим
 # 		country_event = {
 # 			id = national_wonder.1
 # 		}
@@ -1094,7 +1094,7 @@ country_event = {
 # country_event = {
 # 	id = national_wonder.32
 # 	title = national_wonder.32.t  
-# 	desc = national_wonder.32.d # построили
+# 	desc = national_wonder.32.d # поѝтроили
 # 	picture = GREAT_BUILDING_eventPicture
 
 # 	is_triggered_only = yes	
@@ -1111,7 +1111,7 @@ country_event = {
 # 	}
 	
 # 	option = {
-# 		name = national_wonder.2.z # Не строим
+# 		name = national_wonder.2.z # Не ѝтроим
 # 		country_event = {
 # 			id = national_wonder.1
 # 		}
@@ -1121,7 +1121,7 @@ country_event = {
 # country_event = {
 # 	id = national_wonder.33
 # 	title = national_wonder.33.t  
-# 	desc = national_wonder.33.d #Описание бонусов постройки и условий строительства
+# 	desc = national_wonder.33.d #Опиѝание бонуѝов поѝтройки и уѝловий ѝтроительѝтва
 # 	picture = GREAT_BUILDING_eventPicture
 
 # 	is_triggered_only = yes	
@@ -1139,7 +1139,7 @@ country_event = {
 # 	}
 	
 # 	option = {
-# 		name = national_wonder.2.z # Не строим
+# 		name = national_wonder.2.z # Не ѝтроим
 # 		country_event = {
 # 			id = national_wonder.1
 # 		}
@@ -1152,13 +1152,13 @@ country_event = {
 # country_event = {
 # 	id = national_wonder.34
 # 	title = national_wonder.34.t
-# 	desc = national_wonder.34.d #Описание условий для появления кнопки на постройку
+# 	desc = national_wonder.34.d #Опиѝание уѝловий длѝ поѝвлениѝ кнопки на поѝтройку
 # 	picture = GREAT_BUILDING_eventPicture
 
 # 	is_triggered_only = yes
 
 # 	option = {
-# 		name = national_wonder.34.a # Тригер на постройку конкретного здания
+# 		name = national_wonder.34.a # Тригер на поѝтройку конкретного зданиѝ
 # 		trigger = {
 			
 # 		}
@@ -1195,7 +1195,7 @@ country_event = {
 # country_event = {
 # 	id = national_wonder.35
 # 	title = national_wonder.35.t  
-# 	desc = national_wonder.35.d #Описание бонусов постройки и условий строительства
+# 	desc = national_wonder.35.d #Опиѝание бонуѝов поѝтройки и уѝловий ѝтроительѝтва
 # 	picture = GREAT_BUILDING_eventPicture
 
 # 	is_triggered_only = yes	
@@ -1213,7 +1213,7 @@ country_event = {
 # 	}
 
 # 	option = {
-# 		name = national_wonder.2.z # Не строим
+# 		name = national_wonder.2.z # Не ѝтроим
 # 		country_event = {
 # 			id = national_wonder.1
 # 		}
@@ -1223,7 +1223,7 @@ country_event = {
 # country_event = {
 # 	id = national_wonder.36
 # 	title = national_wonder.36.t  
-# 	desc = national_wonder.36.d # построили
+# 	desc = national_wonder.36.d # поѝтроили
 # 	picture = GREAT_BUILDING_eventPicture
 
 # 	is_triggered_only = yes	
@@ -1240,7 +1240,7 @@ country_event = {
 # 	}
 	
 # 	option = {
-# 		name = national_wonder.2.z # Не строим
+# 		name = national_wonder.2.z # Не ѝтроим
 # 		country_event = {
 # 			id = national_wonder.1
 # 		}
@@ -1250,7 +1250,7 @@ country_event = {
 # country_event = {
 # 	id = national_wonder.37
 # 	title = national_wonder.37.t  
-# 	desc = national_wonder.37.d #Описание бонусов постройки и условий строительства
+# 	desc = national_wonder.37.d #Опиѝание бонуѝов поѝтройки и уѝловий ѝтроительѝтва
 # 	picture = GREAT_BUILDING_eventPicture
 
 # 	is_triggered_only = yes	
@@ -1268,7 +1268,7 @@ country_event = {
 # 	}
 	
 # 	option = {
-# 		name = national_wonder.2.z # Не строим
+# 		name = national_wonder.2.z # Не ѝтроим
 # 		country_event = {
 # 			id = national_wonder.1
 # 		}
@@ -1281,13 +1281,13 @@ country_event = {
 # country_event = {
 # 	id = national_wonder.38
 # 	title = national_wonder.38.t
-# 	desc = national_wonder.38.d #Описание условий для появления кнопки на постройку
+# 	desc = national_wonder.38.d #Опиѝание уѝловий длѝ поѝвлениѝ кнопки на поѝтройку
 # 	picture = GREAT_BUILDING_eventPicture
 
 # 	is_triggered_only = yes
 
 # 	option = {
-# 		name = national_wonder.38.a # Тригер на постройку конкретного здания
+# 		name = national_wonder.38.a # Тригер на поѝтройку конкретного зданиѝ
 # 		trigger = {
 			
 # 		}
@@ -1324,7 +1324,7 @@ country_event = {
 # country_event = {
 # 	id = national_wonder.39
 # 	title = national_wonder.39.t  
-# 	desc = national_wonder.39.d #Описание бонусов постройки и условий строительства
+# 	desc = national_wonder.39.d #Опиѝание бонуѝов поѝтройки и уѝловий ѝтроительѝтва
 # 	picture = GREAT_BUILDING_eventPicture
 
 # 	is_triggered_only = yes	
@@ -1342,7 +1342,7 @@ country_event = {
 # 	}
 
 # 	option = {
-# 		name = national_wonder.2.z # Не строим
+# 		name = national_wonder.2.z # Не ѝтроим
 # 		country_event = {
 # 			id = national_wonder.1
 # 		}
@@ -1352,7 +1352,7 @@ country_event = {
 # country_event = {
 # 	id = national_wonder.40
 # 	title = national_wonder.40.t  
-# 	desc = national_wonder.40.d # построили
+# 	desc = national_wonder.40.d # поѝтроили
 # 	picture = GREAT_BUILDING_eventPicture
 
 # 	is_triggered_only = yes	
@@ -1369,7 +1369,7 @@ country_event = {
 # 	}
 	
 # 	option = {
-# 		name = national_wonder.2.z # Не строим
+# 		name = national_wonder.2.z # Не ѝтроим
 # 		country_event = {
 # 			id = national_wonder.1
 # 		}
@@ -1379,7 +1379,7 @@ country_event = {
 # country_event = {
 # 	id = national_wonder.41
 # 	title = national_wonder.41.t  
-# 	desc = national_wonder.41.d #Описание бонусов постройки и условий строительства
+# 	desc = national_wonder.41.d #Опиѝание бонуѝов поѝтройки и уѝловий ѝтроительѝтва
 # 	picture = GREAT_BUILDING_eventPicture
 
 # 	is_triggered_only = yes	
@@ -1397,7 +1397,7 @@ country_event = {
 # 	}
 	
 # 	option = {
-# 		name = national_wonder.2.z # Не строим
+# 		name = national_wonder.2.z # Не ѝтроим
 # 		country_event = {
 # 			id = national_wonder.1
 # 		}
@@ -1410,13 +1410,13 @@ country_event = {
 # country_event = {
 # 	id = national_wonder.42
 # 	title = national_wonder.42.t
-# 	desc = national_wonder.42.d #Описание условий для появления кнопки на постройку
+# 	desc = national_wonder.42.d #Опиѝание уѝловий длѝ поѝвлениѝ кнопки на поѝтройку
 # 	picture = GREAT_BUILDING_eventPicture
 
 # 	is_triggered_only = yes
 
 # 	option = {
-# 		name = national_wonder.42.a # Тригер на постройку конкретного здания
+# 		name = national_wonder.42.a # Тригер на поѝтройку конкретного зданиѝ
 # 		trigger = {
 			
 # 		}
@@ -1453,7 +1453,7 @@ country_event = {
 # country_event = {
 # 	id = national_wonder.43
 # 	title = national_wonder.43.t  
-# 	desc = national_wonder.43.d #Описание бонусов постройки и условий строительства
+# 	desc = national_wonder.43.d #Опиѝание бонуѝов поѝтройки и уѝловий ѝтроительѝтва
 # 	picture = GREAT_BUILDING_eventPicture
 
 # 	is_triggered_only = yes	
@@ -1471,7 +1471,7 @@ country_event = {
 # 	}
 
 # 	option = {
-# 		name = national_wonder.2.z # Не строим
+# 		name = national_wonder.2.z # Не ѝтроим
 # 		country_event = {
 # 			id = national_wonder.1
 # 		}
@@ -1481,7 +1481,7 @@ country_event = {
 # country_event = {
 # 	id = national_wonder.44
 # 	title = national_wonder.44.t  
-# 	desc = national_wonder.44.d # построили
+# 	desc = national_wonder.44.d # поѝтроили
 # 	picture = GREAT_BUILDING_eventPicture
 
 # 	is_triggered_only = yes	
@@ -1498,7 +1498,7 @@ country_event = {
 # 	}
 	
 # 	option = {
-# 		name = national_wonder.2.z # Не строим
+# 		name = national_wonder.2.z # Не ѝтроим
 # 		country_event = {
 # 			id = national_wonder.1
 # 		}
@@ -1508,7 +1508,7 @@ country_event = {
 # country_event = {
 # 	id = national_wonder.45
 # 	title = national_wonder.45.t  
-# 	desc = national_wonder.45.d #Описание бонусов постройки и условий строительства
+# 	desc = national_wonder.45.d #Опиѝание бонуѝов поѝтройки и уѝловий ѝтроительѝтва
 # 	picture = GREAT_BUILDING_eventPicture
 
 # 	is_triggered_only = yes	
@@ -1526,7 +1526,7 @@ country_event = {
 # 	}
 	
 # 	option = {
-# 		name = national_wonder.2.z # Не строим
+# 		name = national_wonder.2.z # Не ѝтроим
 # 		country_event = {
 # 			id = national_wonder.1
 # 		}
@@ -1540,13 +1540,13 @@ country_event = {
 country_event = {
 	id = national_wonder.46
 	title = national_wonder.46.t
-	desc = national_wonder.46.d   #Описание условий для появления кнопки на постройку
+	desc = national_wonder.46.d   #Опиѝание уѝловий длѝ поѝвлениѝ кнопки на поѝтройку
 	picture = GREAT_BUILDING_eventPicture
 
 	is_triggered_only = yes
 
 	option = {
-		name = national_wonder.46.a # Тригер на постройку конкретного здания
+		name = national_wonder.46.a # Тригер на поѝтройку конкретного зданиѝ
 		country_event = {
 			id = national_wonder.47
 		}
@@ -1579,7 +1579,7 @@ country_event = {
 country_event = {
 	id = national_wonder.47
 	title = national_wonder.47.t  
-	desc = national_wonder.47.d #Описание бонусов постройки и условий строительства
+	desc = national_wonder.47.d #Опиѝание бонуѝов поѝтройки и уѝловий ѝтроительѝтва
 	picture = GREAT_BUILDING_eventPicture
 
 	is_triggered_only = yes	
@@ -1613,7 +1613,7 @@ country_event = {
 	}
 
 	option = {
-		name = national_wonder.2.z # Не строим
+		name = national_wonder.2.z # Не ѝтроим
 		country_event = {
 			id = national_wonder.46
 		}
@@ -1623,7 +1623,7 @@ country_event = {
 country_event = {
 	id = national_wonder.48
 	title = national_wonder.48.t  
-	desc = national_wonder.48.d # построили
+	desc = national_wonder.48.d # поѝтроили
 	picture = GREAT_BUILDING_eventPicture
 
 	is_triggered_only = yes	
@@ -1674,7 +1674,7 @@ country_event = {
 	}
 	
 	option = {
-		name = national_wonder.2.z # Не строим
+		name = national_wonder.2.z # Не ѝтроим
 		country_event = {
 			id = national_wonder.46
 		}
@@ -1684,7 +1684,7 @@ country_event = {
 country_event = {
 	id = national_wonder.49
 	title = national_wonder.49.t  
-	desc = national_wonder.49.d #Описание бонусов постройки и условий строительства
+	desc = national_wonder.49.d #Опиѝание бонуѝов поѝтройки и уѝловий ѝтроительѝтва
 	picture = GREAT_BUILDING_eventPicture
 
 	is_triggered_only = yes	
@@ -1722,7 +1722,7 @@ country_event = {
 	}
 	
 	option = {
-		name = national_wonder.2.z # Не строим
+		name = national_wonder.2.z # Не ѝтроим
 		country_event = {
 			id = national_wonder.46
 		}
@@ -1732,7 +1732,7 @@ country_event = {
 # country_event = {
 # 	id = national_wonder.50
 # 	title = national_wonder.49.t  
-# 	desc = national_wonder.49.d #Описание бонусов постройки и условий строительства
+# 	desc = national_wonder.49.d #Опиѝание бонуѝов поѝтройки и уѝловий ѝтроительѝтва
 # 	picture = GREAT_BUILDING_eventPicture
 
 # 	is_triggered_only = yes	
@@ -1750,7 +1750,7 @@ country_event = {
 # 	}
 	
 # 	option = {
-# 		name = national_wonder.2.z # Не строим
+# 		name = national_wonder.2.z # Не ѝтроим
 # 		country_event = {
 # 			id = national_wonder.1
 # 		}
@@ -2939,13 +2939,13 @@ country_event = {
 country_event = {
 	id = national_wonder.50
 	title = national_wonder.50.t
-	desc = national_wonder.50.d   #Описание условий для появления кнопки на постройку
+	desc = national_wonder.50.d   #Опиѝание уѝловий длѝ поѝвлениѝ кнопки на поѝтройку
 	picture = GREAT_BUILDING_eventPicture
 
 	is_triggered_only = yes
 
 	option = {
-		name = national_wonder.50.a # Тригер на постройку конкретного здания
+		name = national_wonder.50.a # Тригер на поѝтройку конкретного зданиѝ
 		country_event = {
 			id = national_wonder.51
 		}
@@ -2978,7 +2978,7 @@ country_event = {
 country_event = {
 	id = national_wonder.51
 	title = national_wonder.51.t  
-	desc = national_wonder.51.d #Описание бонусов постройки и условий строительства
+	desc = national_wonder.51.d #Опиѝание бонуѝов поѝтройки и уѝловий ѝтроительѝтва
 	picture = GREAT_BUILDING_eventPicture
 
 	is_triggered_only = yes	
@@ -3011,7 +3011,7 @@ country_event = {
 	}
 
 	option = {
-		name = national_wonder.2.z # Не строим
+		name = national_wonder.2.z # Не ѝтроим
 		country_event = {
 			id = national_wonder.50
 		}
@@ -3021,7 +3021,7 @@ country_event = {
 country_event = {
 	id = national_wonder.52
 	title = national_wonder.52.t  
-	desc = national_wonder.52.d # построили
+	desc = national_wonder.52.d # поѝтроили
 	picture = GREAT_BUILDING_eventPicture
 
 	is_triggered_only = yes	
@@ -3072,7 +3072,7 @@ country_event = {
 	}
 	
 	option = {
-		name = national_wonder.2.z # Не строим
+		name = national_wonder.2.z # Не ѝтроим
 		country_event = {
 			id = national_wonder.50
 		}
@@ -3082,7 +3082,7 @@ country_event = {
 country_event = {
 	id = national_wonder.53
 	title = national_wonder.53.t  
-	desc = national_wonder.53.d #Описание бонусов постройки и условий строительства
+	desc = national_wonder.53.d #Опиѝание бонуѝов поѝтройки и уѝловий ѝтроительѝтва
 	picture = GREAT_BUILDING_eventPicture
 
 	is_triggered_only = yes	
@@ -3140,7 +3140,7 @@ country_event = {
 	}
 	
 	option = {
-		name = national_wonder.2.z # Не строим
+		name = national_wonder.2.z # Не ѝтроим
 		country_event = {
 			id = national_wonder.50
 		}

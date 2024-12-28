@@ -2,8 +2,8 @@ guiTypes = {
 
 	windowType = {
 		name = "countrycourtview"
-		#position = { x=0 y=140 }	
-		position = { x=-600 y=140 }	
+		position = { x=0 y=140 }	
+		#position = { x=-600 y=140 }	
 		show_position = { x=0 y =140 }
 		hide_position = { x=-600 y =140 }	
 		animation_type = "decelerated"
@@ -396,7 +396,7 @@ guiTypes = {
 			delayedTooltipText = ""
 			buttonFont = "Stellaris_Small"
 			clicksound = back_click
-			buttonText = "Disinherit"
+			buttonText = "Yeet"
 		}	
 		
 		guiButtonType = {
@@ -553,7 +553,8 @@ guiTypes = {
 			borderSize = {x = 10 y = 10}
 		}
 
-		### -----------Advisors list main court screen
+		### -----------
+		
 		listboxType = {
 			name = "abilities_listbox"
 			backGround = ""
@@ -567,7 +568,7 @@ guiTypes = {
 			alwaystransparent = yes
 		}
 		
-		### ---- Exluded positionaly from above listbox abilities_listbox
+
 		guiButtonType = {
 			name = "national_focus_ADM"
 			position = { x = 400	y = 440 }
@@ -708,28 +709,28 @@ guiTypes = {
 			guiButtonType = {
 				name = "back_button"
 				if_resolution = {
-					max_height = 1023
-					position = { x=240 y =531}
+					max_height = 899
+					position = { x=240 y =581} #was y =531
 				}
 				if_resolution = {
-					min_height = 1024
-					max_height = 1050
-					position = { x=240 y =750}
+					max_height = 1079
+					min_height = 900
+					position = { x=240 y =581} #was y =531
 				}
 				if_resolution = {
-					min_height = 1051
-					position = { x=240 y =860}
+					min_height = 1080
+				position = { x=240 y =856} #was y =531
 				}
-				quadTextureSprite ="GFX_standard_button_71"
+				quadTextureSprite ="GFX_standard_button_71"	
 				tooltip = ""
 				tooltipText =""
 				delayedTooltipText = ""
 				buttonText = "DOMESTIC_BACK"
 				buttonFont = "vic_18"
-				shortcut = "z"
+				shortcut = "z"			
 				extra_shortcut = "ESCAPE"
 				clicksound = back_click
-			}	
+			}		
 		}
 
 		#love advisor cost hint
@@ -826,7 +827,8 @@ guiTypes = {
 			size = { x=140 y=80 }
 			Orientation = "UPPER_LEFT"
 			horizontal = 0
-			spacing = 0
+			spacing = 2.5
+			borderSize = {x = 1 y = 1}
 		}
 		
 		instantTextBoxType = {
@@ -943,7 +945,7 @@ guiTypes = {
 
 		instantTextBoxType = {
 			name = "ability_skill"
-			position = { x = 442 y = 10 }
+			position = { x = 442 y = 9 }
 			textureFile = ""
 			font = "vic_36"
 			borderSize = {x = 4 y = 4}	

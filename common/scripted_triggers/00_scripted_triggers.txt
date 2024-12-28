@@ -19,162 +19,6 @@
 # my_test_trigger = { ARG1=foo ARG2=bar CONTEXT=FROM }
 
 #GENERAL TRIGGERS
-has_mil_advisor = {
-	custom_trigger_tooltip = {
-		tooltip = has_mil_advisor_tooltip
-		OR = {
-			advisor = army_organiser
-			advisor = army_reformer
-			advisor = commandant
-			advisor = grand_captain
-			advisor = recruitmaster
-			advisor = fortification_expert
-			advisor = quartermaster
-			advisor = idea_var_advisor_5
-			advisor = idea_var_advisor_11
-			advisor = idea_var_advisor_12
-			advisor = idea_var_advisor_13
-			advisor = idea_var_advisor_14
-			advisor = idea_var_advisor_15
-			advisor = idea_var_advisor_16
-			advisor = idea_var_advisor_17
-			advisor = idea_var_advisor_18
-			advisor = idea_var_advisor_28
-			advisor = idea_var_advisor_29
-		}
-	}
-}
-
-has_mil_advisor_2 = {
-	custom_trigger_tooltip = {
-		tooltip = has_mil_advisor_2_tooltip
-		OR = {
-			army_organiser = 2
-			army_reformer = 2
-			commandant = 2
-			grand_captain = 2
-			recruitmaster = 2
-			fortification_expert = 2
-			quartermaster = 2
-			idea_var_advisor_5 = 2
-			idea_var_advisor_11 = 2
-			idea_var_advisor_12 = 2
-			idea_var_advisor_13 = 2
-			idea_var_advisor_14 = 2
-			idea_var_advisor_15 = 2
-			idea_var_advisor_16 = 2
-			idea_var_advisor_17 = 2
-			idea_var_advisor_18 = 2
-			idea_var_advisor_28 = 2
-			idea_var_advisor_29 = 2
-		}
-	}
-}
-
-has_mil_advisor_3 = {
-	custom_trigger_tooltip = {
-		tooltip = has_mil_advisor_3_tooltip
-		OR = {
-			army_organiser = 3
-			army_reformer = 3
-			commandant = 3
-			grand_captain = 3
-			recruitmaster = 3
-			fortification_expert = 3
-			quartermaster = 3
-			idea_var_advisor_5 = 3
-			idea_var_advisor_11 = 3
-			idea_var_advisor_12 = 3
-			idea_var_advisor_13 = 3
-			idea_var_advisor_14 = 3
-			idea_var_advisor_15 = 3
-			idea_var_advisor_16 = 3
-			idea_var_advisor_17 = 3
-			idea_var_advisor_18 = 3
-			idea_var_advisor_28 = 3
-			idea_var_advisor_29 = 3
-		}
-	}
-}
-
-has_adm_advisor = {
-	custom_trigger_tooltip = {
-		tooltip = has_adm_advisor_tooltip
-		OR = {
-			advisor = treasurer
-			advisor = philosopher
-			advisor = artist
-			advisor = theologian
-			advisor = master_of_mint
-			advisor = inquisitor
-			advisor = natural_scientist
-			advisor = court_mage
-			advisor = idea_var_advisor_1
-			advisor = idea_var_advisor_3
-			advisor = idea_var_advisor_4
-			advisor = idea_var_advisor_6
-			advisor = idea_var_advisor_8
-			advisor = idea_var_advisor_9
-			advisor = idea_var_advisor_20
-			advisor = idea_var_advisor_30
-			advisor = idea_var_advisor_31
-			advisor = idea_var_advisor_32
-		}
-	}
-}
-
-has_adm_advisor_2 = {
-	custom_trigger_tooltip = {
-		tooltip = has_adm_advisor_2_tooltip
-		OR = {
-			treasurer = 2
-			philosopher = 2
-			artist = 2
-			theologian = 2
-			master_of_mint = 2
-			inquisitor = 2
-			natural_scientist = 2
-			court_mage = 2
-			idea_var_advisor_1 = 2
-			idea_var_advisor_3 = 2
-			idea_var_advisor_4 = 2
-			idea_var_advisor_6 = 2
-			idea_var_advisor_8 = 2
-			idea_var_advisor_9 = 2
-			idea_var_advisor_20 = 2
-			idea_var_advisor_30 = 2
-			idea_var_advisor_31 = 2
-			idea_var_advisor_32 = 2
-			Hold_restorer = 2
-		}
-	}
-}
-
-has_adm_advisor_3 = {
-	custom_trigger_tooltip = {
-		tooltip = has_adm_advisor_3_tooltip
-		OR = {
-			treasurer = 3
-			philosopher = 3
-			artist = 3
-			theologian = 3
-			master_of_mint = 3
-			inquisitor = 3
-			natural_scientist = 3
-			court_mage = 3
-			idea_var_advisor_1 = 3
-			idea_var_advisor_3 = 3
-			idea_var_advisor_4 = 3
-			idea_var_advisor_6 = 3
-			idea_var_advisor_8 = 3
-			idea_var_advisor_9 = 3
-			idea_var_advisor_20 = 3
-			idea_var_advisor_30 = 3
-			idea_var_advisor_31 = 3
-			idea_var_advisor_32 = 3
-		}
-	}
-}
 
 has_adm_advisor_of_level = {
 	OR = {
@@ -249,83 +93,6 @@ has_advisor_of_type_and_level = {
 	has_$type$_advisor_of_level = { level = $level$ }
 }
 
-has_dip_advisor = {
-	custom_trigger_tooltip = {
-		tooltip = has_dip_advisor_tooltip
-		OR = {
-			advisor = statesman
-			advisor = diplomat
-			advisor = naval_reformer
-			advisor = trader
-			advisor = colonial_governor
-			advisor = navigator
-			advisor = spymaster
-			advisor = idea_var_advisor_2
-			advisor = idea_var_advisor_7
-			advisor = idea_var_advisor_10
-			advisor = idea_var_advisor_19
-			advisor = idea_var_advisor_21
-			advisor = idea_var_advisor_22
-			advisor = idea_var_advisor_23
-			advisor = idea_var_advisor_24
-			advisor = idea_var_advisor_25
-			advisor = idea_var_advisor_26
-			advisor = idea_var_advisor_27
-		}
-	}
-}
-
-has_dip_advisor_2 = {
-	custom_trigger_tooltip = {
-		tooltip = has_dip_advisor_2_tooltip
-		OR = {
-			statesman = 2
-			diplomat = 2
-			naval_reformer = 2
-			trader = 2
-			colonial_governor = 2
-			navigator = 2
-			spymaster = 2
-			idea_var_advisor_2 = 2
-			idea_var_advisor_7 = 2
-			idea_var_advisor_10 = 2
-			idea_var_advisor_19 = 2
-			idea_var_advisor_21 = 2
-			idea_var_advisor_22 = 2
-			idea_var_advisor_23 = 2
-			idea_var_advisor_24 = 2
-			idea_var_advisor_25 = 2
-			idea_var_advisor_26 = 2
-			idea_var_advisor_27 = 2
-		}
-	}
-}
-
-has_dip_advisor_3 = {
-	custom_trigger_tooltip = {
-		tooltip = has_dip_advisor_3_tooltip
-		OR = {
-			statesman = 3
-			diplomat = 3
-			naval_reformer = 3
-			trader = 3
-			colonial_governor = 3
-			navigator = 3
-			spymaster = 3
-			idea_var_advisor_2 = 3
-			idea_var_advisor_7 = 3
-			idea_var_advisor_10 = 3
-			idea_var_advisor_19 = 3
-			idea_var_advisor_21 = 3
-			idea_var_advisor_22 = 3
-			idea_var_advisor_23 = 3
-			idea_var_advisor_24 = 3
-			idea_var_advisor_25 = 3
-			idea_var_advisor_26 = 3
-			idea_var_advisor_27 = 3
-		}
-	}
-}
 
 
 is_subject_other_than_tributary_trigger = { #Ie Tags that cannot conduct independent diplomacy
@@ -352,16 +119,6 @@ is_free_or_tributary_trigger = { #I.e. Tags that can conduct independent diploma
 	}
 }
 
-
-# Third Rome Triggers
-# has_russian_government_interaction = {
-# 	has_dlc = "Third Rome"
-# 	OR = {
-# 		# has_reform = tsardom
-# 		# has_reform = principality
-# 		has_reform = veche_republic
-# 	}
-# }
 
 
 #RIGHTS OF MAN TRIGGERS
@@ -869,29 +626,6 @@ was_never_end_game_tag_trigger = {	#Country Scope
 }
 
 
-# was_never_german_regional_tag_trigger = {	#Country Scope
-# 	NOT = { was_tag = BRA }
-# 	NOT = { was_tag = PRU }
-# 	NOT = { was_tag = POM }
-# 	NOT = { was_tag = SAX }
-# 	NOT = { was_tag = BAV }
-# 	NOT = { was_tag = HAB }
-# 	NOT = { was_tag = SWA }
-# 	NOT = { was_tag = FKN }
-# 	NOT = { was_tag = WES }
-# 	NOT = { was_tag = HAN }
-	
-# 	NOT = { tag = BRA }
-# 	NOT = { tag = PRU }
-# 	NOT = { tag = POM }
-# 	NOT = { tag = SAX }
-# 	NOT = { tag = BAV }
-# 	NOT = { tag = HAB }
-# 	NOT = { tag = SWA }
-# 	NOT = { tag = FKN }
-# 	NOT = { tag = WES }
-# 	NOT = { tag = HAN }
-# }
 
 
 has_manufactory_trigger = { #Province Scope
@@ -1585,18 +1319,6 @@ will_leave_for_shadow_kingdom_trigger = {
 }
 
 
-is_germanic_but_not_swamp = {
-	culture_group = germanic
-	NOT = { primary_culture = dutch }
-	NOT = { primary_culture = flemish }
-	NOT = { primary_culture = frisian }
-}
-
-is_germanic_but_not_mountains = {
-	culture_group = germanic
-	NOT = { primary_culture = swiss }
-	NOT = { primary_culture = austrian }
-}
 
 #province scope; checks it is highest or joint highest supply limit in the area owned by you (useful for spawning rebels)
 highest_supply_limit_in_area = {
@@ -2308,20 +2030,6 @@ has_any_colonist_idea = {
 		has_idea = colonial_ventures
 		has_idea = additional_colonists
 		has_idea = general_colonization_law
-		has_idea = pioneer_spirit
-		has_idea = manifest_destiny
-		has_idea = settling_the_interior
-		has_idea = cab_carib_seafaring
-		has_idea = lon_conquistadores
-		has_idea = nzh_expand_to_the_east
-		has_idea = hdr_distant_diplomacy	#Colonist is in the ambition
-		has_idea = AUS_outback_stations
-		has_idea = NZL_pokarekare_ana	#Colonist is in the ambition
-		has_idea = WSI_Colonial_Legacy	#Colonist is in the ambition
-		has_idea = asu_colonialism
-		has_idea = adu_expeditionary_sentiment
-		has_idea = ICE_nationalism	#Colonist is in the ambition
-		has_idea = maj_nusa_tenggara
 	}
 }
 
@@ -3658,136 +3366,12 @@ every_estate_loyalty = {
 	}
 }
 
-has_points_for_livonian_military_monarchy = {
-	check_variable = {
-		which = liv_mil
-		value = 5
-	}
-}
-has_points_for_livonian_naval_monarchy = {
-	check_variable = {
-		which = liv_dip
-		value = 5
-	}
-}
-has_points_for_livonian_trade_monarchy = {
-	check_variable = {
-		which = liv_adm
-		value = 3
-	}
-	check_variable = {
-		which = liv_dip
-		value = 3
-	}
-}
-has_points_for_livonian_constitutional_monarchy = {
-	is_variable_equal = {
-		which = liv_adm
-		value = 3
-	}
-}
-has_points_for_livonian_theocratic_monarchy = {
-	check_variable = {
-		which = liv_adm
-		value = 3
-	}
-	check_variable = {
-		which = liv_mil
-		value = 3
-	}
-}
-has_points_for_livonian_elective_monarchy = {
-	check_variable = {
-		which = liv_dip
-		value = 3
-	}
-}
-has_points_for_livonian_diplomatic_monarchy = {
-	check_variable = {
-		which = liv_dip
-		value = 4
-	}
-}
-has_points_for_livonian_administrative_monarchy = {
-	check_variable = {
-		which = liv_adm
-		value = 5
-	}
-}
-has_points_for_livonian_mercenary_monarchy = {
-	check_variable = {
-		which = liv_mil
-		value = 3
-	}
-}
-has_points_for_livonian_admiral_monarchy = {
-	check_variable = {
-		which = liv_dip
-		value = 4
-	}
-}
-has_points_for_livonian_naval_controlled_monarchy = {
-	check_variable = {
-		which = liv_dip
-		value = 3
-	}
-	check_variable = {
-		which = liv_mil
-		value = 3
-	}
-}
-has_points_for_livonian_general_controlled_monarchy = {
-	check_variable = {
-		which = liv_mil
-		value = 4
-	}
-}
-has_points_for_livonian_absolute_monarchy = {
-	check_variable = {
-		which = liv_adm
-		value = 4
-	}
-}
-has_points_for_livonian_enlightened_monarchy = {
-	is_variable_equal = {
-		which = liv_adm
-		value = 2
-	}
-	is_variable_equal = {
-		which = liv_dip
-		value = 2
-	}
-	is_variable_equal = {
-		which = liv_mil
-		value = 2
-	}
-}
-
-has_points_for_livonian_monarchy = {
-	has_points_for_$government_reform$ = yes
-}
 
 is_allowed_to_recruit_mercenaries = {
-	# custom_trigger_tooltip = {
-	# 	tooltip = is_allowed_to_recruit_mercenaries_tt
-	# 	NOT = { has_country_modifier = dan_sca_refocus_on_personal_armies }
-	# }
+
 }
 
-#TODO ADjustment of everything bellow to anbennar
-#1.35 
-#has_no_religion_specific_government_available = {
-	#NOT = { religion = jewish }
-	#NOT = { religion = zoroastrian }
-	#NOT = { religion = hinduism }
-	#NOT = { religion = sikhism }
-	#NOT = { religion_group = muslim }
-	#NOT = { religion_group = christian }
-	#NOT = { religion_group = eastern }
-	#NOT = { religion = tengri_pagan_reformed }
-	#NOT = { religion = shamanism }
-	#NOT = { religion = norse_pagan_reformed }
-#}
+
 
 #1.35
 #Province scope
@@ -3815,91 +3399,22 @@ is_flatland = {
 
 #1.35
 is_yellow_river_province_trigger = {
-	# custom_trigger_tooltip = {
-	# 	tooltip = is_yellow_river_province_trigger_tt
-	# 	OR = { 
-	# 		province_id = 4196 
-	# 		province_id = 2142
-	# 		province_id = 2141
-	# 		province_id = 2176
-	# 		province_id = 688
-	# 		province_id = 1836
-	# 		province_id = 694
-	# 		province_id = 700
-	# 	}
-	# }
+
 }
 
 #1.35
 is_yangtze_river_province_trigger = {
-	# custom_trigger_tooltip = {
-	# 	tooltip = is_yangtze_river_province_trigger_tt
-	# 	OR = { 
-	# 		province_id = 2145
-	# 		province_id = 1821
-	# 		province_id = 1838
-	# 		province_id = 686
-	# 		province_id = 683
-	# 		province_id = 4197
-	# 		province_id = 682
-	# 		province_id = 2172
-	# 		province_id = 681
-	# 	}
-	# }
+
 }
 
 #1.35
 is_eyalet_trigger = {
-	# custom_trigger_tooltip = {
-	# 	tooltip = is_eyalet_trigger_tt
-	# 	OR = {
-	# 		is_subject_of_type = eyalet
-	# 		is_subject_of_type = core_eyalet
-	# 	}
-	# }
+
 }
 
 has_strong_mil_national_ideas = {
 	custom_trigger_tooltip = {
 		tooltip = has_strong_mil_national_ideas_tt
-		# OR = { 
-		# 	tag = FRA
-		# 	tag = PRU
-		# 	tag = SPA 
-		# 	tag = TUR
-		# 	tag = JAP
-		# 	tag = RUS
-		# 	tag = MOS
-		# 	tag = TEU
-		# 	tag = POL
-		# 	tag = PLC
-		# 	tag = ITA
-		# 	tag = GER
-		# 	tag = QNG
-		# 	tag = SWE
-		# 	tag = SCA
-		# 	tag = GBR
-		# 	tag = NED
-		# 	tag = RUM
-		# 	tag = MAM
-		# 	tag = ZIM
-		# 	tag = ZUL
-		# 	tag = ODA
-		# 	tag = SMZ
-		# 	tag = MCH
-		# 	tag = MLC
-		# 	tag = MJZ
-		# 	tag = BNG
-		# 	tag = NPL
-		# 	tag = PUN
-		# 	tag = BHA
-		# 	tag = RJP
-		# 	tag = HSA
-		# 	tag = SMO
-		# 	tag = MAS
-		# 	tag = JMN
-		# 	tag = SYN
-		# }
 	}
 }
 
@@ -4006,8 +3521,6 @@ is_not_eligible_for_trade_good_wool = {
 		area = newfoundland_area
 		AND = {
 			has_climate = tropical
-			NOT = { area = paraguay_area }
-			NOT = { area = chaco_area }
 		}
 		AND = {
 			has_climate = arctic
@@ -4063,13 +3576,11 @@ is_not_eligible_for_trade_good_fur = {
 		region = south_africa_region
 		region = australia_region
 		region = central_africa_region
-		area = newfoundland_area
 	}
 }
 #1.35
 is_not_eligible_for_trade_good_salt = {
 	OR = {
-		area = newfoundland_area
 		NOT = { has_terrain = desert }
 		NOT = { has_terrain = marsh }
 		NOT = { has_terrain = mountain }
@@ -4091,13 +3602,11 @@ is_not_eligible_for_trade_good_naval_supplies = {
 		has_terrain = steppe
 		has_terrain = highlands
 		has_terrain = farmlands
-		area = newfoundland_area
 	}
 }
 #1.35
 is_not_eligible_for_trade_good_copper = {
 	OR = {
-		area = newfoundland_area
 		has_terrain = steppe
 		has_terrain = desert
 		has_terrain = coastal_desert
@@ -4112,19 +3621,19 @@ is_not_eligible_for_trade_good_copper = {
 		AND = {
 			is_random_new_world = no
 			NOT = { province_id = 990 } #St Maurice ironworks
-			NOT = { area = minas_gerais_area }
-			NOT = { area = diamantina_area }
-			NOT = { area = mato_grosso_area }
-			NOT = { area = great_valley_area }
-			NOT = { area = susquehanna_area }
-			NOT = { area = hudson_valley_area }
-			NOT = { area = lake_superior_area }
-			NOT = { area = south_iroquoisia_area }
-			NOT = { area = upper_ontario_area }
-			NOT = { area = laurentian_area }
-			NOT = { area = inner_ontario_area }
-			NOT = { area = maryland_area }
-			NOT = { area = ofaie_area }
+			# NOT = { area = minas_gerais_area }
+			# NOT = { area = diamantina_area }
+			# NOT = { area = mato_grosso_area }
+			# NOT = { area = great_valley_area }
+			# NOT = { area = susquehanna_area }
+			# NOT = { area = hudson_valley_area }
+			# NOT = { area = lake_superior_area }
+			# NOT = { area = south_iroquoisia_area }
+			# NOT = { area = upper_ontario_area }
+			# NOT = { area = laurentian_area }
+			# NOT = { area = inner_ontario_area }
+			# NOT = { area = maryland_area }
+			# NOT = { area = ofaie_area }
 			NOT = { region = west_siberia_region }
 			NOT = { region = east_siberia_region }
 			NOT = { region = central_africa_region }
@@ -4155,17 +3664,17 @@ is_not_eligible_for_trade_good_gold = {
 			NOT = { region = mexico_region }
 			NOT = { region = rio_grande_region }
 			NOT = { region = central_america_region }
-			NOT = { area = goias_area }
-			NOT = { area = pontal_area }
-			NOT = { area = mato_grosso_area }
-			NOT = { area = ofaie_area }
-			NOT = { area = minas_gerais_area }
-			NOT = { area = diamantina_area }
-			NOT = { area = guapore_area }
-			NOT = { area = grao_para_area }
-			NOT = { area = amapa_area }
-			NOT = { area = ucayali_area }
-			NOT = { area = amazon_area }
+			# NOT = { area = goias_area }
+			# NOT = { area = pontal_area }
+			# NOT = { area = mato_grosso_area }
+			# NOT = { area = ofaie_area }
+			# NOT = { area = minas_gerais_area }
+			# NOT = { area = diamantina_area }
+			# NOT = { area = guapore_area }
+			# NOT = { area = grao_para_area }
+			# NOT = { area = amapa_area }
+			# NOT = { area = ucayali_area }
+			# NOT = { area = amazon_area }
 		}
 		AND = {
 			is_random_new_world = yes
@@ -4204,16 +3713,16 @@ is_not_eligible_for_trade_good_iron = {
 			NOT = { region = east_siberia_region }
 			NOT = { region = central_africa_region }
 			NOT = { province_id = 990 }
-			NOT = { area = great_valley_area }
-			NOT = { area = susquehanna_area }
-			NOT = { area = hudson_valley_area }
-			NOT = { area = lake_superior_area }
-			NOT = { area = south_iroquoisia_area }
-			NOT = { area = upper_ontario_area }
-			NOT = { area = laurentian_area }
-			NOT = { area = inner_ontario_area }
-			NOT = { area = maryland_area }
-			NOT = { area = ofaie_area }
+			# NOT = { area = great_valley_area }
+			# NOT = { area = susquehanna_area }
+			# NOT = { area = hudson_valley_area }
+			# NOT = { area = lake_superior_area }
+			# NOT = { area = south_iroquoisia_area }
+			# NOT = { area = upper_ontario_area }
+			# NOT = { area = laurentian_area }
+			# NOT = { area = inner_ontario_area }
+			# NOT = { area = maryland_area }
+			# NOT = { area = ofaie_area }
 			NOT = { province_id = 18 }
 			is_random_new_world = no
 		}
@@ -4222,8 +3731,8 @@ is_not_eligible_for_trade_good_iron = {
 #1.35
 is_not_eligible_for_trade_good_slaves = {
 	OR = {
-		holy_order = dominican_order
-		area = newfoundland_area
+		# holy_order = dominican_order
+		# area = newfoundland_area
 		island = yes
 		NOT = { continent = africa }
 		owner = {
@@ -4237,12 +3746,12 @@ is_not_eligible_for_trade_good_slaves = {
 #1.35
 is_not_eligible_for_trade_good_ivory = {
 	OR = {
-		area = newfoundland_area
+		# area = newfoundland_area
 		AND = {
 			NOT = { continent = asia }
 			NOT = { continent = africa }
-			NOT = { area = subarctic_islands_area }
-			NOT = { area = greenland_area }
+			# NOT = { area = subarctic_islands_area }
+			# NOT = { area = greenland_area }
 		}
 		AND = {
 			NOT = { has_terrain = jungle }
@@ -4268,30 +3777,30 @@ is_not_eligible_for_trade_good_tea = {
 			NOT = { region = south_china_region }
 			NOT = { region = xinan_region }
 			NOT = { region = japan_region }
-			NOT = { area = taiwan_area }
-			NOT = { area = assam_area }
-			NOT = { area = banda_oriental_area } #Yerba Mate
-			NOT = { area = rio_grande_do_sol_area } #Yerba Mate
-			NOT = { area = buenos_aires_area } #Yerba Mate
-			NOT = { area = misiones_area } #Yerba Mate
-			NOT = { area = beni_area } #Yerba Mate
-			NOT = { area = moxos_area } #Yerba Mate
-			NOT = { area = paraguay_area } #Yerba Mate
-			NOT = { area = sao_paolo_area } #Yerba Mate
-			NOT = { area = west_sao_paolo_area } #Yerba Mate
+			# NOT = { area = taiwan_area }
+			# NOT = { area = assam_area }
+			# NOT = { area = banda_oriental_area } #Yerba Mate
+			# NOT = { area = rio_grande_do_sol_area } #Yerba Mate
+			# NOT = { area = buenos_aires_area } #Yerba Mate
+			# NOT = { area = misiones_area } #Yerba Mate
+			# NOT = { area = beni_area } #Yerba Mate
+			# NOT = { area = moxos_area } #Yerba Mate
+			# NOT = { area = paraguay_area } #Yerba Mate
+			# NOT = { area = sao_paolo_area } #Yerba Mate
+			# NOT = { area = west_sao_paolo_area } #Yerba Mate
 		}
 		AND = {
 			is_random_new_world = yes #Only the below cultures can get tea in the RNW
-			FROM = {
-				NOT = { culture_group = east_asian }
-				NOT = { culture_group = central_indic }
-				NOT = { culture_group = dravidian }
-				NOT = { culture_group = western_aryan }
-				NOT = { culture_group = hindusthani }
-				NOT = { culture_group = eastern_aryan }
-				NOT = { culture_group = korean_g }
-				NOT = { culture_group = japanese_g }
-			}
+			# FROM = {
+			# 	NOT = { culture_group = east_asian }
+			# 	NOT = { culture_group = central_indic }
+			# 	NOT = { culture_group = dravidian }
+			# 	NOT = { culture_group = western_aryan }
+			# 	NOT = { culture_group = hindusthani }
+			# 	NOT = { culture_group = eastern_aryan }
+			# 	NOT = { culture_group = korean_g }
+			# 	NOT = { culture_group = japanese_g }
+			# }
 		}
 		AND = {
 			OR = {
@@ -4311,7 +3820,7 @@ is_not_eligible_for_trade_good_tea = {
 #1.35
 is_not_eligible_for_trade_good_chinaware = {
 	OR = {
-		area = newfoundland_area
+		# area = newfoundland_area
 		AND = {
 			NOT = {	region = malaya_region }
 			NOT = {	region = moluccas_region }
@@ -4325,7 +3834,7 @@ is_not_eligible_for_trade_good_chinaware = {
 #1.35
 is_not_eligible_for_trade_good_spices = {
 	OR = {
-		area = newfoundland_area
+		# area = newfoundland_area
 		AND = {
 			NOT = {	region = malaya_region }
 			NOT = {	region = moluccas_region }
@@ -4335,7 +3844,7 @@ is_not_eligible_for_trade_good_spices = {
 			NOT = { region = coromandel_region }
 			NOT = { region = central_america_region }
 			NOT = { region = mexico_region }
-			NOT = { area = indian_ocean_islands_area }
+			# NOT = { area = indian_ocean_islands_area }
 			NOT = { province_id = 1244 } # Tahiti
 		}
 		has_terrain = mountain
@@ -4344,13 +3853,13 @@ is_not_eligible_for_trade_good_spices = {
 #1.35
 is_not_eligible_for_trade_good_coffee = {
 	OR = {
-		area = newfoundland_area
+		# area = newfoundland_area
 		AND = {
 			is_random_new_world = no
-			NOT = { area = southern_ethiopia_area }
-			NOT = { area = hadiya_area }
-			NOT = { area = damot_area }
-			NOT = { area = shewa_area }
+			# NOT = { area = southern_ethiopia_area }
+			# NOT = { area = hadiya_area }
+			# NOT = { area = damot_area }
+			# NOT = { area = shewa_area }
 			NOT = {	region = malaya_region }
 			NOT = { region = indonesia_region }
 			NOT = { region = moluccas_region }
@@ -4379,7 +3888,7 @@ is_not_eligible_for_trade_good_coffee = {
 #1.35
 is_not_eligible_for_trade_good_cotton = {
 	OR = {
-		area = newfoundland_area
+		# area = newfoundland_area
 		AND = {
 			is_random_new_world = no
 			NOT = { region = southeast_america_region }
@@ -4424,7 +3933,7 @@ is_not_eligible_for_trade_good_cotton = {
 #1.35
 is_not_eligible_for_trade_good_sugar = {
 	OR = {
-		area = newfoundland_area
+		# area = newfoundland_area
 		AND = {
 			NOT = { has_climate = tropical }
 			OR = {

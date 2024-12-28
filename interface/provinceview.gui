@@ -543,7 +543,7 @@ guiTypes = {
 
 			guiButtonType = {
 				name = "close_button"
-				position = { x = 490 y = -18 }
+				position = { x = 465 y = -18 }
 				quadTextureSprite ="GFX_closebutton2"
 				shortcut = "ESCAPE"
 				clicksound = close_window
@@ -7994,7 +7994,7 @@ guiTypes = {
 	}
 
 	####################################################
-	### Религия
+	### Религиѝ
 	####################################################
 
 	iconType = {

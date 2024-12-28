@@ -664,10 +664,11 @@ guiTypes = {
 		guiButtonType =
 		{
 			name ="show_mettalurgy"
-			spriteType = "GFX_institutions_large_icon"
-			position = { x= 104 y = 104 }
+			spriteType = "GFX_ancestor_worship_blessing_select"
+			position = { x= 70 y = 84 }
 			Orientation = "UPPER_LEFT"
 			hint_tag = "hint_techgroup"
+			scale = 0.5
 			scripted = yes
 		}
 		

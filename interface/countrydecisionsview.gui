@@ -261,8 +261,8 @@ guiTypes = {
 
 			listBoxType = {
 				name ="modifiers_description_list"
-				position = { x = 25 y = 187 }
-				size = { x = 490 y = 80 }
+				position = { x = 5 y = 187 }
+				size = { x = 270 y = 150 }
 				backGround=""
 				Orientation = "UPPER_LEFT"
 				horizontal = 0
@@ -374,7 +374,7 @@ guiTypes = {
 		iconType = {
 			name = "artificery_information"
 			spriteType = "GFX_artificery_information"
-			position = { x = 9 y = 285 }
+			position = { x = 1009 y = 285 }
 			Orientation = "UPPER_LEFT"
 			scripted = yes
 		}
@@ -3096,7 +3096,7 @@ guiTypes = {
 		name = "countrydecisionsview_policymodifier_row"
 		backGround =""
 		position = { x = 25 y = 187 }
-		size = { x=500 y=24 }
+		size = { x=270 y=24 }
 		moveable = 0
 		horizontalBorder = ""
 		fullScreen = no
@@ -3105,7 +3105,7 @@ guiTypes = {
 		listBoxType = {
 			name ="list"
 			position = { x = 0 y = 0 }
-			size = { x = 500 y = 100 }
+			size = { x = 270 y = 150 }
 			backGround=""
 			Orientation = "UPPER_LEFT"
 			horizontal = 1
@@ -3118,7 +3118,7 @@ guiTypes = {
 		name = "countrydecisionsview_policymodifier"
 		backGround =""
 		position = { x=0 y=0 }	
-		size = { x=100  y=20 }
+		size = { x=90  y=20 }
 		moveable = 0
 		dontRender = ""
 		horizontalBorder = ""
@@ -3137,7 +3137,7 @@ guiTypes = {
 			name = "modifier_value"
 			font = "vic_18"
 			borderSize = {x = 0 y = 0}	
-			maxWidth = 65
+			maxWidth = 50
 			maxHeight = 20
 			text = "HELLO"
 			orientation = "UPPER_LEFT"

@@ -1,24 +1,4 @@
 spriteTypes = {
-	spriteType = {
-		name = "GFX_local_government_view_bg1"
-		texturefile = "gfx//interface//country_local_government_view_bg.dds"
-		loadType = "INGAME"
-		transparencecheck = yes
-	}
-
-	spriteType = {
-		name = "GFX_local_government_view_bg_large"
-		texturefile = "gfx//interface//country_local_government_view_bg_large.dds"
-		loadType = "INGAME"
-		transparencecheck = yes
-	}
-
-	spriteType = {
-		name = "GFX_local_government_view_bg_huge"
-		texturefile = "gfx//interface//country_local_government_view_bg_huge.dds"
-		loadType = "INGAME"
-		transparencecheck = yes
-	}
 
 	spriteType = {
 		name = "GFX_country_court_view_bg"

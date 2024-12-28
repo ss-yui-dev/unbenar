@@ -444,4 +444,4 @@ tutorial = {
 			tooltip = "TUT_BAS_CLOSE_TOOLTIP"
 		}
 	}
-}
+}

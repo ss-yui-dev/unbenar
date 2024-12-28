@@ -72,8 +72,8 @@
  kobold_traps_province_tt: "§YProvince(s)§! has a fort (or no ongoing construction), has not upgraded its Traps in the last 5 years, and does not have fully-upgraded Kobold Traps"
 
 # Decision
-create_kobold_traps_decision_title: "Engineer Kobold Traps!"
-create_kobold_traps_decision_desc: "Crossbows shot from hidden hatches! Draconic sorcerers breathing poisonous gases! Domesticated drakes let loose from their chains! We build traps, we fortify our homes, and we defend the Dragon Coast from invaders!"
+ create_kobold_traps_decision_title: "Engineer Kobold Traps!"
+ create_kobold_traps_decision_desc: "Crossbows shot from hidden hatches! Draconic sorcerers breathing poisonous gases! Domesticated drakes let loose from their chains! We build traps, we fortify our homes, and we defend the Dragon Coast from invaders!"
 
 # Province Group
  kobold_traps_provinces: "Kobold Traps Provinces"

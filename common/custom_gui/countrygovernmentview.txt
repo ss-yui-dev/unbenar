@@ -55,6 +55,9 @@ custom_button = {
 
 custom_icon = {
     name = racial_adm_icon
+	potential = {
+		always = yes
+	}
     frame = {
 		number = 1
 		trigger = { has_country_modifier = centaur_administration }
@@ -135,6 +138,9 @@ custom_icon = {
 }
 custom_icon = {
     name = racial_mil_icon
+	potential = {
+		always = yes
+	}
     frame = {
 		number = 1
 		trigger = { has_country_modifier = centaur_military }

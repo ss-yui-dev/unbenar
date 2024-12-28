@@ -19,7 +19,7 @@ spriteTypes = {
 
 	frameAnimatedSpriteType = {
 		name = "GFX_alerticon_banner"
-		texturefile = "gfx//interface//alerticon_banner.tga"
+		texturefile = "gfx//interface//alerticon_banner.dds"
 		noOfFrames = 20
 		loadType = "INGAME"
 		transparencecheck = yes
@@ -31,7 +31,7 @@ spriteTypes = {
 
 	spriteType = {
 		name = "GFX_alerticon_banner_med"
-		texturefile = "gfx//interface//alerticon_banner4.tga"
+		texturefile = "gfx//interface//alerticon_banner4.dds"
 		noOfFrames = 1
 		loadType = "INGAME"
 		transparencecheck = yes
@@ -39,7 +39,7 @@ spriteTypes = {
 
 	spriteType = {
 		name = "GFX_alerticon_banner_low"
-		texturefile = "gfx//interface//alerticon_banner3.tga"
+		texturefile = "gfx//interface//alerticon_banner3.dds"
 		noOfFrames = 1
 		loadType = "INGAME"
 		transparencecheck = yes

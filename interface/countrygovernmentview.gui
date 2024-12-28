@@ -13,17 +13,17 @@ guiTypes = {
 
 	positionType = { #1.35
 		name = "specific_governments_list_position"
-		position = { x = 32 y = 230 }
+		position = { x = 32 y = 200 }
 	}
 
 	windowType = {
 		name = "countrygovernmentview"
-		position = { x=0 y=140 }
-		#position = { x=-600 y=140 }
+		#position = { x=0 y=140 }
+		position = { x=-600 y=140 }
 		show_position = { x=0 y =140 }
 		hide_position = { x=-600 y =140 }
 		animation_type = "decelerated"
-		animation_time = 10
+		animation_time = 300
 		size = { x=1024 y=100 }
 		moveable = 0
 		Orientation = "UPPER_LEFT"
@@ -60,7 +60,7 @@ guiTypes = {
 			name = "window_title"
 			position = { x = 15 y = 78 }
 			textureFile = ""
-			font = "vic_36"
+			font = "vic_29s"
 			borderSize = {x = 4 y = 4}
 			text = "CATEGORY_GOVERNMENT"
 			maxWidth = 512
@@ -78,14 +78,14 @@ guiTypes = {
 		#Effelai Gov Mechanic
 		iconType = {
 			name = "effelai_government_bg"
-			position = { x= 12 y = 220 }
+			position = { x= 12 y = 191 }
 			quadTextureSprite = "GFX_effelai_government_background_bg" 
 			scripted = yes
 		}
 
 		iconType = {
 			name = "harpy_queendom_bg"
-			position = { x= 12 y = 220 }
+			position = { x= 12 y = 191 }
 			quadTextureSprite = "GFX_harpy_queendom_claim_bg" 
 			scripted = yes
 		}
@@ -93,7 +93,7 @@ guiTypes = {
 		#Kalsyto Gov Mechanic
 		iconType = {
 			name = "kalsyto_democracy_bg"
-			position = { x= 32 y = 268 }
+			position = { x= 32 y = 239 }
 			quadTextureSprite = "GFX_kalsyto_democracy_bg" 
 			scripted = yes
 		}
@@ -101,7 +101,7 @@ guiTypes = {
 		#Skewered Drake Gov Mechanic
 		iconType = {
 			name = "drakonshan_bg"
-			position = { x= 32 y = 237 }
+			position = { x= 32 y = 208 }
 			quadTextureSprite = "GFX_drakonshan_bg" 
 			scripted = yes
 		}
@@ -109,7 +109,7 @@ guiTypes = {
 		#Jaddari Gov Mechanic
 		iconType = {
 			name = "jaddari_desert_legion_bg"
-			position = { x= 29 y = 229 }
+			position = { x= 29 y = 200 }
 			quadTextureSprite = "GFX_jaddari_desert_legion_bg" 
 			scripted = yes
 		}
@@ -245,7 +245,7 @@ guiTypes = {
 		{
 			name ="strengthen_government"
 			quadTextureSprite= "GFX_standard_button_224"
-			position = { x= 56 y = 188 }
+			position = { x= 171 y = 150 }
 			buttonText = "STRENGTHEN_GOVERNMENT"
 			buttonFont = "vic_18"
 		}
@@ -254,14 +254,14 @@ guiTypes = {
 		{
 			name ="absolutism_icon"
 			spriteType = "GFX_icon_absolutism"
-			position = { x= 294 y = 160 }
+			position = { x= 457 y = 160 }
 			Orientation = "UPPER_LEFT"
 			scale = 1
 
 		}
 		instantTextBoxType = {
 			name = "absolutism_value"
-			position = { x = 320 y = 160 }
+			position = { x = 483 y = 160 }
 			textureFile = ""
 			font = "vic_18"
 			borderSize = {x = 4 y = 4}
@@ -275,14 +275,14 @@ guiTypes = {
 		{
 			name ="max_absolutism_icon"
 			spriteType = "GFX_icon_max_absolutism"
-			position = { x= 294 y = 192 }
+			position = { x= 457 y = 192 }
 			Orientation = "UPPER_LEFT"
 			scale = 1
 
 		}
 		instantTextBoxType = {
 			name = "max_absolutism_value"
-			position = { x = 320 y = 192 }
+			position = { x = 483 y = 192 }
 			textureFile = ""
 			font = "vic_18"
 			borderSize = {x = 4 y = 4}
@@ -296,14 +296,14 @@ guiTypes = {
 		{
 			name ="revolutionary_zeal_icon"
 			spriteType = "GFX_icon_revolutionary_zeal"
-			position = { x= 288 y = 152 }
+			position = { x= 451 y = 152 }
 			Orientation = "UPPER_LEFT"
 			scale = 0.6
 
 		}
 		instantTextBoxType = {
 			name = "revolutionary_zeal_value"
-			position = { x = 320 y = 160 }
+			position = { x = 483 y = 160 }
 			font = "vic_18"
 			borderSize = {x = 4 y = 4}
 			maxWidth = 42
@@ -314,13 +314,13 @@ guiTypes = {
 		{
 			name ="max_revolutionary_zeal_icon"
 			spriteType = "GFX_icon_max_revolutionary_zeal"
-			position = { x= 288 y = 184 }
+			position = { x= 451 y = 184 }
 			Orientation = "UPPER_LEFT"
 			scale = 0.6
 		}
 		instantTextBoxType = {
 			name = "max_revolutionary_zeal_value"
-			position = { x = 320 y = 192 }
+			position = { x = 483 y = 192 }
 			font = "vic_18"
 			borderSize = {x = 4 y = 4}
 			maxWidth = 42
@@ -331,7 +331,7 @@ guiTypes = {
 		guiButtonType = {
 			name ="revolution_spread_button"
 			quadTextureSprite = "GFX_government_revolution_icon"
-			position = { x= 426 y = 289 }
+			position = { x= 426 y = 255 }
 			Orientation = "UPPER_LEFT"
 			scale = 0.6
 		}
@@ -339,28 +339,28 @@ guiTypes = {
 		iconType = {
 			name ="revolution_spread_icon"
 			spriteType = "GFX_government_revolution_icon_medium"
-			position = { x= 426 y = 289 }
+			position = { x= 426 y = 255 }
 			Orientation = "UPPER_LEFT"
 		}
 
 		iconType = {
 			name ="revolution_spread_bad_bar"
 			spriteType = "GFX_government_revolution_bad_bar"
-			position = { x = 415 y = 350 }
+			position = { x = 415 y = 316 }
 			Orientation = "UPPER_LEFT"
 		}
 
 		iconType = {
 			name ="revolution_spread_good_bar"
 			spriteType = "GFX_government_revolution_good_bar"
-			position = { x = 415 y = 350 }
+			position = { x = 415 y = 316 }
 			Orientation = "UPPER_LEFT"
 		}
 
 		iconType = {
 			name ="revolution_spread_frame"
 			spriteType = "GFX_government_revolution_bar_frame"
-			position = { x = 402 y = 347 }
+			position = { x = 402 y = 313 }
 			Orientation = "UPPER_LEFT"
 			alwaystransparent = yes
 		}
@@ -390,14 +390,14 @@ guiTypes = {
 		{
 			name ="primary_culture"
 			spriteType = "GFX_primary_culture_icon"
-			position = { x = 15 y = 362 }
+			position = { x = 15 y = 490 }
 			Orientation = "UPPER_LEFT"
 			frame = 1
 		}
 
 		instantTextBoxType = {
 			name = "monarch_cultures"
-			position = { x = 50 y = 365 }
+			position = { x = 50 y = 494 }
 			textureFile = ""
 			font = "vic_22"
 			borderSize = {x = 4 y = 4}
@@ -415,7 +415,7 @@ guiTypes = {
 		{
 			name = "racial_adm_icon"
 			spriteType = "GFX_racial_adm_strip"
-			position = { x = 444 y = 338 }
+			position = { x = 443 y = 325 }
 			Orientation = "UPPER_LEFT"
 			scripted = yes
 		}
@@ -424,7 +424,7 @@ guiTypes = {
 		{
 			name = "racial_mil_icon"
 			spriteType = "GFX_racial_mil_strip"
-			position = { x = 444 y = 365 }
+			position = { x = 443 y = 352 }
 			Orientation = "UPPER_LEFT"
 			scripted = yes
 		}
@@ -446,7 +446,7 @@ guiTypes = {
 
 			instantTextBoxType = {
 				name = "accepted_cultures_label"
-				position = { x = 57 y = 400 } #1.35 y was 352
+				position = { x = 57 y = 532 }
 				format = centre
 				font = "vic_18"
 				maxWidth = 180
@@ -456,7 +456,7 @@ guiTypes = {
 
 			guiButtonType = {
 				name = "accepted_sort_name_btn"
-				position = { x= 27 y = 430 } #1.35 y was 377
+				position = { x=27 y =557}
 				quadTextureSprite ="GFX_culture_name_sort"
 				tooltip = ""
 				tooltipText =""
@@ -469,7 +469,7 @@ guiTypes = {
 
 			guiButtonType = {
 				name = "accepted_sort_union_btn"
-				position = { x=136 y =430}
+				position = { x=136 y =557}
 				quadTextureSprite ="GFX_culture_star_sort"
 				tooltip = ""
 				tooltipText =""
@@ -481,7 +481,7 @@ guiTypes = {
 
 			guiButtonType = {
 				name = "accepted_sort_dev_btn"
-				position = { x = 157 y = 430}
+				position = { x = 157 y = 557}
 				quadTextureSprite ="GFX_culture_dev_sort"
 				tooltip = ""
 				tooltipText =""
@@ -494,8 +494,8 @@ guiTypes = {
 			listboxType =
 			{
 				name ="accepted_cultures_listbox"
-				position = { x = 25 y = 450 }
-				size = { x=226 y =100}
+				position = { x = 25 y = 577}
+				size = { x=226 y = 160}
 				backGround=""
 				Orientation = "UPPER_LEFT"
 				horizontal = 0
@@ -506,7 +506,7 @@ guiTypes = {
 
 			instantTextBoxType = {
 				name = "non_accepted_cultures_label"
-				position = { x = 317 y = 400 }
+				position = { x = 317 y = 532 }
 				format = centre
 				font = "vic_18"
 				maxWidth = 180
@@ -516,7 +516,7 @@ guiTypes = {
 
 			guiButtonType = {
 				name = "non_accepted_sort_name_btn"
-				position = { x=288 y =430}
+				position = { x=288 y =557}
 				quadTextureSprite ="GFX_culture_name_sort"
 				tooltip = ""
 				tooltipText =""
@@ -529,7 +529,7 @@ guiTypes = {
 
 			guiButtonType = {
 				name = "non_accepted_sort_brother_btn"
-				position = { x=397 y =430}
+				position = { x=397 y =557}
 				quadTextureSprite ="GFX_culture_star_sort"
 				tooltip = ""
 				tooltipText =""
@@ -541,7 +541,7 @@ guiTypes = {
 
 			guiButtonType = {
 				name = "non_accepted_sort_dev_btn"
-				position = { x = 418 y = 430}
+				position = { x = 418 y = 557}
 				quadTextureSprite ="GFX_culture_dev_sort"
 				tooltip = ""
 				tooltipText =""
@@ -554,8 +554,8 @@ guiTypes = {
 			listboxType =
 			{
 				name ="non_accepted_cultures_listbox"
-				position = { x = 286 y = 450}
-				size = { x=226 y =100}
+				position = { x = 286 y = 577}
+				size = { x=226 y =160}
 				backGround=""
 				Orientation = "UPPER_LEFT"
 				horizontal = 0
@@ -566,7 +566,7 @@ guiTypes = {
 
 			instantTextBoxType = {
 				name = "accepted_culture_slots"
-				position = { x = 57 y =547 }
+				position = { x = 57 y = 727 }
 				format = center
 				font = "vic_18"
 				maxWidth = 180
@@ -577,11 +577,11 @@ guiTypes = {
 
 		windowType = {
 			name = "assimilated_cultures_window"
-			position = { x = 0 y = 48 } #1.35 y was 0
+			position = { x = 0 y = 0 }
 
 			instantTextBoxType = {
 				name = "assimilated_cultures_label"
-				position = { x = 57 y = 352 }
+				position = { x = 57 y = 532 }
 				format = centre
 				font = "vic_18"
 				maxWidth = 180
@@ -591,7 +591,7 @@ guiTypes = {
 
 			guiButtonType = {
 				name = "accepted_sort_name_btn"
-				position = { x=27 y =377}
+				position = { x=27 y =557}
 				quadTextureSprite ="GFX_culture_name_sort"
 				tooltip = ""
 				tooltipText =""
@@ -604,7 +604,7 @@ guiTypes = {
 
 			guiButtonType = {
 				name = "assimilated_sort_status_btn"
-				position = { x=136 y =377}
+				position = { x=136 y =557}
 				quadTextureSprite ="GFX_culture_star_sort"
 				tooltip = ""
 				tooltipText =""
@@ -616,7 +616,7 @@ guiTypes = {
 
 			guiButtonType = {
 				name = "accepted_sort_dev_btn"
-				position = { x = 157 y = 377}
+				position = { x = 157 y = 557}
 				quadTextureSprite ="GFX_culture_dev_sort_big"
 				tooltip = ""
 				tooltipText =""
@@ -629,7 +629,7 @@ guiTypes = {
 			listboxType =
 			{
 				name ="assimilated_cultures_listbox"
-				position = { x = 25 y = 397}
+				position = { x = 25 y = 577}
 				backGround=""
 				Orientation = "UPPER_LEFT"
 				horizontal = 0
@@ -639,22 +639,22 @@ guiTypes = {
 
 				if_resolution = {
 					max_height = 867
-					size = { x=226 y =102}
+					size = { x=226 y =300}
 				}
 				if_resolution = {
 					min_height = 868
 					max_height = 1051
-					size = { x = 226 y = 253 }
+					size = { x = 226 y = 300 }
 				}
 				if_resolution = {
 					min_height = 1052
-					size = { x = 226 y = 432 }
+					size = { x = 226 y = 300 }
 				}
 			}
 
 			instantTextBoxType = {
 				name = "assimilated_culture_groups_label"
-				position = { x = 317 y = 352 }
+				position = { x = 317 y = 532 }
 				format = centre
 				font = "vic_18"
 				maxWidth = 180
@@ -664,7 +664,7 @@ guiTypes = {
 
 			guiButtonType = {
 				name = "non_accepted_sort_name_btn"
-				position = { x=288 y =377}
+				position = { x=288 y =557}
 				quadTextureSprite ="GFX_culture_name_sort"
 				tooltip = ""
 				tooltipText =""
@@ -677,7 +677,7 @@ guiTypes = {
 
 			guiButtonType = {
 				name = "non_accepted_sort_bonus_btn"
-				position = { x=432 y =377}
+				position = { x=432 y =557}
 				quadTextureSprite ="GFX_culture_bonus_sort"
 				tooltip = ""
 				tooltipText =""
@@ -690,7 +690,7 @@ guiTypes = {
 
 			guiButtonType = {
 				name = "non_accepted_sort_dev_btn"
-				position = { x = 397 y = 377}
+				position = { x = 397 y = 557}
 				quadTextureSprite ="GFX_culture_dev_sort"
 				tooltip = ""
 				tooltipText =""
@@ -703,7 +703,7 @@ guiTypes = {
 			listboxType =
 			{
 				name ="assimilated_culture_groups_listbox"
-				position = { x = 286 y = 397}
+				position = { x = 286 y = 577}
 				backGround=""
 				Orientation = "UPPER_LEFT"
 				horizontal = 0
@@ -713,16 +713,16 @@ guiTypes = {
 
 				if_resolution = {
 					max_height = 867
-					size = { x=226 y =102}
+					size = { x=226 y =300}
 				}
 				if_resolution = {
 					min_height = 868
 					max_height = 1051
-					size = { x = 226 y = 253 }
+					size = { x = 226 y = 300 }
 				}
 				if_resolution = {
 					min_height = 1052
-					size = { x = 226 y = 432 }
+					size = { x = 226 y = 300 }
 				}
 			}
 		}
@@ -732,7 +732,7 @@ guiTypes = {
 
 		instantTextBoxType = {
 			name = "modifiers_title"
-			position = { x = 390 y = 115 }
+			position = { x = 25 y = 340 }
 			textureFile = ""
 			font = "vic_18"
 			borderSize = {x = 4 y = 4}
@@ -748,8 +748,8 @@ guiTypes = {
 		
 		OverlappingElementsBoxType = {
 			name = "modifiers_box_1"
-			position = { x = 370 y = 134 }
-			size = { x = 265 y = 32 }
+			position = { x = 30 y = 383 }
+			size = { x = 510 y = 64 }
 			Orientation = "UPPER_LEFT"
 			format = left
 			spacing = 0
@@ -757,8 +757,8 @@ guiTypes = {
 
 		OverlappingElementsBoxType = {
 			name = "modifiers_box_2"
-			position = { x = 370 y = 165 }
-			size = { x = 265 y = 32 }
+			position = { x = 30 y = 415 }
+			size = { x = 510 y = 64 }
 			Orientation = "UPPER_LEFT"
 			format = left
 			spacing = 0
@@ -766,26 +766,8 @@ guiTypes = {
 
 		OverlappingElementsBoxType = {
 			name = "modifiers_box_3"
-			position = { x = 370 y = 196 }
-			size = { x = 265 y = 32 }
-			Orientation = "UPPER_LEFT"
-			format = left
-			spacing = 0
-		}
-
-		OverlappingElementsBoxType = { #1.35
-			name = "modifiers_box_4"
-			position = { x = 370 y = 226 }
-			size = { x = 265 y = 32 }
-			Orientation = "UPPER_LEFT"
-			format = left
-			spacing = 0
-		}
-
-		OverlappingElementsBoxType = { #1.35
-			name = "modifiers_box_5"
-			position = { x = 370 y = 258 }
-			size = { x = 265 y = 32 }
+			position = { x = 30 y = 447 }
+			size = { x = 510 y = 64 }
 			Orientation = "UPPER_LEFT"
 			format = left
 			spacing = 0
@@ -793,9 +775,9 @@ guiTypes = {
 
 		guiButtonType = {
 			name = "modifier_view_button"
-			position = { x = 510 y = 100 }
+			position = { x = 223 y = 335 }
 			quadTextureSprite ="GFX_country_modifier_button"
-			shortcut = "m"
+			shortcut = "v" #Arumba
 			Orientation = "UPPER_LEFT"
 			clicksound = close_window
 		}
@@ -806,13 +788,13 @@ guiTypes = {
 
 		guiButtonType = {
 			name = "racial_pop_menu"
-			position = { x = 383 y = 340 }
+			position = { x = 383 y = 330 }
 			quadTextureSprite ="GFX_racial_tolerance_button"
 			scripted = yes
 		}
 		guiButtonType = {
 			name = "racial_mil_menu"
-			position = { x = 474 y = 340 }
+			position = { x = 474 y = 330 }
 			quadTextureSprite ="GFX_racial_mil_button"
 			scripted = yes
 		}
@@ -1032,7 +1014,7 @@ guiTypes = {
 			name = "government_interaction_list"
 			position = { x = 0 y = 0 }
 			backGround = ""
-			size = { x = 300 y = 100 }
+			size = { x = 200 y = 100 }
 			Orientation = "UPPER_LEFT"
 			horizontal = 1
 			spacing = 0
@@ -1043,7 +1025,7 @@ guiTypes = {
 	#button for government interactions
 	windowType = {
 		name = "government_interaction_type"
-		size = { x = 100 y = 100 }
+		size = { x = 95 y = 100 }
 		backGround = ""
 		moveable = 0
 		dontRender = ""
@@ -1054,7 +1036,7 @@ guiTypes = {
 		guiButtonType = {
 			name = "government_interaction_button"
 			quadTextureSprite = "GFX_russian_ability_ADM" #placeholder so we don't get an assert - you have to set something - but this will be overridden by the interaction's icon
-			position = { x = 8 y = 4 }
+			position = { x = 15 y = 20 }
 			tooltip = ""
 			tooltipText = ""
 			delayedTooltipText = ""
@@ -1068,14 +1050,14 @@ guiTypes = {
 		iconType = { 
 			name = "government_power_bar"
 			spriteType = "GFX_government_power_bar"
-			position = { x = 20 y = 78 }
+			position = { x = 20 y = 58 }
 			Orientation = "UPPER_LEFT"
 		}
 		
 		iconType = {
 			name = "government_power_bar_frame"
 			spriteType = "GFX_government_power_bar_frame"
-			position = { x = 6 y = 74 }
+			position = { x = 6 y = 54 }
 			Orientation = "UPPER_LEFT"
 			alwaystransparent = yes
 		}
@@ -1114,7 +1096,7 @@ guiTypes = {
 		name = "gov_view_modifierviewitem"
 		backGround =""
 		position = { x=0 y=0 }
-		size = { x=520 y=32 }
+		size = { x=32 y=32 }
 		moveable = 0
 		dontRender = ""
 		horizontalBorder = ""
@@ -1175,6 +1157,7 @@ guiTypes = {
 			maxHeight = 32
 			format = left
 			Orientation = "UPPER_LEFT"
+			fixedsize = yes
 		}
 
 		instantTextBoxType = {
@@ -1240,7 +1223,7 @@ guiTypes = {
 		name = "gov_view_modifier_entry"
 		backGround =""
 		position = { x=0 y=0 }
-		size = { x=30 y=32 }
+		size = { x=32 y=32 }
 		moveable = 0
 		dontRender = ""
 		horizontalBorder = "0"

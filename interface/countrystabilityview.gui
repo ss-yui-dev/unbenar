@@ -794,7 +794,7 @@ guiTypes = {
 				quadTextureSprite ="GFX_button_straight_87_32"
 				buttonText = "CORE_ALL"
 				buttonFont = "vic_18"
-				shortcut = "ž"
+				shortcut = "p"
 			}
 		}
 

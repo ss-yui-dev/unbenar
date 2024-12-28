@@ -10770,7 +10770,7 @@ country_event = {
 	}
 }
 
-##### Смена взаимоисключающих идей
+##### Смена взаимоиѝключающих идей
 country_event = {		# Imperialistische Ambition ---> Imeprialismus
 	id = ideagroups_idea_variation.301
 	title = ANEX_setting_event.1.t
